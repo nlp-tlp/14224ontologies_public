@@ -1,6 +1,6 @@
 # GitHub repo for collaboration on developing a semantic version for ISO 14224 
 
-A public repo for shared development of controlled vocabulary, linked data and ontologies for ISO 14224 users
+A public repo for shared development of controlled vocabulary, linked data, RDF triple stores, and ontologies for ISO 14224 users
 
 ## Purpose
 
@@ -30,7 +30,7 @@ Tables capturing failure-related data are often created and maintained ad hoc ac
 
 ## What is the opportunity?
 
-There are several opportunities for a shared industry project to improve machine readability of FMEA (see below for examples) and maintenance data that references the ISO 14224 standard. In order of technical complexity from technically simple to complex these are
+There are several opportunities for a shared industry project to improve machine readability of FMEA and maintenance work order data that reference the ISO 14224 standard. In order of technical complexity from technically simple to complex these are
 
 **Controlled vocabulary**: while some terms are provided in the terms and definitions section of the ISO 14224:2016: https://www.iso.org/obp/ui/en/#iso:std:iso:14224:ed-3:v2:en the standard lacks robust definitions for terms inside the document e.g. in the tables in Appendix B that describe failure modes and mechanisms. A mapping also needs to be done between terms that are common to ISO 14224:2016 and IEC 60812 IEC 60812:2018 Failure modes and effects analysis (FMEA and FMECA) and to document the differences.
 
