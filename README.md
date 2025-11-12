@@ -24,9 +24,13 @@ c) maintenance data, e.g. maintenance action, resources used, maintenance conseq
 
 There data are used for tracking and investigating reliability issues, calculating equipment and system availability, maintenance management metrics, and events with safety and environmental impacts.
 
+## What is the problem?
+
+Tables capturing failure-related data are often created and maintained ad hoc across teams, departments and organisations. Manual handling of large, unstandardised spreadsheets is time-consuming and error-prone, prompting interest from organisations in using automated and AI-based systems for querying this data.
+
 ## What is the opportunity?
 
-There are several opportunities for a shared industry project to improve machine readability of FMEA and maintenance data. In order of technical complexity from technically simple to complex these are
+There are several opportunities for a shared industry project to improve machine readability of FMEA (see below for examples) and maintenance data that references the ISO 14224 standard. In order of technical complexity from technically simple to complex these are
 
 **Controlled vocabulary**: while some terms are provided in the terms and definitions section of the ISO 14224:2016: https://www.iso.org/obp/ui/en/#iso:std:iso:14224:ed-3:v2:en the standard lacks robust definitions for terms inside the document e.g. in the tables in Appendix B that describe failure modes and mechanisms. A mapping also needs to be done between terms that are common to ISO 14224:2016 and IEC 60812 IEC 60812:2018 Failure modes and effects analysis (FMEA and FMECA) and to document the differences.
 
@@ -75,6 +79,12 @@ MWO Maintenance Work Order table
 |:--- |:--- |:--- |:---|:---|
 |N200| 001.GBOX | gearbox vibrating | Vibration | VIB |
 |N300 | 001.GBOX | leak in seal | External leakage - utility medium| ELU |
+
+FMEA is a well-established and vital part of risk assessment in engineering. Industry standards like the ISO/IEC 60812 describe FMEA concepts and the possible ways spreadsheets can be set out. ISO14224 provides a set of classifications and codes widely used in oil and gas and mining. Despite the availability of these standards, the structure of these spreadsheets are highly variable and context-dependant. FMEA is often recorded in loosely-structured Excel spreadsheets with inconsistent use of terms. Both present issues for automated processing.
+
+Below are examples from column headings for FMEA examples provided in ISO/IEC 60812 standard.
+
+![alt text](images/IEC60812examples.JPG)
 
 
 ## Examples of competency questions based on this data
