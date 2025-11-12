@@ -1,10 +1,10 @@
 # GitHub repo for collaboration on developing a semantic version for ISO 14224 
 
-A public repo for shared development of controlled vocab, linked data and ontologies for ISO 14224 users
+A public repo for shared development of controlled vocabulary, linked data and ontologies for ISO 14224 users
 
 ## Purpose
 
-The purpose of this repo is to provide a shared space for work on ontology models to represent knowledge held in industry data in in 1) failure modes and effects analysis tables, and 2) maintenance work order databases that reference failure descriptors (failure mode, failure mechanism) and the asset taxonomic structures codified in the ISO 14224:2016 standard.
+The purpose of this repo is to provide a shared space for work on semantic representation of knowledge held in industry data in in 1) failure modes and effects analysis tables, and 2) maintenance work order databases that reference failure descriptors (failure mode, failure mechanism) and the asset taxonomic structures codified in the ISO 14224:2016 standard.
 
 ## What is ISO 14224?
 
@@ -28,18 +28,20 @@ There data are used for tracking and investigating reliability issues, calculati
 
 There are several opportunities for a shared industry project to improve machine readability of FMEA and maintenance data. In order of technical complexity from technically simple to complex these are
 
-**Controlled vocabulary**: some of this is provided in the terms and definitions section of the ISO 14224:2016: https://www.iso.org/obp/ui/en/#iso:std:iso:14224:ed-3:v2:en BUT this does not include robust definitions for terms inside the document e.g. in the tables in Appendix B that describe failure modes and mechanisms. A mapping needs to be done between terms that are common to ISO 14224:2016 and IEC 60812 IEC 60812:2018
-Failure modes and effects analysis (FMEA and FMECA) and to document the differences.
+**Controlled vocabulary**: while some terms are provided in the terms and definitions section of the ISO 14224:2016: https://www.iso.org/obp/ui/en/#iso:std:iso:14224:ed-3:v2:en the standard lacks robust definitions for terms inside the document e.g. in the tables in Appendix B that describe failure modes and mechanisms. A mapping also needs to be done between terms that are common to ISO 14224:2016 and IEC 60812 IEC 60812:2018 Failure modes and effects analysis (FMEA and FMECA) and to document the differences.
 
 Example
 label:failure effect
 natural language definition: process that is the consequence of failure, within or beyond the boundary of the failed item
-example: leaking pipe, erratic operation, equipment does not run 
+example: leaking pipe, erratic operation, equipment does not run
+
+Value
+The business value of this step is that every organisation (and even engineers within an organisation) keep their own versions of ISO 14424 in database tables and Excel spreadsheets with their own entity type labels and column headings, as well as codes resulting in challenges for humans, let alone AI to determine if the terms are semantically the same.
 
 **Linked data**: this would be a major step forward in providing a shared, open, stable and managed resource, such as a GitHub page that engineers could reference to ensure a shared interpretation of a term. Challenges include where to host it (neither ISO or IEC provide suitable namespaces and IRI hosting capabilities at present) and how to provide trust for enterprises on how it will be maintained, and how updates will be managed.
 
 Example
-Add
+Linked data for the term 'failure effect' https://spec.industrialontologies.org/iof/ontology/maintenance/Maintenance/FailureEffect
 
 **Lightweight schemas based on semi-structured definitions**: providing semi-formal definitions based on a list of controlled terms (nodes and edges/ classes and object properties) clarifies the meaning of each term moving away from the ambiguity of natural language and towards machine interpretability. It provides the basis for a common schema.
 
