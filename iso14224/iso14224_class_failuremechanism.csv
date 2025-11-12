@@ -1,0 +1,54 @@
+class,superclass,label,description,synonyms
+iso-14224:MechanicalFailureMechanism,f-mode:Malfunction,MechanicalFailureMechanism,Failure related to some mechanical property,
+iso-14224:MechanicalFailureGeneral,iso-14224:MechanicalFailureMechanism,MechanicalFailureGeneral,Failure related to some mechanical defect but no further details known 14224(1.0),"not meshing, does not self align, overstroke, release fault, slipping fault, slipping"
+iso-14224:Leakage,iso-14224:MechanicalFailureMechanism,LeakageFailure,"External and internal leakage, either liquids or gases 14224(1.1)","leak, leaking, exhausting, discharging, weeping"
+iso-14224:Vibration,iso-14224:MechanicalFailureMechanism,Vibration,Abnormal vibration 14224(1.2),vibration
+iso-14224:ClearanceAlignmentFailure,iso-14224:MechanicalFailureMechanism,ClearanceAlignmentFailure,Failure caused by faulty clearance or alignment 14224(1.3),"excess play, out of adjustment, no clearance, misaligned"
+iso-14224:Deformation,iso-14224:MechanicalFailureMechanism,Deformation,"Distortion, bending, buckling, denting, yielding, shrinking, blistering, creeping 14224(1.4)","distortion, bending, buckling, denting, yielding, shrinking, blistering, creeping, bent, flat, dropped, buckled, deformed, flat spot, torn"
+iso-14224:Looseness,iso-14224:MechanicalFailureMechanism,Looseness,"Disconnection, loose items 14224(1.5)","disconnected, loose"
+iso-14224:Sticking,iso-14224:MechanicalFailureMechanism,Sticking,"Sticking, seizure, jamming due to reasons others than deformation or clearance/ alignment failures 14224(1.6)","stuck on, seized, locked"
+iso-14224:MaterialFailureMechanism,f-mode:Malfunction,MaterialFailureMechanism,Failure related to some material property,
+iso-14224:Burst,iso-14224:BurstMaterialFailureMechanism,Burst,"Item burst, blown, exploded, imploded etc 14224(2.8)","blown, burst, exploded, imploded, rupture"
+iso-14224:Overheating,iso-14224:OverheatingMaterialFailureMechanism,Overheating,Material damage due to overheating/ burning 14224(2.7),"overheating, melted, warm, overheated, burnt, burning, brittled"
+iso-14224:Fatigue,iso-14224:FatigueMaterialFailureMechanism,Fatigue,Fatigue 14224(2.6),fatigue
+iso-14224:Breakage,iso-14224:BreakageMaterialFailureMechanism,Breakage,"Fracture, breach, crack 14224(2.5)","cracking, crack, fracture, broken, snapped, cracked, breach, exploded"
+iso-14224:Wear,iso-14224:WearMaterialFailureMechanism,Wear,"Abrasive and adhesive wear e.g. scoring, galling, scuffing and fretting 14224(2.4)","eroded, worn out, worn, scored, galled, scuffed, fretted, chipped, flaking, fluted, peeling, pitted"
+iso-14224:Erosion,iso-14224:ErosionMaterialFailureMechanism,Erosion,Erosive wear 14224(2.3),"eroded, worn out, worm"
+iso-14224:Corrosion,iso-14224:CorrosionMaterialFailureMechanism,Corrosion,"All types of corrosion, both wet (electrochemical) and dry (chemical) 14224(2.2)","corroded, pitting, pitted"
+iso-14224:Cavitation,iso-14224:CavitationMaterialFailureMechanism,Cavitation,Relevant for equipment such as pumps and valves 14224(2.1),"cavitation damage, pitting"
+iso-14224:MaterialFailureGeneral,iso-14224:GeneralMaterialFailureMechanism,MaterialFailureGeneral,Failure related to some material defect but no further details known 14224(2.0),"hole, damaged, damage, swelled"
+iso-14224:InstrumentFailureMechanism,f-mode:Malfunction,InstrumentFailureMechanism,Failure related to some instrument property,
+iso-14224:InstrumentFailureGeneral,iso-14224:InstrumentFailureMechanism,InstrumentFailureGeneral,Failure related to some instrumentation but no further details known 14224(3.0),"alarm, sound continuously, not communicating, "
+iso-14224:ControlFailure,iso-14224:InstrumentFailureMechanism,ControlFailure,"No, or faulty, regulation 14224(3.1)","slow, no control, work intermittently, fail to open, fail to close, slow communication"
+iso-14224:NoSignalIndicationAlarm,iso-14224:InstrumentFailureMechanism,NoSignalIndicationAlarm,No signal/ indication/ alarm when expected 14224(3.2),"no signal, no reception, alarm fault, no indicator, no alarm"
+iso-14224:FaultySignalIndicationAlarm,iso-14224:InstrumentFailureMechanism,FaultySignalIndicationAlarm,Signal/ indication/ alarm is wrong in relation to actual process 14224(3.3),"faulty signal, faulty alarm, faulty indicator, temperature fault, pressure fault, charge fault, electrical fault, overstroke fault, intermittent fault, temperature error, not counting, not reading, overheat fault"
+iso-14224:OutOfAdjustment,iso-14224:InstrumentFailureMechanism,OutOfAdjustment,"Calibration error, parameter drift 14224(3.4)",out of adjustment
+iso-14224:SoftwareError,iso-14224:InstrumentFailureMechanism,SoftwareError,"Faulty, or no, control/ monitoring/ operation due to software error 14224(3.5)",logic box failed
+iso-14224:CommonCauseCommonModeFailure,iso-14224:InstrumentFailureMechanism,CommonCauseCommonModeFailure,Several instrument items fail simultaneously 14224(3.6),
+iso-14224:ElectricalFailureMechanism,f-mode:Malfunction,ElectricalFailureMechanism,Failure related to some electrical property,
+iso-14224:ElectricalFailureGeneral,iso-14224:ElectricalFailureMechanism,ElectricalFailureGeneral,Failures related to the supply and transmission of electrical power but no further details 14224(4.0),"tripping out, running constantly, electrical fault, power fault, shutdown fault, wired incorrectly, tripped, low power, trip, overcharged, capacitance drop, out, fail, low, hydraulic fault, disconnected, faulty, spurious output"
+iso-14224:ShortCircuiting,iso-14224:ElectricalFailureMechanism,ShortCircuiting,Short circuit 14224(4.1),"short, shorted, short circuit"
+iso-14224:OpenCircuit,iso-14224:ElectricalFailureMechanism,OpenCircuit,"Disconnection, interruption, broken wire/ cable 14224(4.2)","disconnected, interrupted, broken, open circuit"
+iso-14224:NoPowerOrVoltage,iso-14224:ElectricalFailureMechanism,NoPowerOrVoltage,Missing or insufficient electrical power supply 14224(4.3),"volt supply error, no excitation, not charging, charging fault, low voltage"
+iso-14224:FaultyPowerOrVoltage,iso-14224:ElectricalFailureMechanism,FaultyPowerOrVoltage,Faulty electrical power supply e.g. overvoltage 14224(4.4),"overload, overvoltage, supply error, flash over"
+iso-14224:EarthOrIsolationFault,iso-14224:ElectricalFailureMechanism,EarthOrIsolationFault,"Earth fault, low electrical resistance 14224(4.5)","earth fault, earthing out, ground fault, arching, fault to earth"
+iso-14224:ExternalInfluenceFailureMechanism,f-mode:Malfunction,ExternalInfluenceFailureMechanism,Failure related to some external influence ,
+iso-14224:ExternalInfluenceFailureGeneral,iso-14224:ExternalInfluenceFailureMechanism,ExternalInfluenceFailureGeneral,Failure caused by some external events or sustances outside the boundary of the item but no details are known 14224(5.0),overgreasing
+iso-14224:BlockageOrPlugged,iso-14224:ExternalInfluenceFailureMechanism,BlockageOrPlugged,"Flow restricted/ blocked due to fouling, contamination, icing, flow assurance etc 14224(5.1)","bogging, plugged, blocked"
+iso-14224:Contamination,iso-14224:ExternalInfluenceFailureMechanism,Contamination,Contaminated fluid/ gas/ surface e.g. lubricant 14224(5.2),"contamination, fuel fault, contaminated"
+iso-14224:MiscExtInfluences,iso-14224:ExternalInfluenceFailureMechanism,MiscExternalInfluences,"Foreign objects, impacts, environmental influence from neighbouring systems 14224(5.3)",
+iso-14224:MiscellaneousFailureMechanism,f-mode:Malfunction,MiscellaneousFailureMechanism,Failures with unresolved or unclear causes,
+iso-14224:MiscellaneousFailureGeneral,iso-14224:MiscellaneousFailureMechanism,MiscellaneousFailureGeneral,Failure mechanism that does not fall into the other 14224 categories 14224(6.0),"hydraulic fault, disconnected, out of date, detached, derailed, deteriorated, fail to communicate, fail to operate, non-compliant,  not lighting, not sounding, resonance, out of date, "
+iso-14224:NoCauseFound,iso-14224:MiscellaneousFailureMechanism,NoCauseFound,Failure investigated but cause not revealed or too uncertain 14224(6.1),"going on and off, bypassing, keep blowing, falling off, movement, coming up, emptying, not cold, sticking, won't start, work intermittently, will not start, popped, issues unserviceable, failed, tight, out of service, shot, mismatched, doesn't turn on, not working, no good, doesn't work, error, missing, to be fixed, out, fail, low,  faulty, inoperable, no output"
+iso-14224:CombinedCauses,iso-14224:MiscellaneousFailureMechanism,CombinedCauses,Several causes 14224(6.2),
+iso-14224:OtherFailureMechanisms,iso-14224:MiscellaneousFailureMechanism,OtherFailureMechanism,No 14224 code available 14224(6.3),
+iso-14224:UnknownFailureMechanism,iso-14224:MiscellaneousFailureMechanism,UnknownFailureMechanism,No information available 14224(6.4),
+iso-14224:BurstMaterialFailureMechanism,iso-14224:MaterialFailureMechanism,BurstMaterialFailureMechanism,,
+iso-14224:FatigueMaterialFailureMechanism,iso-14224:MaterialFailureMechanism,FatigueMaterialFailureMechanism,,
+iso-14224:BreakageMaterialFailureMechanism,iso-14224:MaterialFailureMechanism,BreakageMaterialFailureMechanism,,
+iso-14224:WearMaterialFailureMechanism,iso-14224:MaterialFailureMechanism,WearMaterialFailureMechanism,,
+iso-14224:ErosionMaterialFailureMechanism,iso-14224:MaterialFailureMechanism,ErosionMaterialFailureMechanism,,
+iso-14224:CorrosionMaterialFailureMechanism,iso-14224:MaterialFailureMechanism,CorrosionMaterialFailureMechanism,,
+iso-14224:CavitationMaterialFailureMechanism,iso-14224:MaterialFailureMechanism,CavitationMaterialFailureMechanism,,
+iso-14224:GeneralMaterialFailureMechanism,iso-14224:MaterialFailureMechanism,GeneralMaterialFailureMechanism,,
+iso-14224:OverheatingMaterialFailureMechanism,iso-14224:MaterialFailureMechanism,OverheatingMaterialFailureMechanism,,

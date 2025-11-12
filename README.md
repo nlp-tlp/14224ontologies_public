@@ -50,21 +50,85 @@ if x is a 'failure effect' then x is a 'process' that is 'preceded by' some 'fai
 
 In this example, the schema would need to contain concepts for 'process', 'failure event', 'failure process' and 'preceded by'
 
+**RDF triple stores**
+
+The ability to have data in the form of RDF triple stores allows for SHACL to be used for data quality checks. SPARQL can also be used to find and retrieve data with greater precision.
+
 **Ontology modules**:
 
 Ontologies go beyond schemas and provide a principled approach to defining concepts and their relations. To domain practitioners (such as the author of this readme) this can be achieved by alignment to a top-level ontology either directly or via ontology modules that are also aligned to a top-level ontology.
 
-In the opinion of this author, in engineering domain there are four ontologies to be considered as follows
-- Basic Formal Ontology
-- Industrial Data Ontology
-- DOLCE
-- Unified Foundational Ontology
 
-It should be possible to represent ISO 14224 in each of these frameworks.
+## Examples of data
+
+FMEA table
+
+| FMEA ID | Equip_ID  | ISO14224 FM code | ISO14224 FM descriptor | ISO14 Failure Mechanism |
+|:--- |:--- |:--- |:---|:---|
+|FMEA.001 | 001.GBOX | VIB | Vibration | Fatigue |
+|FMEA.002 | 001.GBOX | STD | Structural deficiency | Breakage |
+|FMEA.003 | 001.GBOX | VIB | Vibration | Wear |
+
+MWO Maintenance Work Order table
+
+| MWO ID | Equip_ID  | MWO text | ISO14224 FM code| ISO14224 FM descriptor |
+|:--- |:--- |:--- |:---|:---|
+|N200| 001.GBOX | gearbox vibrating | Vibration | VIB |
+|N300 | 001.GBOX | leak in seal | External leakage - utility medium| ELU |
+
+
+## Examples of competency questions based on this data
+
+### FMEA table management
+
+Organisations have hundreds (if not thousands) of FMEA tables, if these are created and stored in Excel they can have wildly different column labels. Different software packages each have their own labels for terms in FMEA spreadsheets. There is a significant use case in being able to use modern AI tools to map these tables to a common semantic layer so that some of the following tasks can be done.
+
+- Identify and fix inconsistencies - are the same FM codes/ effects/ mechanism descriptors being used for identical equipment?
+
+- Are FM codes/ effects/ mechanism descriptors being used at appropriate levels in equipment class (functional location) hierarchies?
+
+- Map synonyms to agreed controlled vocabulary
+
+- Use Linked Data to reduce ambiguity for AI tools and humans
+
+
+### Quality control of failure mode assignment in MWOs
+
+It is common practice to assign a FM code based on ISO 14224 (or a derivative) to each maintenance notification associated with a failure event or observation of failure process. The consistency of application of these FM codes is very difficult in large organisations but it is possible with modern AI tools to post process MWO data and improve the quality of FM code assignment. The effectiveness of these AI tools would be improved, initially through a move to Linked Data, then quality control though SHACL, and in the long term using the reasoning ability of ontologies. 
+
+### Reconciliation of failure mode assignment in MWOs with what is in FMEAs to improve equipment maintenance strategy
+
+One of the holy grails for Maintenance Managers is to be able to confirm equipment maintenance strategies are correct. Vast sums of money are spent on the execution of maintenance strategies whether they are working or not. Lagging indicators of maintenance strategy effectiveness include equipment availability, unplanned outages, maintenance costs and safety incidents. After unplanned outages it is common for reliability engineers to examine the maintenance strategy to see if the failure event that occurred was a) identified in the FMEA, 2) had a suitable control activity, and 3) if the control activity was actioned. Other actions include trawling through old MWOs to see if similar events had happened in the past. All of these activities could be assisted by AI tools but only if these tools can be certain what data are looking at. Again this will be assisted by a move to Linked Data, then quality control though SHACL, and in the long term using the reasoning ability of ontologies.
+
+
+## More thoughts on ontologies and ISO 14224
+
+In the opinion of this author, in engineering domain there are four ontologies to be considered as follows
+- Basic Formal Ontology (BFO)
+- Industrial Data Ontology (IDO)
+- DOLCE
+- Unified Foundational Ontology (UFO)
+
+It should be possible to represent concepts in ISO 14224 in each of these frameworks.
 
 A key step in ontology development and in assessing fitness for purpose is to have data and competency questions. One of the goals of this repo is to provide these. 
 
 Ontologies are very expensive to develop and maintain and if they cannot demonstrate business value, that is a problem.
+
+Some of the key ontological modelling challenges are:
+
+1. Data on the 'failure event', 'failure mode' and 'failure mechanism' is captured in tables that represent quite different interpretations.
+
+a. 'Potential generic failure event' - something that might happen to a class of equipment (e.g as documented in ISO 14224 tables)
+b. 'Potential failure event' - something that might happen to a specific instance of equipment (e.g. in a FMEA table for a specific instance of equipment)
+c. 'Actual failure event' - something that has happened to a specific instance of equipment (e.g. in a maintenance work order table)
+
+The labels used in tables found in enterprise data systems do not distinguish between these. An engineer 'knows' what the context is from what else is in the table e.g. is it a FMEA or MWO table.
+
+2. Actual failure events have to be observed in order to know they have occurred but they can occur without being observed. In engineering these are called hidden failures. Actual failure effects are only recorded once they have been observed.
+
+3. One of the most widely used definitions of reliability is ``the probability that an item performs its required function (without failure) under stated conditions for a specific period of time''. An item can be a single component or an entire system. The number of required functions is seldom completely documented (especially when generic FMEA templates are used) and stated conditions are often under-specified. 
+
 
 
 

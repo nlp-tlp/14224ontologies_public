@@ -1,0 +1,88 @@
+﻿Application,Failure_mode,FM_description,FM_code,Function_1-desired_function_not_obtained_2-specified_function_lost_or_outside_limits_3-failure-indication_is_observe_but_no_immediate_impact_on_function
+Rotating equipment,Abnormal instrument reading,"False alarm, faulty instrument indication",AIR,2 (3)
+Mechanical equipment,Abnormal instrument reading,"False alarm, faulty instrument indication",AIR,2 (3)
+Electrical equipment,Abnormal instrument reading,"False alarm, faulty instrument indication",AIR,3
+Safety and control equipment,Abnormal instrument reading,"False alarm, faulty instrument indication",AIR,3
+Rotating equipment,Breakdown,"Serious damage (Seizure, breakage)",BRD,3
+Mechanical equipment,Breakdown,"Serious damage (Seizure, breakage)",BRD,3
+Rotating equipment,External leakage - fuel,External leakage of supplied fuel / gas,ELF,3
+Rotating equipment,External leakage - process medium,"Oil, gas condensate, water",ELP,3
+Mechanical equipment,External leakage - process medium,"Oil, gas condensate, water",ELP,3
+Safety and control equipment,External leakage - process medium,"Oil, gas condensate, water",ELP,3
+Rotating equipment,External leakage - utility medium,"Lubricant, cooling water",ELU,3
+Mechanical equipment,External leakage - utility medium,"Lubricant, cooling water",ELU,3
+Electrical equipment,External leakage - utility medium,"Lubricant, cooling water",ELU,1
+Safety and control equipment,External leakage - utility medium,"Lubricant, cooling water",ELU,3
+Rotating equipment,Erratic output,"Oscillating, hunting, instability",ERO,2
+Electrical equipment,Erratic output,"Oscillating, hunting, instability",ERO,2
+Safety and control equipment,Erratic output,"Oscillating, hunting, instability",ERO,2
+Mechanical equipment,Failure to connect,Failure to connect,FCO,1
+Mechanical equipment,Failure to disconnect,Failure to disconnect when demanded,FDC,2
+Electrical equipment,Faulty output frequency,Wrong/ oscillating frequency,FOF,2
+Electrical equipment,Faulty output voltage,Wrong/ unstable output voltage,FOV,2
+Mechanical equipment,Failure to rotate,Failure to rotate,FRO,1
+Safety and control equipment,Failure to close on demand,Doesn't close on demand,FTC,1
+Safety and control equipment,Delayed operation,Open/ closing time below specification,FTC,1
+Safety and control equipment,Failure to function on demand,Failure to repond on signal/ activation,FTF,1
+Mechanical equipment,Failure to function as intended,General operation failure,FTI,1 (2)
+Safety and control equipment,Failure to open on demand,Doesn't open on demand,FTO,1
+Rotating equipment,Failure to start on demand,Doesn't start on demand,FTS,1
+Mechanical equipment,Failure to start on demand,Doesn't start on demand,FTS,1
+Rotating equipment,High output,Overspeed / output above acceptance,HIO,2
+Safety and control equipment,High output,Overspeed / output above acceptance,HIO,2
+Mechanical equipment,Insufficient heat transfer,Cooling/ heating below acceptance,IHT,2
+Rotating equipment,Internal leakage,Leakage internally of process or utility fluids,INL,3
+Mechanical equipment,Internal leakage,Leakage internally of process or utility fluids,INL,3
+Electrical equipment,Internal leakage,Leakage internally of process or utility fluids,INL,2
+Safety and control equipment,Internal leakage,Leakage internally of process or utility fluids,INL,3
+Mechanical equipment,Low oil supply pressure,Low oil supply pressure,LBP,2
+Safety and control equipment,Leakage in closed position,Leak through valve in closed position,LCP,
+Mechanical equipment,Load drop,Load drop,LOA,
+Mechanical equipment,Loss of buoyancy,Loss of buoyancy,LOB,
+Rotating equipment,Low output,Delivery / output below acceptnace,LOO,2
+Mechanical equipment,Low output,Delivery / output below acceptanace,LOO,2
+Safety and control equipment,Low output,Delivery / output below acceptanace,LOO,2
+Electrical equipment,Loss of redundancy,One or more redundant units not functioning,LOR,2
+Rotating equipment,Noise,Abnormal noise,NOI,3
+Mechanical equipment,Noise,Abnormal noise,NOI,3
+Safety and control equipment,No output,No output,NOO,1
+Rotating equipment,Overheating,"Machine parts, exhaust, cooling water",OHE,3
+Mechanical equipment,Overheating,"Machine parts, exhaust, cooling water",OHE,3
+Electrical equipment,Overheating,"Machine parts, exhaust, cooling water",OHE,3
+Rotating equipment,Other,Failure modes not covered above,OTH,-
+Mechanical equipment,Other,Failure modes not covered above,OTH,-
+Electrical equipment,Other,Failure modes not covered above,OTH,-
+Safety and control equipment,Other,Failure modes not covered above,OTH,-
+Rotating equipment,Parameter deviation,"Monitored parameter exceeding limits, e.g. high/low alarm",PDE,2 (3)
+Mechanical equipment,Parameter deviation,"Monitored parameter exceeding limits, e.g. high/low alarm",PDE,2 (3)
+Electrical equipment,Parameter deviation,"Monitored parameter exceeding limits, e.g. high/low alarm",PDE,2 (3)
+Rotating equipment,Plugged / choked,Flow restriction(s),PLU,3 (2)
+Mechanical equipment,Plugged / choked,Flow restriction(s),PLU,3 (2)
+Electrical equipment,Plugged / choked,Flow restriction(s),PLU,2
+Safety and control equipment,Plugged / choked,Flow restriction(s),PLU,2
+Mechanical equipment,Power / signal transmission failure,Power / signal transmission failure,PTF,2
+Rotating equipment,Minor in-service problems,"Loose items, discoloration, dirt",SER,3
+Mechanical equipment,Minor in-service problems,"Loose items, discoloration, dirt",SER,3
+Electrical equipment,Minor in-service problems,"Loose items, discoloration, dirt",SER,3
+Safety and control equipment,Minor in-service problems,"Loose items, discoloration, dirt",SER,3
+Safety and control equipment,Spurious high level alarm,e.g. 60% of Low explosion limit,SHH,2
+Safety and control equipment,Spurious low level alarm,e.g. 20% of Low explosion limit,SLL,2
+Mechanical equipment,Slippage,Slippage,SLP,2
+Mechanical equipment,Spurious operation,Unexpected operation,SPO,2
+Electrical equipment,Spurious operation,Unexpected operation,SPO,2
+Safety and control equipment,Spurious operation,Unexpected operation,SPO,2
+Rotating equipment,Structural deficiency,"Material damages (Crakcs, wear, fracture, corrosion)",STD,3
+Mechanical equipment,Structural deficiency,"Material damages (Cracks, wear, fracture, corrosion)",STD,3
+Electrical equipment,Structural deficiency,"Material damages (Cracks, wear, fracture, corrosion)",STD,1
+Safety and control equipment,Structural deficiency,"Material damages (Cracks, wear, fracture, corrosion)",STD,3
+Rotating equipment,Failure to stop on demand,Doesn't stop on demand,STP,1
+Mechanical equipment,Failure to stop on demand,Doesn't stop on demand,STP,1
+Electrical equipment,Failure to stop on demand,Doesn't stop on demand,STP,1
+Rotating equipment,Unknown,Too little information to define a failure mode,UNK,-
+Mechanical equipment,Unknown,Too little information to define a failure mode,UNK,-
+Electrical equipment,Unknown,Too little information to define a failure mode,UNK,-
+Safety and control equipment,Unknown,Too little information to define a failure mode,UNK,-
+Rotating equipment,Spurious stop,Unexpected shutdown,UST,2
+Rotating equipment,Vibration,Abnormal vibration,VIB,3
+Mechanical equipment,Vibration,Abnormal vibration,VIB,3
+Safety and control equipment,Very low output,,VLO,2

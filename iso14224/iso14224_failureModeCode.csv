@@ -1,0 +1,45 @@
+ISO14224_FailureModeCode,ISO14224_FailureMode,ISO14224_FailureMode_Description
+AIR,Abnormal instrument reading,"False alarm, faulty instrument indication"
+BRD,Breakdown,"Serious damage (Seizure, breakage)"
+DOP,Delayed operation,Delayed response to commands
+ELF,External leakage - fuel,External leakage of supplied fuel / gas
+ELP,External leakage - process medium,"Oil, gas condensate, water"
+ELU,External leakage - utility medium,"Lubricant, cooling water"
+ERO,Erratic output,"Oscillating, hunting, instability"
+FCO,Failure to connect,Failure to connect
+FDC,Failure to disconnect,Failure to disconnect when demanded
+FOF,Faulty output frequency,Wrong/ oscillating frequency
+FOV,Faulty output voltage,Wrong/ unstable output voltage
+FRO,Failure to rotate,Failure to rotate
+FTC,Failure to close on demand,Doesn't close on demand
+FTD,Delayed operation,Open/ closing time below specification
+FTI,Failure to function as intended,General operation failure
+FTF,Failure to function on demand,Failure to repond on signal/ activation
+FTO,Failure to open on demand,Doesn't open on demand
+FTS,Failure to start on demand,Doesn't start on demand
+HIO,High output,Overspeed / output above acceptance
+IHT,Insufficient heat transfer,Cooling/ heating below acceptance
+INL,Internal leakage,Leakage internally of process or utility fluids
+LBP,Low oil supply pressure,Low oil supply pressure
+LCP,Leakage in closed position,Leak through valve in closed position
+LOA,Load drop,Load drop
+LOB,Loss of buoyancy,Loss of buoyancy
+LOO,Low output,Delivery / output below acceptanace
+LOR,Loss of redundancy,One or more redundant units not functioning
+NOI,Noise,Abnormal noise
+NOO,No output,No output
+OHE,Overheating,"Machine parts, exhaust, cooling water"
+OTH,Other,Failure modes not covered above
+PDE,Parameter deviation,"Monitored parameter exceeding limits, e.g. high/low alarm"
+PLU,Plugged / choked,Flow restriction(s)
+PTF,Power / signal transmission failure,Power / signal transmission failure
+SBU,Sludge build up,Sludge build up
+SER,Power / signal transmission failure,Power / signal transmission failure
+SHH,Spurious high level alarm,e.g. 60% of Low explosion limit
+SLL,Spurious low level alarm,e.g. 20% of Low explosion limit
+SLP,Slippage,Slippage
+SPO,Spurious operation,Unexpected operation
+STD,Structural deficiency,"Material damages (Crakcs, wear, fracture, corrosion)"
+STP,Failure to stop on demand,Doesn't stop on demand
+UNK,Unknown,Too little information to define a failure mode
+VIB,Vibration,Vibration
