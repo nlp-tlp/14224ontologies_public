@@ -1,4 +1,4 @@
-@prefix : <https://www.vocab14224.org/ControlledVocab/> .
+@prefix : <https://www.vocab14224.org/ControlledVocab/base#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,11 +8,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix cmns: <https://www.omg.org/spec/Commons/AnnotationVocabulary>.
-@base <https://www.vocab14224.org/ControlledVocab> .
+@prefix cmns-av: <https://www.omg.org/spec/Commons/AnnotationVocabulary>.
+@base <https://www.vocab14224.org/ControlledVocab/base> .
 
-<https://www.vocab14224.org/ControlledVocab> rdf:type owl:Ontology ;
-                                                                               owl:versionIRI <https://www.vocab14224.org/2024-11-06/ControlledVocab> ;
+<https://www.vocab14224.org/ControlledVocab/base> rdf:type owl:Ontology ;
+                                                                               owl:versionIRI <https://www.vocab14224.org/2024-11-06/ControlledVocab/base/1.1> ;
                                                                                owl:imports <> ;
                                                                                dcterms:license "BSD 3-Clause: https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE"@en ;
                                                                                dcterms:rights "See github"@en ;
@@ -64,7 +64,7 @@ voc:Failure rdf:type owl:Class ;
 
 ###  https://www.vocab14224.org/FailureMode
 voc:FailureMode rdf:type owl:Class ;
-                 rdfs:label "Failure"@en ;
+                 rdfs:label "Failure mode"@en ;
                  skos:altLabel "" @en ;
                  skos:definition "process that leads to failure"@en ;
                  skos:example "" @en ;
