@@ -13,7 +13,6 @@
 
 <https://www.vocab14224.org/ControlledVocab/base> rdf:type owl:Ontology ;
                                                                                owl:versionIRI <https://www.vocab14224.org/2024-11-06/ControlledVocab/base/1.1> ;
-                                                                               owl:imports <> ;
                                                                                dcterms:license " https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE"  ;
                                                                                dcterms:rights "See github"@en ;
                                                                                rdfs:comment "This controlled vocabulary is designed for users terms in the ISO 14224:2016 standard for the collection of reliability and maintenance (RM) data in a standard format for equipment in all facilities and operations."@en ;
