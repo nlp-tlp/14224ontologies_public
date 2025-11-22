@@ -159,7 +159,7 @@ voc:EquipmentType rdf:type owl:Class ;
                  rdfs:label "Equipment type"@en ;
                  skos:definition "particular feature of the design which is significantly different from the other design(s) within the same equipment class"@en ;                 
                  skos:altLabel ""@en ;
-                 skos:example "@en ;
+                 skos:example ""@en ;
                  skos:scopeNote ""@en ;
                  cmns-av:explanatoryNote ""@en ;
                  cmns-av:synonym ""@en ;
@@ -187,7 +187,7 @@ voc:EquipmentUnit rdf:type owl:Class ;
 ###  https://www.vocab14224.org/Error
 voc:Error rdf:type owl:Class ;
                  rdfs:label "Error"@en ;
-                 skos:definition "discrepancy between a computed, observed or measured value or condition and the tru, specified or theoretically correct value or condition "  @en ;                 
+                 skos:definition "discrepancy between a computed, observed or measured value or condition and the tru, specified or theoretically correct value or condition" @en ;                 
                  skos:altLabel ""@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
