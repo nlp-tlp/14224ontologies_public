@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="https://www.vocab14224.org/ControlledVocab/base" uri="vocab14224.ttl"/>
+    <uri id="User Entered Import Resolution" name="https://www.vocab14224.org/ControlledVocab" uri="vocab14224.ttl"/>
+    <uri id="ControlledVocab" name="https://www.vocab14224.org/ControlledVocab/" uri="file:/C:/Users/00040628/LocalData/GitHub/14224ontologies_public/vocab"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+</catalog>
