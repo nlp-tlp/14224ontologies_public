@@ -1,4 +1,4 @@
-@prefix : <https://www.vocab14224.org/ControlledVocab/base#> .
+@prefix voc: <https://www.vocab14224.org/ControlledVocab/base#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
