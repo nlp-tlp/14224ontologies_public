@@ -4,11 +4,10 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix voc: <https://www.vocab14224.org/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix cmns-av: <https://www.omg.org/spec/Commons/AnnotationVocabulary>.
+@prefix cmns-av: <https://www.omg.org/spec/Commons/AnnotationVocabulary> .
 @base <https://www.vocab14224.org/ControlledVocab/base> .
 
 <https://www.vocab14224.org/ControlledVocab/base> rdf:type owl:Ontology ;
@@ -160,7 +159,7 @@ voc:EquipmentType rdf:type owl:Class ;
                  rdfs:label "Equipment type"@en ;
                  skos:definition "particular feature of the design which is significantly different from the other design(s) within the same equipment class"@en ;                 
                  skos:altLabel ""@en ;
-                 skos:example  "@en ;
+                 skos:example "@en ;
                  skos:scopeNote ""@en ;
                  cmns-av:explanatoryNote ""@en ;
                  cmns-av:synonym ""@en ;
@@ -173,9 +172,9 @@ voc:EquipmentType rdf:type owl:Class ;
 ###  https://www.vocab14224.org/EquipmentUnit
 voc:EquipmentUnit rdf:type owl:Class ;
                  rdfs:label "Equipment unit"@en ;
-                 skos:definition "specific equipment within an equipment class as defined by its boundary"@en ;                 
+                 skos:definition "specific equipment within an equipment class as defined by its boundary"@en ;
                  skos:altLabel ""@en ;
-                 skos:example  "@en ;
+                 skos:example ""@en ;
                  skos:scopeNote ""@en ;
                  cmns-av:explanatoryNote ""@en ;
                  cmns-av:synonym ""@en ;
@@ -190,7 +189,7 @@ voc:Error rdf:type owl:Class ;
                  rdfs:label "Error"@en ;
                  skos:definition "discrepancy between a computed, observed or measured value or condition and the tru, specified or theoretically correct value or condition "  @en ;                 
                  skos:altLabel ""@en ;
-                 skos:example  ""@en ;
+                 skos:example ""@en ;
                  skos:scopeNote ""@en ;
                  cmns-av:explanatoryNote "an error within a system can be caused by failure or one or more of its components, or by activation of a systemic fault"@en ;
                  cmns-av:explanatoryNote "an error can be caused by a faulty item e.g. a computing error made by faulty computer equipment"@en ;
@@ -297,7 +296,7 @@ voc:FailureMode rdf:type owl:Class ;
 
 ###  https://www.vocab14224.org/Fault
 voc:Fault rdf:type owl:Class ;
-                 rdfs:label "FailureImpact"@en ;
+                 rdfs:label "Fault"@en ;
                  skos:definition "inability to perform as required, due to an internal state"@en ;
                  skos:altLabel ""@en ;
                  skos:example ""@en ;
@@ -331,7 +330,7 @@ voc:HumanError rdf:type owl:Class ;
                  rdfs:label "Human error"@en ;
                  skos:definition "discrepancy between the human action taken or omitted and that intended "@en ;                 
                  skos:altLabel ""@en ;
-                 skos:example  "performing an incorrect action; omitting a required action "@en ;
+                 skos:example "performing an incorrect action; omitting a required action "@en ;
                  skos:scopeNote ""@en ;
                  cmns-av:explanatoryNote "the term 'human error' is often attributed in hindsight to a human decision, action or inaction considered to be an initiator or contributory cause of a negative outcome such as loss or harm"@en ;
                  cmns-av:explanatoryNote "an error can be caused by a faulty item e.g. a computing error made by faulty computer equipment"@en ;
