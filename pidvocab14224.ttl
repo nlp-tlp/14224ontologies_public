@@ -44,8 +44,8 @@ voc:ont00001760 rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  https://pid.vocab14224.org/00100
-voc:00100 rdf:type owl:Class ;
+###  https://pid.vocab14224.org/ConditionBasedMaintenance
+voc:ConditionBasedMaintenance rdf:type owl:Class ;
                  rdfs:label "Condition-based maintenance"@en ;
                  skos:definition "preventative maintenance based on assessment of physical condition"@en ;                 
                  skos:altLabel "CBM"@en ;
@@ -58,8 +58,8 @@ voc:00100 rdf:type owl:Class ;
                  cmns-av:adaptedFrom "IEC 60050-192:2015"@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .
 
-###  https://www.vocab14224.org/00101
-voc:00101 rdf:type owl:Class ;
+###  https://www.vocab14224.org/CorrectiveMaintenance
+voc:CorrectiveMaintenance rdf:type owl:Class ;
                  rdfs:label "Corrective maintenance"@en ;
                  skos:definition "maintenance carried out after fault detection to effect restoration"@en ;                 
                  skos:altLabel "Reactive Maintenance"@en ;
@@ -72,8 +72,8 @@ voc:00101 rdf:type owl:Class ;
                  cmns-av:adaptedFrom "IEC 60050-192:2015"@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .                 
 
-###  https://www.vocab14224.org/00102
-voc:00102 rdf:type owl:Class ;
+###  https://www.vocab14224.org/CriticalFailure
+voc:CriticalFailure rdf:type owl:Class ;
                  rdfs:label "Critical failure"@en ;
                  skos:definition "failure of an equipment unit that causes an immediate cessation of the ability to perform a required function"@en ;                 
                  skos:altLabel ""@en ;
@@ -87,8 +87,8 @@ voc:00102 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .
 
-###  https://www.vocab14224.org/00103
-voc:00103 rdf:type owl:Class ;
+###  https://www.vocab14224.org/DegradedFailure
+voc:DegradedFailure rdf:type owl:Class ;
                  rdfs:label "Degraded failure"@en ;
                  skos:definition "failure that does not cease the fundamental function(s), but compromises one or several functions"@en ;                 
                  skos:altLabel ""@en ;
@@ -103,8 +103,8 @@ voc:00103 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .
 
-###  https://www.vocab14224.org/00104
-voc:00104 rdf:type owl:Class ;
+###  https://www.vocab14224.org/DetectionMethod
+voc:DetectionMethod rdf:type owl:Class ;
                  rdfs:label "Detection method"@en ;
                  skos:definition "method or activity by which a failure is discovered"@en ;                 
                  skos:altLabel ""@en ;
@@ -117,8 +117,8 @@ voc:00104 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .
 
-###  https://www.vocab14224.org/00105
-voc:00105 rdf:type owl:Class ;
+###  https://www.vocab14224.org/DownState
+voc:DownState rdf:type owl:Class ;
                  rdfs:label "Down state"@en ;
                  skos:definition "state of being unable to perform as required, due to internal fault, or preventative maintenance"@en ;                 
                  skos:altLabel "Unavailable state"@en ;
@@ -133,8 +133,8 @@ voc:00105 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .                 
 
-###  https://www.vocab14224.org/00106
-voc:00106 rdf:type owl:Class ;
+###  https://www.vocab14224.org/EquipmentClass
+voc:EquipmentClass rdf:type owl:Class ;
                  rdfs:label "Equipment class"@en ;
                  skos:definition "class of similar type of equipment units"@en ;                 
                  skos:altLabel ""@en ;
@@ -147,8 +147,8 @@ voc:00106 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .
 
-###  https://www.vocab14224.org/00107
-voc:00107 rdf:type owl:Class ;
+###  https://www.vocab14224.org/EquipmentType
+voc:EquipmentType rdf:type owl:Class ;
                  rdfs:label "Equipment type"@en ;
                  skos:definition "particular feature of the design which is significantly different from the other design(s) within the same equipment class"@en ;                 
                  skos:altLabel ""@en ;
@@ -161,8 +161,8 @@ voc:00107 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .
 
-###  https://www.vocab14224.org/00108
-voc:00108 rdf:type owl:Class ;
+###  https://www.vocab14224.org/EquipmentUnit
+voc:EquipmentUnit rdf:type owl:Class ;
                  rdfs:label "Equipment unit"@en ;
                  skos:definition "specific equipment within an equipment class as defined by its boundary"@en ;
                  skos:altLabel ""@en ;
@@ -175,8 +175,8 @@ voc:00108 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .                 
 
-###  https://www.vocab14224.org/00109
-voc:00109 rdf:type owl:Class ;
+###  https://www.vocab14224.org/Error
+voc:Error rdf:type owl:Class ;
                  rdfs:label "Error"@en ;
                  skos:definition "discrepancy between a computed, observed or measured value or condition and the true, specified or theoretically correct value or condition" @en ;                 
                  skos:altLabel "Discrepancy"@en ;
@@ -190,8 +190,8 @@ voc:00109 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .
 
-###  https://www.vocab14224.org/00110
-voc:00110 rdf:type owl:Class ;
+###  https://www.vocab14224.org/Failure
+voc:Failure rdf:type owl:Class ;
                  rdfs:label "Failure"@en ;
                  skos:definition "loss of ability to perform as required"@en ;                 
                  skos:altLabel ""@en ;
@@ -205,8 +205,8 @@ voc:00110 rdf:type owl:Class ;
                  cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .
 
-###  https://www.vocab14224.org/00111
-voc:00111 rdf:type owl:Class ;
+###  https://www.vocab14224.org/FailureCause
+voc:FailureCause rdf:type owl:Class ;
                  rdfs:label "Failure cause"@en ;
                  skos:definition "set of circumstances that leads to failure"@en ;
                  skos:altLabel "Root cause"@en ;                 
@@ -219,8 +219,8 @@ voc:00111 rdf:type owl:Class ;
                  cmns-av:adaptedFrom "IEC 60050-192:2015"@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .
 
-###  https://www.vocab14224.org/00112
-voc:00112 rdf:type owl:Class ;
+###  https://www.vocab14224.org/FailureData
+voc:FailureData rdf:type owl:Class ;
                  rdfs:label "Failure data"@en ;
                  skos:definition "data characterizing the occurrence of a failure event"@en ;
                  skos:altLabel ""@en ;                 
@@ -233,8 +233,8 @@ voc:00112 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .
 
-###  https://www.vocab14224.org/00113
-voc:00113 rdf:type owl:Class ;
+###  https://www.vocab14224.org/FailureImpact
+voc:FailureImpact rdf:type owl:Class ;
                  rdfs:label "Failure impact"@en ;
                  skos:definition "effect of a failure on an equipment's function(s) or on the plant"@en ;
                  skos:altLabel ""@en ;                 
@@ -248,8 +248,8 @@ voc:00113 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .
 
-###  https://www.vocab14224.org/00114
-voc:00114 rdf:type owl:Class ;
+###  https://www.vocab14224.org/FailureMechanism
+voc:FailureMechanism rdf:type owl:Class ;
                  rdfs:label "Failure mechanism"@en ;
                  skos:definition "process that leads to failure"@en ;
                  skos:altLabel ""@en ;
@@ -262,8 +262,8 @@ voc:00114 rdf:type owl:Class ;
                  cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .                 
 
-###  https://www.vocab14224.org/00115
-voc:00115 rdf:type owl:Class ;
+###  https://www.vocab14224.org/FailureMode
+voc:FailureMode rdf:type owl:Class ;
                  rdfs:label "Failure mode"@en ;
                  skos:definition "manner in which failure occurs"@en ;
                  skos:altLabel ""@en ;
@@ -278,8 +278,8 @@ voc:00115 rdf:type owl:Class ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .
 
 
-###  https://www.vocab14224.org/00116
-voc:00116 rdf:type owl:Class ;
+###  https://www.vocab14224.org/Fault
+voc:Fault rdf:type owl:Class ;
                  rdfs:label "Fault"@en ;
                  skos:definition "inability to perform as required, due to an internal state"@en ;
                  skos:altLabel ""@en ;
@@ -293,8 +293,8 @@ voc:00116 rdf:type owl:Class ;
                  cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .   
 
-###  https://www.vocab14224.org/00117
-voc:00117 rdf:type owl:Class ;
+###  https://www.vocab14224.org/HiddenFailure
+voc:HiddenFailure rdf:type owl:Class ;
                  rdfs:label "Hidden failure"@en ;
                  skos:definition "failure that is not immediately evident to operations and maintenance personnel"@en ;
                  skos:altLabel ""@en ;
@@ -307,8 +307,8 @@ voc:00117 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .  
 
-###  https://www.vocab14224.org/00118
-voc:00118 rdf:type owl:Class ;
+###  https://www.vocab14224.org/HumanError
+voc:HumanError rdf:type owl:Class ;
                  rdfs:label "Human error"@en ;
                  skos:definition "discrepancy between the human action taken or omitted and that intended "@en ;                 
                  skos:altLabel ""@en ;
@@ -322,8 +322,8 @@ voc:00118 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .                                
 
-###  https://www.vocab14224.org/00119
-voc:00119 rdf:type owl:Class ;
+###  https://www.vocab14224.org/IncipientFailure
+voc:IncipientFailure rdf:type owl:Class ;
                  rdfs:label "Incipient failure"@en ;
                  skos:definition "imperfection in the state or condition of an item so that a degraded or critical failure might (or might not) eventually be the expected result if corrective action is taken "@en ;
                  skos:altLabel ""@en ;
@@ -336,8 +336,8 @@ voc:00119 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .
 
-###  https://www.vocab14224.org/00120
-voc:00120 rdf:type owl:Class ;
+###  https://www.vocab14224.org/Integrity
+voc:Integrity rdf:type owl:Class ;
                  rdfs:label "Integrity"@en ;
                  skos:definition "ability of a barrier to function as required when needed "@en ;
                  skos:altLabel ""@en ;
@@ -350,8 +350,8 @@ voc:00120 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .                   
 
-###  https://www.vocab14224.org/00121
-voc:00121 rdf:type owl:Class ;
+###  https://www.vocab14224.org/Item
+voc:Item rdf:type owl:Class ;
                  rdfs:label "Item"@en ;
                  skos:definition "subject being considered "@en ;
                  skos:altLabel ""@en ;
@@ -365,8 +365,8 @@ voc:00121 rdf:type owl:Class ;
                  cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .    
 
-###  https://www.vocab14224.org/00122
-voc:00122 rdf:type owl:Class ;
+###  https://www.vocab14224.org/MaintainableItem
+voc:MaintainableItem rdf:type owl:Class ;
                  rdfs:label "Maintainable item"@en ;
                  skos:definition "item that constitutes a part or an assembly of parts that is normally the lowest level in the equipment hierarchy during maintenance "@en ;
                  skos:altLabel ""@en ;
@@ -379,8 +379,8 @@ voc:00122 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .     
 
-###  https://www.vocab14224.org/00123
-voc:00123 rdf:type owl:Class ;
+###  https://www.vocab14224.org/Maintenance
+voc:Maintenance rdf:type owl:Class ;
                  rdfs:label "Maintenance"@en ;
                  skos:definition "combination of all technical and management actions intended to retain an item in, or restore it to, a state in which it can perform as required "@en ;
                  skos:altLabel ""@en ;
@@ -393,8 +393,8 @@ voc:00123 rdf:type owl:Class ;
                  cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .     
 
-###  https://www.vocab14224.org/00124
-voc:00124 rdf:type owl:Class ;
+###  https://www.vocab14224.org/MaintenanceData
+voc:MaintenanceData rdf:type owl:Class ;
                  rdfs:label "Maintenance data"@en ;
                  skos:definition "data characterizing the maintenance action planned or done"@en ;
                  skos:altLabel ""@en ;
@@ -407,8 +407,8 @@ voc:00124 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .  
 
-###  https://www.vocab14224.org/00125
-voc:00125 rdf:type owl:Class ;
+###  https://www.vocab14224.org/NonCriticalFailure
+voc:NonCriticalFailure rdf:type owl:Class ;
                  rdfs:label "Non-critical failure"@en ;
                  skos:definition "failure of an equipment unit that does not cause an immediate cessation of an ability to perform its required function"@en ;
                  skos:altLabel ""@en ;
@@ -421,8 +421,8 @@ voc:00125 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .    
 
-###  https://www.vocab14224.org/00126
-voc:00126 rdf:type owl:Class ;
+###  https://www.vocab14224.org/OperatingState
+voc:OperatingState rdf:type owl:Class ;
                  rdfs:label "Operating state"@en ;
                  skos:definition "state of performing as required"@en ;
                  skos:altLabel ""@en ;
@@ -435,8 +435,8 @@ voc:00126 rdf:type owl:Class ;
                  cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI . 
 
-###  https://www.vocab14224.org/00127
-voc:00127 rdf:type owl:Class ;
+###  https://www.vocab14224.org/PerformanceObjective
+voc:PerformanceObjective rdf:type owl:Class ;
                  rdfs:label "Performance objective"@en ;
                  skos:definition "indicative level for the desired performance"@en ;
                  skos:altLabel ""@en ;
@@ -449,8 +449,8 @@ voc:00127 rdf:type owl:Class ;
                  cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .                    
 
-###  https://www.vocab14224.org/00128
-voc:00128 rdf:type owl:Class ;
+###  https://www.vocab14224.org/PerformanceRequirement
+voc:PerformanceRequirement rdf:type owl:Class ;
                  rdfs:label "Performance requirement"@en ;
                  skos:definition "required minimum level for the performance of a system"@en ;
                  skos:altLabel ""@en ;
@@ -463,8 +463,8 @@ voc:00128 rdf:type owl:Class ;
                  cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .  
 
-###  https://www.vocab14224.org/00129
-voc:00129 rdf:type owl:Class ;
+###  https://www.vocab14224.org/PeriodicTest
+voc:PeriodicTest rdf:type owl:Class ;
                  rdfs:label "Periodic test"@en ;
                  skos:definition "planned operation performed at constant intervals in order to detect the potential hidden failures which can have occurred in the meantime "@en ;
                  skos:altLabel "Proof test"@en ;
@@ -477,8 +477,8 @@ voc:00129 rdf:type owl:Class ;
                  cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .    
 
-###  https://www.vocab14224.org/00130
-voc:00130 rdf:type owl:Class ;
+###  https://www.vocab14224.org/SubUnit
+voc:SubUnit rdf:type owl:Class ;
                  rdfs:label "Subunit"@en ;
                  skos:definition "assembly of items that provides a specific function that is required for the equipment unit within the main boundary to achieve its intended performance"@en ;
                  skos:altLabel ""@en ;
@@ -491,8 +491,8 @@ voc:00130 rdf:type owl:Class ;
                  cmns-av:adaptedFrom ""@en ;
                  voc:ont00001760 "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI .     
 
-###  https://www.vocab14224.org/00131
-voc:00131 rdf:type owl:Class ;
+###  https://www.vocab14224.org/TagNumber
+voc:TagNumber rdf:type owl:Class ;
                  rdfs:label "Tag number"@en ;
                  skos:definition "unique code that identifies the equipment function and its physical location"@en ;
                  skos:altLabel "Functional location"@en ;
