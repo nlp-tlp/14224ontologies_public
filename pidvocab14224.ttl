@@ -56,6 +56,11 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 voc:ont00001760 rdf:type owl:AnnotationProperty .
 
 
+###  https://pid.vocab14224.org/TermsAndDefinitions/en13306:definition
+voc:en13306:definition rdf:type owl:AnnotationProperty ;
+                       skos:definition "definitions from the EN13306:2017 standard for Maintenance Terminology" .
+
+
 ###  https://www.omg.org/spec/Commons/AnnotationVocabularyadaptedFrom
 cmns-av:adaptedFrom rdf:type owl:AnnotationProperty .
 
