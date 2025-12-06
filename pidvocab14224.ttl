@@ -7,7 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix cmns-av: <https://www.omg.org/spec/Commons/AnnotationVocabulary> .
+@prefix cmns-av: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @base <http://www.semanticweb.org/owl/owlapi/turtle#> .
 
@@ -58,7 +58,11 @@ voc:iso14224:section rdf:type owl:AnnotationProperty .
 
 ###  https://pid.vocab14224.org/TermsAndDefinitions/en13306:definition
 voc:en13306:definition rdf:type owl:AnnotationProperty ;
-                       skos:definition "definitions from the EN13306:2017 standard for Maintenance Terminology" .
+                       skos:definition "definition from the EN13306:2017 standard for Maintenance Terminology" .
+
+###  https://pid.vocab14224.org/TermsAndDefinitions/iec60812:definition
+voc:iec60812:definition rdf:type owl:AnnotationProperty ;
+                       skos:definition "definition from the IEC60812:2018 standard for Failure Modes and Effects Analysis" .                       
 
 
 ###  https://www.omg.org/spec/Commons/AnnotationVocabularyadaptedFrom
@@ -87,6 +91,8 @@ voc:Availability rdf:type owl:Class ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
                  skos:definition "ability to be in a state to perform as required"@en ;
+                 voc:en13306:definition "ability of an item to be in a state to perform as and when required, under given conditions, assuming that the necessary external resources are provided"@en ;
+                 voc:iec60812:definition "n/a"@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
                  voc:iso14224:section "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI ;
