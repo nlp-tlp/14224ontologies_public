@@ -36,7 +36,7 @@ voc:FailureMode rdf:type owl:Class ;
 
 Each term is represented in this pidvocab14224.ttl file as an owl:class. 
 
-We are working on alternate representations and alignment with different top level ontologies as they become available. The IRIs will be stable.
+We are working on alternate representations and alignment with different top level ontologies and will publish these here as they become available. The IRIs will be stable.
 
 ## What is ISO 14224?
 
