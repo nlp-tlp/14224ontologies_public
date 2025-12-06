@@ -16,7 +16,7 @@ Namespace: https://pid.vocab14224.org/TermsAndDefinitions/
 
 ###  https://pid.vocab14224.org/TermsAndDefinitions/FailureMode
 
-\\\
+```
 voc:FailureMode rdf:type owl:Class ;
                 rdfs:label "Failure mode"@en ;
                 rdfs:seeAlso ""@en ;
@@ -32,7 +32,7 @@ voc:FailureMode rdf:type owl:Class ;
                 cmns-av:explanatoryNote ""@en ;
                 cmns-av:usageNote "Tables in B.2.6 in ISO 14224-2023 on relevant failure modes define failure modes to be used for each equipment class"@en ;
                 cmns-av:usageNote "analysis might require data collection to be established on different taxonomy levels"@en .
-\\\
+```
 
 Each term is represented in this pidvocab14224.ttl file as an owl:class. 
 
