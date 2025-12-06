@@ -8,13 +8,15 @@ The purpose of this repo is to provide Linked Data and IRIs for 65 terms used in
 
 ## Linked Data and IRIs
 
-The pidvocab.ttl file contains IRIs and annotations for most of the terms and definitions in the terms and definitions section of ISO 14424:2016. Where the term also appears in EN13306:2017 Maintenance terminology and IEC60812:2018 FMEA, definitions from these standards are also provided.
+The pidvocab.ttl file contains IRIs and annotations for 65 terms and definitions in the terms and definitions section of ISO 14424:2016. Where the term also appears in EN13306:2017 Maintenance terminology and IEC60812:2018 FMEA, definitions from these standards are also provided.
 
 Namespace: https://pid.vocab14224.org/TermsAndDefinitions/
 
 ### Example from pidvocab14224.ttl
 
 ###  https://pid.vocab14224.org/TermsAndDefinitions/FailureMode
+
+\\\
 voc:FailureMode rdf:type owl:Class ;
                 rdfs:label "Failure mode"@en ;
                 rdfs:seeAlso ""@en ;
@@ -30,6 +32,7 @@ voc:FailureMode rdf:type owl:Class ;
                 cmns-av:explanatoryNote ""@en ;
                 cmns-av:usageNote "Tables in B.2.6 in ISO 14224-2023 on relevant failure modes define failure modes to be used for each equipment class"@en ;
                 cmns-av:usageNote "analysis might require data collection to be established on different taxonomy levels"@en .
+\\\
 
 Each term is represented in this pidvocab14224.ttl file as an owl:class. 
 
