@@ -368,7 +368,7 @@ voc:Error rdf:type owl:Class ;
 voc:Failure rdf:type owl:Class ;
             rdfs:label "Failure"@en ;
             rdfs:seeAlso ""@en ;
-            skos:altLabel ""@en ;
+            skos:altLabel "Failure event"@en ;
             skos:definition "loss of ability to perform as required"@en ;
             voc:en13306:definition "loss of the ability of an item to perform a required function"@en ;
             voc:iec60812:definition "n/a"@en ;
