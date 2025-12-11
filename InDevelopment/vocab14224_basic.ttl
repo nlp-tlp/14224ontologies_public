@@ -96,21 +96,36 @@ cmns-av:usageNote rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://www.w3.org/2002/07/owl#topObjectProperty
-owl:topObjectProperty rdfs:range voc:MaintenanceStrategyType .
+owl:topObjectProperty rdfs:range voc:TypeMaintenanceStrategy .
+
+
+###  https://pid.vocab14224.org/Basic/hasFailureEventType
+voc:hasFailureEventType rdf:type owl:ObjectProperty ;
+                        rdfs:domain voc:Failure ;
+                        rdfs:range voc:TypeFailureEvent ;
+                        rdfs:isDefinedBy "Melinda Hodkiewicz" ;
+                        rdfs:label "hasFailureEventType" ;
+                        skos:definition "identifies the type of failure event" .
 
 
 ###  https://pid.vocab14224.org/Basic/hasMaintenanceStrategy
 voc:hasMaintenanceStrategy rdf:type owl:ObjectProperty ;
-                           rdfs:range voc:MaintenanceStrategyType ;
+                           rdfs:range voc:TypeMaintenanceStrategy ;
                            rdfs:isDefinedBy "Melinda Hodkiewicz" ;
                            rdfs:label "hasMaintenanceStrategy" ;
                            skos:definition "identifies the maintenance strategy type" .
 
+###  https://pid.vocab14224.org/Basic/hasReliabilityMeasure
+voc:hasREliabilityMeasure rdf:type owl:ObjectProperty ;
+                           rdfs:range voc:TypeReliabilityMeasure ;
+                           rdfs:isDefinedBy "Melinda Hodkiewicz" ;
+                           rdfs:label "hasReliabilityMeasure" ;
+                           skos:definition "identifies the reliability measure of interest" .
 
 ###  https://pid.vocab14224.org/Basic/hasState
 voc:hasState rdf:type owl:ObjectProperty ;
              rdfs:domain voc:Item ;
-             rdfs:range voc:MaterialState ;
+             rdfs:range voc:TypeMaterialState ;
              rdfs:isDefinedBy "Melinda Hodkiewicz" ;
              rdfs:label "hasState" ;
              skos:definition "identifies the state of the item" ;
@@ -121,21 +136,7 @@ voc:hasState rdf:type owl:ObjectProperty ;
 #    Classes
 #################################################################
 
-###  https://pid.vocab14224.org/Basic/Availability
-voc:Availability rdf:type owl:Class ;
-                 rdfs:label "Availability"@en ;
-                 rdfs:seeAlso ""@en ;
-                 skos:altLabel ""@en ;
-                 skos:definition "ability to be in a state to perform as required"@en ;
-                 skos:example ""@en ;
-                 skos:scopeNote ""@en ;
-                 voc:en13306:definition "ability of an item to be in a state to perform as and when required, under given conditions, assuming that the necessary external resources are provided"@en ;
-                 voc:iec60812:definition "n/a"@en ;
-                 voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                 cmns-av:adaptedFrom ""@en ;
-                 cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                 cmns-av:explanatoryNote ""@en ;
-                 cmns-av:usageNote "See detailed description and interpretation of availability in Annex C of the standard"@en .
+
 
 
 ###  https://pid.vocab14224.org/Basic/Boundary
@@ -153,77 +154,6 @@ voc:Boundary rdf:type owl:Class ;
              cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
              cmns-av:explanatoryNote ""@en ;
              cmns-av:usageNote ""@en .
-
-
-###  https://pid.vocab14224.org/Basic/CommonCauseFailure
-voc:CommonCauseFailure rdf:type owl:Class ;
-                       rdfs:label "Common cause failure"@en ;
-                       rdfs:seeAlso ""@en ;
-                       skos:altLabel ""@en ;
-                       skos:definition "failures of multiple items, which would otherwise be considered independent of one another, resulting from a single cause"@en ;
-                       skos:example ""@en ;
-                       skos:scopeNote "It is generally accepted that the failures occur simultaneously or within a short time of each other"@en ;
-                       voc:en13306:definition "failures of several items resulting from the same direct cause and where these failures are not consequences of each other"@en ;
-                       voc:iec60812:definition "failures of multiple items, which would otherwise be considered independent of one another, resulting from a single cause"@en ;
-                       voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                       cmns-av:adaptedFrom ""@en ;
-                       cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                       cmns-av:explanatoryNote ""@en ;
-                       cmns-av:usageNote "Components that fail due to a shared cause normally fail in the same functional mode. The term common mode if therefore sometimes used. It is however, not considered to be a precise term for communicating the characteristics that describe a common cause failure"@en .
-
-
-###  https://pid.vocab14224.org/Basic/CommonModeFailure
-voc:CommonModeFailure rdf:type owl:Class ;
-                      rdfs:label "Common mode failure"@en ;
-                      rdfs:seeAlso ""@en ;
-                      skos:altLabel ""@en ;
-                      skos:definition "failures of different items characterized by the same failure mode"@en ;
-                      skos:example ""@en ;
-                      skos:scopeNote "Common mode failures can also be common cause failures"@en ;
-                      voc:en13306:definition "n/a"@en ;
-                      voc:iec60812:definition "failures of different items characterized by the same failure mode"@en ;
-                      voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                      cmns-av:adaptedFrom ""@en ;
-                      cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                      cmns-av:explanatoryNote "The potential for common mode failures reduces the effectiveness of system redundancy"@en ;
-                      cmns-av:usageNote "Common mode failures can have different causes"@en .
-
-
-###  https://pid.vocab14224.org/Basic/CriticalFailure
-voc:CriticalFailure rdf:type owl:Class ;
-                    rdfs:label "Critical failure"@en ;
-                    rdfs:seeAlso ""@en ;
-                    skos:altLabel ""@en ;
-                    skos:definition "failure of an equipment unit that causes an immediate cessation of the ability to perform a required function"@en ;
-                    skos:example ""@en ;
-                    skos:scopeNote ""@en ;
-                    voc:en13306:definition "n/a"@en ;
-                    voc:iec60812:definition "n/a"@en ;
-                    voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                    cmns-av:adaptedFrom ""@en ;
-                    cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                    cmns-av:explanatoryNote "a critical failure results in an unscheduled repair "@en ,
-                                            "includes failures requiring immediate action towards cessation of performing the function, even though actual operation can continue for a short period of time"@en ;
-                    cmns-av:usageNote ""@en .
-
-
-###  https://pid.vocab14224.org/Basic/DegradedFailure
-voc:DegradedFailure rdf:type owl:Class ;
-                    rdfs:label "Degraded failure"@en ;
-                    rdfs:seeAlso ""@en ;
-                    skos:altLabel ""@en ;
-                    skos:definition "failure that does not cease the fundamental function(s), but compromises one or several functions"@en ;
-                    skos:example ""@en ;
-                    skos:scopeNote ""@en ;
-                    voc:en13306:definition "EN13306 does not define 'degraded failure' but does define 'degraded state' as state of reduced ability to perform as required, but with acceptable reduced performance"@en ;
-                    voc:iec60812:definition "n/a"@en ;
-                    voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                    cmns-av:adaptedFrom ""@en ;
-                    cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                    cmns-av:explanatoryNote "an immediate repair can normally be delayed but, in time, such failures can develop into a critical failure if corrective actions are not taken "@en ,
-                                            "the failure can be gradual, partial or both"@en ,
-                                            "the function can be compromised by any combination of reduced, increased or erratic outputs "@en ;
-                    cmns-av:usageNote ""@en .
 
 
 ###  https://pid.vocab14224.org/Basic/Demand
@@ -399,23 +329,6 @@ voc:FailureData rdf:type owl:Class ;
                 cmns-av:usageNote "ISO 14224:2023 Table 6 provides a list of data to be recorded"@en .
 
 
-###  https://pid.vocab14224.org/Basic/FailureDueToDemand
-voc:FailureDueToDemand rdf:type owl:Class ;
-                       rdfs:label "Failure due to demand"@en ;
-                       rdfs:seeAlso ""@en ;
-                       skos:altLabel ""@en ;
-                       skos:definition "failure occurring on demand"@en ;
-                       skos:example ""@en ;
-                       skos:scopeNote ""@en ;
-                       voc:en13306:definition "n/a"@en ;
-                       voc:iec60812:definition "n/a"@en ;
-                       voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                       cmns-av:adaptedFrom ""@en ;
-                       cmns-av:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
-                       cmns-av:explanatoryNote ""@en ;
-                       cmns-av:usageNote ""@en .
-
-
 ###  https://pid.vocab14224.org/Basic/FailureImpact
 voc:FailureImpact rdf:type owl:Class ;
                   rdfs:label "Failure impact"@en ;
@@ -471,24 +384,6 @@ voc:FailureMode rdf:type owl:Class ;
                                   "analysis might require data collection to be established on different taxonomy levels"@en .
 
 
-###  https://pid.vocab14224.org/Basic/FailureOnDemand
-voc:FailureOnDemand rdf:type owl:Class ;
-                    rdfs:label "Failure on demand"@en ;
-                    rdfs:seeAlso ""@en ;
-                    skos:altLabel ""@en ;
-                    skos:definition "failure likely to be observed when a demand occurs"@en ;
-                    skos:example ""@en ;
-                    skos:scopeNote "Failure on demand includes those failures occurred before the demand and the failures due to the demand"@en ;
-                    voc:en13306:definition "n/a"@en ;
-                    voc:iec60812:definition "n/a"@en ;
-                    voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                    cmns-av:adaptedFrom ""@en ;
-                    cmns-av:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
-                    cmns-av:explanatoryNote ""@en ;
-                    cmns-av:usageNote "Different failure modes are used to reflect failure on demand"@en ,
-                                      "See also definition on failure due to demand"@en .
-
-
 ###  https://pid.vocab14224.org/Basic/Fault
 voc:Fault rdf:type owl:Class ;
           rdfs:label "Fault"@en ;
@@ -505,23 +400,6 @@ voc:Fault rdf:type owl:Class ;
           cmns-av:explanatoryNote "a fault is often a result of a failure of the item itself but the state can exist without a failure"@en ,
                                   "a fault of an item results from a failure, either of the item itself, or from a deficiency in an earlier stage of the life cycle, such as specification, design, manufacture or maintenance"@en ;
           cmns-av:usageNote "see latent fault"@en .
-
-
-###  https://pid.vocab14224.org/Basic/HiddenFailure
-voc:HiddenFailure rdf:type owl:Class ;
-                  rdfs:label "Hidden failure"@en ;
-                  rdfs:seeAlso ""@en ;
-                  skos:altLabel ""@en ;
-                  skos:definition "failure that is not immediately evident to operations and maintenance personnel"@en ;
-                  skos:example ""@en ;
-                  skos:scopeNote ""@en ;
-                  voc:en13306:definition "failure which is not detected during normal operation"@en ;
-                  voc:iec60812:definition "n/a"@en ;
-                  voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                  cmns-av:adaptedFrom ""@en ;
-                  cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                  cmns-av:explanatoryNote "equipment failures that occurred at an earlier point of time, but were first observed at demand fall into this category. Such failures are first revealed when the relevant functionality is tested"@en ;
-                  cmns-av:usageNote "see latent fault"@en .
 
 
 ###  https://pid.vocab14224.org/Basic/HumanError
@@ -561,22 +439,6 @@ voc:HumanFatigue rdf:type owl:Class ;
 
 
 
-###  https://pid.vocab14224.org/Basic/IncipientFailure
-voc:IncipientFailure rdf:type owl:Class ;
-                     rdfs:label "Incipient failure"@en ;
-                     rdfs:seeAlso ""@en ;
-                     skos:altLabel ""@en ;
-                     skos:definition "imperfection in the state or condition of an item so that a degraded or critical failure might (or might not) eventually be the expected result if corrective action is taken "@en ;
-                     skos:example ""@en ;
-                     skos:scopeNote ""@en ;
-                     voc:en13306:definition "n/a"@en ;
-                     voc:iec60812:definition "n/a"@en ;
-                     voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                     cmns-av:adaptedFrom ""@en ;
-                     cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                     cmns-av:explanatoryNote ""@en ;
-                     cmns-av:usageNote "the recording of an incipient failure requires some criteria for when a fault of this nature requires registration as opposed to a state/ condition where no corrective actions are required"@en .
-
 
 ###  https://pid.vocab14224.org/Basic/IndentureLevel
 voc:IndentureLevel rdf:type owl:Class ;
@@ -595,21 +457,6 @@ voc:IndentureLevel rdf:type owl:Class ;
                    cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/Basic/Integrity
-voc:Integrity rdf:type owl:Class ;
-              rdfs:label "Integrity"@en ;
-              rdfs:seeAlso ""@en ;
-              skos:altLabel ""@en ;
-              skos:definition "ability of a barrier to function as required when needed"@en ;
-              skos:example ""@en ;
-              skos:scopeNote ""@en ;
-              voc:en13306:definition "n/a"@en ;
-              voc:iec60812:definition "n/a"@en ;
-              voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-              cmns-av:adaptedFrom ""@en ;
-              cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-              cmns-av:explanatoryNote ""@en ;
-              cmns-av:usageNote ""@en .
 
 
 ###  https://pid.vocab14224.org/Basic/Item
@@ -647,21 +494,7 @@ voc:LatentFault rdf:type owl:Class ;
                 cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/Basic/Maintainability
-voc:Maintainability rdf:type owl:Class ;
-                    rdfs:label "Maintainability"@en ;
-                    rdfs:seeAlso ""@en ;
-                    skos:altLabel ""@en ;
-                    skos:definition "<of an item> ability to be retained or restored to a state to perform as required, under given conditions of use and maintenance"@en ;
-                    skos:example ""@en ;
-                    skos:scopeNote ""@en ;
-                    voc:en13306:definition "ability of an item under given conditions of use, to be retained in, or restored to, a state in which it can perform a required function, when maintenance is performed under given conditions and using stated procedures and resources"@en ;
-                    voc:iec60812:definition "n/a"@en ;
-                    voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                    cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                    cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                    cmns-av:explanatoryNote ""@en ;
-                    cmns-av:usageNote "Maintainability can be quantified using appropriate measures"@en .
+
 
 
 ###  https://pid.vocab14224.org/Basic/MaintainableItem
@@ -766,59 +599,6 @@ voc:MaintenancePlan rdf:type owl:Class ;
                     cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/Basic/TypeMaintenanceStrategy
-voc:TypeMaintenanceStrategy rdf:type owl:Class ;
-                            rdfs:label "Type of maintenance strategy"@en ;
-                            rdfs:seeAlso ""@en ;
-                            skos:altLabel ""@en ;
-                            skos:definition "strategy for maintenance of a specific item"@en ;
-                            skos:example "corrective maintenance, condition-based maintenance, opportunistic maintenance, planned maintenance, predictive maintenance, reactive maintenance"@en ;
-                            skos:scopeNote ""@en ;
-                            voc:en13306:definition "n/a"@en ;
-                            voc:iec60812:definition "n/a"@en ;
-                            voc:iso14224:section ""^^xsd:anyURI ;
-                            cmns-av:adaptedFrom ""@en ;
-                            cmns-av:directSource "None"@en ;
-                            cmns-av:explanatoryNote "This concept is not in ISO 14224. It is added to this ontology to create a type for maintenance strategy concepts that are included in ISO 14224 terms and definitions. These concepts are modelled as individuals (not classes) because we do not have adequate concepts and axioms to distinguish between the concepts. Also in many data sets these terms are used as labels providing a label for an instance of a work order (for example) not instances of the e.g. corrective maintenance activity"@en ;
-                            cmns-av:usageNote ""@en .
-
-
-###  https://pid.vocab14224.org/Basic/TypeMaterialState
-voc:TypeMaterialState rdf:type owl:Class ;
-                  rdfs:label "Type of material state"@en ;
-                  rdfs:seeAlso ""@en ;
-                  skos:altLabel ""@en ;
-                  skos:definition "process in which a material entity (item) that participates in the process has a condition that remains unchanged"@en ;
-                  skos:example ""@en ;
-                  skos:scopeNote ""@en ;
-                  voc:iofIRI "https://spec.industrialontologies.org/ontology/construct/MaterialState/"^^xsd:anyURI ;
-                  voc:en13306:definition "n/a"@en ;
-                  voc:iec60812:definition "n/a"@en ;
-                  voc:iso14224:section ""^^xsd:anyURI ;
-                  cmns-av:adaptedFrom ""@en ;
-                  cmns-av:directSource "Industrial Ontology Foundry (IOF) ontology"@en ;
-                  cmns-av:explanatoryNote ""@en ;
-                  cmns-av:usageNote ""@en .
-
-
-###  https://pid.vocab14224.org/Basic/NonCriticalFailure
-voc:NonCriticalFailure rdf:type owl:Class ;
-                       rdfs:label "Non-critical failure"@en ;
-                       rdfs:seeAlso ""@en ;
-                       skos:altLabel ""@en ;
-                       skos:definition "failure of an equipment unit that does not cause an immediate cessation of an ability to perform its required function"@en ;
-                       skos:example ""@en ;
-                       skos:scopeNote ""@en ;
-                       voc:en13306:definition "n/a"@en ;
-                       voc:iec60812:definition "n/a"@en ;
-                       voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                       cmns-av:adaptedFrom ""@en ;
-                       cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                       cmns-av:explanatoryNote "non-critical failures can be categorized as 'degraded' or 'incipient' failures"@en ;
-                       cmns-av:usageNote ""@en .
-
-
-
 ###  https://pid.vocab14224.org/Basic/PerformanceObjective
 voc:PerformanceObjective rdf:type owl:Class ;
                          rdfs:label "Performance objective"@en ;
@@ -870,23 +650,6 @@ voc:PeriodicTest rdf:type owl:Class ;
                  cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/Basic/RandomFailure
-voc:RandomFailure rdf:type owl:Class ;
-                  rdfs:label "Random failure"@en ;
-                  rdfs:seeAlso ""@en ;
-                  skos:altLabel "PDM"@en ;
-                  skos:definition "failure occurring in a random way"@en ;
-                  skos:example ""@en ;
-                  skos:scopeNote ""@en ;
-                  voc:en13306:definition "n/a"@en ;
-                  voc:iec60812:definition "n/a"@en ;
-                  voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                  cmns-av:adaptedFrom ""@en ;
-                  cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                  cmns-av:explanatoryNote ""@en ;
-                  cmns-av:usageNote ""@en .
-
-
 ###  https://pid.vocab14224.org/Basic/Redundancy
 voc:Redundancy rdf:type owl:Class ;
                rdfs:label "Redundancy"@en ;
@@ -904,21 +667,7 @@ voc:Redundancy rdf:type owl:Class ;
                cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/Basic/Reliability
-voc:Reliability rdf:type owl:Class ;
-                rdfs:label "Reliability"@en ;
-                rdfs:seeAlso ""@en ;
-                skos:altLabel "PDM"@en ;
-                skos:definition "ability of an item to perform a required function under given conditions for a given time interval"@en ;
-                skos:example ""@en ;
-                skos:scopeNote "Redundancy in IEC 61508 is called fault tolerance"@en ;
-                voc:en13306:definition "ability of an item to perform a required function under given conditions for a given time interval"@en ;
-                voc:iec60812:definition "n/a"@en ;
-                voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                cmns-av:adaptedFrom ""@en ;
-                cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                cmns-av:explanatoryNote ""@en ;
-                cmns-av:usageNote ""@en .
+
 
 
 ###  https://pid.vocab14224.org/Basic/ReliabilityData
@@ -940,7 +689,7 @@ voc:ReliabilityData rdf:type owl:Class ;
 
 ###  https://pid.vocab14224.org/Basic/RequiredFunction
 voc:RequiredFunction rdf:type owl:Class ;
-                     rdfs:label "Required functional"@en ;
+                     rdfs:label "Required function"@en ;
                      rdfs:seeAlso ""@en ;
                      skos:altLabel ""@en ;
                      skos:definition "function or combination of functions of an item that is considered necessary to provide a given service"@en ;
@@ -955,21 +704,6 @@ voc:RequiredFunction rdf:type owl:Class ;
                      cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/Basic/SafetyCriticalFailure
-voc:SafetyCriticalFailure rdf:type owl:Class ;
-                          rdfs:label "Safety critical failure data"@en ;
-                          rdfs:seeAlso ""@en ;
-                          skos:altLabel ""@en ;
-                          skos:definition "critical dangerous failures that are undetected"@en ;
-                          skos:example ""@en ;
-                          skos:scopeNote ""@en ;
-                          voc:en13306:definition "n/a"@en ;
-                          voc:iec60812:definition "n/a"@en ;
-                          voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                          cmns-av:adaptedFrom ""@en ;
-                          cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                          cmns-av:explanatoryNote "Failures revealed by periodic tests (https://www.vocab14224.org/PeriodicTest)"@en ;
-                          cmns-av:usageNote ""@en .
 
 
 ###  https://pid.vocab14224.org/Basic/SoftwareError
@@ -1006,23 +740,6 @@ voc:SubUnit rdf:type owl:Class ;
             cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/Basic/SystemicFailure
-voc:SystemicFailure rdf:type owl:Class ;
-                    rdfs:label "Systemic failure"@en ;
-                    rdfs:seeAlso ""@en ;
-                    skos:altLabel ""@en ;
-                    skos:definition "failure that consistently occurs under particular conditions of handling, storage or use"@en ;
-                    skos:example ""@en ;
-                    skos:scopeNote ""@en ;
-                    voc:en13306:definition "n/a"@en ;
-                    voc:iec60812:definition "n/a"@en ;
-                    voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                    cmns-av:adaptedFrom ""@en ;
-                    cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                    cmns-av:explanatoryNote ""@en ;
-                    cmns-av:usageNote ""@en .
-
-
 ###  https://pid.vocab14224.org/Basic/TagNumber
 voc:TagNumber rdf:type owl:Class ;
               rdfs:label "Tag number"@en ;
@@ -1040,21 +757,6 @@ voc:TagNumber rdf:type owl:Class ;
               cmns-av:usageNote "normally includes the system for which it belongs"@en .
 
 
-###  https://pid.vocab14224.org/Basic/Trip
-voc:Trip rdf:type owl:Class ;
-         rdfs:label "Trip"@en ;
-         rdfs:seeAlso ""@en ;
-         skos:altLabel ""@en ;
-         skos:definition "shutdown of machinery from normal operating condition to full stop"@en ;
-         skos:example ""@en ;
-         skos:scopeNote ""@en ;
-         voc:en13306:definition "n/a"@en ;
-         voc:iec60812:definition "n/a"@en ;
-         voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-         cmns-av:adaptedFrom ""@en ;
-         cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-         cmns-av:explanatoryNote "Real trip is effectuated as a result of a monitored (or calculated) value in the control system exceeding a pre-set limit. Spurious trip is the unexpected shutdown resulting from failure(s) in control/ monitoring system or error(s) imposed on the control/monitoring system originating from the environment or people "@en ;
-         cmns-av:usageNote ""@en .
 
 
 ###  https://pid.vocab14224.org/Basic/Turnaround
@@ -1075,6 +777,75 @@ voc:Turnaround rdf:type owl:Class ;
                cmns-av:usageNote ""@en .
 
 
+###  https://pid.vocab14224.org/Basic/TypeFailureEvent
+voc:TypeFailureEvent rdf:type owl:Class ;
+                     rdfs:label "Type of failure event"@en ;
+                     rdfs:seeAlso ""@en ;
+                     skos:altLabel ""@en ;
+                     skos:definition "label describing the way engineers commonly describe failure events"@en ;
+                     skos:example "critical, hidden, common cause"@en ;
+                     skos:scopeNote ""@en ;
+                     voc:iofIRI ""^^xsd:anyURI ;
+                     voc:en13306:definition "n/a"@en ;
+                     voc:iec60812:definition "n/a"@en ;
+                     voc:iso14224:section ""^^xsd:anyURI ;
+                     cmns-av:adaptedFrom ""@en ;
+                     cmns-av:directSource "None"@en ;
+                     cmns-av:explanatoryNote ""@en ;
+                     cmns-av:usageNote ""@en .
+
+
+###  https://pid.vocab14224.org/Basic/TypeMaintenanceStrategy
+voc:TypeMaintenanceStrategy rdf:type owl:Class ;
+                            rdfs:label "Type of maintenance strategy"@en ;
+                            rdfs:seeAlso ""@en ;
+                            skos:altLabel ""@en ;
+                            skos:definition "strategy for maintenance of a specific item"@en ;
+                            skos:example "corrective maintenance, condition-based maintenance, opportunistic maintenance, planned maintenance, predictive maintenance, reactive maintenance"@en ;
+                            skos:scopeNote ""@en ;
+                            voc:en13306:definition "n/a"@en ;
+                            voc:iec60812:definition "n/a"@en ;
+                            voc:iso14224:section ""^^xsd:anyURI ;
+                            cmns-av:adaptedFrom ""@en ;
+                            cmns-av:directSource "None"@en ;
+                            cmns-av:explanatoryNote "This concept is not in ISO 14224. It is added to this ontology to create a type for maintenance strategy concepts that are included in ISO 14224 terms and definitions. These concepts are modelled as individuals (not classes) because we do not have adequate concepts and axioms to distinguish between the concepts. Also in many data sets these terms are used as labels providing a label for an instance of a work order (for example) not instances of the e.g. corrective maintenance activity"@en ;
+                            cmns-av:usageNote ""@en .
+
+
+###  https://pid.vocab14224.org/Basic/TypeMaterialState
+voc:TypeMaterialState rdf:type owl:Class ;
+                      rdfs:label "Type of material state"@en ;
+                      rdfs:seeAlso ""@en ;
+                      skos:altLabel ""@en ;
+                      skos:definition "process in which a material entity (item) that participates in the process has a condition that remains unchanged"@en ;
+                      skos:example ""@en ;
+                      skos:scopeNote ""@en ;
+                      voc:iofIRI "https://spec.industrialontologies.org/ontology/construct/MaterialState/"^^xsd:anyURI ;
+                      voc:en13306:definition "n/a"@en ;
+                      voc:iec60812:definition "n/a"@en ;
+                      voc:iso14224:section ""^^xsd:anyURI ;
+                      cmns-av:adaptedFrom ""@en ;
+                      cmns-av:directSource "Industrial Ontology Foundry (IOF) ontology"@en ;
+                      cmns-av:explanatoryNote ""@en ;
+                      cmns-av:usageNote ""@en .
+
+###  https://pid.vocab14224.org/Basic/TypeReliabilityMeasure
+voc:TypeReliabilityMeasure rdf:type owl:Class ;
+                      rdfs:label "Type of reliability measure"@en ;
+                      rdfs:seeAlso ""@en ;
+                      skos:altLabel ""@en ;
+                      skos:definition "measure of a reliability-related performance of an item "@en ;
+                      skos:example "reliability, maintainability, availability"@en ;
+                      skos:scopeNote ""@en ;
+                      voc:iofIRI ""^^xsd:anyURI ;
+                      voc:en13306:definition "n/a"@en ;
+                      voc:iec60812:definition "n/a"@en ;
+                      voc:iso14224:section ""^^xsd:anyURI ;
+                      cmns-av:adaptedFrom ""@en ;
+                      cmns-av:directSource ""@en ;
+                      cmns-av:explanatoryNote "This concept is not in ISO 14224. It is added to this ontology to create a type for performance measures commonly captured in degradation. These concepts are modelled as individuals (not classes) because we do not have adequate concepts and axioms to distinguish between the concepts. Also in many data sets these terms are used as labels in data tables for values associated with these measures"@en ;
+                      cmns-av:usageNote ""@en .
+
 ###  https://pid.vocab14224.org/Basic/Uncertainty
 voc:Uncertainty rdf:type owl:Class ;
                 rdfs:label "Uncertainty"@en ;
@@ -1092,16 +863,66 @@ voc:Uncertainty rdf:type owl:Class ;
                 cmns-av:usageNote ""@en .
 
 
-
-
-
 #################################################################
 #    Individuals
 #################################################################
 
+###  https://pid.vocab14224.org/Basic/availability
+voc:availability rdf:type owl:NamedIndividual ,
+                 voc:TypeReliabilityMeasure ;
+                 rdfs:label "availability"@en ;
+                 rdfs:seeAlso ""@en ;
+                 skos:altLabel ""@en ;
+                 skos:definition "ability to be in a state to perform as required"@en ;
+                 skos:example ""@en ;
+                 skos:scopeNote ""@en ;
+                 voc:en13306:definition "ability of an item to be in a state to perform as and when required, under given conditions, assuming that the necessary external resources are provided"@en ;
+                 voc:iec60812:definition "n/a"@en ;
+                 voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                 cmns-av:adaptedFrom ""@en ;
+                 cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                 cmns-av:explanatoryNote ""@en ;
+                 cmns-av:usageNote "See detailed description and interpretation of availability in Annex C of the standard"@en .
+
+###  https://pid.vocab14224.org/Basic/common_cause_failure
+voc:common_cause_failure rdf:type owl:NamedIndividual ,
+                                  voc:TypeFailureEvent ;
+                         rdfs:label "common cause failure"@en ;
+                         rdfs:seeAlso ""@en ;
+                         skos:altLabel ""@en ;
+                         skos:definition "failures of multiple items, which would otherwise be considered independent of one another, resulting from a single cause"@en ;
+                         skos:example ""@en ;
+                         skos:scopeNote "It is generally accepted that the failures occur simultaneously or within a short time of each other"@en ;
+                         voc:en13306:definition "failures of several items resulting from the same direct cause and where these failures are not consequences of each other"@en ;
+                         voc:iec60812:definition "failures of multiple items, which would otherwise be considered independent of one another, resulting from a single cause"@en ;
+                         voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                         cmns-av:adaptedFrom ""@en ;
+                         cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                         cmns-av:explanatoryNote ""@en ;
+                         cmns-av:usageNote "Components that fail due to a shared cause normally fail in the same functional mode. The term common mode if therefore sometimes used. It is however, not considered to be a precise term for communicating the characteristics that describe a common cause failure"@en .
+
+
+###  https://pid.vocab14224.org/Basic/common_mode_failure
+voc:common_mode_failure rdf:type owl:NamedIndividual ,
+                                 voc:TypeFailureEvent ;
+                        rdfs:label "common mode failure"@en ;
+                        rdfs:seeAlso ""@en ;
+                        skos:altLabel ""@en ;
+                        skos:definition "failures of different items characterized by the same failure mode"@en ;
+                        skos:example ""@en ;
+                        skos:scopeNote "Common mode failures can also be common cause failures"@en ;
+                        voc:en13306:definition "n/a"@en ;
+                        voc:iec60812:definition "failures of different items characterized by the same failure mode"@en ;
+                        voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                        cmns-av:adaptedFrom ""@en ;
+                        cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                        cmns-av:explanatoryNote "The potential for common mode failures reduces the effectiveness of system redundancy"@en ;
+                        cmns-av:usageNote "Common mode failures can have different causes"@en .
+
+
 ###  https://pid.vocab14224.org/Basic/condition_based_maintenance
 voc:condition_based_maintenance rdf:type owl:NamedIndividual ,
-                                         voc:MaintenanceStrategyType ;
+                                         voc:TypeMaintenanceStrategy ;
                                 rdfs:label "condition based maintenance" ;
                                 rdfs:seeAlso ""@en ;
                                 skos:altLabel "cbm"@en ;
@@ -1119,7 +940,7 @@ voc:condition_based_maintenance rdf:type owl:NamedIndividual ,
 
 ###  https://pid.vocab14224.org/Basic/corrective_maintenance
 voc:corrective_maintenance rdf:type owl:NamedIndividual ,
-                                    voc:MaintenanceStrategyType ;
+                                    voc:TypeMaintenanceStrategy ;
                            rdfs:label "corrective maintenance"@en ;
                            rdfs:seeAlso ""@en ;
                            skos:altLabel "reactive Maintenance"@en ;
@@ -1135,9 +956,48 @@ voc:corrective_maintenance rdf:type owl:NamedIndividual ,
                            cmns-av:usageNote "corrective maintenance of software invariably involves some modification"@en .
 
 
+###  https://pid.vocab14224.org/Basic/critical_failure
+voc:critical_failure rdf:type owl:NamedIndividual ,
+                              voc:TypeFailureEvent ;
+                     rdfs:label "critical failure"@en ;
+                     rdfs:seeAlso ""@en ;
+                     skos:altLabel ""@en ;
+                     skos:definition "failure of an equipment unit that causes an immediate cessation of the ability to perform a required function"@en ;
+                     skos:example ""@en ;
+                     skos:scopeNote ""@en ;
+                     voc:en13306:definition "n/a"@en ;
+                     voc:iec60812:definition "n/a"@en ;
+                     voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                     cmns-av:adaptedFrom ""@en ;
+                     cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                     cmns-av:explanatoryNote "a critical failure results in an unscheduled repair "@en ,
+                                             "includes failures requiring immediate action towards cessation of performing the function, even though actual operation can continue for a short period of time"@en ;
+                     cmns-av:usageNote ""@en .
+
+
+###  https://pid.vocab14224.org/Basic/degraded_failure
+voc:degraded_failure rdf:type owl:NamedIndividual ,
+                              voc:TypeFailureEvent ;
+                     rdfs:label "degraded failure"@en ;
+                     rdfs:seeAlso ""@en ;
+                     skos:altLabel ""@en ;
+                     skos:definition "failure that does not cease the fundamental function(s), but compromises one or several functions"@en ;
+                     skos:example ""@en ;
+                     skos:scopeNote ""@en ;
+                     voc:en13306:definition "EN13306 does not define 'degraded failure' but does define 'degraded state' as state of reduced ability to perform as required, but with acceptable reduced performance"@en ;
+                     voc:iec60812:definition "n/a"@en ;
+                     voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                     cmns-av:adaptedFrom ""@en ;
+                     cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                     cmns-av:explanatoryNote "an immediate repair can normally be delayed but, in time, such failures can develop into a critical failure if corrective actions are not taken "@en ,
+                                             "the failure can be gradual, partial or both"@en ,
+                                             "the function can be compromised by any combination of reduced, increased or erratic outputs "@en ;
+                     cmns-av:usageNote ""@en .
+
+
 ###  https://pid.vocab14224.org/Basic/down_state
 voc:down_state rdf:type owl:NamedIndividual ,
-                        voc:MaterialState ;
+                        voc:TypeMaterialState ;
                rdfs:label "down state"@en ;
                rdfs:seeAlso ""@en ;
                skos:altLabel "internal disabled state"@en ,
@@ -1155,47 +1015,170 @@ voc:down_state rdf:type owl:NamedIndividual ,
                cmns-av:usageNote "the adjectives 'down' or 'unavailable' designate an item in down state"@en .
 
 
+###  https://pid.vocab14224.org/Basic/failure_due_to_demand
+voc:failure_due_to_demand rdf:type owl:NamedIndividual ,
+                                   voc:TypeFailureEvent ;
+                          rdfs:label "failure due to demand"@en ;
+                          rdfs:seeAlso ""@en ;
+                          skos:altLabel ""@en ;
+                          skos:definition "failure occurring on demand"@en ;
+                          skos:example ""@en ;
+                          skos:scopeNote ""@en ;
+                          voc:en13306:definition "n/a"@en ;
+                          voc:iec60812:definition "n/a"@en ;
+                          voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                          cmns-av:adaptedFrom ""@en ;
+                          cmns-av:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
+                          cmns-av:explanatoryNote ""@en ;
+                          cmns-av:usageNote ""@en .
+
+
+###  https://pid.vocab14224.org/Basic/failure_on_demand
+voc:failure_on_demand rdf:type owl:NamedIndividual ,
+                               voc:TypeFailureEvent ;
+                      rdfs:label "failure on demand"@en ;
+                      rdfs:seeAlso ""@en ;
+                      skos:altLabel ""@en ;
+                      skos:definition "failure likely to be observed when a demand occurs"@en ;
+                      skos:example ""@en ;
+                      skos:scopeNote "Failure on demand includes those failures occurred before the demand and the failures due to the demand"@en ;
+                      voc:en13306:definition "n/a"@en ;
+                      voc:iec60812:definition "n/a"@en ;
+                      voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                      cmns-av:adaptedFrom ""@en ;
+                      cmns-av:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
+                      cmns-av:explanatoryNote ""@en ;
+                      cmns-av:usageNote "Different failure modes are used to reflect failure on demand"@en ,
+                                        "See also definition on failure due to demand"@en .
+
+
+###  https://pid.vocab14224.org/Basic/hidden_failure
+voc:hidden_failure rdf:type owl:NamedIndividual ,
+                            voc:TypeFailureEvent ;
+                   rdfs:label "hidden failure"@en ;
+                   rdfs:seeAlso ""@en ;
+                   skos:altLabel ""@en ;
+                   skos:definition "failure that is not immediately evident to operations and maintenance personnel"@en ;
+                   skos:example ""@en ;
+                   skos:scopeNote ""@en ;
+                   voc:en13306:definition "failure which is not detected during normal operation"@en ;
+                   voc:iec60812:definition "n/a"@en ;
+                   voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                   cmns-av:adaptedFrom ""@en ;
+                   cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                   cmns-av:explanatoryNote "equipment failures that occurred at an earlier point of time, but were first observed at demand fall into this category. Such failures are first revealed when the relevant functionality is tested"@en ;
+                   cmns-av:usageNote "see latent fault"@en .
+
+
 ###  https://pid.vocab14224.org/Basic/idle_state
 voc:idle_state rdf:type owl:NamedIndividual ,
-                        voc:MaterialState ;
-              rdfs:label "idle state"@en ;
+                        voc:TypeMaterialState ;
+               rdfs:label "idle state"@en ;
+               rdfs:seeAlso ""@en ;
+               skos:altLabel "Standby state"@en ;
+               skos:definition "non-operating up state during non-required time"@en ;
+               skos:example ""@en ;
+               skos:scopeNote ""@en ;
+               voc:en13306:definition "n/a"@en ;
+               voc:iec60812:definition "n/a"@en ;
+               voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+               cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+               cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+               cmns-av:explanatoryNote "The adjective 'idle' designates an item in idle state"@en ;
+               cmns-av:usageNote "In some applications, an item in an idle state has some functioning subsystems, and is therefore considered to be operating"@en ,
+                                 "The non-operating time comprises the idle time, the stand-by time and the externally disabled time "@en .
+
+###  https://pid.vocab14224.org/Basic/incipient_failure
+voc:incipient_failure rdf:type owl:NamedIndividual ,
+                     voc:TypeFailureEvent ;
+                     rdfs:label "incipient failure"@en ;
+                     rdfs:seeAlso ""@en ;
+                     skos:altLabel ""@en ;
+                     skos:definition "imperfection in the state or condition of an item so that a degraded or critical failure might (or might not) eventually be the expected result if corrective action is taken "@en ;
+                     skos:example ""@en ;
+                     skos:scopeNote ""@en ;
+                     voc:en13306:definition "n/a"@en ;
+                     voc:iec60812:definition "n/a"@en ;
+                     voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                     cmns-av:adaptedFrom ""@en ;
+                     cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                     cmns-av:explanatoryNote ""@en ;
+                     cmns-av:usageNote "the recording of an incipient failure requires some criteria for when a fault of this nature requires registration as opposed to a state/ condition where no corrective actions are required"@en .
+
+
+###  https://pid.vocab14224.org/Basic/integrity
+voc:integrity rdf:type owl:NamedIndividual ,
+              voc:TypeReliabilityMeasure  ;
+              rdfs:label "integrity"@en ;
               rdfs:seeAlso ""@en ;
-              skos:altLabel "Standby state"@en ;
-              skos:definition "non-operating up state during non-required time"@en ;
+              skos:altLabel ""@en ;
+              skos:definition "ability of a barrier to function as required when needed"@en ;
               skos:example ""@en ;
               skos:scopeNote ""@en ;
               voc:en13306:definition "n/a"@en ;
               voc:iec60812:definition "n/a"@en ;
               voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-              cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-              cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-              cmns-av:explanatoryNote "The adjective 'idle' designates an item in idle state"@en ;
-              cmns-av:usageNote "In some applications, an item in an idle state has some functioning subsystems, and is therefore considered to be operating"@en ,
-                                "The non-operating time comprises the idle time, the stand-by time and the externally disabled time "@en .
+              cmns-av:adaptedFrom ""@en ;
+              cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+              cmns-av:explanatoryNote ""@en ;
+              cmns-av:usageNote ""@en .
+
+###  https://pid.vocab14224.org/Basic/maintainability
+voc:maintainability rdf:type owl:NamedIndividual ,
+                    voc:TypeReliabilityMeasure ;
+                    rdfs:label "maintainability"@en ;
+                    rdfs:seeAlso ""@en ;
+                    skos:altLabel ""@en ;
+                    skos:definition "<of an item> ability to be retained or restored to a state to perform as required, under given conditions of use and maintenance"@en ;
+                    skos:example ""@en ;
+                    skos:scopeNote ""@en ;
+                    voc:en13306:definition "ability of an item under given conditions of use, to be retained in, or restored to, a state in which it can perform a required function, when maintenance is performed under given conditions and using stated procedures and resources"@en ;
+                    voc:iec60812:definition "n/a"@en ;
+                    voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                    cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                    cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                    cmns-av:explanatoryNote ""@en ;
+                    cmns-av:usageNote "Maintainability can be quantified using appropriate measures"@en .
+
+###  https://pid.vocab14224.org/Basic/non_critical_failure
+voc:non_critical_failure rdf:type owl:NamedIndividual ,
+                                  voc:TypeFailureEvent ;
+                         rdfs:label "non-critical failure"@en ;
+                         rdfs:seeAlso ""@en ;
+                         skos:altLabel ""@en ;
+                         skos:definition "failure of an equipment unit that does not cause an immediate cessation of an ability to perform its required function"@en ;
+                         skos:example ""@en ;
+                         skos:scopeNote ""@en ;
+                         voc:en13306:definition "n/a"@en ;
+                         voc:iec60812:definition "n/a"@en ;
+                         voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                         cmns-av:adaptedFrom ""@en ;
+                         cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                         cmns-av:explanatoryNote "non-critical failures can be categorized as 'degraded' or 'incipient' failures"@en ;
+                         cmns-av:usageNote ""@en .
 
 
 ###  https://pid.vocab14224.org/Basic/operating_state
 voc:operating_state rdf:type owl:NamedIndividual ,
-                        voc:MaterialState ;
-                   rdfs:label "operating state"@en ;
-                   rdfs:seeAlso ""@en ;
-                   skos:altLabel ""@en ;
-                   skos:definition "state of performing as required"@en ;
-                   skos:example ""@en ;
-                   skos:scopeNote ""@en ;
-                   voc:en13306:definition "n/a"@en ;
-                   voc:iec60812:definition "n/a"@en ;
-                   voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                   cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                   cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                   cmns-av:explanatoryNote ""@en ;
-                   cmns-av:usageNote "in some applications, an item in idle state is considered to be operating"@en .
-
+                             voc:TypeMaterialState ;
+                    rdfs:label "operating state"@en ;
+                    rdfs:seeAlso ""@en ;
+                    skos:altLabel ""@en ;
+                    skos:definition "state of performing as required"@en ;
+                    skos:example ""@en ;
+                    skos:scopeNote ""@en ;
+                    voc:en13306:definition "n/a"@en ;
+                    voc:iec60812:definition "n/a"@en ;
+                    voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                    cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                    cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                    cmns-av:explanatoryNote ""@en ;
+                    cmns-av:usageNote "in some applications, an item in idle state is considered to be operating"@en .
 
 
 ###  https://pid.vocab14224.org/Basic/opportunity_maintenance
 voc:opportunity_maintenance rdf:type owl:NamedIndividual ,
-                                     voc:MaintenanceStrategyType ;
+                                     voc:TypeMaintenanceStrategy ;
                             rdfs:label "opportunity maintenance" ;
                             rdfs:seeAlso ""@en ;
                             skos:altLabel ""@en ;
@@ -1213,7 +1196,7 @@ voc:opportunity_maintenance rdf:type owl:NamedIndividual ,
 
 ###  https://pid.vocab14224.org/Basic/planned_maintenance
 voc:planned_maintenance rdf:type owl:NamedIndividual ,
-                                 voc:MaintenanceStrategyType ;
+                                 voc:TypeMaintenanceStrategy ;
                         rdfs:label "planned maintenance"@en ;
                         rdfs:seeAlso ""@en ;
                         skos:altLabel "planned preventative maintenance"@en ,
@@ -1232,7 +1215,7 @@ voc:planned_maintenance rdf:type owl:NamedIndividual ,
 
 ###  https://pid.vocab14224.org/Basic/predictive_maintenance
 voc:predictive_maintenance rdf:type owl:NamedIndividual ,
-                                    voc:MaintenanceStrategyType ;
+                                    voc:TypeMaintenanceStrategy ;
                            rdfs:label "predictive maintenance"@en ;
                            rdfs:seeAlso ""@en ;
                            skos:altLabel "PDM"@en ,
@@ -1251,7 +1234,7 @@ voc:predictive_maintenance rdf:type owl:NamedIndividual ,
 
 ###  https://pid.vocab14224.org/Basic/preventative_maintenance
 voc:preventative_maintenance rdf:type owl:NamedIndividual ,
-                                      voc:MaintenanceStrategyType ;
+                                      voc:TypeMaintenanceStrategy ;
                              rdfs:label "preventative maintenance"@en ;
                              rdfs:seeAlso ""@en ;
                              skos:altLabel "PM"@en ;
@@ -1267,21 +1250,109 @@ voc:preventative_maintenance rdf:type owl:NamedIndividual ,
                              cmns-av:usageNote "See also condition-based maintenance (https://pid.vocab14224.org/ConditionBasedMaintenance) and planned (scheduled) maintenance (https://www.vocab14224.org/PlannedMaintenance)"@en .
 
 
+###  https://pid.vocab14224.org/Basic/random_failure
+voc:random_failure rdf:type owl:NamedIndividual ,
+                            voc:TypeFailureEvent ;
+                   rdfs:label "random failure"@en ;
+                   rdfs:seeAlso ""@en ;
+                   skos:altLabel "PDM"@en ;
+                   skos:definition "failure occurring in a random way"@en ;
+                   skos:example ""@en ;
+                   skos:scopeNote ""@en ;
+                   voc:en13306:definition "n/a"@en ;
+                   voc:iec60812:definition "n/a"@en ;
+                   voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                   cmns-av:adaptedFrom ""@en ;
+                   cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                   cmns-av:explanatoryNote ""@en ;
+                   cmns-av:usageNote ""@en .
+
+###  https://pid.vocab14224.org/Basic/safety_critical_failure
+voc:safety_critical_failure rdf:type owl:NamedIndividual ,
+                          voc:TypeFailureEvent   ;
+                          rdfs:label "safety critical failure"@en ;
+                          rdfs:seeAlso ""@en ;
+                          skos:altLabel ""@en ;
+                          skos:definition "critical dangerous failures that are undetected"@en ;
+                          skos:example ""@en ;
+                          skos:scopeNote ""@en ;
+                          voc:en13306:definition "n/a"@en ;
+                          voc:iec60812:definition "n/a"@en ;
+                          voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                          cmns-av:adaptedFrom ""@en ;
+                          cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                          cmns-av:explanatoryNote "Failures revealed by periodic tests (https://www.vocab14224.org/PeriodicTest)"@en ;
+                          cmns-av:usageNote ""@en .
+
+###  https://pid.vocab14224.org/Basic/reliability
+voc:reliability rdf:type owl:NamedIndividual ,
+                voc:TypeReliabilityMeasure ;
+                rdfs:label "reliability"@en ;
+                rdfs:seeAlso ""@en ;
+                skos:altLabel "PDM"@en ;
+                skos:definition "ability of an item to perform a required function under given conditions for a given time interval"@en ;
+                skos:example ""@en ;
+                skos:scopeNote "Redundancy in IEC 61508 is called fault tolerance"@en ;
+                voc:en13306:definition "ability of an item to perform a required function under given conditions for a given time interval"@en ;
+                voc:iec60812:definition "n/a"@en ;
+                voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                cmns-av:adaptedFrom ""@en ;
+                cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                cmns-av:explanatoryNote ""@en ;
+                cmns-av:usageNote ""@en .
+
+
+###  https://pid.vocab14224.org/Basic/trip
+voc:trip rdf:type owl:NamedIndividual ,
+         voc:TypeFailureEvent ;
+         rdfs:label "trip"@en ;
+         rdfs:seeAlso ""@en ;
+         skos:altLabel ""@en ;
+         skos:definition "shutdown of machinery from normal operating condition to full stop"@en ;
+         skos:example ""@en ;
+         skos:scopeNote ""@en ;
+         voc:en13306:definition "n/a"@en ;
+         voc:iec60812:definition "n/a"@en ;
+         voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+         cmns-av:adaptedFrom ""@en ;
+         cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+         cmns-av:explanatoryNote "Real trip is effectuated as a result of a monitored (or calculated) value in the control system exceeding a pre-set limit. Spurious trip is the unexpected shutdown resulting from failure(s) in control/ monitoring system or error(s) imposed on the control/monitoring system originating from the environment or people "@en ;
+         cmns-av:usageNote ""@en .
+
+###  https://pid.vocab14224.org/Basic/systemic_failure
+voc:systemic_failure rdf:type owl:NamedIndividual ,
+                              voc:TypeFailureEvent ;
+                     rdfs:label "systemic failure"@en ;
+                     rdfs:seeAlso ""@en ;
+                     skos:altLabel ""@en ;
+                     skos:definition "failure that consistently occurs under particular conditions of handling, storage or use"@en ;
+                     skos:example ""@en ;
+                     skos:scopeNote ""@en ;
+                     voc:en13306:definition "n/a"@en ;
+                     voc:iec60812:definition "n/a"@en ;
+                     voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                     cmns-av:adaptedFrom ""@en ;
+                     cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                     cmns-av:explanatoryNote ""@en ;
+                     cmns-av:usageNote ""@en .
+
+
 ###  https://pid.vocab14224.org/Basic/up_state
 voc:up_state rdf:type owl:NamedIndividual ,
-                      voc:MaterialState ;
-            rdfs:label "up state"@en ;
-            rdfs:seeAlso ""@en ;
-            skos:altLabel "Available state"@en ;
-            skos:definition "state of being able to perform as required"@en ;
-            skos:example ""@en ;
-            skos:scopeNote ""@en ;
-            voc:en13306:definition "state of an item being able to perform a required function, assuming that the external resources, if required, are provided"@en ;
-            voc:iec60812:definition "n/a"@en ;
-            voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-            cmns-av:adaptedFrom ""@en ;
-            cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-            cmns-av:explanatoryNote ""@en ;
-            cmns-av:usageNote ""@en .
+                      voc:TypeMaterialState ;
+             rdfs:label "up state"@en ;
+             rdfs:seeAlso ""@en ;
+             skos:altLabel "Available state"@en ;
+             skos:definition "state of being able to perform as required"@en ;
+             skos:example ""@en ;
+             skos:scopeNote ""@en ;
+             voc:en13306:definition "state of an item being able to perform a required function, assuming that the external resources, if required, are provided"@en ;
+             voc:iec60812:definition "n/a"@en ;
+             voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+             cmns-av:adaptedFrom ""@en ;
+             cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+             cmns-av:explanatoryNote ""@en ;
+             cmns-av:usageNote ""@en .
+
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
