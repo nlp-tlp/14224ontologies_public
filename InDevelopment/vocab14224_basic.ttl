@@ -51,6 +51,11 @@ skos:example rdf:type owl:AnnotationProperty .
 skos:scopeNote rdf:type owl:AnnotationProperty .
 
 
+###  https://pid.vocab14224.org/Basic/iofIRI
+voc:iofIRI rdf:type owl:AnnotationProperty ;
+           skos:definition "iri for the same or similar concept in the Industrial Ontology Foundry (IOF)" .
+
+
 ###  https://pid.vocab14224.org/Basic/en13306:definition
 voc:en13306:definition rdf:type owl:AnnotationProperty ;
                        skos:definition "definition from the EN13306:2017 standard for Maintenance Terminology" .
@@ -59,6 +64,11 @@ voc:en13306:definition rdf:type owl:AnnotationProperty ;
 ###  https://pid.vocab14224.org/Basic/iec60812:definition
 voc:iec60812:definition rdf:type owl:AnnotationProperty ;
                         skos:definition "definition from the IEC60812:2018 standard for Failure Modes and Effects Analysis" .
+
+
+###  https://pid.vocab14224.org/Basic/iof:definition
+voc:iof:definition rdf:type owl:AnnotationProperty ;
+                   skos:definition "definition from the Industrial Ontology Foundry (IOF) list of constructs" .
 
 
 ###  https://pid.vocab14224.org/Basic/iso14224:section
@@ -91,9 +101,20 @@ owl:topObjectProperty rdfs:range voc:MaintenanceStrategyType .
 
 ###  https://pid.vocab14224.org/Basic/hasMaintenanceStrategy
 voc:hasMaintenanceStrategy rdf:type owl:ObjectProperty ;
+                           rdfs:range voc:MaintenanceStrategyType ;
                            rdfs:isDefinedBy "Melinda Hodkiewicz" ;
                            rdfs:label "hasMaintenanceStrategy" ;
                            skos:definition "identifies the maintenance strategy type" .
+
+
+###  https://pid.vocab14224.org/Basic/hasState
+voc:hasState rdf:type owl:ObjectProperty ;
+             rdfs:domain voc:Item ;
+             rdfs:range voc:MaterialState ;
+             rdfs:isDefinedBy "Melinda Hodkiewicz" ;
+             rdfs:label "hasState" ;
+             skos:definition "identifies the state of the item" ;
+             voc:iofIRI "https://spec.industrialontologies.org/iof/ontology/core/Core/MaterialState"^^xsd:anyURI .
 
 
 #################################################################
@@ -237,25 +258,6 @@ voc:DetectionMethod rdf:type owl:Class ;
                     cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
                     cmns-av:explanatoryNote ""@en ;
                     cmns-av:usageNote "ISO 14224-2023 Table B4 provides a categorization of detection methods (e.g. periodic testing or continuous condition monitoring)"@en .
-
-
-###  https://pid.vocab14224.org/Basic/DownState
-voc:DownState rdf:type owl:Class ;
-              rdfs:label "Down state"@en ;
-              rdfs:seeAlso ""@en ;
-              skos:altLabel "Internal disabled state"@en ,
-                            "Internally disabled state"@en ,
-                            "Unavailable state"@en ;
-              skos:definition "state of being unable to perform as required, due to internal fault, or preventative maintenance"@en ;
-              skos:example ""@en ;
-              skos:scopeNote ""@en ;
-              voc:en13306:definition "n/a"@en ;
-              voc:iec60812:definition "n/a"@en ;
-              voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-              cmns-av:adaptedFrom ""@en ;
-              cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-              cmns-av:explanatoryNote "down state relates to the unavailability of the item"@en ;
-              cmns-av:usageNote "the adjectives 'down' or 'unavailable' designate an item in down state"@en .
 
 
 ###  https://pid.vocab14224.org/Basic/Downtime
@@ -557,22 +559,6 @@ voc:HumanFatigue rdf:type owl:Class ;
                  cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/Basic/IdleState
-voc:IdleState rdf:type owl:Class ;
-              rdfs:label "Idle state"@en ;
-              rdfs:seeAlso ""@en ;
-              skos:altLabel "Standby state"@en ;
-              skos:definition "non-operating up state during non-required time"@en ;
-              skos:example ""@en ;
-              skos:scopeNote ""@en ;
-              voc:en13306:definition "n/a"@en ;
-              voc:iec60812:definition "n/a"@en ;
-              voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-              cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-              cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-              cmns-av:explanatoryNote "The adjective 'idle' designates an item in idle state"@en ;
-              cmns-av:usageNote "In some applications, an item in an idle state has some functioning subsystems, and is therefore considered to be operating"@en ,
-                                "The non-operating time comprises the idle time, the stand-by time and the externally disabled time "@en .
 
 
 ###  https://pid.vocab14224.org/Basic/IncipientFailure
@@ -780,13 +766,39 @@ voc:MaintenancePlan rdf:type owl:Class ;
                     cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/Basic/MaintenanceStrategyType
-voc:MaintenanceStrategyType rdf:type owl:Class ;
-                            rdfs:comment """This concept is not in ISO 14224. It is added to this ontology to create a type for maintenance strategy concepts that are included in ISO 14224 terms and definitions. These concepts are modelled as individuals (not classes) because we do not have adequate concepts and axioms to distinguish between the concepts. Also in many data sets these terms are used as labels providing a label for an instance of a work order (for example) not instances of the e.g. corrective maintenance activity.
-The maintenance strategy concepts are Preventative Maintenance, Planned Maintenance, Predictive Maintenance, Corrective Maintenance and Condition-based Maintenance"""@en ;
-                            rdfs:isDefinedBy "Melinda Hodkiewicz" ;
-                            rdfs:label "Maintenance strategy type"@en ;
-                            skos:definition "strategy for maintenance of a specific item"@en .
+###  https://pid.vocab14224.org/Basic/TypeMaintenanceStrategy
+voc:TypeMaintenanceStrategy rdf:type owl:Class ;
+                            rdfs:label "Type of maintenance strategy"@en ;
+                            rdfs:seeAlso ""@en ;
+                            skos:altLabel ""@en ;
+                            skos:definition "strategy for maintenance of a specific item"@en ;
+                            skos:example "corrective maintenance, condition-based maintenance, opportunistic maintenance, planned maintenance, predictive maintenance, reactive maintenance"@en ;
+                            skos:scopeNote ""@en ;
+                            voc:en13306:definition "n/a"@en ;
+                            voc:iec60812:definition "n/a"@en ;
+                            voc:iso14224:section ""^^xsd:anyURI ;
+                            cmns-av:adaptedFrom ""@en ;
+                            cmns-av:directSource "None"@en ;
+                            cmns-av:explanatoryNote "This concept is not in ISO 14224. It is added to this ontology to create a type for maintenance strategy concepts that are included in ISO 14224 terms and definitions. These concepts are modelled as individuals (not classes) because we do not have adequate concepts and axioms to distinguish between the concepts. Also in many data sets these terms are used as labels providing a label for an instance of a work order (for example) not instances of the e.g. corrective maintenance activity"@en ;
+                            cmns-av:usageNote ""@en .
+
+
+###  https://pid.vocab14224.org/Basic/TypeMaterialState
+voc:TypeMaterialState rdf:type owl:Class ;
+                  rdfs:label "Type of material state"@en ;
+                  rdfs:seeAlso ""@en ;
+                  skos:altLabel ""@en ;
+                  skos:definition "process in which a material entity (item) that participates in the process has a condition that remains unchanged"@en ;
+                  skos:example ""@en ;
+                  skos:scopeNote ""@en ;
+                  voc:iofIRI "https://spec.industrialontologies.org/ontology/construct/MaterialState/"^^xsd:anyURI ;
+                  voc:en13306:definition "n/a"@en ;
+                  voc:iec60812:definition "n/a"@en ;
+                  voc:iso14224:section ""^^xsd:anyURI ;
+                  cmns-av:adaptedFrom ""@en ;
+                  cmns-av:directSource "Industrial Ontology Foundry (IOF) ontology"@en ;
+                  cmns-av:explanatoryNote ""@en ;
+                  cmns-av:usageNote ""@en .
 
 
 ###  https://pid.vocab14224.org/Basic/NonCriticalFailure
@@ -805,22 +817,6 @@ voc:NonCriticalFailure rdf:type owl:Class ;
                        cmns-av:explanatoryNote "non-critical failures can be categorized as 'degraded' or 'incipient' failures"@en ;
                        cmns-av:usageNote ""@en .
 
-
-###  https://pid.vocab14224.org/Basic/OperatingState
-voc:OperatingState rdf:type owl:Class ;
-                   rdfs:label "Operating state"@en ;
-                   rdfs:seeAlso ""@en ;
-                   skos:altLabel ""@en ;
-                   skos:definition "state of performing as required"@en ;
-                   skos:example ""@en ;
-                   skos:scopeNote ""@en ;
-                   voc:en13306:definition "n/a"@en ;
-                   voc:iec60812:definition "n/a"@en ;
-                   voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                   cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                   cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                   cmns-av:explanatoryNote ""@en ;
-                   cmns-av:usageNote "in some applications, an item in idle state is considered to be operating"@en .
 
 
 ###  https://pid.vocab14224.org/Basic/PerformanceObjective
@@ -1096,21 +1092,7 @@ voc:Uncertainty rdf:type owl:Class ;
                 cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/Basic/UpState
-voc:UpState rdf:type owl:Class ;
-            rdfs:label "Up state"@en ;
-            rdfs:seeAlso ""@en ;
-            skos:altLabel "Available state"@en ;
-            skos:definition "state of being able to perform as required"@en ;
-            skos:example ""@en ;
-            skos:scopeNote ""@en ;
-            voc:en13306:definition "state of an item being able to perform a required function, assuming that the external resources, if required, are provided"@en ;
-            voc:iec60812:definition "n/a"@en ;
-            voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-            cmns-av:adaptedFrom ""@en ;
-            cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-            cmns-av:explanatoryNote ""@en ;
-            cmns-av:usageNote ""@en .
+
 
 
 #################################################################
@@ -1151,6 +1133,64 @@ voc:corrective_maintenance rdf:type owl:NamedIndividual ,
                            cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
                            cmns-av:explanatoryNote ""@en ;
                            cmns-av:usageNote "corrective maintenance of software invariably involves some modification"@en .
+
+
+###  https://pid.vocab14224.org/Basic/down_state
+voc:down_state rdf:type owl:NamedIndividual ,
+                        voc:MaterialState ;
+               rdfs:label "down state"@en ;
+               rdfs:seeAlso ""@en ;
+               skos:altLabel "internal disabled state"@en ,
+                             "internally disabled state"@en ,
+                             "unavailable state"@en ;
+               skos:definition "state of being unable to perform as required, due to internal fault, or preventative maintenance"@en ;
+               skos:example ""@en ;
+               skos:scopeNote ""@en ;
+               voc:en13306:definition "n/a"@en ;
+               voc:iec60812:definition "n/a"@en ;
+               voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+               cmns-av:adaptedFrom ""@en ;
+               cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+               cmns-av:explanatoryNote "down state relates to the unavailability of the item"@en ;
+               cmns-av:usageNote "the adjectives 'down' or 'unavailable' designate an item in down state"@en .
+
+
+###  https://pid.vocab14224.org/Basic/idle_state
+voc:idle_state rdf:type owl:NamedIndividual ,
+                        voc:MaterialState ;
+              rdfs:label "idle state"@en ;
+              rdfs:seeAlso ""@en ;
+              skos:altLabel "Standby state"@en ;
+              skos:definition "non-operating up state during non-required time"@en ;
+              skos:example ""@en ;
+              skos:scopeNote ""@en ;
+              voc:en13306:definition "n/a"@en ;
+              voc:iec60812:definition "n/a"@en ;
+              voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+              cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+              cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+              cmns-av:explanatoryNote "The adjective 'idle' designates an item in idle state"@en ;
+              cmns-av:usageNote "In some applications, an item in an idle state has some functioning subsystems, and is therefore considered to be operating"@en ,
+                                "The non-operating time comprises the idle time, the stand-by time and the externally disabled time "@en .
+
+
+###  https://pid.vocab14224.org/Basic/operating_state
+voc:operating_state rdf:type owl:NamedIndividual ,
+                        voc:MaterialState ;
+                   rdfs:label "operating state"@en ;
+                   rdfs:seeAlso ""@en ;
+                   skos:altLabel ""@en ;
+                   skos:definition "state of performing as required"@en ;
+                   skos:example ""@en ;
+                   skos:scopeNote ""@en ;
+                   voc:en13306:definition "n/a"@en ;
+                   voc:iec60812:definition "n/a"@en ;
+                   voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                   cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                   cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                   cmns-av:explanatoryNote ""@en ;
+                   cmns-av:usageNote "in some applications, an item in idle state is considered to be operating"@en .
+
 
 
 ###  https://pid.vocab14224.org/Basic/opportunity_maintenance
@@ -1226,5 +1266,22 @@ voc:preventative_maintenance rdf:type owl:NamedIndividual ,
                              cmns-av:explanatoryNote ""@en ;
                              cmns-av:usageNote "See also condition-based maintenance (https://pid.vocab14224.org/ConditionBasedMaintenance) and planned (scheduled) maintenance (https://www.vocab14224.org/PlannedMaintenance)"@en .
 
+
+###  https://pid.vocab14224.org/Basic/up_state
+voc:up_state rdf:type owl:NamedIndividual ,
+                      voc:MaterialState ;
+            rdfs:label "up state"@en ;
+            rdfs:seeAlso ""@en ;
+            skos:altLabel "Available state"@en ;
+            skos:definition "state of being able to perform as required"@en ;
+            skos:example ""@en ;
+            skos:scopeNote ""@en ;
+            voc:en13306:definition "state of an item being able to perform a required function, assuming that the external resources, if required, are provided"@en ;
+            voc:iec60812:definition "n/a"@en ;
+            voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+            cmns-av:adaptedFrom ""@en ;
+            cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+            cmns-av:explanatoryNote ""@en ;
+            cmns-av:usageNote ""@en .
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
