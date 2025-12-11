@@ -135,7 +135,8 @@ voc:hasState rdf:type owl:ObjectProperty ;
              rdfs:isDefinedBy "Melinda Hodkiewicz" ;
              rdfs:label "hasState" ;
              skos:definition "identifies the state of the item" ;
-             voc:iofIRI "https://spec.industrialontologies.org/iof/ontology/core/Core/MaterialState"^^xsd:anyURI .
+             voc:iofIRI "" ,
+                        "https://spec.industrialontologies.org/ontology/construct/hasMaintenanceState" .
 
 
 ###  https://pid.vocab14224.org/Basic/hasTestType
@@ -281,6 +282,7 @@ voc:Failure rdf:type owl:Class ;
             skos:definition "loss of ability to perform as required"@en ;
             skos:example ""@en ;
             skos:scopeNote "this concept as defined does not apply to items consisting of software only"@en ;
+            voc:iofIRI "https://spec.industrialontologies.org/ontology/construct/FailureEvent/"^^xsd:anyURI ;
             voc:en13306:definition "loss of the ability of an item to perform a required function"@en ;
             voc:iec60812:definition "n/a"@en ;
             voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
@@ -318,6 +320,8 @@ voc:FailureImpact rdf:type owl:Class ;
                   skos:definition "effect of a failure on an equipment's function(s) or on the plant"@en ;
                   skos:example ""@en ;
                   skos:scopeNote ""@en ;
+                  voc:iofIRI "" ,
+                             "https://spec.industrialontologies.org/ontology/construct/FailureEffect/" ;
                   voc:en13306:definition "EN13306 does not define 'failure impact' but does define 'failure severity' as potential or actual detrimental consequences of a failure or fault"@en ;
                   voc:iec60812:definition "IEC60812 does not define 'failure impact' but does define 'failure effect' as consequence of a failure, within or beyond the boundary of the failure item"@en ;
                   voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
@@ -495,6 +499,7 @@ voc:Maintenance rdf:type owl:Class ;
                 skos:definition "combination of all technical and management actions intended to retain an item in, or restore it to, a state in which it can perform as required "@en ;
                 skos:example ""@en ;
                 skos:scopeNote ""@en ;
+                voc:iofIRI "https://spec.industrialontologies.org/ontology/construct/MaintenanceProcess/"^^xsd:anyURI ;
                 voc:en13306:definition "combination of all technical, administrative and managerial actions during the life cycle of an item intended to retain it in, or restore it to, a state in which it can perform the required function"@en ;
                 voc:iec60812:definition "n/a"@en ;
                 voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
@@ -615,6 +620,7 @@ voc:RequiredFunction rdf:type owl:Class ;
                      skos:definition "function or combination of functions of an item that is considered necessary to provide a given service"@en ;
                      skos:example ""@en ;
                      skos:scopeNote ""@en ;
+                     voc:iofIRI "https://spec.industrialontologies.org/ontology/construct/RequiredFunction/"^^xsd:anyURI ;
                      voc:en13306:definition "function, combination of functions, or a total combination of functions of an item which are considered necessary to fulfil a given requirement"@en ;
                      voc:iec60812:definition "n/a"@en ;
                      voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
@@ -738,6 +744,7 @@ voc:TypeMaintenanceStrategy rdf:type owl:Class ;
                             skos:definition "strategy for maintenance of a specific item"@en ;
                             skos:example "corrective maintenance, condition-based maintenance, opportunistic maintenance, planned maintenance, predictive maintenance, reactive maintenance"@en ;
                             skos:scopeNote ""@en ;
+                            voc:iofIRI "https://spec.industrialontologies.org/ontology/construct/MaintenanceStrategy/"^^xsd:anyURI ;
                             voc:en13306:definition "n/a"@en ;
                             voc:iec60812:definition "n/a"@en ;
                             voc:iso14224:section ""^^xsd:anyURI ;
@@ -987,6 +994,7 @@ voc:down_state rdf:type owl:NamedIndividual ,
                skos:scopeNote ""@en ;
                voc:en13306:definition "n/a"@en ;
                voc:iec60812:definition "n/a"@en ;
+               voc:iof:definition "https://spec.industrialontologies.org/ontology/construct/FailedState/"^^xsd:anyURI ;
                voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
                cmns-av:adaptedFrom ""@en ;
                cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
@@ -1187,6 +1195,7 @@ voc:operating_state rdf:type owl:NamedIndividual ,
                     skos:scopeNote ""@en ;
                     voc:en13306:definition "n/a"@en ;
                     voc:iec60812:definition "n/a"@en ;
+                    voc:iof:definition "https://spec.industrialontologies.org/ontology/construct/OperatingState/"^^xsd:anyURI ;
                     voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
                     cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
                     cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
