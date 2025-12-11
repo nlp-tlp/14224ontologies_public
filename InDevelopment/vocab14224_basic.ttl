@@ -95,8 +95,12 @@ cmns-av:usageNote rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://www.w3.org/2002/07/owl#topObjectProperty
-owl:topObjectProperty rdfs:range voc:TypeMaintenanceStrategy .
+###  https://pid.vocab14224.org/Basic/hasDataType
+voc:hasDataType rdf:type owl:ObjectProperty ;
+                rdfs:range voc:TypeData ;
+                rdfs:isDefinedBy "Melinda Hodkiewicz" ;
+                rdfs:label "hasDataType" ;
+                skos:definition "identifies the type of data of interest" .
 
 
 ###  https://pid.vocab14224.org/Basic/hasFailureEventType
@@ -115,12 +119,14 @@ voc:hasMaintenanceStrategy rdf:type owl:ObjectProperty ;
                            rdfs:label "hasMaintenanceStrategy" ;
                            skos:definition "identifies the maintenance strategy type" .
 
+
 ###  https://pid.vocab14224.org/Basic/hasReliabilityMeasure
-voc:hasREliabilityMeasure rdf:type owl:ObjectProperty ;
-                           rdfs:range voc:TypeReliabilityMeasure ;
-                           rdfs:isDefinedBy "Melinda Hodkiewicz" ;
-                           rdfs:label "hasReliabilityMeasure" ;
-                           skos:definition "identifies the reliability measure of interest" .
+voc:hasReliabilityMeasure rdf:type owl:ObjectProperty ;
+                          rdfs:range voc:TypeReliabilityMeasure ;
+                          rdfs:isDefinedBy "Melinda Hodkiewicz" ;
+                          rdfs:label "hasReliabilityMeasure" ;
+                          skos:definition "identifies the reliability measure of interest" .
+
 
 ###  https://pid.vocab14224.org/Basic/hasState
 voc:hasState rdf:type owl:ObjectProperty ;
@@ -132,15 +138,22 @@ voc:hasState rdf:type owl:ObjectProperty ;
              voc:iofIRI "https://spec.industrialontologies.org/iof/ontology/core/Core/MaterialState"^^xsd:anyURI .
 
 
+###  https://pid.vocab14224.org/Basic/hasTestType
+voc:hasTestType rdf:type owl:ObjectProperty ;
+                rdfs:domain voc:DetectionMethod ;
+                rdfs:range voc:TypeTest ;
+                rdfs:isDefinedBy "Melinda Hodkiewicz" ;
+                rdfs:label "hasTestType" ;
+                skos:definition "identifies the reliability measure of interest" .
+
+
 #################################################################
 #    Classes
 #################################################################
 
-
-
-
 ###  https://pid.vocab14224.org/Basic/Boundary
 voc:Boundary rdf:type owl:Class ;
+             rdfs:subClassOf voc:Z_OutOfScope ;
              rdfs:label "Boundary"@en ;
              rdfs:seeAlso ""@en ;
              skos:altLabel ""@en ;
@@ -154,23 +167,6 @@ voc:Boundary rdf:type owl:Class ;
              cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
              cmns-av:explanatoryNote ""@en ;
              cmns-av:usageNote ""@en .
-
-
-###  https://pid.vocab14224.org/Basic/Demand
-voc:Demand rdf:type owl:Class ;
-           rdfs:label "Demand"@en ;
-           rdfs:seeAlso ""@en ;
-           skos:altLabel ""@en ;
-           skos:definition "activation of the function (includes functional, operational and test activations)"@en ;
-           skos:example ""@en ;
-           skos:scopeNote ""@en ;
-           voc:en13306:definition "n/a"@en ;
-           voc:iec60812:definition "n/a"@en ;
-           voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-           cmns-av:adaptedFrom ""@en ;
-           cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-           cmns-av:explanatoryNote ""@en ;
-           cmns-av:usageNote ""@en .
 
 
 ###  https://pid.vocab14224.org/Basic/DetectionMethod
@@ -312,23 +308,6 @@ voc:FailureCause rdf:type owl:Class ;
                  cmns-av:usageNote "Tables in Appendix B of ISO 14224 define failure causes for selected equipment classes"@en .
 
 
-###  https://pid.vocab14224.org/Basic/FailureData
-voc:FailureData rdf:type owl:Class ;
-                rdfs:label "Failure data"@en ;
-                rdfs:seeAlso ""@en ;
-                skos:altLabel ""@en ;
-                skos:definition "data characterizing the occurrence of a failure event"@en ;
-                skos:example ""@en ;
-                skos:scopeNote ""@en ;
-                voc:en13306:definition "n/a"@en ;
-                voc:iec60812:definition "n/a"@en ;
-                voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                cmns-av:adaptedFrom ""@en ;
-                cmns-av:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
-                cmns-av:explanatoryNote ""@en ;
-                cmns-av:usageNote "ISO 14224:2023 Table 6 provides a list of data to be recorded"@en .
-
-
 ###  https://pid.vocab14224.org/Basic/FailureImpact
 voc:FailureImpact rdf:type owl:Class ;
                   rdfs:label "Failure impact"@en ;
@@ -404,6 +383,7 @@ voc:Fault rdf:type owl:Class ;
 
 ###  https://pid.vocab14224.org/Basic/HumanError
 voc:HumanError rdf:type owl:Class ;
+               rdfs:subClassOf voc:Error ;
                rdfs:label "Human error"@en ;
                rdfs:seeAlso ""@en ;
                skos:altLabel ""@en ;
@@ -437,9 +417,6 @@ voc:HumanFatigue rdf:type owl:Class ;
                  cmns-av:usageNote ""@en .
 
 
-
-
-
 ###  https://pid.vocab14224.org/Basic/IndentureLevel
 voc:IndentureLevel rdf:type owl:Class ;
                    rdfs:label "Indenture"@en ;
@@ -455,8 +432,6 @@ voc:IndentureLevel rdf:type owl:Class ;
                    cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
                    cmns-av:explanatoryNote ""@en ;
                    cmns-av:usageNote ""@en .
-
-
 
 
 ###  https://pid.vocab14224.org/Basic/Item
@@ -479,6 +454,7 @@ voc:Item rdf:type owl:Class ;
 
 ###  https://pid.vocab14224.org/Basic/LatentFault
 voc:LatentFault rdf:type owl:Class ;
+                rdfs:subClassOf voc:Fault ;
                 rdfs:label "Latent fault"@en ;
                 rdfs:seeAlso ""@en ;
                 skos:altLabel "undetected fault"@en ;
@@ -492,9 +468,6 @@ voc:LatentFault rdf:type owl:Class ;
                 cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
                 cmns-av:explanatoryNote ""@en ;
                 cmns-av:usageNote ""@en .
-
-
-
 
 
 ###  https://pid.vocab14224.org/Basic/MaintainableItem
@@ -546,23 +519,6 @@ voc:MaintenanceConcept rdf:type owl:Class ;
                        cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
                        cmns-av:explanatoryNote "The maintenance policy provides the basis for maintenance planning, determining supportability requirements, and developing logistic support"@en ;
                        cmns-av:usageNote ""@en .
-
-
-###  https://pid.vocab14224.org/Basic/MaintenanceData
-voc:MaintenanceData rdf:type owl:Class ;
-                    rdfs:label "Maintenance data"@en ;
-                    rdfs:seeAlso ""@en ;
-                    skos:altLabel ""@en ;
-                    skos:definition "data characterizing the maintenance action planned or done"@en ;
-                    skos:example ""@en ;
-                    skos:scopeNote ""@en ;
-                    voc:en13306:definition "n/a"@en ;
-                    voc:iec60812:definition "n/a"@en ;
-                    voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                    cmns-av:adaptedFrom ""@en ;
-                    cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                    cmns-av:explanatoryNote ""@en ;
-                    cmns-av:usageNote ""@en .
 
 
 ###  https://pid.vocab14224.org/Basic/MaintenanceImpact
@@ -633,25 +589,9 @@ voc:PerformanceRequirement rdf:type owl:Class ;
                            cmns-av:usageNote "requirements are normally quantitative but can also be qualitative"@en .
 
 
-###  https://pid.vocab14224.org/Basic/PeriodicTest
-voc:PeriodicTest rdf:type owl:Class ;
-                 rdfs:label "Periodic test"@en ;
-                 rdfs:seeAlso ""@en ;
-                 skos:altLabel "Proof test"@en ;
-                 skos:definition "planned operation performed at constant intervals in order to detect the potential hidden failures which can have occurred in the meantime "@en ;
-                 skos:example ""@en ;
-                 skos:scopeNote ""@en ;
-                 voc:en13306:definition "n/a"@en ;
-                 voc:iec60812:definition "n/a"@en ;
-                 voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                 cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                 cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                 cmns-av:explanatoryNote "The unsafe hidden failures of a safety system which are not detected by diagnostic tests can be detected by periodic tests"@en ;
-                 cmns-av:usageNote ""@en .
-
-
 ###  https://pid.vocab14224.org/Basic/Redundancy
 voc:Redundancy rdf:type owl:Class ;
+               rdfs:subClassOf voc:Z_OutOfScope ;
                rdfs:label "Redundancy"@en ;
                rdfs:seeAlso ""@en ;
                skos:altLabel "PDM"@en ;
@@ -665,26 +605,6 @@ voc:Redundancy rdf:type owl:Class ;
                cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
                cmns-av:explanatoryNote ""@en ;
                cmns-av:usageNote ""@en .
-
-
-
-
-
-###  https://pid.vocab14224.org/Basic/ReliabilityData
-voc:ReliabilityData rdf:type owl:Class ;
-                    rdfs:label "Reliability data"@en ;
-                    rdfs:seeAlso ""@en ;
-                    skos:altLabel ""@en ;
-                    skos:definition "data for reliability, maintainability and maintenance support performance"@en ;
-                    skos:example ""@en ;
-                    skos:scopeNote ""@en ;
-                    voc:en13306:definition "n/a"@en ;
-                    voc:iec60812:definition "n/a"@en ;
-                    voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                    cmns-av:adaptedFrom "ISO 20815:2008"@en ;
-                    cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                    cmns-av:explanatoryNote ""@en ;
-                    cmns-av:usageNote ""@en .
 
 
 ###  https://pid.vocab14224.org/Basic/RequiredFunction
@@ -704,10 +624,9 @@ voc:RequiredFunction rdf:type owl:Class ;
                      cmns-av:usageNote ""@en .
 
 
-
-
 ###  https://pid.vocab14224.org/Basic/SoftwareError
 voc:SoftwareError rdf:type owl:Class ;
+                  rdfs:subClassOf voc:Error ;
                   rdfs:label "Software error"@en ;
                   rdfs:seeAlso ""@en ;
                   skos:altLabel ""@en ;
@@ -757,8 +676,6 @@ voc:TagNumber rdf:type owl:Class ;
               cmns-av:usageNote "normally includes the system for which it belongs"@en .
 
 
-
-
 ###  https://pid.vocab14224.org/Basic/Turnaround
 voc:Turnaround rdf:type owl:Class ;
                rdfs:label "Turnaround"@en ;
@@ -775,6 +692,24 @@ voc:Turnaround rdf:type owl:Class ;
                cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
                cmns-av:explanatoryNote ""@en ;
                cmns-av:usageNote ""@en .
+
+
+###  https://pid.vocab14224.org/Basic/TypeData
+voc:TypeData rdf:type owl:Class ;
+             rdfs:label "Type of data"@en ;
+             rdfs:seeAlso ""@en ;
+             skos:altLabel ""@en ;
+             skos:definition "label why the data is collected"@en ;
+             skos:example "reliability data, maintenance data"@en ;
+             skos:scopeNote ""@en ;
+             voc:iofIRI ""^^xsd:anyURI ;
+             voc:en13306:definition "n/a"@en ;
+             voc:iec60812:definition "n/a"@en ;
+             voc:iso14224:section ""^^xsd:anyURI ;
+             cmns-av:adaptedFrom ""@en ;
+             cmns-av:directSource "None"@en ;
+             cmns-av:explanatoryNote ""@en ;
+             cmns-av:usageNote ""@en .
 
 
 ###  https://pid.vocab14224.org/Basic/TypeFailureEvent
@@ -829,25 +764,46 @@ voc:TypeMaterialState rdf:type owl:Class ;
                       cmns-av:explanatoryNote ""@en ;
                       cmns-av:usageNote ""@en .
 
+
 ###  https://pid.vocab14224.org/Basic/TypeReliabilityMeasure
 voc:TypeReliabilityMeasure rdf:type owl:Class ;
-                      rdfs:label "Type of reliability measure"@en ;
-                      rdfs:seeAlso ""@en ;
-                      skos:altLabel ""@en ;
-                      skos:definition "measure of a reliability-related performance of an item "@en ;
-                      skos:example "reliability, maintainability, availability"@en ;
-                      skos:scopeNote ""@en ;
-                      voc:iofIRI ""^^xsd:anyURI ;
-                      voc:en13306:definition "n/a"@en ;
-                      voc:iec60812:definition "n/a"@en ;
-                      voc:iso14224:section ""^^xsd:anyURI ;
-                      cmns-av:adaptedFrom ""@en ;
-                      cmns-av:directSource ""@en ;
-                      cmns-av:explanatoryNote "This concept is not in ISO 14224. It is added to this ontology to create a type for performance measures commonly captured in degradation. These concepts are modelled as individuals (not classes) because we do not have adequate concepts and axioms to distinguish between the concepts. Also in many data sets these terms are used as labels in data tables for values associated with these measures"@en ;
-                      cmns-av:usageNote ""@en .
+                           rdfs:label "Type of reliability measure"@en ;
+                           rdfs:seeAlso ""@en ;
+                           skos:altLabel ""@en ;
+                           skos:definition "measure of a reliability-related performance of an item "@en ;
+                           skos:example "reliability, maintainability, availability"@en ;
+                           skos:scopeNote ""@en ;
+                           voc:iofIRI ""^^xsd:anyURI ;
+                           voc:en13306:definition "n/a"@en ;
+                           voc:iec60812:definition "n/a"@en ;
+                           voc:iso14224:section ""^^xsd:anyURI ;
+                           cmns-av:adaptedFrom ""@en ;
+                           cmns-av:directSource ""@en ;
+                           cmns-av:explanatoryNote "This concept is not in ISO 14224. It is added to this ontology to create a type for performance measures commonly captured in degradation. These concepts are modelled as individuals (not classes) because we do not have adequate concepts and axioms to distinguish between the concepts. Also in many data sets these terms are used as labels in data tables for values associated with these measures"@en ;
+                           cmns-av:usageNote ""@en .
+
+
+###  https://pid.vocab14224.org/Basic/TypeTest
+voc:TypeTest rdf:type owl:Class ;
+             rdfs:label "Type of test"@en ;
+             rdfs:seeAlso ""@en ;
+             skos:altLabel ""@en ;
+             skos:definition "label describing the nature of a test"@en ;
+             skos:example "on demand test, periodic test"@en ;
+             skos:scopeNote ""@en ;
+             voc:iofIRI ""^^xsd:anyURI ;
+             voc:en13306:definition "n/a"@en ;
+             voc:iec60812:definition "n/a"@en ;
+             voc:iso14224:section ""^^xsd:anyURI ;
+             cmns-av:adaptedFrom ""@en ;
+             cmns-av:directSource "None"@en ;
+             cmns-av:explanatoryNote ""@en ;
+             cmns-av:usageNote ""@en .
+
 
 ###  https://pid.vocab14224.org/Basic/Uncertainty
 voc:Uncertainty rdf:type owl:Class ;
+                rdfs:subClassOf voc:Z_OutOfScope ;
                 rdfs:label "Uncertainty"@en ;
                 rdfs:seeAlso ""@en ;
                 skos:altLabel ""@en ;
@@ -863,13 +819,17 @@ voc:Uncertainty rdf:type owl:Class ;
                 cmns-av:usageNote ""@en .
 
 
+###  https://pid.vocab14224.org/Basic/Z_OutOfScope
+voc:Z_OutOfScope rdf:type owl:Class .
+
+
 #################################################################
 #    Individuals
 #################################################################
 
 ###  https://pid.vocab14224.org/Basic/availability
 voc:availability rdf:type owl:NamedIndividual ,
-                 voc:TypeReliabilityMeasure ;
+                          voc:TypeReliabilityMeasure ;
                  rdfs:label "availability"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
@@ -883,6 +843,7 @@ voc:availability rdf:type owl:NamedIndividual ,
                  cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
                  cmns-av:explanatoryNote ""@en ;
                  cmns-av:usageNote "See detailed description and interpretation of availability in Annex C of the standard"@en .
+
 
 ###  https://pid.vocab14224.org/Basic/common_cause_failure
 voc:common_cause_failure rdf:type owl:NamedIndividual ,
@@ -995,6 +956,24 @@ voc:degraded_failure rdf:type owl:NamedIndividual ,
                      cmns-av:usageNote ""@en .
 
 
+###  https://pid.vocab14224.org/Basic/demand
+voc:demand rdf:type owl:NamedIndividual ,
+                    voc:TypeTest ;
+           rdfs:label "demand"@en ;
+           rdfs:seeAlso ""@en ;
+           skos:altLabel ""@en ;
+           skos:definition "activation of the function (includes functional, operational and test activations)"@en ;
+           skos:example ""@en ;
+           skos:scopeNote ""@en ;
+           voc:en13306:definition "n/a"@en ;
+           voc:iec60812:definition "n/a"@en ;
+           voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+           cmns-av:adaptedFrom ""@en ;
+           cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+           cmns-av:explanatoryNote ""@en ;
+           cmns-av:usageNote ""@en .
+
+
 ###  https://pid.vocab14224.org/Basic/down_state
 voc:down_state rdf:type owl:NamedIndividual ,
                         voc:TypeMaterialState ;
@@ -1013,6 +992,24 @@ voc:down_state rdf:type owl:NamedIndividual ,
                cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
                cmns-av:explanatoryNote "down state relates to the unavailability of the item"@en ;
                cmns-av:usageNote "the adjectives 'down' or 'unavailable' designate an item in down state"@en .
+
+
+###  https://pid.vocab14224.org/Basic/failure_data
+voc:failure_data rdf:type owl:NamedIndividual ,
+                          voc:TypeData ;
+                 rdfs:label "failure data"@en ;
+                 rdfs:seeAlso ""@en ;
+                 skos:altLabel ""@en ;
+                 skos:definition "data characterizing the occurrence of a failure event"@en ;
+                 skos:example ""@en ;
+                 skos:scopeNote ""@en ;
+                 voc:en13306:definition "n/a"@en ;
+                 voc:iec60812:definition "n/a"@en ;
+                 voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                 cmns-av:adaptedFrom ""@en ;
+                 cmns-av:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
+                 cmns-av:explanatoryNote ""@en ;
+                 cmns-av:usageNote "ISO 14224:2023 Table 6 provides a list of data to be recorded"@en .
 
 
 ###  https://pid.vocab14224.org/Basic/failure_due_to_demand
@@ -1088,27 +1085,28 @@ voc:idle_state rdf:type owl:NamedIndividual ,
                cmns-av:usageNote "In some applications, an item in an idle state has some functioning subsystems, and is therefore considered to be operating"@en ,
                                  "The non-operating time comprises the idle time, the stand-by time and the externally disabled time "@en .
 
+
 ###  https://pid.vocab14224.org/Basic/incipient_failure
 voc:incipient_failure rdf:type owl:NamedIndividual ,
-                     voc:TypeFailureEvent ;
-                     rdfs:label "incipient failure"@en ;
-                     rdfs:seeAlso ""@en ;
-                     skos:altLabel ""@en ;
-                     skos:definition "imperfection in the state or condition of an item so that a degraded or critical failure might (or might not) eventually be the expected result if corrective action is taken "@en ;
-                     skos:example ""@en ;
-                     skos:scopeNote ""@en ;
-                     voc:en13306:definition "n/a"@en ;
-                     voc:iec60812:definition "n/a"@en ;
-                     voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                     cmns-av:adaptedFrom ""@en ;
-                     cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                     cmns-av:explanatoryNote ""@en ;
-                     cmns-av:usageNote "the recording of an incipient failure requires some criteria for when a fault of this nature requires registration as opposed to a state/ condition where no corrective actions are required"@en .
+                               voc:TypeFailureEvent ;
+                      rdfs:label "incipient failure"@en ;
+                      rdfs:seeAlso ""@en ;
+                      skos:altLabel ""@en ;
+                      skos:definition "imperfection in the state or condition of an item so that a degraded or critical failure might (or might not) eventually be the expected result if corrective action is taken "@en ;
+                      skos:example ""@en ;
+                      skos:scopeNote ""@en ;
+                      voc:en13306:definition "n/a"@en ;
+                      voc:iec60812:definition "n/a"@en ;
+                      voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                      cmns-av:adaptedFrom ""@en ;
+                      cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                      cmns-av:explanatoryNote ""@en ;
+                      cmns-av:usageNote "the recording of an incipient failure requires some criteria for when a fault of this nature requires registration as opposed to a state/ condition where no corrective actions are required"@en .
 
 
 ###  https://pid.vocab14224.org/Basic/integrity
 voc:integrity rdf:type owl:NamedIndividual ,
-              voc:TypeReliabilityMeasure  ;
+                       voc:TypeReliabilityMeasure ;
               rdfs:label "integrity"@en ;
               rdfs:seeAlso ""@en ;
               skos:altLabel ""@en ;
@@ -1123,9 +1121,10 @@ voc:integrity rdf:type owl:NamedIndividual ,
               cmns-av:explanatoryNote ""@en ;
               cmns-av:usageNote ""@en .
 
+
 ###  https://pid.vocab14224.org/Basic/maintainability
 voc:maintainability rdf:type owl:NamedIndividual ,
-                    voc:TypeReliabilityMeasure ;
+                             voc:TypeReliabilityMeasure ;
                     rdfs:label "maintainability"@en ;
                     rdfs:seeAlso ""@en ;
                     skos:altLabel ""@en ;
@@ -1139,6 +1138,25 @@ voc:maintainability rdf:type owl:NamedIndividual ,
                     cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
                     cmns-av:explanatoryNote ""@en ;
                     cmns-av:usageNote "Maintainability can be quantified using appropriate measures"@en .
+
+
+###  https://pid.vocab14224.org/Basic/maintenance_data
+voc:maintenance_data rdf:type owl:NamedIndividual ,
+                              voc:TypeData ;
+                     rdfs:label "maintenance data"@en ;
+                     rdfs:seeAlso ""@en ;
+                     skos:altLabel ""@en ;
+                     skos:definition "data characterizing the maintenance action planned or done"@en ;
+                     skos:example ""@en ;
+                     skos:scopeNote ""@en ;
+                     voc:en13306:definition "n/a"@en ;
+                     voc:iec60812:definition "n/a"@en ;
+                     voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                     cmns-av:adaptedFrom ""@en ;
+                     cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                     cmns-av:explanatoryNote ""@en ;
+                     cmns-av:usageNote ""@en .
+
 
 ###  https://pid.vocab14224.org/Basic/non_critical_failure
 voc:non_critical_failure rdf:type owl:NamedIndividual ,
@@ -1192,6 +1210,24 @@ voc:opportunity_maintenance rdf:type owl:NamedIndividual ,
                             cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
                             cmns-av:explanatoryNote ""@en ;
                             cmns-av:usageNote ""@en .
+
+
+###  https://pid.vocab14224.org/Basic/periodic_test
+voc:periodic_test rdf:type owl:NamedIndividual ,
+                           voc:TypeTest ;
+                  rdfs:label "periodic test"@en ;
+                  rdfs:seeAlso ""@en ;
+                  skos:altLabel "Proof test"@en ;
+                  skos:definition "planned operation performed at constant intervals in order to detect the potential hidden failures which can have occurred in the meantime "@en ;
+                  skos:example ""@en ;
+                  skos:scopeNote ""@en ;
+                  voc:en13306:definition "n/a"@en ;
+                  voc:iec60812:definition "n/a"@en ;
+                  voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                  cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                  cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                  cmns-av:explanatoryNote "The unsafe hidden failures of a safety system which are not detected by diagnostic tests can be detected by periodic tests"@en ;
+                  cmns-av:usageNote ""@en .
 
 
 ###  https://pid.vocab14224.org/Basic/planned_maintenance
@@ -1267,26 +1303,10 @@ voc:random_failure rdf:type owl:NamedIndividual ,
                    cmns-av:explanatoryNote ""@en ;
                    cmns-av:usageNote ""@en .
 
-###  https://pid.vocab14224.org/Basic/safety_critical_failure
-voc:safety_critical_failure rdf:type owl:NamedIndividual ,
-                          voc:TypeFailureEvent   ;
-                          rdfs:label "safety critical failure"@en ;
-                          rdfs:seeAlso ""@en ;
-                          skos:altLabel ""@en ;
-                          skos:definition "critical dangerous failures that are undetected"@en ;
-                          skos:example ""@en ;
-                          skos:scopeNote ""@en ;
-                          voc:en13306:definition "n/a"@en ;
-                          voc:iec60812:definition "n/a"@en ;
-                          voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-                          cmns-av:adaptedFrom ""@en ;
-                          cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                          cmns-av:explanatoryNote "Failures revealed by periodic tests (https://www.vocab14224.org/PeriodicTest)"@en ;
-                          cmns-av:usageNote ""@en .
 
 ###  https://pid.vocab14224.org/Basic/reliability
 voc:reliability rdf:type owl:NamedIndividual ,
-                voc:TypeReliabilityMeasure ;
+                         voc:TypeReliabilityMeasure ;
                 rdfs:label "reliability"@en ;
                 rdfs:seeAlso ""@en ;
                 skos:altLabel "PDM"@en ;
@@ -1302,22 +1322,41 @@ voc:reliability rdf:type owl:NamedIndividual ,
                 cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/Basic/trip
-voc:trip rdf:type owl:NamedIndividual ,
-         voc:TypeFailureEvent ;
-         rdfs:label "trip"@en ;
-         rdfs:seeAlso ""@en ;
-         skos:altLabel ""@en ;
-         skos:definition "shutdown of machinery from normal operating condition to full stop"@en ;
-         skos:example ""@en ;
-         skos:scopeNote ""@en ;
-         voc:en13306:definition "n/a"@en ;
-         voc:iec60812:definition "n/a"@en ;
-         voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
-         cmns-av:adaptedFrom ""@en ;
-         cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-         cmns-av:explanatoryNote "Real trip is effectuated as a result of a monitored (or calculated) value in the control system exceeding a pre-set limit. Spurious trip is the unexpected shutdown resulting from failure(s) in control/ monitoring system or error(s) imposed on the control/monitoring system originating from the environment or people "@en ;
-         cmns-av:usageNote ""@en .
+###  https://pid.vocab14224.org/Basic/reliability_data
+voc:reliability_data rdf:type owl:NamedIndividual ,
+                              voc:TypeData ;
+                     rdfs:label "reliability data"@en ;
+                     rdfs:seeAlso ""@en ;
+                     skos:altLabel ""@en ;
+                     skos:definition "data for reliability, maintainability and maintenance support performance"@en ;
+                     skos:example ""@en ;
+                     skos:scopeNote ""@en ;
+                     voc:en13306:definition "n/a"@en ;
+                     voc:iec60812:definition "n/a"@en ;
+                     voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                     cmns-av:adaptedFrom "ISO 20815:2008"@en ;
+                     cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                     cmns-av:explanatoryNote ""@en ;
+                     cmns-av:usageNote ""@en .
+
+
+###  https://pid.vocab14224.org/Basic/safety_critical_failure
+voc:safety_critical_failure rdf:type owl:NamedIndividual ,
+                                     voc:TypeFailureEvent ;
+                            rdfs:label "safety critical failure"@en ;
+                            rdfs:seeAlso ""@en ;
+                            skos:altLabel ""@en ;
+                            skos:definition "critical dangerous failures that are undetected"@en ;
+                            skos:example ""@en ;
+                            skos:scopeNote ""@en ;
+                            voc:en13306:definition "n/a"@en ;
+                            voc:iec60812:definition "n/a"@en ;
+                            voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+                            cmns-av:adaptedFrom ""@en ;
+                            cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                            cmns-av:explanatoryNote "Failures revealed by periodic tests (https://www.vocab14224.org/PeriodicTest)"@en ;
+                            cmns-av:usageNote ""@en .
+
 
 ###  https://pid.vocab14224.org/Basic/systemic_failure
 voc:systemic_failure rdf:type owl:NamedIndividual ,
@@ -1335,6 +1374,24 @@ voc:systemic_failure rdf:type owl:NamedIndividual ,
                      cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
                      cmns-av:explanatoryNote ""@en ;
                      cmns-av:usageNote ""@en .
+
+
+###  https://pid.vocab14224.org/Basic/trip
+voc:trip rdf:type owl:NamedIndividual ,
+                  voc:TypeFailureEvent ;
+         rdfs:label "trip"@en ;
+         rdfs:seeAlso ""@en ;
+         skos:altLabel ""@en ;
+         skos:definition "shutdown of machinery from normal operating condition to full stop"@en ;
+         skos:example ""@en ;
+         skos:scopeNote ""@en ;
+         voc:en13306:definition "n/a"@en ;
+         voc:iec60812:definition "n/a"@en ;
+         voc:iso14224:section "https://pid.vocab14224.org/Basic"^^xsd:anyURI ;
+         cmns-av:adaptedFrom ""@en ;
+         cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+         cmns-av:explanatoryNote "Real trip is effectuated as a result of a monitored (or calculated) value in the control system exceeding a pre-set limit. Spurious trip is the unexpected shutdown resulting from failure(s) in control/ monitoring system or error(s) imposed on the control/monitoring system originating from the environment or people "@en ;
+         cmns-av:usageNote ""@en .
 
 
 ###  https://pid.vocab14224.org/Basic/up_state
