@@ -13,14 +13,29 @@
 #    Object Properties
 #################################################################
 
+###  https://pid.vocab14224.org/Extended/hasFailureCause
+:hasFailureCause rdf:type owl:ObjectProperty .
+
+
 ###  https://pid.vocab14224.org/Extended/hasFailureMechanism
 :hasFailureMechanism rdf:type owl:ObjectProperty .
+
+###  https://pid.vocab14224.org/Extended/hasFailureMode
+:hasFailureMode rdf:type owl:ObjectProperty .
+
+###  https://pid.vocab14224.org/Extended/hasFailureCauseType
+:hasFailureCauseType rdf:type owl:ObjectProperty ;
+                         rdfs:domain <https://pid.vocab14224.org/Basic/FailureCause> ;
+                         rdfs:range :TypeFailureCause .
+
 
 
 ###  https://pid.vocab14224.org/Extended/hasFailureMechanismType
 :hasFailureMechanismType rdf:type owl:ObjectProperty ;
                          rdfs:domain <https://pid.vocab14224.org/Basic/FailureMechanism> ;
                          rdfs:range :TypeFailureMechanism .
+
+
 
 
 #################################################################
@@ -243,6 +258,11 @@
                           rdfs:subClassOf <https://pid.vocab14224.org/Basic/FailureMechanism> ;
                           rdfs:label "Sticking failure mechanism" .
 
+###  https://pid.vocab14224.org/Extended/TypeFailureCause
+:TypeFailureCause rdf:type owl:Class ;
+                      rdfs:label "Type of failure cause" .
+
+               
 
 ###  https://pid.vocab14224.org/Extended/TypeFailureMechanism
 :TypeFailureMechanism rdf:type owl:Class ;
