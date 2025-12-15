@@ -3,6 +3,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix voc: <https://pid.vocab14224.org/Basic/> .
+@prefix voc-ex: <https://pid.vocab14224.org/Extended/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,12 +12,12 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @base <http://www.semanticweb.org/owl/owlapi/turtle#> .
 
-<https://pid.vocab14224.org/Basic/> rdf:type owl:Ontology ;
-                                     owl:versionIRI <https://pid.vocab14224.org/2024-11-06/Basic/1.1> ;
+<https://pid.vocab14224.org/Extended/> rdf:type owl:Ontology ;
+                                     owl:versionIRI <https://pid.vocab14224.org/2024-11-06/Extended/1.1> ;
                                      dcterms:license " https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE" ;
                                      dcterms:rights "See github"@en ;
-                                     rdfs:comment "This Ontology reorganises the concepts modelled as OWL classes from the Terms and Definitions section of the ISO 14224:2016 standard available at https://pid.vocab14224.org/TermsAndDefinitions/ making some subclasses, introducing maintenance and failure related object properties and considering for data is actually available and what is usually the aim of knowledge representation models in this domain. This version is NOT aligned to any upper ontology, future work will consider alignment to IDO, BFO_IOF and DOLCE. The ISO 14224 standard is for the collection of reliability and maintenance (RM) data in a standard format for equipment in all facilities and operations. "@en ;
-                                     rdfs:label "Basic ontology for Terms and Definitions section of ISO 14224"@en ;
+                                     rdfs:comment "This ontology adds terms in Appendix B of ISO 14224 to the Basic version based on the terms and definitions in the same standard https://pid.vocab14224.org/Basic/. This version is NOT aligned to any upper ontology, future work will consider alignment to IDO, BFO_IOF and DOLCE. The ISO 14224 standard is for the collection of reliability and maintenance (RM) data in a standard format for equipment in all facilities and operations. "@en ;
+                                     rdfs:label "Extended ontology capturing terms in Appendix B of ISO 14224"@en ;
                                      owl:versionInfo "Version 1.0"@en .
 
 #################################################################
@@ -95,7 +96,7 @@ cmns-av:usageNote rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://pid.vocab14224.org/Basic/hasDataType
+###  https://pid.vocab14224.org/as/hasDataType
 voc:hasDataType rdf:type owl:ObjectProperty ;
                 rdfs:range voc:TypeData ;
                 rdfs:isDefinedBy "Melinda Hodkiewicz" ;
@@ -464,7 +465,7 @@ voc:HumanFatigue rdf:type owl:Class ;
                  rdfs:label "Human fatigue"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
-                 skos:definition "loss of physiological and psychological function as a result of extended wakefulness, heavy work, excessive stimulation, illness or stress"@en ;
+                 skos:definition "loss of physiological and psychological function as a result of Basic wakefulness, heavy work, excessive stimulation, illness or stress"@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
                  voc:en13306:definition "n/a"@en ;
