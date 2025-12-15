@@ -1,4 +1,4 @@
-@prefix : <http://www.semanticweb.org/00040628/ontologies/untitled-ontology-24/> .
+@prefix : <http://pid.vocab14224.org/Extended/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -13,9 +13,15 @@
 #    Object Properties
 #################################################################
 
-###  https://pid.vocab14224.org/Extended/hasFailureCause
-:hasFailureCause rdf:type owl:ObjectProperty .
+###  https://pid.vocab14224.org/Extended/hasFailureDetectionMethod
+:hasFailureDetectionMethod rdf:type owl:ObjectProperty ;
+                        rdfs:domain <https://pid.vocab14224.org/Basic/DetectionMethod> ;
+                        rdfs:range :TypeFailureDetectionMethod.
 
+###  https://pid.vocab14224.org/Extended/hasFailureCause
+:hasFailureCause rdf:type owl:ObjectProperty ;
+                        rdfs:domain <https://pid.vocab14224.org/Basic/FailureCause> ;
+                        rdfs:range :TypeFailureCause.
 
 ###  https://pid.vocab14224.org/Extended/hasFailureMechanism
 :hasFailureMechanism rdf:type owl:ObjectProperty .
@@ -113,7 +119,6 @@
 :DeformationFailureMechanism rdf:type owl:Class ;
                              rdfs:subClassOf <https://pid.vocab14224.org/Basic/FailureMechanism> ;
                              rdfs:label "Deformation failure mechanism" .
-
 
 ###  https://pid.vocab14224.org/Extended/EarthOrIsolationFaultFailureMechanism
 :EarthOrIsolationFaultFailureMechanism rdf:type owl:Class ;
@@ -258,10 +263,16 @@
                           rdfs:subClassOf <https://pid.vocab14224.org/Basic/FailureMechanism> ;
                           rdfs:label "Sticking failure mechanism" .
 
+
+
+
 ###  https://pid.vocab14224.org/Extended/TypeFailureCause
 :TypeFailureCause rdf:type owl:Class ;
                       rdfs:label "Type of failure cause" .
 
+###  https://pid.vocab14224.org/Extended/TypeFailureDetectionMethod
+:TypeFailureDetectionMethod rdf:type owl:Class ;
+                      rdfs:label "Type of failure detection method" .
                
 
 ###  https://pid.vocab14224.org/Extended/TypeFailureMechanism
@@ -299,6 +310,51 @@
 ###  https://pid.vocab14224.org/Extended/external_influence_failure_mechanism
 :external_influence_failure_mechanism rdf:type owl:NamedIndividual ,
                                                :TypeFailureMechanism .
+
+###  https://pid.vocab14224.org/Extended/failure_detected_by_periodic_maintenance
+:failure_detected_by_periodic_maintenance rdf:type owl:NamedIndividual ,
+                                               :TypeFailureDetectionMethod .                                               
+
+###  https://pid.vocab14224.org/Extended/failure_detected_by_functional_testing
+:failure_detected_by_functional_testing rdf:type owl:NamedIndividual ,
+                                               :TypeFailureDetectionMethod .  
+
+###  https://pid.vocab14224.org/Extended/failure_detected_by_inspection
+:failure_detected_by_inspection rdf:type owl:NamedIndividual ,
+                                               :TypeFailureDetectionMethod . 
+
+###  https://pid.vocab14224.org/Extended/failure_detected_by_periodic_condition_monitoring
+:failure_detected_by_periodic_condition_monitoring rdf:type owl:NamedIndividual ,
+                                               :TypeFailureDetectionMethod .    
+
+###  https://pid.vocab14224.org/Extended/failure_detected_by_pressure_testing
+:failure_detected_by_pressure_testing rdf:type owl:NamedIndividual ,
+                                               :TypeFailureDetectionMethod .  
+
+###  https://pid.vocab14224.org/Extended/failure_detected_by_continuous_condition_monitoring
+:failure_detected_by_continuous_condition_monitoring rdf:type owl:NamedIndividual ,
+                                               :TypeFailureDetectionMethod .       
+
+###  https://pid.vocab14224.org/Extended/failure_detected_by_production_interference
+:failure_detected_by_production_interference rdf:type owl:NamedIndividual ,
+                                               :TypeFailureDetectionMethod .                                                                                                                                      
+
+###  https://pid.vocab14224.org/Extended/failure_detected_by_casual_observation
+:failure_detected_by_casual_observation rdf:type owl:NamedIndividual ,
+                                               :TypeFailureDetectionMethod . 
+
+###  https://pid.vocab14224.org/Extended/failure_detected_by_corrective_maintenance
+:failure_detected_by_corrective_maintenance rdf:type owl:NamedIndividual ,
+                                               :TypeFailureDetectionMethod . 
+
+###  https://pid.vocab14224.org/Extended/failure_detected_by_on_demand_activity
+:failure_detected_by_on_demand_activity rdf:type owl:NamedIndividual ,
+                                               :TypeFailureDetectionMethod .                                                
+
+###  https://pid.vocab14224.org/Extended/failure_detected_by_other_method
+:failure_detected_by_other_method rdf:type owl:NamedIndividual ,
+                                               :TypeFailureDetectionMethod .                                                
+
 
 
 ###  https://pid.vocab14224.org/Extended/instrument_failure_mechanism
