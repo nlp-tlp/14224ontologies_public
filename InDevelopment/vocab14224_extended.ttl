@@ -4,6 +4,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix voc: <https://pid.vocab14224.org/Basic/> .
 @base <http://www.semanticweb.org/00040628/ontologies/untitled-ontology-24/> .
 
 <https://pid.vocab14224.org/Extended/> rdf:type owl:Ontology ;
@@ -54,6 +55,10 @@
                                                                  owl:someValuesFrom <https://pid.vocab14224.org/Basic/FailureMechanism>
                                                                ] .
 
+###  https://pid.vocab14224.org/Extended/Adjust
+:Adjust rdf:type owl:Class ;
+                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                             rdfs:label "Adjust" .
 
 ###  https://pid.vocab14224.org/Extended/BlockageOrPluggedFailureMechanism
 :BlockageOrPluggedFailureMechanism rdf:type owl:Class ;
@@ -78,12 +83,20 @@
                             rdfs:subClassOf <https://pid.vocab14224.org/Basic/FailureMechanism> ;
                             rdfs:label "Cavitation failure mechanism" .
 
+###  https://pid.vocab14224.org/Extended/Check
+:Check rdf:type owl:Class ;
+                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                             rdfs:label "Check" .
 
 ###  https://pid.vocab14224.org/Extended/ClearanceOrAlignmentFailureMechanism
 :ClearanceOrAlignmentFailureMechanism rdf:type owl:Class ;
                                       rdfs:subClassOf <https://pid.vocab14224.org/Basic/FailureMechanism> ;
                                       rdfs:label "Clearance or alignment failure mechanism" .
 
+###  https://pid.vocab14224.org/Extended/CombinationMaintenanceActivity
+:CombinationMaintenanceActivity rdf:type owl:Class ;
+                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                             rdfs:label "Combination maintenance activity" .
 
 ###  https://pid.vocab14224.org/Extended/CombinedCausesFailureMechanism
 :CombinedCausesFailureMechanism rdf:type owl:Class ;
@@ -185,6 +198,11 @@
                                       rdfs:subClassOf <https://pid.vocab14224.org/Basic/FailureMechanism> ;
                                       rdfs:label "General miscellaneous failure mechanism" .
 
+###  https://pid.vocab14224.org/Extended/Inspection
+:Inspection rdf:type owl:Class ;
+                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                             rdfs:label "Inspection" .
+
 
 ###  https://pid.vocab14224.org/Extended/LeakageFailureMechanism
 :LeakageFailureMechanism rdf:type owl:Class ;
@@ -197,12 +215,20 @@
                            rdfs:subClassOf <https://pid.vocab14224.org/Basic/FailureMechanism> ;
                            rdfs:label "Looseness failure mechanism" .
 
+###  https://pid.vocab14224.org/Extended/MaintenanceActivity
+:MaintenanceActivity rdf:type owl:Class ;
+                           rdfs:label "Maintenance activity" .
+
 
 ###  https://pid.vocab14224.org/Extended/MiscellaneousExternalnfluencesFailureMechanism
 :MiscellaneousExternalnfluencesFailureMechanism rdf:type owl:Class ;
                                                 rdfs:subClassOf <https://pid.vocab14224.org/Basic/FailureMechanism> ;
                                                 rdfs:label "Miscellaneous external influences failure mechanism" .
 
+###  https://pid.vocab14224.org/Extended/Modify
+:Modify rdf:type owl:Class ;
+                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                             rdfs:label "Modify" .
 
 ###  https://pid.vocab14224.org/Extended/NoCauseFoundFailureMechanism
 :NoCauseFoundFailureMechanism rdf:type owl:Class ;
@@ -233,18 +259,45 @@
                        rdfs:subClassOf <https://pid.vocab14224.org/Basic/FailureMechanism> ;
                        rdfs:label "Other failure mechanism" .
 
+###  https://pid.vocab14224.org/Extended/OtherMaintenanceActivity
+:OtherMaintenanceActivity rdf:type owl:Class ;
+                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                             rdfs:label "Other maintenance activity" .
 
 ###  https://pid.vocab14224.org/Extended/OutOfAdjustmentFailureMechanism
 :OutOfAdjustmentFailureMechanism rdf:type owl:Class ;
                                  rdfs:subClassOf <https://pid.vocab14224.org/Basic/FailureMechanism> ;
                                  rdfs:label "Out of adjustment failure mechanism" .
 
+###  https://pid.vocab14224.org/Extended/Overhaul
+:Overhaul rdf:type owl:Class ;
+                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                             rdfs:label "Overhaul" .
 
 ###  https://pid.vocab14224.org/Extended/OverheatingFailureMechanism
 :OverheatingFailureMechanism rdf:type owl:Class ;
                              rdfs:subClassOf <https://pid.vocab14224.org/Basic/FailureMechanism> ;
                              rdfs:label "Overheating failure mechanism" .
 
+###  https://pid.vocab14224.org/Extended/Refit
+:Refit rdf:type owl:Class ;
+                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                             rdfs:label "Refit" .
+
+###  https://pid.vocab14224.org/Extended/Repair
+:Repair rdf:type owl:Class ;
+                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                             rdfs:label "Repair" .
+
+###  https://pid.vocab14224.org/Extended/Replace
+:Replace rdf:type owl:Class ;
+                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                             rdfs:label "Replace" .
+
+###  https://pid.vocab14224.org/Extended/Service
+:Service rdf:type owl:Class ;
+                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                             rdfs:label "Service" .
 
 ###  https://pid.vocab14224.org/Extended/ShortCircuitingFailureMechanism
 :ShortCircuitingFailureMechanism rdf:type owl:Class ;
@@ -263,7 +316,10 @@
                           rdfs:subClassOf <https://pid.vocab14224.org/Basic/FailureMechanism> ;
                           rdfs:label "Sticking failure mechanism" .
 
-
+###  https://pid.vocab14224.org/Extended/Test
+:Test rdf:type owl:Class ;
+                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                             rdfs:label "Test" .
 
 
 ###  https://pid.vocab14224.org/Extended/TypeFailureCause
@@ -302,14 +358,50 @@
 #    Individuals
 #################################################################
 
+###  https://pid.vocab14224.org/Extended/abnormal_instrument_reading
+:abnormal_instrument_reading rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .
+
+###  https://pid.vocab14224.org/Extended/breakdown
+:breakdown rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .    
+
+###  https://pid.vocab14224.org/Extended/delayed_operation
+:delayed_operation rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .                                                                          
+
 ###  https://pid.vocab14224.org/Extended/electrical_failure_mechanism
 :electrical_failure_mechanism rdf:type owl:NamedIndividual ,
                                        :TypeFailureMechanism .
+
+ ###  https://pid.vocab14224.org/Extended/erratic_output
+:erratic_output rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .  
 
 
 ###  https://pid.vocab14224.org/Extended/external_influence_failure_mechanism
 :external_influence_failure_mechanism rdf:type owl:NamedIndividual ,
                                                :TypeFailureMechanism .
+
+ ###  https://pid.vocab14224.org/Extended/external_leakage_fuel
+:external_leakage_fuel rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .  
+
+ ###  https://pid.vocab14224.org/Extended/external_leakage_process_medium
+:external_leakage_process_medium rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .  
+
+ ###  https://pid.vocab14224.org/Extended/external_leakage_utility_medium
+:external_leakage_utility_medium rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .  
+
+ ###  https://pid.vocab14224.org/Extended/failure_to_connect
+:failure_to_connect rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .    
+
+ ###  https://pid.vocab14224.org/Extended/failure_to_disconnect
+:failure_to_disconnect rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .                                                                             
 
 ###  https://pid.vocab14224.org/Extended/failure_detected_by_periodic_maintenance
 :failure_detected_by_periodic_maintenance rdf:type owl:NamedIndividual ,
@@ -355,12 +447,81 @@
 :failure_detected_by_other_method rdf:type owl:NamedIndividual ,
                                                :TypeFailureDetectionMethod .                                                
 
+ ###  https://pid.vocab14224.org/Extended/failure_to_rotate
+:failure_to_rotate rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode . 
 
+ ###  https://pid.vocab14224.org/Extended/failure_to_close_on_demand
+:failure_to_close_on_demand rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .                                        
+
+ ###  https://pid.vocab14224.org/Extended/failure_to_function_as_intended
+:failure_to_function_as_intended rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode . 
+
+ ###  https://pid.vocab14224.org/Extended/failure_to_function_on_demand
+:failure_to_function_on_demand rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .                                        
+
+ ###  https://pid.vocab14224.org/Extended/failure_to_open_on_demand
+:failure_to_open_on_demand rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode . 
+
+ ###  https://pid.vocab14224.org/Extended/failure_to_start_on_demand
+:failure_to_start_on_demand rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .                                          
+
+ ###  https://pid.vocab14224.org/Extended/failure_to_stop_on_demand
+:failure_to_stop_on_demand rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .
+
+ ###  https://pid.vocab14224.org/Extended/faulty_output_frequency
+:faulty_output_frequency rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode . 
+
+ ###  https://pid.vocab14224.org/Extended/faulty_output_voltage
+:faulty_output_voltage rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode . 
+
+ ###  https://pid.vocab14224.org/Extended/high_output
+:high_output rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .                                       
 
 ###  https://pid.vocab14224.org/Extended/instrument_failure_mechanism
 :instrument_failure_mechanism rdf:type owl:NamedIndividual ,
                                        :TypeFailureMechanism .
 
+ ###  https://pid.vocab14224.org/Extended/insufficient_heat_transfer
+:insufficient_heat_transfer rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .
+
+ ###  https://pid.vocab14224.org/Extended/internal_leakage
+:internal_leakage rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .
+
+ ###  https://pid.vocab14224.org/Extended/leakage_in_closed_position
+:leakage_in_closed_position rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .  
+
+ ###  https://pid.vocab14224.org/Extended/load_drop
+:load_drop rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode . 
+
+ ###  https://pid.vocab14224.org/Extended/loss_of_buoyancy
+:loss_of_buoyancy rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .   
+
+ ###  https://pid.vocab14224.org/Extended/loss_of_redundancy
+:loss_of_redundancy rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .                                                                                                                                                        
+
+ ###  https://pid.vocab14224.org/Extended/low_oil_supply_pressure
+:low_oil_supply_pressure rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .   
+
+ ###  https://pid.vocab14224.org/Extended/low_output
+:low_output rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .                                                                                                                 
 
 ###  https://pid.vocab14224.org/Extended/material_failure_mechanism
 :material_failure_mechanism rdf:type owl:NamedIndividual ,
@@ -376,5 +537,68 @@
 :miscellaneous_failure_mechanism rdf:type owl:NamedIndividual ,
                                           :TypeFailureMechanism .
 
+ ###  https://pid.vocab14224.org/Extended/noise
+:noise rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode . 
+
+ ###  https://pid.vocab14224.org/Extended/no_output
+:no_output rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .                                        
+
+ ###  https://pid.vocab14224.org/Extended/overheating
+:overheating rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode . 
+
+ ###  https://pid.vocab14224.org/Extended/other_failure_mode
+:other_failure_mode rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .  
+
+ ###  https://pid.vocab14224.org/Extended/parameter_deviation
+:parameter_deviation rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .                                                                              
+
+ ###  https://pid.vocab14224.org/Extended/plugged_or_choked
+:plugged_or_choked rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode . 
+
+ ###  https://pid.vocab14224.org/Extended/power_or_signal_transmission_failure
+:power_or_signal_transmission_failure rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .                                        
+
+ ###  https://pid.vocab14224.org/Extended/sludge_build_up
+:sludge_build_up rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode . 
+
+ ###  https://pid.vocab14224.org/Extended/minor_inservice_problems
+:minor_inservice_problems rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .   
+
+ ###  https://pid.vocab14224.org/Extended/slippage
+:slippage rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode . 
+
+ ###  https://pid.vocab14224.org/Extended/spurious_high_level_alarm
+:spurious_high_level_alarm rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode . 
+
+ ###  https://pid.vocab14224.org/Extended/spurious_low_level_alarm
+:spurious_low_level_alarm rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .  
+
+ ###  https://pid.vocab14224.org/Extended/spurious_operation
+:spurious_operation rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .                                                                                                                                                        
+
+ ###  https://pid.vocab14224.org/Extended/structural_deficiency
+:structural_deficiency rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .
+
+ ###  https://pid.vocab14224.org/Extended/unknown_failure_mode
+:unknown_failure_mode rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .
+
+ ###  https://pid.vocab14224.org/Extended/vibration
+:vibration rdf:type owl:NamedIndividual ,
+                                       voc:FailureMode .                                       
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
