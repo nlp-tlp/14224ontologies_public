@@ -5,6 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix voc: <https://pid.vocab14224.org/Basic/> .
+@prefix cmns-av: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .
 @base <http://www.semanticweb.org/00040628/ontologies/untitled-ontology-24/> .
 
 <https://pid.vocab14224.org/Extended/> rdf:type owl:Ontology ;
@@ -57,8 +58,19 @@
 
 ###  https://pid.vocab14224.org/Extended/Adjust
 :Adjust rdf:type owl:Class ;
-                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
-                             rdfs:label "Adjust" .
+                 rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                 rdfs:label "Adjust"@en ;
+                 rdfs:seeAlso ""@en ;
+                 skos:altLabel ""@en ;
+                 skos:definition ""@en ;
+                 skos:example "align, set and reset, calibrate, balance"@en ;
+                 skos:scopeNote ""@en ;
+                 voc:iso14224:section ""^^xsd:anyURI ;
+                 cmns-av:adaptedFrom ""@en ;
+                 cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
+                 cmns-av:explanatoryNote "bringing any out-of-tolerance condition into tolerance"@en ;
+                 cmns-av:usageNote "typically used in corrective and preventative maintenance"@en .
+
 
 ###  https://pid.vocab14224.org/Extended/BlockageOrPluggedFailureMechanism
 :BlockageOrPluggedFailureMechanism rdf:type owl:Class ;
@@ -85,8 +97,18 @@
 
 ###  https://pid.vocab14224.org/Extended/Check
 :Check rdf:type owl:Class ;
-                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
-                             rdfs:label "Check" .
+                 rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                 rdfs:label "Check" ;
+                 rdfs:seeAlso ""@en ;
+                 skos:altLabel ""@en ;
+                 skos:definition ""@en ;
+                 skos:scopeNote ""@en ;
+                 voc:iso14224:section ""^^xsd:anyURI ;
+                 cmns-av:adaptedFrom ""@en ;
+                 cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
+                 cmns-av:explanatoryNote "The cause of failure investigated, but no maintenance action is performed, or action is deferred. Able to regain function by simple actions, e.g. restart or resetting"@en ;
+                 skos:example "restart, resetting, no maintenance action, etc. Particularly relevant for functional failures, e.g. fire and gas detectors, subsea equipment. check includes both when a failure cause was revealed but maintenance action was considered either not necessary or not possible to carry out and where no failure cause circumstances could be found"@en ;
+                 cmns-av:usageNote "typically used in corrective maintenance"@en .
 
 ###  https://pid.vocab14224.org/Extended/ClearanceOrAlignmentFailureMechanism
 :ClearanceOrAlignmentFailureMechanism rdf:type owl:Class ;
@@ -95,14 +117,24 @@
 
 ###  https://pid.vocab14224.org/Extended/CombinationMaintenanceActivity
 :CombinationMaintenanceActivity rdf:type owl:Class ;
-                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
-                             rdfs:label "Combination maintenance activity" .
+                 rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                 rdfs:label "Combination maintenance activity"@en ;
+                 rdfs:seeAlso ""@en ;
+                 skos:altLabel ""@en ;
+                 skos:definition ""@en ;
+                 skos:example ""@en ;
+                 skos:scopeNote ""@en ;
+                 voc:iso14224:section ""^^xsd:anyURI ;
+                 cmns-av:adaptedFrom ""@en ;
+                 cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
+                 cmns-av:explanatoryNote "Several maintenance activities are included"@en ;
+                 cmns-av:usageNote "Typically used in corrective and preventative maintenance. If one activity dominates, this may alternatively be recorded"@en .
 
 ###  https://pid.vocab14224.org/Extended/CombinedCausesFailureMechanism
 :CombinedCausesFailureMechanism rdf:type owl:Class ;
                                 rdfs:subClassOf <https://pid.vocab14224.org/Basic/FailureMechanism> ;
                                 rdfs:label "Combined causes failure mechanism" .
-
+                                
 
 ###  https://pid.vocab14224.org/Extended/CommonCauseOrCommonModeFailureMechanism
 :CommonCauseOrCommonModeFailureMechanism rdf:type owl:Class ;
@@ -200,9 +232,18 @@
 
 ###  https://pid.vocab14224.org/Extended/Inspection
 :Inspection rdf:type owl:Class ;
-                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
-                             rdfs:label "Inspection" .
-
+                 rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                 rdfs:label "Inspection"@en ;
+                 rdfs:seeAlso ""@en ;
+                 skos:altLabel ""@en ;
+                 skos:definition ""@en ;
+                 skos:example ""@en ;
+                 skos:scopeNote ""@en ;
+                 voc:iso14224:section ""^^xsd:anyURI ;
+                 cmns-av:adaptedFrom ""@en ;
+                 cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
+                 cmns-av:explanatoryNote "periodic inspection/check: a careful scrutiny of an item carried out with or without dismantling, normally by use of senses"@en ;
+                 cmns-av:usageNote "Typically used in preventative maintenance. All types of general check. Includes minor servicing as part of the inspection task"@en .
 
 ###  https://pid.vocab14224.org/Extended/LeakageFailureMechanism
 :LeakageFailureMechanism rdf:type owl:Class ;
@@ -227,8 +268,18 @@
 
 ###  https://pid.vocab14224.org/Extended/Modify
 :Modify rdf:type owl:Class ;
-                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
-                             rdfs:label "Modify" .
+                 rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                 rdfs:label "Modify"@en ;
+                 rdfs:seeAlso ""@en ;
+                 skos:altLabel ""@en ;
+                 skos:definition ""@en ;
+                 skos:example ""@en ;
+                 skos:scopeNote ""@en ;
+                 voc:iso14224:section ""^^xsd:anyURI ;
+                 cmns-av:adaptedFrom ""@en ;
+                 cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
+                 cmns-av:explanatoryNote "Replace, renew or change the item, or a part of it, with an item/part of a different type, make, material or design"@en ;
+                 cmns-av:usageNote "Typically used in preventative maintenance. Such as install a filter with a smaller mesh diameter, replace a lubrication oil pump with another type, reconfiguration etc."@en .
 
 ###  https://pid.vocab14224.org/Extended/NoCauseFoundFailureMechanism
 :NoCauseFoundFailureMechanism rdf:type owl:Class ;
@@ -271,8 +322,18 @@
 
 ###  https://pid.vocab14224.org/Extended/Overhaul
 :Overhaul rdf:type owl:Class ;
-                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
-                             rdfs:label "Overhaul" .
+                 rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                 rdfs:label "Overhaul"@en ;
+                 rdfs:seeAlso ""@en ;
+                 skos:altLabel ""@en ;
+                 skos:definition ""@en ;
+                 skos:example ""@en ;
+                 skos:scopeNote ""@en ;
+                 voc:iso14224:section ""^^xsd:anyURI ;
+                 cmns-av:adaptedFrom ""@en ;
+                 cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
+                 cmns-av:explanatoryNote "Major overhaul"@en ;
+                 cmns-av:usageNote "Typically used in preventative and corrective maintenance. Comprehensive inspection/ overhaul with extensive disassembly and replacement of items as specified or required"@en .
 
 ###  https://pid.vocab14224.org/Extended/OverheatingFailureMechanism
 :OverheatingFailureMechanism rdf:type owl:Class ;
@@ -281,23 +342,63 @@
 
 ###  https://pid.vocab14224.org/Extended/Refit
 :Refit rdf:type owl:Class ;
-                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
-                             rdfs:label "Refit" .
+                 rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                 rdfs:label "Refit"@en ;
+                 rdfs:seeAlso ""@en ;
+                 skos:altLabel ""@en ;
+                 skos:definition ""@en ;
+                 skos:example "polish, clean, grind, paint, coat, lube, oil change"@en ;
+                 skos:scopeNote ""@en ;
+                 voc:iso14224:section ""^^xsd:anyURI ;
+                 cmns-av:adaptedFrom ""@en ;
+                 cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
+                 cmns-av:explanatoryNote "minor repair/ servicing activity to bring back an item to an acceptable appearance, internal and external"@en ;
+                 cmns-av:usageNote "Typically used in corrective and preventative maintenance. "@en .
 
 ###  https://pid.vocab14224.org/Extended/Repair
 :Repair rdf:type owl:Class ;
-                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
-                             rdfs:label "Repair" .
+                 rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                 rdfs:label "Repair"@en ;
+                 rdfs:seeAlso ""@en ;
+                 skos:altLabel ""@en ;
+                 skos:definition ""@en ;
+                 skos:example "repack, weld, plus, reconnect, remake"@en ;
+                 skos:scopeNote ""@en ;
+                 voc:iso14224:section ""^^xsd:anyURI ;
+                 cmns-av:adaptedFrom ""@en ;
+                 cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
+                 cmns-av:explanatoryNote "Manual maintenance action performed to restore an item to its original appearance or state"@en ;
+                 cmns-av:usageNote "Typically used in corrective maintenance."@en .
 
 ###  https://pid.vocab14224.org/Extended/Replace
 :Replace rdf:type owl:Class ;
-                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
-                             rdfs:label "Replace" .
+                 rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                 rdfs:label "Replace"@en ;
+                 rdfs:seeAlso ""@en ;
+                 skos:altLabel ""@en ;
+                 skos:definition ""@en ;
+                 skos:example ""@en ;
+                 skos:scopeNote ""@en ;
+                 voc:iso14224:section ""^^xsd:anyURI ;
+                 cmns-av:adaptedFrom ""@en ;
+                 cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
+                 cmns-av:explanatoryNote "Replacement of the item by a new or refurbished item of the same type and make"@en ;
+                 cmns-av:usageNote "Typically used in preventative and corrective maintenance. E.g. replacement of a worn-out bearing"@en .
 
 ###  https://pid.vocab14224.org/Extended/Service
 :Service rdf:type owl:Class ;
-                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
-                             rdfs:label "Service" .
+                 rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                 rdfs:label "Service"@en ;
+                 rdfs:seeAlso ""@en ;
+                 skos:altLabel ""@en ;
+                 skos:definition ""@en ;
+                 skos:example "cleaning, replenishment of consumables, adjustments, calibration"@en ;
+                 skos:scopeNote ""@en ;
+                 voc:iso14224:section ""^^xsd:anyURI ;
+                 cmns-av:adaptedFrom ""@en ;
+                 cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
+                 cmns-av:explanatoryNote "Periodic service tasks. Normally no dismantling of the item"@en ;
+                 cmns-av:usageNote "Typically used in preventative maintenance. "@en .
 
 ###  https://pid.vocab14224.org/Extended/ShortCircuitingFailureMechanism
 :ShortCircuitingFailureMechanism rdf:type owl:Class ;
@@ -318,8 +419,18 @@
 
 ###  https://pid.vocab14224.org/Extended/Test
 :Test rdf:type owl:Class ;
-                             rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
-                             rdfs:label "Test" .
+                 rdfs:subClassOf <https://pid.vocab14224.org/Extended/MaintenanceActivity> ;
+                 rdfs:label "Test"@en ;
+                 rdfs:seeAlso ""@en ;
+                 skos:altLabel ""@en ;
+                 skos:definition ""@en ;
+                 skos:example ""@en ;
+                 skos:scopeNote ""@en ;
+                 voc:iso14224:section ""^^xsd:anyURI ;
+                 cmns-av:adaptedFrom ""@en ;
+                 cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
+                 cmns-av:explanatoryNote "Periodic test of function or performance"@en ;
+                 cmns-av:usageNote "Typically used in preventative maintenance. e.g. function test of gas detector, accuracy test of flow meter"@en .
 
 
 ###  https://pid.vocab14224.org/Extended/TypeFailureCause
