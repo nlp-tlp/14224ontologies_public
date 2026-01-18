@@ -34,7 +34,7 @@ PDE,Parameter deviation,"Monitored parameter exceeding limits, e.g. high/low ala
 PLU,Plugged / choked,Flow restriction(s)
 PTF,Power / signal transmission failure,Power / signal transmission failure
 SBU,Sludge build up,Sludge build up
-SER,Power / signal transmission failure,Power / signal transmission failure
+SER,Minor in-service problems,Loose items discoloration dirt
 SHH,Spurious high level alarm,e.g. 60% of Low explosion limit
 SLL,Spurious low level alarm,e.g. 20% of Low explosion limit
 SLP,Slippage,Slippage

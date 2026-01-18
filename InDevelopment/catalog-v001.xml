@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://pid.vocab14224.org/Basic/1.1" uri="vocab14224_basic.ttl"/>
+    <uri id="User Entered Import Resolution" name="https://pid.vocab14224.org/Basic/1.1" uri="vocab14224_basic_for_pid.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://pid.vocab14224.org/2024-11-06/Basic/1.1" uri="vocab14224_basic_for_pid.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://pid.vocab14224.org/2024-11-06/Extended/1.1" uri="vocab14224_basic_for_pid.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://spec.equonto.org/ontology/ido-maintenance/ont/core/" uri="file:/C:/Users/00040628/LocalData/GitHub/ido-maintenance/ido-maintenance.rdf"/>
+    <uri id="Imports Wizard Entry" name="https://pid.vocab14224.org/2024-11-06/Basic/1.1" uri="file:/C:/Users/00040628/LocalData/GitHub/14224ontologies_public/vocab14224_basic.ttl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+</catalog>
