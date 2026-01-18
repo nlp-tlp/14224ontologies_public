@@ -6,11 +6,20 @@ A private for now repo for shared development of controlled vocabulary, linked d
 
 The purpose of this repo is to provide Linked Data and IRIs for 65 terms used in 1) the Terms and Definitions section, and 2) Appendix B, of the ISO 14224:2016 standard. Appendix B contains text and tables relating to the classification of failure modes, failure mechanisms and failure causes.
 
+Namespace plan
+
+.....
+
+
+
+TO be rewritten
+**********************************************************************
+
 ## Linked Data and IRIs
 
 The pidvocab.ttl file contains IRIs and annotations for 65 terms and definitions in the terms and definitions section of ISO 14424:2016. Where the term also appears in EN13306:2017 Maintenance terminology and IEC60812:2018 FMEA, definitions from these standards are also provided.
 
-Namespace: https://pid.vocab14224.org/TermsAndDefinitions/
+Need to revise Namespace: https://pid.vocab14224.org/TermsAndDefinitions/
 
 ### Example from pidvocab14224.ttl
 
