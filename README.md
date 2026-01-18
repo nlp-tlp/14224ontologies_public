@@ -1,6 +1,6 @@
 # GitHub repo for collaboration on developing a semantic version for ISO 14224 
 
-A public repo for shared development of controlled vocabulary, linked data, RDF triple stores, and ontologies for ISO 14224 users
+A private for now repo for shared development of controlled vocabulary, linked data, RDF triple stores, and ontologies for ISO 14224 users
 
 ## Purpose
 
