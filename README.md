@@ -66,6 +66,7 @@ Model as an instance if:
 ### Example of a class
 
 **https://iso14224.org/vocab/EquipmentType**
+```
 voc:EquipmentType rdf:type owl:Class ;
                   rdfs:label "Equipment type"@en ;
                   rdfs:seeAlso ""@en ;
@@ -81,10 +82,10 @@ voc:EquipmentType rdf:type owl:Class ;
                   cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
                   cmns-av:explanatoryNote ""@en ;
                   cmns-av:usageNote ""@en .
-
+```
 
 ### Example if an individual
-
+```
 ###  https://iso14224.org/vocab/predictive_maintenance
 voc:predictive_maintenance rdf:type owl:NamedIndividual ,
                                     voc:TypeMaintenanceStrategy ;
@@ -103,6 +104,7 @@ voc:predictive_maintenance rdf:type owl:NamedIndividual ,
                            cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
                            cmns-av:explanatoryNote ""@en ;
                            cmns-av:usageNote ""@en .
+```
 
 We are working on alternate representations and alignment with different top level ontologies (IDO, IOF_core and IOF_maintenance, DOLCE) and will publish these here as they become available. The IRIs will be stable.
 
