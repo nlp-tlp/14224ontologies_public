@@ -1,69 +1,17 @@
 # GitHub repo for collaboration on developing a semantic version for ISO 14224 
 
-A private for now repo for shared development of controlled vocabulary, linked data, RDF triple stores, and ontologies for ISO 14224 users
+Building a machine-readable version of ISO 14224 :2016 (version reconfirmed in 2022)
 
 ## Purpose
 
-The purpose of this repo is to provide Linked Data and IRIs for 65 terms used in 1) the Terms and Definitions section, and 2) Appendix B, of the ISO 14224:2016 standard. Appendix B contains text and tables relating to the classification of failure modes, failure mechanisms and failure causes.
+The purpose of this repo is to provide Linked Data and IRIs for 65 terms used in 1) the Terms and Definitions section, and 2) Appendix B, of the ISO 14224:2016 standard. Appendix B contains text and tables relating to the classification of failure modes, failure mechanisms and failure causes. The namespace iso14224.org has been purchased by the GitHub repo owner for this purpose.
 
-## Namespace and file names
+## Output
+The standard is available in ttl format
 
-The iso14224.org namespace was purchased to enable future resolvable IRIs.
-
-Prefix and namespaces for IRIs are as follows
-
-@prefix iso14224 https://iso14224.org/terms - terms and definitions in Section 3 of the standard 
-@prefix iso14224fmode https://iso14224.org/failure-mode - failure modes defined in Annex B 
-@prefix iso14224fmech https://iso14224.org/failure-mech - failure mechanisms defined in Annex B
-
-For 2023 release these IRIs are also created
-@prefix iso142242024 https://iso14224.org/terms/2024 - terms and definitions in Section 3 of the standard 
-@prefix iso14224fmode2024 https://iso14224.org/failure-mode/2024 - failure modes defined in Annex B 
-@prefix iso14224fmech2024 https://iso14224.org/failure-mech/2024 - failure mechanisms defined in Annex B
-
-Files
-iso14224.ttl Terms and definitions  (base scheme and concepts)
-iso14224-failure-mode.ttl  Failure modes  (failure mode list)
-iso14224-failure-mechanism.ttl Failure mechanism  (failure mechanism list)
-local-to-iso14224-mapping.ttl Mapping from local (organisational specific) file to iso using skos:closeMatch and skos:exactMatch 
-
-and corresponding ttl files for 2024 release, for example, iso14224-2024.ttl
-
-
-TO be rewritten
-**********************************************************************
-
-## Linked Data and IRIs
-
-The pidvocab.ttl file contains IRIs and annotations for 65 terms and definitions in the terms and definitions section of ISO 14424:2016. Where the term also appears in EN13306:2017 Maintenance terminology and IEC60812:2018 FMEA, definitions from these standards are also provided.
-
-Need to revise Namespace: https://pid.vocab14224.org/TermsAndDefinitions/
-
-### Example from pidvocab14224.ttl
-
-###  https://pid.vocab14224.org/TermsAndDefinitions/FailureMode
-
-```
-voc:FailureMode rdf:type owl:Class ;
-                rdfs:label "Failure mode"@en ;
-                rdfs:seeAlso ""@en ;
-                skos:altLabel ""@en ;
-                skos:definition "manner in which failure occurs"@en ;
-                voc:en13306:definition "manner in which the inability of an item to perform a required function occurs"@en ;
-                voc:iec60812:definition "manner in which failure occurs"@en ;
-                skos:example ""@en ;
-                skos:scopeNote ""@en ;
-                voc:iso14224:section "https://pid.vocab14224.org/TermsAndDefinitions"^^xsd:anyURI ;
-                cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                cmns-av:explanatoryNote ""@en ;
-                cmns-av:usageNote "Tables in B.2.6 in ISO 14224-2023 on relevant failure modes define failure modes to be used for each equipment class"@en ;
-                cmns-av:usageNote "analysis might require data collection to be established on different taxonomy levels"@en .
-```
-
-Each term is represented in this pidvocab14224.ttl file as an owl:class. 
-
-We are working on alternate representations and alignment with different top level ontologies and will publish these here as they become available. The IRIs will be stable.
+**Files**
+vocab14224_basic.ttl Terms and definitions  (base scheme and concepts)
+vocab14224_extended.ttl includes data from Annex B such as Failure modes and Mechanisms
 
 ## What is ISO 14224?
 
@@ -83,3 +31,92 @@ c) maintenance data, e.g. maintenance action, resources used, maintenance conseq
 
 There data are used for tracking and investigating reliability issues, calculating equipment and system availability, maintenance management metrics, and events with safety and environmental impacts.
 
+
+## Namespace and file names
+
+The iso14224.org namespace was purchased to enable future resolvable IRIs.
+
+**Prefix and namespaces for IRIs**
+
+@prefix voc https://iso14224.org/vocab - terms and definitions in Section 3 of the standard 
+
+
+
+TO be rewritten
+**********************************************************************
+
+## Linked Data and IRIs
+
+The vocab14224_basic.ttl file contains IRIs and annotations for 65 terms and definitions in the terms and definitions section of ISO 14424:2016. Where the term also appears in EN13306:2017 Maintenance terminology and IEC60812:2018 FMEA, definitions from these standards are also provided.
+
+## Data modelling approach
+
+In this initial phase some concepts have been modelled as classes and others as individuals, examples below. 
+Model as a class if:
+
+- there are likely to be a need to create subclasses at a future modelling stage e.g. EquipmentType
+- data we wish to model usually contains instances of the class
+
+Model as an instance if:
+
+- the information we seek to model is usually present as a string or code e.g WO10101010 hasTypeMaintenanceStrategy voc:preventative_maintenance
+
+**These modelling decisions are still being explored and some changes are likely the next phase. The next phase of work will consider how to create lists containing individuals - such as found in tables such as list of maintenance strategies. The goal is to enable queries from e.g. a list.**
+
+### Example of a class
+
+**https://iso14224.org/vocab/EquipmentType**
+voc:EquipmentType rdf:type owl:Class ;
+                  rdfs:label "Equipment type"@en ;
+                  rdfs:seeAlso ""@en ;
+                  skos:altLabel ""@en ;
+                  skos:definition "particular feature of the design which is significantly different from the other design(s) within the same equipment class"@en ;
+                  skos:example ""@en ;
+                  skos:scopeNote ""@en ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
+                  voc:en13306:definition "n/a"@en ;
+                  voc:iec60812:definition "n/a"@en ;
+                  ;
+                  cmns-av:adaptedFrom ""@en ;
+                  cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                  cmns-av:explanatoryNote ""@en ;
+                  cmns-av:usageNote ""@en .
+
+
+### Example if an individual
+
+###  https://iso14224.org/vocab/predictive_maintenance
+voc:predictive_maintenance rdf:type owl:NamedIndividual ,
+                                    voc:TypeMaintenanceStrategy ;
+                           rdfs:label "predictive maintenance"@en ;
+                           rdfs:seeAlso ""@en ;
+                           skos:altLabel "PDM"@en ,
+                                         "PdM"@en ;
+                           skos:definition "maintenance based on the prediction of the future condition of an item estimated or calculated from a defined set of historic data and known future operational parameters"@en ;
+                           skos:example ""@en ;
+                           skos:scopeNote ""@en ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
+                           voc:en13306:definition "condition-based maintenance carried out following a forecast derived from repeated analysis or known characteristics and evaluation of the significant parameters of the degradation of the item"@en ;
+                           voc:iec60812:definition "n/a"@en ;
+                           ;
+                           cmns-av:adaptedFrom ""@en ;
+                           cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                           cmns-av:explanatoryNote ""@en ;
+                           cmns-av:usageNote ""@en .
+
+We are working on alternate representations and alignment with different top level ontologies (IDO, IOF_core and IOF_maintenance, DOLCE) and will publish these here as they become available. The IRIs will be stable.
+
+## Disclaimer
+
+Important Notice
+
+This taxonomy is an original academic artifact developed as part of scholarly research at the University of Western Australia. It represents the author's interpretation and analysis of concepts from the ISO 14224.
+
+This work:
+
+Is based on AS ISO 14224:2023 but is not a substitute for those standards
+Does not reproduce the ISO standards verbatim; all definitions are paraphrased interpretations
+Should be viewed as a scholarly analysis and the author's interpretation of information security concepts
+Was created in an academic context and does not offer guarantees as a reference document
+Is not affiliated with, endorsed by, or officially connected to ISO or IEC
+For authoritative definitions and requirements, please consult the official ISO/IEC standards available at iso.org.

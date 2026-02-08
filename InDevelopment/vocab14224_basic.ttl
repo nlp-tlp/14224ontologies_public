@@ -1,7 +1,7 @@
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix voc: <https://pid.vocab14224.org/vocab/> .
+@prefix voc: <https://iso14224.org/vocab/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -9,12 +9,12 @@
 @prefix cmns-av: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
-<https://pid.vocab14224.org/Basic/> rdf:type owl:Ontology ;
-                                     owl:versionIRI <https://pid.vocab14224.org/Basic/1.1> ;
+<https://iso14224.org/vocab/basic/> rdf:type owl:Ontology ;
+                                     owl:versionIRI <iso14224.org/vocab/basic/1.1> ;
                                      dcterms:license " https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE" ;
                                      dcterms:rights "See github"@en ;
                                      rdfs:comment "This Ontology reorganises the concepts modelled as OWL classes from the Terms and Definitions section of the ISO 14224:2016 standard available at https://pid.vocab14224.org/TermsAndDefinitions/ making some subclasses, introducing maintenance and failure related object properties and considering for data is actually available and what is usually the aim of knowledge representation models in this domain. This version is NOT aligned to any upper ontology, future work will consider alignment to IDO, BFO_IOF and DOLCE. The ISO 14224 standard is for the collection of reliability and maintenance (RM) data in a standard format for equipment in all facilities and operations. "@en ;
-                                     rdfs:label "pid ontology for Terms and Definitions section of ISO 14224"@en ;
+                                     rdfs:label "ontology for Terms and Definitions section of ISO 14224"@en ;
                                      owl:versionInfo "Version 1.0"@en .
 
 #################################################################
@@ -49,22 +49,22 @@ skos:example rdf:type owl:AnnotationProperty .
 skos:scopeNote rdf:type owl:AnnotationProperty .
 
 
-###  https://pid.vocab14224.org/pid/iofIRI
+###  https://iso14224.org/vocab/iofIRI
 voc:iofIRI rdf:type owl:AnnotationProperty ;
            skos:definition "iri for the same or similar concept in the Industrial Ontology Foundry (IOF)" .
 
 
-###  https://pid.vocab14224.org/pid/en13306:definition
+###  https://iso14224.org/vocab/en13306:definition
 voc:en13306:definition rdf:type owl:AnnotationProperty ;
                        skos:definition "definition from the EN13306:2017 standard for Maintenance Terminology" .
 
 
-###  https://pid.vocab14224.org/pid/iec60812:definition
+###  https://iso14224.org/vocab/iec60812:definition
 voc:iec60812:definition rdf:type owl:AnnotationProperty ;
                         skos:definition "definition from the IEC60812:2018 standard for Failure Modes and Effects Analysis" .
 
 
-###  https://pid.vocab14224.org/pid/iof:definition
+###  https://iso14224.org/vocab/iof:definition
 voc:iof:definition rdf:type owl:AnnotationProperty ;
                    skos:definition "definition from the Industrial Ontology Foundry (IOF) list of constructs" .
 
@@ -88,55 +88,55 @@ cmns-av:usageNote rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://pid.vocab14224.org/pid/hasDataType
+###  https://iso14224.org/vocab/hasDataType
 voc:hasDataType rdf:type owl:ObjectProperty ;
                 rdfs:range voc:TypeData ;
-                rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                 rdfs:label "hasDataType" ;
                 skos:definition "identifies the type of data of interest" .
 
 
-###  https://pid.vocab14224.org/pid/hasFailureEventType
+###  https://iso14224.org/vocab/hasFailureEventType
 voc:hasFailureEventType rdf:type owl:ObjectProperty ;
                         rdfs:domain voc:Failure ;
                         rdfs:range voc:TypeFailureEvent ;
-                        rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                        rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                         rdfs:label "hasFailureEventType" ;
                         skos:definition "identifies the type of failure event" .
 
 
-###  https://pid.vocab14224.org/pid/hasMaintenanceStrategy
+###  https://iso14224.org/vocab/hasMaintenanceStrategy
 voc:hasMaintenanceStrategy rdf:type owl:ObjectProperty ;
                            rdfs:range voc:TypeMaintenanceStrategy ;
-                           rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                           rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                            rdfs:label "hasMaintenanceStrategy" ;
                            skos:definition "identifies the maintenance strategy type" .
 
 
-###  https://pid.vocab14224.org/pid/hasReliabilityMeasure
+###  https://iso14224.org/vocab/hasReliabilityMeasure
 voc:hasReliabilityMeasure rdf:type owl:ObjectProperty ;
                           rdfs:range voc:TypeReliabilityMeasure ;
-                          rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                          rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                           rdfs:label "hasReliabilityMeasure" ;
                           skos:definition "identifies the reliability measure of interest" .
 
 
-###  https://pid.vocab14224.org/pid/hasState
+###  https://iso14224.org/vocab/hasState
 voc:hasState rdf:type owl:ObjectProperty ;
              rdfs:domain voc:Item ;
              rdfs:range voc:TypeMaterialState ;
-             rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+             rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
              rdfs:label "hasState" ;
              skos:definition "identifies the state of the item" ;
              voc:iofIRI "" ,
                         "https://spec.industrialontologies.org/ontology/construct/hasMaintenanceState" .
 
 
-###  https://pid.vocab14224.org/pid/hasTestType
+###  https://iso14224.org/vocab/hasTestType
 voc:hasTestType rdf:type owl:ObjectProperty ;
                 rdfs:domain voc:DetectionMethod ;
                 rdfs:range voc:TypeTest ;
-                rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                 rdfs:label "hasTestType" ;
                 skos:definition "identifies the reliability measure of interest" .
 
@@ -145,7 +145,7 @@ voc:hasTestType rdf:type owl:ObjectProperty ;
 #    Classes
 #################################################################
 
-###  https://pid.vocab14224.org/pid/Boundary
+###  https://iso14224.org/vocab/Boundary
 voc:Boundary rdf:type owl:Class ;
              rdfs:subClassOf voc:zz_OutOfScope ;
              rdfs:label "Boundary"@en ;
@@ -154,7 +154,7 @@ voc:Boundary rdf:type owl:Class ;
              skos:definition "interface between an item and its surroundings"@en ;
              skos:example ""@en ;
              skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
              voc:en13306:definition "n/a"@en ;
              voc:iec60812:definition "n/a"@en ;
              ;
@@ -164,7 +164,7 @@ voc:Boundary rdf:type owl:Class ;
              cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/Cycle
+###  https://iso14224.org/vocab/Cycle
 voc:Cycle rdf:type owl:Class ;
           rdfs:subClassOf voc:zz_OutOfScope ;
           rdfs:label "Cycle"@en ;
@@ -173,7 +173,7 @@ voc:Cycle rdf:type owl:Class ;
           skos:definition "operation and subsequent release/reset"@en ;
           skos:example ""@en ;
           skos:scopeNote ""@en ;
-          rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+          rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
           voc:en13306:definition "n/a"@en ;
           voc:iec60812:definition "n/a"@en ;
           ;
@@ -183,7 +183,7 @@ voc:Cycle rdf:type owl:Class ;
           cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/DesignLife
+###  https://iso14224.org/vocab/DesignLife
 voc:DesignLife rdf:type owl:Class ;
                rdfs:subClassOf voc:zz_OutOfScope ;
                rdfs:label "DesignLife"@en ;
@@ -192,7 +192,7 @@ voc:DesignLife rdf:type owl:Class ;
                skos:definition "planned usage time for the total system"@en ;
                skos:example ""@en ;
                skos:scopeNote ""@en ;
-               rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+               rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                voc:en13306:definition "n/a"@en ;
                voc:iec60812:definition "n/a"@en ;
                ;
@@ -202,7 +202,7 @@ voc:DesignLife rdf:type owl:Class ;
                cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/DetectionMethod
+###  https://iso14224.org/vocab/DetectionMethod
 voc:DetectionMethod rdf:type owl:Class ;
                     rdfs:label "Detection method"@en ;
                     rdfs:seeAlso ""@en ;
@@ -210,7 +210,7 @@ voc:DetectionMethod rdf:type owl:Class ;
                     skos:definition "method or activity by which a failure is discovered"@en ;
                     skos:example ""@en ;
                     skos:scopeNote ""@en ;
-                    rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                    rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                     voc:en13306:definition "n/a"@en ;
                     voc:iec60812:definition "n/a"@en ;
                     ;
@@ -220,7 +220,7 @@ voc:DetectionMethod rdf:type owl:Class ;
                     cmns-av:usageNote "ISO 14224-2023 Table B4 provides a categorization of detection methods (e.g. periodic testing or continuous condition monitoring)"@en .
 
 
-###  https://pid.vocab14224.org/pid/Downstream
+###  https://iso14224.org/vocab/Downstream
 voc:Downstream rdf:type owl:Class ;
                rdfs:subClassOf voc:zz_OutOfScope ;
                rdfs:label "Downstream"@en ;
@@ -229,7 +229,7 @@ voc:Downstream rdf:type owl:Class ;
                skos:definition "business category most commonly used in the petroleum industry to describe post-production processes"@en ;
                skos:example ""@en ;
                skos:scopeNote ""@en ;
-               rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+               rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                voc:en13306:definition "n/a"@en ;
                voc:iec60812:definition "n/a"@en ;
                ;
@@ -239,7 +239,7 @@ voc:Downstream rdf:type owl:Class ;
                cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/Downtime
+###  https://iso14224.org/vocab/Downtime
 voc:Downtime rdf:type owl:Class ;
              rdfs:subClassOf voc:zz_OutOfScope ;
              rdfs:label "Downtime"@en ;
@@ -248,7 +248,7 @@ voc:Downtime rdf:type owl:Class ;
              skos:definition "time interval during which an item is in a down state "@en ;
              skos:example ""@en ;
              skos:scopeNote ""@en ;
-             rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+             rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
              voc:en13306:definition "n/a"@en ;
              voc:iec60812:definition "n/a"@en ;
              ;
@@ -259,7 +259,7 @@ voc:Downtime rdf:type owl:Class ;
                                "The downtime includes all the delays between the item failure and the restoration of its service"@en .
 
 
-###  https://pid.vocab14224.org/pid/EquipmentClass
+###  https://iso14224.org/vocab/EquipmentClass
 voc:EquipmentClass rdf:type owl:Class ;
                    rdfs:label "Equipment class"@en ;
                    rdfs:seeAlso ""@en ;
@@ -267,7 +267,7 @@ voc:EquipmentClass rdf:type owl:Class ;
                    skos:definition "class of similar type of equipment units"@en ;
                    skos:example "e.g. pumps "@en ;
                    skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                    voc:en13306:definition "n/a"@en ;
                    voc:iec60812:definition "n/a"@en ;
                    ;
@@ -277,7 +277,7 @@ voc:EquipmentClass rdf:type owl:Class ;
                    cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/EquipmentType
+###  https://iso14224.org/vocab/EquipmentType
 voc:EquipmentType rdf:type owl:Class ;
                   rdfs:label "Equipment type"@en ;
                   rdfs:seeAlso ""@en ;
@@ -285,7 +285,7 @@ voc:EquipmentType rdf:type owl:Class ;
                   skos:definition "particular feature of the design which is significantly different from the other design(s) within the same equipment class"@en ;
                   skos:example ""@en ;
                   skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                   voc:en13306:definition "n/a"@en ;
                   voc:iec60812:definition "n/a"@en ;
                   ;
@@ -295,7 +295,7 @@ voc:EquipmentType rdf:type owl:Class ;
                   cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/EquipmentUnit
+###  https://iso14224.org/vocab/EquipmentUnit
 voc:EquipmentUnit rdf:type owl:Class ;
                   rdfs:label "Equipment unit"@en ;
                   rdfs:seeAlso ""@en ;
@@ -303,7 +303,7 @@ voc:EquipmentUnit rdf:type owl:Class ;
                   skos:definition "specific equipment within an equipment class as defined by its boundary"@en ;
                   skos:example ""@en ;
                   skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                   voc:en13306:definition "n/a"@en ;
                   voc:iec60812:definition "n/a"@en ;
                   ;
@@ -313,7 +313,7 @@ voc:EquipmentUnit rdf:type owl:Class ;
                   cmns-av:usageNote "equipment unit is given at Level 6 of the equipment taxonomy classification shown in Figure 3 of ISO 14224-2023"@en .
 
 
-###  https://pid.vocab14224.org/pid/Error
+###  https://iso14224.org/vocab/Error
 voc:Error rdf:type owl:Class ;
           rdfs:label "Error"@en ;
           rdfs:seeAlso ""@en ;
@@ -321,7 +321,7 @@ voc:Error rdf:type owl:Class ;
           skos:definition "discrepancy between a computed, observed or measured value or condition and the true, specified or theoretically correct value or condition"@en ;
           skos:example ""@en ;
           skos:scopeNote ""@en ;
-          rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+          rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
           voc:en13306:definition "n/a"@en ;
           voc:iec60812:definition "n/a"@en ;
           ;
@@ -332,7 +332,7 @@ voc:Error rdf:type owl:Class ;
           cmns-av:usageNote "in ISO 14224, error is also specifically used for software and human errors"@en .
 
 
-###  https://pid.vocab14224.org/pid/Failure
+###  https://iso14224.org/vocab/Failure
 voc:Failure rdf:type owl:Class ;
             rdfs:label "Failure (event)"@en ;
             rdfs:seeAlso ""@en ;
@@ -340,7 +340,7 @@ voc:Failure rdf:type owl:Class ;
             skos:definition "loss of ability to perform as required"@en ;
             skos:example ""@en ;
             skos:scopeNote "this concept as defined does not apply to items consisting of software only"@en ;
-            rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+            rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
             voc:iofIRI "https://spec.industrialontologies.org/ontology/construct/FailureEvent/"^^xsd:anyURI ;
             voc:en13306:definition "loss of the ability of an item to perform a required function"@en ;
             voc:iec60812:definition "n/a"@en ;
@@ -352,7 +352,7 @@ voc:Failure rdf:type owl:Class ;
             cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/FailureCause
+###  https://iso14224.org/vocab/FailureCause
 voc:FailureCause rdf:type owl:Class ;
                  rdfs:label "Failure cause"@en ;
                  rdfs:seeAlso ""@en ;
@@ -360,7 +360,7 @@ voc:FailureCause rdf:type owl:Class ;
                  skos:definition "set of circumstances that leads to failure"@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                  voc:en13306:definition "circumstances during specification, design, manufacture, installation, use or maintenance that result in failure"@en ;
                  voc:iec60812:definition "set of circumstances that leads to failure"@en ;
                  ;
@@ -370,7 +370,7 @@ voc:FailureCause rdf:type owl:Class ;
                  cmns-av:usageNote "Tables in Appendix B of ISO 14224 define failure causes for selected equipment classes"@en .
 
 
-###  https://pid.vocab14224.org/pid/FailureImpact
+###  https://iso14224.org/vocab/FailureImpact
 voc:FailureImpact rdf:type owl:Class ;
                   rdfs:label "Failure impact"@en ;
                   rdfs:seeAlso ""@en ;
@@ -380,7 +380,7 @@ voc:FailureImpact rdf:type owl:Class ;
                   skos:definition "effect of a failure on an equipment's function(s) or on the plant"@en ;
                   skos:example ""@en ;
                   skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                   voc:iofIRI "" ,
                              "https://spec.industrialontologies.org/ontology/construct/FailureEffect/" ;
                   voc:en13306:definition "EN13306 does not define 'failure impact' but does define 'failure severity' as potential or actual detrimental consequences of a failure or fault"@en ;
@@ -393,7 +393,7 @@ voc:FailureImpact rdf:type owl:Class ;
                                     "on the equipment level, failure impact can be classified in three classes (critical, degraded, incipient)"@en .
 
 
-###  https://pid.vocab14224.org/pid/FailureMechanism
+###  https://iso14224.org/vocab/FailureMechanism
 voc:FailureMechanism rdf:type owl:Class ;
                      rdfs:label "Failure mechanism"@en ;
                      rdfs:seeAlso ""@en ;
@@ -401,7 +401,7 @@ voc:FailureMechanism rdf:type owl:Class ;
                      skos:definition "process that leads to failure"@en ;
                      skos:example ""@en ;
                      skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                      voc:en13306:definition "physical, chemical or other processes which may lead or have led to failure"@en ;
                      voc:iec60812:definition "process that leads to failure"@en ;
                      ;
@@ -411,7 +411,7 @@ voc:FailureMechanism rdf:type owl:Class ;
                      cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/FailureMode
+###  https://iso14224.org/vocab/FailureMode
 voc:FailureMode rdf:type owl:Class ;
                 rdfs:label "Failure mode"@en ;
                 rdfs:seeAlso ""@en ;
@@ -419,7 +419,7 @@ voc:FailureMode rdf:type owl:Class ;
                 skos:definition "manner in which failure occurs"@en ;
                 skos:example ""@en ;
                 skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                 voc:en13306:definition "manner in which the inability of an item to perform a required function occurs"@en ;
                 voc:iec60812:definition "manner in which failure occurs"@en ;
                 ;
@@ -430,7 +430,7 @@ voc:FailureMode rdf:type owl:Class ;
                                   "analysis might require data collection to be established on different taxonomy levels"@en .
 
 
-###  https://pid.vocab14224.org/pid/Fault
+###  https://iso14224.org/vocab/Fault
 voc:Fault rdf:type owl:Class ;
           rdfs:label "Fault"@en ;
           rdfs:seeAlso ""@en ;
@@ -438,7 +438,7 @@ voc:Fault rdf:type owl:Class ;
           skos:definition "inability to perform as required, due to an internal state"@en ;
           skos:example ""@en ;
           skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
           voc:en13306:definition "state of an item characterized by inability to perform a required function, excluding the inability during preventive maintenance or other planned actions, or due to lack of external resources"@en ;
           voc:iec60812:definition "n/a"@en ;
           ;
@@ -449,7 +449,7 @@ voc:Fault rdf:type owl:Class ;
           cmns-av:usageNote "see latent fault"@en .
 
 
-###  https://pid.vocab14224.org/pid/HumanError
+###  https://iso14224.org/vocab/HumanError
 voc:HumanError rdf:type owl:Class ;
                rdfs:subClassOf voc:Error ;
                rdfs:label "Human error"@en ;
@@ -458,7 +458,7 @@ voc:HumanError rdf:type owl:Class ;
                skos:definition "discrepancy between the human action taken or omitted and that intended "@en ;
                skos:example "performing an incorrect action; omitting a required action "@en ;
                skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                voc:en13306:definition "n/a"@en ;
                voc:iec60812:definition "n/a"@en ;
                ;
@@ -469,7 +469,7 @@ voc:HumanError rdf:type owl:Class ;
                cmns-av:usageNote "discrepancy with intention is considered essential in determining human error"@en .
 
 
-###  https://pid.vocab14224.org/pid/HumanFatigue
+###  https://iso14224.org/vocab/HumanFatigue
 voc:HumanFatigue rdf:type owl:Class ;
                  rdfs:label "Human fatigue"@en ;
                  rdfs:seeAlso ""@en ;
@@ -477,7 +477,7 @@ voc:HumanFatigue rdf:type owl:Class ;
                  skos:definition "loss of physiological and psychological function as a result of extended wakefulness, heavy work, excessive stimulation, illness or stress"@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                  voc:en13306:definition "n/a"@en ;
                  voc:iec60812:definition "n/a"@en ;
                  ;
@@ -487,7 +487,7 @@ voc:HumanFatigue rdf:type owl:Class ;
                  cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/IdleTime
+###  https://iso14224.org/vocab/IdleTime
 voc:IdleTime rdf:type owl:Class ;
              rdfs:subClassOf voc:zz_OutOfScope ;
              rdfs:label "Idle time"@en ;
@@ -496,7 +496,7 @@ voc:IdleTime rdf:type owl:Class ;
              skos:definition "time interval for which an item is in an idle state"@en ;
              skos:example ""@en ;
              skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
              voc:en13306:definition "part, component, device, subsystem, functional unit, equipment or system that can be individually described and considered"@en ;
              voc:iec60812:definition "subject being considered"@en ;
              ;
@@ -507,7 +507,7 @@ voc:IdleTime rdf:type owl:Class ;
              cmns-av:usageNote "in ISO 14224-2023 the common term 'item' is used on all taxonomy levels (6-9)"@en .
 
 
-###  https://pid.vocab14224.org/pid/IndentureLevel
+###  https://iso14224.org/vocab/IndentureLevel
 voc:IndentureLevel rdf:type owl:Class ;
                    rdfs:label "Indenture"@en ;
                    rdfs:seeAlso ""@en ;
@@ -515,7 +515,7 @@ voc:IndentureLevel rdf:type owl:Class ;
                    skos:definition "level of subdivision of an item from the point of view of maintenance action"@en ;
                    skos:example ""@en ;
                    skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                    voc:en13306:definition "n/a"@en ;
                    voc:iec60812:definition "n/a"@en ;
                    ;
@@ -525,7 +525,7 @@ voc:IndentureLevel rdf:type owl:Class ;
                    cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/Item
+###  https://iso14224.org/vocab/Item
 voc:Item rdf:type owl:Class ;
          rdfs:label "Item"@en ;
          rdfs:seeAlso ""@en ;
@@ -533,7 +533,7 @@ voc:Item rdf:type owl:Class ;
          skos:definition "subject being considered"@en ;
          skos:example ""@en ;
          skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
          voc:en13306:definition "part, component, device, subsystem, functional unit, equipment or system that can be individually described and considered"@en ;
          voc:iec60812:definition "subject being considered"@en ;
          ;
@@ -544,7 +544,7 @@ voc:Item rdf:type owl:Class ;
          cmns-av:usageNote "in ISO 14224-2023 the common term 'item' is used on all taxonomy levels (6-9)"@en .
 
 
-###  https://pid.vocab14224.org/pid/LatentFault
+###  https://iso14224.org/vocab/LatentFault
 voc:LatentFault rdf:type owl:Class ;
                 rdfs:subClassOf voc:Fault ;
                 rdfs:label "Latent fault"@en ;
@@ -553,7 +553,7 @@ voc:LatentFault rdf:type owl:Class ;
                 skos:definition "<of an item>fault that has not become apparent"@en ;
                 skos:example ""@en ;
                 skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                 voc:en13306:definition "n/a"@en ;
                 voc:iec60812:definition "n/a"@en ;
                 ;
@@ -563,7 +563,7 @@ voc:LatentFault rdf:type owl:Class ;
                 cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/LifeCycle
+###  https://iso14224.org/vocab/LifeCycle
 voc:LifeCycle rdf:type owl:Class ;
               rdfs:subClassOf voc:zz_OutOfScope ;
               rdfs:label "Life cycle"@en ;
@@ -572,7 +572,7 @@ voc:LifeCycle rdf:type owl:Class ;
               skos:definition "series of identifiable stages through which an item goes, from its conception to disposal"@en ;
               skos:example ""@en ;
               skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
               voc:en13306:definition "n/a"@en ;
               voc:iec60812:definition "n/a"@en ;
               ;
@@ -582,7 +582,7 @@ voc:LifeCycle rdf:type owl:Class ;
               cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/MaintainableItem
+###  https://iso14224.org/vocab/MaintainableItem
 voc:MaintainableItem rdf:type owl:Class ;
                      rdfs:label "Maintainable item"@en ;
                      rdfs:seeAlso ""@en ;
@@ -590,7 +590,7 @@ voc:MaintainableItem rdf:type owl:Class ;
                      skos:definition "item that constitutes a part or an assembly of parts that is normally the lowest level in the equipment hierarchy during maintenance "@en ;
                      skos:example ""@en ;
                      skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                      voc:en13306:definition "n/a"@en ;
                      voc:iec60812:definition "n/a"@en ;
                      ;
@@ -600,7 +600,7 @@ voc:MaintainableItem rdf:type owl:Class ;
                      cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/Maintenance
+###  https://iso14224.org/vocab/Maintenance
 voc:Maintenance rdf:type owl:Class ;
                 rdfs:label "Maintenance"@en ;
                 rdfs:seeAlso ""@en ;
@@ -608,7 +608,7 @@ voc:Maintenance rdf:type owl:Class ;
                 skos:definition "combination of all technical and management actions intended to retain an item in, or restore it to, a state in which it can perform as required "@en ;
                 skos:example ""@en ;
                 skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                 voc:iofIRI "https://spec.industrialontologies.org/ontology/construct/MaintenanceProcess/"^^xsd:anyURI ;
                 voc:en13306:definition "combination of all technical, administrative and managerial actions during the life cycle of an item intended to retain it in, or restore it to, a state in which it can perform the required function"@en ;
                 voc:iec60812:definition "n/a"@en ;
@@ -619,7 +619,7 @@ voc:Maintenance rdf:type owl:Class ;
                 cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/MaintenanceConcept
+###  https://iso14224.org/vocab/MaintenanceConcept
 voc:MaintenanceConcept rdf:type owl:Class ;
                        rdfs:subClassOf voc:zz_OutOfScope ;
                        rdfs:label "Maintenance concept"@en ;
@@ -628,7 +628,7 @@ voc:MaintenanceConcept rdf:type owl:Class ;
                        skos:definition "definition of the maintenance objectives, line of maintenance, indenture levels, maintenance levels, maintenance support, and their interrelationships"@en ;
                        skos:example ""@en ;
                        skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                        voc:en13306:definition "n/a"@en ;
                        voc:iec60812:definition "n/a"@en ;
                        ;
@@ -638,7 +638,7 @@ voc:MaintenanceConcept rdf:type owl:Class ;
                        cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/MaintenanceImpact
+###  https://iso14224.org/vocab/MaintenanceImpact
 voc:MaintenanceImpact rdf:type owl:Class ;
                       rdfs:label "Maintenance impact"@en ;
                       rdfs:seeAlso ""@en ;
@@ -646,7 +646,7 @@ voc:MaintenanceImpact rdf:type owl:Class ;
                       skos:definition "effect of the maintenance on the plant or equipment's function(s)"@en ;
                       skos:example ""@en ;
                       skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                       voc:en13306:definition "n/a"@en ;
                       voc:iec60812:definition "n/a"@en ;
                       ;
@@ -656,7 +656,7 @@ voc:MaintenanceImpact rdf:type owl:Class ;
                       cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/MaintenanceManHours
+###  https://iso14224.org/vocab/MaintenanceManHours
 voc:MaintenanceManHours rdf:type owl:Class ;
                         rdfs:subClassOf voc:zz_OutOfScope ;
                         rdfs:label "Maintenance man-hours"@en ;
@@ -665,7 +665,7 @@ voc:MaintenanceManHours rdf:type owl:Class ;
                         skos:definition "accumulated duration of the individual maintenance times used by all maintenance personnel for a given type of maintenance action or over a given time interval"@en ;
                         skos:example ""@en ;
                         skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                         voc:en13306:definition "n/a"@en ;
                         voc:iec60812:definition "n/a"@en ;
                         ;
@@ -675,7 +675,7 @@ voc:MaintenanceManHours rdf:type owl:Class ;
                         cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/MaintenancePlan
+###  https://iso14224.org/vocab/MaintenancePlan
 voc:MaintenancePlan rdf:type owl:Class ;
                     rdfs:label "Maintenance plan"@en ;
                     rdfs:seeAlso ""@en ;
@@ -683,7 +683,7 @@ voc:MaintenancePlan rdf:type owl:Class ;
                     skos:definition "structured and documented set of tasks that include the activities, procedures, resources and the time scale required to carry out maintenance"@en ;
                     skos:example ""@en ;
                     skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                     voc:en13306:definition "n/a"@en ;
                     voc:iec60812:definition "n/a"@en ;
                     ;
@@ -693,7 +693,7 @@ voc:MaintenancePlan rdf:type owl:Class ;
                     cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/MaintenanceRecord
+###  https://iso14224.org/vocab/MaintenanceRecord
 voc:MaintenanceRecord rdf:type owl:Class ;
                       rdfs:label "Maintenance record"@en ;
                       rdfs:seeAlso ""@en ;
@@ -701,7 +701,7 @@ voc:MaintenanceRecord rdf:type owl:Class ;
                       skos:definition "part of maintenance documentation that contains all failures, faults and maintenance action relating to an item"@en ;
                       skos:example ""@en ;
                       skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                       voc:en13306:definition "n/a"@en ;
                       voc:iec60812:definition "n/a"@en ;
                       ;
@@ -711,7 +711,7 @@ voc:MaintenanceRecord rdf:type owl:Class ;
                       cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/Midstream
+###  https://iso14224.org/vocab/Midstream
 voc:Midstream rdf:type owl:Class ;
               rdfs:subClassOf voc:zz_OutOfScope ;
               rdfs:label "Midstream"@en ;
@@ -729,7 +729,7 @@ voc:Midstream rdf:type owl:Class ;
               cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/Modification
+###  https://iso14224.org/vocab/Modification
 voc:Modification rdf:type owl:Class ;
                  rdfs:label "Modification"@en ;
                  rdfs:seeAlso ""@en ;
@@ -746,7 +746,7 @@ voc:Modification rdf:type owl:Class ;
                  cmns-av:usageNote "Care is needed in the collection and analysis of RM data to distinguish between maintenance due to failures and maintenance due to equipment modification "@en .
 
 
-###  https://pid.vocab14224.org/pid/PerformanceObjective
+###  https://iso14224.org/vocab/PerformanceObjective
 voc:PerformanceObjective rdf:type owl:Class ;
                          rdfs:label "Performance objective"@en ;
                          rdfs:seeAlso ""@en ;
@@ -754,7 +754,7 @@ voc:PerformanceObjective rdf:type owl:Class ;
                          skos:definition "indicative level for the desired performance"@en ;
                          skos:example ""@en ;
                          skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                          voc:en13306:definition "n/a"@en ;
                          voc:iec60812:definition "n/a"@en ;
                          ;
@@ -764,7 +764,7 @@ voc:PerformanceObjective rdf:type owl:Class ;
                          cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/PerformanceRequirement
+###  https://iso14224.org/vocab/PerformanceRequirement
 voc:PerformanceRequirement rdf:type owl:Class ;
                            rdfs:label "Performance requirement"@en ;
                            rdfs:seeAlso ""@en ;
@@ -772,7 +772,7 @@ voc:PerformanceRequirement rdf:type owl:Class ;
                            skos:definition "required minimum level for the performance of a system"@en ;
                            skos:example ""@en ;
                            skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                            voc:en13306:definition "n/a"@en ;
                            voc:iec60812:definition "n/a"@en ;
                            ;
@@ -782,7 +782,7 @@ voc:PerformanceRequirement rdf:type owl:Class ;
                            cmns-av:usageNote "requirements are normally quantitative but can also be qualitative"@en .
 
 
-###  https://pid.vocab14224.org/pid/Petrochemical
+###  https://iso14224.org/vocab/Petrochemical
 voc:Petrochemical rdf:type owl:Class ;
                   rdfs:subClassOf voc:zz_OutOfScope ;
                   rdfs:label "Petrochemical"@en ;
@@ -791,7 +791,7 @@ voc:Petrochemical rdf:type owl:Class ;
                   skos:definition "business category producing chemicals derived from petroleum and used as a feedstock for the manufacture of a variety of plastics and other related products"@en ;
                   skos:example ""@en ;
                   skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                   voc:en13306:definition "n/a"@en ;
                   voc:iec60812:definition "n/a"@en ;
                   ;
@@ -801,7 +801,7 @@ voc:Petrochemical rdf:type owl:Class ;
                   cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/Redundancy
+###  https://iso14224.org/vocab/Redundancy
 voc:Redundancy rdf:type owl:Class ;
                rdfs:subClassOf voc:zz_OutOfScope ;
                rdfs:label "Redundancy"@en ;
@@ -819,7 +819,7 @@ voc:Redundancy rdf:type owl:Class ;
                cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/RequiredFunction
+###  https://iso14224.org/vocab/RequiredFunction
 voc:RequiredFunction rdf:type owl:Class ;
                      rdfs:label "Required function"@en ;
                      rdfs:seeAlso ""@en ;
@@ -827,7 +827,7 @@ voc:RequiredFunction rdf:type owl:Class ;
                      skos:definition "function or combination of functions of an item that is considered necessary to provide a given service"@en ;
                      skos:example ""@en ;
                      skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                      voc:iofIRI "https://spec.industrialontologies.org/ontology/construct/RequiredFunction/"^^xsd:anyURI ;
                      voc:en13306:definition "function, combination of functions, or a total combination of functions of an item which are considered necessary to fulfil a given requirement"@en ;
                      voc:iec60812:definition "n/a"@en ;
@@ -838,7 +838,7 @@ voc:RequiredFunction rdf:type owl:Class ;
                      cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/SafetyCriticalEquipment
+###  https://iso14224.org/vocab/SafetyCriticalEquipment
 voc:SafetyCriticalEquipment rdf:type owl:Class ;
                             rdfs:label "Safety critical equipment"@en ;
                             rdfs:seeAlso ""@en ;
@@ -846,7 +846,7 @@ voc:SafetyCriticalEquipment rdf:type owl:Class ;
                             skos:definition "equipment and items of permanent, temporary and portable equipment playing an important role in safety systems/ functions"@en ;
                             skos:example ""@en ;
                             skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                             voc:en13306:definition "n/a"@en ;
                             voc:iec60812:definition "n/a"@en ;
                             ;
@@ -856,7 +856,7 @@ voc:SafetyCriticalEquipment rdf:type owl:Class ;
                             cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/SafetySystem
+###  https://iso14224.org/vocab/SafetySystem
 voc:SafetySystem rdf:type owl:Class ;
                  rdfs:label "Safety system"@en ;
                  rdfs:seeAlso ""@en ;
@@ -864,7 +864,7 @@ voc:SafetySystem rdf:type owl:Class ;
                  skos:definition "system which is used to implement one or more safety functions"@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                  voc:en13306:definition "n/a"@en ;
                  voc:iec60812:definition "n/a"@en ;
                  ;
@@ -874,7 +874,7 @@ voc:SafetySystem rdf:type owl:Class ;
                  cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/SoftwareError
+###  https://iso14224.org/vocab/SoftwareError
 voc:SoftwareError rdf:type owl:Class ;
                   rdfs:subClassOf voc:Error ;
                   rdfs:label "Software error"@en ;
@@ -883,7 +883,7 @@ voc:SoftwareError rdf:type owl:Class ;
                   skos:definition "erroneous result produced by the use of software product"@en ;
                   skos:example "Bad code in a computer program resulting in an error"@en ;
                   skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                   voc:en13306:definition "n/a"@en ;
                   voc:iec60812:definition "n/a"@en ;
                   ;
@@ -893,7 +893,7 @@ voc:SoftwareError rdf:type owl:Class ;
                   cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/SubUnit
+###  https://iso14224.org/vocab/SubUnit
 voc:SubUnit rdf:type owl:Class ;
             rdfs:label "Subunit"@en ;
             rdfs:seeAlso ""@en ;
@@ -901,7 +901,7 @@ voc:SubUnit rdf:type owl:Class ;
             skos:definition "assembly of items that provides a specific function that is required for the equipment unit within the main boundary to achieve its intended performance"@en ;
             skos:example ""@en ;
             skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
             voc:en13306:definition "n/a"@en ;
             voc:iec60812:definition "n/a"@en ;
             ;
@@ -911,7 +911,7 @@ voc:SubUnit rdf:type owl:Class ;
             cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/TagNumber
+###  https://iso14224.org/vocab/TagNumber
 voc:TagNumber rdf:type owl:Class ;
               rdfs:label "Tag number"@en ;
               rdfs:seeAlso ""@en ;
@@ -919,7 +919,7 @@ voc:TagNumber rdf:type owl:Class ;
               skos:definition "unique code that identifies the equipment function and its physical location"@en ;
               skos:example ""@en ;
               skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
               voc:en13306:definition "n/a"@en ;
               voc:iec60812:definition "n/a"@en ;
               ;
@@ -929,7 +929,7 @@ voc:TagNumber rdf:type owl:Class ;
               cmns-av:usageNote "normally includes the system for which it belongs"@en .
 
 
-###  https://pid.vocab14224.org/pid/Taxonomy
+###  https://iso14224.org/vocab/Taxonomy
 voc:Taxonomy rdf:type owl:Class ;
              rdfs:subClassOf voc:zz_OutOfScope ;
              rdfs:label "Taxonomy"@en ;
@@ -938,7 +938,7 @@ voc:Taxonomy rdf:type owl:Class ;
              skos:definition "systematic classification of items into generic groups based on factors possibly common to several of the items"@en ;
              skos:example ""@en ;
              skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
              voc:en13306:definition "n/a"@en ;
              voc:iec60812:definition "n/a"@en ;
              ;
@@ -948,7 +948,7 @@ voc:Taxonomy rdf:type owl:Class ;
              cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/Turnaround
+###  https://iso14224.org/vocab/Turnaround
 voc:Turnaround rdf:type owl:Class ;
                rdfs:subClassOf voc:zz_OutOfScope ;
                rdfs:label "Turnaround"@en ;
@@ -958,7 +958,7 @@ voc:Turnaround rdf:type owl:Class ;
                skos:definition "planned event wherein an entire process unit is taken off stream for revamp or renewal"@en ;
                skos:example ""@en ;
                skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                voc:en13306:definition "n/a"@en ;
                voc:iec60812:definition "n/a"@en ;
                ;
@@ -968,7 +968,7 @@ voc:Turnaround rdf:type owl:Class ;
                cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/TypeData
+###  https://iso14224.org/vocab/TypeData
 voc:TypeData rdf:type owl:Class ;
              rdfs:label "Type of data"@en ;
              rdfs:seeAlso ""@en ;
@@ -976,7 +976,7 @@ voc:TypeData rdf:type owl:Class ;
              skos:definition "label why the data is collected"@en ;
              skos:example "reliability data, maintenance data"@en ;
              skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
              voc:iofIRI ""^^xsd:anyURI ;
              voc:en13306:definition "n/a"@en ;
              voc:iec60812:definition "n/a"@en ;
@@ -987,7 +987,7 @@ voc:TypeData rdf:type owl:Class ;
              cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/TypeFailureEvent
+###  https://iso14224.org/vocab/TypeFailureEvent
 voc:TypeFailureEvent rdf:type owl:Class ;
                      rdfs:label "Type of failure event"@en ;
                      rdfs:seeAlso ""@en ;
@@ -995,7 +995,7 @@ voc:TypeFailureEvent rdf:type owl:Class ;
                      skos:definition "label describing the way engineers commonly describe failure events"@en ;
                      skos:example "critical, hidden, common cause"@en ;
                      skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                      voc:iofIRI ""^^xsd:anyURI ;
                      voc:en13306:definition "n/a"@en ;
                      voc:iec60812:definition "n/a"@en ;
@@ -1006,7 +1006,7 @@ voc:TypeFailureEvent rdf:type owl:Class ;
                      cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/TypeMaintenanceStrategy
+###  https://iso14224.org/vocab/TypeMaintenanceStrategy
 voc:TypeMaintenanceStrategy rdf:type owl:Class ;
                             rdfs:label "Type of maintenance strategy"@en ;
                             rdfs:seeAlso ""@en ;
@@ -1014,7 +1014,7 @@ voc:TypeMaintenanceStrategy rdf:type owl:Class ;
                             skos:definition "strategy for maintenance of a specific item"@en ;
                             skos:example "corrective maintenance, condition-based maintenance, opportunistic maintenance, planned maintenance, predictive maintenance, reactive maintenance"@en ;
                             skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                             voc:iofIRI "https://spec.industrialontologies.org/ontology/construct/MaintenanceStrategy/"^^xsd:anyURI ;
                             voc:en13306:definition "n/a"@en ;
                             voc:iec60812:definition "n/a"@en ;
@@ -1025,7 +1025,7 @@ voc:TypeMaintenanceStrategy rdf:type owl:Class ;
                             cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/TypeMaterialState
+###  https://iso14224.org/vocab/TypeMaterialState
 voc:TypeMaterialState rdf:type owl:Class ;
                       rdfs:label "Type of material state"@en ;
                       rdfs:seeAlso ""@en ;
@@ -1033,7 +1033,7 @@ voc:TypeMaterialState rdf:type owl:Class ;
                       skos:definition "process in which a material entity (item) that participates in the process has a condition that remains unchanged"@en ;
                       skos:example ""@en ;
                       skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                       voc:iofIRI "https://spec.industrialontologies.org/ontology/construct/MaterialState/"^^xsd:anyURI ;
                       voc:en13306:definition "n/a"@en ;
                       voc:iec60812:definition "n/a"@en ;
@@ -1044,7 +1044,7 @@ voc:TypeMaterialState rdf:type owl:Class ;
                       cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/TypeReliabilityMeasure
+###  https://iso14224.org/vocab/TypeReliabilityMeasure
 voc:TypeReliabilityMeasure rdf:type owl:Class ;
                            rdfs:label "Type of reliability measure"@en ;
                            rdfs:seeAlso ""@en ;
@@ -1052,7 +1052,7 @@ voc:TypeReliabilityMeasure rdf:type owl:Class ;
                            skos:definition "measure of a reliability-related performance of an item "@en ;
                            skos:example "reliability, maintainability, availability"@en ;
                            skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                            voc:iofIRI ""^^xsd:anyURI ;
                            voc:en13306:definition "n/a"@en ;
                            voc:iec60812:definition "n/a"@en ;
@@ -1063,7 +1063,7 @@ voc:TypeReliabilityMeasure rdf:type owl:Class ;
                            cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/TypeTest
+###  https://iso14224.org/vocab/TypeTest
 voc:TypeTest rdf:type owl:Class ;
              rdfs:label "Type of test"@en ;
              rdfs:seeAlso ""@en ;
@@ -1071,7 +1071,7 @@ voc:TypeTest rdf:type owl:Class ;
              skos:definition "label describing the nature of a test"@en ;
              skos:example "on demand test, periodic test"@en ;
              skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
              voc:iofIRI ""^^xsd:anyURI ;
              voc:en13306:definition "n/a"@en ;
              voc:iec60812:definition "n/a"@en ;
@@ -1082,7 +1082,7 @@ voc:TypeTest rdf:type owl:Class ;
              cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/Uncertainty
+###  https://iso14224.org/vocab/Uncertainty
 voc:Uncertainty rdf:type owl:Class ;
                 rdfs:subClassOf voc:zz_OutOfScope ;
                 rdfs:label "Uncertainty"@en ;
@@ -1091,7 +1091,7 @@ voc:Uncertainty rdf:type owl:Class ;
                 skos:definition "<of a quantity> inability to determine accurately what is or will be the true value of a quantity"@en ;
                 skos:example ""@en ;
                 skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                 voc:en13306:definition "n/a"@en ;
                 voc:iec60812:definition "n/a"@en ;
                 ;
@@ -1101,7 +1101,7 @@ voc:Uncertainty rdf:type owl:Class ;
                 cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/Upstream
+###  https://iso14224.org/vocab/Upstream
 voc:Upstream rdf:type owl:Class ;
              rdfs:subClassOf voc:zz_OutOfScope ;
              rdfs:label "Upstream"@en ;
@@ -1110,7 +1110,7 @@ voc:Upstream rdf:type owl:Class ;
              skos:definition "business category of the petroleum industry involving exploration and production"@en ;
              skos:example ""@en ;
              skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
              voc:en13306:definition "n/a"@en ;
              voc:iec60812:definition "n/a"@en ;
              ;
@@ -1120,7 +1120,7 @@ voc:Upstream rdf:type owl:Class ;
              cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/zz_OutOfScope
+###  https://iso14224.org/vocab/zz_OutOfScope
 voc:zz_OutOfScope rdf:type owl:Class ;
                   rdfs:label "ZZ_OutOfScope" ;
                   cmns-av:explanatoryNote "Terms present in the ISO 14224 terms and definitions section that are not used in a material way in Annex B - interpretation and notation of failure and maintenance parameters." .
@@ -1130,7 +1130,7 @@ voc:zz_OutOfScope rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  https://pid.vocab14224.org/pid/active_maintenance_time
+###  https://iso14224.org/vocab/active_maintenance_time
 voc:active_maintenance_time rdf:type owl:NamedIndividual ,
                                      voc:TypeReliabilityMeasure ;
                             rdfs:label "active maintenance time"@en ;
@@ -1139,7 +1139,7 @@ voc:active_maintenance_time rdf:type owl:NamedIndividual ,
                             skos:definition "duration of a maintenance action, excluding logistic delay"@en ;
                             skos:example ""@en ;
                             skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                             voc:en13306:definition "n/a"@en ;
                             voc:iec60812:definition "n/a"@en ;
                             ;
@@ -1149,7 +1149,7 @@ voc:active_maintenance_time rdf:type owl:NamedIndividual ,
                             cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/active_repair_time
+###  https://iso14224.org/vocab/active_repair_time
 voc:active_repair_time rdf:type owl:NamedIndividual ,
                                 voc:TypeReliabilityMeasure ;
                        rdfs:label "active repair time"@en ;
@@ -1158,7 +1158,7 @@ voc:active_repair_time rdf:type owl:NamedIndividual ,
                        skos:definition "effective time to achieve repair of an item"@en ;
                        skos:example ""@en ;
                        skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                        voc:en13306:definition "n/a"@en ;
                        voc:iec60812:definition "n/a"@en ;
                        ;
@@ -1168,7 +1168,7 @@ voc:active_repair_time rdf:type owl:NamedIndividual ,
                        cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/availability
+###  https://iso14224.org/vocab/availability
 voc:availability rdf:type owl:NamedIndividual ,
                           voc:TypeReliabilityMeasure ;
                  rdfs:label "availability"@en ;
@@ -1177,7 +1177,7 @@ voc:availability rdf:type owl:NamedIndividual ,
                  skos:definition "ability to be in a state to perform as required"@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                  voc:en13306:definition "ability of an item to be in a state to perform as and when required, under given conditions, assuming that the necessary external resources are provided"@en ;
                  voc:iec60812:definition "n/a"@en ;
                  ;
@@ -1187,7 +1187,7 @@ voc:availability rdf:type owl:NamedIndividual ,
                  cmns-av:usageNote "See detailed description and interpretation of availability in Annex C of the standard"@en .
 
 
-###  https://pid.vocab14224.org/pid/common_cause_failure
+###  https://iso14224.org/vocab/common_cause_failure
 voc:common_cause_failure rdf:type owl:NamedIndividual ,
                                   voc:TypeFailureEvent ;
                          rdfs:label "common cause failure"@en ;
@@ -1205,7 +1205,7 @@ voc:common_cause_failure rdf:type owl:NamedIndividual ,
                          cmns-av:usageNote "Components that fail due to a shared cause normally fail in the same functional mode. The term common mode if therefore sometimes used. It is however, not considered to be a precise term for communicating the characteristics that describe a common cause failure"@en .
 
 
-###  https://pid.vocab14224.org/pid/common_mode_failure
+###  https://iso14224.org/vocab/common_mode_failure
 voc:common_mode_failure rdf:type owl:NamedIndividual ,
                                  voc:TypeFailureEvent ;
                         rdfs:label "common mode failure"@en ;
@@ -1223,7 +1223,7 @@ voc:common_mode_failure rdf:type owl:NamedIndividual ,
                         cmns-av:usageNote "Common mode failures can have different causes"@en .
 
 
-###  https://pid.vocab14224.org/pid/condition_based_maintenance
+###  https://iso14224.org/vocab/condition_based_maintenance
 voc:condition_based_maintenance rdf:type owl:NamedIndividual ,
                                          voc:TypeMaintenanceStrategy ;
                                 rdfs:label "condition based maintenance" ;
@@ -1232,7 +1232,7 @@ voc:condition_based_maintenance rdf:type owl:NamedIndividual ,
                                 skos:definition "preventative maintenance based on assessment of physical condition"@en ;
                                 skos:example ""@en ;
                                 skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                                 voc:en13306:definition "preventive maintenance which include assessment of physical conditions, analysis and the possible ensuing maintenance actions"@en ;
                                 voc:iec60812:definition "n/a"@en ;
                                 ;
@@ -1242,7 +1242,7 @@ voc:condition_based_maintenance rdf:type owl:NamedIndividual ,
                                 cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/corrective_maintenance
+###  https://iso14224.org/vocab/corrective_maintenance
 voc:corrective_maintenance rdf:type owl:NamedIndividual ,
                                     voc:TypeMaintenanceStrategy ;
                            rdfs:label "corrective maintenance"@en ;
@@ -1251,7 +1251,7 @@ voc:corrective_maintenance rdf:type owl:NamedIndividual ,
                            skos:definition "maintenance carried out after fault detection to effect restoration"@en ;
                            skos:example ""@en ;
                            skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                            voc:en13306:definition "maintenance carried out after fault recognition and intended to restore an item into a state in which it can perform a required function"@en ;
                            voc:iec60812:definition "n/a"@en ;
                            ;
@@ -1261,7 +1261,7 @@ voc:corrective_maintenance rdf:type owl:NamedIndividual ,
                            cmns-av:usageNote "corrective maintenance of software invariably involves some modification"@en .
 
 
-###  https://pid.vocab14224.org/pid/critical_failure
+###  https://iso14224.org/vocab/critical_failure
 voc:critical_failure rdf:type owl:NamedIndividual ,
                               voc:TypeFailureEvent ;
                      rdfs:label "critical failure"@en ;
@@ -1270,7 +1270,7 @@ voc:critical_failure rdf:type owl:NamedIndividual ,
                      skos:definition "failure of an equipment unit that causes an immediate cessation of the ability to perform a required function"@en ;
                      skos:example ""@en ;
                      skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                      voc:en13306:definition "n/a"@en ;
                      voc:iec60812:definition "n/a"@en ;
                      ;
@@ -1281,7 +1281,7 @@ voc:critical_failure rdf:type owl:NamedIndividual ,
                      cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/degraded_failure
+###  https://iso14224.org/vocab/degraded_failure
 voc:degraded_failure rdf:type owl:NamedIndividual ,
                               voc:TypeFailureEvent ;
                      rdfs:label "degraded failure"@en ;
@@ -1290,7 +1290,7 @@ voc:degraded_failure rdf:type owl:NamedIndividual ,
                      skos:definition "failure that does not cease the fundamental function(s), but compromises one or several functions"@en ;
                      skos:example ""@en ;
                      skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                      voc:en13306:definition "EN13306 does not define 'degraded failure' but does define 'degraded state' as state of reduced ability to perform as required, but with acceptable reduced performance"@en ;
                      voc:iec60812:definition "n/a"@en ;
                      ;
@@ -1302,7 +1302,7 @@ voc:degraded_failure rdf:type owl:NamedIndividual ,
                      cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/demand
+###  https://iso14224.org/vocab/demand
 voc:demand rdf:type owl:NamedIndividual ,
                     voc:TypeTest ;
            rdfs:label "demand"@en ;
@@ -1311,7 +1311,7 @@ voc:demand rdf:type owl:NamedIndividual ,
            skos:definition "activation of the function (includes functional, operational and test activations)"@en ;
            skos:example ""@en ;
            skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
            voc:en13306:definition "n/a"@en ;
            voc:iec60812:definition "n/a"@en ;
            ;
@@ -1321,7 +1321,7 @@ voc:demand rdf:type owl:NamedIndividual ,
            cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/down_state
+###  https://iso14224.org/vocab/down_state
 voc:down_state rdf:type owl:NamedIndividual ,
                         voc:TypeMaterialState ;
                rdfs:label "down state"@en ;
@@ -1332,7 +1332,7 @@ voc:down_state rdf:type owl:NamedIndividual ,
                skos:definition "state of being unable to perform as required, due to internal fault, or preventative maintenance"@en ;
                skos:example ""@en ;
                skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                voc:en13306:definition "n/a"@en ;
                voc:iec60812:definition "n/a"@en ;
                voc:iof:definition "https://spec.industrialontologies.org/ontology/construct/FailedState/"^^xsd:anyURI ;
@@ -1343,7 +1343,7 @@ voc:down_state rdf:type owl:NamedIndividual ,
                cmns-av:usageNote "the adjectives 'down' or 'unavailable' designate an item in down state"@en .
 
 
-###  https://pid.vocab14224.org/pid/equipment_data
+###  https://iso14224.org/vocab/equipment_data
 voc:equipment_data rdf:type owl:NamedIndividual ,
                             voc:TypeData ;
                    rdfs:label "equipment data"@en ;
@@ -1352,7 +1352,7 @@ voc:equipment_data rdf:type owl:NamedIndividual ,
                    skos:definition "technical, operational and environmental parameters characterizing the design and use of an equipment unit"@en ;
                    skos:example ""@en ;
                    skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                    voc:en13306:definition "n/a"@en ;
                    voc:iec60812:definition "n/a"@en ;
                    ;
@@ -1362,7 +1362,7 @@ voc:equipment_data rdf:type owl:NamedIndividual ,
                    cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/failure_data
+###  https://iso14224.org/vocab/failure_data
 voc:failure_data rdf:type owl:NamedIndividual ,
                           voc:TypeData ;
                  rdfs:label "failure data"@en ;
@@ -1371,7 +1371,7 @@ voc:failure_data rdf:type owl:NamedIndividual ,
                  skos:definition "data characterizing the occurrence of a failure event"@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                  voc:en13306:definition "n/a"@en ;
                  voc:iec60812:definition "n/a"@en ;
                  ;
@@ -1381,7 +1381,7 @@ voc:failure_data rdf:type owl:NamedIndividual ,
                  cmns-av:usageNote "ISO 14224:2023 Table 6 provides a list of data to be recorded"@en .
 
 
-###  https://pid.vocab14224.org/pid/failure_due_to_demand
+###  https://iso14224.org/vocab/failure_due_to_demand
 voc:failure_due_to_demand rdf:type owl:NamedIndividual ,
                                    voc:TypeFailureEvent ;
                           rdfs:label "failure due to demand"@en ;
@@ -1390,7 +1390,7 @@ voc:failure_due_to_demand rdf:type owl:NamedIndividual ,
                           skos:definition "failure occurring on demand"@en ;
                           skos:example ""@en ;
                           skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                           voc:en13306:definition "n/a"@en ;
                           voc:iec60812:definition "n/a"@en ;
                           ;
@@ -1400,7 +1400,7 @@ voc:failure_due_to_demand rdf:type owl:NamedIndividual ,
                           cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/failure_frequency
+###  https://iso14224.org/vocab/failure_frequency
 voc:failure_frequency rdf:type owl:NamedIndividual ,
                                voc:TypeReliabilityMeasure ;
                       rdfs:label "failure frequency"@en ;
@@ -1409,7 +1409,7 @@ voc:failure_frequency rdf:type owl:NamedIndividual ,
                       skos:definition "unconditional failure intensity; conditional probability per unit time that the item fails between t and t + dt, provided that it was working at time 0"@en ;
                       skos:example ""@en ;
                       skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                       voc:en13306:definition "n/a"@en ;
                       voc:iec60812:definition "n/a"@en ;
                       ;
@@ -1419,7 +1419,7 @@ voc:failure_frequency rdf:type owl:NamedIndividual ,
                       cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/failure_on_demand
+###  https://iso14224.org/vocab/failure_on_demand
 voc:failure_on_demand rdf:type owl:NamedIndividual ,
                                voc:TypeFailureEvent ;
                       rdfs:label "failure on demand"@en ;
@@ -1438,7 +1438,7 @@ voc:failure_on_demand rdf:type owl:NamedIndividual ,
                                         "See also definition on failure due to demand"@en .
 
 
-###  https://pid.vocab14224.org/pid/failure_rate
+###  https://iso14224.org/vocab/failure_rate
 voc:failure_rate rdf:type owl:NamedIndividual ,
                           voc:TypeReliabilityMeasure ;
                  rdfs:label "failure rate"@en ;
@@ -1447,7 +1447,7 @@ voc:failure_rate rdf:type owl:NamedIndividual ,
                  skos:definition "conditional probability per unit time that the item fails between t and t + dt, provided that it has been working over 0, t"@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                  voc:en13306:definition "n/a"@en ;
                  voc:iec60812:definition "n/a"@en ;
                  ;
@@ -1457,7 +1457,7 @@ voc:failure_rate rdf:type owl:NamedIndividual ,
                  cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/generic_reliability_data
+###  https://iso14224.org/vocab/generic_reliability_data
 voc:generic_reliability_data rdf:type owl:NamedIndividual ,
                                       voc:TypeData ;
                              rdfs:label "failure frequency"@en ;
@@ -1466,7 +1466,7 @@ voc:generic_reliability_data rdf:type owl:NamedIndividual ,
                              skos:definition "reliability data covering families of similar equipment"@en ;
                              skos:example ""@en ;
                              skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                              voc:en13306:definition "n/a"@en ;
                              voc:iec60812:definition "n/a"@en ;
                              ;
@@ -1476,7 +1476,7 @@ voc:generic_reliability_data rdf:type owl:NamedIndividual ,
                              cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/hidden_failure
+###  https://iso14224.org/vocab/hidden_failure
 voc:hidden_failure rdf:type owl:NamedIndividual ,
                             voc:TypeFailureEvent ;
                    rdfs:label "hidden failure"@en ;
@@ -1485,7 +1485,7 @@ voc:hidden_failure rdf:type owl:NamedIndividual ,
                    skos:definition "failure that is not immediately evident to operations and maintenance personnel"@en ;
                    skos:example ""@en ;
                    skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                    voc:en13306:definition "failure which is not detected during normal operation"@en ;
                    voc:iec60812:definition "n/a"@en ;
                    ;
@@ -1495,7 +1495,7 @@ voc:hidden_failure rdf:type owl:NamedIndividual ,
                    cmns-av:usageNote "see latent fault"@en .
 
 
-###  https://pid.vocab14224.org/pid/idle_state
+###  https://iso14224.org/vocab/idle_state
 voc:idle_state rdf:type owl:NamedIndividual ,
                         voc:TypeMaterialState ;
                rdfs:label "idle state"@en ;
@@ -1504,7 +1504,7 @@ voc:idle_state rdf:type owl:NamedIndividual ,
                skos:definition "non-operating up state during non-required time"@en ;
                skos:example ""@en ;
                skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                voc:en13306:definition "n/a"@en ;
                voc:iec60812:definition "n/a"@en ;
                ;
@@ -1515,7 +1515,7 @@ voc:idle_state rdf:type owl:NamedIndividual ,
                                  "The non-operating time comprises the idle time, the stand-by time and the externally disabled time "@en .
 
 
-###  https://pid.vocab14224.org/pid/incipient_failure
+###  https://iso14224.org/vocab/incipient_failure
 voc:incipient_failure rdf:type owl:NamedIndividual ,
                                voc:TypeFailureEvent ;
                       rdfs:label "incipient failure"@en ;
@@ -1524,7 +1524,7 @@ voc:incipient_failure rdf:type owl:NamedIndividual ,
                       skos:definition "imperfection in the state or condition of an item so that a degraded or critical failure might (or might not) eventually be the expected result if corrective action is taken "@en ;
                       skos:example ""@en ;
                       skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                       voc:en13306:definition "n/a"@en ;
                       voc:iec60812:definition "n/a"@en ;
                       ;
@@ -1534,7 +1534,7 @@ voc:incipient_failure rdf:type owl:NamedIndividual ,
                       cmns-av:usageNote "the recording of an incipient failure requires some criteria for when a fault of this nature requires registration as opposed to a state/ condition where no corrective actions are required"@en .
 
 
-###  https://pid.vocab14224.org/pid/integrity
+###  https://iso14224.org/vocab/integrity
 voc:integrity rdf:type owl:NamedIndividual ,
                        voc:TypeReliabilityMeasure ;
               rdfs:label "integrity"@en ;
@@ -1543,7 +1543,7 @@ voc:integrity rdf:type owl:NamedIndividual ,
               skos:definition "ability of a barrier to function as required when needed"@en ;
               skos:example ""@en ;
               skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
               voc:en13306:definition "n/a"@en ;
               voc:iec60812:definition "n/a"@en ;
               ;
@@ -1553,7 +1553,7 @@ voc:integrity rdf:type owl:NamedIndividual ,
               cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/logistic_delay
+###  https://iso14224.org/vocab/logistic_delay
 voc:logistic_delay rdf:type owl:NamedIndividual ,
                             voc:TypeReliabilityMeasure ;
                    rdfs:label "Logistic delay"@en ;
@@ -1562,7 +1562,7 @@ voc:logistic_delay rdf:type owl:NamedIndividual ,
                    skos:definition "delay, excluding administrative delay, incurred for the provision of resources needed for a maintenance action to proceed or continue"@en ;
                    skos:example ""@en ;
                    skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                    voc:en13306:definition "n/a"@en ;
                    voc:iec60812:definition "n/a"@en ;
                    ;
@@ -1572,7 +1572,7 @@ voc:logistic_delay rdf:type owl:NamedIndividual ,
                    cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/maintenance_data
+###  https://iso14224.org/vocab/maintenance_data
 voc:maintenance_data rdf:type owl:NamedIndividual ,
                               voc:TypeData ;
                      rdfs:label "maintenance data"@en ;
@@ -1581,7 +1581,7 @@ voc:maintenance_data rdf:type owl:NamedIndividual ,
                      skos:definition "data characterizing the maintenance action planned or done"@en ;
                      skos:example ""@en ;
                      skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                      voc:en13306:definition "n/a"@en ;
                      voc:iec60812:definition "n/a"@en ;
                      ;
@@ -1591,7 +1591,7 @@ voc:maintenance_data rdf:type owl:NamedIndividual ,
                      cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/maintenance_supportability
+###  https://iso14224.org/vocab/maintenance_supportability
 voc:maintenance_supportability rdf:type owl:NamedIndividual ,
                                         voc:TypeReliabilityMeasure ;
                                rdfs:label "maintenance supportability"@en ;
@@ -1600,7 +1600,7 @@ voc:maintenance_supportability rdf:type owl:NamedIndividual ,
                                skos:definition "<of an item> ability to be supported to sustain the required availability with a defined operational profile and given logistic and maintenance resources"@en ;
                                skos:example ""@en ;
                                skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                                voc:en13306:definition ""@en ;
                                voc:iec60812:definition "n/a"@en ;
                                ;
@@ -1610,7 +1610,7 @@ voc:maintenance_supportability rdf:type owl:NamedIndividual ,
                                cmns-av:usageNote "Supportability of an item results from the inherent maintenance, combined with factors external to the item that affect the relative ease of providing the required maintenance and logistic support "@en .
 
 
-###  https://pid.vocab14224.org/pid/mean_active_repair_time
+###  https://iso14224.org/vocab/mean_active_repair_time
 voc:mean_active_repair_time rdf:type owl:NamedIndividual ,
                                      voc:TypeReliabilityMeasure ;
                             rdfs:label "mean cycles to failure"@en ;
@@ -1619,7 +1619,7 @@ voc:mean_active_repair_time rdf:type owl:NamedIndividual ,
                             skos:definition "expected active repair time"@en ;
                             skos:example ""@en ;
                             skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                             voc:en13306:definition "n/a"@en ;
                             voc:iec60812:definition "n/a"@en ;
                             ;
@@ -1629,7 +1629,7 @@ voc:mean_active_repair_time rdf:type owl:NamedIndividual ,
                             cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/mean_cycles_to_failure
+###  https://iso14224.org/vocab/mean_cycles_to_failure
 voc:mean_cycles_to_failure rdf:type owl:NamedIndividual ,
                                     voc:TypeReliabilityMeasure ;
                            rdfs:label "mean cycles to failure"@en ;
@@ -1638,7 +1638,7 @@ voc:mean_cycles_to_failure rdf:type owl:NamedIndividual ,
                            skos:definition "expected number of cycles before the item fails"@en ;
                            skos:example ""@en ;
                            skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                            voc:en13306:definition "n/a"@en ;
                            voc:iec60812:definition "n/a"@en ;
                            ;
@@ -1648,7 +1648,7 @@ voc:mean_cycles_to_failure rdf:type owl:NamedIndividual ,
                            cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/mean_elapsed_time_between_failures
+###  https://iso14224.org/vocab/mean_elapsed_time_between_failures
 voc:mean_elapsed_time_between_failures rdf:type owl:NamedIndividual ,
                                                 voc:TypeReliabilityMeasure ;
                                        rdfs:label "mean elapsed time between failures"@en ;
@@ -1657,7 +1657,7 @@ voc:mean_elapsed_time_between_failures rdf:type owl:NamedIndividual ,
                                        skos:definition "expected elapsed time between failures"@en ;
                                        skos:example ""@en ;
                                        skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                                        voc:en13306:definition "n/a"@en ;
                                        voc:iec60812:definition "n/a"@en ;
                                        ;
@@ -1667,7 +1667,7 @@ voc:mean_elapsed_time_between_failures rdf:type owl:NamedIndividual ,
                                        cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/mean_number_of_cycles
+###  https://iso14224.org/vocab/mean_number_of_cycles
 voc:mean_number_of_cycles rdf:type owl:NamedIndividual ,
                                    voc:TypeReliabilityMeasure ;
                           rdfs:label "mean number of cycles"@en ;
@@ -1676,7 +1676,7 @@ voc:mean_number_of_cycles rdf:type owl:NamedIndividual ,
                           skos:definition "expected number of cycles per unit time"@en ;
                           skos:example ""@en ;
                           skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                           voc:en13306:definition "n/a"@en ;
                           voc:iec60812:definition "n/a"@en ;
                           ;
@@ -1686,7 +1686,7 @@ voc:mean_number_of_cycles rdf:type owl:NamedIndividual ,
                           cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/mean_overall_repairing_time
+###  https://iso14224.org/vocab/mean_overall_repairing_time
 voc:mean_overall_repairing_time rdf:type owl:NamedIndividual ,
                                          voc:TypeReliabilityMeasure ;
                                 rdfs:label "mean overall repairing time"@en ;
@@ -1695,7 +1695,7 @@ voc:mean_overall_repairing_time rdf:type owl:NamedIndividual ,
                                 skos:definition "expected time to achieve the following actions: the time spent before starting the repair; and, the effective time to repair; and, the time before the item is made available to be put back into operation"@en ;
                                 skos:example ""@en ;
                                 skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                                 voc:en13306:definition "n/a"@en ;
                                 voc:iec60812:definition "n/a"@en ;
                                 ;
@@ -1705,7 +1705,7 @@ voc:mean_overall_repairing_time rdf:type owl:NamedIndividual ,
                                 cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/mean_time_to_failure
+###  https://iso14224.org/vocab/mean_time_to_failure
 voc:mean_time_to_failure rdf:type owl:NamedIndividual ,
                                   voc:TypeReliabilityMeasure ;
                          rdfs:label "mean time to failure"@en ;
@@ -1714,7 +1714,7 @@ voc:mean_time_to_failure rdf:type owl:NamedIndividual ,
                          skos:definition "expected time before the item fails"@en ;
                          skos:example ""@en ;
                          skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                          voc:en13306:definition "n/a"@en ;
                          voc:iec60812:definition "n/a"@en ;
                          ;
@@ -1724,7 +1724,7 @@ voc:mean_time_to_failure rdf:type owl:NamedIndividual ,
                          cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/mean_time_to_repair
+###  https://iso14224.org/vocab/mean_time_to_repair
 voc:mean_time_to_repair rdf:type owl:NamedIndividual ,
                                  voc:TypeReliabilityMeasure ;
                         rdfs:label "mean time to repair"@en ;
@@ -1733,7 +1733,7 @@ voc:mean_time_to_repair rdf:type owl:NamedIndividual ,
                         skos:definition "expected time to achieve the repair of a failed item"@en ;
                         skos:example ""@en ;
                         skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                         voc:en13306:definition "n/a"@en ;
                         voc:iec60812:definition "n/a"@en ;
                         ;
@@ -1743,7 +1743,7 @@ voc:mean_time_to_repair rdf:type owl:NamedIndividual ,
                         cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/mean_time_to_restoration
+###  https://iso14224.org/vocab/mean_time_to_restoration
 voc:mean_time_to_restoration rdf:type owl:NamedIndividual ,
                                       voc:TypeReliabilityMeasure ;
                              rdfs:label "mean time to restoration"@en ;
@@ -1752,7 +1752,7 @@ voc:mean_time_to_restoration rdf:type owl:NamedIndividual ,
                              skos:definition "expected time to the following actions: the time to detect the failure; and, the time spent before starting the repair; and, the effective time to repair; and, the time before the component is made available to be put back into operation"@en ;
                              skos:example ""@en ;
                              skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                              voc:en13306:definition "n/a"@en ;
                              voc:iec60812:definition "n/a"@en ;
                              ;
@@ -1762,7 +1762,7 @@ voc:mean_time_to_restoration rdf:type owl:NamedIndividual ,
                              cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/mobilization_time
+###  https://iso14224.org/vocab/mobilization_time
 voc:mobilization_time rdf:type owl:NamedIndividual ,
                                voc:TypeReliabilityMeasure ;
                       rdfs:label "mobilization time"@en ;
@@ -1771,7 +1771,7 @@ voc:mobilization_time rdf:type owl:NamedIndividual ,
                       skos:definition "time to get all necessary resources available to execute maintenance"@en ;
                       skos:example ""@en ;
                       skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                       voc:en13306:definition "n/a"@en ;
                       voc:iec60812:definition "n/a"@en ;
                       ;
@@ -1781,7 +1781,7 @@ voc:mobilization_time rdf:type owl:NamedIndividual ,
                       cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/non_critical_failure
+###  https://iso14224.org/vocab/non_critical_failure
 voc:non_critical_failure rdf:type owl:NamedIndividual ,
                                   voc:TypeFailureEvent ;
                          rdfs:label "non-critical failure"@en ;
@@ -1790,7 +1790,7 @@ voc:non_critical_failure rdf:type owl:NamedIndividual ,
                          skos:definition "failure of an equipment unit that does not cause an immediate cessation of an ability to perform its required function"@en ;
                          skos:example ""@en ;
                          skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                          voc:en13306:definition "n/a"@en ;
                          voc:iec60812:definition "n/a"@en ;
                          ;
@@ -1800,7 +1800,7 @@ voc:non_critical_failure rdf:type owl:NamedIndividual ,
                          cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/operating_state
+###  https://iso14224.org/vocab/operating_state
 voc:operating_state rdf:type owl:NamedIndividual ,
                              voc:TypeMaterialState ;
                     rdfs:label "operating state"@en ;
@@ -1809,7 +1809,7 @@ voc:operating_state rdf:type owl:NamedIndividual ,
                     skos:definition "state of performing as required"@en ;
                     skos:example ""@en ;
                     skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                     voc:en13306:definition "n/a"@en ;
                     voc:iec60812:definition "n/a"@en ;
                     voc:iof:definition "https://spec.industrialontologies.org/ontology/construct/OperatingState/"^^xsd:anyURI ;
@@ -1820,7 +1820,7 @@ voc:operating_state rdf:type owl:NamedIndividual ,
                     cmns-av:usageNote "in some applications, an item in idle state is considered to be operating"@en .
 
 
-###  https://pid.vocab14224.org/pid/operating_time_time
+###  https://iso14224.org/vocab/operating_time_time
 voc:operating_time_time rdf:type owl:NamedIndividual ,
                                  voc:TypeReliabilityMeasure ;
                         rdfs:label "operating time"@en ;
@@ -1829,7 +1829,7 @@ voc:operating_time_time rdf:type owl:NamedIndividual ,
                         skos:definition "time interval during which an item is in an operating state"@en ;
                         skos:example ""@en ;
                         skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                         voc:en13306:definition "n/a"@en ;
                         voc:iec60812:definition "n/a"@en ;
                         ;
@@ -1839,7 +1839,7 @@ voc:operating_time_time rdf:type owl:NamedIndividual ,
                         cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/opportunity_maintenance
+###  https://iso14224.org/vocab/opportunity_maintenance
 voc:opportunity_maintenance rdf:type owl:NamedIndividual ,
                                      voc:TypeMaintenanceStrategy ;
                             rdfs:label "opportunity maintenance" ;
@@ -1848,7 +1848,7 @@ voc:opportunity_maintenance rdf:type owl:NamedIndividual ,
                             skos:definition "maintenance of an item that is deferred or advanced in time and is performed when an unplanned opportunity becomes available"@en ;
                             skos:example ""@en ;
                             skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                             voc:en13306:definition "n/a"@en ;
                             voc:iec60812:definition "n/a"@en ;
                             ;
@@ -1858,7 +1858,7 @@ voc:opportunity_maintenance rdf:type owl:NamedIndividual ,
                             cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/periodic_test
+###  https://iso14224.org/vocab/periodic_test
 voc:periodic_test rdf:type owl:NamedIndividual ,
                            voc:TypeTest ;
                   rdfs:label "periodic test"@en ;
@@ -1867,7 +1867,7 @@ voc:periodic_test rdf:type owl:NamedIndividual ,
                   skos:definition "planned operation performed at constant intervals in order to detect the potential hidden failures which can have occurred in the meantime "@en ;
                   skos:example ""@en ;
                   skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                   voc:en13306:definition "n/a"@en ;
                   voc:iec60812:definition "n/a"@en ;
                   ;
@@ -1877,7 +1877,7 @@ voc:periodic_test rdf:type owl:NamedIndividual ,
                   cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/planned_maintenance
+###  https://iso14224.org/vocab/planned_maintenance
 voc:planned_maintenance rdf:type owl:NamedIndividual ,
                                  voc:TypeMaintenanceStrategy ;
                         rdfs:label "planned maintenance"@en ;
@@ -1887,7 +1887,7 @@ voc:planned_maintenance rdf:type owl:NamedIndividual ,
                         skos:definition "maintenance carried out in accordance with a specified time schedule"@en ;
                         skos:example ""@en ;
                         skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                         voc:en13306:definition "EN13306 does not define 'planned maintenance' but does define 'scheduled maintenance' as maintenance carried out in accordance with a specified time schedule or specified number of units of use"@en ;
                         voc:iec60812:definition "n/a"@en ;
                         ;
@@ -1897,7 +1897,7 @@ voc:planned_maintenance rdf:type owl:NamedIndividual ,
                         cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/predictive_maintenance
+###  https://iso14224.org/vocab/predictive_maintenance
 voc:predictive_maintenance rdf:type owl:NamedIndividual ,
                                     voc:TypeMaintenanceStrategy ;
                            rdfs:label "predictive maintenance"@en ;
@@ -1907,7 +1907,7 @@ voc:predictive_maintenance rdf:type owl:NamedIndividual ,
                            skos:definition "maintenance based on the prediction of the future condition of an item estimated or calculated from a defined set of historic data and known future operational parameters"@en ;
                            skos:example ""@en ;
                            skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                            voc:en13306:definition "condition-based maintenance carried out following a forecast derived from repeated analysis or known characteristics and evaluation of the significant parameters of the degradation of the item"@en ;
                            voc:iec60812:definition "n/a"@en ;
                            ;
@@ -1917,7 +1917,7 @@ voc:predictive_maintenance rdf:type owl:NamedIndividual ,
                            cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/preventative_maintenance
+###  https://iso14224.org/vocab/preventative_maintenance
 voc:preventative_maintenance rdf:type owl:NamedIndividual ,
                                       voc:TypeMaintenanceStrategy ;
                              rdfs:label "preventative maintenance"@en ;
@@ -1926,17 +1926,17 @@ voc:preventative_maintenance rdf:type owl:NamedIndividual ,
                              skos:definition "maintenance carried out to mitigate degradation and reduce the probability of failure"@en ;
                              skos:example ""@en ;
                              skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                              voc:en13306:definition "maintenance carried out after fault recognition and intended to restore an item into a state in which it can perform a required function"@en ;
                              voc:iec60812:definition "n/a"@en ;
                              ;
                              cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
                              cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
                              cmns-av:explanatoryNote ""@en ;
-                             cmns-av:usageNote "See also condition-based maintenance (https://pid.vocab14224.org/ConditionBasedMaintenance) and planned (scheduled) maintenance (https://www.vocab14224.org/PlannedMaintenance)"@en .
+                             cmns-av:usageNote "See also condition-based maintenance (https://iso14224.org/vocab/condition_based_maintenance) and planned (scheduled) maintenance (https://iso14224.org/vocab/planned_maintenance)"@en .
 
 
-###  https://pid.vocab14224.org/pid/random_failure
+###  https://iso14224.org/vocab/random_failure
 voc:random_failure rdf:type owl:NamedIndividual ,
                             voc:TypeFailureEvent ;
                    rdfs:label "random failure"@en ;
@@ -1945,7 +1945,7 @@ voc:random_failure rdf:type owl:NamedIndividual ,
                    skos:definition "failure occurring in a random way"@en ;
                    skos:example ""@en ;
                    skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                    voc:en13306:definition "n/a"@en ;
                    voc:iec60812:definition "n/a"@en ;
                    ;
@@ -1955,7 +1955,7 @@ voc:random_failure rdf:type owl:NamedIndividual ,
                    cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/reliability
+###  https://iso14224.org/vocab/reliability
 voc:reliability rdf:type owl:NamedIndividual ,
                          voc:TypeReliabilityMeasure ;
                 rdfs:label "reliability"@en ;
@@ -1973,7 +1973,7 @@ voc:reliability rdf:type owl:NamedIndividual ,
                 cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/reliability_data
+###  https://iso14224.org/vocab/reliability_data
 voc:reliability_data rdf:type owl:NamedIndividual ,
                               voc:TypeData ;
                      rdfs:label "reliability data"@en ;
@@ -1982,7 +1982,7 @@ voc:reliability_data rdf:type owl:NamedIndividual ,
                      skos:definition "data for reliability, maintainability and maintenance support performance"@en ;
                      skos:example ""@en ;
                      skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                      voc:en13306:definition "n/a"@en ;
                      voc:iec60812:definition "n/a"@en ;
                      ;
@@ -1992,7 +1992,7 @@ voc:reliability_data rdf:type owl:NamedIndividual ,
                      cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/safety_critical_failure
+###  https://iso14224.org/vocab/safety_critical_failure
 voc:safety_critical_failure rdf:type owl:NamedIndividual ,
                                      voc:TypeFailureEvent ;
                             rdfs:label "safety critical failure"@en ;
@@ -2001,7 +2001,7 @@ voc:safety_critical_failure rdf:type owl:NamedIndividual ,
                             skos:definition "critical dangerous failures that are undetected"@en ;
                             skos:example ""@en ;
                             skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                             voc:en13306:definition "n/a"@en ;
                             voc:iec60812:definition "n/a"@en ;
                             ;
@@ -2011,7 +2011,7 @@ voc:safety_critical_failure rdf:type owl:NamedIndividual ,
                             cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/surveillance_period
+###  https://iso14224.org/vocab/surveillance_period
 voc:surveillance_period rdf:type owl:NamedIndividual ,
                                  voc:TypeReliabilityMeasure ;
                         rdfs:label "surveillance period"@en ;
@@ -2020,7 +2020,7 @@ voc:surveillance_period rdf:type owl:NamedIndividual ,
                         skos:definition "interval of time (calendar time) between the start date and the end date of RM data collection"@en ;
                         skos:example ""@en ;
                         skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                         voc:en13306:definition "n/a"@en ;
                         voc:iec60812:definition "n/a"@en ;
                         ;
@@ -2030,7 +2030,7 @@ voc:surveillance_period rdf:type owl:NamedIndividual ,
                         cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/systematic_failure
+###  https://iso14224.org/vocab/systematic_failure
 voc:systematic_failure rdf:type owl:NamedIndividual ,
                                 voc:TypeFailureEvent ;
                        rdfs:label "systematic failure"@en ;
@@ -2039,7 +2039,7 @@ voc:systematic_failure rdf:type owl:NamedIndividual ,
                        skos:definition "failure that consistently occurs under particular conditions of handling, storage or use"@en ;
                        skos:example ""@en ;
                        skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
                        voc:en13306:definition "n/a"@en ;
                        voc:iec60812:definition "n/a"@en ;
                        ;
@@ -2049,7 +2049,7 @@ voc:systematic_failure rdf:type owl:NamedIndividual ,
                        cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/trip
+###  https://iso14224.org/vocab/trip
 voc:trip rdf:type owl:NamedIndividual ,
                   voc:TypeFailureEvent ;
          rdfs:label "trip"@en ;
@@ -2058,7 +2058,7 @@ voc:trip rdf:type owl:NamedIndividual ,
          skos:definition "shutdown of machinery from normal operating condition to full stop"@en ;
          skos:example ""@en ;
          skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
          voc:en13306:definition "n/a"@en ;
          voc:iec60812:definition "n/a"@en ;
          ;
@@ -2068,7 +2068,7 @@ voc:trip rdf:type owl:NamedIndividual ,
          cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/up_state
+###  https://iso14224.org/vocab/up_state
 voc:up_state rdf:type owl:NamedIndividual ,
                       voc:TypeMaterialState ;
              rdfs:label "up state"@en ;
@@ -2077,7 +2077,7 @@ voc:up_state rdf:type owl:NamedIndividual ,
              skos:definition "state of being able to perform as required"@en ;
              skos:example ""@en ;
              skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
              voc:en13306:definition "state of an item being able to perform a required function, assuming that the external resources, if required, are provided"@en ;
              voc:iec60812:definition "n/a"@en ;
              ;
@@ -2087,7 +2087,7 @@ voc:up_state rdf:type owl:NamedIndividual ,
              cmns-av:usageNote ""@en .
 
 
-###  https://pid.vocab14224.org/pid/up_time
+###  https://iso14224.org/vocab/up_time
 voc:up_time rdf:type owl:NamedIndividual ,
                      voc:TypeReliabilityMeasure ;
             rdfs:label "up time"@en ;
@@ -2096,7 +2096,7 @@ voc:up_time rdf:type owl:NamedIndividual ,
             skos:definition "time interval during which an item is in an upstate"@en ;
             skos:example ""@en ;
             skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://pid.vocab14224.org/Basic> ;
+                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
             voc:en13306:definition "n/a"@en ;
             voc:iec60812:definition "n/a"@en ;
             ;
