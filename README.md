@@ -6,11 +6,38 @@ A private for now repo for shared development of controlled vocabulary, linked d
 
 The purpose of this repo is to provide Linked Data and IRIs for 65 terms used in 1) the Terms and Definitions section, and 2) Appendix B, of the ISO 14224:2016 standard. Appendix B contains text and tables relating to the classification of failure modes, failure mechanisms and failure causes.
 
+## Namespace and file names
+
+The iso14224.org namespace was purchased to enable future resolvable IRIs.
+
+Prefix and namespaces for IRIs are as follows
+
+@prefix iso14224 https://iso14224.org/terms - terms and definitions in Section 3 of the standard 
+@prefix iso14224fmode https://iso14224.org/failure-mode - failure modes defined in Annex B 
+@prefix iso14224fmech https://iso14224.org/failure-mech - failure mechanisms defined in Annex B
+
+For 2023 release these IRIs are also created
+@prefix iso142242024 https://iso14224.org/terms/2024 - terms and definitions in Section 3 of the standard 
+@prefix iso14224fmode2024 https://iso14224.org/failure-mode/2024 - failure modes defined in Annex B 
+@prefix iso14224fmech2024 https://iso14224.org/failure-mech/2024 - failure mechanisms defined in Annex B
+
+Files
+iso14224.ttl Terms and definitions  (base scheme and concepts)
+iso14224-failure-mode.ttl  Failure modes  (failure mode list)
+iso14224-failure-mechanism.ttl Failure mechanism  (failure mechanism list)
+local-to-iso14224-mapping.ttl Mapping from local (organisational specific) file to iso using skos:closeMatch and skos:exactMatch 
+
+and corresponding ttl files for 2024 release, for example, iso14224-2024.ttl
+
+
+TO be rewritten
+**********************************************************************
+
 ## Linked Data and IRIs
 
 The pidvocab.ttl file contains IRIs and annotations for 65 terms and definitions in the terms and definitions section of ISO 14424:2016. Where the term also appears in EN13306:2017 Maintenance terminology and IEC60812:2018 FMEA, definitions from these standards are also provided.
 
-Namespace: https://pid.vocab14224.org/TermsAndDefinitions/
+Need to revise Namespace: https://pid.vocab14224.org/TermsAndDefinitions/
 
 ### Example from pidvocab14224.ttl
 
