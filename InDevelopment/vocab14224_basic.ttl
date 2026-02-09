@@ -147,7 +147,6 @@ voc:hasTestType rdf:type owl:ObjectProperty ;
 
 ###  https://iso14224.org/vocab/Boundary
 voc:Boundary rdf:type owl:Class ;
-             rdfs:subClassOf voc:zz_OutOfScope ;
              rdfs:label "Boundary"@en ;
              rdfs:seeAlso ""@en ;
              skos:altLabel ""@en ;
@@ -166,7 +165,6 @@ voc:Boundary rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/Cycle
 voc:Cycle rdf:type owl:Class ;
-          rdfs:subClassOf voc:zz_OutOfScope ;
           rdfs:label "Cycle"@en ;
           rdfs:seeAlso ""@en ;
           skos:altLabel ""@en ;
@@ -185,7 +183,6 @@ voc:Cycle rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/DesignLife
 voc:DesignLife rdf:type owl:Class ;
-               rdfs:subClassOf voc:zz_OutOfScope ;
                rdfs:label "DesignLife"@en ;
                rdfs:seeAlso ""@en ;
                skos:altLabel ""@en ;
@@ -222,7 +219,6 @@ voc:DetectionMethod rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/Downstream
 voc:Downstream rdf:type owl:Class ;
-               rdfs:subClassOf voc:zz_OutOfScope ;
                rdfs:label "Downstream"@en ;
                rdfs:seeAlso ""@en ;
                skos:altLabel ""@en ;
@@ -241,7 +237,6 @@ voc:Downstream rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/Downtime
 voc:Downtime rdf:type owl:Class ;
-             rdfs:subClassOf voc:zz_OutOfScope ;
              rdfs:label "Downtime"@en ;
              rdfs:seeAlso ""@en ;
              skos:altLabel ""@en ;
@@ -489,7 +484,6 @@ voc:HumanFatigue rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/IdleTime
 voc:IdleTime rdf:type owl:Class ;
-             rdfs:subClassOf voc:zz_OutOfScope ;
              rdfs:label "Idle time"@en ;
              rdfs:seeAlso ""@en ;
              skos:altLabel ""@en ;
@@ -565,7 +559,6 @@ voc:LatentFault rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/LifeCycle
 voc:LifeCycle rdf:type owl:Class ;
-              rdfs:subClassOf voc:zz_OutOfScope ;
               rdfs:label "Life cycle"@en ;
               rdfs:seeAlso ""@en ;
               skos:altLabel ""@en ;
@@ -621,7 +614,6 @@ voc:Maintenance rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/MaintenanceConcept
 voc:MaintenanceConcept rdf:type owl:Class ;
-                       rdfs:subClassOf voc:zz_OutOfScope ;
                        rdfs:label "Maintenance concept"@en ;
                        rdfs:seeAlso ""@en ;
                        skos:altLabel ""@en ;
@@ -658,7 +650,6 @@ voc:MaintenanceImpact rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/MaintenanceManHours
 voc:MaintenanceManHours rdf:type owl:Class ;
-                        rdfs:subClassOf voc:zz_OutOfScope ;
                         rdfs:label "Maintenance man-hours"@en ;
                         rdfs:seeAlso ""@en ;
                         skos:altLabel ""@en ;
@@ -713,7 +704,6 @@ voc:MaintenanceRecord rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/Midstream
 voc:Midstream rdf:type owl:Class ;
-              rdfs:subClassOf voc:zz_OutOfScope ;
               rdfs:label "Midstream"@en ;
               rdfs:seeAlso ""@en ;
               skos:altLabel ""@en ;
@@ -784,7 +774,6 @@ voc:PerformanceRequirement rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/Petrochemical
 voc:Petrochemical rdf:type owl:Class ;
-                  rdfs:subClassOf voc:zz_OutOfScope ;
                   rdfs:label "Petrochemical"@en ;
                   rdfs:seeAlso ""@en ;
                   skos:altLabel ""@en ;
@@ -803,7 +792,6 @@ voc:Petrochemical rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/Redundancy
 voc:Redundancy rdf:type owl:Class ;
-               rdfs:subClassOf voc:zz_OutOfScope ;
                rdfs:label "Redundancy"@en ;
                rdfs:seeAlso ""@en ;
                skos:altLabel "PDM"@en ;
@@ -931,7 +919,6 @@ voc:TagNumber rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/Taxonomy
 voc:Taxonomy rdf:type owl:Class ;
-             rdfs:subClassOf voc:zz_OutOfScope ;
              rdfs:label "Taxonomy"@en ;
              rdfs:seeAlso ""@en ;
              skos:altLabel ""@en ;
@@ -950,7 +937,6 @@ voc:Taxonomy rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/Turnaround
 voc:Turnaround rdf:type owl:Class ;
-               rdfs:subClassOf voc:zz_OutOfScope ;
                rdfs:label "Turnaround"@en ;
                rdfs:seeAlso ""@en ;
                skos:altLabel "Revision shutdown"@en ,
@@ -1084,7 +1070,6 @@ voc:TypeTest rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/Uncertainty
 voc:Uncertainty rdf:type owl:Class ;
-                rdfs:subClassOf voc:zz_OutOfScope ;
                 rdfs:label "Uncertainty"@en ;
                 rdfs:seeAlso ""@en ;
                 skos:altLabel ""@en ;
@@ -1103,7 +1088,6 @@ voc:Uncertainty rdf:type owl:Class ;
 
 ###  https://iso14224.org/vocab/Upstream
 voc:Upstream rdf:type owl:Class ;
-             rdfs:subClassOf voc:zz_OutOfScope ;
              rdfs:label "Upstream"@en ;
              rdfs:seeAlso ""@en ;
              skos:altLabel ""@en ;
