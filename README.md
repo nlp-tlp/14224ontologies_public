@@ -7,7 +7,7 @@ Building a machine-readable version of ISO 14224 :2016 (version reconfirmed in 2
 The purpose of this repo is to provide Linked Data and IRIs for 1) the 53 terms used in the Terms and Definitions section of ISO 14224, and 2) Appendix B, of the ISO 14224:2016 standard. Appendix B contains text and tables relating to the classification of failure modes, failure mechanisms and failure causes. The namespace iso14224.org has been purchased by the GitHub repo owner for this purpose.
 
 ## Output
-The standard is available in ttl format
+The files are available in ttl format in the InDevelopment Subdirectory
 
 **Files**
 
