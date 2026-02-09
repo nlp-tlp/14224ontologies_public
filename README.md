@@ -11,11 +11,11 @@ The standard is available in ttl format
 
 **Files**
 
-vocab14224_skos_basic.ttl Terms and definitions - modelled as SKOS concepts
+*vocab14224_skos_basic.ttl* Terms and definitions - modelled as SKOS concepts
 
-vocab14224_basic.ttl Terms and definitions  - modelled as OWL classes
+*vocab14224_basic.ttl* Terms and definitions  - modelled as OWL classes
 
-vocab14224_extended.ttl - data from Annex B such as Failure modes and Mechanisms - modelled as OWL classes and instances - this file is temporary and likely to be superceded.
+*vocab14224_extended.ttl* - data from Annex B such as Failure modes and Mechanisms - modelled as OWL classes and instances - this file is temporary and likely to be superceded.
 
 ## What is ISO 14224?
 
@@ -48,26 +48,72 @@ The iso14224.org namespace was purchased to enable future resolvable IRIs.
 
 ## Approach
 
-The first step was to make the vocab14224_basic.ttl file with some terms modelled as OWL classes and others as named individuals.
+The first step was to make the *vocab14224_basic.ttl* file with terms from the Terms and Definitions clause of ISO 14224:2016 modelled as either OWL classes of as named individuals. In the Terms and Definitions clause there are many terms that can be grouped. For example: Maintenance Data, Failure Data, Equipment Data are all types of data. Rather than make each of these terms an OWL class, a new OWL class 'TypeData' was created and these terms were created as instances of OWL class 'TypeData'. Similar decisions were made for TypeFailureEvent, TypeMaintenanceStrategy, TypeMaterialState, TypeReliabilityMeasure and TypeTest.
+
+Python code (*owl_to_skos.py*) was created to convert the *vocab14224_basic.ttl* file to *vocab14224_skos_basic.ttl* file. Concepts in the *vocab14224_skos_basic.ttl* file have a separate namespace @prefix iso14224 https://iso14224.org/skos/. 
+
+### What does the *owl_to_skos.py* file do?
+
+1. Each owl:Class becomes a skos:Concept
+2. New SKOS concept namespace/prefix: https://iso14224.org/skos/ with prefix iso14224:
+3. rdfs:subClassOf → skos:broader
+4. rdfs:label (and any existing skos:prefLabel) → skos:prefLabel
+5. Created a concept scheme: <https://iso14224.org/skos/scheme/vocab14224_basic> and linked concepts via skos:inScheme, plus skos:hasTopConcept / skos:topConceptOf
+6. Format and annotation to ensure all SKOS concepts have common notation (UpperCamelCase)
+7. each concept has dcterms:source pointing to the original class IRI (e.g., <https://iso14224.org/vocab/Boundary>)
+8. All terms that are instances of an OWL class 'TypeX' (see above) in the OWL file are converted to SKOS concepts with a skos:broader relationship to the 'TypeX' concept.
+
+## SKOS concept model
+
+See *\InDevelopment\vocab14224_skos_basic.ttl*
+
+TypeX concepts 
+
+- TypeData (EquipmentData, FailureData, GenericReliabilityData, MaintenanceData, ReliabilityData)
+- TypeFailureEvent (CommonCauseFailure, CommonModeFailure, CriticalFailure, DegradedFailure, FailureDueToDemand, FailureOnDemand, HiddenFailure, IncipientFailure, NonCriticalFailure, RandomFailure, SafetyCriticalFailure, SystematicFailure, Trip)
+
+- TypeMaintenanceStrategy (ConditionBasedMaintenance, CorrectiveMaintenance, OpportunityMaintenance
+- TypeMaterialState (DownState, IdleState, OperatingState, UpState)
+- TypeReliabilityMeasure(21 examples, see the file) 
+- TypeTest (PeriodicTest, Demand)
+
+### Example of a SKOS concept
+
+**https://iso14224.org/skos/EquipmentType**
+
+```
+iso14224:EquipmentType a skos:Concept ;
+    dcterms:source <https://iso14224.org/vocab/EquipmentType> ;
+    skos:altLabel ""@en ;
+    skos:definition "particular feature of the design which is significantly different from the other design(s) within the same equipment class"@en ;
+    skos:example ""@en ;
+    skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
+    skos:prefLabel "equipment type"@en ;
+    skos:scopeNote ""@en ;
+    skos:topConceptOf <https://iso14224.org/skos/scheme/vocab14224_basic> .
+```    
+
+### Example of a SKOS:broader concept
+
+**https://iso14224.org/skos/PredictiveMaintenance**
+
+```
+iso14224:PredictiveMaintenance a skos:Concept ;
+    dcterms:source <https://iso14224.org/vocab/PredictiveMaintenance> ;
+    skos:altLabel "pDM"@en,
+        "pdM"@en ;
+    skos:broader iso14224:TypeMaintenanceStrategy ;
+    skos:definition "maintenance based on the prediction of the future condition of an item estimated or calculated from a defined set of historic data and known future operational parameters"@en ;
+    skos:example ""@en ;
+    skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
+    skos:prefLabel "predictive maintenance"@en ;
+    skos:scopeNote ""@en .
+```
 
 
-## OWL Data modelling approach
+## OWL class model
 
-In this initial phase some concepts have been modelled as classes and others as individuals, examples below. 
-Model as a class if:
-
-- there are likely to be a need to create subclasses at a future modelling stage e.g. EquipmentType
-- data we wish to model usually contains instances of the class
-
-Model as an instance if:
-
-- the information we seek to model is usually present as a string or code e.g WO10101010 hasTypeMaintenanceStrategy voc:preventative_maintenance
-
-Annotations -  Where the term also appears in EN13306:2017 Maintenance terminology and IEC60812:2018 FMEA, definitions from these standards are also provided.
-
-**These modelling decisions are still being explored and some changes are likely the next phase. The next phase of work will consider how to create lists containing individuals - such as found in tables such as list of maintenance strategies. The goal is to enable queries from e.g. a list.**
-
-### Example of a class
+### Example of an OWL class
 
 **https://iso14224.org/vocab/EquipmentType**
 ```
@@ -88,7 +134,7 @@ voc:EquipmentType rdf:type owl:Class ;
                   cmns-av:usageNote ""@en .
 ```
 
-### Example if an individual
+### Example if an OWL named individual
 ```
 ###  https://iso14224.org/vocab/predictive_maintenance
 voc:predictive_maintenance rdf:type owl:NamedIndividual ,
