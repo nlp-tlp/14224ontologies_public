@@ -4,14 +4,18 @@ Building a machine-readable version of ISO 14224 :2016 (version reconfirmed in 2
 
 ## Purpose
 
-The purpose of this repo is to provide Linked Data and IRIs for 65 terms used in 1) the Terms and Definitions section, and 2) Appendix B, of the ISO 14224:2016 standard. Appendix B contains text and tables relating to the classification of failure modes, failure mechanisms and failure causes. The namespace iso14224.org has been purchased by the GitHub repo owner for this purpose.
+The purpose of this repo is to provide Linked Data and IRIs for 1) the 53 terms used in the Terms and Definitions section of ISO 14224, and 2) Appendix B, of the ISO 14224:2016 standard. Appendix B contains text and tables relating to the classification of failure modes, failure mechanisms and failure causes. The namespace iso14224.org has been purchased by the GitHub repo owner for this purpose.
 
 ## Output
 The standard is available in ttl format
 
 **Files**
-vocab14224_basic.ttl Terms and definitions  (base scheme and concepts)
-vocab14224_extended.ttl includes data from Annex B such as Failure modes and Mechanisms
+
+vocab14224_skos_basic.ttl Terms and definitions - modelled as SKOS concepts
+
+vocab14224_basic.ttl Terms and definitions  - modelled as OWL classes
+
+vocab14224_extended.ttl - data from Annex B such as Failure modes and Mechanisms - modelled as OWL classes and instances - this file is temporary and likely to be superceded.
 
 ## What is ISO 14224?
 
@@ -38,18 +42,16 @@ The iso14224.org namespace was purchased to enable future resolvable IRIs.
 
 **Prefix and namespaces for IRIs**
 
-@prefix voc https://iso14224.org/vocab - terms and definitions in Section 3 of the standard 
+@prefix iso14224 https://iso14224.org/skos/ - for terms represented as SKOS concepts
+
+@prefix voc https://iso14224.org/vocab - for terms represented as OWL classes
+
+## Approach
+
+The first step was to make the vocab14224_basic.ttl file with some terms modelled as OWL classes and others as named individuals.
 
 
-
-TO be rewritten
-**********************************************************************
-
-## Linked Data and IRIs
-
-The vocab14224_basic.ttl file contains IRIs and annotations for 65 terms and definitions in the terms and definitions section of ISO 14424:2016. Where the term also appears in EN13306:2017 Maintenance terminology and IEC60812:2018 FMEA, definitions from these standards are also provided.
-
-## Data modelling approach
+## OWL Data modelling approach
 
 In this initial phase some concepts have been modelled as classes and others as individuals, examples below. 
 Model as a class if:
@@ -60,6 +62,8 @@ Model as a class if:
 Model as an instance if:
 
 - the information we seek to model is usually present as a string or code e.g WO10101010 hasTypeMaintenanceStrategy voc:preventative_maintenance
+
+Annotations -  Where the term also appears in EN13306:2017 Maintenance terminology and IEC60812:2018 FMEA, definitions from these standards are also provided.
 
 **These modelling decisions are still being explored and some changes are likely the next phase. The next phase of work will consider how to create lists containing individuals - such as found in tables such as list of maintenance strategies. The goal is to enable queries from e.g. a list.**
 
