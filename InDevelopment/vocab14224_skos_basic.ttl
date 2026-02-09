@@ -5,100 +5,100 @@
 iso14224:ActiveMaintenanceTime a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/ActiveMaintenanceTime> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "duration of a maintenance action, excluding logistic delay"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "active maintenance time"@en ;
     skos:scopeNote ""@en .
 
 iso14224:ActiveRepairTime a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/ActiveRepairTime> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "effective time to achieve repair of an item"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "active repair time"@en ;
     skos:scopeNote ""@en .
 
 iso14224:Availability a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/Availability> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "ability to be in a state to perform as required"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "availability"@en ;
     skos:scopeNote ""@en .
 
 iso14224:CommonCauseFailure a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/CommonCauseFailure> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeFailureEvent ;
     skos:definition "failures of multiple items, which would otherwise be considered independent of one another, resulting from a single cause"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeFailureEvent ;
     skos:prefLabel "common cause failure"@en ;
     skos:scopeNote "It is generally accepted that the failures occur simultaneously or within a short time of each other"@en .
 
 iso14224:CommonModeFailure a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/CommonModeFailure> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeFailureEvent ;
     skos:definition "failures of different items characterized by the same failure mode"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeFailureEvent ;
     skos:prefLabel "common mode failure"@en ;
     skos:scopeNote "Common mode failures can also be common cause failures"@en .
 
 iso14224:ConditionBasedMaintenance a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/ConditionBasedMaintenance> ;
     skos:altLabel "cbm"@en ;
+    skos:broader iso14224:TypeMaintenanceStrategy ;
     skos:definition "preventative maintenance based on assessment of physical condition"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeMaintenanceStrategy ;
     skos:prefLabel "condition based maintenance" ;
     skos:scopeNote ""@en .
 
 iso14224:CorrectiveMaintenance a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/CorrectiveMaintenance> ;
     skos:altLabel "reactive Maintenance"@en ;
+    skos:broader iso14224:TypeMaintenanceStrategy ;
     skos:definition "maintenance carried out after fault detection to effect restoration"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeMaintenanceStrategy ;
     skos:prefLabel "corrective maintenance"@en ;
     skos:scopeNote ""@en .
 
 iso14224:CriticalFailure a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/CriticalFailure> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeFailureEvent ;
     skos:definition "failure of an equipment unit that causes an immediate cessation of the ability to perform a required function"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeFailureEvent ;
     skos:prefLabel "critical failure"@en ;
     skos:scopeNote ""@en .
 
 iso14224:DegradedFailure a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/DegradedFailure> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeFailureEvent ;
     skos:definition "failure that does not cease the fundamental function(s), but compromises one or several functions"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeFailureEvent ;
     skos:prefLabel "degraded failure"@en ;
     skos:scopeNote ""@en .
 
 iso14224:Demand a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/Demand> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeTest ;
     skos:definition "activation of the function (includes functional, operational and test activations)"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeTest ;
     skos:prefLabel "demand"@en ;
     skos:scopeNote ""@en .
 
@@ -107,90 +107,90 @@ iso14224:DownState a skos:Concept ;
     skos:altLabel "internal disabled state"@en,
         "internally disabled state"@en,
         "unavailable state"@en ;
+    skos:broader iso14224:TypeMaterialState ;
     skos:definition "state of being unable to perform as required, due to internal fault, or preventative maintenance"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeMaterialState ;
     skos:prefLabel "down state"@en ;
     skos:scopeNote ""@en .
 
 iso14224:EquipmentData a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/EquipmentData> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeData ;
     skos:definition "technical, operational and environmental parameters characterizing the design and use of an equipment unit"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeData ;
     skos:prefLabel "equipment data"@en ;
     skos:scopeNote ""@en .
 
 iso14224:FailureData a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/FailureData> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeData ;
     skos:definition "data characterizing the occurrence of a failure event"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeData ;
     skos:prefLabel "failure data"@en ;
     skos:scopeNote ""@en .
 
 iso14224:FailureDueToDemand a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/FailureDueToDemand> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeFailureEvent ;
     skos:definition "failure occurring on demand"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeFailureEvent ;
     skos:prefLabel "failure due to demand"@en ;
     skos:scopeNote ""@en .
 
 iso14224:FailureFrequency a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/FailureFrequency> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "unconditional failure intensity; conditional probability per unit time that the item fails between t and t + dt, provided that it was working at time 0"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "failure frequency"@en ;
     skos:scopeNote ""@en .
 
 iso14224:FailureOnDemand a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/FailureOnDemand> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeFailureEvent ;
     skos:definition "failure likely to be observed when a demand occurs"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeFailureEvent ;
     skos:prefLabel "failure on demand"@en ;
     skos:scopeNote "Failure on demand includes those failures occurred before the demand and the failures due to the demand"@en .
 
 iso14224:FailureRate a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/FailureRate> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "conditional probability per unit time that the item fails between t and t + dt, provided that it has been working over 0, t"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "failure rate"@en ;
     skos:scopeNote ""@en .
 
 iso14224:GenericReliabilityData a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/GenericReliabilityData> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeData ;
     skos:definition "reliability data covering families of similar equipment"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeData ;
     skos:prefLabel "failure frequency"@en ;
     skos:scopeNote ""@en .
 
 iso14224:HiddenFailure a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/HiddenFailure> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeFailureEvent ;
     skos:definition "failure that is not immediately evident to operations and maintenance personnel"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeFailureEvent ;
     skos:prefLabel "hidden failure"@en ;
     skos:scopeNote ""@en .
 
@@ -207,30 +207,30 @@ iso14224:HumanError a skos:Concept ;
 iso14224:IdleState a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/IdleState> ;
     skos:altLabel "standby state"@en ;
+    skos:broader iso14224:TypeMaterialState ;
     skos:definition "non-operating up state during non-required time"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeMaterialState ;
     skos:prefLabel "idle state"@en ;
     skos:scopeNote ""@en .
 
 iso14224:IncipientFailure a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/IncipientFailure> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeFailureEvent ;
     skos:definition "imperfection in the state or condition of an item so that a degraded or critical failure might (or might not) eventually be the expected result if corrective action is taken "@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeFailureEvent ;
     skos:prefLabel "incipient failure"@en ;
     skos:scopeNote ""@en .
 
 iso14224:Integrity a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/Integrity> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "ability of a barrier to function as required when needed"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "integrity"@en ;
     skos:scopeNote ""@en .
 
@@ -247,170 +247,170 @@ iso14224:LatentFault a skos:Concept ;
 iso14224:LogisticDelay a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/LogisticDelay> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "delay, excluding administrative delay, incurred for the provision of resources needed for a maintenance action to proceed or continue"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "logistic delay"@en ;
     skos:scopeNote ""@en .
 
 iso14224:MaintenanceData a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/MaintenanceData> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeData ;
     skos:definition "data characterizing the maintenance action planned or done"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeData ;
     skos:prefLabel "maintenance data"@en ;
     skos:scopeNote ""@en .
 
 iso14224:MaintenanceSupportability a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/MaintenanceSupportability> ;
     skos:altLabel "supportability"@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "<of an item> ability to be supported to sustain the required availability with a defined operational profile and given logistic and maintenance resources"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "maintenance supportability"@en ;
     skos:scopeNote ""@en .
 
 iso14224:MeanActiveRepairTime a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/MeanActiveRepairTime> ;
     skos:altLabel "mART"@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "expected active repair time"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "mean cycles to failure"@en ;
     skos:scopeNote ""@en .
 
 iso14224:MeanCyclesToFailure a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/MeanCyclesToFailure> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "expected number of cycles before the item fails"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "mean cycles to failure"@en ;
     skos:scopeNote ""@en .
 
 iso14224:MeanElapsedTimeBetweenFailures a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/MeanElapsedTimeBetweenFailures> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "expected elapsed time between failures"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "mean elapsed time between failures"@en ;
     skos:scopeNote ""@en .
 
 iso14224:MeanNumberOfCycles a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/MeanNumberOfCycles> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "expected number of cycles per unit time"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "mean number of cycles"@en ;
     skos:scopeNote ""@en .
 
 iso14224:MeanOverallRepairingTime a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/MeanOverallRepairingTime> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "expected time to achieve the following actions: the time spent before starting the repair; and, the effective time to repair; and, the time before the item is made available to be put back into operation"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "mean overall repairing time"@en ;
     skos:scopeNote ""@en .
 
 iso14224:MeanTimeToFailure a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/MeanTimeToFailure> ;
     skos:altLabel "mTTF"@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "expected time before the item fails"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "mean time to failure"@en ;
     skos:scopeNote ""@en .
 
 iso14224:MeanTimeToRepair a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/MeanTimeToRepair> ;
     skos:altLabel "mTTR"@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "expected time to achieve the repair of a failed item"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "mean time to repair"@en ;
     skos:scopeNote ""@en .
 
 iso14224:MeanTimeToRestoration a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/MeanTimeToRestoration> ;
     skos:altLabel "mean_elapsed_time_between_failures"@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "expected time to the following actions: the time to detect the failure; and, the time spent before starting the repair; and, the effective time to repair; and, the time before the component is made available to be put back into operation"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "mean time to restoration"@en ;
     skos:scopeNote ""@en .
 
 iso14224:MobilizationTime a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/MobilizationTime> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "time to get all necessary resources available to execute maintenance"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "mobilization time"@en ;
     skos:scopeNote ""@en .
 
 iso14224:NonCriticalFailure a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/NonCriticalFailure> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeFailureEvent ;
     skos:definition "failure of an equipment unit that does not cause an immediate cessation of an ability to perform its required function"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeFailureEvent ;
     skos:prefLabel "non-critical failure"@en ;
     skos:scopeNote ""@en .
 
 iso14224:OperatingState a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/OperatingState> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeMaterialState ;
     skos:definition "state of performing as required"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeMaterialState ;
     skos:prefLabel "operating state"@en ;
     skos:scopeNote ""@en .
 
 iso14224:OperatingTimeTime a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/OperatingTimeTime> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "time interval during which an item is in an operating state"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "operating time"@en ;
     skos:scopeNote ""@en .
 
 iso14224:OpportunityMaintenance a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/OpportunityMaintenance> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeMaintenanceStrategy ;
     skos:definition "maintenance of an item that is deferred or advanced in time and is performed when an unplanned opportunity becomes available"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeMaintenanceStrategy ;
     skos:prefLabel "opportunity maintenance" ;
     skos:scopeNote ""@en .
 
 iso14224:PeriodicTest a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/PeriodicTest> ;
     skos:altLabel "proof test"@en ;
+    skos:broader iso14224:TypeTest ;
     skos:definition "planned operation performed at constant intervals in order to detect the potential hidden failures which can have occurred in the meantime "@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeTest ;
     skos:prefLabel "periodic test"@en ;
     skos:scopeNote ""@en .
 
@@ -418,10 +418,10 @@ iso14224:PlannedMaintenance a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/PlannedMaintenance> ;
     skos:altLabel "planned preventative maintenance"@en,
         "scheduled maintenance"@en ;
+    skos:broader iso14224:TypeMaintenanceStrategy ;
     skos:definition "maintenance carried out in accordance with a specified time schedule"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeMaintenanceStrategy ;
     skos:prefLabel "planned maintenance"@en ;
     skos:scopeNote ""@en .
 
@@ -429,60 +429,60 @@ iso14224:PredictiveMaintenance a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/PredictiveMaintenance> ;
     skos:altLabel "pDM"@en,
         "pdM"@en ;
+    skos:broader iso14224:TypeMaintenanceStrategy ;
     skos:definition "maintenance based on the prediction of the future condition of an item estimated or calculated from a defined set of historic data and known future operational parameters"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeMaintenanceStrategy ;
     skos:prefLabel "predictive maintenance"@en ;
     skos:scopeNote ""@en .
 
 iso14224:PreventativeMaintenance a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/PreventativeMaintenance> ;
     skos:altLabel "pM"@en ;
+    skos:broader iso14224:TypeMaintenanceStrategy ;
     skos:definition "maintenance carried out to mitigate degradation and reduce the probability of failure"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeMaintenanceStrategy ;
     skos:prefLabel "preventative maintenance"@en ;
     skos:scopeNote ""@en .
 
 iso14224:RandomFailure a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/RandomFailure> ;
     skos:altLabel "pDM"@en ;
+    skos:broader iso14224:TypeFailureEvent ;
     skos:definition "failure occurring in a random way"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeFailureEvent ;
     skos:prefLabel "random failure"@en ;
     skos:scopeNote ""@en .
 
 iso14224:Reliability a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/Reliability> ;
     skos:altLabel "pDM"@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "ability of an item to perform a required function under given conditions for a given time interval"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "reliability"@en ;
     skos:scopeNote "Redundancy in IEC 61508 is called fault tolerance"@en .
 
 iso14224:ReliabilityData a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/ReliabilityData> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeData ;
     skos:definition "data for reliability, maintainability and maintenance support performance"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeData ;
     skos:prefLabel "reliability data"@en ;
     skos:scopeNote ""@en .
 
 iso14224:SafetyCriticalFailure a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/SafetyCriticalFailure> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeFailureEvent ;
     skos:definition "critical dangerous failures that are undetected"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeFailureEvent ;
     skos:prefLabel "safety critical failure"@en ;
     skos:scopeNote ""@en .
 
@@ -499,50 +499,50 @@ iso14224:SoftwareError a skos:Concept ;
 iso14224:SurveillancePeriod a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/SurveillancePeriod> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "interval of time (calendar time) between the start date and the end date of RM data collection"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "surveillance period"@en ;
     skos:scopeNote ""@en .
 
 iso14224:SystematicFailure a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/SystematicFailure> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeFailureEvent ;
     skos:definition "failure that consistently occurs under particular conditions of handling, storage or use"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeFailureEvent ;
     skos:prefLabel "systematic failure"@en ;
     skos:scopeNote ""@en .
 
 iso14224:Trip a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/Trip> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeFailureEvent ;
     skos:definition "shutdown of machinery from normal operating condition to full stop"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeFailureEvent ;
     skos:prefLabel "trip"@en ;
     skos:scopeNote ""@en .
 
 iso14224:UpState a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/UpState> ;
     skos:altLabel "available state"@en ;
+    skos:broader iso14224:TypeMaterialState ;
     skos:definition "state of being able to perform as required"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeMaterialState ;
     skos:prefLabel "up state"@en ;
     skos:scopeNote ""@en .
 
 iso14224:UpTime a skos:Concept ;
     dcterms:source <https://iso14224.org/vocab/UpTime> ;
     skos:altLabel ""@en ;
+    skos:broader iso14224:TypeReliabilityMeasure ;
     skos:definition "time interval during which an item is in an upstate"@en ;
     skos:example ""@en ;
     skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:narrower iso14224:TypeReliabilityMeasure ;
     skos:prefLabel "up time"@en ;
     skos:scopeNote ""@en .
 

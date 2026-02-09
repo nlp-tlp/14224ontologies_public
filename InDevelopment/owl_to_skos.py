@@ -188,7 +188,7 @@ def main():
             g_out.add((concept, SKOS.topConceptOf, SCHEME_URI))
 
     # ---------------------------
-    # Named Individuals -> skos:narrower
+    # Named Individuals -> skos:broader
     # ---------------------------
     individuals = {s for s in g_in.subjects(RDF.type, OWL.NamedIndividual)
                    if is_uriref(s)}
@@ -207,7 +207,7 @@ def main():
             if t == OWL.NamedIndividual:
                 continue
             if is_uriref(t) and t in class_to_concept:
-                g_out.add((ind_concept, SKOS.narrower, class_to_concept[t]))
+                g_out.add((ind_concept, SKOS.broader, class_to_concept[t]))
                 linked_any = True
 
         if linked_any:
