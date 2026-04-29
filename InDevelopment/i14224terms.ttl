@@ -29,6 +29,8 @@
 #    Annotation properties
 #################################################################
 
+### These annotation properties are from existing W3C annotation schemas.
+
 ###  http://purl.org/dc/terms/license
 dcterms:license rdf:type owl:AnnotationProperty .
 
@@ -56,6 +58,8 @@ skos:example rdf:type owl:AnnotationProperty .
 ###  http://www.w3.org/2004/02/skos/core#scopeNote
 skos:scopeNote rdf:type owl:AnnotationProperty .
 
+### These annotation properties are specific to this ontology and are used to capture definitions from different ISO and other sources, as well as other metadata about the concepts.
+
 
 ###  https://iso14224.org/ontology/i14224/rdl/iofIRI
 <https://iso14224.org/ontology/i14224/rdl/iofIRI> rdf:type owl:AnnotationProperty ;
@@ -80,6 +84,8 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 ###  https://iso14224.org/ontology/i14224/rdl/iso14224:section
 <https://iso14224.org/ontology/i14224/rdl/iso14224:section> rdf:type owl:AnnotationProperty .
 
+### These annotations are from the OMG Commons Annotation Vocabulary, see https://www.omg.org/spec/Commons/AnnotationVocabulary/1.0/.
+
 
 ###  https://www.omg.org/spec/Commons/AnnotationVocabulary#adaptedFrom
 cmnsav:adaptedFrom rdf:type owl:AnnotationProperty .
@@ -100,6 +106,9 @@ cmnsav:usageNote rdf:type owl:AnnotationProperty .
 #################################################################
 #    Object Properties
 #################################################################
+
+### These object properties have been created to separate the class of, for example, a failure event and potential instances of that failure event from the ISO 14224 definitions of different types of failure events. In the 'failure event' example, the object property 'hasFailureEventType' can be used to link an instance of a failure event to the type of failure event represented as a named individual (e.g critical failure, random failure etc from the table in Terms clause of ISO 14224.) The notions of critical failure etc have not been represented as subclasses of failure event.
+
 
 ###  https://iso14224.org/ontology/i14224/rdl/hasDataType
 <https://iso14224.org/ontology/i14224/rdl/hasDataType> rdf:type owl:ObjectProperty ;
@@ -157,6 +166,8 @@ cmnsav:usageNote rdf:type owl:AnnotationProperty .
 #################################################################
 #    Classes
 #################################################################
+
+### Concepts which are commonly instantiated with data are modelled as classes, for example 'Failure' and 'Equipment unit'. Whereas concepts which are usually used as string values in data collection tables, such as 'critical failure' or 'breakdown' are modelled as named individuals. The modelling of concepts as classes or individuals is not intended to be a philosophical statement on the nature of the concept but rather a pragmatic decision based on the intended use of the ontology for data collection and analysis.
 
 ###  https://iso14224.org/ontology/i14224/rdl/Boundary
 <https://iso14224.org/ontology/i14224/rdl/Boundary> rdf:type owl:Class ;
@@ -1080,6 +1091,8 @@ cmnsav:usageNote rdf:type owl:AnnotationProperty .
 #################################################################
 #    Individuals
 #################################################################
+
+### In practice when we have a term in the standard that is used as a label for a type of thing (e.g. a type of maintenance strategy) we model it as an individual of a class that represents the type of thing (e.g. TypeMaintenanceStrategy). This is because we do not have enough information to create classes for these concepts and to create axioms to distinguish between them. Also in many data sets these terms are used as labels providing a label for an instance of a work order (for example) not instances of the e.g. corrective maintenance activity.
 
 ###  https://iso14224.org/ontology/i14224/rdl/active_maintenance_time
 <https://iso14224.org/ontology/i14224/rdl/active_maintenance_time> rdf:type owl:NamedIndividual ,
