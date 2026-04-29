@@ -1,11 +1,11 @@
 # This org-mode file was created using elot-exporter version 0.10.1.
-#+ELOT_EXPORTER_CHECKSUM: 239e89c98e8836391bb353988005d94bd391a77cb4277d06de879f401926d7b9
+#+ELOT_EXPORTER_CHECKSUM: fda3bb24516e8f376e3bedfc231afad786209b49987d83d16c3c966bc329e35a
 # Source ontology: [Local File] c:\Users\hodki\Documents\Github\14224ontologies_public\InDevelopment\i14224terms.ttl
 
 #+title: ontology for Terms and Definitions section of ISO 14224
 #+subtitle: An OWL ontology
 #+author: 
-#+date: WIP (version of 2026-04-29 14:54)
+#+date: WIP (version of 2026-04-29 15:21)
 #+call: theme-elot()
 
 
