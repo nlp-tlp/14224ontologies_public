@@ -48,7 +48,7 @@ The iso14224.org namespace was purchased to enable future resolvable IRIs.
 
 ## Approach
 
-The first step was to make the *vocab14224_basic.ttl* file with terms from the Terms and Definitions clause of ISO 14224:2016 modelled as either OWL classes of as named individuals. In the Terms and Definitions clause there are many terms that can be grouped. For example: Maintenance Data, Failure Data, Equipment Data are all types of data. Rather than make each of these terms an OWL class, a new OWL class 'TypeData' was created and these terms were created as instances of OWL class 'TypeData'. Similar decisions were made for TypeFailureEvent, TypeMaintenanceStrategy, TypeMaterialState, TypeReliabilityMeasure and TypeTest.
+The first step was to make the *vocab14224_basic.ttl* file with terms from the Terms and Definitions clause of ISO 14224:2016 modelled as either OWL classes or as named individuals. In the Terms and Definitions clause there are many terms that can be grouped. For example: Maintenance Data, Failure Data, Equipment Data are all types of data. Rather than make each of these terms an OWL class, a new OWL class 'TypeData' was created and these terms were created as instances of OWL class 'TypeData'. Similar decisions were made for TypeFailureEvent, TypeMaintenanceStrategy, TypeMaterialState, TypeReliabilityMeasure and TypeTest.
 
 Python code (*owl_to_skos.py*) was created to convert the *vocab14224_basic.ttl* file to *vocab14224_skos_basic.ttl* file. Concepts in the *vocab14224_skos_basic.ttl* file have a separate namespace @prefix iso14224 https://iso14224.org/skos/. 
 

@@ -56,6 +56,21 @@ The ontology document in OWL employs the namespace prefixes of table [[prefix-ta
  - rdfs:label :: "ontology for Terms and Definitions section of ISO 14224"@en
  - owl:versionInfo :: "Version 1.0"@en
 
+** Annotation Properties
+:PROPERTIES:
+:ID:       basic-annotation-properties
+:custom_id: basic-annotation-properties
+:resourcedefs: yes
+:END:
+
+*** dcterms:creator
+:PROPERTIES:
+:ID:       dcterms-creator
+:custom_id: dcterms-creator
+:END:
+ - rdf:type :: owl:AnnotationProperty
+ - rdfs:label :: "creator"@en
+
 ** Datatypes
 :PROPERTIES:
 :ID:       basic-datatypes
@@ -63,6 +78,11 @@ The ontology document in OWL employs the namespace prefixes of table [[prefix-ta
 :resourcedefs: yes
 :END:
 
+*** xsd:boolean
+*** xsd:date
+*** xsd:dateTime
+*** rdfs:Literal
+*** xsd:string
 
 ** Classes
 :PROPERTIES:

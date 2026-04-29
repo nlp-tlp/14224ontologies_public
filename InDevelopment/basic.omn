@@ -10,6 +10,20 @@ Prefix: voc:  <https://iso14224.org/vocab/>
 Prefix: xml:  <http://www.w3.org/XML/1998/namespace>
 Prefix: xsd:  <http://www.w3.org/2001/XMLSchema#>
 
+AnnotationProperty: dcterms:creator
+    Annotations: 
+        rdfs:label "creator"@en
+
+Datatype: xsd:boolean
+
+Datatype: xsd:date
+
+Datatype: xsd:dateTime
+
+Datatype: rdfs:Literal
+
+Datatype: xsd:string
+
 Class: voc:Boundary
     Annotations: 
         rdfs:label "Boundary"@en,
