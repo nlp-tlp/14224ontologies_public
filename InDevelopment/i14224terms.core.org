@@ -1,0 +1,1648 @@
+# This org-mode file was created using elot-exporter version 0.10.1.
+#+ELOT_EXPORTER_CHECKSUM: 239e89c98e8836391bb353988005d94bd391a77cb4277d06de879f401926d7b9
+# Source ontology: [Local File] c:\Users\hodki\Documents\Github\14224ontologies_public\InDevelopment\i14224terms.ttl
+
+#+title: ontology for Terms and Definitions section of ISO 14224
+#+subtitle: An OWL ontology
+#+author: 
+#+date: WIP (version of 2026-04-29 14:54)
+#+call: theme-elot()
+
+
+* core
+:PROPERTIES:
+:ID:       core
+:ELOT-context-type: ontology
+:ELOT-context-localname: core
+:ELOT-default-prefix: core
+:header-args:omn: :tangle ./core.omn :noweb yes
+:header-args:emacs-lisp: :tangle no :exports results
+:header-args: :padline yes
+:END:
+
+** Prefixes
+:PROPERTIES:
+:prefixdefs: yes
+:END:
+The ontology document in OWL employs the namespace prefixes of table [[prefix-table]].
+
+#+name: prefix-table
+#+attr_latex: :align lp{.8\textwidth} :font small
+#+caption: OWL ontology prefixes
+| prefix   | uri |
+|----------+-----|
+| : | http://www.semanticweb.org/owl/owlapi/turtle# |
+| cmnsav: | https://www.omg.org/spec/Commons/AnnotationVocabulary# |
+| dcterms: | http://purl.org/dc/terms/ |
+| obo: | http://purl.obolibrary.org/obo/ |
+| owl: | http://www.w3.org/2002/07/owl# |
+| rdf: | http://www.w3.org/1999/02/22-rdf-syntax-ns# |
+| rdfs: | http://www.w3.org/2000/01/rdf-schema# |
+| skos: | http://www.w3.org/2004/02/skos/core# |
+| voc: | https://iso14224.org/vocab/ |
+| xml: | http://www.w3.org/XML/1998/namespace |
+| xsd: | http://www.w3.org/2001/XMLSchema# |
+
+** core ontology (http://iso14224.org/ontology/i14224/ont/core file:/C:/Users/hodki/Documents/Github/14224ontologies_public/InDevelopment/iso14224.org/ontology/i14224/ont/core/1.1)
+:PROPERTIES:
+:ID:       core-ontology-declaration
+:custom_id: core-ontology-declaration
+:resourcedefs: yes
+:END:
+
+ - dcterms:license ::  https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE
+ - dcterms:rights :: "See github"@en
+ - rdfs:comment :: "The ISO 14224 standard is for the collection of reliability and maintenance (RM) data in a standard format for equipment in all facilities and operations.
+                                               
+                                               This Ontology models terms from the Terms and Definitions section of the ISO 14224:2016 standard. The core objective is to provide IRIs for each term using the iso14224.org domain. 
+                                               
+                                               Some concepts have been modelled as classes and others as named individuals. The modelling has considered what data is actually available and what is usually the aim of knowledge representation models in this domain. Grouping of concepts into classes is based on the intended use of the ontology for data collection and analysis. For example, failure modes are modelled as classes to allow for classification of failure events by failure mode. Whereas terms such a 'breakdown' are usually used a string in the cell of a data collection table, and are modelled as individuals. The modelling of concepts as classes or individuals is not intended to be a philosophical statement on the nature of the concept but rather a pragmatic decision based on the intended use of the ontology. 
+                                               
+                                               This version is NOT aligned to any upper ontology, future work will consider alignment to IDO, BFO_IOF and DOLCE.  "@en
+ - rdfs:label :: "ontology for Terms and Definitions section of ISO 14224"@en
+ - owl:versionInfo :: "Version 1.0"@en
+
+** Datatypes
+:PROPERTIES:
+:ID:       core-datatypes
+:custom_id: core-datatypes
+:resourcedefs: yes
+:END:
+
+
+** Classes
+:PROPERTIES:
+:ID:       core-class-hierarchy
+:custom_id: core-class-hierarchy
+:resourcedefs: yes
+:END:
+
+*** "Boundary"@en (<https://iso14224.org/ontology/i14224/rdl/Boundary>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "interface between an item and its surroundings"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Cycle"@en (<https://iso14224.org/ontology/i14224/rdl/Cycle>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "operation and subsequent release/reset"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "DesignLife"@en (<https://iso14224.org/ontology/i14224/rdl/DesignLife>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "planned usage time for the total system"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Detection method"@en (<https://iso14224.org/ontology/i14224/rdl/DetectionMethod>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "ISO 14224-2023 Table B4 provides a categorization of detection methods (e.g. periodic testing or continuous condition monitoring)"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "method or activity by which a failure is discovered"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Downstream"@en (<https://iso14224.org/ontology/i14224/rdl/Downstream>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "business category most commonly used in the petroleum industry to describe post-production processes"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Downtime"@en (<https://iso14224.org/ontology/i14224/rdl/Downtime>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "Downtime can be either planned or unplanned"@en
+ - cmnsav:usageNote :: "The downtime includes all the delays between the item failure and the restoration of its service"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "time interval during which an item is in a down state "@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Equipment class"@en (<https://iso14224.org/ontology/i14224/rdl/EquipmentClass>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "class of similar type of equipment units"@en
+ - skos:example :: "e.g. pumps "@en
+ - skos:scopeNote :: ""@en
+*** "Equipment type"@en (<https://iso14224.org/ontology/i14224/rdl/EquipmentType>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "particular feature of the design which is significantly different from the other design(s) within the same equipment class"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Equipment unit"@en (<https://iso14224.org/ontology/i14224/rdl/EquipmentUnit>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "equipment unit is given at Level 6 of the equipment taxonomy classification shown in Figure 3 of ISO 14224-2023"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "specific equipment within an equipment class as defined by its boundary"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Error"@en (<https://iso14224.org/ontology/i14224/rdl/Error>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "an error can be caused by a faulty item e.g. a computing error made by faulty computer equipment"@en
+ - cmnsav:explanatoryNote :: "an error within a system can be caused by failure or one or more of its components, or by activation of a systemic fault"@en
+ - cmnsav:usageNote :: "in ISO 14224, error is also specifically used for software and human errors"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "Discrepancy"@en
+ - skos:definition :: "discrepancy between a computed, observed or measured value or condition and the true, specified or theoretically correct value or condition"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+**** "Human error"@en (<https://iso14224.org/ontology/i14224/rdl/HumanError>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "an error can be caused by a faulty item e.g. a computing error made by faulty computer equipment"@en
+ - cmnsav:explanatoryNote :: "the term 'human error' is often attributed in hindsight to a human decision, action or inaction considered to be an initiator or contributory cause of a negative outcome such as loss or harm"@en
+ - cmnsav:usageNote :: "discrepancy with intention is considered essential in determining human error"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "discrepancy between the human action taken or omitted and that intended "@en
+ - skos:example :: "performing an incorrect action; omitting a required action "@en
+ - skos:scopeNote :: ""@en
+**** "Software error"@en (<https://iso14224.org/ontology/i14224/rdl/SoftwareError>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "erroneous result produced by the use of software product"@en
+ - skos:example :: "Bad code in a computer program resulting in an error"@en
+ - skos:scopeNote :: ""@en
+*** "Failure (event)"@en (<https://iso14224.org/ontology/i14224/rdl/Failure>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "loss of the ability of an item to perform a required function"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iofIRI> :: "https://spec.industrialontologies.org/ontology/construct/FailureEvent/"^^xsd:anyURI
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "a failure of an item is an event that results in a fault of the item"@en
+ - cmnsav:explanatoryNote :: "a failure of an item is an event, as distinct from a fault of an item, which is a state"@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "Failure event"@en
+ - skos:definition :: "loss of ability to perform as required"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: "this concept as defined does not apply to items consisting of software only"@en
+*** "Failure cause"@en (<https://iso14224.org/ontology/i14224/rdl/FailureCause>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "circumstances during specification, design, manufacture, installation, use or maintenance that result in failure"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "set of circumstances that leads to failure"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015"@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions notes added"@en
+ - cmnsav:explanatoryNote :: "a failure cause can originate during specification, design, manufacture, installation, operation or maintenance of an item"@en
+ - cmnsav:usageNote :: "Tables in Appendix B of ISO 14224 define failure causes for selected equipment classes"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "Root cause"@en
+ - skos:definition :: "set of circumstances that leads to failure"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Failure impact"@en (<https://iso14224.org/ontology/i14224/rdl/FailureImpact>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "EN13306 does not define 'failure impact' but does define 'failure severity' as potential or actual detrimental consequences of a failure or fault"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "IEC60812 does not define 'failure impact' but does define 'failure effect' as consequence of a failure, within or beyond the boundary of the failure item"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iofIRI> :: 
+ - <https://iso14224.org/ontology/i14224/rdl/iofIRI> :: https://spec.industrialontologies.org/ontology/construct/FailureEffect/
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions notes added"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "classification of failure impact on taxonomy levels 4 (plant) to 8 (component/ maintainable item) are provided in ISO 14224:2023 Table 3"@en
+ - cmnsav:usageNote :: "on the equipment level, failure impact can be classified in three classes (critical, degraded, incipient)"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "Failure consequence"@en
+ - skos:altLabel :: "Failure effect"@en
+ - skos:altLabel :: "Failure severity"@en
+ - skos:definition :: "effect of a failure on an equipment's function(s) or on the plant"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Failure mechanism"@en (<https://iso14224.org/ontology/i14224/rdl/FailureMechanism>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "physical, chemical or other processes which may lead or have led to failure"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "process that leads to failure"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "the process can be physical, chemical, logical, or a combination thereof"@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "process that leads to failure"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Failure mode"@en (<https://iso14224.org/ontology/i14224/rdl/FailureMode>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "manner in which the inability of an item to perform a required function occurs"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "manner in which failure occurs"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "Tables in B.2.6 in ISO 14224-2023 on relevant failure modes define failure modes to be used for each equipment class"@en
+ - cmnsav:usageNote :: "analysis might require data collection to be established on different taxonomy levels"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "manner in which failure occurs"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Fault"@en (<https://iso14224.org/ontology/i14224/rdl/Fault>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "state of an item characterized by inability to perform a required function, excluding the inability during preventive maintenance or other planned actions, or due to lack of external resources"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "a fault is often a result of a failure of the item itself but the state can exist without a failure"@en
+ - cmnsav:explanatoryNote :: "a fault of an item results from a failure, either of the item itself, or from a deficiency in an earlier stage of the life cycle, such as specification, design, manufacture or maintenance"@en
+ - cmnsav:usageNote :: "see latent fault"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "inability to perform as required, due to an internal state"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+**** "Latent fault"@en (<https://iso14224.org/ontology/i14224/rdl/LatentFault>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "undetected fault"@en
+ - skos:definition :: "<of an item>fault that has not become apparent"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Human fatigue"@en (<https://iso14224.org/ontology/i14224/rdl/HumanFatigue>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "loss of physiological and psychological function as a result of extended wakefulness, heavy work, excessive stimulation, illness or stress"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Idle time"@en (<https://iso14224.org/ontology/i14224/rdl/IdleTime>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "part, component, device, subsystem, functional unit, equipment or system that can be individually described and considered"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "subject being considered"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "the item can be an individual part, component, device, functional unit, equipment, subsystem or system"@en
+ - cmnsav:explanatoryNote :: "the item can consist of hardware, software, people or any combination thereof"@en
+ - cmnsav:usageNote :: "in ISO 14224-2023 the common term 'item' is used on all taxonomy levels (6-9)"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "time interval for which an item is in an idle state"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Indenture"@en (<https://iso14224.org/ontology/i14224/rdl/IndentureLevel>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "level of subdivision of an item from the point of view of maintenance action"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Item"@en (<https://iso14224.org/ontology/i14224/rdl/Item>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "part, component, device, subsystem, functional unit, equipment or system that can be individually described and considered"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "subject being considered"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "the item can be an individual part, component, device, functional unit, equipment, subsystem or system"@en
+ - cmnsav:explanatoryNote :: "the item can consist of hardware, software, people or any combination thereof"@en
+ - cmnsav:usageNote :: "in ISO 14224-2023 the common term 'item' is used on all taxonomy levels (6-9)"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "subject being considered"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Life cycle"@en (<https://iso14224.org/ontology/i14224/rdl/LifeCycle>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "series of identifiable stages through which an item goes, from its conception to disposal"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Maintainable item"@en (<https://iso14224.org/ontology/i14224/rdl/MaintainableItem>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "item that constitutes a part or an assembly of parts that is normally the lowest level in the equipment hierarchy during maintenance "@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Maintenance concept"@en (<https://iso14224.org/ontology/i14224/rdl/MaintenanceConcept>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "The maintenance policy provides the basis for maintenance planning, determining supportability requirements, and developing logistic support"@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "definition of the maintenance objectives, line of maintenance, indenture levels, maintenance levels, maintenance support, and their interrelationships"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Maintenance impact"@en (<https://iso14224.org/ontology/i14224/rdl/MaintenanceImpact>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "On the equipment level, two classes of impact are defined: critical and non-critical. On a plant level, three classes are defined: total, partial or zero impact"@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "effect of the maintenance on the plant or equipment's function(s)"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Maintenance man-hours"@en (<https://iso14224.org/ontology/i14224/rdl/MaintenanceManHours>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "accumulated duration of the individual maintenance times used by all maintenance personnel for a given type of maintenance action or over a given time interval"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Maintenance plan"@en (<https://iso14224.org/ontology/i14224/rdl/MaintenancePlan>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "structured and documented set of tasks that include the activities, procedures, resources and the time scale required to carry out maintenance"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Maintenance record"@en (<https://iso14224.org/ontology/i14224/rdl/MaintenanceRecord>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "part of maintenance documentation that contains all failures, faults and maintenance action relating to an item"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Maintenance"@en (<https://iso14224.org/ontology/i14224/rdl/Maintenance>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "combination of all technical, administrative and managerial actions during the life cycle of an item intended to retain it in, or restore it to, a state in which it can perform the required function"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iofIRI> :: "https://spec.industrialontologies.org/ontology/construct/MaintenanceProcess/"^^xsd:anyURI
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "combination of all technical and management actions intended to retain an item in, or restore it to, a state in which it can perform as required "@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Midstream"@en (<https://iso14224.org/ontology/i14224/rdl/Midstream>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "business category involving the processing, storage and transportation sectors of the petroleum industry"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: "Redundancy in IEC 61508 is called fault tolerance"@en
+*** "Modification"@en (<https://iso14224.org/ontology/i14224/rdl/Modification>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "Care is needed in the collection and analysis of RM data to distinguish between maintenance due to failures and maintenance due to equipment modification "@en
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "combination of all technical and administrative actions intended to change an item"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: "Modification is not normally a part of maintenance, but is frequently performed by maintenance personnel"@en
+*** "Performance objective"@en (<https://iso14224.org/ontology/i14224/rdl/PerformanceObjective>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "indicative level for the desired performance"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Performance requirement"@en (<https://iso14224.org/ontology/i14224/rdl/PerformanceRequirement>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "requirements are normally quantitative but can also be qualitative"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "required minimum level for the performance of a system"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Petrochemical"@en (<https://iso14224.org/ontology/i14224/rdl/Petrochemical>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "business category producing chemicals derived from petroleum and used as a feedstock for the manufacture of a variety of plastics and other related products"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Redundancy"@en (<https://iso14224.org/ontology/i14224/rdl/Redundancy>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "PDM"@en
+ - skos:definition :: "existence of more than one means for performing a required function of an item"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: "Redundancy in IEC 61508 is called fault tolerance"@en
+*** "Required function"@en (<https://iso14224.org/ontology/i14224/rdl/RequiredFunction>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "function, combination of functions, or a total combination of functions of an item which are considered necessary to fulfil a given requirement"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iofIRI> :: "https://spec.industrialontologies.org/ontology/construct/RequiredFunction/"^^xsd:anyURI
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "function or combination of functions of an item that is considered necessary to provide a given service"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Safety critical equipment"@en (<https://iso14224.org/ontology/i14224/rdl/SafetyCriticalEquipment>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "equipment and items of permanent, temporary and portable equipment playing an important role in safety systems/ functions"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Safety system"@en (<https://iso14224.org/ontology/i14224/rdl/SafetySystem>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "system which is used to implement one or more safety functions"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Subunit"@en (<https://iso14224.org/ontology/i14224/rdl/SubUnit>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "assembly of items that provides a specific function that is required for the equipment unit within the main boundary to achieve its intended performance"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Tag number"@en (<https://iso14224.org/ontology/i14224/rdl/TagNumber>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "the equipment is allocated to the tag for only so ling as it occupies that function and location"@en
+ - cmnsav:usageNote :: "normally includes the system for which it belongs"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "Functional location"@en
+ - skos:definition :: "unique code that identifies the equipment function and its physical location"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Taxonomy"@en (<https://iso14224.org/ontology/i14224/rdl/Taxonomy>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "systematic classification of items into generic groups based on factors possibly common to several of the items"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Turnaround"@en (<https://iso14224.org/ontology/i14224/rdl/Turnaround>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "Revision shutdown"@en
+ - skos:altLabel :: "Shutdown"@en
+ - skos:definition :: "planned event wherein an entire process unit is taken off stream for revamp or renewal"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Type of data"@en (<https://iso14224.org/ontology/i14224/rdl/TypeData>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iofIRI> :: ""^^xsd:anyURI
+ - <https://iso14224.org/ontology/i14224/rdl/iso14224:section> :: ""^^xsd:anyURI
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "None"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "label why the data is collected"@en
+ - skos:example :: "reliability data, maintenance data"@en
+ - skos:scopeNote :: ""@en
+*** "Type of failure event"@en (<https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iofIRI> :: ""^^xsd:anyURI
+ - <https://iso14224.org/ontology/i14224/rdl/iso14224:section> :: ""^^xsd:anyURI
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "None"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "label describing the way engineers commonly describe failure events"@en
+ - skos:example :: "critical, hidden, common cause"@en
+ - skos:scopeNote :: ""@en
+*** "Type of maintenance strategy"@en (<https://iso14224.org/ontology/i14224/rdl/TypeMaintenanceStrategy>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iofIRI> :: "https://spec.industrialontologies.org/ontology/construct/MaintenanceStrategy/"^^xsd:anyURI
+ - <https://iso14224.org/ontology/i14224/rdl/iso14224:section> :: ""^^xsd:anyURI
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "None"@en
+ - cmnsav:explanatoryNote :: "This concept is not in ISO 14224. It is added to this ontology to create a type for maintenance strategy concepts that are included in ISO 14224 terms and definitions. These concepts are modelled as individuals (not classes) because we do not have adequate concepts and axioms to distinguish between the concepts. Also in many data sets these terms are used as labels providing a label for an instance of a work order (for example) not instances of the e.g. corrective maintenance activity"@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "strategy for maintenance of a specific item"@en
+ - skos:example :: "corrective maintenance, condition-based maintenance, opportunistic maintenance, planned maintenance, predictive maintenance, reactive maintenance"@en
+ - skos:scopeNote :: ""@en
+*** "Type of material state"@en (<https://iso14224.org/ontology/i14224/rdl/TypeMaterialState>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iofIRI> :: "https://spec.industrialontologies.org/ontology/construct/MaterialState/"^^xsd:anyURI
+ - <https://iso14224.org/ontology/i14224/rdl/iso14224:section> :: ""^^xsd:anyURI
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "Industrial Ontology Foundry (IOF) ontology"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "process in which a material entity (item) that participates in the process has a condition that remains unchanged"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Type of reliability measure"@en (<https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iofIRI> :: ""^^xsd:anyURI
+ - <https://iso14224.org/ontology/i14224/rdl/iso14224:section> :: ""^^xsd:anyURI
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: ""@en
+ - cmnsav:explanatoryNote :: "This concept is not in ISO 14224. It is added to this ontology to create a type for performance measures commonly captured in degradation. These concepts are modelled as individuals (not classes) because we do not have adequate concepts and axioms to distinguish between the concepts. Also in many data sets these terms are used as labels in data tables for values associated with these measures"@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "measure of a reliability-related performance of an item "@en
+ - skos:example :: "reliability, maintainability, availability"@en
+ - skos:scopeNote :: ""@en
+*** "Type of test"@en (<https://iso14224.org/ontology/i14224/rdl/TypeTest>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iofIRI> :: ""^^xsd:anyURI
+ - <https://iso14224.org/ontology/i14224/rdl/iso14224:section> :: ""^^xsd:anyURI
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "None"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "label describing the nature of a test"@en
+ - skos:example :: "on demand test, periodic test"@en
+ - skos:scopeNote :: ""@en
+*** "Uncertainty"@en (<https://iso14224.org/ontology/i14224/rdl/Uncertainty>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "<of a quantity> inability to determine accurately what is or will be the true value of a quantity"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** "Upstream"@en (<https://iso14224.org/ontology/i14224/rdl/Upstream>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "business category of the petroleum industry involving exploration and production"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+*** ZZ_OutOfScope (<https://iso14224.org/ontology/i14224/rdl/zz_OutOfScope>)
+ - cmnsav:explanatoryNote :: Terms present in the ISO 14224 terms and definitions section that are not used in a material way in Annex B - interpretation and notation of failure and maintenance parameters.
+
+** Object properties
+:PROPERTIES:
+:ID:       core-object-property-hierarchy
+:custom_id: core-object-property-hierarchy
+:resourcedefs: yes
+:END:
+
+*** hasDataType (<https://iso14224.org/ontology/i14224/rdl/hasDataType>)
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - skos:definition :: identifies the type of data of interest
+ - Range :: <https://iso14224.org/ontology/i14224/rdl/TypeData>
+*** hasFailureEventType (<https://iso14224.org/ontology/i14224/rdl/hasFailureEventType>)
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - skos:definition :: identifies the type of failure event
+ - Domain :: <https://iso14224.org/ontology/i14224/rdl/Failure>
+ - Range :: <https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>
+*** hasMaintenanceStrategy (<https://iso14224.org/ontology/i14224/rdl/hasMaintenanceStrategy>)
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - skos:definition :: identifies the maintenance strategy type
+ - Range :: <https://iso14224.org/ontology/i14224/rdl/TypeMaintenanceStrategy>
+*** hasReliabilityMeasure (<https://iso14224.org/ontology/i14224/rdl/hasReliabilityMeasure>)
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - skos:definition :: identifies the reliability measure of interest
+ - Range :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+*** hasState (<https://iso14224.org/ontology/i14224/rdl/hasState>)
+ - <https://iso14224.org/ontology/i14224/rdl/iofIRI> :: 
+ - <https://iso14224.org/ontology/i14224/rdl/iofIRI> :: https://spec.industrialontologies.org/ontology/construct/hasMaintenanceState
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - skos:definition :: identifies the state of the item
+ - Domain :: <https://iso14224.org/ontology/i14224/rdl/Item>
+ - Range :: <https://iso14224.org/ontology/i14224/rdl/TypeMaterialState>
+*** hasTestType (<https://iso14224.org/ontology/i14224/rdl/hasTestType>)
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - skos:definition :: identifies the reliability measure of interest
+ - Domain :: <https://iso14224.org/ontology/i14224/rdl/DetectionMethod>
+ - Range :: <https://iso14224.org/ontology/i14224/rdl/TypeTest>
+
+** Data properties
+:PROPERTIES:
+:ID:       core-data-property-hierarchy
+:custom_id: core-data-property-hierarchy
+:resourcedefs: yes
+:END:
+
+
+** Annotation properties
+:PROPERTIES:
+:ID:       core-annotation-property-hierarchy
+:custom_id: core-annotation-property-hierarchy
+:resourcedefs: yes
+:END:
+
+*** <https://iso14224.org/ontology/i14224/rdl/iofIRI>
+ - skos:definition :: iri for the same or similar concept in the Industrial Ontology Foundry (IOF)
+*** cmnsav:adaptedFrom
+*** skos:altLabel
+*** rdfs:comment
+*** skos:
+*** skos:definition
+*** <https://iso14224.org/ontology/i14224/rdl/en13306:definition>
+ - skos:definition :: definition from the EN13306:2017 standard for Maintenance Terminology
+*** <https://iso14224.org/ontology/i14224/rdl/iec60812:definition>
+ - skos:definition :: definition from the IEC60812:2018 standard for Failure Modes and Effects Analysis
+*** <https://iso14224.org/ontology/i14224/rdl/iof:definition>
+ - skos:definition :: definition from the Industrial Ontology Foundry (IOF) list of constructs
+*** cmnsav:directSource
+*** skos:example
+*** cmnsav:explanatoryNote
+*** rdfs:isDefinedBy
+*** rdfs:label
+*** dcterms:license
+*** dcterms:rights
+*** skos:scopeNote
+*** <https://iso14224.org/ontology/i14224/rdl/iso14224:section>
+*** rdfs:seeAlso
+*** cmnsav:usageNote
+*** owl:versionInfo
+
+** Individuals
+:PROPERTIES:
+:ID:       core-individuals
+:custom_id: core-individuals
+:resourcedefs: yes
+:END:
+
+*** "Type of data"@en                                             :nodeclare:
+**** "equipment data"@en (<https://iso14224.org/ontology/i14224/rdl/equipment_data>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "technical, operational and environmental parameters characterizing the design and use of an equipment unit"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeData>
+
+**** "failure data"@en (<https://iso14224.org/ontology/i14224/rdl/failure_data>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions notes added"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "ISO 14224:2023 Table 6 provides a list of data to be recorded"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "data characterizing the occurrence of a failure event"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeData>
+
+**** "failure frequency"@en (<https://iso14224.org/ontology/i14224/rdl/generic_reliability_data>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "reliability data covering families of similar equipment"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeData>
+
+**** "maintenance data"@en (<https://iso14224.org/ontology/i14224/rdl/maintenance_data>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "data characterizing the maintenance action planned or done"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeData>
+
+**** "reliability data"@en (<https://iso14224.org/ontology/i14224/rdl/reliability_data>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: "ISO 20815:2008"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "data for reliability, maintainability and maintenance support performance"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeData>
+
+*** "Type of failure event"@en                                    :nodeclare:
+**** "common cause failure"@en (<https://iso14224.org/ontology/i14224/rdl/common_cause_failure>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "failures of several items resulting from the same direct cause and where these failures are not consequences of each other"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "failures of multiple items, which would otherwise be considered independent of one another, resulting from a single cause"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "Components that fail due to a shared cause normally fail in the same functional mode. The term common mode if therefore sometimes used. It is however, not considered to be a precise term for communicating the characteristics that describe a common cause failure"@en
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "failures of multiple items, which would otherwise be considered independent of one another, resulting from a single cause"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: "It is generally accepted that the failures occur simultaneously or within a short time of each other"@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>
+
+**** "common mode failure"@en (<https://iso14224.org/ontology/i14224/rdl/common_mode_failure>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "failures of different items characterized by the same failure mode"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "The potential for common mode failures reduces the effectiveness of system redundancy"@en
+ - cmnsav:usageNote :: "Common mode failures can have different causes"@en
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "failures of different items characterized by the same failure mode"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: "Common mode failures can also be common cause failures"@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>
+
+**** "critical failure"@en (<https://iso14224.org/ontology/i14224/rdl/critical_failure>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "a critical failure results in an unscheduled repair "@en
+ - cmnsav:explanatoryNote :: "includes failures requiring immediate action towards cessation of performing the function, even though actual operation can continue for a short period of time"@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "failure of an equipment unit that causes an immediate cessation of the ability to perform a required function"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>
+
+**** "degraded failure"@en (<https://iso14224.org/ontology/i14224/rdl/degraded_failure>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "EN13306 does not define 'degraded failure' but does define 'degraded state' as state of reduced ability to perform as required, but with acceptable reduced performance"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "an immediate repair can normally be delayed but, in time, such failures can develop into a critical failure if corrective actions are not taken "@en
+ - cmnsav:explanatoryNote :: "the failure can be gradual, partial or both"@en
+ - cmnsav:explanatoryNote :: "the function can be compromised by any combination of reduced, increased or erratic outputs "@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "failure that does not cease the fundamental function(s), but compromises one or several functions"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>
+
+**** "failure due to demand"@en (<https://iso14224.org/ontology/i14224/rdl/failure_due_to_demand>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions notes added"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "failure occurring on demand"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>
+
+**** "failure on demand"@en (<https://iso14224.org/ontology/i14224/rdl/failure_on_demand>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions notes added"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "Different failure modes are used to reflect failure on demand"@en
+ - cmnsav:usageNote :: "See also definition on failure due to demand"@en
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "failure likely to be observed when a demand occurs"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: "Failure on demand includes those failures occurred before the demand and the failures due to the demand"@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>
+
+**** "hidden failure"@en (<https://iso14224.org/ontology/i14224/rdl/hidden_failure>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "failure which is not detected during normal operation"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "equipment failures that occurred at an earlier point of time, but were first observed at demand fall into this category. Such failures are first revealed when the relevant functionality is tested"@en
+ - cmnsav:usageNote :: "see latent fault"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "failure that is not immediately evident to operations and maintenance personnel"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>
+
+**** "incipient failure"@en (<https://iso14224.org/ontology/i14224/rdl/incipient_failure>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "the recording of an incipient failure requires some criteria for when a fault of this nature requires registration as opposed to a state/ condition where no corrective actions are required"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "imperfection in the state or condition of an item so that a degraded or critical failure might (or might not) eventually be the expected result if corrective action is taken "@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>
+
+**** "non-critical failure"@en (<https://iso14224.org/ontology/i14224/rdl/non_critical_failure>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "non-critical failures can be categorized as 'degraded' or 'incipient' failures"@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "failure of an equipment unit that does not cause an immediate cessation of an ability to perform its required function"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>
+
+**** "random failure"@en (<https://iso14224.org/ontology/i14224/rdl/random_failure>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "PDM"@en
+ - skos:definition :: "failure occurring in a random way"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>
+
+**** "safety critical failure"@en (<https://iso14224.org/ontology/i14224/rdl/safety_critical_failure>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "Failures revealed by periodic tests (https://www.vocab14224.org/PeriodicTest)"@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "critical dangerous failures that are undetected"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>
+
+**** "systematic failure"@en (<https://iso14224.org/ontology/i14224/rdl/systematic_failure>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "failure that consistently occurs under particular conditions of handling, storage or use"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>
+
+**** "trip"@en (<https://iso14224.org/ontology/i14224/rdl/trip>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "Real trip is effectuated as a result of a monitored (or calculated) value in the control system exceeding a pre-set limit. Spurious trip is the unexpected shutdown resulting from failure(s) in control/ monitoring system or error(s) imposed on the control/monitoring system originating from the environment or people "@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "shutdown of machinery from normal operating condition to full stop"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent>
+
+*** "Type of maintenance strategy"@en                             :nodeclare:
+**** "corrective maintenance"@en (<https://iso14224.org/ontology/i14224/rdl/corrective_maintenance>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "maintenance carried out after fault recognition and intended to restore an item into a state in which it can perform a required function"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015"@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "corrective maintenance of software invariably involves some modification"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "reactive Maintenance"@en
+ - skos:definition :: "maintenance carried out after fault detection to effect restoration"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeMaintenanceStrategy>
+
+**** "planned maintenance"@en (<https://iso14224.org/ontology/i14224/rdl/planned_maintenance>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "EN13306 does not define 'planned maintenance' but does define 'scheduled maintenance' as maintenance carried out in accordance with a specified time schedule or specified number of units of use"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "scheduled maintenance can identify the need for some corrective maintenance"@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "planned preventative maintenance"@en
+ - skos:altLabel :: "scheduled maintenance"@en
+ - skos:definition :: "maintenance carried out in accordance with a specified time schedule"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeMaintenanceStrategy>
+
+**** "predictive maintenance"@en (<https://iso14224.org/ontology/i14224/rdl/predictive_maintenance>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "condition-based maintenance carried out following a forecast derived from repeated analysis or known characteristics and evaluation of the significant parameters of the degradation of the item"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "PDM"@en
+ - skos:altLabel :: "PdM"@en
+ - skos:definition :: "maintenance based on the prediction of the future condition of an item estimated or calculated from a defined set of historic data and known future operational parameters"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeMaintenanceStrategy>
+
+**** "preventative maintenance"@en (<https://iso14224.org/ontology/i14224/rdl/preventative_maintenance>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "maintenance carried out after fault recognition and intended to restore an item into a state in which it can perform a required function"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "See also condition-based maintenance (https://iso14224.org/ontology/i14224/rdl/i14224/rdl/condition_based_maintenance) and planned (scheduled) maintenance (https://iso14224.org/ontology/i14224/rdl/i14224/rdl/planned_maintenance)"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "PM"@en
+ - skos:definition :: "maintenance carried out to mitigate degradation and reduce the probability of failure"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeMaintenanceStrategy>
+
+**** condition based maintenance (<https://iso14224.org/ontology/i14224/rdl/condition_based_maintenance>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "preventive maintenance which include assessment of physical conditions, analysis and the possible ensuing maintenance actions"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015"@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "the condition assessment can be operator observation, conducted according to a schedule, or by condition monitoring of system parameters"@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "cbm"@en
+ - skos:definition :: "preventative maintenance based on assessment of physical condition"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeMaintenanceStrategy>
+
+**** opportunity maintenance (<https://iso14224.org/ontology/i14224/rdl/opportunity_maintenance>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "maintenance of an item that is deferred or advanced in time and is performed when an unplanned opportunity becomes available"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeMaintenanceStrategy>
+
+*** "Type of material state"@en                                   :nodeclare:
+**** "down state"@en (<https://iso14224.org/ontology/i14224/rdl/down_state>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iof:definition> :: "https://spec.industrialontologies.org/ontology/construct/FailedState/"^^xsd:anyURI
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "down state relates to the unavailability of the item"@en
+ - cmnsav:usageNote :: "the adjectives 'down' or 'unavailable' designate an item in down state"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "internal disabled state"@en
+ - skos:altLabel :: "internally disabled state"@en
+ - skos:altLabel :: "unavailable state"@en
+ - skos:definition :: "state of being unable to perform as required, due to internal fault, or preventative maintenance"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeMaterialState>
+
+**** "idle state"@en (<https://iso14224.org/ontology/i14224/rdl/idle_state>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "The adjective 'idle' designates an item in idle state"@en
+ - cmnsav:usageNote :: "In some applications, an item in an idle state has some functioning subsystems, and is therefore considered to be operating"@en
+ - cmnsav:usageNote :: "The non-operating time comprises the idle time, the stand-by time and the externally disabled time "@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "Standby state"@en
+ - skos:definition :: "non-operating up state during non-required time"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeMaterialState>
+
+**** "operating state"@en (<https://iso14224.org/ontology/i14224/rdl/operating_state>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iof:definition> :: "https://spec.industrialontologies.org/ontology/construct/OperatingState/"^^xsd:anyURI
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "in some applications, an item in idle state is considered to be operating"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "state of performing as required"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeMaterialState>
+
+**** "up state"@en (<https://iso14224.org/ontology/i14224/rdl/up_state>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "state of an item being able to perform a required function, assuming that the external resources, if required, are provided"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "Available state"@en
+ - skos:definition :: "state of being able to perform as required"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeMaterialState>
+
+*** "Type of reliability measure"@en                              :nodeclare:
+**** "active maintenance time"@en (<https://iso14224.org/ontology/i14224/rdl/active_maintenance_time>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "duration of a maintenance action, excluding logistic delay"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "active repair time"@en (<https://iso14224.org/ontology/i14224/rdl/active_repair_time>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "effective time to achieve repair of an item"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "availability"@en (<https://iso14224.org/ontology/i14224/rdl/availability>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "ability of an item to be in a state to perform as and when required, under given conditions, assuming that the necessary external resources are provided"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "See detailed description and interpretation of availability in Annex C of the standard"@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "ability to be in a state to perform as required"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "failure frequency"@en (<https://iso14224.org/ontology/i14224/rdl/failure_frequency>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "unconditional failure intensity; conditional probability per unit time that the item fails between t and t + dt, provided that it was working at time 0"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "failure rate"@en (<https://iso14224.org/ontology/i14224/rdl/failure_rate>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "conditional probability per unit time that the item fails between t and t + dt, provided that it has been working over 0, t"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "integrity"@en (<https://iso14224.org/ontology/i14224/rdl/integrity>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "ability of a barrier to function as required when needed"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "Logistic delay"@en (<https://iso14224.org/ontology/i14224/rdl/logistic_delay>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "delay, excluding administrative delay, incurred for the provision of resources needed for a maintenance action to proceed or continue"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "maintenance supportability"@en (<https://iso14224.org/ontology/i14224/rdl/maintenance_supportability>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: ""@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: "Supportability of an item results from the inherent maintenance, combined with factors external to the item that affect the relative ease of providing the required maintenance and logistic support "@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "supportability"@en
+ - skos:definition :: "<of an item> ability to be supported to sustain the required availability with a defined operational profile and given logistic and maintenance resources"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "mean cycles to failure"@en (<https://iso14224.org/ontology/i14224/rdl/mean_active_repair_time>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "MART"@en
+ - skos:definition :: "expected active repair time"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "mean cycles to failure"@en (<https://iso14224.org/ontology/i14224/rdl/mean_cycles_to_failure>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "expected number of cycles before the item fails"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "mean elapsed time between failures"@en (<https://iso14224.org/ontology/i14224/rdl/mean_elapsed_time_between_failures>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "expected elapsed time between failures"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "mean number of cycles"@en (<https://iso14224.org/ontology/i14224/rdl/mean_number_of_cycles>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "expected number of cycles per unit time"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "mean overall repairing time"@en (<https://iso14224.org/ontology/i14224/rdl/mean_overall_repairing_time>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "expected time to achieve the following actions: the time spent before starting the repair; and, the effective time to repair; and, the time before the item is made available to be put back into operation"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "mean time to failure"@en (<https://iso14224.org/ontology/i14224/rdl/mean_time_to_failure>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "MTTF"@en
+ - skos:definition :: "expected time before the item fails"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "mean time to repair"@en (<https://iso14224.org/ontology/i14224/rdl/mean_time_to_repair>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "MTTR"@en
+ - skos:definition :: "expected time to achieve the repair of a failed item"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "mean time to restoration"@en (<https://iso14224.org/ontology/i14224/rdl/mean_time_to_restoration>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "mean_elapsed_time_between_failures"@en
+ - skos:definition :: "expected time to the following actions: the time to detect the failure; and, the time spent before starting the repair; and, the effective time to repair; and, the time before the component is made available to be put back into operation"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "mobilization time"@en (<https://iso14224.org/ontology/i14224/rdl/mobilization_time>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "time to get all necessary resources available to execute maintenance"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "operating time"@en (<https://iso14224.org/ontology/i14224/rdl/operating_time_time>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "time interval during which an item is in an operating state"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "reliability"@en (<https://iso14224.org/ontology/i14224/rdl/reliability>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "ability of an item to perform a required function under given conditions for a given time interval"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "PDM"@en
+ - skos:definition :: "ability of an item to perform a required function under given conditions for a given time interval"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: "Redundancy in IEC 61508 is called fault tolerance"@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "surveillance period"@en (<https://iso14224.org/ontology/i14224/rdl/surveillance_period>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "interval of time (calendar time) between the start date and the end date of RM data collection"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+**** "up time"@en (<https://iso14224.org/ontology/i14224/rdl/up_time>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "time interval during which an item is in an upstate"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure>
+
+*** "Type of test"@en                                             :nodeclare:
+**** "demand"@en (<https://iso14224.org/ontology/i14224/rdl/demand>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: ""@en
+ - cmnsav:directSource :: "ISO 14224:2023 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: ""@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: ""@en
+ - skos:definition :: "activation of the function (includes functional, operational and test activations)"@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeTest>
+
+**** "periodic test"@en (<https://iso14224.org/ontology/i14224/rdl/periodic_test>)
+ - <https://iso14224.org/ontology/i14224/rdl/en13306:definition> :: "n/a"@en
+ - <https://iso14224.org/ontology/i14224/rdl/iec60812:definition> :: "n/a"@en
+ - cmnsav:adaptedFrom :: "IEC 60050-192:2015 notes added"@en
+ - cmnsav:directSource :: "ISO 14224:2016 Terms and Definitions"@en
+ - cmnsav:explanatoryNote :: "The unsafe hidden failures of a safety system which are not detected by diagnostic tests can be detected by periodic tests"@en
+ - cmnsav:usageNote :: ""@en
+ - rdfs:isDefinedBy :: http://iso14224.org/ontology/i14224/ont/core
+ - rdfs:seeAlso :: ""@en
+ - skos:altLabel :: "Proof test"@en
+ - skos:definition :: "planned operation performed at constant intervals in order to detect the potential hidden failures which can have occurred in the meantime "@en
+ - skos:example :: ""@en
+ - skos:scopeNote :: ""@en
+ - Types :: <https://iso14224.org/ontology/i14224/rdl/TypeTest>
+
+
