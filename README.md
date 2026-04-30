@@ -1,21 +1,8 @@
 # GitHub repo for collaboration on developing a semantic version for ISO 14224 
 
+## Goal
+
 Building a machine-readable version of ISO 14224 :2016 (version reconfirmed in 2022)
-
-## Purpose
-
-The purpose of this repo is to provide Linked Data and IRIs for 1) the 53 terms used in the Terms and Definitions section of ISO 14224, and 2) Appendix B, of the ISO 14224:2016 standard. Appendix B contains text and tables relating to the classification of failure modes, failure mechanisms and failure causes. The namespace iso14224.org has been purchased by the GitHub repo owner for this purpose.
-
-## Output
-The files are available in ttl format in the InDevelopment Subdirectory
-
-**Files**
-
-*vocab14224_skos_basic.ttl* Terms and definitions - modelled as SKOS concepts
-
-*vocab14224_basic.ttl* Terms and definitions  - modelled as OWL classes
-
-*vocab14224_extended.ttl* - data from Annex B such as Failure modes and Mechanisms - modelled as OWL classes and instances - this file is temporary and likely to be superceded.
 
 ## What is ISO 14224?
 
@@ -34,6 +21,35 @@ b) failure data, e.g. failure cause, failure consequence;
 c) maintenance data, e.g. maintenance action, resources used, maintenance consequence, down time.
 
 There data are used for tracking and investigating reliability issues, calculating equipment and system availability, maintenance management metrics, and events with safety and environmental impacts.
+
+## Purpose of this repo
+
+The purposes of this repo are:
+
+1. to provide **stable** Linked Data and IRIs for:
+
+- 53 terms used in the Terms and Definitions (Clause 3) section of ISO 14224, and 
+- Text in tables relating to the classification of failure modes, failure mechanisms and failure causes contained in Appendix B, of the ISO 14224:2016 standard. 
+
+The namespace iso14224.org has been purchased by the GitHub repo owner for this purpose.
+
+2. to provide example data and competency questions from FMEA and Maintenance work order tables from industry that include concepts represented in ISO 14224.
+
+3.  Develop models based on 1. and 2. aligned to different top level ontologies - IDO, IOF and DOLCE. Use the examples in 2. to understand the impact of modelling decisions.
+
+
+## Outputs
+The current files are available in ttl format in the \inDevelopment subdirectory. When they are final they will be moved to the \ontology subdirectory.
+
+**Files**
+
+
+
+*vocab14224_basic.ttl* Terms and definitions  - modelled as OWL classes
+
+*vocab14224_extended.ttl* - data from Annex B such as Failure modes and Mechanisms - modelled as OWL classes and instances - this file is temporary and likely to be superceded.
+
+
 
 
 ## Namespace and file names
