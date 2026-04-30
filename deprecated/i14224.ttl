@@ -6,7 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix cmns-av: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .
+@prefix cmnsav: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
 <https://iso14224.org/vocab/basic/> rdf:type owl:Ontology ;
@@ -69,19 +69,19 @@ voc:iof:definition rdf:type owl:AnnotationProperty ;
                    skos:definition "definition from the Industrial Ontology Foundry (IOF) list of constructs" .
 
 ###  https://www.omg.org/spec/Commons/AnnotationVocabulary#adaptedFrom
-cmns-av:adaptedFrom rdf:type owl:AnnotationProperty .
+cmnsav:adaptedFrom rdf:type owl:AnnotationProperty .
 
 
 ###  https://www.omg.org/spec/Commons/AnnotationVocabulary#directSource
-cmns-av:directSource rdf:type owl:AnnotationProperty .
+cmnsav:directSource rdf:type owl:AnnotationProperty .
 
 
 ###  https://www.omg.org/spec/Commons/AnnotationVocabulary#explanatoryNote
-cmns-av:explanatoryNote rdf:type owl:AnnotationProperty .
+cmnsav:explanatoryNote rdf:type owl:AnnotationProperty .
 
 
 ###  https://www.omg.org/spec/Commons/AnnotationVocabulary#usageNote
-cmns-av:usageNote rdf:type owl:AnnotationProperty .
+cmnsav:usageNote rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -155,12 +155,11 @@ voc:Boundary rdf:type owl:Class ;
              skos:scopeNote ""@en ;
                  rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
              voc:en13306:definition "n/a"@en ;
-             voc:iec60812:definition "n/a"@en ;
-             ;
-             cmns-av:adaptedFrom ""@en ;
-             cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-             cmns-av:explanatoryNote ""@en ;
-             cmns-av:usageNote ""@en .
+             voc:iec60812:definition "n/a"@en ;              
+             cmnsav:adaptedFrom ""@en ;
+             cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+             cmnsav:explanatoryNote ""@en ;
+             cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/Cycle
@@ -175,10 +174,10 @@ voc:Cycle rdf:type owl:Class ;
           voc:en13306:definition "n/a"@en ;
           voc:iec60812:definition "n/a"@en ;
           ;
-          cmns-av:adaptedFrom ""@en ;
-          cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-          cmns-av:explanatoryNote ""@en ;
-          cmns-av:usageNote ""@en .
+          cmnsav:adaptedFrom ""@en ;
+          cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+          cmnsav:explanatoryNote ""@en ;
+          cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/DesignLife
@@ -193,10 +192,10 @@ voc:DesignLife rdf:type owl:Class ;
                voc:en13306:definition "n/a"@en ;
                voc:iec60812:definition "n/a"@en ;
                ;
-               cmns-av:adaptedFrom ""@en ;
-               cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-               cmns-av:explanatoryNote ""@en ;
-               cmns-av:usageNote ""@en .
+               cmnsav:adaptedFrom ""@en ;
+               cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+               cmnsav:explanatoryNote ""@en ;
+               cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/DetectionMethod
@@ -211,10 +210,10 @@ voc:DetectionMethod rdf:type owl:Class ;
                     voc:en13306:definition "n/a"@en ;
                     voc:iec60812:definition "n/a"@en ;
                     ;
-                    cmns-av:adaptedFrom ""@en ;
-                    cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                    cmns-av:explanatoryNote ""@en ;
-                    cmns-av:usageNote "ISO 14224-2023 Table B4 provides a categorization of detection methods (e.g. periodic testing or continuous condition monitoring)"@en .
+                    cmnsav:adaptedFrom ""@en ;
+                    cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                    cmnsav:explanatoryNote ""@en ;
+                    cmnsav:usageNote "ISO 14224-2023 Table B4 provides a categorization of detection methods (e.g. periodic testing or continuous condition monitoring)"@en .
 
 
 ###  https://iso14224.org/vocab/Downstream
@@ -229,10 +228,10 @@ voc:Downstream rdf:type owl:Class ;
                voc:en13306:definition "n/a"@en ;
                voc:iec60812:definition "n/a"@en ;
                ;
-               cmns-av:adaptedFrom ""@en ;
-               cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-               cmns-av:explanatoryNote ""@en ;
-               cmns-av:usageNote ""@en .
+               cmnsav:adaptedFrom ""@en ;
+               cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+               cmnsav:explanatoryNote ""@en ;
+               cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/Downtime
@@ -247,10 +246,10 @@ voc:Downtime rdf:type owl:Class ;
              voc:en13306:definition "n/a"@en ;
              voc:iec60812:definition "n/a"@en ;
              ;
-             cmns-av:adaptedFrom ""@en ;
-             cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-             cmns-av:explanatoryNote ""@en ;
-             cmns-av:usageNote "Downtime can be either planned or unplanned"@en ,
+             cmnsav:adaptedFrom ""@en ;
+             cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+             cmnsav:explanatoryNote ""@en ;
+             cmnsav:usageNote "Downtime can be either planned or unplanned"@en ,
                                "The downtime includes all the delays between the item failure and the restoration of its service"@en .
 
 
@@ -266,10 +265,10 @@ voc:EquipmentClass rdf:type owl:Class ;
                    voc:en13306:definition "n/a"@en ;
                    voc:iec60812:definition "n/a"@en ;
                    ;
-                   cmns-av:adaptedFrom ""@en ;
-                   cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                   cmns-av:explanatoryNote ""@en ;
-                   cmns-av:usageNote ""@en .
+                   cmnsav:adaptedFrom ""@en ;
+                   cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                   cmnsav:explanatoryNote ""@en ;
+                   cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/EquipmentType
@@ -284,10 +283,10 @@ voc:EquipmentType rdf:type owl:Class ;
                   voc:en13306:definition "n/a"@en ;
                   voc:iec60812:definition "n/a"@en ;
                   ;
-                  cmns-av:adaptedFrom ""@en ;
-                  cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                  cmns-av:explanatoryNote ""@en ;
-                  cmns-av:usageNote ""@en .
+                  cmnsav:adaptedFrom ""@en ;
+                  cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                  cmnsav:explanatoryNote ""@en ;
+                  cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/EquipmentUnit
@@ -302,10 +301,10 @@ voc:EquipmentUnit rdf:type owl:Class ;
                   voc:en13306:definition "n/a"@en ;
                   voc:iec60812:definition "n/a"@en ;
                   ;
-                  cmns-av:adaptedFrom ""@en ;
-                  cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                  cmns-av:explanatoryNote ""@en ;
-                  cmns-av:usageNote "equipment unit is given at Level 6 of the equipment taxonomy classification shown in Figure 3 of ISO 14224-2023"@en .
+                  cmnsav:adaptedFrom ""@en ;
+                  cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                  cmnsav:explanatoryNote ""@en ;
+                  cmnsav:usageNote "equipment unit is given at Level 6 of the equipment taxonomy classification shown in Figure 3 of ISO 14224-2023"@en .
 
 
 ###  https://iso14224.org/vocab/Error
@@ -320,11 +319,11 @@ voc:Error rdf:type owl:Class ;
           voc:en13306:definition "n/a"@en ;
           voc:iec60812:definition "n/a"@en ;
           ;
-          cmns-av:adaptedFrom ""@en ;
-          cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-          cmns-av:explanatoryNote "an error can be caused by a faulty item e.g. a computing error made by faulty computer equipment"@en ,
+          cmnsav:adaptedFrom ""@en ;
+          cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+          cmnsav:explanatoryNote "an error can be caused by a faulty item e.g. a computing error made by faulty computer equipment"@en ,
                                   "an error within a system can be caused by failure or one or more of its components, or by activation of a systemic fault"@en ;
-          cmns-av:usageNote "in ISO 14224, error is also specifically used for software and human errors"@en .
+          cmnsav:usageNote "in ISO 14224, error is also specifically used for software and human errors"@en .
 
 
 ###  https://iso14224.org/vocab/Failure
@@ -340,11 +339,11 @@ voc:Failure rdf:type owl:Class ;
             voc:en13306:definition "loss of the ability of an item to perform a required function"@en ;
             voc:iec60812:definition "n/a"@en ;
             ;
-            cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-            cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-            cmns-av:explanatoryNote "a failure of an item is an event that results in a fault of the item"@en ,
+            cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+            cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+            cmnsav:explanatoryNote "a failure of an item is an event that results in a fault of the item"@en ,
                                     "a failure of an item is an event, as distinct from a fault of an item, which is a state"@en ;
-            cmns-av:usageNote ""@en .
+            cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/FailureCause
@@ -359,10 +358,10 @@ voc:FailureCause rdf:type owl:Class ;
                  voc:en13306:definition "circumstances during specification, design, manufacture, installation, use or maintenance that result in failure"@en ;
                  voc:iec60812:definition "set of circumstances that leads to failure"@en ;
                  ;
-                 cmns-av:adaptedFrom "IEC 60050-192:2015"@en ;
-                 cmns-av:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
-                 cmns-av:explanatoryNote "a failure cause can originate during specification, design, manufacture, installation, operation or maintenance of an item"@en ;
-                 cmns-av:usageNote "Tables in Appendix B of ISO 14224 define failure causes for selected equipment classes"@en .
+                 cmnsav:adaptedFrom "IEC 60050-192:2015"@en ;
+                 cmnsav:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
+                 cmnsav:explanatoryNote "a failure cause can originate during specification, design, manufacture, installation, operation or maintenance of an item"@en ;
+                 cmnsav:usageNote "Tables in Appendix B of ISO 14224 define failure causes for selected equipment classes"@en .
 
 
 ###  https://iso14224.org/vocab/FailureImpact
@@ -381,10 +380,10 @@ voc:FailureImpact rdf:type owl:Class ;
                   voc:en13306:definition "EN13306 does not define 'failure impact' but does define 'failure severity' as potential or actual detrimental consequences of a failure or fault"@en ;
                   voc:iec60812:definition "IEC60812 does not define 'failure impact' but does define 'failure effect' as consequence of a failure, within or beyond the boundary of the failure item"@en ;
                   ;
-                  cmns-av:adaptedFrom ""@en ;
-                  cmns-av:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
-                  cmns-av:explanatoryNote ""@en ;
-                  cmns-av:usageNote "classification of failure impact on taxonomy levels 4 (plant) to 8 (component/ maintainable item) are provided in ISO 14224:2023 Table 3"@en ,
+                  cmnsav:adaptedFrom ""@en ;
+                  cmnsav:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
+                  cmnsav:explanatoryNote ""@en ;
+                  cmnsav:usageNote "classification of failure impact on taxonomy levels 4 (plant) to 8 (component/ maintainable item) are provided in ISO 14224:2023 Table 3"@en ,
                                     "on the equipment level, failure impact can be classified in three classes (critical, degraded, incipient)"@en .
 
 
@@ -400,10 +399,10 @@ voc:FailureMechanism rdf:type owl:Class ;
                      voc:en13306:definition "physical, chemical or other processes which may lead or have led to failure"@en ;
                      voc:iec60812:definition "process that leads to failure"@en ;
                      ;
-                     cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                     cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                     cmns-av:explanatoryNote "the process can be physical, chemical, logical, or a combination thereof"@en ;
-                     cmns-av:usageNote ""@en .
+                     cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                     cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                     cmnsav:explanatoryNote "the process can be physical, chemical, logical, or a combination thereof"@en ;
+                     cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/FailureMode
@@ -418,10 +417,10 @@ voc:FailureMode rdf:type owl:Class ;
                 voc:en13306:definition "manner in which the inability of an item to perform a required function occurs"@en ;
                 voc:iec60812:definition "manner in which failure occurs"@en ;
                 ;
-                cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                cmns-av:explanatoryNote ""@en ;
-                cmns-av:usageNote "Tables in B.2.6 in ISO 14224-2023 on relevant failure modes define failure modes to be used for each equipment class"@en ,
+                cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                cmnsav:explanatoryNote ""@en ;
+                cmnsav:usageNote "Tables in B.2.6 in ISO 14224-2023 on relevant failure modes define failure modes to be used for each equipment class"@en ,
                                   "analysis might require data collection to be established on different taxonomy levels"@en .
 
 
@@ -437,11 +436,11 @@ voc:Fault rdf:type owl:Class ;
           voc:en13306:definition "state of an item characterized by inability to perform a required function, excluding the inability during preventive maintenance or other planned actions, or due to lack of external resources"@en ;
           voc:iec60812:definition "n/a"@en ;
           ;
-          cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-          cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-          cmns-av:explanatoryNote "a fault is often a result of a failure of the item itself but the state can exist without a failure"@en ,
+          cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+          cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+          cmnsav:explanatoryNote "a fault is often a result of a failure of the item itself but the state can exist without a failure"@en ,
                                   "a fault of an item results from a failure, either of the item itself, or from a deficiency in an earlier stage of the life cycle, such as specification, design, manufacture or maintenance"@en ;
-          cmns-av:usageNote "see latent fault"@en .
+          cmnsav:usageNote "see latent fault"@en .
 
 
 ###  https://iso14224.org/vocab/HumanError
@@ -457,11 +456,11 @@ voc:HumanError rdf:type owl:Class ;
                voc:en13306:definition "n/a"@en ;
                voc:iec60812:definition "n/a"@en ;
                ;
-               cmns-av:adaptedFrom ""@en ;
-               cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-               cmns-av:explanatoryNote "an error can be caused by a faulty item e.g. a computing error made by faulty computer equipment"@en ,
+               cmnsav:adaptedFrom ""@en ;
+               cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+               cmnsav:explanatoryNote "an error can be caused by a faulty item e.g. a computing error made by faulty computer equipment"@en ,
                                        "the term 'human error' is often attributed in hindsight to a human decision, action or inaction considered to be an initiator or contributory cause of a negative outcome such as loss or harm"@en ;
-               cmns-av:usageNote "discrepancy with intention is considered essential in determining human error"@en .
+               cmnsav:usageNote "discrepancy with intention is considered essential in determining human error"@en .
 
 
 ###  https://iso14224.org/vocab/HumanFatigue
@@ -476,10 +475,10 @@ voc:HumanFatigue rdf:type owl:Class ;
                  voc:en13306:definition "n/a"@en ;
                  voc:iec60812:definition "n/a"@en ;
                  ;
-                 cmns-av:adaptedFrom ""@en ;
-                 cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                 cmns-av:explanatoryNote ""@en ;
-                 cmns-av:usageNote ""@en .
+                 cmnsav:adaptedFrom ""@en ;
+                 cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                 cmnsav:explanatoryNote ""@en ;
+                 cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/IdleTime
@@ -494,11 +493,11 @@ voc:IdleTime rdf:type owl:Class ;
              voc:en13306:definition "part, component, device, subsystem, functional unit, equipment or system that can be individually described and considered"@en ;
              voc:iec60812:definition "subject being considered"@en ;
              ;
-             cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-             cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-             cmns-av:explanatoryNote "the item can be an individual part, component, device, functional unit, equipment, subsystem or system"@en ,
+             cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+             cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+             cmnsav:explanatoryNote "the item can be an individual part, component, device, functional unit, equipment, subsystem or system"@en ,
                                      "the item can consist of hardware, software, people or any combination thereof"@en ;
-             cmns-av:usageNote "in ISO 14224-2023 the common term 'item' is used on all taxonomy levels (6-9)"@en .
+             cmnsav:usageNote "in ISO 14224-2023 the common term 'item' is used on all taxonomy levels (6-9)"@en .
 
 
 ###  https://iso14224.org/vocab/IndentureLevel
@@ -513,10 +512,10 @@ voc:IndentureLevel rdf:type owl:Class ;
                    voc:en13306:definition "n/a"@en ;
                    voc:iec60812:definition "n/a"@en ;
                    ;
-                   cmns-av:adaptedFrom ""@en ;
-                   cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                   cmns-av:explanatoryNote ""@en ;
-                   cmns-av:usageNote ""@en .
+                   cmnsav:adaptedFrom ""@en ;
+                   cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                   cmnsav:explanatoryNote ""@en ;
+                   cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/Item
@@ -531,11 +530,11 @@ voc:Item rdf:type owl:Class ;
          voc:en13306:definition "part, component, device, subsystem, functional unit, equipment or system that can be individually described and considered"@en ;
          voc:iec60812:definition "subject being considered"@en ;
          ;
-         cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-         cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-         cmns-av:explanatoryNote "the item can be an individual part, component, device, functional unit, equipment, subsystem or system"@en ,
+         cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+         cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+         cmnsav:explanatoryNote "the item can be an individual part, component, device, functional unit, equipment, subsystem or system"@en ,
                                  "the item can consist of hardware, software, people or any combination thereof"@en ;
-         cmns-av:usageNote "in ISO 14224-2023 the common term 'item' is used on all taxonomy levels (6-9)"@en .
+         cmnsav:usageNote "in ISO 14224-2023 the common term 'item' is used on all taxonomy levels (6-9)"@en .
 
 
 ###  https://iso14224.org/vocab/LatentFault
@@ -551,10 +550,10 @@ voc:LatentFault rdf:type owl:Class ;
                 voc:en13306:definition "n/a"@en ;
                 voc:iec60812:definition "n/a"@en ;
                 ;
-                cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                cmns-av:explanatoryNote ""@en ;
-                cmns-av:usageNote ""@en .
+                cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                cmnsav:explanatoryNote ""@en ;
+                cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/LifeCycle
@@ -569,10 +568,10 @@ voc:LifeCycle rdf:type owl:Class ;
               voc:en13306:definition "n/a"@en ;
               voc:iec60812:definition "n/a"@en ;
               ;
-              cmns-av:adaptedFrom ""@en ;
-              cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-              cmns-av:explanatoryNote ""@en ;
-              cmns-av:usageNote ""@en .
+              cmnsav:adaptedFrom ""@en ;
+              cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+              cmnsav:explanatoryNote ""@en ;
+              cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/MaintainableItem
@@ -587,10 +586,10 @@ voc:MaintainableItem rdf:type owl:Class ;
                      voc:en13306:definition "n/a"@en ;
                      voc:iec60812:definition "n/a"@en ;
                      ;
-                     cmns-av:adaptedFrom ""@en ;
-                     cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                     cmns-av:explanatoryNote ""@en ;
-                     cmns-av:usageNote ""@en .
+                     cmnsav:adaptedFrom ""@en ;
+                     cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                     cmnsav:explanatoryNote ""@en ;
+                     cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/Maintenance
@@ -606,10 +605,10 @@ voc:Maintenance rdf:type owl:Class ;
                 voc:en13306:definition "combination of all technical, administrative and managerial actions during the life cycle of an item intended to retain it in, or restore it to, a state in which it can perform the required function"@en ;
                 voc:iec60812:definition "n/a"@en ;
                 ;
-                cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                cmns-av:explanatoryNote ""@en ;
-                cmns-av:usageNote ""@en .
+                cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                cmnsav:explanatoryNote ""@en ;
+                cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/MaintenanceConcept
@@ -624,10 +623,10 @@ voc:MaintenanceConcept rdf:type owl:Class ;
                        voc:en13306:definition "n/a"@en ;
                        voc:iec60812:definition "n/a"@en ;
                        ;
-                       cmns-av:adaptedFrom ""@en ;
-                       cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                       cmns-av:explanatoryNote "The maintenance policy provides the basis for maintenance planning, determining supportability requirements, and developing logistic support"@en ;
-                       cmns-av:usageNote ""@en .
+                       cmnsav:adaptedFrom ""@en ;
+                       cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                       cmnsav:explanatoryNote "The maintenance policy provides the basis for maintenance planning, determining supportability requirements, and developing logistic support"@en ;
+                       cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/MaintenanceImpact
@@ -642,10 +641,10 @@ voc:MaintenanceImpact rdf:type owl:Class ;
                       voc:en13306:definition "n/a"@en ;
                       voc:iec60812:definition "n/a"@en ;
                       ;
-                      cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                      cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                      cmns-av:explanatoryNote "On the equipment level, two classes of impact are defined: critical and non-critical. On a plant level, three classes are defined: total, partial or zero impact"@en ;
-                      cmns-av:usageNote ""@en .
+                      cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                      cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                      cmnsav:explanatoryNote "On the equipment level, two classes of impact are defined: critical and non-critical. On a plant level, three classes are defined: total, partial or zero impact"@en ;
+                      cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/MaintenanceManHours
@@ -660,10 +659,10 @@ voc:MaintenanceManHours rdf:type owl:Class ;
                         voc:en13306:definition "n/a"@en ;
                         voc:iec60812:definition "n/a"@en ;
                         ;
-                        cmns-av:adaptedFrom ""@en ;
-                        cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                        cmns-av:explanatoryNote ""@en ;
-                        cmns-av:usageNote ""@en .
+                        cmnsav:adaptedFrom ""@en ;
+                        cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                        cmnsav:explanatoryNote ""@en ;
+                        cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/MaintenancePlan
@@ -678,10 +677,10 @@ voc:MaintenancePlan rdf:type owl:Class ;
                     voc:en13306:definition "n/a"@en ;
                     voc:iec60812:definition "n/a"@en ;
                     ;
-                    cmns-av:adaptedFrom ""@en ;
-                    cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                    cmns-av:explanatoryNote ""@en ;
-                    cmns-av:usageNote ""@en .
+                    cmnsav:adaptedFrom ""@en ;
+                    cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                    cmnsav:explanatoryNote ""@en ;
+                    cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/MaintenanceRecord
@@ -696,10 +695,10 @@ voc:MaintenanceRecord rdf:type owl:Class ;
                       voc:en13306:definition "n/a"@en ;
                       voc:iec60812:definition "n/a"@en ;
                       ;
-                      cmns-av:adaptedFrom ""@en ;
-                      cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                      cmns-av:explanatoryNote ""@en ;
-                      cmns-av:usageNote ""@en .
+                      cmnsav:adaptedFrom ""@en ;
+                      cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                      cmnsav:explanatoryNote ""@en ;
+                      cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/Midstream
@@ -713,10 +712,10 @@ voc:Midstream rdf:type owl:Class ;
               voc:en13306:definition "n/a"@en ;
               voc:iec60812:definition "n/a"@en ;
               ;
-              cmns-av:adaptedFrom ""@en ;
-              cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-              cmns-av:explanatoryNote ""@en ;
-              cmns-av:usageNote ""@en .
+              cmnsav:adaptedFrom ""@en ;
+              cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+              cmnsav:explanatoryNote ""@en ;
+              cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/Modification
@@ -730,10 +729,10 @@ voc:Modification rdf:type owl:Class ;
                  voc:en13306:definition "n/a"@en ;
                  voc:iec60812:definition "n/a"@en ;
                  ;
-                 cmns-av:adaptedFrom ""@en ;
-                 cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                 cmns-av:explanatoryNote ""@en ;
-                 cmns-av:usageNote "Care is needed in the collection and analysis of RM data to distinguish between maintenance due to failures and maintenance due to equipment modification "@en .
+                 cmnsav:adaptedFrom ""@en ;
+                 cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                 cmnsav:explanatoryNote ""@en ;
+                 cmnsav:usageNote "Care is needed in the collection and analysis of RM data to distinguish between maintenance due to failures and maintenance due to equipment modification "@en .
 
 
 ###  https://iso14224.org/vocab/PerformanceObjective
@@ -748,10 +747,10 @@ voc:PerformanceObjective rdf:type owl:Class ;
                          voc:en13306:definition "n/a"@en ;
                          voc:iec60812:definition "n/a"@en ;
                          ;
-                         cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                         cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                         cmns-av:explanatoryNote ""@en ;
-                         cmns-av:usageNote ""@en .
+                         cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                         cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                         cmnsav:explanatoryNote ""@en ;
+                         cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/PerformanceRequirement
@@ -766,10 +765,10 @@ voc:PerformanceRequirement rdf:type owl:Class ;
                            voc:en13306:definition "n/a"@en ;
                            voc:iec60812:definition "n/a"@en ;
                            ;
-                           cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                           cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                           cmns-av:explanatoryNote ""@en ;
-                           cmns-av:usageNote "requirements are normally quantitative but can also be qualitative"@en .
+                           cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                           cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                           cmnsav:explanatoryNote ""@en ;
+                           cmnsav:usageNote "requirements are normally quantitative but can also be qualitative"@en .
 
 
 ###  https://iso14224.org/vocab/Petrochemical
@@ -784,10 +783,10 @@ voc:Petrochemical rdf:type owl:Class ;
                   voc:en13306:definition "n/a"@en ;
                   voc:iec60812:definition "n/a"@en ;
                   ;
-                  cmns-av:adaptedFrom ""@en ;
-                  cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                  cmns-av:explanatoryNote ""@en ;
-                  cmns-av:usageNote ""@en .
+                  cmnsav:adaptedFrom ""@en ;
+                  cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                  cmnsav:explanatoryNote ""@en ;
+                  cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/Redundancy
@@ -801,10 +800,10 @@ voc:Redundancy rdf:type owl:Class ;
                voc:en13306:definition "n/a"@en ;
                voc:iec60812:definition "n/a"@en ;
                ;
-               cmns-av:adaptedFrom ""@en ;
-               cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-               cmns-av:explanatoryNote ""@en ;
-               cmns-av:usageNote ""@en .
+               cmnsav:adaptedFrom ""@en ;
+               cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+               cmnsav:explanatoryNote ""@en ;
+               cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/RequiredFunction
@@ -820,10 +819,10 @@ voc:RequiredFunction rdf:type owl:Class ;
                      voc:en13306:definition "function, combination of functions, or a total combination of functions of an item which are considered necessary to fulfil a given requirement"@en ;
                      voc:iec60812:definition "n/a"@en ;
                      ;
-                     cmns-av:adaptedFrom ""@en ;
-                     cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                     cmns-av:explanatoryNote ""@en ;
-                     cmns-av:usageNote ""@en .
+                     cmnsav:adaptedFrom ""@en ;
+                     cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                     cmnsav:explanatoryNote ""@en ;
+                     cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/SafetyCriticalEquipment
@@ -838,10 +837,10 @@ voc:SafetyCriticalEquipment rdf:type owl:Class ;
                             voc:en13306:definition "n/a"@en ;
                             voc:iec60812:definition "n/a"@en ;
                             ;
-                            cmns-av:adaptedFrom ""@en ;
-                            cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                            cmns-av:explanatoryNote ""@en ;
-                            cmns-av:usageNote ""@en .
+                            cmnsav:adaptedFrom ""@en ;
+                            cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                            cmnsav:explanatoryNote ""@en ;
+                            cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/SafetySystem
@@ -856,10 +855,10 @@ voc:SafetySystem rdf:type owl:Class ;
                  voc:en13306:definition "n/a"@en ;
                  voc:iec60812:definition "n/a"@en ;
                  ;
-                 cmns-av:adaptedFrom ""@en ;
-                 cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                 cmns-av:explanatoryNote ""@en ;
-                 cmns-av:usageNote ""@en .
+                 cmnsav:adaptedFrom ""@en ;
+                 cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                 cmnsav:explanatoryNote ""@en ;
+                 cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/SoftwareError
@@ -875,10 +874,10 @@ voc:SoftwareError rdf:type owl:Class ;
                   voc:en13306:definition "n/a"@en ;
                   voc:iec60812:definition "n/a"@en ;
                   ;
-                  cmns-av:adaptedFrom ""@en ;
-                  cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                  cmns-av:explanatoryNote ""@en ;
-                  cmns-av:usageNote ""@en .
+                  cmnsav:adaptedFrom ""@en ;
+                  cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                  cmnsav:explanatoryNote ""@en ;
+                  cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/SubUnit
@@ -893,10 +892,10 @@ voc:SubUnit rdf:type owl:Class ;
             voc:en13306:definition "n/a"@en ;
             voc:iec60812:definition "n/a"@en ;
             ;
-            cmns-av:adaptedFrom ""@en ;
-            cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-            cmns-av:explanatoryNote ""@en ;
-            cmns-av:usageNote ""@en .
+            cmnsav:adaptedFrom ""@en ;
+            cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+            cmnsav:explanatoryNote ""@en ;
+            cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/TagNumber
@@ -911,10 +910,10 @@ voc:TagNumber rdf:type owl:Class ;
               voc:en13306:definition "n/a"@en ;
               voc:iec60812:definition "n/a"@en ;
               ;
-              cmns-av:adaptedFrom ""@en ;
-              cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-              cmns-av:explanatoryNote "the equipment is allocated to the tag for only so ling as it occupies that function and location"@en ;
-              cmns-av:usageNote "normally includes the system for which it belongs"@en .
+              cmnsav:adaptedFrom ""@en ;
+              cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+              cmnsav:explanatoryNote "the equipment is allocated to the tag for only so ling as it occupies that function and location"@en ;
+              cmnsav:usageNote "normally includes the system for which it belongs"@en .
 
 
 ###  https://iso14224.org/vocab/Taxonomy
@@ -929,10 +928,10 @@ voc:Taxonomy rdf:type owl:Class ;
              voc:en13306:definition "n/a"@en ;
              voc:iec60812:definition "n/a"@en ;
              ;
-             cmns-av:adaptedFrom ""@en ;
-             cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-             cmns-av:explanatoryNote ""@en ;
-             cmns-av:usageNote ""@en .
+             cmnsav:adaptedFrom ""@en ;
+             cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+             cmnsav:explanatoryNote ""@en ;
+             cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/Turnaround
@@ -948,10 +947,10 @@ voc:Turnaround rdf:type owl:Class ;
                voc:en13306:definition "n/a"@en ;
                voc:iec60812:definition "n/a"@en ;
                ;
-               cmns-av:adaptedFrom ""@en ;
-               cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-               cmns-av:explanatoryNote ""@en ;
-               cmns-av:usageNote ""@en .
+               cmnsav:adaptedFrom ""@en ;
+               cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+               cmnsav:explanatoryNote ""@en ;
+               cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/TypeData
@@ -967,10 +966,10 @@ voc:TypeData rdf:type owl:Class ;
              voc:en13306:definition "n/a"@en ;
              voc:iec60812:definition "n/a"@en ;
              voc:iso14224:section ""^^xsd:anyURI ;
-             cmns-av:adaptedFrom ""@en ;
-             cmns-av:directSource "None"@en ;
-             cmns-av:explanatoryNote ""@en ;
-             cmns-av:usageNote ""@en .
+             cmnsav:adaptedFrom ""@en ;
+             cmnsav:directSource "None"@en ;
+             cmnsav:explanatoryNote ""@en ;
+             cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/TypeFailureEvent
@@ -986,10 +985,10 @@ voc:TypeFailureEvent rdf:type owl:Class ;
                      voc:en13306:definition "n/a"@en ;
                      voc:iec60812:definition "n/a"@en ;
                      voc:iso14224:section ""^^xsd:anyURI ;
-                     cmns-av:adaptedFrom ""@en ;
-                     cmns-av:directSource "None"@en ;
-                     cmns-av:explanatoryNote ""@en ;
-                     cmns-av:usageNote ""@en .
+                     cmnsav:adaptedFrom ""@en ;
+                     cmnsav:directSource "None"@en ;
+                     cmnsav:explanatoryNote ""@en ;
+                     cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/TypeMaintenanceStrategy
@@ -1005,10 +1004,10 @@ voc:TypeMaintenanceStrategy rdf:type owl:Class ;
                             voc:en13306:definition "n/a"@en ;
                             voc:iec60812:definition "n/a"@en ;
                             voc:iso14224:section ""^^xsd:anyURI ;
-                            cmns-av:adaptedFrom ""@en ;
-                            cmns-av:directSource "None"@en ;
-                            cmns-av:explanatoryNote "This concept is not in ISO 14224. It is added to this ontology to create a type for maintenance strategy concepts that are included in ISO 14224 terms and definitions. These concepts are modelled as individuals (not classes) because we do not have adequate concepts and axioms to distinguish between the concepts. Also in many data sets these terms are used as labels providing a label for an instance of a work order (for example) not instances of the e.g. corrective maintenance activity"@en ;
-                            cmns-av:usageNote ""@en .
+                            cmnsav:adaptedFrom ""@en ;
+                            cmnsav:directSource "None"@en ;
+                            cmnsav:explanatoryNote "This concept is not in ISO 14224. It is added to this ontology to create a type for maintenance strategy concepts that are included in ISO 14224 terms and definitions. These concepts are modelled as individuals (not classes) because we do not have adequate concepts and axioms to distinguish between the concepts. Also in many data sets these terms are used as labels providing a label for an instance of a work order (for example) not instances of the e.g. corrective maintenance activity"@en ;
+                            cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/TypeMaterialState
@@ -1024,10 +1023,10 @@ voc:TypeMaterialState rdf:type owl:Class ;
                       voc:en13306:definition "n/a"@en ;
                       voc:iec60812:definition "n/a"@en ;
                       voc:iso14224:section ""^^xsd:anyURI ;
-                      cmns-av:adaptedFrom ""@en ;
-                      cmns-av:directSource "Industrial Ontology Foundry (IOF) ontology"@en ;
-                      cmns-av:explanatoryNote ""@en ;
-                      cmns-av:usageNote ""@en .
+                      cmnsav:adaptedFrom ""@en ;
+                      cmnsav:directSource "Industrial Ontology Foundry (IOF) ontology"@en ;
+                      cmnsav:explanatoryNote ""@en ;
+                      cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/TypeReliabilityMeasure
@@ -1043,10 +1042,10 @@ voc:TypeReliabilityMeasure rdf:type owl:Class ;
                            voc:en13306:definition "n/a"@en ;
                            voc:iec60812:definition "n/a"@en ;
                            voc:iso14224:section ""^^xsd:anyURI ;
-                           cmns-av:adaptedFrom ""@en ;
-                           cmns-av:directSource ""@en ;
-                           cmns-av:explanatoryNote "This concept is not in ISO 14224. It is added to this ontology to create a type for performance measures commonly captured in degradation. These concepts are modelled as individuals (not classes) because we do not have adequate concepts and axioms to distinguish between the concepts. Also in many data sets these terms are used as labels in data tables for values associated with these measures"@en ;
-                           cmns-av:usageNote ""@en .
+                           cmnsav:adaptedFrom ""@en ;
+                           cmnsav:directSource ""@en ;
+                           cmnsav:explanatoryNote "This concept is not in ISO 14224. It is added to this ontology to create a type for performance measures commonly captured in degradation. These concepts are modelled as individuals (not classes) because we do not have adequate concepts and axioms to distinguish between the concepts. Also in many data sets these terms are used as labels in data tables for values associated with these measures"@en ;
+                           cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/TypeTest
@@ -1062,10 +1061,10 @@ voc:TypeTest rdf:type owl:Class ;
              voc:en13306:definition "n/a"@en ;
              voc:iec60812:definition "n/a"@en ;
              voc:iso14224:section ""^^xsd:anyURI ;
-             cmns-av:adaptedFrom ""@en ;
-             cmns-av:directSource "None"@en ;
-             cmns-av:explanatoryNote ""@en ;
-             cmns-av:usageNote ""@en .
+             cmnsav:adaptedFrom ""@en ;
+             cmnsav:directSource "None"@en ;
+             cmnsav:explanatoryNote ""@en ;
+             cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/Uncertainty
@@ -1080,10 +1079,10 @@ voc:Uncertainty rdf:type owl:Class ;
                 voc:en13306:definition "n/a"@en ;
                 voc:iec60812:definition "n/a"@en ;
                 ;
-                cmns-av:adaptedFrom ""@en ;
-                cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                cmns-av:explanatoryNote ""@en ;
-                cmns-av:usageNote ""@en .
+                cmnsav:adaptedFrom ""@en ;
+                cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                cmnsav:explanatoryNote ""@en ;
+                cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/Upstream
@@ -1098,16 +1097,16 @@ voc:Upstream rdf:type owl:Class ;
              voc:en13306:definition "n/a"@en ;
              voc:iec60812:definition "n/a"@en ;
              ;
-             cmns-av:adaptedFrom ""@en ;
-             cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-             cmns-av:explanatoryNote ""@en ;
-             cmns-av:usageNote ""@en .
+             cmnsav:adaptedFrom ""@en ;
+             cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+             cmnsav:explanatoryNote ""@en ;
+             cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/zz_OutOfScope
 voc:zz_OutOfScope rdf:type owl:Class ;
                   rdfs:label "ZZ_OutOfScope" ;
-                  cmns-av:explanatoryNote "Terms present in the ISO 14224 terms and definitions section that are not used in a material way in Annex B - interpretation and notation of failure and maintenance parameters." .
+                  cmnsav:explanatoryNote "Terms present in the ISO 14224 terms and definitions section that are not used in a material way in Annex B - interpretation and notation of failure and maintenance parameters." .
 
 
 #################################################################
@@ -1127,10 +1126,10 @@ voc:active_maintenance_time rdf:type owl:NamedIndividual ,
                             voc:en13306:definition "n/a"@en ;
                             voc:iec60812:definition "n/a"@en ;
                             ;
-                            cmns-av:adaptedFrom ""@en ;
-                            cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                            cmns-av:explanatoryNote ""@en ;
-                            cmns-av:usageNote ""@en .
+                            cmnsav:adaptedFrom ""@en ;
+                            cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                            cmnsav:explanatoryNote ""@en ;
+                            cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/active_repair_time
@@ -1146,10 +1145,10 @@ voc:active_repair_time rdf:type owl:NamedIndividual ,
                        voc:en13306:definition "n/a"@en ;
                        voc:iec60812:definition "n/a"@en ;
                        ;
-                       cmns-av:adaptedFrom ""@en ;
-                       cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                       cmns-av:explanatoryNote ""@en ;
-                       cmns-av:usageNote ""@en .
+                       cmnsav:adaptedFrom ""@en ;
+                       cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                       cmnsav:explanatoryNote ""@en ;
+                       cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/availability
@@ -1165,10 +1164,10 @@ voc:availability rdf:type owl:NamedIndividual ,
                  voc:en13306:definition "ability of an item to be in a state to perform as and when required, under given conditions, assuming that the necessary external resources are provided"@en ;
                  voc:iec60812:definition "n/a"@en ;
                  ;
-                 cmns-av:adaptedFrom ""@en ;
-                 cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                 cmns-av:explanatoryNote ""@en ;
-                 cmns-av:usageNote "See detailed description and interpretation of availability in Annex C of the standard"@en .
+                 cmnsav:adaptedFrom ""@en ;
+                 cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                 cmnsav:explanatoryNote ""@en ;
+                 cmnsav:usageNote "See detailed description and interpretation of availability in Annex C of the standard"@en .
 
 
 ###  https://iso14224.org/vocab/common_cause_failure
@@ -1183,10 +1182,10 @@ voc:common_cause_failure rdf:type owl:NamedIndividual ,
                          voc:en13306:definition "failures of several items resulting from the same direct cause and where these failures are not consequences of each other"@en ;
                          voc:iec60812:definition "failures of multiple items, which would otherwise be considered independent of one another, resulting from a single cause"@en ;
                          ;
-                         cmns-av:adaptedFrom ""@en ;
-                         cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                         cmns-av:explanatoryNote ""@en ;
-                         cmns-av:usageNote "Components that fail due to a shared cause normally fail in the same functional mode. The term common mode if therefore sometimes used. It is however, not considered to be a precise term for communicating the characteristics that describe a common cause failure"@en .
+                         cmnsav:adaptedFrom ""@en ;
+                         cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                         cmnsav:explanatoryNote ""@en ;
+                         cmnsav:usageNote "Components that fail due to a shared cause normally fail in the same functional mode. The term common mode if therefore sometimes used. It is however, not considered to be a precise term for communicating the characteristics that describe a common cause failure"@en .
 
 
 ###  https://iso14224.org/vocab/common_mode_failure
@@ -1201,10 +1200,10 @@ voc:common_mode_failure rdf:type owl:NamedIndividual ,
                         voc:en13306:definition "n/a"@en ;
                         voc:iec60812:definition "failures of different items characterized by the same failure mode"@en ;
                         ;
-                        cmns-av:adaptedFrom ""@en ;
-                        cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                        cmns-av:explanatoryNote "The potential for common mode failures reduces the effectiveness of system redundancy"@en ;
-                        cmns-av:usageNote "Common mode failures can have different causes"@en .
+                        cmnsav:adaptedFrom ""@en ;
+                        cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                        cmnsav:explanatoryNote "The potential for common mode failures reduces the effectiveness of system redundancy"@en ;
+                        cmnsav:usageNote "Common mode failures can have different causes"@en .
 
 
 ###  https://iso14224.org/vocab/condition_based_maintenance
@@ -1220,10 +1219,10 @@ voc:condition_based_maintenance rdf:type owl:NamedIndividual ,
                                 voc:en13306:definition "preventive maintenance which include assessment of physical conditions, analysis and the possible ensuing maintenance actions"@en ;
                                 voc:iec60812:definition "n/a"@en ;
                                 ;
-                                cmns-av:adaptedFrom "IEC 60050-192:2015"@en ;
-                                cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                                cmns-av:explanatoryNote "the condition assessment can be operator observation, conducted according to a schedule, or by condition monitoring of system parameters"@en ;
-                                cmns-av:usageNote ""@en .
+                                cmnsav:adaptedFrom "IEC 60050-192:2015"@en ;
+                                cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                                cmnsav:explanatoryNote "the condition assessment can be operator observation, conducted according to a schedule, or by condition monitoring of system parameters"@en ;
+                                cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/corrective_maintenance
@@ -1239,10 +1238,10 @@ voc:corrective_maintenance rdf:type owl:NamedIndividual ,
                            voc:en13306:definition "maintenance carried out after fault recognition and intended to restore an item into a state in which it can perform a required function"@en ;
                            voc:iec60812:definition "n/a"@en ;
                            ;
-                           cmns-av:adaptedFrom "IEC 60050-192:2015"@en ;
-                           cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                           cmns-av:explanatoryNote ""@en ;
-                           cmns-av:usageNote "corrective maintenance of software invariably involves some modification"@en .
+                           cmnsav:adaptedFrom "IEC 60050-192:2015"@en ;
+                           cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                           cmnsav:explanatoryNote ""@en ;
+                           cmnsav:usageNote "corrective maintenance of software invariably involves some modification"@en .
 
 
 ###  https://iso14224.org/vocab/critical_failure
@@ -1258,11 +1257,11 @@ voc:critical_failure rdf:type owl:NamedIndividual ,
                      voc:en13306:definition "n/a"@en ;
                      voc:iec60812:definition "n/a"@en ;
                      ;
-                     cmns-av:adaptedFrom ""@en ;
-                     cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                     cmns-av:explanatoryNote "a critical failure results in an unscheduled repair "@en ,
+                     cmnsav:adaptedFrom ""@en ;
+                     cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                     cmnsav:explanatoryNote "a critical failure results in an unscheduled repair "@en ,
                                              "includes failures requiring immediate action towards cessation of performing the function, even though actual operation can continue for a short period of time"@en ;
-                     cmns-av:usageNote ""@en .
+                     cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/degraded_failure
@@ -1278,12 +1277,12 @@ voc:degraded_failure rdf:type owl:NamedIndividual ,
                      voc:en13306:definition "EN13306 does not define 'degraded failure' but does define 'degraded state' as state of reduced ability to perform as required, but with acceptable reduced performance"@en ;
                      voc:iec60812:definition "n/a"@en ;
                      ;
-                     cmns-av:adaptedFrom ""@en ;
-                     cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                     cmns-av:explanatoryNote "an immediate repair can normally be delayed but, in time, such failures can develop into a critical failure if corrective actions are not taken "@en ,
+                     cmnsav:adaptedFrom ""@en ;
+                     cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                     cmnsav:explanatoryNote "an immediate repair can normally be delayed but, in time, such failures can develop into a critical failure if corrective actions are not taken "@en ,
                                              "the failure can be gradual, partial or both"@en ,
                                              "the function can be compromised by any combination of reduced, increased or erratic outputs "@en ;
-                     cmns-av:usageNote ""@en .
+                     cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/demand
@@ -1299,10 +1298,10 @@ voc:demand rdf:type owl:NamedIndividual ,
            voc:en13306:definition "n/a"@en ;
            voc:iec60812:definition "n/a"@en ;
            ;
-           cmns-av:adaptedFrom ""@en ;
-           cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-           cmns-av:explanatoryNote ""@en ;
-           cmns-av:usageNote ""@en .
+           cmnsav:adaptedFrom ""@en ;
+           cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+           cmnsav:explanatoryNote ""@en ;
+           cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/down_state
@@ -1321,10 +1320,10 @@ voc:down_state rdf:type owl:NamedIndividual ,
                voc:iec60812:definition "n/a"@en ;
                voc:iof:definition "https://spec.industrialontologies.org/ontology/construct/FailedState/"^^xsd:anyURI ;
                ;
-               cmns-av:adaptedFrom ""@en ;
-               cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-               cmns-av:explanatoryNote "down state relates to the unavailability of the item"@en ;
-               cmns-av:usageNote "the adjectives 'down' or 'unavailable' designate an item in down state"@en .
+               cmnsav:adaptedFrom ""@en ;
+               cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+               cmnsav:explanatoryNote "down state relates to the unavailability of the item"@en ;
+               cmnsav:usageNote "the adjectives 'down' or 'unavailable' designate an item in down state"@en .
 
 
 ###  https://iso14224.org/vocab/equipment_data
@@ -1340,10 +1339,10 @@ voc:equipment_data rdf:type owl:NamedIndividual ,
                    voc:en13306:definition "n/a"@en ;
                    voc:iec60812:definition "n/a"@en ;
                    ;
-                   cmns-av:adaptedFrom ""@en ;
-                   cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                   cmns-av:explanatoryNote ""@en ;
-                   cmns-av:usageNote ""@en .
+                   cmnsav:adaptedFrom ""@en ;
+                   cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                   cmnsav:explanatoryNote ""@en ;
+                   cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/failure_data
@@ -1359,10 +1358,10 @@ voc:failure_data rdf:type owl:NamedIndividual ,
                  voc:en13306:definition "n/a"@en ;
                  voc:iec60812:definition "n/a"@en ;
                  ;
-                 cmns-av:adaptedFrom ""@en ;
-                 cmns-av:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
-                 cmns-av:explanatoryNote ""@en ;
-                 cmns-av:usageNote "ISO 14224:2023 Table 6 provides a list of data to be recorded"@en .
+                 cmnsav:adaptedFrom ""@en ;
+                 cmnsav:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
+                 cmnsav:explanatoryNote ""@en ;
+                 cmnsav:usageNote "ISO 14224:2023 Table 6 provides a list of data to be recorded"@en .
 
 
 ###  https://iso14224.org/vocab/failure_due_to_demand
@@ -1378,10 +1377,10 @@ voc:failure_due_to_demand rdf:type owl:NamedIndividual ,
                           voc:en13306:definition "n/a"@en ;
                           voc:iec60812:definition "n/a"@en ;
                           ;
-                          cmns-av:adaptedFrom ""@en ;
-                          cmns-av:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
-                          cmns-av:explanatoryNote ""@en ;
-                          cmns-av:usageNote ""@en .
+                          cmnsav:adaptedFrom ""@en ;
+                          cmnsav:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
+                          cmnsav:explanatoryNote ""@en ;
+                          cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/failure_frequency
@@ -1397,10 +1396,10 @@ voc:failure_frequency rdf:type owl:NamedIndividual ,
                       voc:en13306:definition "n/a"@en ;
                       voc:iec60812:definition "n/a"@en ;
                       ;
-                      cmns-av:adaptedFrom ""@en ;
-                      cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                      cmns-av:explanatoryNote ""@en ;
-                      cmns-av:usageNote ""@en .
+                      cmnsav:adaptedFrom ""@en ;
+                      cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                      cmnsav:explanatoryNote ""@en ;
+                      cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/failure_on_demand
@@ -1415,10 +1414,10 @@ voc:failure_on_demand rdf:type owl:NamedIndividual ,
                       voc:en13306:definition "n/a"@en ;
                       voc:iec60812:definition "n/a"@en ;
                       ;
-                      cmns-av:adaptedFrom ""@en ;
-                      cmns-av:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
-                      cmns-av:explanatoryNote ""@en ;
-                      cmns-av:usageNote "Different failure modes are used to reflect failure on demand"@en ,
+                      cmnsav:adaptedFrom ""@en ;
+                      cmnsav:directSource "ISO 14224:2023 Terms and Definitions notes added"@en ;
+                      cmnsav:explanatoryNote ""@en ;
+                      cmnsav:usageNote "Different failure modes are used to reflect failure on demand"@en ,
                                         "See also definition on failure due to demand"@en .
 
 
@@ -1435,10 +1434,10 @@ voc:failure_rate rdf:type owl:NamedIndividual ,
                  voc:en13306:definition "n/a"@en ;
                  voc:iec60812:definition "n/a"@en ;
                  ;
-                 cmns-av:adaptedFrom ""@en ;
-                 cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                 cmns-av:explanatoryNote ""@en ;
-                 cmns-av:usageNote ""@en .
+                 cmnsav:adaptedFrom ""@en ;
+                 cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                 cmnsav:explanatoryNote ""@en ;
+                 cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/generic_reliability_data
@@ -1454,10 +1453,10 @@ voc:generic_reliability_data rdf:type owl:NamedIndividual ,
                              voc:en13306:definition "n/a"@en ;
                              voc:iec60812:definition "n/a"@en ;
                              ;
-                             cmns-av:adaptedFrom ""@en ;
-                             cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                             cmns-av:explanatoryNote ""@en ;
-                             cmns-av:usageNote ""@en .
+                             cmnsav:adaptedFrom ""@en ;
+                             cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                             cmnsav:explanatoryNote ""@en ;
+                             cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/hidden_failure
@@ -1473,10 +1472,10 @@ voc:hidden_failure rdf:type owl:NamedIndividual ,
                    voc:en13306:definition "failure which is not detected during normal operation"@en ;
                    voc:iec60812:definition "n/a"@en ;
                    ;
-                   cmns-av:adaptedFrom ""@en ;
-                   cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                   cmns-av:explanatoryNote "equipment failures that occurred at an earlier point of time, but were first observed at demand fall into this category. Such failures are first revealed when the relevant functionality is tested"@en ;
-                   cmns-av:usageNote "see latent fault"@en .
+                   cmnsav:adaptedFrom ""@en ;
+                   cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                   cmnsav:explanatoryNote "equipment failures that occurred at an earlier point of time, but were first observed at demand fall into this category. Such failures are first revealed when the relevant functionality is tested"@en ;
+                   cmnsav:usageNote "see latent fault"@en .
 
 
 ###  https://iso14224.org/vocab/idle_state
@@ -1492,10 +1491,10 @@ voc:idle_state rdf:type owl:NamedIndividual ,
                voc:en13306:definition "n/a"@en ;
                voc:iec60812:definition "n/a"@en ;
                ;
-               cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-               cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-               cmns-av:explanatoryNote "The adjective 'idle' designates an item in idle state"@en ;
-               cmns-av:usageNote "In some applications, an item in an idle state has some functioning subsystems, and is therefore considered to be operating"@en ,
+               cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+               cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+               cmnsav:explanatoryNote "The adjective 'idle' designates an item in idle state"@en ;
+               cmnsav:usageNote "In some applications, an item in an idle state has some functioning subsystems, and is therefore considered to be operating"@en ,
                                  "The non-operating time comprises the idle time, the stand-by time and the externally disabled time "@en .
 
 
@@ -1512,10 +1511,10 @@ voc:incipient_failure rdf:type owl:NamedIndividual ,
                       voc:en13306:definition "n/a"@en ;
                       voc:iec60812:definition "n/a"@en ;
                       ;
-                      cmns-av:adaptedFrom ""@en ;
-                      cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                      cmns-av:explanatoryNote ""@en ;
-                      cmns-av:usageNote "the recording of an incipient failure requires some criteria for when a fault of this nature requires registration as opposed to a state/ condition where no corrective actions are required"@en .
+                      cmnsav:adaptedFrom ""@en ;
+                      cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                      cmnsav:explanatoryNote ""@en ;
+                      cmnsav:usageNote "the recording of an incipient failure requires some criteria for when a fault of this nature requires registration as opposed to a state/ condition where no corrective actions are required"@en .
 
 
 ###  https://iso14224.org/vocab/integrity
@@ -1531,10 +1530,10 @@ voc:integrity rdf:type owl:NamedIndividual ,
               voc:en13306:definition "n/a"@en ;
               voc:iec60812:definition "n/a"@en ;
               ;
-              cmns-av:adaptedFrom ""@en ;
-              cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-              cmns-av:explanatoryNote ""@en ;
-              cmns-av:usageNote ""@en .
+              cmnsav:adaptedFrom ""@en ;
+              cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+              cmnsav:explanatoryNote ""@en ;
+              cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/logistic_delay
@@ -1550,10 +1549,10 @@ voc:logistic_delay rdf:type owl:NamedIndividual ,
                    voc:en13306:definition "n/a"@en ;
                    voc:iec60812:definition "n/a"@en ;
                    ;
-                   cmns-av:adaptedFrom ""@en ;
-                   cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                   cmns-av:explanatoryNote ""@en ;
-                   cmns-av:usageNote ""@en .
+                   cmnsav:adaptedFrom ""@en ;
+                   cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                   cmnsav:explanatoryNote ""@en ;
+                   cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/maintenance_data
@@ -1569,10 +1568,10 @@ voc:maintenance_data rdf:type owl:NamedIndividual ,
                      voc:en13306:definition "n/a"@en ;
                      voc:iec60812:definition "n/a"@en ;
                      ;
-                     cmns-av:adaptedFrom ""@en ;
-                     cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                     cmns-av:explanatoryNote ""@en ;
-                     cmns-av:usageNote ""@en .
+                     cmnsav:adaptedFrom ""@en ;
+                     cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                     cmnsav:explanatoryNote ""@en ;
+                     cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/maintenance_supportability
@@ -1588,10 +1587,10 @@ voc:maintenance_supportability rdf:type owl:NamedIndividual ,
                                voc:en13306:definition ""@en ;
                                voc:iec60812:definition "n/a"@en ;
                                ;
-                               cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                               cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                               cmns-av:explanatoryNote ""@en ;
-                               cmns-av:usageNote "Supportability of an item results from the inherent maintenance, combined with factors external to the item that affect the relative ease of providing the required maintenance and logistic support "@en .
+                               cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                               cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                               cmnsav:explanatoryNote ""@en ;
+                               cmnsav:usageNote "Supportability of an item results from the inherent maintenance, combined with factors external to the item that affect the relative ease of providing the required maintenance and logistic support "@en .
 
 
 ###  https://iso14224.org/vocab/mean_active_repair_time
@@ -1607,10 +1606,10 @@ voc:mean_active_repair_time rdf:type owl:NamedIndividual ,
                             voc:en13306:definition "n/a"@en ;
                             voc:iec60812:definition "n/a"@en ;
                             ;
-                            cmns-av:adaptedFrom ""@en ;
-                            cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                            cmns-av:explanatoryNote ""@en ;
-                            cmns-av:usageNote ""@en .
+                            cmnsav:adaptedFrom ""@en ;
+                            cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                            cmnsav:explanatoryNote ""@en ;
+                            cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/mean_cycles_to_failure
@@ -1626,10 +1625,10 @@ voc:mean_cycles_to_failure rdf:type owl:NamedIndividual ,
                            voc:en13306:definition "n/a"@en ;
                            voc:iec60812:definition "n/a"@en ;
                            ;
-                           cmns-av:adaptedFrom ""@en ;
-                           cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                           cmns-av:explanatoryNote ""@en ;
-                           cmns-av:usageNote ""@en .
+                           cmnsav:adaptedFrom ""@en ;
+                           cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                           cmnsav:explanatoryNote ""@en ;
+                           cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/mean_elapsed_time_between_failures
@@ -1645,10 +1644,10 @@ voc:mean_elapsed_time_between_failures rdf:type owl:NamedIndividual ,
                                        voc:en13306:definition "n/a"@en ;
                                        voc:iec60812:definition "n/a"@en ;
                                        ;
-                                       cmns-av:adaptedFrom ""@en ;
-                                       cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                                       cmns-av:explanatoryNote ""@en ;
-                                       cmns-av:usageNote ""@en .
+                                       cmnsav:adaptedFrom ""@en ;
+                                       cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                                       cmnsav:explanatoryNote ""@en ;
+                                       cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/mean_number_of_cycles
@@ -1664,10 +1663,10 @@ voc:mean_number_of_cycles rdf:type owl:NamedIndividual ,
                           voc:en13306:definition "n/a"@en ;
                           voc:iec60812:definition "n/a"@en ;
                           ;
-                          cmns-av:adaptedFrom ""@en ;
-                          cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                          cmns-av:explanatoryNote ""@en ;
-                          cmns-av:usageNote ""@en .
+                          cmnsav:adaptedFrom ""@en ;
+                          cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                          cmnsav:explanatoryNote ""@en ;
+                          cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/mean_overall_repairing_time
@@ -1683,10 +1682,10 @@ voc:mean_overall_repairing_time rdf:type owl:NamedIndividual ,
                                 voc:en13306:definition "n/a"@en ;
                                 voc:iec60812:definition "n/a"@en ;
                                 ;
-                                cmns-av:adaptedFrom ""@en ;
-                                cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                                cmns-av:explanatoryNote ""@en ;
-                                cmns-av:usageNote ""@en .
+                                cmnsav:adaptedFrom ""@en ;
+                                cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                                cmnsav:explanatoryNote ""@en ;
+                                cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/mean_time_to_failure
@@ -1702,10 +1701,10 @@ voc:mean_time_to_failure rdf:type owl:NamedIndividual ,
                          voc:en13306:definition "n/a"@en ;
                          voc:iec60812:definition "n/a"@en ;
                          ;
-                         cmns-av:adaptedFrom ""@en ;
-                         cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                         cmns-av:explanatoryNote ""@en ;
-                         cmns-av:usageNote ""@en .
+                         cmnsav:adaptedFrom ""@en ;
+                         cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                         cmnsav:explanatoryNote ""@en ;
+                         cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/mean_time_to_repair
@@ -1721,10 +1720,10 @@ voc:mean_time_to_repair rdf:type owl:NamedIndividual ,
                         voc:en13306:definition "n/a"@en ;
                         voc:iec60812:definition "n/a"@en ;
                         ;
-                        cmns-av:adaptedFrom ""@en ;
-                        cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                        cmns-av:explanatoryNote ""@en ;
-                        cmns-av:usageNote ""@en .
+                        cmnsav:adaptedFrom ""@en ;
+                        cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                        cmnsav:explanatoryNote ""@en ;
+                        cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/mean_time_to_restoration
@@ -1740,10 +1739,10 @@ voc:mean_time_to_restoration rdf:type owl:NamedIndividual ,
                              voc:en13306:definition "n/a"@en ;
                              voc:iec60812:definition "n/a"@en ;
                              ;
-                             cmns-av:adaptedFrom ""@en ;
-                             cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                             cmns-av:explanatoryNote ""@en ;
-                             cmns-av:usageNote ""@en .
+                             cmnsav:adaptedFrom ""@en ;
+                             cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                             cmnsav:explanatoryNote ""@en ;
+                             cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/mobilization_time
@@ -1759,10 +1758,10 @@ voc:mobilization_time rdf:type owl:NamedIndividual ,
                       voc:en13306:definition "n/a"@en ;
                       voc:iec60812:definition "n/a"@en ;
                       ;
-                      cmns-av:adaptedFrom ""@en ;
-                      cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                      cmns-av:explanatoryNote ""@en ;
-                      cmns-av:usageNote ""@en .
+                      cmnsav:adaptedFrom ""@en ;
+                      cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                      cmnsav:explanatoryNote ""@en ;
+                      cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/non_critical_failure
@@ -1778,10 +1777,10 @@ voc:non_critical_failure rdf:type owl:NamedIndividual ,
                          voc:en13306:definition "n/a"@en ;
                          voc:iec60812:definition "n/a"@en ;
                          ;
-                         cmns-av:adaptedFrom ""@en ;
-                         cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                         cmns-av:explanatoryNote "non-critical failures can be categorized as 'degraded' or 'incipient' failures"@en ;
-                         cmns-av:usageNote ""@en .
+                         cmnsav:adaptedFrom ""@en ;
+                         cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                         cmnsav:explanatoryNote "non-critical failures can be categorized as 'degraded' or 'incipient' failures"@en ;
+                         cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/operating_state
@@ -1798,10 +1797,10 @@ voc:operating_state rdf:type owl:NamedIndividual ,
                     voc:iec60812:definition "n/a"@en ;
                     voc:iof:definition "https://spec.industrialontologies.org/ontology/construct/OperatingState/"^^xsd:anyURI ;
                     ;
-                    cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                    cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                    cmns-av:explanatoryNote ""@en ;
-                    cmns-av:usageNote "in some applications, an item in idle state is considered to be operating"@en .
+                    cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                    cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                    cmnsav:explanatoryNote ""@en ;
+                    cmnsav:usageNote "in some applications, an item in idle state is considered to be operating"@en .
 
 
 ###  https://iso14224.org/vocab/operating_time_time
@@ -1817,10 +1816,10 @@ voc:operating_time_time rdf:type owl:NamedIndividual ,
                         voc:en13306:definition "n/a"@en ;
                         voc:iec60812:definition "n/a"@en ;
                         ;
-                        cmns-av:adaptedFrom ""@en ;
-                        cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                        cmns-av:explanatoryNote ""@en ;
-                        cmns-av:usageNote ""@en .
+                        cmnsav:adaptedFrom ""@en ;
+                        cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+                        cmnsav:explanatoryNote ""@en ;
+                        cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/opportunity_maintenance
@@ -1836,10 +1835,10 @@ voc:opportunity_maintenance rdf:type owl:NamedIndividual ,
                             voc:en13306:definition "n/a"@en ;
                             voc:iec60812:definition "n/a"@en ;
                             ;
-                            cmns-av:adaptedFrom ""@en ;
-                            cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                            cmns-av:explanatoryNote ""@en ;
-                            cmns-av:usageNote ""@en .
+                            cmnsav:adaptedFrom ""@en ;
+                            cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                            cmnsav:explanatoryNote ""@en ;
+                            cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/periodic_test
@@ -1855,10 +1854,10 @@ voc:periodic_test rdf:type owl:NamedIndividual ,
                   voc:en13306:definition "n/a"@en ;
                   voc:iec60812:definition "n/a"@en ;
                   ;
-                  cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                  cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                  cmns-av:explanatoryNote "The unsafe hidden failures of a safety system which are not detected by diagnostic tests can be detected by periodic tests"@en ;
-                  cmns-av:usageNote ""@en .
+                  cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                  cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                  cmnsav:explanatoryNote "The unsafe hidden failures of a safety system which are not detected by diagnostic tests can be detected by periodic tests"@en ;
+                  cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/planned_maintenance
@@ -1875,10 +1874,10 @@ voc:planned_maintenance rdf:type owl:NamedIndividual ,
                         voc:en13306:definition "EN13306 does not define 'planned maintenance' but does define 'scheduled maintenance' as maintenance carried out in accordance with a specified time schedule or specified number of units of use"@en ;
                         voc:iec60812:definition "n/a"@en ;
                         ;
-                        cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                        cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                        cmns-av:explanatoryNote "scheduled maintenance can identify the need for some corrective maintenance"@en ;
-                        cmns-av:usageNote ""@en .
+                        cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                        cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                        cmnsav:explanatoryNote "scheduled maintenance can identify the need for some corrective maintenance"@en ;
+                        cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/predictive_maintenance
@@ -1895,10 +1894,10 @@ voc:predictive_maintenance rdf:type owl:NamedIndividual ,
                            voc:en13306:definition "condition-based maintenance carried out following a forecast derived from repeated analysis or known characteristics and evaluation of the significant parameters of the degradation of the item"@en ;
                            voc:iec60812:definition "n/a"@en ;
                            ;
-                           cmns-av:adaptedFrom ""@en ;
-                           cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                           cmns-av:explanatoryNote ""@en ;
-                           cmns-av:usageNote ""@en .
+                           cmnsav:adaptedFrom ""@en ;
+                           cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                           cmnsav:explanatoryNote ""@en ;
+                           cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/preventative_maintenance
@@ -1914,10 +1913,10 @@ voc:preventative_maintenance rdf:type owl:NamedIndividual ,
                              voc:en13306:definition "maintenance carried out after fault recognition and intended to restore an item into a state in which it can perform a required function"@en ;
                              voc:iec60812:definition "n/a"@en ;
                              ;
-                             cmns-av:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
-                             cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                             cmns-av:explanatoryNote ""@en ;
-                             cmns-av:usageNote "See also condition-based maintenance (https://iso14224.org/vocab/condition_based_maintenance) and planned (scheduled) maintenance (https://iso14224.org/vocab/planned_maintenance)"@en .
+                             cmnsav:adaptedFrom "IEC 60050-192:2015 notes added"@en ;
+                             cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                             cmnsav:explanatoryNote ""@en ;
+                             cmnsav:usageNote "See also condition-based maintenance (https://iso14224.org/vocab/condition_based_maintenance) and planned (scheduled) maintenance (https://iso14224.org/vocab/planned_maintenance)"@en .
 
 
 ###  https://iso14224.org/vocab/random_failure
@@ -1933,10 +1932,10 @@ voc:random_failure rdf:type owl:NamedIndividual ,
                    voc:en13306:definition "n/a"@en ;
                    voc:iec60812:definition "n/a"@en ;
                    ;
-                   cmns-av:adaptedFrom ""@en ;
-                   cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                   cmns-av:explanatoryNote ""@en ;
-                   cmns-av:usageNote ""@en .
+                   cmnsav:adaptedFrom ""@en ;
+                   cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                   cmnsav:explanatoryNote ""@en ;
+                   cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/reliability
@@ -1951,10 +1950,10 @@ voc:reliability rdf:type owl:NamedIndividual ,
                 voc:en13306:definition "ability of an item to perform a required function under given conditions for a given time interval"@en ;
                 voc:iec60812:definition "n/a"@en ;
                 ;
-                cmns-av:adaptedFrom ""@en ;
-                cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                cmns-av:explanatoryNote ""@en ;
-                cmns-av:usageNote ""@en .
+                cmnsav:adaptedFrom ""@en ;
+                cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                cmnsav:explanatoryNote ""@en ;
+                cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/reliability_data
@@ -1970,10 +1969,10 @@ voc:reliability_data rdf:type owl:NamedIndividual ,
                      voc:en13306:definition "n/a"@en ;
                      voc:iec60812:definition "n/a"@en ;
                      ;
-                     cmns-av:adaptedFrom "ISO 20815:2008"@en ;
-                     cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                     cmns-av:explanatoryNote ""@en ;
-                     cmns-av:usageNote ""@en .
+                     cmnsav:adaptedFrom "ISO 20815:2008"@en ;
+                     cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                     cmnsav:explanatoryNote ""@en ;
+                     cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/safety_critical_failure
@@ -1989,10 +1988,10 @@ voc:safety_critical_failure rdf:type owl:NamedIndividual ,
                             voc:en13306:definition "n/a"@en ;
                             voc:iec60812:definition "n/a"@en ;
                             ;
-                            cmns-av:adaptedFrom ""@en ;
-                            cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                            cmns-av:explanatoryNote "Failures revealed by periodic tests (https://www.vocab14224.org/PeriodicTest)"@en ;
-                            cmns-av:usageNote ""@en .
+                            cmnsav:adaptedFrom ""@en ;
+                            cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                            cmnsav:explanatoryNote "Failures revealed by periodic tests (https://www.vocab14224.org/PeriodicTest)"@en ;
+                            cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/surveillance_period
@@ -2008,10 +2007,10 @@ voc:surveillance_period rdf:type owl:NamedIndividual ,
                         voc:en13306:definition "n/a"@en ;
                         voc:iec60812:definition "n/a"@en ;
                         ;
-                        cmns-av:adaptedFrom ""@en ;
-                        cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                        cmns-av:explanatoryNote ""@en ;
-                        cmns-av:usageNote ""@en .
+                        cmnsav:adaptedFrom ""@en ;
+                        cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                        cmnsav:explanatoryNote ""@en ;
+                        cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/systematic_failure
@@ -2027,10 +2026,10 @@ voc:systematic_failure rdf:type owl:NamedIndividual ,
                        voc:en13306:definition "n/a"@en ;
                        voc:iec60812:definition "n/a"@en ;
                        ;
-                       cmns-av:adaptedFrom ""@en ;
-                       cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                       cmns-av:explanatoryNote ""@en ;
-                       cmns-av:usageNote ""@en .
+                       cmnsav:adaptedFrom ""@en ;
+                       cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+                       cmnsav:explanatoryNote ""@en ;
+                       cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/trip
@@ -2046,10 +2045,10 @@ voc:trip rdf:type owl:NamedIndividual ,
          voc:en13306:definition "n/a"@en ;
          voc:iec60812:definition "n/a"@en ;
          ;
-         cmns-av:adaptedFrom ""@en ;
-         cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-         cmns-av:explanatoryNote "Real trip is effectuated as a result of a monitored (or calculated) value in the control system exceeding a pre-set limit. Spurious trip is the unexpected shutdown resulting from failure(s) in control/ monitoring system or error(s) imposed on the control/monitoring system originating from the environment or people "@en ;
-         cmns-av:usageNote ""@en .
+         cmnsav:adaptedFrom ""@en ;
+         cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+         cmnsav:explanatoryNote "Real trip is effectuated as a result of a monitored (or calculated) value in the control system exceeding a pre-set limit. Spurious trip is the unexpected shutdown resulting from failure(s) in control/ monitoring system or error(s) imposed on the control/monitoring system originating from the environment or people "@en ;
+         cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/up_state
@@ -2065,10 +2064,10 @@ voc:up_state rdf:type owl:NamedIndividual ,
              voc:en13306:definition "state of an item being able to perform a required function, assuming that the external resources, if required, are provided"@en ;
              voc:iec60812:definition "n/a"@en ;
              ;
-             cmns-av:adaptedFrom ""@en ;
-             cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-             cmns-av:explanatoryNote ""@en ;
-             cmns-av:usageNote ""@en .
+             cmnsav:adaptedFrom ""@en ;
+             cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+             cmnsav:explanatoryNote ""@en ;
+             cmnsav:usageNote ""@en .
 
 
 ###  https://iso14224.org/vocab/up_time
@@ -2084,10 +2083,10 @@ voc:up_time rdf:type owl:NamedIndividual ,
             voc:en13306:definition "n/a"@en ;
             voc:iec60812:definition "n/a"@en ;
             ;
-            cmns-av:adaptedFrom ""@en ;
-            cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-            cmns-av:explanatoryNote ""@en ;
-            cmns-av:usageNote ""@en .
+            cmnsav:adaptedFrom ""@en ;
+            cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+            cmnsav:explanatoryNote ""@en ;
+            cmnsav:usageNote ""@en .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
