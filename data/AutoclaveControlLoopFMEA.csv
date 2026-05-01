@@ -1,0 +1,123 @@
+﻿FMEA_ID,FMEAID,AssetID,AssetType,ContolLoopID,ComponentID,Component information,ISO14224EquipmentClassCodeL6,ISO14224Equipment ClassDescriptionL6,ISO14224EquipmentTypeCodeL6,ISO14224FailureModeCode,ISO14224FailureModeDescription,ISO14224FailureMechanismCategory,ISO14224FailureMechanismSubdivision,ComponentFunctionalPurpose,CompanyFailureMode,CompanyFailureMechanism,HiddenFailure,CompanyFailureEffect,MaintenanceStrategy,ControlMeasure,ControlFrequency,CompanyNotes
+RV01LSH02767-1 ,RV01LSH02767 ,RV01,Control loop,Loop 02767 ,LSH02767 ,Radiation level sensor,IP,Input device,LS,AIR,Abnormal Instrument Air,Instrument failure,Out of adjustment,Detect clave high level,Not switching,Misalignment ,Y,Overfilling during charge step (insufficient vapour space in clave) results in the H2 pressure control being unable to respond correctly,PM,Shutter  Test,52W,"PSV02014 lifts, release of powder / liquor and vapour to atmosphere at elevated location. Ignition not considered credible (classified hazardous area), vapour will contain steam. Potenital for serious harm for personnel in immediate vicinity of PSV.
+LOPA 25.18"
+RV01LSH02767-2 ,"RV01LSH02767 
+",RV01,Control loop,Loop 02767 ,"LSH02767 
+",Radiation level sensor,IP,Input device,LS,AIR,Abnormal Instrument Air,Instrument failure,Out of adjustment,Detect clave high level,Not switching,Misalignment ,Y,Overfilling during charge step (insufficient vapour space in clave) results in the H2 pressure control being unable to respond correctly,PM,Wipe Test,52W,"PSV02014 lifts, release of powder / liquor and vapour to atmosphere at elevated location. Ignition not considered credible (classified hazardous area), vapour will contain steam. Potenital for serious harm for personnel in immediate vicinity of PSV.
+LOPA 25.18"
+RV01LSH02767-3 ,RV01LSH02767 ,RV01,Control loop,Loop 02767 ,LSH02767 ,Radiation level sensor,IP,Input device,LS,FTF,failure to function on demand,Electrical failure,General - related to supply and transmission of electrical power - no further details,Detect clave high level,Not switching,Hardware failure,Y,Overfilling during charge step (insufficient vapour space in clave) results in the H2 pressure control being unable to respond correctly,PM,Shutter  Test,52W,"PSV02014 lifts, release of powder / liquor and vapour to atmosphere at elevated location. Ignition not considered credible (classified hazardous area), vapour will contain steam. Potenital for serious harm for personnel in immediate vicinity of PSV.
+LOPA 25.18"
+RV01LSH02767-4 ,"RV01LSH02767 
+",RV01,Control loop,Loop 02767 ,"LSH02767 
+",Radiation level sensor,IP,Input device,LS,FTF,failure to function on demand,Electrical failure,General - related to supply and transmission of electrical power - no further details,Detect clave high level,Not switching,Hardware failure,Y,Overfilling during charge step (insufficient vapour space in clave) results in the H2 pressure control being unable to respond correctly,PM,Wipe Test,52W,"PSV02014 lifts, release of powder / liquor and vapour to atmosphere at elevated location. Ignition not considered credible (classified hazardous area), vapour will contain steam. Potenital for serious harm for personnel in immediate vicinity of PSV.
+LOPA 25.18"
+RV01TE02766-1,RV01TE02766,RV01,Control loop,Loop 02766,TE02766,Temperature sensor ,IP,Input device,TS,AIR,Abnormal Instrument Air,Instrument failure,Faulty signal,Add steam to control clave temperature,Inaccurate reading,Inherent,Y,Potentially overheat the clave,PM,Calibration,104W,Prolonged overheating can cause damage to clave
+RV01TIT02766-2,RV01TIT02766,RV01,Control loop,CL 02766,TIT02766,Temperature indicating transmitter,IP,Input device,TS,AIR,Abnormal Instrument Air,Instrument failure,Control failure,Add steam to control vessel temperature,Inaccurate reading,Inherent,Y,Potentially overheat the vessel,PM,Calibration,104W,
+"RV01TV02766-3 
+","RV01TV02766 
+",RV01,Control loop,CL 02766,"TV02766 
+",Temperature control valve ,VA,Valves,GL,SPO,Spurious operation,Material failure,Wear,Add steam to control vessel temperature,Erratic/Sticking,Wear,N,Potentially overheat the vessel,PM,Stroke check,104W,
+"RV01TV02764-1 
+","RV01TV02766 
+",RV01,Control loop,CL 02766,"TV02766 
+",Temperature control valve ,VA,Valves,GL,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,Add steam to control vessel temperature,Passing,Wear,Y,Potentially overheat the vessel,PM,OSR,208W,
+RV01PIT02773-1,RV01PIT02773,RV01,Control loop,Loop 02773,PIT02773,Pressure indicating transmitter,IP,Input device,PS,AIR,Abnormal Instrument Air,Instrument failure,Faulty signal,Control clave pressure by controlling air vent and H2 inlet control,Inaccurate reading,Inherent,Y,Potential to over pressure the clave,PM,Calibration,208W,Clave unsafe to run without pressure measurement
+RV01PIT02773-2,RV01PIT02773,RV01,Control loop,Loop 02773,PIT02773,Pressure indicating transmitter,IP,Input device,PS,PLU,Plugged/ choked,External influence,Blockage/ plugged,Control clave pressure by controlling air vent and H2 inlet control,Tapping blocked,Process conditions,Y,Potential to over pressure the clave,PM,Inspect tappings,52W,Error in reading causing erratic pressure control
+RV01PIT02773-3,RV01PIT02773,RV01,Control loop,Loop 02773,PIT02773,Pressure indicating transmitter,IP,Input device,PS,PLU,Plugged/ choked,External influence,Blockage/ plugged,Control clave pressure by controlling air vent and H2 inlet control,Tapping blocked,Process conditions,Y,Potential to over pressure the clave,Spare,Crit spare,As needed,
+RV01PIT02774-1 ,RV01PIT02774 ,RV01,Control loop,Loop 02774,PIT02774 ,Pressure indicating transmitter,IP,Input device,PS,AIR,abnormal Instrument Air,External influence,Blockage/ plugged,Control clave pressure by controlling air vent and H2 inlet control,Inaccurate reading,Inherent,Y,Potential to over pressure the clave,PM,Calibration,208W,Clave unsafe to run without pressure measurement
+RV01PIT02774-2 ,RV01PIT02774 ,RV01,Control loop,Loop 02774,PIT02774 ,Pressure indicating transmitter,IP,Input device,PS,PLU,Plugged/ choked,External influence,Blockage/ plugged,Control clave pressure by controlling air vent and H2 inlet control,Tapping blocked,Process conditions,Y,Potential to over pressure the clave,PM,Inspect tappings,52W,Error in reading causing erratic pressure control
+RV01PIT02774-3 ,RV01PIT02774 ,RV01,Control loop,Loop 02774,PIT02774 ,Pressure indicating transmitter,IP,Input device,PS,PLU,Plugged/ choked,External influence,Blockage/ plugged,Control clave pressure by controlling air vent and H2 inlet control,Tapping blocked,Process conditions,Y,Potential to over pressure the clave,Spare,Crit spare,As needed,
+"RV01PV02774-1-1
+","RV01PV02774-1
+",RV01,Control loop,CL 02774,"PV02774-1
+",Pressure valve,VA,Valves,SC,FTO,Failure to open on demand,Mechanical failure,Sticking,vessel H2 vent control,Stuck closed,Foreign object,Y,Cannot control pressure in vessel,PM,OSR,26W,
+"RV01PV02774-1-2
+","RV01PV02774-1
+",RV01,Control loop,CL 02774,"PV02774-1
+",Pressure valve,VA,Valves,SC,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,vessel H2 vent control,Passing,Wear,Y,Cannot control pressure in vessel,Spare,Rotable spare,As needed,
+RV01PV02774-3-1 ,RV01PV02774-3 ,RV01,Control loop,CL 02774,PV02774-3 ,Pressure valve,VA,Valves,GL,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,vessel H2 inlet control,Passing,Wear,Y,Cannot control pressure in vessel,PM,OSR,208W,
+RV01PV02774-3-2 ,RV01PV02774-3 ,RV01,Control loop,CL 02774,PV02774-3 ,Pressure valve,VA,Valves,GL,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,vessel H2 inlet control,Passing,Wear,Y,Cannot control pressure in vessel,Spare,Rotable spare,As needed,
+RV01ZI02774-3-3 ,RV01ZI02774-3 ,RV01,Control loop,Loop 02774,ZI02774-3 ,Position indicator,IP,Input device,LP,AIR,Abnormal Instrument Air,Instrument failure,Faulty signal,Clave H2 inlet control,Passing,Wear,Y,Cannot control pressure in Clave,PM,OSR,208W,Pressure control becomes unstable. Potential release of process through PSV. Typically throttling. Clean H2. Rare to be stuck closed or open. Will stop at end of cycle.
+RV01ZSC02774-3-4,RV01ZSC02774-3 ,RV01,Control loop,Loop 02774,ZSC02774-3 ,Position switch closed,IP,Input device,LP,AIR,Abnormal Instrument Air,Instrument failure,Faulty signal,Clave H2 inlet control,Passing,Wear,Y,Cannot control pressure in Clave,PM,OSR,208W,Pressure control becomes unstable. Potential release of process through PSV. Typically throttling. Clean H2. Rare to be stuck closed or open. Will stop at end of cycle.
+"RV01PV02774-2-1
+","RV01PV02774-2
+",RV01,Control loop,CL 02774,"PV02774-2
+",Pressure valve,VA,Valves,GL,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,vessel air vent control,Passing,Wear,Y,Cannot control pressure in vessel,PM,OSR,208W,
+"RV01PV02774-2-2
+","RV01PV02774-2
+",RV01,Control loop,CL 02774,"PV02774-2
+",Pressure valve,VA,Valves,GL,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,vessel air vent control,Passing,Wear,Y,Cannot control pressure in vessel,Spare,Rotable spare,As needed,
+RV01XV02778-1 ,RV01XV02778 ,RV01,Control loop,CL 02778,XV02778 ,Actuated on/off valve,VA,Valves,GL,INL,Internal leakage,Material failure,Wear,vessel H2 vent block,Passing,Wear,Y,Safety,PM,OSR,208W,
+RV01XV02778-2 ,RV01XV02778 ,RV01,Control loop,CL 02778,XV02778 ,Actuated on/off valve,VA,Valves,GL,INL,Internal leakage,Material failure,Wear,vessel H2 vent block,Passing,Wear,Y,Safety,Spare,Rotable spare,As needed,
+RV01ZSO02778-3,RV01ZSO02778,RV01,Control loop,Loop 02778,ZSO02778,Position switch open,IP,Input device,LP,AIR,Abnormal Instrument Air,Instrument failure,Faulty signal,Clave H2 vent block,Passing,Wear,Y,Safety,PM,OSR,208W,Typically open when in use. Closes when complete. Can have air suction if passing. Safety. Stroked as part of densification
+RV01ZSC02778-4,RV01ZSC02778,RV01,Control loop,Loop 02778,ZSC02778,Position switch closed,IP,Input device,LP,AIR,Abnormal Instrument Air,Instrument failure,Faulty signal,Clave H2 vent block,Passing,Wear,Y,Safety,PM,OSR,208W,Typically open when in use. Closes when complete. Can have air suction if passing. Safety. Stroked as part of densification
+RV01XV02777-1,RV01XV02777,RV01,Control loop,CL 02777,XV02777,Actuated on/off valve,VA,Valves,GL,INL,Internal leakage,Material failure,Wear,vessel air vent block,Passing,Wear,Y,Safety,PM,OSR,208W,
+RV01XV02777-2,RV01XV02777,RV01,Control loop,CL 02777,XV02777,Actuated on/off valve,VA,Valves,GL,INL,Internal leakage,Material failure,Wear,vessel air vent block,Passing,Wear,Y,Safety,Spare,Rotable spare,As needed,
+RV01ZSO02777-3,RV01ZSO02777,RV01,Control loop,Loop 02777,ZSO02777,Actuated on/off valve,VA,Valves,GL,AIR,Abnormal Instrument Air,Instrument failure,Faulty signal,Clave air vent block,Passing,Wear,Y,Safety,PM,OSR,208W,Typically open when in use. Closes when complete. Can have air suction if passing. Safety.
+RV01ZSC02777-4,RV01ZSC02777,RV01,Control loop,Loop 02777,ZSC02777,Actuated on/off valve,VA,Valves,GL,AIR,Abnormal Instrument Air,Instrument failure,Faulty signal,Clave air vent block,Passing,Wear,Y,Safety,PM,OSR,208W,Typically open when in use. Closes when complete. Can have air suction if passing. Safety.
+RV01FIT02776-1,RV01FIT02776,RV01,Control loop,Loop 02776,FIT02776,Flow indicating transmitter,IP,Input device,FS,AIR,Abnormal Instrument Air,Instrument failure,Faulty signal,Control clave feed air,Inaccurate reading,Inherent,Y,Malfunction of air control loop,PM,Calibration,104W,"High pressure in clave. LOPA 25.09, 25.10"
+RV01FIT02776-2,RV01FIT02776,RV01,Control loop,Loop 02776,FIT02776,Flow indicating transmitter,IP,Input device,FS,PLU,Plugged/ choked,External influence,Blockage/ plugged,Control clave feed air,Inaccurate reading,Tapping blocked,Y,Malfunction of air control loop,PM,Insp tapping,104W,"High pressure in clave. LOPA 25.09, 25.10"
+"RV01FV02776-3
+","RV01FV02776
+",RV01,Control loop,CL 02776,"FV02776
+",Flow valve,VA,Valves,GL,SPO,Spurious operation,Mechanical failure,Sticking,Control vessel feed air,Erratic control,Sticky movement,N,Malfunction of air control loop,PM,Stroke check,104W,
+"RV01FV02776-4
+","RV01FV02776
+",RV01,Control loop,CL 02776,"FV02776
+",Flow valve,VA,Valves,GL,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,Control vessel feed air,Passing,Wear,Y,Potential over pressure of vessel,PM,OSR,208W,
+RV01XV02764-1 ,RV01XV02764 ,RV01,Control loop,CL 02764,XV02764 ,Actuated on/off valve,VA,Valves,BA,INL,Internal leakage,Material failure,Wear,vessel discharge block 1 bottom Jamesbury,Passing,Wear,Y,Unable to control vessel pressure,PM,Replace,4 days,
+RV01XV02764-2 ,RV01XV02764 ,RV01,Control loop,CL 02764,XV02764 ,Actuated on/off valve,VA,Valves,BA,FTO,Failure to open on demand,Material failure,Wear,vessel discharge block 1 bottom Jamesbury,Stuck closed,Nickel plating within ball and seat.,Y,Potential over pressure of vessel,Spare,Rotable spare,As needed,
+RV01XV02764-3 ,RV01XV02764 ,RV01,Control loop,CL 02764,XV02764 ,Actuated on/off valve,VA,Valves,BA,FTF,failure to function on demand,Mechanical failure,Sticking,vessel discharge block 1 bottom Jamesbury,Proxy not switching,Knocked/ ingress,N,Unable to control vessel pressure,PM,Align & Stroke,TAR,
+RV01XV02764-4 ,RV01XV02764 ,RV01,Control loop,CL 02764,XV02764 ,Actuated on/off valve,VA,Valves,BA,FTF,failure to function on demand,Mechanical failure,Clearance/ alignment failure,vessel discharge block 1 bottom Jamesbury,Proxy not switching,Misalignment,N,Unable to control vessel pressure,, ,,
+RV01ZSO02764-1 ,RV01ZSO02764 ,RV01,Control loop,Loop 02764,ZSO02764 ,Position switch open,IP,Input device,LP,PLU,Plugged/ choked,External influence,Blockage/ plugged,Clave discharge block 1 bottom Jamesbury,Proxy not switching,Knocked/ ingress,N,Unable to control clave pressure,PM,Align & Stroke,TAR,Stops sequence if in the middle of cycle. High count of failures.
+RV01ZSC02764-2 ,RV01ZSC02764 ,RV01,Control loop,Loop 02764,ZSC02764 ,Position switch closed,IP,Input device,LP,PLU,Plugged/ choked,External influence,Blockage/ plugged,Clave discharge block 1 bottom Jamesbury,Proxy not switching,Knocked/ ingress,N,Unable to control clave pressure,PM,Align & Stroke,TAR,Stops sequence if in the middle of cycle. High count of failures.
+RV01XV02765-1,RV01XV02765,RV01,Control loop,CL 02765,XV02765,Actuated on/off valve,VA,Valves,BA,INL,Internal leakage,Material failure,Wear,vessel discharge block 2 top Jamesbury,Passing,Wear,Y,Unable to control vessel pressure,PM,Replace,4 days,
+RV01XV02765-2,RV01XV02765,RV01,Control loop,CL 02765,XV02765,Actuated on/off valve,VA,Valves,BA,FTO,Failure to open on demand,Mechanical failure,Sticking,vessel discharge block 2 top Jamesbury,Stuck closed,Nickel plating within ball and seat.,Y,Potential over pressure of vessel,Spare,Rotable spare,As needed,
+RV01XV02765-3,RV01XV02765,RV01,Control loop,Loop 02765,XV02765,Actuated on/off valve,VA,Valves,BA,PLU,Plugged/ choked,External influence,Blockage/ plugged,Clave discharge block 2 top Jamesbury,Proxy not switching,Knocked/ ingress,N,Unable to control clave pressure,PM,Align & Stroke,TAR,Stops sequence if in the middle of cycle. High count of failures.
+RV01XV02765-4,RV01XV02765,RV01,Control loop,CL 02765,XV02765,Actuated on/off valve,VA,Valves,BA,FTF,failure to function on demand,Mechanical failure,Clearance/ alignment failure,vessel discharge block 2 top Jamesbury,Proxy not switching,Misalignment,N,Unable to control vessel pressure,, ,,
+RV01ZSO02765-1 ,RV01ZSO02765 ,RV01,Control loop,Loop 02765,ZSO02765 ,Position switch open,IP,Input device,LP,PLU,Plugged/ choked,External influence,Blockage/ plugged,Clave discharge block 2 top Jamesbury,Proxy not switching,Knocked/ ingress,N,Unable to control clave pressure,PM,Align & Stroke,TAR,Stops sequence if in the middle of cycle. High count of failures.
+RV01ZSC02765-2,RV01ZSC02765,RV01,Control loop,Loop 02765,ZSC02765,Position switch closed,IP,Input device,LP,PLU,Plugged/ choked,External influence,Blockage/ plugged,Clave discharge block 2 top Jamesbury,Proxy not switching,Knocked/ ingress,N,Unable to control clave pressure,PM,Align & Stroke,TAR,Stops sequence if in the middle of cycle. High count of failures.
+RV01XV02848H-1,RV01XV02848H,RV01,Control loop,CL 02848H,XV02848H,Actuated on/off valve,VA,Valves,SB,INL,Internal leakage,Material failure,Wear,vessel discharge telltale to check if 2 blocks are blocking ,Passing,Wear,Y,Unable to control vessel pressure,PM,Replace,4 days,
+RV01XV02848H-2,RV01XV02848H,RV01,Control loop,CL 02848H,XV02848H,Actuated on/off valve,VA,Valves,SB,INL,Internal leakage,Mechanical failure,Sticking,vessel discharge telltale to check if 2 blocks are blocking ,Stuck closed,Nickel plating within ball and seat.,Y,Potential over pressure of vessel,Spare,Rotable spare,As needed,
+RV01XV02848H-3,RV01XV02848H,RV01,Control loop,Loop 02848H,XV02848H,Actuated on/off valve,VA,Valves,SB,PLU,Plugged/ choked,External influence,Blockage/ plugged,Clave discharge telltale to check if 2 blocks are blocking ,Proxy not switching,Knocked/ ingress,N,Unable to control clave pressure,PM,Align & Stroke,TAR,Stops sequence if in the middle of cycle. High count of failures.
+RV01XV02848H-4,RV01XV02848H,RV01,Control loop,CL 02848H,XV02848H,Actuated on/off valve,VA,Valves,SB,FTO,Failure to open on demand,Mechanical failure,Clearance/ alignment failure,vessel discharge telltale to check if 2 blocks are blocking ,Proxy not switching,Misalignment,N,Unable to control vessel pressure,, ,,
+RV01ZSC02848H-5,RV01ZSC02848H,RV01,Control loop,Loop 02848H,ZSC02848H,Position switch closed,IP,Input device,LP,PLU,Plugged/ choked,External influence,Blockage/ plugged,Clave discharge telltale to check if 2 blocks are blocking ,Proxy not switching,Knocked/ ingress,N,Unable to control clave pressure,PM,Align & Stroke,TAR,Stops sequence if in the middle of cycle. High count of failures.
+RV01XV02826H-1,RV01XV02826H ,RV01,Control loop,CL 02826,XV02826H ,Actuated on/off valve,VA,Valves,GA,INL,Internal leakage,Material failure,Wear,vessel feed block,Passing,Wear,Y,Feed leaking,PM,OSR,52W,
+RV01XV02826H-2 ,RV01XV02826H ,RV01,Control loop,CL 02826,XV02826H ,Actuated on/off valve,VA,Valves,GA,INL,Internal leakage,Material failure,Wear,vessel feed block,Passing,Wear,Y,Feed leaking,Spare,Rotable spare,As needed,
+RV01ZSO02826-3,RV01ZSO02826,RV01,Control loop,Loop 02826,ZSO02826,Position switch open,IP,Input device,LP,PLU,Plugged/ choked,External influence,Blockage/ plugged,Clave feed block,Proxy not switching,Knocked/ ingress,N,Unable to control clave pressure,PM,Align & Stroke,TAR,Stops sequence if in the middle of cycle. High count of failures.
+RV01ZSC02826-4,RV01ZSC02826,RV01,Control loop,Loop 02826,ZSC02826,Position switch closed,IP,Input device,LP,PLU,Plugged/ choked,External influence,Blockage/ plugged,Clave feed block,Proxy not switching,Knocked/ ingress,N,Unable to control clave pressure,PM,Align & Stroke,TAR,Stops sequence if in the middle of cycle. High count of failures.
+RV01XV02140H-1,RV01XV02140H,RV01,Control loop,CL 02140H,XV02140H,Actuated on/off valve,VA,Valves,GA,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,HP Nitrogen to A Redn vessel block valve,Passing,Wear,Y,N2 leaking into vessel,PM,OSR,208W,
+RV01XV02140H-2,RV01XV02140H,RV01,Control loop,CL 02140H,XV02140H,Actuated on/off valve,VA,Valves,GA,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,HP Nitrogen to A Redn vessel block valve,Passing,Wear,Y,N2 leaking into vessel,Spare,Rotable spare,,
+RV01ZSO02140H-1,RV01ZSO02140H,RV01,Control loop,Loop 02140H,ZSO02140H,Position switch open,IP,Input device,LP,PLU,Plugged/ choked,External influence,Blockage/ plugged,HP Nitrogen to A Redn clave block valve,Proxy not switching,Knocked/ ingress,N,Unable to control clave pressure,PM,Align & Stroke,TAR,Stops sequence if in the middle of cycle. High count of failures.
+RV01ZSC02140H-2,RV01ZSC02140H,RV01,Control loop,Loop 02140H,ZSC02140H,Position switch closed,IP,Input device,LP,PLU,Plugged/ choked,External influence,Blockage/ plugged,HP Nitrogen to A Redn clave block valve,Proxy not switching,Knocked/ ingress,N,Unable to control clave pressure,PM,Align & Stroke,TAR,Stops sequence if in the middle of cycle. High count of failures.
+"RV01FIT02800H-1 
+","RV01FIT02800H 
+",RV01,Control loop,Loop 02800H,"FIT02800H 
+",Flow indicating transmitter,IP,Input device,FS,AIR,Abnormal Instrument Air,Instrument failure,Faulty signal,Control clave feed,Inaccurate reading,Inherent,Y,Erratic control of clave feed,PM,Internal inspection of the flow meter,208W,Rely on high level switch. Over filling of the clave. LOPA 25.18
+"RV01FIT02800H-2 
+","RV01FIT02800H 
+",RV01,Control loop,Loop 02800H,"FIT02800H 
+",Flow indicating transmitter,IP,Input device,FS,AIR,Abnormal Instrument Air,External influence,Blockage/ plugged,Control clave feed,Inaccurate reading,Buildup/ sheddar damage,Y,Inaccurate flow reading,PM,Internal inspection of the flow meter,208W,Rely on high level switch. Over filling of the clave. LOPA 25.19
+"RV01FIT02800H-3 
+","RV01FIT02800H 
+",RV01,Control loop,CL 02800H,"FIT02800H 
+",Flow indicating transmitter,IP,Input device,FS,AIR,Abnormal Instrument Air,Instrument failure,Control failure,Control vessel feed,Leak to external,Sheddar seal deterioration,N,Feed leaking into vessel,PM,Inspection of the flow meter and seals,208W,
+"RV01FV02800H-1 
+","RV01FV02800H 
+",RV01,Control loop,CL 02800H,"FV02800H 
+",Flow valve,VA,Valves,GL,ELP,External leakage process medium,Mechanical failure,Leakage,Control vessel feed,Leak to external,Sheddar seal deterioration,N,Feed leaking into vessel,Spare,Rotable spare,As needed,
+"RV01FV02800H-2 
+","RV01FV02800H 
+",RV01,Control loop,CL 02800H,"FV02800H 
+",Flow valve,VA,Valves,GL,SPO,Spurious operation,Mechanical failure,Sticking,Control vessel feed,Erratic control,Sticky movement,Y,Erratic control of vessel feed,PM,Stroke check,104W,
+"RV01FV02800H-3 
+","RV01FV02800H 
+",RV01,Control loop,CL 02800H,"FV02800H 
+",Flow valve,VA,Valves,GL,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,Control vessel feed,Passing,Wear,Y,Feed leaking when valve is closed,PM,OSR,52W,
+"RV01FV02800H-4 
+","RV01FV02800H 
+",RV01,Control loop,CL 02800H,"FV02800H 
+",Flow valve,VA,Valves,GL,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,Control vessel feed,Passing,Wear,Y,Feed leaking when valve is closed,Spare,Rotable spare,As needed,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
