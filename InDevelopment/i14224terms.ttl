@@ -9,10 +9,10 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cmnsav: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://iso14224.org/ontology/i14224/ont/core/core> .
+@base <http://iso14224.org/ontology/i14224/ont/core> .
 
 <http://iso14224.org/ontology/i14224/ont/core> rdf:type owl:Ontology ;
-                                                owl:versionIRI <file:/C:/Users/hodki/Documents/Github/14224ontologies_public/InDevelopment/iso14224.org/ontology/i14224/ont/core/1.1> ;
+                                                owl:versionIRI <http://iso14224.org/ontology/i14224/ont/core/1.1> ;
                                                 dcterms:license " https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE" ;
                                                 dcterms:rights "See github"@en ;
                                                 rdfs:comment """The ISO 14224 standard is for the collection of reliability and maintenance (RM) data in a standard format for equipment in all facilities and operations.
