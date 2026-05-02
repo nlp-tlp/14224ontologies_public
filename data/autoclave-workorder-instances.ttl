@@ -1,0 +1,1292 @@
+@prefix asset: <https://nlp-tlp.org/ontology/asset/rdl/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix inst: <https://example.org/autoclave/work-order/instance/> .
+@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/> .
+@prefix mwo: <https://nlp-tlp.org/ontology/mwo/rdl/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+inst:WO_20170111_SCE_02848H_35 a mwo:MWOActivity ;
+    rdfs:label "WO_20170111_SCE 02848H_35" ;
+    dcterms:description "remove replace tell tale" ;
+    lis:hasParticipant inst:Asset_SCE_02848H ;
+    lis:hasTemporalRegion inst:Instant_WO_20170111_SCE_02848H_35 ;
+    lis:representedIn inst:DateDatum_WO_20170111_SCE_02848H_35 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170111_SCE_02848H_35 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_UNK ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170111_SCE_02848H_35 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170120_SCE_02767_8 a mwo:MWOActivity ;
+    rdfs:label "WO_20170120_SCE 02767_8" ;
+    dcterms:description "H13 High level over ride I/C" ;
+    lis:hasParticipant inst:Asset_SCE_02767 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170120_SCE_02767_8 ;
+    lis:representedIn inst:DateDatum_WO_20170120_SCE_02767_8 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170120_SCE_02767_8 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_FTI ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170120_SCE_02767_8 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170215_SCE_02767_9 a mwo:MWOActivity ;
+    rdfs:label "WO_20170215_SCE 02767_9" ;
+    dcterms:description "H13 Calibrate A clave radiation sw" ;
+    lis:hasParticipant inst:Asset_SCE_02767 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170215_SCE_02767_9 ;
+    lis:representedIn inst:DateDatum_WO_20170215_SCE_02767_9 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170215_SCE_02767_9 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_AIR ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170215_SCE_02767_9 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170228_SCE_02848H_36 a mwo:MWOActivity ;
+    rdfs:label "WO_20170228_SCE 02848H_36" ;
+    dcterms:description "H11 replace passing telltale" ;
+    lis:hasParticipant inst:Asset_SCE_02848H ;
+    lis:hasTemporalRegion inst:Instant_WO_20170228_SCE_02848H_36 ;
+    lis:representedIn inst:DateDatum_WO_20170228_SCE_02848H_36 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170228_SCE_02848H_36 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_INL ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170228_SCE_02848H_36 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170410_SCE_02765_4 a mwo:MWOActivity ;
+    rdfs:label "WO_20170410_SCE 02765_4" ;
+    dcterms:description "remove / replace faulty sensor" ;
+    lis:hasParticipant inst:Asset_SCE_02765 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170410_SCE_02765_4 ;
+    lis:representedIn inst:DateDatum_WO_20170410_SCE_02765_4 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170410_SCE_02765_4 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_UNK ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170410_SCE_02765_4 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170420_SCE_02773_15 a mwo:MWOActivity ;
+    rdfs:label "WO_20170420_SCE 02773_15" ;
+    dcterms:description "H11 Drill out blocked tapping point" ;
+    lis:hasParticipant inst:Asset_SCE_02773 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170420_SCE_02773_15 ;
+    lis:representedIn inst:DateDatum_WO_20170420_SCE_02773_15 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170420_SCE_02773_15 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_PLU ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170420_SCE_02773_15 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170422_SCE_02765_5 a mwo:MWOActivity ;
+    rdfs:label "WO_20170422_SCE 02765_5" ;
+    dcterms:description "A clave top j/bury siezed" ;
+    lis:hasParticipant inst:Asset_SCE_02765 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170422_SCE_02765_5 ;
+    lis:representedIn inst:DateDatum_WO_20170422_SCE_02765_5 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170422_SCE_02765_5 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_FTO ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170422_SCE_02765_5 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170428_SCE_02826H_34 a mwo:MWOActivity ;
+    rdfs:label "WO_20170428_SCE 02826H_34" ;
+    dcterms:description "Feed jamesbury passing" ;
+    lis:hasParticipant inst:Asset_SCE_02826H ;
+    lis:hasTemporalRegion inst:Instant_WO_20170428_SCE_02826H_34 ;
+    lis:representedIn inst:DateDatum_WO_20170428_SCE_02826H_34 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170428_SCE_02826H_34 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_INL ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170428_SCE_02826H_34 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170506_SCE_02800H_33 a mwo:MWOActivity ;
+    rdfs:label "WO_20170506_SCE 02800H_33" ;
+    dcterms:description "HAZ A Clave feed line leak" ;
+    lis:hasParticipant inst:Asset_SCE_02800H ;
+    lis:hasTemporalRegion inst:Instant_WO_20170506_SCE_02800H_33 ;
+    lis:representedIn inst:DateDatum_WO_20170506_SCE_02800H_33 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170506_SCE_02800H_33 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_INL ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170506_SCE_02800H_33 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170510_SCE_02767_10 a mwo:MWOActivity ;
+    rdfs:label "WO_20170510_SCE 02767_10" ;
+    dcterms:description "H13 TAR Replace A Clave high level detec" ;
+    lis:hasParticipant inst:Asset_SCE_02767 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170510_SCE_02767_10 ;
+    lis:representedIn inst:DateDatum_WO_20170510_SCE_02767_10 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170510_SCE_02767_10 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_UNK ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170510_SCE_02767_10 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM01 .
+
+inst:WO_20170522_SCE_02140_1 a mwo:MWOActivity ;
+    rdfs:label "WO_20170522_SCE 02140_1" ;
+    dcterms:description "A Clave HPN2 valve actuator loose" ;
+    lis:hasParticipant inst:Asset_SCE_02140 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170522_SCE_02140_1 ;
+    lis:representedIn inst:DateDatum_WO_20170522_SCE_02140_1 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170522_SCE_02140_1 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_ERO ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170522_SCE_02140_1 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170624_SCE_02848H_43 a mwo:MWOActivity ;
+    rdfs:label "WO_20170624_SCE 02848H_43" ;
+    dcterms:description "H11 Gasket leaking east flange t/tale" ;
+    lis:hasParticipant inst:Asset_SCE_02848H ;
+    lis:hasTemporalRegion inst:Instant_WO_20170624_SCE_02848H_43 ;
+    lis:representedIn inst:DateDatum_WO_20170624_SCE_02848H_43 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170624_SCE_02848H_43 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_INL ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170624_SCE_02848H_43 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170702_SCE_02848H_41 a mwo:MWOActivity ;
+    rdfs:label "WO_20170702_SCE 02848H_41" ;
+    dcterms:description "Tell Tale proximity fault" ;
+    lis:hasParticipant inst:Asset_SCE_02848H ;
+    lis:hasTemporalRegion inst:Instant_WO_20170702_SCE_02848H_41 ;
+    lis:representedIn inst:DateDatum_WO_20170702_SCE_02848H_41 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170702_SCE_02848H_41 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_AIR ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170702_SCE_02848H_41 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170703_SCE_02767_14 a mwo:MWOActivity ;
+    rdfs:label "WO_20170703_SCE 02767 _14" ;
+    dcterms:description "H11 TAR Setup/calibrate A clave level sw" ;
+    lis:hasParticipant inst:Asset_SCE_02767 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170703_SCE_02767_14 ;
+    lis:representedIn inst:DateDatum_WO_20170703_SCE_02767_14 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170703_SCE_02767_14 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_AIR ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170703_SCE_02767_14 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM01 .
+
+inst:WO_20170707_SCE_02774_18 a mwo:MWOActivity ;
+    rdfs:label "WO_20170707_SCE 02774_18" ;
+    dcterms:description "H11 *PO*HAZ PIO 2774 ptp Blocked" ;
+    lis:hasParticipant inst:Asset_SCE_02774 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170707_SCE_02774_18 ;
+    lis:representedIn inst:DateDatum_WO_20170707_SCE_02774_18 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170707_SCE_02774_18 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_PLU ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170707_SCE_02774_18 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170715_SCE_02848H_37 a mwo:MWOActivity ;
+    rdfs:label "WO_20170715_SCE 02848H_37" ;
+    dcterms:description "telltale needs replaced" ;
+    lis:hasParticipant inst:Asset_SCE_02848H ;
+    lis:hasTemporalRegion inst:Instant_WO_20170715_SCE_02848H_37 ;
+    lis:representedIn inst:DateDatum_WO_20170715_SCE_02848H_37 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170715_SCE_02848H_37 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_UNK ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170715_SCE_02848H_37 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170719_SCE_02800_32 a mwo:MWOActivity ;
+    rdfs:label "WO_20170719_SCE 02800_32" ;
+    dcterms:description "HAZ A CLAVE FEED VORTEX GASKET U/S" ;
+    lis:hasParticipant inst:Asset_SCE_02800 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170719_SCE_02800_32 ;
+    lis:representedIn inst:DateDatum_WO_20170719_SCE_02800_32 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170719_SCE_02800_32 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_UNK ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170719_SCE_02800_32 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170803_SCE_02778_31 a mwo:MWOActivity ;
+    rdfs:label "WO_20170803_SCE 02778 _31" ;
+    dcterms:description "H2 vent j/bury b/v passing" ;
+    lis:hasParticipant inst:Asset_SCE_02778 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170803_SCE_02778_31 ;
+    lis:representedIn inst:DateDatum_WO_20170803_SCE_02778_31 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170803_SCE_02778_31 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_INL ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170803_SCE_02778_31 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170809_SCE_02777_26 a mwo:MWOActivity ;
+    rdfs:label "WO_20170809_SCE 02777 _26" ;
+    dcterms:description "H11 Leach vent Jamesbury not operating" ;
+    lis:hasParticipant inst:Asset_SCE_02777 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170809_SCE_02777_26 ;
+    lis:representedIn inst:DateDatum_WO_20170809_SCE_02777_26 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170809_SCE_02777_26 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_UNK ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170809_SCE_02777_26 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170810_SCE_02767_11 a mwo:MWOActivity ;
+    rdfs:label "WO_20170810_SCE 02767_11" ;
+    dcterms:description "E21 HAZ A Clave High Level false reading" ;
+    lis:hasParticipant inst:Asset_SCE_02767 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170810_SCE_02767_11 ;
+    lis:representedIn inst:DateDatum_WO_20170810_SCE_02767_11 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170810_SCE_02767_11 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_AIR ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170810_SCE_02767_11 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170919_SCE_02848H_38 a mwo:MWOActivity ;
+    rdfs:label "WO_20170919_SCE 02848H_38" ;
+    dcterms:description "Tell-tale leaking from stem" ;
+    lis:hasParticipant inst:Asset_SCE_02848H ;
+    lis:hasTemporalRegion inst:Instant_WO_20170919_SCE_02848H_38 ;
+    lis:representedIn inst:DateDatum_WO_20170919_SCE_02848H_38 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170919_SCE_02848H_38 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_INL ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170919_SCE_02848H_38 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170922_SCE_02774_19 a mwo:MWOActivity ;
+    rdfs:label "WO_20170922_SCE 02774_19" ;
+    dcterms:description "ptp a clave pi02774 descrepancy" ;
+    lis:hasParticipant inst:Asset_SCE_02774 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170922_SCE_02774_19 ;
+    lis:representedIn inst:DateDatum_WO_20170922_SCE_02774_19 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170922_SCE_02774_19 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_AIR ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170922_SCE_02774_19 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20170922_SCE_02778_27 a mwo:MWOActivity ;
+    rdfs:label "WO_20170922_SCE 02778_27" ;
+    dcterms:description "h2 vent j/b passing" ;
+    lis:hasParticipant inst:Asset_SCE_02778 ;
+    lis:hasTemporalRegion inst:Instant_WO_20170922_SCE_02778_27 ;
+    lis:representedIn inst:DateDatum_WO_20170922_SCE_02778_27 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20170922_SCE_02778_27 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_INL ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20170922_SCE_02778_27 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20171017_SCE_02776_22 a mwo:MWOActivity ;
+    rdfs:label "WO_20171017_SCE 02776_22" ;
+    dcterms:description "M9 SCE TAR Replace unapp positioner I/P" ;
+    lis:hasParticipant inst:Asset_SCE_02776 ;
+    lis:hasTemporalRegion inst:Instant_WO_20171017_SCE_02776_22 ;
+    lis:representedIn inst:DateDatum_WO_20171017_SCE_02776_22 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20171017_SCE_02776_22 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_UNK ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20171017_SCE_02776_22 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM01 .
+
+inst:WO_20171031_SCE_02848H_39 a mwo:MWOActivity ;
+    rdfs:label "WO_20171031_SCE 02848H_39" ;
+    dcterms:description "HAZ \"AClave Tell-Tale Sensor Faulty" ;
+    lis:hasParticipant inst:Asset_SCE_02848H ;
+    lis:hasTemporalRegion inst:Instant_WO_20171031_SCE_02848H_39 ;
+    lis:representedIn inst:DateDatum_WO_20171031_SCE_02848H_39 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20171031_SCE_02848H_39 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_AIR ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20171031_SCE_02848H_39 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20171117_SCE_02774_20 a mwo:MWOActivity ;
+    rdfs:label "WO_20171117_SCE 02774_20" ;
+    dcterms:description "H11 HAZ Hydrogen Supply C/V passing" ;
+    lis:hasParticipant inst:Asset_SCE_02774 ;
+    lis:hasTemporalRegion inst:Instant_WO_20171117_SCE_02774_20 ;
+    lis:representedIn inst:DateDatum_WO_20171117_SCE_02774_20 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20171117_SCE_02774_20 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_INL ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20171117_SCE_02774_20 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20171227_SCE_02773_16 a mwo:MWOActivity ;
+    rdfs:label "WO_20171227_SCE 02773_16" ;
+    dcterms:description "Hazard PIO-2774 PTP Blocked" ;
+    lis:hasParticipant inst:Asset_SCE_02773 ;
+    lis:hasTemporalRegion inst:Instant_WO_20171227_SCE_02773_16 ;
+    lis:representedIn inst:DateDatum_WO_20171227_SCE_02773_16 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20171227_SCE_02773_16 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_PLU ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20171227_SCE_02773_16 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20180111_SCE_02773_17 a mwo:MWOActivity ;
+    rdfs:label "WO_20180111_SCE 02773_17" ;
+    dcterms:description "H16 TX-1 PIO 2773  PTP blocked" ;
+    lis:hasParticipant inst:Asset_SCE_02773 ;
+    lis:hasTemporalRegion inst:Instant_WO_20180111_SCE_02773_17 ;
+    lis:representedIn inst:DateDatum_WO_20180111_SCE_02773_17 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20180111_SCE_02773_17 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_PLU ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20180111_SCE_02773_17 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20180227_SCE_02777_23 a mwo:MWOActivity ;
+    rdfs:label "WO_20180227_SCE 02777_23" ;
+    dcterms:description "M9 JDI air vent jamesbury slow  to open" ;
+    lis:hasParticipant inst:Asset_SCE_02777 ;
+    lis:hasTemporalRegion inst:Instant_WO_20180227_SCE_02777_23 ;
+    lis:representedIn inst:DateDatum_WO_20180227_SCE_02777_23 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20180227_SCE_02777_23 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_DOP ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20180227_SCE_02777_23 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM01 .
+
+inst:WO_20180314_SCE_02778_28 a mwo:MWOActivity ;
+    rdfs:label "WO_20180314_SCE 02778_28" ;
+    dcterms:description "H11 a clave h2 vent j/bury passing" ;
+    lis:hasParticipant inst:Asset_SCE_02778 ;
+    lis:hasTemporalRegion inst:Instant_WO_20180314_SCE_02778_28 ;
+    lis:representedIn inst:DateDatum_WO_20180314_SCE_02778_28 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20180314_SCE_02778_28 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_INL ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20180314_SCE_02778_28 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20180322_SCE_02765_6 a mwo:MWOActivity ;
+    rdfs:label "WO_20180322_SCE 02765_6" ;
+    dcterms:description "Top jamesbury sensor U/S" ;
+    lis:hasParticipant inst:Asset_SCE_02765 ;
+    lis:hasTemporalRegion inst:Instant_WO_20180322_SCE_02765_6 ;
+    lis:representedIn inst:DateDatum_WO_20180322_SCE_02765_6 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20180322_SCE_02765_6 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_UNK ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20180322_SCE_02765_6 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20180407_SCE_02777_24 a mwo:MWOActivity ;
+    rdfs:label "WO_20180407_SCE 02777_24" ;
+    dcterms:description "A Clave Leach vent j'bury not closing" ;
+    lis:hasParticipant inst:Asset_SCE_02777 ;
+    lis:hasTemporalRegion inst:Instant_WO_20180407_SCE_02777_24 ;
+    lis:representedIn inst:DateDatum_WO_20180407_SCE_02777_24 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20180407_SCE_02777_24 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_FTC ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20180407_SCE_02777_24 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20180423_SCE_02766_7 a mwo:MWOActivity ;
+    rdfs:label "WO_20180423_SCE 02766_7" ;
+    dcterms:description "H11 SCE A Clave Steam C/V in Piperack" ;
+    lis:hasParticipant inst:Asset_SCE_02766 ;
+    lis:hasTemporalRegion inst:Instant_WO_20180423_SCE_02766_7 ;
+    lis:representedIn inst:DateDatum_WO_20180423_SCE_02766_7 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20180423_SCE_02766_7 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_UNK ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20180423_SCE_02766_7 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM01 .
+
+inst:WO_20180424_SCE_02778_29 a mwo:MWOActivity ;
+    rdfs:label "WO_20180424_SCE 02778_29" ;
+    dcterms:description "H11 H2 VENT JB PASSING BADLY" ;
+    lis:hasParticipant inst:Asset_SCE_02778 ;
+    lis:hasTemporalRegion inst:Instant_WO_20180424_SCE_02778_29 ;
+    lis:representedIn inst:DateDatum_WO_20180424_SCE_02778_29 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20180424_SCE_02778_29 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_INL ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20180424_SCE_02778_29 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20180530_SCE_02848H_40 a mwo:MWOActivity ;
+    rdfs:label "WO_20180530_SCE 02848H_40" ;
+    dcterms:description "A clave telltale b/v u/s leaking" ;
+    lis:hasParticipant inst:Asset_SCE_02848H ;
+    lis:hasTemporalRegion inst:Instant_WO_20180530_SCE_02848H_40 ;
+    lis:representedIn inst:DateDatum_WO_20180530_SCE_02848H_40 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20180530_SCE_02848H_40 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_INL ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20180530_SCE_02848H_40 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20180719_SCE_02764_2 a mwo:MWOActivity ;
+    rdfs:label "WO_20180719_SCE 02764_2" ;
+    dcterms:description "H11 DNE Install j/bury valves w/ trial p" ;
+    lis:hasParticipant inst:Asset_SCE_02764 ;
+    lis:hasTemporalRegion inst:Instant_WO_20180719_SCE_02764_2 ;
+    lis:representedIn inst:DateDatum_WO_20180719_SCE_02764_2 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20180719_SCE_02764_2 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_UNK ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20180719_SCE_02764_2 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM01 .
+
+inst:WO_20180727_SCE_02767_12 a mwo:MWOActivity ;
+    rdfs:label "WO_20180727_SCE 02767_12" ;
+    dcterms:description "Haz-A Clave High Level Overide on" ;
+    lis:hasParticipant inst:Asset_SCE_02767 ;
+    lis:hasTemporalRegion inst:Instant_WO_20180727_SCE_02767_12 ;
+    lis:representedIn inst:DateDatum_WO_20180727_SCE_02767_12 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20180727_SCE_02767_12 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_AIR ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20180727_SCE_02767_12 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20180921_SCE_02778_30 a mwo:MWOActivity ;
+    rdfs:label "WO_20180921_SCE 02778_30" ;
+    dcterms:description "\"A\" Clave H2 Vent J/Bury Solinoid" ;
+    lis:hasParticipant inst:Asset_SCE_02778 ;
+    lis:hasTemporalRegion inst:Instant_WO_20180921_SCE_02778_30 ;
+    lis:representedIn inst:DateDatum_WO_20180921_SCE_02778_30 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20180921_SCE_02778_30 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_UNK ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20180921_SCE_02778_30 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20180928_SCE_02848H_42 a mwo:MWOActivity ;
+    rdfs:label "WO_20180928_SCE 02848H_42" ;
+    dcterms:description "A clave telltale proxy switch u/s" ;
+    lis:hasParticipant inst:Asset_SCE_02848H ;
+    lis:hasTemporalRegion inst:Instant_WO_20180928_SCE_02848H_42 ;
+    lis:representedIn inst:DateDatum_WO_20180928_SCE_02848H_42 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20180928_SCE_02848H_42 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_UNK ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20180928_SCE_02848H_42 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20181031_SCE_02767_13 a mwo:MWOActivity ;
+    rdfs:label "WO_20181031_SCE 02767_13" ;
+    dcterms:description "A Clave Hi Level Alarm" ;
+    lis:hasParticipant inst:Asset_SCE_02767 ;
+    lis:hasTemporalRegion inst:Instant_WO_20181031_SCE_02767_13 ;
+    lis:representedIn inst:DateDatum_WO_20181031_SCE_02767_13 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20181031_SCE_02767_13 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_AIR ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20181031_SCE_02767_13 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20181107_SCE_02764_3 a mwo:MWOActivity ;
+    rdfs:label "WO_20181107_SCE 02764_3" ;
+    dcterms:description "H14 JDI Flocontrol Jamesbury valves" ;
+    lis:hasParticipant inst:Asset_SCE_02764 ;
+    lis:hasTemporalRegion inst:Instant_WO_20181107_SCE_02764_3 ;
+    lis:representedIn inst:DateDatum_WO_20181107_SCE_02764_3 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20181107_SCE_02764_3 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_UNK ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20181107_SCE_02764_3 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM01 .
+
+inst:WO_20181123_SCE_02774_21 a mwo:MWOActivity ;
+    rdfs:label "WO_20181123_SCE 02774_21" ;
+    dcterms:description "Manway gasket leaking" ;
+    lis:hasParticipant inst:Asset_SCE_02774 ;
+    lis:hasTemporalRegion inst:Instant_WO_20181123_SCE_02774_21 ;
+    lis:representedIn inst:DateDatum_WO_20181123_SCE_02774_21 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20181123_SCE_02774_21 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_INL ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20181123_SCE_02774_21 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+inst:WO_20181220_SCE_02777_25 a mwo:MWOActivity ;
+    rdfs:label "WO_20181220_SCE 02777_25" ;
+    dcterms:description "air vent hammer blind service" ;
+    lis:hasParticipant inst:Asset_SCE_02777 ;
+    lis:hasTemporalRegion inst:Instant_WO_20181220_SCE_02777_25 ;
+    lis:representedIn inst:DateDatum_WO_20181220_SCE_02777_25 ;
+    mwo:hasActualCost inst:ActualCostDatum_WO_20181220_SCE_02777_25 ;
+    mwo:hasFailureModeCode inst:FailureModeCode_UNK ;
+    mwo:hasWorkHours inst:WorkHoursDatum_WO_20181220_SCE_02777_25 ;
+    mwo:hasWorkOrderType inst:WOOrderType_PM03 .
+
+<https://example.org/autoclave/work-order/instances> a owl:Ontology ;
+    owl:imports <http://rds.posccaesar.org/ontology/lis14/ont/core>,
+        <https://nlp-tlp.org/ontology/asset/ont/rdl/>,
+        <https://nlp-tlp.org/ontology/mwo/ont/rdl/> .
+
+inst:ActualCostDatum_WO_20170111_SCE_02848H_35 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170111_SCE 02848H_35" ;
+    lis:datumValue 2085.0 .
+
+inst:ActualCostDatum_WO_20170120_SCE_02767_8 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170120_SCE 02767_8" ;
+    lis:datumValue 13.0 .
+
+inst:ActualCostDatum_WO_20170215_SCE_02767_9 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170215_SCE 02767_9" ;
+    lis:datumValue 1549.0 .
+
+inst:ActualCostDatum_WO_20170228_SCE_02848H_36 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170228_SCE 02848H_36" ;
+    lis:datumValue 1986.0 .
+
+inst:ActualCostDatum_WO_20170410_SCE_02765_4 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170410_SCE 02765_4" ;
+    lis:datumValue 577.0 .
+
+inst:ActualCostDatum_WO_20170420_SCE_02773_15 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170420_SCE 02773_15" ;
+    lis:datumValue 1481.0 .
+
+inst:ActualCostDatum_WO_20170422_SCE_02765_5 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170422_SCE 02765_5" ;
+    lis:datumValue 49.0 .
+
+inst:ActualCostDatum_WO_20170428_SCE_02826H_34 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170428_SCE 02826H_34" ;
+    lis:datumValue 146.0 .
+
+inst:ActualCostDatum_WO_20170506_SCE_02800H_33 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170506_SCE 02800H_33" ;
+    lis:datumValue 470.0 .
+
+inst:ActualCostDatum_WO_20170510_SCE_02767_10 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170510_SCE 02767_10" ;
+    lis:datumValue 7350.0 .
+
+inst:ActualCostDatum_WO_20170522_SCE_02140_1 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170522_SCE 02140_1" ;
+    lis:datumValue 129.0 .
+
+inst:ActualCostDatum_WO_20170624_SCE_02848H_43 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170624_SCE 02848H_43" ;
+    lis:datumValue 104.0 .
+
+inst:ActualCostDatum_WO_20170702_SCE_02848H_41 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170702_SCE 02848H_41" ;
+    lis:datumValue 0.0 .
+
+inst:ActualCostDatum_WO_20170703_SCE_02767_14 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170703_SCE 02767 _14" ;
+    lis:datumValue 0.0 .
+
+inst:ActualCostDatum_WO_20170707_SCE_02774_18 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170707_SCE 02774_18" ;
+    lis:datumValue 1978.0 .
+
+inst:ActualCostDatum_WO_20170715_SCE_02848H_37 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170715_SCE 02848H_37" ;
+    lis:datumValue 2159.0 .
+
+inst:ActualCostDatum_WO_20170719_SCE_02800_32 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170719_SCE 02800_32" ;
+    lis:datumValue 8392.0 .
+
+inst:ActualCostDatum_WO_20170803_SCE_02778_31 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170803_SCE 02778 _31" ;
+    lis:datumValue 1294.0 .
+
+inst:ActualCostDatum_WO_20170809_SCE_02777_26 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170809_SCE 02777 _26" ;
+    lis:datumValue 405.0 .
+
+inst:ActualCostDatum_WO_20170810_SCE_02767_11 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170810_SCE 02767_11" ;
+    lis:datumValue 187.0 .
+
+inst:ActualCostDatum_WO_20170919_SCE_02848H_38 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170919_SCE 02848H_38" ;
+    lis:datumValue 2490.0 .
+
+inst:ActualCostDatum_WO_20170922_SCE_02774_19 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170922_SCE 02774_19" ;
+    lis:datumValue 447.0 .
+
+inst:ActualCostDatum_WO_20170922_SCE_02778_27 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20170922_SCE 02778_27" ;
+    lis:datumValue 1652.0 .
+
+inst:ActualCostDatum_WO_20171017_SCE_02776_22 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20171017_SCE 02776_22" ;
+    lis:datumValue 14656.0 .
+
+inst:ActualCostDatum_WO_20171031_SCE_02848H_39 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20171031_SCE 02848H_39" ;
+    lis:datumValue 120.0 .
+
+inst:ActualCostDatum_WO_20171117_SCE_02774_20 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20171117_SCE 02774_20" ;
+    lis:datumValue 2099.0 .
+
+inst:ActualCostDatum_WO_20171227_SCE_02773_16 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20171227_SCE 02773_16" ;
+    lis:datumValue 109.0 .
+
+inst:ActualCostDatum_WO_20180111_SCE_02773_17 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20180111_SCE 02773_17" ;
+    lis:datumValue 0.0 .
+
+inst:ActualCostDatum_WO_20180227_SCE_02777_23 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20180227_SCE 02777_23" ;
+    lis:datumValue 233.0 .
+
+inst:ActualCostDatum_WO_20180314_SCE_02778_28 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20180314_SCE 02778_28" ;
+    lis:datumValue 1414.0 .
+
+inst:ActualCostDatum_WO_20180322_SCE_02765_6 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20180322_SCE 02765_6" ;
+    lis:datumValue 133.0 .
+
+inst:ActualCostDatum_WO_20180407_SCE_02777_24 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20180407_SCE 02777_24" ;
+    lis:datumValue 528.0 .
+
+inst:ActualCostDatum_WO_20180423_SCE_02766_7 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20180423_SCE 02766_7" ;
+    lis:datumValue 7255.0 .
+
+inst:ActualCostDatum_WO_20180424_SCE_02778_29 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20180424_SCE 02778_29" ;
+    lis:datumValue 1422.0 .
+
+inst:ActualCostDatum_WO_20180530_SCE_02848H_40 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20180530_SCE 02848H_40" ;
+    lis:datumValue 2135.0 .
+
+inst:ActualCostDatum_WO_20180719_SCE_02764_2 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20180719_SCE 02764_2" ;
+    lis:datumValue 7901.0 .
+
+inst:ActualCostDatum_WO_20180727_SCE_02767_12 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20180727_SCE 02767_12" ;
+    lis:datumValue 0.0 .
+
+inst:ActualCostDatum_WO_20180921_SCE_02778_30 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20180921_SCE 02778_30" ;
+    lis:datumValue 627.0 .
+
+inst:ActualCostDatum_WO_20180928_SCE_02848H_42 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20180928_SCE 02848H_42" ;
+    lis:datumValue 187.0 .
+
+inst:ActualCostDatum_WO_20181031_SCE_02767_13 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20181031_SCE 02767_13" ;
+    lis:datumValue 6408.0 .
+
+inst:ActualCostDatum_WO_20181107_SCE_02764_3 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20181107_SCE 02764_3" ;
+    lis:datumValue 1457.0 .
+
+inst:ActualCostDatum_WO_20181123_SCE_02774_21 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20181123_SCE 02774_21" ;
+    lis:datumValue 648.0 .
+
+inst:ActualCostDatum_WO_20181220_SCE_02777_25 a mwo:ActualCostDatum ;
+    rdfs:label "actual cost for WO_20181220_SCE 02777_25" ;
+    lis:datumValue 203.0 .
+
+inst:Asset_SCE_02140 a asset:MaintainableAsset ;
+    rdfs:label "SCE 02140H HP N2 Feed to ACX1 Vlv" ;
+    dcterms:description "SCE 02140H HP N2 Feed to ACX1 Vlv" ;
+    asset:controlLoopID "CL02140" ;
+    asset:functionalLocation "SCE 02140" .
+
+inst:Asset_SCE_02766 a asset:MaintainableAsset ;
+    rdfs:label "SCE 02766 ACX1 Temp Ctrl" ;
+    dcterms:description "SCE 02766 ACX1 Temp Ctrl" ;
+    asset:controlLoopID "CL02766" ;
+    asset:functionalLocation "SCE 02766" .
+
+inst:Asset_SCE_02776 a asset:MaintainableAsset ;
+    rdfs:label "SCE 02776 Leach Air to ACX1 Flow Ctrl" ;
+    dcterms:description "SCE 02776 Leach Air to ACX1 Flow Ctrl" ;
+    asset:controlLoopID "CL02776" ;
+    asset:functionalLocation "SCE 02776" .
+
+inst:Asset_SCE_02800 a asset:MaintainableAsset ;
+    rdfs:label "SCE 02800H ACX1 Feed Flow Ctrl" ;
+    dcterms:description "SCE 02800H ACX1 Feed Flow Ctrl" ;
+    asset:controlLoopID "CL02800" ;
+    asset:functionalLocation "SCE 02800" .
+
+inst:Asset_SCE_02800H a asset:MaintainableAsset ;
+    rdfs:label "SCE 02800H ACX1 Feed Flow Ctrl" ;
+    dcterms:description "SCE 02800H ACX1 Feed Flow Ctrl" ;
+    asset:controlLoopID "CL02800H" ;
+    asset:functionalLocation "SCE 02800H" .
+
+inst:Asset_SCE_02826H a asset:MaintainableAsset ;
+    rdfs:label "SCE 02826H ACX1 Jbury Feed Vlv" ;
+    dcterms:description "SCE 02826H ACX1 Jbury Feed Vlv" ;
+    asset:controlLoopID "CL02826H" ;
+    asset:functionalLocation "SCE 02826H" .
+
+inst:DateDatum_WO_20170111_SCE_02848H_35 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170111_SCE 02848H_35" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170111_SCE_02848H_35 ;
+    lis:temporalValue "2017-01-11"^^xsd:date .
+
+inst:DateDatum_WO_20170120_SCE_02767_8 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170120_SCE 02767_8" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170120_SCE_02767_8 ;
+    lis:temporalValue "2017-01-20"^^xsd:date .
+
+inst:DateDatum_WO_20170215_SCE_02767_9 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170215_SCE 02767_9" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170215_SCE_02767_9 ;
+    lis:temporalValue "2017-02-15"^^xsd:date .
+
+inst:DateDatum_WO_20170228_SCE_02848H_36 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170228_SCE 02848H_36" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170228_SCE_02848H_36 ;
+    lis:temporalValue "2017-02-28"^^xsd:date .
+
+inst:DateDatum_WO_20170410_SCE_02765_4 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170410_SCE 02765_4" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170410_SCE_02765_4 ;
+    lis:temporalValue "2017-04-10"^^xsd:date .
+
+inst:DateDatum_WO_20170420_SCE_02773_15 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170420_SCE 02773_15" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170420_SCE_02773_15 ;
+    lis:temporalValue "2017-04-20"^^xsd:date .
+
+inst:DateDatum_WO_20170422_SCE_02765_5 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170422_SCE 02765_5" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170422_SCE_02765_5 ;
+    lis:temporalValue "2017-04-22"^^xsd:date .
+
+inst:DateDatum_WO_20170428_SCE_02826H_34 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170428_SCE 02826H_34" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170428_SCE_02826H_34 ;
+    lis:temporalValue "2017-04-28"^^xsd:date .
+
+inst:DateDatum_WO_20170506_SCE_02800H_33 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170506_SCE 02800H_33" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170506_SCE_02800H_33 ;
+    lis:temporalValue "2017-05-06"^^xsd:date .
+
+inst:DateDatum_WO_20170510_SCE_02767_10 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170510_SCE 02767_10" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170510_SCE_02767_10 ;
+    lis:temporalValue "2017-05-10"^^xsd:date .
+
+inst:DateDatum_WO_20170522_SCE_02140_1 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170522_SCE 02140_1" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170522_SCE_02140_1 ;
+    lis:temporalValue "2017-05-22"^^xsd:date .
+
+inst:DateDatum_WO_20170624_SCE_02848H_43 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170624_SCE 02848H_43" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170624_SCE_02848H_43 ;
+    lis:temporalValue "2017-06-24"^^xsd:date .
+
+inst:DateDatum_WO_20170702_SCE_02848H_41 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170702_SCE 02848H_41" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170702_SCE_02848H_41 ;
+    lis:temporalValue "2017-07-02"^^xsd:date .
+
+inst:DateDatum_WO_20170703_SCE_02767_14 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170703_SCE 02767 _14" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170703_SCE_02767_14 ;
+    lis:temporalValue "2017-07-03"^^xsd:date .
+
+inst:DateDatum_WO_20170707_SCE_02774_18 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170707_SCE 02774_18" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170707_SCE_02774_18 ;
+    lis:temporalValue "2017-07-07"^^xsd:date .
+
+inst:DateDatum_WO_20170715_SCE_02848H_37 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170715_SCE 02848H_37" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170715_SCE_02848H_37 ;
+    lis:temporalValue "2017-07-15"^^xsd:date .
+
+inst:DateDatum_WO_20170719_SCE_02800_32 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170719_SCE 02800_32" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170719_SCE_02800_32 ;
+    lis:temporalValue "2017-07-19"^^xsd:date .
+
+inst:DateDatum_WO_20170803_SCE_02778_31 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170803_SCE 02778 _31" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170803_SCE_02778_31 ;
+    lis:temporalValue "2017-08-03"^^xsd:date .
+
+inst:DateDatum_WO_20170809_SCE_02777_26 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170809_SCE 02777 _26" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170809_SCE_02777_26 ;
+    lis:temporalValue "2017-08-09"^^xsd:date .
+
+inst:DateDatum_WO_20170810_SCE_02767_11 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170810_SCE 02767_11" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170810_SCE_02767_11 ;
+    lis:temporalValue "2017-08-10"^^xsd:date .
+
+inst:DateDatum_WO_20170919_SCE_02848H_38 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170919_SCE 02848H_38" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170919_SCE_02848H_38 ;
+    lis:temporalValue "2017-09-19"^^xsd:date .
+
+inst:DateDatum_WO_20170922_SCE_02774_19 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170922_SCE 02774_19" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170922_SCE_02774_19 ;
+    lis:temporalValue "2017-09-22"^^xsd:date .
+
+inst:DateDatum_WO_20170922_SCE_02778_27 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20170922_SCE 02778_27" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20170922_SCE_02778_27 ;
+    lis:temporalValue "2017-09-22"^^xsd:date .
+
+inst:DateDatum_WO_20171017_SCE_02776_22 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20171017_SCE 02776_22" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20171017_SCE_02776_22 ;
+    lis:temporalValue "2017-10-17"^^xsd:date .
+
+inst:DateDatum_WO_20171031_SCE_02848H_39 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20171031_SCE 02848H_39" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20171031_SCE_02848H_39 ;
+    lis:temporalValue "2017-10-31"^^xsd:date .
+
+inst:DateDatum_WO_20171117_SCE_02774_20 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20171117_SCE 02774_20" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20171117_SCE_02774_20 ;
+    lis:temporalValue "2017-11-17"^^xsd:date .
+
+inst:DateDatum_WO_20171227_SCE_02773_16 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20171227_SCE 02773_16" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20171227_SCE_02773_16 ;
+    lis:temporalValue "2017-12-27"^^xsd:date .
+
+inst:DateDatum_WO_20180111_SCE_02773_17 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20180111_SCE 02773_17" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20180111_SCE_02773_17 ;
+    lis:temporalValue "2018-01-11"^^xsd:date .
+
+inst:DateDatum_WO_20180227_SCE_02777_23 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20180227_SCE 02777_23" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20180227_SCE_02777_23 ;
+    lis:temporalValue "2018-02-27"^^xsd:date .
+
+inst:DateDatum_WO_20180314_SCE_02778_28 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20180314_SCE 02778_28" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20180314_SCE_02778_28 ;
+    lis:temporalValue "2018-03-14"^^xsd:date .
+
+inst:DateDatum_WO_20180322_SCE_02765_6 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20180322_SCE 02765_6" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20180322_SCE_02765_6 ;
+    lis:temporalValue "2018-03-22"^^xsd:date .
+
+inst:DateDatum_WO_20180407_SCE_02777_24 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20180407_SCE 02777_24" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20180407_SCE_02777_24 ;
+    lis:temporalValue "2018-04-07"^^xsd:date .
+
+inst:DateDatum_WO_20180423_SCE_02766_7 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20180423_SCE 02766_7" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20180423_SCE_02766_7 ;
+    lis:temporalValue "2018-04-23"^^xsd:date .
+
+inst:DateDatum_WO_20180424_SCE_02778_29 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20180424_SCE 02778_29" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20180424_SCE_02778_29 ;
+    lis:temporalValue "2018-04-24"^^xsd:date .
+
+inst:DateDatum_WO_20180530_SCE_02848H_40 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20180530_SCE 02848H_40" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20180530_SCE_02848H_40 ;
+    lis:temporalValue "2018-05-30"^^xsd:date .
+
+inst:DateDatum_WO_20180719_SCE_02764_2 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20180719_SCE 02764_2" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20180719_SCE_02764_2 ;
+    lis:temporalValue "2018-07-19"^^xsd:date .
+
+inst:DateDatum_WO_20180727_SCE_02767_12 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20180727_SCE 02767_12" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20180727_SCE_02767_12 ;
+    lis:temporalValue "2018-07-27"^^xsd:date .
+
+inst:DateDatum_WO_20180921_SCE_02778_30 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20180921_SCE 02778_30" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20180921_SCE_02778_30 ;
+    lis:temporalValue "2018-09-21"^^xsd:date .
+
+inst:DateDatum_WO_20180928_SCE_02848H_42 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20180928_SCE 02848H_42" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20180928_SCE_02848H_42 ;
+    lis:temporalValue "2018-09-28"^^xsd:date .
+
+inst:DateDatum_WO_20181031_SCE_02767_13 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20181031_SCE 02767_13" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20181031_SCE_02767_13 ;
+    lis:temporalValue "2018-10-31"^^xsd:date .
+
+inst:DateDatum_WO_20181107_SCE_02764_3 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20181107_SCE 02764_3" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20181107_SCE_02764_3 ;
+    lis:temporalValue "2018-11-07"^^xsd:date .
+
+inst:DateDatum_WO_20181123_SCE_02774_21 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20181123_SCE 02774_21" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20181123_SCE_02774_21 ;
+    lis:temporalValue "2018-11-23"^^xsd:date .
+
+inst:DateDatum_WO_20181220_SCE_02777_25 a lis:TemporalDatum ;
+    rdfs:label "date datum for WO_20181220_SCE 02777_25" ;
+    lis:quantifiesTemporalRegion inst:Instant_WO_20181220_SCE_02777_25 ;
+    lis:temporalValue "2018-12-20"^^xsd:date .
+
+inst:FailureModeCode_DOP a mwo:MWOFailureModeCode ;
+    rdfs:label "DOP" .
+
+inst:FailureModeCode_ERO a mwo:MWOFailureModeCode ;
+    rdfs:label "ERO" .
+
+inst:FailureModeCode_FTC a mwo:MWOFailureModeCode ;
+    rdfs:label "FTC" .
+
+inst:FailureModeCode_FTI a mwo:MWOFailureModeCode ;
+    rdfs:label "FTI" .
+
+inst:FailureModeCode_FTO a mwo:MWOFailureModeCode ;
+    rdfs:label "FTO" .
+
+inst:WorkHoursDatum_WO_20170111_SCE_02848H_35 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170111_SCE 02848H_35" ;
+    lis:datumValue 2.0 .
+
+inst:WorkHoursDatum_WO_20170120_SCE_02767_8 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170120_SCE 02767_8" ;
+    lis:datumValue 0.5 .
+
+inst:WorkHoursDatum_WO_20170215_SCE_02767_9 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170215_SCE 02767_9" ;
+    lis:datumValue 2.0 .
+
+inst:WorkHoursDatum_WO_20170228_SCE_02848H_36 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170228_SCE 02848H_36" ;
+    lis:datumValue 1.0 .
+
+inst:WorkHoursDatum_WO_20170410_SCE_02765_4 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170410_SCE 02765_4" ;
+    lis:datumValue 1.0 .
+
+inst:WorkHoursDatum_WO_20170420_SCE_02773_15 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170420_SCE 02773_15" ;
+    lis:datumValue 5.5 .
+
+inst:WorkHoursDatum_WO_20170422_SCE_02765_5 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170422_SCE 02765_5" ;
+    lis:datumValue 1.0 .
+
+inst:WorkHoursDatum_WO_20170428_SCE_02826H_34 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170428_SCE 02826H_34" ;
+    lis:datumValue 3.0 .
+
+inst:WorkHoursDatum_WO_20170506_SCE_02800H_33 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170506_SCE 02800H_33" ;
+    lis:datumValue 1.5 .
+
+inst:WorkHoursDatum_WO_20170510_SCE_02767_10 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170510_SCE 02767_10" ;
+    lis:datumValue 7.5 .
+
+inst:WorkHoursDatum_WO_20170522_SCE_02140_1 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170522_SCE 02140_1" ;
+    lis:datumValue 2.0 .
+
+inst:WorkHoursDatum_WO_20170624_SCE_02848H_43 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170624_SCE 02848H_43" ;
+    lis:datumValue 1.5 .
+
+inst:WorkHoursDatum_WO_20170702_SCE_02848H_41 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170702_SCE 02848H_41" ;
+    lis:datumValue 1.0 .
+
+inst:WorkHoursDatum_WO_20170703_SCE_02767_14 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170703_SCE 02767 _14" ;
+    lis:datumValue 0.0 .
+
+inst:WorkHoursDatum_WO_20170707_SCE_02774_18 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170707_SCE 02774_18" ;
+    lis:datumValue 5.0 .
+
+inst:WorkHoursDatum_WO_20170715_SCE_02848H_37 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170715_SCE 02848H_37" ;
+    lis:datumValue 2.0 .
+
+inst:WorkHoursDatum_WO_20170719_SCE_02800_32 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170719_SCE 02800_32" ;
+    lis:datumValue 4.0 .
+
+inst:WorkHoursDatum_WO_20170803_SCE_02778_31 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170803_SCE 02778 _31" ;
+    lis:datumValue 2.0 .
+
+inst:WorkHoursDatum_WO_20170809_SCE_02777_26 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170809_SCE 02777 _26" ;
+    lis:datumValue 2.0 .
+
+inst:WorkHoursDatum_WO_20170810_SCE_02767_11 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170810_SCE 02767_11" ;
+    lis:datumValue 2.0 .
+
+inst:WorkHoursDatum_WO_20170919_SCE_02848H_38 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170919_SCE 02848H_38" ;
+    lis:datumValue 3.0 .
+
+inst:WorkHoursDatum_WO_20170922_SCE_02774_19 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170922_SCE 02774_19" ;
+    lis:datumValue 2.0 .
+
+inst:WorkHoursDatum_WO_20170922_SCE_02778_27 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20170922_SCE 02778_27" ;
+    lis:datumValue 4.0 .
+
+inst:WorkHoursDatum_WO_20171017_SCE_02776_22 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20171017_SCE 02776_22" ;
+    lis:datumValue 23.0 .
+
+inst:WorkHoursDatum_WO_20171031_SCE_02848H_39 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20171031_SCE 02848H_39" ;
+    lis:datumValue 1.0 .
+
+inst:WorkHoursDatum_WO_20171117_SCE_02774_20 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20171117_SCE 02774_20" ;
+    lis:datumValue 1.5 .
+
+inst:WorkHoursDatum_WO_20171227_SCE_02773_16 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20171227_SCE 02773_16" ;
+    lis:datumValue 0.5 .
+
+inst:WorkHoursDatum_WO_20180111_SCE_02773_17 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20180111_SCE 02773_17" ;
+    lis:datumValue 0.0 .
+
+inst:WorkHoursDatum_WO_20180227_SCE_02777_23 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20180227_SCE 02777_23" ;
+    lis:datumValue 1.0 .
+
+inst:WorkHoursDatum_WO_20180314_SCE_02778_28 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20180314_SCE 02778_28" ;
+    lis:datumValue 2.0 .
+
+inst:WorkHoursDatum_WO_20180322_SCE_02765_6 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20180322_SCE 02765_6" ;
+    lis:datumValue 1.0 .
+
+inst:WorkHoursDatum_WO_20180407_SCE_02777_24 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20180407_SCE 02777_24" ;
+    lis:datumValue 2.0 .
+
+inst:WorkHoursDatum_WO_20180423_SCE_02766_7 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20180423_SCE 02766_7" ;
+    lis:datumValue 35.0 .
+
+inst:WorkHoursDatum_WO_20180424_SCE_02778_29 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20180424_SCE 02778_29" ;
+    lis:datumValue 2.0 .
+
+inst:WorkHoursDatum_WO_20180530_SCE_02848H_40 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20180530_SCE 02848H_40" ;
+    lis:datumValue 1.0 .
+
+inst:WorkHoursDatum_WO_20180719_SCE_02764_2 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20180719_SCE 02764_2" ;
+    lis:datumValue 0.0 .
+
+inst:WorkHoursDatum_WO_20180727_SCE_02767_12 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20180727_SCE 02767_12" ;
+    lis:datumValue 1.0 .
+
+inst:WorkHoursDatum_WO_20180921_SCE_02778_30 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20180921_SCE 02778_30" ;
+    lis:datumValue 3.0 .
+
+inst:WorkHoursDatum_WO_20180928_SCE_02848H_42 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20180928_SCE 02848H_42" ;
+    lis:datumValue 1.5 .
+
+inst:WorkHoursDatum_WO_20181031_SCE_02767_13 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20181031_SCE 02767_13" ;
+    lis:datumValue 1.0 .
+
+inst:WorkHoursDatum_WO_20181107_SCE_02764_3 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20181107_SCE 02764_3" ;
+    lis:datumValue 6.0 .
+
+inst:WorkHoursDatum_WO_20181123_SCE_02774_21 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20181123_SCE 02774_21" ;
+    lis:datumValue 4.0 .
+
+inst:WorkHoursDatum_WO_20181220_SCE_02777_25 a mwo:WorkHoursDatum ;
+    rdfs:label "work hours for WO_20181220_SCE 02777_25" ;
+    lis:datumValue 2.0 .
+
+inst:Asset_SCE_02764 a asset:MaintainableAsset ;
+    rdfs:label "SCE 02764 ACX1 Bottom Disch Jbury Vlv" ;
+    dcterms:description "SCE 02764 ACX1 Bottom Disch Jbury Vlv" ;
+    asset:controlLoopID "CL02764" ;
+    asset:functionalLocation "SCE 02764" .
+
+inst:Instant_WO_20170111_SCE_02848H_35 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170111_SCE 02848H_35" .
+
+inst:Instant_WO_20170120_SCE_02767_8 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170120_SCE 02767_8" .
+
+inst:Instant_WO_20170215_SCE_02767_9 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170215_SCE 02767_9" .
+
+inst:Instant_WO_20170228_SCE_02848H_36 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170228_SCE 02848H_36" .
+
+inst:Instant_WO_20170410_SCE_02765_4 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170410_SCE 02765_4" .
+
+inst:Instant_WO_20170420_SCE_02773_15 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170420_SCE 02773_15" .
+
+inst:Instant_WO_20170422_SCE_02765_5 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170422_SCE 02765_5" .
+
+inst:Instant_WO_20170428_SCE_02826H_34 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170428_SCE 02826H_34" .
+
+inst:Instant_WO_20170506_SCE_02800H_33 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170506_SCE 02800H_33" .
+
+inst:Instant_WO_20170510_SCE_02767_10 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170510_SCE 02767_10" .
+
+inst:Instant_WO_20170522_SCE_02140_1 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170522_SCE 02140_1" .
+
+inst:Instant_WO_20170624_SCE_02848H_43 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170624_SCE 02848H_43" .
+
+inst:Instant_WO_20170702_SCE_02848H_41 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170702_SCE 02848H_41" .
+
+inst:Instant_WO_20170703_SCE_02767_14 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170703_SCE 02767 _14" .
+
+inst:Instant_WO_20170707_SCE_02774_18 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170707_SCE 02774_18" .
+
+inst:Instant_WO_20170715_SCE_02848H_37 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170715_SCE 02848H_37" .
+
+inst:Instant_WO_20170719_SCE_02800_32 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170719_SCE 02800_32" .
+
+inst:Instant_WO_20170803_SCE_02778_31 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170803_SCE 02778 _31" .
+
+inst:Instant_WO_20170809_SCE_02777_26 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170809_SCE 02777 _26" .
+
+inst:Instant_WO_20170810_SCE_02767_11 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170810_SCE 02767_11" .
+
+inst:Instant_WO_20170919_SCE_02848H_38 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170919_SCE 02848H_38" .
+
+inst:Instant_WO_20170922_SCE_02774_19 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170922_SCE 02774_19" .
+
+inst:Instant_WO_20170922_SCE_02778_27 a lis:InstantRegion ;
+    rdfs:label "date of WO_20170922_SCE 02778_27" .
+
+inst:Instant_WO_20171017_SCE_02776_22 a lis:InstantRegion ;
+    rdfs:label "date of WO_20171017_SCE 02776_22" .
+
+inst:Instant_WO_20171031_SCE_02848H_39 a lis:InstantRegion ;
+    rdfs:label "date of WO_20171031_SCE 02848H_39" .
+
+inst:Instant_WO_20171117_SCE_02774_20 a lis:InstantRegion ;
+    rdfs:label "date of WO_20171117_SCE 02774_20" .
+
+inst:Instant_WO_20171227_SCE_02773_16 a lis:InstantRegion ;
+    rdfs:label "date of WO_20171227_SCE 02773_16" .
+
+inst:Instant_WO_20180111_SCE_02773_17 a lis:InstantRegion ;
+    rdfs:label "date of WO_20180111_SCE 02773_17" .
+
+inst:Instant_WO_20180227_SCE_02777_23 a lis:InstantRegion ;
+    rdfs:label "date of WO_20180227_SCE 02777_23" .
+
+inst:Instant_WO_20180314_SCE_02778_28 a lis:InstantRegion ;
+    rdfs:label "date of WO_20180314_SCE 02778_28" .
+
+inst:Instant_WO_20180322_SCE_02765_6 a lis:InstantRegion ;
+    rdfs:label "date of WO_20180322_SCE 02765_6" .
+
+inst:Instant_WO_20180407_SCE_02777_24 a lis:InstantRegion ;
+    rdfs:label "date of WO_20180407_SCE 02777_24" .
+
+inst:Instant_WO_20180423_SCE_02766_7 a lis:InstantRegion ;
+    rdfs:label "date of WO_20180423_SCE 02766_7" .
+
+inst:Instant_WO_20180424_SCE_02778_29 a lis:InstantRegion ;
+    rdfs:label "date of WO_20180424_SCE 02778_29" .
+
+inst:Instant_WO_20180530_SCE_02848H_40 a lis:InstantRegion ;
+    rdfs:label "date of WO_20180530_SCE 02848H_40" .
+
+inst:Instant_WO_20180719_SCE_02764_2 a lis:InstantRegion ;
+    rdfs:label "date of WO_20180719_SCE 02764_2" .
+
+inst:Instant_WO_20180727_SCE_02767_12 a lis:InstantRegion ;
+    rdfs:label "date of WO_20180727_SCE 02767_12" .
+
+inst:Instant_WO_20180921_SCE_02778_30 a lis:InstantRegion ;
+    rdfs:label "date of WO_20180921_SCE 02778_30" .
+
+inst:Instant_WO_20180928_SCE_02848H_42 a lis:InstantRegion ;
+    rdfs:label "date of WO_20180928_SCE 02848H_42" .
+
+inst:Instant_WO_20181031_SCE_02767_13 a lis:InstantRegion ;
+    rdfs:label "date of WO_20181031_SCE 02767_13" .
+
+inst:Instant_WO_20181107_SCE_02764_3 a lis:InstantRegion ;
+    rdfs:label "date of WO_20181107_SCE 02764_3" .
+
+inst:Instant_WO_20181123_SCE_02774_21 a lis:InstantRegion ;
+    rdfs:label "date of WO_20181123_SCE 02774_21" .
+
+inst:Instant_WO_20181220_SCE_02777_25 a lis:InstantRegion ;
+    rdfs:label "date of WO_20181220_SCE 02777_25" .
+
+inst:Asset_SCE_02765 a asset:MaintainableAsset ;
+    rdfs:label "SCE 02765 ACX1 Top Disch Jbury Vlv" ;
+    dcterms:description "SCE 02765 ACX1 Top Disch Jbury Vlv" ;
+    asset:controlLoopID "CL02765" ;
+    asset:functionalLocation "SCE 02765" .
+
+inst:Asset_SCE_02773 a asset:MaintainableAsset ;
+    rdfs:label "SCE 02773 ACX1 Press 1" ;
+    dcterms:description "SCE 02773 ACX1 Press 1" ;
+    asset:controlLoopID "CL02773" ;
+    asset:functionalLocation "SCE 02773" .
+
+inst:Asset_SCE_02774 a asset:MaintainableAsset ;
+    rdfs:label "SCE 02774-1/-2/-3 Vent/Air/H2 Press Ctrl" ;
+    dcterms:description "SCE 02774-1/-2/-3 Vent/Air/H2 Press Ctrl" ;
+    asset:controlLoopID "CL02774" ;
+    asset:functionalLocation "SCE 02774" .
+
+inst:Asset_SCE_02777 a asset:MaintainableAsset ;
+    rdfs:label "02777 Leach Air Vent" ;
+    dcterms:description "02777 Leach Air Vent" ;
+    asset:controlLoopID "CL02777" ;
+    asset:functionalLocation "SCE 02777" .
+
+inst:FailureModeCode_PLU a mwo:MWOFailureModeCode ;
+    rdfs:label "PLU" .
+
+inst:Asset_SCE_02778 a asset:MaintainableAsset ;
+    rdfs:label "02778 H2 Vent Jamesbury Valve" ;
+    dcterms:description "02778 H2 Vent Jamesbury Valve" ;
+    asset:controlLoopID "CL02778" ;
+    asset:functionalLocation "SCE 02778" .
+
+inst:Asset_SCE_02767 a asset:MaintainableAsset ;
+    rdfs:label "SCE 02767 ACX1 Level Hi" ;
+    dcterms:description "SCE 02767 ACX1 Level Hi" ;
+    asset:controlLoopID "CL02767" ;
+    asset:functionalLocation "SCE 02767" .
+
+inst:WOOrderType_PM01 a mwo:MWOActivityType ;
+    rdfs:label "PM01" .
+
+inst:FailureModeCode_AIR a mwo:MWOFailureModeCode ;
+    rdfs:label "AIR" .
+
+inst:Asset_SCE_02848H a asset:MaintainableAsset ;
+    rdfs:label "02848 A-Clave Tell-Tale" ;
+    dcterms:description "02848 A-Clave Tell-Tale" ;
+    asset:controlLoopID "CL02826H" ;
+    asset:functionalLocation "SCE 02848H" .
+
+inst:FailureModeCode_INL a mwo:MWOFailureModeCode ;
+    rdfs:label "INL" .
+
+inst:FailureModeCode_UNK a mwo:MWOFailureModeCode ;
+    rdfs:label "UNK" .
+
+inst:WOOrderType_PM03 a mwo:MWOActivityType ;
+    rdfs:label "PM03" .
+
