@@ -90,34 +90,11 @@ RV01XV02140H-1,RV01XV02140H,RV01,Control loop,CL 02140H,XV02140H,Actuated on/off
 RV01XV02140H-2,RV01XV02140H,RV01,Control loop,CL 02140H,XV02140H,Actuated on/off valve,VA,Valves,GA,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,HP Nitrogen to A Redn vessel block valve,Passing,Wear,Y,N2 leaking into vessel,Spare,Rotable spare,,
 RV01ZSO02140H-1,RV01ZSO02140H,RV01,Control loop,Loop 02140H,ZSO02140H,Position switch open,IP,Input device,LP,PLU,Plugged/ choked,External influence,Blockage/ plugged,HP Nitrogen to A Redn clave block valve,Proxy not switching,Knocked/ ingress,N,Unable to control clave pressure,PM,Align & Stroke,TAR,Stops sequence if in the middle of cycle. High count of failures.
 RV01ZSC02140H-2,RV01ZSC02140H,RV01,Control loop,Loop 02140H,ZSC02140H,Position switch closed,IP,Input device,LP,PLU,Plugged/ choked,External influence,Blockage/ plugged,HP Nitrogen to A Redn clave block valve,Proxy not switching,Knocked/ ingress,N,Unable to control clave pressure,PM,Align & Stroke,TAR,Stops sequence if in the middle of cycle. High count of failures.
-"RV01FIT02800H-1 
-","RV01FIT02800H 
-",RV01,Control loop,Loop 02800H,"FIT02800H 
-",Flow indicating transmitter,IP,Input device,FS,AIR,Abnormal Instrument Air,Instrument failure,Faulty signal,Control clave feed,Inaccurate reading,Inherent,Y,Erratic control of clave feed,PM,Internal inspection of the flow meter,208W,Rely on high level switch. Over filling of the clave. LOPA 25.18
-"RV01FIT02800H-2 
-","RV01FIT02800H 
-",RV01,Control loop,Loop 02800H,"FIT02800H 
-",Flow indicating transmitter,IP,Input device,FS,AIR,Abnormal Instrument Air,External influence,Blockage/ plugged,Control clave feed,Inaccurate reading,Buildup/ sheddar damage,Y,Inaccurate flow reading,PM,Internal inspection of the flow meter,208W,Rely on high level switch. Over filling of the clave. LOPA 25.19
-"RV01FIT02800H-3 
-","RV01FIT02800H 
-",RV01,Control loop,CL 02800H,"FIT02800H 
-",Flow indicating transmitter,IP,Input device,FS,AIR,Abnormal Instrument Air,Instrument failure,Control failure,Control vessel feed,Leak to external,Sheddar seal deterioration,N,Feed leaking into vessel,PM,Inspection of the flow meter and seals,208W,
-"RV01FV02800H-1 
-","RV01FV02800H 
-",RV01,Control loop,CL 02800H,"FV02800H 
-",Flow valve,VA,Valves,GL,ELP,External leakage process medium,Mechanical failure,Leakage,Control vessel feed,Leak to external,Sheddar seal deterioration,N,Feed leaking into vessel,Spare,Rotable spare,As needed,
-"RV01FV02800H-2 
-","RV01FV02800H 
-",RV01,Control loop,CL 02800H,"FV02800H 
-",Flow valve,VA,Valves,GL,SPO,Spurious operation,Mechanical failure,Sticking,Control vessel feed,Erratic control,Sticky movement,Y,Erratic control of vessel feed,PM,Stroke check,104W,
-"RV01FV02800H-3 
-","RV01FV02800H 
-",RV01,Control loop,CL 02800H,"FV02800H 
-",Flow valve,VA,Valves,GL,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,Control vessel feed,Passing,Wear,Y,Feed leaking when valve is closed,PM,OSR,52W,
-"RV01FV02800H-4 
-","RV01FV02800H 
-",RV01,Control loop,CL 02800H,"FV02800H 
-",Flow valve,VA,Valves,GL,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,Control vessel feed,Passing,Wear,Y,Feed leaking when valve is closed,Spare,Rotable spare,As needed,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
+RV01FIT02800H-1,RV01FIT02800H,RV01,Control loop,Loop 02800H,FIT02800H,Flow indicating transmitter,IP,Input device,FS,AIR,Abnormal Instrument Air,Instrument failure,Faulty signal,Control clave feed,Inaccurate reading,Inherent,Y,Erratic control of clave feed,PM,Internal inspection of the flow meter,208W,Rely on high level switch. Over filling of the clave. LOPA 25.18
+RV01FIT02800H-2,RV01FIT02800H,RV01,Control loop,Loop 02800H,FIT02800H,Flow indicating transmitter,IP,Input device,FS,AIR,Abnormal Instrument Air,External influence,Blockage/ plugged,Control clave feed,Inaccurate reading,Buildup/ sheddar damage,Y,Inaccurate flow reading,PM,Internal inspection of the flow meter,208W,Rely on high level switch. Over filling of the clave. LOPA 25.19
+RV01FIT02800H-3,RV01FIT02800H,RV01,Control loop,CL 02800H,FIT02800H,Flow indicating transmitter,IP,Input device,FS,AIR,Abnormal Instrument Air,Instrument failure,Control failure,Control vessel feed,Leak to external,Sheddar seal deterioration,N,Feed leaking into vessel,PM,Inspection of the flow meter and seals,208W,
+RV01FV02800H-1,RV01FV02800H,RV01,Control loop,CL 02800H,FV02800H,Flow valve,VA,Valves,GL,ELP,External leakage process medium,Mechanical failure,Leakage,Control vessel feed,Leak to external,Sheddar seal deterioration,N,Feed leaking into vessel,Spare,Rotable spare,As needed,
+RV01FV02800H-2,RV01FV02800H,RV01,Control loop,CL 02800H,FV02800H,Flow valve,VA,Valves,GL,SPO,Spurious operation,Mechanical failure,Sticking,Control vessel feed,Erratic control,Sticky movement,Y,Erratic control of vessel feed,PM,Stroke check,104W,
+RV01FV02800H-3,RV01FV02800H,RV01,Control loop,CL 02800H,FV02800H,Flow valve,VA,Valves,GL,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,Control vessel feed,Passing,Wear,Y,Feed leaking when valve is closed,PM,OSR,52W,
+RV01FV02800H-4,RV01FV02800H,RV01,Control loop,CL 02800H,FV02800H,Flow valve,VA,Valves,GL,INL,Internal leakage,Mechanical failure,Clearance/ alignment failure,Control vessel feed,Passing,Wear,Y,Feed leaking when valve is closed,Spare,Rotable spare,As needed,
+
