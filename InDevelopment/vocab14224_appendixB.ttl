@@ -6,8 +6,8 @@
 @prefix i14224: <https://iso14224.org/ontology/i14224/rdl/> .
 @prefix cmns-av: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .
 
-<http://iso14224.org/ontology/i14224/ont/appendixB/> rdf:type owl:Ontology ;
-                                        owl:imports <http://iso14224.org/ontology/i14224/ont/core> .
+<https://iso14224.org/ontology/i14224/ont/appendixB/> rdf:type owl:Ontology ;
+                                        owl:imports <https://iso14224.org/ontology/i14224/ont/clause3> .
 
 #################################################################
 #    Object Properties

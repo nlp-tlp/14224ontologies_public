@@ -9,10 +9,10 @@
 @prefix cmnsav: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .
 @prefix i14224: <https://iso14224.org/ontology/i14224/rdl/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://iso14224.org/ontology/i14224/ont/core> .
+@base <https://iso14224.org/ontology/i14224/ont/clause3> .
 
-<http://iso14224.org/ontology/i14224/ont/core> rdf:type owl:Ontology ;
-                                                owl:versionIRI <http://iso14224.org/ontology/i14224/ont/core/1.1> ;
+<https://iso14224.org/ontology/i14224/ont/clause3> rdf:type owl:Ontology ;
+                                                owl:versionIRI <https://iso14224.org/ontology/i14224/ont/clause3/1.1> ;
                                                 dcterms:creator <https://orcid.org/0000-0002-7336-3932> ;
                                                 dcterms:license <https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE> ;
                                                 dcterms:rights "See github"@en ;
@@ -113,7 +113,7 @@ cmnsav:usageNote rdf:type owl:AnnotationProperty .
 ###  https://iso14224.org/ontology/i14224/rdl/hasDataType
 i14224:hasDataType rdf:type owl:ObjectProperty ;
                    rdfs:range i14224:TypeData ;
-                   rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                   rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                    rdfs:label "hasDataType" ;
                    skos:definition "identifies the type of data of interest" .
 
@@ -122,7 +122,7 @@ i14224:hasDataType rdf:type owl:ObjectProperty ;
 i14224:hasFailureEventType rdf:type owl:ObjectProperty ;
                            rdfs:domain i14224:Failure ;
                            rdfs:range i14224:TypeFailureEvent ;
-                           rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                           rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                            rdfs:label "hasFailureEventType" ;
                            skos:definition "identifies the type of failure event" .
 
@@ -130,7 +130,7 @@ i14224:hasFailureEventType rdf:type owl:ObjectProperty ;
 ###  https://iso14224.org/ontology/i14224/rdl/hasMaintenanceStrategy
 i14224:hasMaintenanceStrategy rdf:type owl:ObjectProperty ;
                               rdfs:range i14224:TypeMaintenanceStrategy ;
-                              rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                              rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                               rdfs:label "hasMaintenanceStrategy" ;
                               skos:definition "identifies the maintenance strategy type" .
 
@@ -138,7 +138,7 @@ i14224:hasMaintenanceStrategy rdf:type owl:ObjectProperty ;
 ###  https://iso14224.org/ontology/i14224/rdl/hasReliabilityMeasure
 i14224:hasReliabilityMeasure rdf:type owl:ObjectProperty ;
                              rdfs:range i14224:TypeReliabilityMeasure ;
-                             rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                             rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                              rdfs:label "hasReliabilityMeasure" ;
                              skos:definition "identifies the reliability measure of interest" .
 
@@ -147,7 +147,7 @@ i14224:hasReliabilityMeasure rdf:type owl:ObjectProperty ;
 i14224:hasState rdf:type owl:ObjectProperty ;
                 rdfs:domain i14224:Item ;
                 rdfs:range i14224:TypeMaterialState ;
-                rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                 rdfs:label "hasState" ;
                 skos:definition "identifies the state of the item" ;
                 i14224:iofIRI "" ,
@@ -158,7 +158,7 @@ i14224:hasState rdf:type owl:ObjectProperty ;
 i14224:hasTestType rdf:type owl:ObjectProperty ;
                    rdfs:domain i14224:DetectionMethod ;
                    rdfs:range i14224:TypeTest ;
-                   rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                   rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                    rdfs:label "hasTestType" ;
                    skos:definition "identifies the reliability measure of interest" .
 
@@ -169,7 +169,7 @@ i14224:hasTestType rdf:type owl:ObjectProperty ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/Boundary
 i14224:Boundary rdf:type owl:Class ;
-                rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                 rdfs:label "Boundary"@en ;
                 rdfs:seeAlso ""@en ;
                 skos:altLabel ""@en ;
@@ -186,7 +186,7 @@ i14224:Boundary rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/Cycle
 i14224:Cycle rdf:type owl:Class ;
-             rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+             rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
              rdfs:label "Cycle"@en ;
              rdfs:seeAlso ""@en ;
              skos:altLabel ""@en ;
@@ -203,7 +203,7 @@ i14224:Cycle rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/DesignLife
 i14224:DesignLife rdf:type owl:Class ;
-                  rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                  rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                   rdfs:label "DesignLife"@en ;
                   rdfs:seeAlso ""@en ;
                   skos:altLabel ""@en ;
@@ -220,7 +220,7 @@ i14224:DesignLife rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/DetectionMethod
 i14224:DetectionMethod rdf:type owl:Class ;
-                       rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                       rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                        rdfs:label "Detection method"@en ;
                        rdfs:seeAlso ""@en ;
                        skos:altLabel ""@en ;
@@ -237,7 +237,7 @@ i14224:DetectionMethod rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/Downstream
 i14224:Downstream rdf:type owl:Class ;
-                  rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                  rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                   rdfs:label "Downstream"@en ;
                   rdfs:seeAlso ""@en ;
                   skos:altLabel ""@en ;
@@ -254,7 +254,7 @@ i14224:Downstream rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/Downtime
 i14224:Downtime rdf:type owl:Class ;
-                rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                 rdfs:label "Downtime"@en ;
                 rdfs:seeAlso ""@en ;
                 skos:altLabel ""@en ;
@@ -272,7 +272,7 @@ i14224:Downtime rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/EquipmentClass
 i14224:EquipmentClass rdf:type owl:Class ;
-                      rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                      rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                       rdfs:label "Equipment class"@en ;
                       rdfs:seeAlso ""@en ;
                       skos:altLabel ""@en ;
@@ -289,7 +289,7 @@ i14224:EquipmentClass rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/EquipmentType
 i14224:EquipmentType rdf:type owl:Class ;
-                     rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                      rdfs:label "Equipment type"@en ;
                      rdfs:seeAlso ""@en ;
                      skos:altLabel ""@en ;
@@ -306,7 +306,7 @@ i14224:EquipmentType rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/EquipmentUnit
 i14224:EquipmentUnit rdf:type owl:Class ;
-                     rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                      rdfs:label "Equipment unit"@en ;
                      rdfs:seeAlso ""@en ;
                      skos:altLabel ""@en ;
@@ -323,7 +323,7 @@ i14224:EquipmentUnit rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/Error
 i14224:Error rdf:type owl:Class ;
-             rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+             rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
              rdfs:label "Error"@en ;
              rdfs:seeAlso ""@en ;
              skos:altLabel "Discrepancy"@en ;
@@ -341,7 +341,7 @@ i14224:Error rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/Failure
 i14224:Failure rdf:type owl:Class ;
-               rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                rdfs:label "Failure (event)"@en ;
                rdfs:seeAlso ""@en ;
                skos:altLabel "Failure event"@en ;
@@ -360,7 +360,7 @@ i14224:Failure rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/FailureCause
 i14224:FailureCause rdf:type owl:Class ;
-                    rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                     rdfs:label "Failure cause"@en ;
                     rdfs:seeAlso ""@en ;
                     skos:altLabel "Root cause"@en ;
@@ -377,7 +377,7 @@ i14224:FailureCause rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/FailureImpact
 i14224:FailureImpact rdf:type owl:Class ;
-                     rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                      rdfs:label "Failure impact"@en ;
                      rdfs:seeAlso ""@en ;
                      skos:altLabel "Failure consequence"@en ,
@@ -399,7 +399,7 @@ i14224:FailureImpact rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/FailureMechanism
 i14224:FailureMechanism rdf:type owl:Class ;
-                        rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                        rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                         rdfs:label "Failure mechanism"@en ;
                         rdfs:seeAlso ""@en ;
                         skos:altLabel ""@en ;
@@ -416,7 +416,7 @@ i14224:FailureMechanism rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/FailureMode
 i14224:FailureMode rdf:type owl:Class ;
-                   rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                   rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                    rdfs:label "Failure mode"@en ;
                    rdfs:seeAlso ""@en ;
                    skos:altLabel ""@en ;
@@ -434,7 +434,7 @@ i14224:FailureMode rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/Fault
 i14224:Fault rdf:type owl:Class ;
-             rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+             rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
              rdfs:label "Fault"@en ;
              rdfs:seeAlso ""@en ;
              skos:altLabel ""@en ;
@@ -453,7 +453,7 @@ i14224:Fault rdf:type owl:Class ;
 ###  https://iso14224.org/ontology/i14224/rdl/HumanError
 i14224:HumanError rdf:type owl:Class ;
                   rdfs:subClassOf i14224:Error ;
-                  rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                  rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                   rdfs:label "Human error"@en ;
                   rdfs:seeAlso ""@en ;
                   skos:altLabel ""@en ;
@@ -471,7 +471,7 @@ i14224:HumanError rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/HumanFatigue
 i14224:HumanFatigue rdf:type owl:Class ;
-                    rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                     rdfs:label "Human fatigue"@en ;
                     rdfs:seeAlso ""@en ;
                     skos:altLabel ""@en ;
@@ -488,7 +488,7 @@ i14224:HumanFatigue rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/IdleTime
 i14224:IdleTime rdf:type owl:Class ;
-                rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                 rdfs:label "Idle time"@en ;
                 rdfs:seeAlso ""@en ;
                 skos:altLabel ""@en ;
@@ -506,7 +506,7 @@ i14224:IdleTime rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/IndentureLevel
 i14224:IndentureLevel rdf:type owl:Class ;
-                      rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                      rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                       rdfs:label "Indenture"@en ;
                       rdfs:seeAlso ""@en ;
                       skos:altLabel ""@en ;
@@ -523,7 +523,7 @@ i14224:IndentureLevel rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/Item
 i14224:Item rdf:type owl:Class ;
-            rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+            rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
             rdfs:label "Item"@en ;
             rdfs:seeAlso ""@en ;
             skos:altLabel ""@en ;
@@ -542,7 +542,7 @@ i14224:Item rdf:type owl:Class ;
 ###  https://iso14224.org/ontology/i14224/rdl/LatentFault
 i14224:LatentFault rdf:type owl:Class ;
                    rdfs:subClassOf i14224:Fault ;
-                   rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                   rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                    rdfs:label "Latent fault"@en ;
                    rdfs:seeAlso ""@en ;
                    skos:altLabel "undetected fault"@en ;
@@ -559,7 +559,7 @@ i14224:LatentFault rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/LifeCycle
 i14224:LifeCycle rdf:type owl:Class ;
-                 rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                 rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                  rdfs:label "Life cycle"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
@@ -576,7 +576,7 @@ i14224:LifeCycle rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/MaintainableItem
 i14224:MaintainableItem rdf:type owl:Class ;
-                        rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                        rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                         rdfs:label "Maintainable item"@en ;
                         rdfs:seeAlso ""@en ;
                         skos:altLabel ""@en ;
@@ -593,7 +593,7 @@ i14224:MaintainableItem rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/Maintenance
 i14224:Maintenance rdf:type owl:Class ;
-                   rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                   rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                    rdfs:label "Maintenance"@en ;
                    rdfs:seeAlso ""@en ;
                    skos:altLabel ""@en ;
@@ -611,7 +611,7 @@ i14224:Maintenance rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/MaintenanceConcept
 i14224:MaintenanceConcept rdf:type owl:Class ;
-                          rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                          rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                           rdfs:label "Maintenance concept"@en ;
                           rdfs:seeAlso ""@en ;
                           skos:altLabel ""@en ;
@@ -628,7 +628,7 @@ i14224:MaintenanceConcept rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/MaintenanceImpact
 i14224:MaintenanceImpact rdf:type owl:Class ;
-                         rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                         rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                          rdfs:label "Maintenance impact"@en ;
                          rdfs:seeAlso ""@en ;
                          skos:altLabel ""@en ;
@@ -645,7 +645,7 @@ i14224:MaintenanceImpact rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/MaintenanceManHours
 i14224:MaintenanceManHours rdf:type owl:Class ;
-                           rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                           rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                            rdfs:label "Maintenance man-hours"@en ;
                            rdfs:seeAlso ""@en ;
                            skos:altLabel ""@en ;
@@ -662,7 +662,7 @@ i14224:MaintenanceManHours rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/MaintenancePlan
 i14224:MaintenancePlan rdf:type owl:Class ;
-                       rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                       rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                        rdfs:label "Maintenance plan"@en ;
                        rdfs:seeAlso ""@en ;
                        skos:altLabel ""@en ;
@@ -679,7 +679,7 @@ i14224:MaintenancePlan rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/MaintenanceRecord
 i14224:MaintenanceRecord rdf:type owl:Class ;
-                         rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                         rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                          rdfs:label "Maintenance record"@en ;
                          rdfs:seeAlso ""@en ;
                          skos:altLabel ""@en ;
@@ -728,7 +728,7 @@ i14224:Modification rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/PerformanceObjective
 i14224:PerformanceObjective rdf:type owl:Class ;
-                            rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                            rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                             rdfs:label "Performance objective"@en ;
                             rdfs:seeAlso ""@en ;
                             skos:altLabel ""@en ;
@@ -745,7 +745,7 @@ i14224:PerformanceObjective rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/PerformanceRequirement
 i14224:PerformanceRequirement rdf:type owl:Class ;
-                              rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                              rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                               rdfs:label "Performance requirement"@en ;
                               rdfs:seeAlso ""@en ;
                               skos:altLabel ""@en ;
@@ -762,7 +762,7 @@ i14224:PerformanceRequirement rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/Petrochemical
 i14224:Petrochemical rdf:type owl:Class ;
-                     rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                      rdfs:label "Petrochemical"@en ;
                      rdfs:seeAlso ""@en ;
                      skos:altLabel ""@en ;
@@ -795,7 +795,7 @@ i14224:Redundancy rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/RequiredFunction
 i14224:RequiredFunction rdf:type owl:Class ;
-                        rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                        rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                         rdfs:label "Required function"@en ;
                         rdfs:seeAlso ""@en ;
                         skos:altLabel ""@en ;
@@ -813,7 +813,7 @@ i14224:RequiredFunction rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/SafetyCriticalEquipment
 i14224:SafetyCriticalEquipment rdf:type owl:Class ;
-                               rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                rdfs:label "Safety critical equipment"@en ;
                                rdfs:seeAlso ""@en ;
                                skos:altLabel ""@en ;
@@ -830,7 +830,7 @@ i14224:SafetyCriticalEquipment rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/SafetySystem
 i14224:SafetySystem rdf:type owl:Class ;
-                    rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                     rdfs:label "Safety system"@en ;
                     rdfs:seeAlso ""@en ;
                     skos:altLabel ""@en ;
@@ -848,7 +848,7 @@ i14224:SafetySystem rdf:type owl:Class ;
 ###  https://iso14224.org/ontology/i14224/rdl/SoftwareError
 i14224:SoftwareError rdf:type owl:Class ;
                      rdfs:subClassOf i14224:Error ;
-                     rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                      rdfs:label "Software error"@en ;
                      rdfs:seeAlso ""@en ;
                      skos:altLabel ""@en ;
@@ -865,7 +865,7 @@ i14224:SoftwareError rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/SubUnit
 i14224:SubUnit rdf:type owl:Class ;
-               rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                rdfs:label "Subunit"@en ;
                rdfs:seeAlso ""@en ;
                skos:altLabel ""@en ;
@@ -882,7 +882,7 @@ i14224:SubUnit rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/TagNumber
 i14224:TagNumber rdf:type owl:Class ;
-                 rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                 rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                  rdfs:label "Tag number"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel "Functional location"@en ;
@@ -899,7 +899,7 @@ i14224:TagNumber rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/Taxonomy
 i14224:Taxonomy rdf:type owl:Class ;
-                rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                 rdfs:label "Taxonomy"@en ;
                 rdfs:seeAlso ""@en ;
                 skos:altLabel ""@en ;
@@ -916,7 +916,7 @@ i14224:Taxonomy rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/Turnaround
 i14224:Turnaround rdf:type owl:Class ;
-                  rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                  rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                   rdfs:label "Turnaround"@en ;
                   rdfs:seeAlso ""@en ;
                   skos:altLabel "Revision shutdown"@en ,
@@ -934,7 +934,7 @@ i14224:Turnaround rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/TypeData
 i14224:TypeData rdf:type owl:Class ;
-                rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                 rdfs:label "Type of data"@en ;
                 rdfs:seeAlso ""@en ;
                 skos:altLabel ""@en ;
@@ -953,7 +953,7 @@ i14224:TypeData rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent
 i14224:TypeFailureEvent rdf:type owl:Class ;
-                        rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                        rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                         rdfs:label "Type of failure event"@en ;
                         rdfs:seeAlso ""@en ;
                         skos:altLabel ""@en ;
@@ -972,7 +972,7 @@ i14224:TypeFailureEvent rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/TypeMaintenanceStrategy
 i14224:TypeMaintenanceStrategy rdf:type owl:Class ;
-                               rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                rdfs:label "Type of maintenance strategy"@en ;
                                rdfs:seeAlso ""@en ;
                                skos:altLabel ""@en ;
@@ -991,7 +991,7 @@ i14224:TypeMaintenanceStrategy rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/TypeMaterialState
 i14224:TypeMaterialState rdf:type owl:Class ;
-                         rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                         rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                          rdfs:label "Type of material state"@en ;
                          rdfs:seeAlso ""@en ;
                          skos:altLabel ""@en ;
@@ -1010,7 +1010,7 @@ i14224:TypeMaterialState rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure
 i14224:TypeReliabilityMeasure rdf:type owl:Class ;
-                              rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                              rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                               rdfs:label "Type of reliability measure"@en ;
                               rdfs:seeAlso ""@en ;
                               skos:altLabel ""@en ;
@@ -1029,7 +1029,7 @@ i14224:TypeReliabilityMeasure rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/TypeTest
 i14224:TypeTest rdf:type owl:Class ;
-                rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                 rdfs:label "Type of test"@en ;
                 rdfs:seeAlso ""@en ;
                 skos:altLabel ""@en ;
@@ -1048,7 +1048,7 @@ i14224:TypeTest rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/Uncertainty
 i14224:Uncertainty rdf:type owl:Class ;
-                   rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                   rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                    rdfs:label "Uncertainty"@en ;
                    rdfs:seeAlso ""@en ;
                    skos:altLabel ""@en ;
@@ -1065,7 +1065,7 @@ i14224:Uncertainty rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/Upstream
 i14224:Upstream rdf:type owl:Class ;
-                rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                 rdfs:label "Upstream"@en ;
                 rdfs:seeAlso ""@en ;
                 skos:altLabel ""@en ;
@@ -1093,7 +1093,7 @@ i14224:zz_OutOfScope rdf:type owl:Class ;
 ###  https://iso14224.org/ontology/i14224/rdl/active_maintenance_time
 i14224:active_maintenance_time rdf:type owl:NamedIndividual ,
                                         i14224:TypeReliabilityMeasure ;
-                               rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                rdfs:label "active maintenance time"@en ;
                                rdfs:seeAlso ""@en ;
                                skos:altLabel ""@en ;
@@ -1111,7 +1111,7 @@ i14224:active_maintenance_time rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/active_repair_time
 i14224:active_repair_time rdf:type owl:NamedIndividual ,
                                    i14224:TypeReliabilityMeasure ;
-                          rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                          rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                           rdfs:label "active repair time"@en ;
                           rdfs:seeAlso ""@en ;
                           skos:altLabel ""@en ;
@@ -1129,7 +1129,7 @@ i14224:active_repair_time rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/availability
 i14224:availability rdf:type owl:NamedIndividual ,
                              i14224:TypeReliabilityMeasure ;
-                    rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                     rdfs:label "availability"@en ;
                     rdfs:seeAlso ""@en ;
                     skos:altLabel ""@en ;
@@ -1181,7 +1181,7 @@ i14224:common_mode_failure rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/condition_based_maintenance
 i14224:condition_based_maintenance rdf:type owl:NamedIndividual ,
                                             i14224:TypeMaintenanceStrategy ;
-                                   rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                                   rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                    rdfs:label "condition based maintenance" ;
                                    rdfs:seeAlso ""@en ;
                                    skos:altLabel "cbm"@en ;
@@ -1199,7 +1199,7 @@ i14224:condition_based_maintenance rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/corrective_maintenance
 i14224:corrective_maintenance rdf:type owl:NamedIndividual ,
                                        i14224:TypeMaintenanceStrategy ;
-                              rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                              rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                               rdfs:label "corrective maintenance"@en ;
                               rdfs:seeAlso ""@en ;
                               skos:altLabel "reactive Maintenance"@en ;
@@ -1217,7 +1217,7 @@ i14224:corrective_maintenance rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/critical_failure
 i14224:critical_failure rdf:type owl:NamedIndividual ,
                                  i14224:TypeFailureEvent ;
-                        rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                        rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                         rdfs:label "critical failure"@en ;
                         rdfs:seeAlso ""@en ;
                         skos:altLabel ""@en ;
@@ -1236,7 +1236,7 @@ i14224:critical_failure rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/degraded_failure
 i14224:degraded_failure rdf:type owl:NamedIndividual ,
                                  i14224:TypeFailureEvent ;
-                        rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                        rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                         rdfs:label "degraded failure"@en ;
                         rdfs:seeAlso ""@en ;
                         skos:altLabel ""@en ;
@@ -1256,7 +1256,7 @@ i14224:degraded_failure rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/demand
 i14224:demand rdf:type owl:NamedIndividual ,
                        i14224:TypeTest ;
-              rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+              rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
               rdfs:label "demand"@en ;
               rdfs:seeAlso ""@en ;
               skos:altLabel ""@en ;
@@ -1274,7 +1274,7 @@ i14224:demand rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/down_state
 i14224:down_state rdf:type owl:NamedIndividual ,
                            i14224:TypeMaterialState ;
-                  rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                  rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                   rdfs:label "down state"@en ;
                   rdfs:seeAlso ""@en ;
                   skos:altLabel "internal disabled state"@en ,
@@ -1295,7 +1295,7 @@ i14224:down_state rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/equipment_data
 i14224:equipment_data rdf:type owl:NamedIndividual ,
                                i14224:TypeData ;
-                      rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                      rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                       rdfs:label "equipment data"@en ;
                       rdfs:seeAlso ""@en ;
                       skos:altLabel ""@en ;
@@ -1313,7 +1313,7 @@ i14224:equipment_data rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/failure_data
 i14224:failure_data rdf:type owl:NamedIndividual ,
                              i14224:TypeData ;
-                    rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                     rdfs:label "failure data"@en ;
                     rdfs:seeAlso ""@en ;
                     skos:altLabel ""@en ;
@@ -1331,7 +1331,7 @@ i14224:failure_data rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/failure_due_to_demand
 i14224:failure_due_to_demand rdf:type owl:NamedIndividual ,
                                       i14224:TypeFailureEvent ;
-                             rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                             rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                              rdfs:label "failure due to demand"@en ;
                              rdfs:seeAlso ""@en ;
                              skos:altLabel ""@en ;
@@ -1349,7 +1349,7 @@ i14224:failure_due_to_demand rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/failure_frequency
 i14224:failure_frequency rdf:type owl:NamedIndividual ,
                                   i14224:TypeReliabilityMeasure ;
-                         rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                         rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                          rdfs:label "failure frequency"@en ;
                          rdfs:seeAlso ""@en ;
                          skos:altLabel ""@en ;
@@ -1385,7 +1385,7 @@ i14224:failure_on_demand rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/failure_rate
 i14224:failure_rate rdf:type owl:NamedIndividual ,
                              i14224:TypeReliabilityMeasure ;
-                    rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                     rdfs:label "failure rate"@en ;
                     rdfs:seeAlso ""@en ;
                     skos:altLabel ""@en ;
@@ -1403,7 +1403,7 @@ i14224:failure_rate rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/generic_reliability_data
 i14224:generic_reliability_data rdf:type owl:NamedIndividual ,
                                          i14224:TypeData ;
-                                rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                 rdfs:label "failure frequency"@en ;
                                 rdfs:seeAlso ""@en ;
                                 skos:altLabel ""@en ;
@@ -1421,7 +1421,7 @@ i14224:generic_reliability_data rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/hidden_failure
 i14224:hidden_failure rdf:type owl:NamedIndividual ,
                                i14224:TypeFailureEvent ;
-                      rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                      rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                       rdfs:label "hidden failure"@en ;
                       rdfs:seeAlso ""@en ;
                       skos:altLabel ""@en ;
@@ -1439,7 +1439,7 @@ i14224:hidden_failure rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/idle_state
 i14224:idle_state rdf:type owl:NamedIndividual ,
                            i14224:TypeMaterialState ;
-                  rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                  rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                   rdfs:label "idle state"@en ;
                   rdfs:seeAlso ""@en ;
                   skos:altLabel "Standby state"@en ;
@@ -1458,7 +1458,7 @@ i14224:idle_state rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/incipient_failure
 i14224:incipient_failure rdf:type owl:NamedIndividual ,
                                   i14224:TypeFailureEvent ;
-                         rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                         rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                          rdfs:label "incipient failure"@en ;
                          rdfs:seeAlso ""@en ;
                          skos:altLabel ""@en ;
@@ -1476,7 +1476,7 @@ i14224:incipient_failure rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/integrity
 i14224:integrity rdf:type owl:NamedIndividual ,
                           i14224:TypeReliabilityMeasure ;
-                 rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                 rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                  rdfs:label "integrity"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
@@ -1494,7 +1494,7 @@ i14224:integrity rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/logistic_delay
 i14224:logistic_delay rdf:type owl:NamedIndividual ,
                                i14224:TypeReliabilityMeasure ;
-                      rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                      rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                       rdfs:label "Logistic delay"@en ;
                       rdfs:seeAlso ""@en ;
                       skos:altLabel ""@en ;
@@ -1512,7 +1512,7 @@ i14224:logistic_delay rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/maintenance_data
 i14224:maintenance_data rdf:type owl:NamedIndividual ,
                                  i14224:TypeData ;
-                        rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                        rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                         rdfs:label "maintenance data"@en ;
                         rdfs:seeAlso ""@en ;
                         skos:altLabel ""@en ;
@@ -1530,7 +1530,7 @@ i14224:maintenance_data rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/maintenance_supportability
 i14224:maintenance_supportability rdf:type owl:NamedIndividual ,
                                            i14224:TypeReliabilityMeasure ;
-                                  rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                                  rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                   rdfs:label "maintenance supportability"@en ;
                                   rdfs:seeAlso ""@en ;
                                   skos:altLabel "supportability"@en ;
@@ -1548,7 +1548,7 @@ i14224:maintenance_supportability rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/mean_active_repair_time
 i14224:mean_active_repair_time rdf:type owl:NamedIndividual ,
                                         i14224:TypeReliabilityMeasure ;
-                               rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                rdfs:label "mean cycles to failure"@en ;
                                rdfs:seeAlso ""@en ;
                                skos:altLabel "MART"@en ;
@@ -1566,7 +1566,7 @@ i14224:mean_active_repair_time rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/mean_cycles_to_failure
 i14224:mean_cycles_to_failure rdf:type owl:NamedIndividual ,
                                        i14224:TypeReliabilityMeasure ;
-                              rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                              rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                               rdfs:label "mean cycles to failure"@en ;
                               rdfs:seeAlso ""@en ;
                               skos:altLabel ""@en ;
@@ -1584,7 +1584,7 @@ i14224:mean_cycles_to_failure rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/mean_elapsed_time_between_failures
 i14224:mean_elapsed_time_between_failures rdf:type owl:NamedIndividual ,
                                                    i14224:TypeReliabilityMeasure ;
-                                          rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                                          rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                           rdfs:label "mean elapsed time between failures"@en ;
                                           rdfs:seeAlso ""@en ;
                                           skos:altLabel ""@en ;
@@ -1602,7 +1602,7 @@ i14224:mean_elapsed_time_between_failures rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/mean_number_of_cycles
 i14224:mean_number_of_cycles rdf:type owl:NamedIndividual ,
                                       i14224:TypeReliabilityMeasure ;
-                             rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                             rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                              rdfs:label "mean number of cycles"@en ;
                              rdfs:seeAlso ""@en ;
                              skos:altLabel ""@en ;
@@ -1620,7 +1620,7 @@ i14224:mean_number_of_cycles rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/mean_overall_repairing_time
 i14224:mean_overall_repairing_time rdf:type owl:NamedIndividual ,
                                             i14224:TypeReliabilityMeasure ;
-                                   rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                                   rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                    rdfs:label "mean overall repairing time"@en ;
                                    rdfs:seeAlso ""@en ;
                                    skos:altLabel ""@en ;
@@ -1638,7 +1638,7 @@ i14224:mean_overall_repairing_time rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/mean_time_to_failure
 i14224:mean_time_to_failure rdf:type owl:NamedIndividual ,
                                      i14224:TypeReliabilityMeasure ;
-                            rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                            rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                             rdfs:label "mean time to failure"@en ;
                             rdfs:seeAlso ""@en ;
                             skos:altLabel "MTTF"@en ;
@@ -1656,7 +1656,7 @@ i14224:mean_time_to_failure rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/mean_time_to_repair
 i14224:mean_time_to_repair rdf:type owl:NamedIndividual ,
                                     i14224:TypeReliabilityMeasure ;
-                           rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                           rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                            rdfs:label "mean time to repair"@en ;
                            rdfs:seeAlso ""@en ;
                            skos:altLabel "MTTR"@en ;
@@ -1674,7 +1674,7 @@ i14224:mean_time_to_repair rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/mean_time_to_restoration
 i14224:mean_time_to_restoration rdf:type owl:NamedIndividual ,
                                          i14224:TypeReliabilityMeasure ;
-                                rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                 rdfs:label "mean time to restoration"@en ;
                                 rdfs:seeAlso ""@en ;
                                 skos:altLabel "mean_elapsed_time_between_failures"@en ;
@@ -1692,7 +1692,7 @@ i14224:mean_time_to_restoration rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/mobilization_time
 i14224:mobilization_time rdf:type owl:NamedIndividual ,
                                   i14224:TypeReliabilityMeasure ;
-                         rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                         rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                          rdfs:label "mobilization time"@en ;
                          rdfs:seeAlso ""@en ;
                          skos:altLabel ""@en ;
@@ -1710,7 +1710,7 @@ i14224:mobilization_time rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/non_critical_failure
 i14224:non_critical_failure rdf:type owl:NamedIndividual ,
                                      i14224:TypeFailureEvent ;
-                            rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                            rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                             rdfs:label "non-critical failure"@en ;
                             rdfs:seeAlso ""@en ;
                             skos:altLabel ""@en ;
@@ -1728,7 +1728,7 @@ i14224:non_critical_failure rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/operating_state
 i14224:operating_state rdf:type owl:NamedIndividual ,
                                 i14224:TypeMaterialState ;
-                       rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                       rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                        rdfs:label "operating state"@en ;
                        rdfs:seeAlso ""@en ;
                        skos:altLabel ""@en ;
@@ -1747,7 +1747,7 @@ i14224:operating_state rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/operating_time_time
 i14224:operating_time_time rdf:type owl:NamedIndividual ,
                                     i14224:TypeReliabilityMeasure ;
-                           rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                           rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                            rdfs:label "operating time"@en ;
                            rdfs:seeAlso ""@en ;
                            skos:altLabel ""@en ;
@@ -1765,7 +1765,7 @@ i14224:operating_time_time rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/opportunity_maintenance
 i14224:opportunity_maintenance rdf:type owl:NamedIndividual ,
                                         i14224:TypeMaintenanceStrategy ;
-                               rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                rdfs:label "opportunity maintenance" ;
                                rdfs:seeAlso ""@en ;
                                skos:altLabel ""@en ;
@@ -1783,7 +1783,7 @@ i14224:opportunity_maintenance rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/periodic_test
 i14224:periodic_test rdf:type owl:NamedIndividual ,
                               i14224:TypeTest ;
-                     rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                      rdfs:label "periodic test"@en ;
                      rdfs:seeAlso ""@en ;
                      skos:altLabel "Proof test"@en ;
@@ -1801,7 +1801,7 @@ i14224:periodic_test rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/planned_maintenance
 i14224:planned_maintenance rdf:type owl:NamedIndividual ,
                                     i14224:TypeMaintenanceStrategy ;
-                           rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                           rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                            rdfs:label "planned maintenance"@en ;
                            rdfs:seeAlso ""@en ;
                            skos:altLabel "planned preventative maintenance"@en ,
@@ -1820,7 +1820,7 @@ i14224:planned_maintenance rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/predictive_maintenance
 i14224:predictive_maintenance rdf:type owl:NamedIndividual ,
                                        i14224:TypeMaintenanceStrategy ;
-                              rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                              rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                               rdfs:label "predictive maintenance"@en ;
                               rdfs:seeAlso ""@en ;
                               skos:altLabel "PDM"@en ,
@@ -1839,7 +1839,7 @@ i14224:predictive_maintenance rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/preventative_maintenance
 i14224:preventative_maintenance rdf:type owl:NamedIndividual ,
                                          i14224:TypeMaintenanceStrategy ;
-                                rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                 rdfs:label "preventative maintenance"@en ;
                                 rdfs:seeAlso ""@en ;
                                 skos:altLabel "PM"@en ;
@@ -1857,7 +1857,7 @@ i14224:preventative_maintenance rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/random_failure
 i14224:random_failure rdf:type owl:NamedIndividual ,
                                i14224:TypeFailureEvent ;
-                      rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                      rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                       rdfs:label "random failure"@en ;
                       rdfs:seeAlso ""@en ;
                       skos:altLabel "PDM"@en ;
@@ -1892,7 +1892,7 @@ i14224:reliability rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/reliability_data
 i14224:reliability_data rdf:type owl:NamedIndividual ,
                                  i14224:TypeData ;
-                        rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                        rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                         rdfs:label "reliability data"@en ;
                         rdfs:seeAlso ""@en ;
                         skos:altLabel ""@en ;
@@ -1910,7 +1910,7 @@ i14224:reliability_data rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/safety_critical_failure
 i14224:safety_critical_failure rdf:type owl:NamedIndividual ,
                                         i14224:TypeFailureEvent ;
-                               rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                rdfs:label "safety critical failure"@en ;
                                rdfs:seeAlso ""@en ;
                                skos:altLabel ""@en ;
@@ -1928,7 +1928,7 @@ i14224:safety_critical_failure rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/surveillance_period
 i14224:surveillance_period rdf:type owl:NamedIndividual ,
                                     i14224:TypeReliabilityMeasure ;
-                           rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                           rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                            rdfs:label "surveillance period"@en ;
                            rdfs:seeAlso ""@en ;
                            skos:altLabel ""@en ;
@@ -1946,7 +1946,7 @@ i14224:surveillance_period rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/systematic_failure
 i14224:systematic_failure rdf:type owl:NamedIndividual ,
                                    i14224:TypeFailureEvent ;
-                          rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                          rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                           rdfs:label "systematic failure"@en ;
                           rdfs:seeAlso ""@en ;
                           skos:altLabel ""@en ;
@@ -1964,7 +1964,7 @@ i14224:systematic_failure rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/trip
 i14224:trip rdf:type owl:NamedIndividual ,
                      i14224:TypeFailureEvent ;
-            rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+            rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
             rdfs:label "trip"@en ;
             rdfs:seeAlso ""@en ;
             skos:altLabel ""@en ;
@@ -1982,7 +1982,7 @@ i14224:trip rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/up_state
 i14224:up_state rdf:type owl:NamedIndividual ,
                          i14224:TypeMaterialState ;
-                rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                 rdfs:label "up state"@en ;
                 rdfs:seeAlso ""@en ;
                 skos:altLabel "Available state"@en ;
@@ -2000,7 +2000,7 @@ i14224:up_state rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/up_time
 i14224:up_time rdf:type owl:NamedIndividual ,
                         i14224:TypeReliabilityMeasure ;
-               rdfs:isDefinedBy <http://iso14224.org/ontology/i14224/ont/core> ;
+               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                rdfs:label "up time"@en ;
                rdfs:seeAlso ""@en ;
                skos:altLabel ""@en ;

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="https://iso14224.org/ontology/i14224/ont/clause3" uri="i14224_clause3.ttl"/>
+    <uri id="User Entered Import Resolution" name="https://iso14224.org/ontology/i14224/ont/core" uri="i14224_clause3.ttl"/>
     <uri id="User Entered Import Resolution" name="http://iso14224.org/ontology/i14224/ont/core" uri="i14224terms.ttl"/>
     <uri id="User Entered Import Resolution" name="https://iso14224.org/vocab/basic/1.1" uri="vocab14224_basic.ttl"/>
     <uri id="Imports Wizard Entry" name="https://pid.vocab14224.org/Basic/1.1" uri="vocab14224_basic.ttl"/>
