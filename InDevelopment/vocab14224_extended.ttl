@@ -3,43 +3,43 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix voc: <https://iso14224.org/vocab/> .
+@prefix i14224: <https://iso14224.org/ontology/i14224/rdl/> .
 @prefix cmns-av: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .
 
-<https://iso14224.org/vocab/extended/> rdf:type owl:Ontology ;
-                                        owl:imports <https://iso14224.org/vocab/basic/> .
+<http://iso14224.org/ontology/i14224/ont/appendixB/> rdf:type owl:Ontology ;
+                                        owl:imports <http://iso14224.org/ontology/i14224/ont/core> .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://iso14224.org/vocab/extended/hasFailureDetectionMethod
-voc:hasFailureDetectionMethod rdf:type owl:ObjectProperty ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/hasFailureDetectionMethod
+i14224:hasFailureDetectionMethod rdf:type owl:ObjectProperty ;
                         rdfs:domain <https://iso14224.org/vocab/vocab/DetectionMethod> ;
-                        rdfs:range voc:TypeFailureDetectionMethod.
+                        rdfs:range i14224:TypeFailureDetectionMethod.
 
-###  https://iso14224.org/vocab/extended/hasFailureCause
-voc:hasFailureCause rdf:type owl:ObjectProperty ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/hasFailureCause
+i14224:hasFailureCause rdf:type owl:ObjectProperty ;
                         rdfs:domain <https://iso14224.org/vocab/basic/FailureCause> ;
-                        rdfs:range voc:TypeFailureCause.
+                        rdfs:range i14224:TypeFailureCause.
 
-###  https://iso14224.org/vocab/extended/hasFailureMechanism
-voc:hasFailureMechanism rdf:type owl:ObjectProperty .
+###  http://iso14224.org/ontology/i14224/ont/appendixB/hasFailureMechanism
+i14224:hasFailureMechanism rdf:type owl:ObjectProperty .
 
-###  https://iso14224.org/vocab/extended/hasFailureMode
-voc:hasFailureMode rdf:type owl:ObjectProperty .
+###  http://iso14224.org/ontology/i14224/ont/appendixB/hasFailureMode
+i14224:hasFailureMode rdf:type owl:ObjectProperty .
 
-###  https://iso14224.org/vocab/extended/hasFailureCauseType
-voc:hasFailureCauseType rdf:type owl:ObjectProperty ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/hasFailureCauseType
+i14224:hasFailureCauseType rdf:type owl:ObjectProperty ;
                          rdfs:domain <https://iso14224.org/vocab/basic/FailureCause> ;
-                         rdfs:range voc:TypeFailureCause .
+                         rdfs:range i14224:TypeFailureCause .
 
 
 
-###  https://iso14224.org/vocab/extended/hasFailureMechanismType
-voc:hasFailureMechanismType rdf:type owl:ObjectProperty ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/hasFailureMechanismType
+i14224:hasFailureMechanismType rdf:type owl:ObjectProperty ;
                          rdfs:domain <https://iso14224.org/vocab/basic/FailureMechanism> ;
-                         rdfs:rangevoc:TypeFailureMechanism .
+                         rdfs:rangei14224:TypeFailureMechanism .
 
 
 
@@ -48,411 +48,411 @@ voc:hasFailureMechanismType rdf:type owl:ObjectProperty ;
 #    Classes
 #################################################################
 
-###  https://iso14224.org/vocab/extended/Adjust
-voc:Adjust rdf:type owl:Class ; 
-                 rdfs:subClassOf <https://iso14224.org/vocab/extended/MaintenanceActivity> ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/Adjust
+i14224:Adjust rdf:type owl:Class ; 
+                 rdfs:subClassOf <http://iso14224.org/ontology/i14224/ont/appendixB/MaintenanceActivity> ;
                  rdfs:label "Adjust"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
                  skos:definition ""@en ;
                  skos:example "align, set and reset, calibrate, balance"@en ;
                  skos:scopeNote ""@en ;
-                 voc:iso14224:section ""^^xsd:anyURI ;
+                 i14224:iso14224:section ""^^xsd:anyURI ;
                  cmns-av:adaptedFrom ""@en ;
                  cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
                  cmns-av:explanatoryNote "bringing any out-of-tolerance condition into tolerance"@en ;
                  cmns-av:usageNote "typically used in corrective and preventative maintenance"@en .
 
 
-###  https://iso14224.org/vocab/extended/BlockageOrPluggedFailureMechanism
-voc:BlockageOrPluggedFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/BlockageOrPluggedFailureMechanism
+i14224:BlockageOrPluggedFailureMechanism rdf:type owl:Class ;
                                    rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                    rdfs:label "Blockage or plugged failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/BreakageFailureMechanism
-voc:BreakageFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/BreakageFailureMechanism
+i14224:BreakageFailureMechanism rdf:type owl:Class ;
                           rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                           rdfs:label "Breakage failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/BurstFailureMechanism
-voc:BurstFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/BurstFailureMechanism
+i14224:BurstFailureMechanism rdf:type owl:Class ;
                        rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                        rdfs:label "Burst failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/CavitationFailureMechanism
-voc:CavitationFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/CavitationFailureMechanism
+i14224:CavitationFailureMechanism rdf:type owl:Class ;
                             rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                             rdfs:label "Cavitation failure mechanism" .
 
-###  https://iso14224.org/vocab/extended/Check
-voc:Check rdf:type owl:Class ;
-                 rdfs:subClassOf <https://iso14224.org/vocab/extended/MaintenanceActivity> ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/Check
+i14224:Check rdf:type owl:Class ;
+                 rdfs:subClassOf <http://iso14224.org/ontology/i14224/ont/appendixB/MaintenanceActivity> ;
                  rdfs:label "Check" ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
                  skos:definition ""@en ;
                  skos:scopeNote ""@en ;
-                 voc:iso14224:section ""^^xsd:anyURI ;
+                 i14224:iso14224:section ""^^xsd:anyURI ;
                  cmns-av:adaptedFrom ""@en ;
                  cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
                  cmns-av:explanatoryNote "The cause of failure investigated, but no maintenance action is performed, or action is deferred. Able to regain function by simple actions, e.g. restart or resetting"@en ;
                  skos:example "restart, resetting, no maintenance action, etc. Particularly relevant for functional failures, e.g. fire and gas detectors, subsea equipment. check includes both when a failure cause was revealed but maintenance action was considered either not necessary or not possible to carry out and where no failure cause circumstances could be found"@en ;
                  cmns-av:usageNote "typically used in corrective maintenance"@en .
 
-###  https://iso14224.org/vocab/extended/ClearanceOrAlignmentFailureMechanism
-voc:ClearanceOrAlignmentFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/ClearanceOrAlignmentFailureMechanism
+i14224:ClearanceOrAlignmentFailureMechanism rdf:type owl:Class ;
                                       rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                       rdfs:label "Clearance or alignment failure mechanism" .
 
-###  https://iso14224.org/vocab/extended/CombinationMaintenanceActivity
-voc:CombinationMaintenanceActivity rdf:type owl:Class ;
-                 rdfs:subClassOf <https://iso14224.org/vocab/extended/MaintenanceActivity> ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/CombinationMaintenanceActivity
+i14224:CombinationMaintenanceActivity rdf:type owl:Class ;
+                 rdfs:subClassOf <http://iso14224.org/ontology/i14224/ont/appendixB/MaintenanceActivity> ;
                  rdfs:label "Combination maintenance activity"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
                  skos:definition ""@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
-                 voc:iso14224:section ""^^xsd:anyURI ;
+                 i14224:iso14224:section ""^^xsd:anyURI ;
                  cmns-av:adaptedFrom ""@en ;
                  cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
                  cmns-av:explanatoryNote "Several maintenance activities are included"@en ;
                  cmns-av:usageNote "Typically used in corrective and preventative maintenance. If one activity dominates, this may alternatively be recorded"@en .
 
-###  https://iso14224.org/vocab/extended/CombinedCausesFailureMechanism
-voc:CombinedCausesFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/CombinedCausesFailureMechanism
+i14224:CombinedCausesFailureMechanism rdf:type owl:Class ;
                                 rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                 rdfs:label "Combined causes failure mechanism" .
                                 
 
-###  https://iso14224.org/vocab/extended/CommonCauseOrCommonModeFailureMechanism
-voc:CommonCauseOrCommonModeFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/CommonCauseOrCommonModeFailureMechanism
+i14224:CommonCauseOrCommonModeFailureMechanism rdf:type owl:Class ;
                                          rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                          rdfs:label "Common cause or common mode failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/ContaminationFailureMechanism
-voc:ContaminationFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/ContaminationFailureMechanism
+i14224:ContaminationFailureMechanism rdf:type owl:Class ;
                                rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                rdfs:label "Contamination failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/ControlFailureMechanism
-voc:ControlFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/ControlFailureMechanism
+i14224:ControlFailureMechanism rdf:type owl:Class ;
                          rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                          rdfs:label "Control failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/CorrosionFailureMechanism
-voc:CorrosionFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/CorrosionFailureMechanism
+i14224:CorrosionFailureMechanism rdf:type owl:Class ;
                            rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                            rdfs:label "Corrosion failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/DeformationFailureMechanism
-voc:DeformationFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/DeformationFailureMechanism
+i14224:DeformationFailureMechanism rdf:type owl:Class ;
                              rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                              rdfs:label "Deformation failure mechanism" .
 
-###  https://iso14224.org/vocab/extended/EarthOrIsolationFaultFailureMechanism
-voc:EarthOrIsolationFaultFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/EarthOrIsolationFaultFailureMechanism
+i14224:EarthOrIsolationFaultFailureMechanism rdf:type owl:Class ;
                                        rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                        rdfs:label "Earth or isolation fault failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/ErosionFailureMechanism
-voc:ErosionFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/ErosionFailureMechanism
+i14224:ErosionFailureMechanism rdf:type owl:Class ;
                          rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                          rdfs:label "Erosion failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/FatigueFailureMechanism
-voc:FatigueFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/FatigueFailureMechanism
+i14224:FatigueFailureMechanism rdf:type owl:Class ;
                          rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                          rdfs:label "Fatigue failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/FaultyPowerOrVoltageFailureMechanism
-voc:FaultyPowerOrVoltageFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/FaultyPowerOrVoltageFailureMechanism
+i14224:FaultyPowerOrVoltageFailureMechanism rdf:type owl:Class ;
                                       rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                       rdfs:label "Faulty power or voltage failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/FaultySignalOrIndicationOrAlarmFailureMechanism
-voc:FaultySignalOrIndicationOrAlarmFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/FaultySignalOrIndicationOrAlarmFailureMechanism
+i14224:FaultySignalOrIndicationOrAlarmFailureMechanism rdf:type owl:Class ;
                                                  rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                                  rdfs:label "Faulty signal or indication or alarm failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/GeneralElectricalFailureMechanism
-voc:GeneralElectricalFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/GeneralElectricalFailureMechanism
+i14224:GeneralElectricalFailureMechanism rdf:type owl:Class ;
                                    rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                    rdfs:label "General electrical failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/GeneralExternalInfluenceFailureMechanism
-voc:GeneralExternalInfluenceFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/GeneralExternalInfluenceFailureMechanism
+i14224:GeneralExternalInfluenceFailureMechanism rdf:type owl:Class ;
                                           rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                           rdfs:label "General external influence failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/GeneralInstrumentFailureMechanism
-voc:GeneralInstrumentFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/GeneralInstrumentFailureMechanism
+i14224:GeneralInstrumentFailureMechanism rdf:type owl:Class ;
                                    rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                    rdfs:label "General instrument failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/GeneralMaterialFailureMechanism
-voc:GeneralMaterialFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/GeneralMaterialFailureMechanism
+i14224:GeneralMaterialFailureMechanism rdf:type owl:Class ;
                                  rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                  rdfs:label "General material failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/GeneralMechanicalFailureMechanism
-voc:GeneralMechanicalFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/GeneralMechanicalFailureMechanism
+i14224:GeneralMechanicalFailureMechanism rdf:type owl:Class ;
                                    rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                    rdfs:label "General mechanical failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/GeneralMiscellaneousFailureMechanism
-voc:GeneralMiscellaneousFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/GeneralMiscellaneousFailureMechanism
+i14224:GeneralMiscellaneousFailureMechanism rdf:type owl:Class ;
                                       rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                       rdfs:label "General miscellaneous failure mechanism" .
 
-###  https://iso14224.org/vocab/extended/Inspection
-voc:Inspection rdf:type owl:Class ;
-                 rdfs:subClassOf <https://iso14224.org/vocab/extended/MaintenanceActivity> ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/Inspection
+i14224:Inspection rdf:type owl:Class ;
+                 rdfs:subClassOf <http://iso14224.org/ontology/i14224/ont/appendixB/MaintenanceActivity> ;
                  rdfs:label "Inspection"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
                  skos:definition ""@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
-                 voc:iso14224:section ""^^xsd:anyURI ;
+                 i14224:iso14224:section ""^^xsd:anyURI ;
                  cmns-av:adaptedFrom ""@en ;
                  cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
                  cmns-av:explanatoryNote "periodic inspection/check: a careful scrutiny of an item carried out with or without dismantling, normally by use of senses"@en ;
                  cmns-av:usageNote "Typically used in preventative maintenance. All types of general check. Includes minor servicing as part of the inspection task"@en .
 
-###  https://iso14224.org/vocab/extended/LeakageFailureMechanism
-voc:LeakageFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/LeakageFailureMechanism
+i14224:LeakageFailureMechanism rdf:type owl:Class ;
                          rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                          rdfs:label "Leakage failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/LoosenessFailureMechanism
-voc:LoosenessFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/LoosenessFailureMechanism
+i14224:LoosenessFailureMechanism rdf:type owl:Class ;
                            rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                            rdfs:label "Looseness failure mechanism" .
 
-###  https://iso14224.org/vocab/extended/MaintenanceActivity
-voc:MaintenanceActivity rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/MaintenanceActivity
+i14224:MaintenanceActivity rdf:type owl:Class ;
                            rdfs:label "Maintenance activity" .
 
 
-###  https://iso14224.org/vocab/extended/MiscellaneousExternalnfluencesFailureMechanism
-voc:MiscellaneousExternalnfluencesFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/MiscellaneousExternalnfluencesFailureMechanism
+i14224:MiscellaneousExternalnfluencesFailureMechanism rdf:type owl:Class ;
                                                 rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                                 rdfs:label "Miscellaneous external influences failure mechanism" .
 
-###  https://iso14224.org/vocab/extended/Modify
-voc:Modify rdf:type owl:Class ;
-                 rdfs:subClassOf <https://iso14224.org/vocab/extended/MaintenanceActivity> ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/Modify
+i14224:Modify rdf:type owl:Class ;
+                 rdfs:subClassOf <http://iso14224.org/ontology/i14224/ont/appendixB/MaintenanceActivity> ;
                  rdfs:label "Modify"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
                  skos:definition ""@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
-                 voc:iso14224:section ""^^xsd:anyURI ;
+                 i14224:iso14224:section ""^^xsd:anyURI ;
                  cmns-av:adaptedFrom ""@en ;
                  cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
                  cmns-av:explanatoryNote "Replace, renew or change the item, or a part of it, with an item/part of a different type, make, material or design"@en ;
                  cmns-av:usageNote "Typically used in preventative maintenance. Such as install a filter with a smaller mesh diameter, replace a lubrication oil pump with another type, reconfiguration etc."@en .
 
-###  https://iso14224.org/vocab/extended/NoCauseFoundFailureMechanism
-voc:NoCauseFoundFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/NoCauseFoundFailureMechanism
+i14224:NoCauseFoundFailureMechanism rdf:type owl:Class ;
                               rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                               rdfs:label "No cause found failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/NoPowerOrVoltageFailureMechanism
-voc:NoPowerOrVoltageFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/NoPowerOrVoltageFailureMechanism
+i14224:NoPowerOrVoltageFailureMechanism rdf:type owl:Class ;
                                   rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                   rdfs:label "No power or voltage failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/NoSignalOrIndicationOrAlarmFailureMechanism
-voc:NoSignalOrIndicationOrAlarmFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/NoSignalOrIndicationOrAlarmFailureMechanism
+i14224:NoSignalOrIndicationOrAlarmFailureMechanism rdf:type owl:Class ;
                                              rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                              rdfs:label "No signal or indication or alarm failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/OpenCircuitFailureMechanism
-voc:OpenCircuitFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/OpenCircuitFailureMechanism
+i14224:OpenCircuitFailureMechanism rdf:type owl:Class ;
                              rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                              rdfs:label "Open circuit failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/OtherFailureMechanism
-voc:OtherFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/OtherFailureMechanism
+i14224:OtherFailureMechanism rdf:type owl:Class ;
                        rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                        rdfs:label "Other failure mechanism" .
 
-###  https://iso14224.org/vocab/extended/OtherMaintenanceActivity
-voc:OtherMaintenanceActivity rdf:type owl:Class ;
-                             rdfs:subClassOf <https://iso14224.org/vocab/extended/MaintenanceActivity> ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/OtherMaintenanceActivity
+i14224:OtherMaintenanceActivity rdf:type owl:Class ;
+                             rdfs:subClassOf <http://iso14224.org/ontology/i14224/ont/appendixB/MaintenanceActivity> ;
                              rdfs:label "Other maintenance activity" .
 
-###  https://iso14224.org/vocab/extended/OutOfAdjustmentFailureMechanism
-voc:OutOfAdjustmentFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/OutOfAdjustmentFailureMechanism
+i14224:OutOfAdjustmentFailureMechanism rdf:type owl:Class ;
                                  rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                  rdfs:label "Out of adjustment failure mechanism" .
 
-###  https://iso14224.org/vocab/extended/Overhaul
-voc:Overhaul rdf:type owl:Class ;
-                 rdfs:subClassOf <https://iso14224.org/vocab/extended/MaintenanceActivity> ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/Overhaul
+i14224:Overhaul rdf:type owl:Class ;
+                 rdfs:subClassOf <http://iso14224.org/ontology/i14224/ont/appendixB/MaintenanceActivity> ;
                  rdfs:label "Overhaul"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
                  skos:definition ""@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
-                 voc:iso14224:section ""^^xsd:anyURI ;
+                 i14224:iso14224:section ""^^xsd:anyURI ;
                  cmns-av:adaptedFrom ""@en ;
                  cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
                  cmns-av:explanatoryNote "Major overhaul"@en ;
                  cmns-av:usageNote "Typically used in preventative and corrective maintenance. Comprehensive inspection/ overhaul with extensive disassembly and replacement of items as specified or required"@en .
 
-###  https://iso14224.org/vocab/extended/OverheatingFailureMechanism
-voc:OverheatingFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/OverheatingFailureMechanism
+i14224:OverheatingFailureMechanism rdf:type owl:Class ;
                              rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                              rdfs:label "Overheating failure mechanism" .
 
-###  https://iso14224.org/vocab/extended/Refit
-voc:Refit rdf:type owl:Class ;
-                 rdfs:subClassOf <https://iso14224.org/vocab/extended/MaintenanceActivity> ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/Refit
+i14224:Refit rdf:type owl:Class ;
+                 rdfs:subClassOf <http://iso14224.org/ontology/i14224/ont/appendixB/MaintenanceActivity> ;
                  rdfs:label "Refit"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
                  skos:definition ""@en ;
                  skos:example "polish, clean, grind, paint, coat, lube, oil change"@en ;
                  skos:scopeNote ""@en ;
-                 voc:iso14224:section ""^^xsd:anyURI ;
+                 i14224:iso14224:section ""^^xsd:anyURI ;
                  cmns-av:adaptedFrom ""@en ;
                  cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
                  cmns-av:explanatoryNote "minor repair/ servicing activity to bring back an item to an acceptable appearance, internal and external"@en ;
                  cmns-av:usageNote "Typically used in corrective and preventative maintenance. "@en .
 
-###  https://iso14224.org/vocab/extended/Repair
-voc:Repair rdf:type owl:Class ;
-                 rdfs:subClassOf <https://iso14224.org/vocab/extended/MaintenanceActivity> ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/Repair
+i14224:Repair rdf:type owl:Class ;
+                 rdfs:subClassOf <http://iso14224.org/ontology/i14224/ont/appendixB/MaintenanceActivity> ;
                  rdfs:label "Repair"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
                  skos:definition ""@en ;
                  skos:example "repack, weld, plus, reconnect, remake"@en ;
                  skos:scopeNote ""@en ;
-                 voc:iso14224:section ""^^xsd:anyURI ;
+                 i14224:iso14224:section ""^^xsd:anyURI ;
                  cmns-av:adaptedFrom ""@en ;
                  cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
                  cmns-av:explanatoryNote "Manual maintenance action performed to restore an item to its original appearance or state"@en ;
                  cmns-av:usageNote "Typically used in corrective maintenance."@en .
 
-###  https://iso14224.org/vocab/extended/Replace
-voc:Replace rdf:type owl:Class ;
-                 rdfs:subClassOf <https://iso14224.org/vocab/extended/MaintenanceActivity> ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/Replace
+i14224:Replace rdf:type owl:Class ;
+                 rdfs:subClassOf <http://iso14224.org/ontology/i14224/ont/appendixB/MaintenanceActivity> ;
                  rdfs:label "Replace"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
                  skos:definition ""@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
-                 voc:iso14224:section ""^^xsd:anyURI ;
+                 i14224:iso14224:section ""^^xsd:anyURI ;
                  cmns-av:adaptedFrom ""@en ;
                  cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
                  cmns-av:explanatoryNote "Replacement of the item by a new or refurbished item of the same type and make"@en ;
                  cmns-av:usageNote "Typically used in preventative and corrective maintenance. E.g. replacement of a worn-out bearing"@en .
 
-###  https://iso14224.org/vocab/extended/Service
-voc:Service rdf:type owl:Class ;
-                 rdfs:subClassOf <https://iso14224.org/vocab/extended/MaintenanceActivity> ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/Service
+i14224:Service rdf:type owl:Class ;
+                 rdfs:subClassOf <http://iso14224.org/ontology/i14224/ont/appendixB/MaintenanceActivity> ;
                  rdfs:label "Service"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
                  skos:definition ""@en ;
                  skos:example "cleaning, replenishment of consumables, adjustments, calibration"@en ;
                  skos:scopeNote ""@en ;
-                 voc:iso14224:section ""^^xsd:anyURI ;
+                 i14224:iso14224:section ""^^xsd:anyURI ;
                  cmns-av:adaptedFrom ""@en ;
                  cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
                  cmns-av:explanatoryNote "Periodic service tasks. Normally no dismantling of the item"@en ;
                  cmns-av:usageNote "Typically used in preventative maintenance. "@en .
 
-###  https://iso14224.org/vocab/extended/ShortCircuitingFailureMechanism
-voc:ShortCircuitingFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/ShortCircuitingFailureMechanism
+i14224:ShortCircuitingFailureMechanism rdf:type owl:Class ;
                                  rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                  rdfs:label "Short circuiting failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/SoftwareErrorFailureMechanism
-voc:SoftwareErrorFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/SoftwareErrorFailureMechanism
+i14224:SoftwareErrorFailureMechanism rdf:type owl:Class ;
                                rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                                rdfs:label "Software error failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/StickingFailureMechanism
-voc:StickingFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/StickingFailureMechanism
+i14224:StickingFailureMechanism rdf:type owl:Class ;
                           rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                           rdfs:label "Sticking failure mechanism" .
 
-###  https://iso14224.org/vocab/extended/Test
-voc:Test rdf:type owl:Class ;
-                 rdfs:subClassOf <https://iso14224.org/vocab/extended/MaintenanceActivity> ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/Test
+i14224:Test rdf:type owl:Class ;
+                 rdfs:subClassOf <http://iso14224.org/ontology/i14224/ont/appendixB/MaintenanceActivity> ;
                  rdfs:label "Test"@en ;
                  rdfs:seeAlso ""@en ;
                  skos:altLabel ""@en ;
                  skos:definition ""@en ;
                  skos:example ""@en ;
                  skos:scopeNote ""@en ;
-                 voc:iso14224:section ""^^xsd:anyURI ;
+                 i14224:iso14224:section ""^^xsd:anyURI ;
                  cmns-av:adaptedFrom ""@en ;
                  cmns-av:directSource "ISO 14224:2023 Appendix B"@en ;
                  cmns-av:explanatoryNote "Periodic test of function or performance"@en ;
                  cmns-av:usageNote "Typically used in preventative maintenance. e.g. function test of gas detector, accuracy test of flow meter"@en .
 
 
-###  https://iso14224.org/vocab/extended/TypeFailureCause
-voc:TypeFailureCause rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/TypeFailureCause
+i14224:TypeFailureCause rdf:type owl:Class ;
                       rdfs:label "Type of failure cause" .
 
-###  https://iso14224.org/vocab/extended/TypeFailureDetectionMethod
-voc:TypeFailureDetectionMethod rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/TypeFailureDetectionMethod
+i14224:TypeFailureDetectionMethod rdf:type owl:Class ;
                       rdfs:label "Type of failure detection method" .
                
 
-###  https://iso14224.org/vocab/extended/TypeFailureMechanism
-voc:TypeFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/TypeFailureMechanism
+i14224:TypeFailureMechanism rdf:type owl:Class ;
                       rdfs:label "Type of failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/UnknownFailureMechanism
-voc:UnknownFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/UnknownFailureMechanism
+i14224:UnknownFailureMechanism rdf:type owl:Class ;
                          rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                          rdfs:label "UnknownFailureMechanism" .
 
 
-###  https://iso14224.org/vocab/extended/VibrationFailureMechanism
-voc:VibrationFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/VibrationFailureMechanism
+i14224:VibrationFailureMechanism rdf:type owl:Class ;
                            rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                            rdfs:label "Vibration failure mechanism" .
 
 
-###  https://iso14224.org/vocab/extended/WearFailureMechanism
-voc:WearFailureMechanism rdf:type owl:Class ;
+###  http://iso14224.org/ontology/i14224/ont/appendixB/WearFailureMechanism
+i14224:WearFailureMechanism rdf:type owl:Class ;
                       rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
                       rdfs:label "Wear failure mechanism" .
 
@@ -461,247 +461,247 @@ voc:WearFailureMechanism rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  https://iso14224.org/vocab/extended/abnormal_instrument_reading
-voc:abnormal_instrument_reading rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .
+###  http://iso14224.org/ontology/i14224/ont/appendixB/abnormal_instrument_reading
+i14224:abnormal_instrument_reading rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .
 
-###  https://iso14224.org/vocab/extended/breakdown
-voc:breakdown rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .    
+###  http://iso14224.org/ontology/i14224/ont/appendixB/breakdown
+i14224:breakdown rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .    
 
-###  https://iso14224.org/vocab/extended/delayed_operation
-voc:delayed_operation rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .                                                                          
+###  http://iso14224.org/ontology/i14224/ont/appendixB/delayed_operation
+i14224:delayed_operation rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .                                                                          
 
-###  https://iso14224.org/vocab/extended/electrical_failure_mechanism
-voc:electrical_failure_mechanism rdf:type owl:NamedIndividual ,
-                                      voc:TypeFailureMechanism .
+###  http://iso14224.org/ontology/i14224/ont/appendixB/electrical_failure_mechanism
+i14224:electrical_failure_mechanism rdf:type owl:NamedIndividual ,
+                                      i14224:TypeFailureMechanism .
 
- ###  https://iso14224.org/vocab/extended/erratic_output
-voc:erratic_output rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .  
-
-
-###  https://iso14224.org/vocab/extended/external_influence_failure_mechanism
-voc:external_influence_failure_mechanism rdf:type owl:NamedIndividual ,
-                                              voc:TypeFailureMechanism .
-
- ###  https://iso14224.org/vocab/extended/external_leakage_fuel
-voc:external_leakage_fuel rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .  
-
- ###  https://iso14224.org/vocab/extended/external_leakage_process_medium
-voc:external_leakage_process_medium rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .  
-
- ###  https://iso14224.org/vocab/extended/external_leakage_utility_medium
-voc:external_leakage_utility_medium rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .  
-
- ###  https://iso14224.org/vocab/extended/failure_to_connect
-voc:failure_to_connect rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .    
-
- ###  https://iso14224.org/vocab/extended/failure_to_disconnect
-voc:failure_to_disconnect rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .                                                                             
-
-###  https://iso14224.org/vocab/extended/failure_detected_by_periodic_maintenance
-voc:failure_detected_by_periodic_maintenance rdf:type owl:NamedIndividual ,
-                                              voc:TypeFailureDetectionMethod .                                               
-
-###  https://iso14224.org/vocab/extended/failure_detected_by_functional_testing
-voc:failure_detected_by_functional_testing rdf:type owl:NamedIndividual ,
-                                              voc:TypeFailureDetectionMethod .  
-
-###  https://iso14224.org/vocab/extended/failure_detected_by_inspection
-voc:failure_detected_by_inspection rdf:type owl:NamedIndividual ,
-                                              voc:TypeFailureDetectionMethod . 
-
-###  https://iso14224.org/vocab/extended/failure_detected_by_periodic_condition_monitoring
-voc:failure_detected_by_periodic_condition_monitoring rdf:type owl:NamedIndividual ,
-                                              voc:TypeFailureDetectionMethod .    
-
-###  https://iso14224.org/vocab/extended/failure_detected_by_pressure_testing
-voc:failure_detected_by_pressure_testing rdf:type owl:NamedIndividual ,
-                                              voc:TypeFailureDetectionMethod .  
-
-###  https://iso14224.org/vocab/extended/failure_detected_by_continuous_condition_monitoring
-voc:failure_detected_by_continuous_condition_monitoring rdf:type owl:NamedIndividual ,
-                                              voc:TypeFailureDetectionMethod .       
-
-###  https://iso14224.org/vocab/extended/failure_detected_by_production_interference
-voc:failure_detected_by_production_interference rdf:type owl:NamedIndividual ,
-                                              voc:TypeFailureDetectionMethod .                                                                                                                                      
-
-###  https://iso14224.org/vocab/extended/failure_detected_by_casual_observation
-voc:failure_detected_by_casual_observation rdf:type owl:NamedIndividual ,
-                                              voc:TypeFailureDetectionMethod . 
-
-###  https://iso14224.org/vocab/extended/failure_detected_by_corrective_maintenance
-voc:failure_detected_by_corrective_maintenance rdf:type owl:NamedIndividual ,
-                                              voc:TypeFailureDetectionMethod . 
-
-###  https://iso14224.org/vocab/extended/failure_detected_by_on_demand_activity
-voc:failure_detected_by_on_demand_activity rdf:type owl:NamedIndividual ,
-                                              voc:TypeFailureDetectionMethod .                                                
-
-###  https://iso14224.org/vocab/extended/failure_detected_by_other_method
-voc:failure_detected_by_other_method rdf:type owl:NamedIndividual ,
-                                              voc:TypeFailureDetectionMethod .                                                
-
- ###  https://iso14224.org/vocab/extended/failure_to_rotate
-voc:failure_to_rotate rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode . 
-
- ###  https://iso14224.org/vocab/extended/failure_to_close_on_demand
-voc:failure_to_close_on_demand rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .                                        
-
- ###  https://iso14224.org/vocab/extended/failure_to_function_as_intended
-voc:failure_to_function_as_intended rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode . 
-
- ###  https://iso14224.org/vocab/extended/failure_to_function_on_demand
-voc:failure_to_function_on_demand rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .                                        
-
- ###  https://iso14224.org/vocab/extended/failure_to_open_on_demand
-voc:failure_to_open_on_demand rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode . 
-
- ###  https://iso14224.org/vocab/extended/failure_to_start_on_demand
-voc:failure_to_start_on_demand rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .                                          
-
- ###  https://iso14224.org/vocab/extended/failure_to_stop_on_demand
-voc:failure_to_stop_on_demand rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .
-
- ###  https://iso14224.org/vocab/extended/faulty_output_frequency
-voc:faulty_output_frequency rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode . 
-
- ###  https://iso14224.org/vocab/extended/faulty_output_voltage
-voc:faulty_output_voltage rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode . 
-
- ###  https://iso14224.org/vocab/extended/high_output
-voc:high_output rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .                                       
-
-###  https://iso14224.org/vocab/extended/instrument_failure_mechanism
-voc:instrument_failure_mechanism rdf:type owl:NamedIndividual ,
-                                      voc:TypeFailureMechanism .
-
- ###  https://iso14224.org/vocab/extended/insufficient_heat_transfer
-voc:insufficient_heat_transfer rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .
-
- ###  https://iso14224.org/vocab/extended/internal_leakage
-voc:internal_leakage rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .
-
- ###  https://iso14224.org/vocab/extended/leakage_in_closed_position
-voc:leakage_in_closed_position rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .  
-
- ###  https://iso14224.org/vocab/extended/load_drop
-voc:load_drop rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode . 
-
- ###  https://iso14224.org/vocab/extended/loss_of_buoyancy
-voc:loss_of_buoyancy rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .   
-
- ###  https://iso14224.org/vocab/extended/loss_of_redundancy
-voc:loss_of_redundancy rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .                                                                                                                                                        
-
- ###  https://iso14224.org/vocab/extended/low_oil_supply_pressure
-voc:low_oil_supply_pressure rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .   
-
- ###  https://iso14224.org/vocab/extended/low_output
-voc:low_output rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .                                                                                                                 
-
-###  https://iso14224.org/vocab/extended/material_failure_mechanism
-voc:material_failure_mechanism rdf:type owl:NamedIndividual ,
-                                    voc:TypeFailureMechanism .
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/erratic_output
+i14224:erratic_output rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .  
 
 
-###  https://iso14224.org/vocab/extended/mechanical_failure_mechanism
-voc:mechanical_failure_mechanism rdf:type owl:NamedIndividual ,
-                                      voc:TypeFailureMechanism .
+###  http://iso14224.org/ontology/i14224/ont/appendixB/external_influence_failure_mechanism
+i14224:external_influence_failure_mechanism rdf:type owl:NamedIndividual ,
+                                              i14224:TypeFailureMechanism .
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/external_leakage_fuel
+i14224:external_leakage_fuel rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .  
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/external_leakage_process_medium
+i14224:external_leakage_process_medium rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .  
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/external_leakage_utility_medium
+i14224:external_leakage_utility_medium rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .  
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_to_connect
+i14224:failure_to_connect rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .    
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_to_disconnect
+i14224:failure_to_disconnect rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .                                                                             
+
+###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_detected_by_periodic_maintenance
+i14224:failure_detected_by_periodic_maintenance rdf:type owl:NamedIndividual ,
+                                              i14224:TypeFailureDetectionMethod .                                               
+
+###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_detected_by_functional_testing
+i14224:failure_detected_by_functional_testing rdf:type owl:NamedIndividual ,
+                                              i14224:TypeFailureDetectionMethod .  
+
+###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_detected_by_inspection
+i14224:failure_detected_by_inspection rdf:type owl:NamedIndividual ,
+                                              i14224:TypeFailureDetectionMethod . 
+
+###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_detected_by_periodic_condition_monitoring
+i14224:failure_detected_by_periodic_condition_monitoring rdf:type owl:NamedIndividual ,
+                                              i14224:TypeFailureDetectionMethod .    
+
+###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_detected_by_pressure_testing
+i14224:failure_detected_by_pressure_testing rdf:type owl:NamedIndividual ,
+                                              i14224:TypeFailureDetectionMethod .  
+
+###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_detected_by_continuous_condition_monitoring
+i14224:failure_detected_by_continuous_condition_monitoring rdf:type owl:NamedIndividual ,
+                                              i14224:TypeFailureDetectionMethod .       
+
+###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_detected_by_production_interference
+i14224:failure_detected_by_production_interference rdf:type owl:NamedIndividual ,
+                                              i14224:TypeFailureDetectionMethod .                                                                                                                                      
+
+###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_detected_by_casual_observation
+i14224:failure_detected_by_casual_observation rdf:type owl:NamedIndividual ,
+                                              i14224:TypeFailureDetectionMethod . 
+
+###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_detected_by_corrective_maintenance
+i14224:failure_detected_by_corrective_maintenance rdf:type owl:NamedIndividual ,
+                                              i14224:TypeFailureDetectionMethod . 
+
+###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_detected_by_on_demand_activity
+i14224:failure_detected_by_on_demand_activity rdf:type owl:NamedIndividual ,
+                                              i14224:TypeFailureDetectionMethod .                                                
+
+###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_detected_by_other_method
+i14224:failure_detected_by_other_method rdf:type owl:NamedIndividual ,
+                                              i14224:TypeFailureDetectionMethod .                                                
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_to_rotate
+i14224:failure_to_rotate rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode . 
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_to_close_on_demand
+i14224:failure_to_close_on_demand rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .                                        
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_to_function_as_intended
+i14224:failure_to_function_as_intended rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode . 
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_to_function_on_demand
+i14224:failure_to_function_on_demand rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .                                        
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_to_open_on_demand
+i14224:failure_to_open_on_demand rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode . 
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_to_start_on_demand
+i14224:failure_to_start_on_demand rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .                                          
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/failure_to_stop_on_demand
+i14224:failure_to_stop_on_demand rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/faulty_output_frequency
+i14224:faulty_output_frequency rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode . 
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/faulty_output_voltage
+i14224:faulty_output_voltage rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode . 
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/high_output
+i14224:high_output rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .                                       
+
+###  http://iso14224.org/ontology/i14224/ont/appendixB/instrument_failure_mechanism
+i14224:instrument_failure_mechanism rdf:type owl:NamedIndividual ,
+                                      i14224:TypeFailureMechanism .
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/insufficient_heat_transfer
+i14224:insufficient_heat_transfer rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/internal_leakage
+i14224:internal_leakage rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/leakage_in_closed_position
+i14224:leakage_in_closed_position rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .  
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/load_drop
+i14224:load_drop rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode . 
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/loss_of_buoyancy
+i14224:loss_of_buoyancy rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .   
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/loss_of_redundancy
+i14224:loss_of_redundancy rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .                                                                                                                                                        
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/low_oil_supply_pressure
+i14224:low_oil_supply_pressure rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .   
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/low_output
+i14224:low_output rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .                                                                                                                 
+
+###  http://iso14224.org/ontology/i14224/ont/appendixB/material_failure_mechanism
+i14224:material_failure_mechanism rdf:type owl:NamedIndividual ,
+                                    i14224:TypeFailureMechanism .
 
 
-###  https://iso14224.org/vocab/extended/miscellaneous_failure_mechanism
-voc:miscellaneous_failure_mechanism rdf:type owl:NamedIndividual ,
-                                         voc:TypeFailureMechanism .
+###  http://iso14224.org/ontology/i14224/ont/appendixB/mechanical_failure_mechanism
+i14224:mechanical_failure_mechanism rdf:type owl:NamedIndividual ,
+                                      i14224:TypeFailureMechanism .
 
- ###  https://iso14224.org/vocab/extended/noise
-voc:noise rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode . 
 
- ###  https://iso14224.org/vocab/extended/no_output
-voc:no_output rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .                                        
+###  http://iso14224.org/ontology/i14224/ont/appendixB/miscellaneous_failure_mechanism
+i14224:miscellaneous_failure_mechanism rdf:type owl:NamedIndividual ,
+                                         i14224:TypeFailureMechanism .
 
- ###  https://iso14224.org/vocab/extended/overheating
-voc:overheating rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode . 
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/noise
+i14224:noise rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode . 
 
- ###  https://iso14224.org/vocab/extended/other_failure_mode
-voc:other_failure_mode rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .  
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/no_output
+i14224:no_output rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .                                        
 
- ###  https://iso14224.org/vocab/extended/parameter_deviation
-voc:parameter_deviation rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .                                                                              
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/overheating
+i14224:overheating rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode . 
 
- ###  https://iso14224.org/vocab/extended/plugged_or_choked
-voc:plugged_or_choked rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode . 
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/other_failure_mode
+i14224:other_failure_mode rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .  
 
- ###  https://iso14224.org/vocab/extended/power_or_signal_transmission_failure
-voc:power_or_signal_transmission_failure rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .                                        
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/parameter_deviation
+i14224:parameter_deviation rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .                                                                              
 
- ###  https://iso14224.org/vocab/extended/sludge_build_up
-voc:sludge_build_up rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode . 
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/plugged_or_choked
+i14224:plugged_or_choked rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode . 
 
- ###  https://iso14224.org/vocab/extended/minor_inservice_problems
-voc:minor_inservice_problems rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .   
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/power_or_signal_transmission_failure
+i14224:power_or_signal_transmission_failure rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .                                        
 
- ###  https://iso14224.org/vocab/extended/slippage
-voc:slippage rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode . 
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/sludge_build_up
+i14224:sludge_build_up rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode . 
 
- ###  https://iso14224.org/vocab/extended/spurious_high_level_alarm
-voc:spurious_high_level_alarm rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode . 
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/minor_inservice_problems
+i14224:minor_inservice_problems rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .   
 
- ###  https://iso14224.org/vocab/extended/spurious_low_level_alarm
-voc:spurious_low_level_alarm rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .  
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/slippage
+i14224:slippage rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode . 
 
- ###  https://iso14224.org/vocab/extended/spurious_operation
-voc:spurious_operation rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .                                                                                                                                                        
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/spurious_high_level_alarm
+i14224:spurious_high_level_alarm rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode . 
 
- ###  https://iso14224.org/vocab/extended/structural_deficiency
-voc:structural_deficiency rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/spurious_low_level_alarm
+i14224:spurious_low_level_alarm rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .  
 
- ###  https://iso14224.org/vocab/extended/unknown_failure_mode
-voc:unknown_failure_mode rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/spurious_operation
+i14224:spurious_operation rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .                                                                                                                                                        
 
- ###  https://iso14224.org/vocab/extended/vibration
-voc:vibration rdf:type owl:NamedIndividual ,
-                                       voc:FailureMode .                                       
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/structural_deficiency
+i14224:structural_deficiency rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/unknown_failure_mode
+i14224:unknown_failure_mode rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .
+
+ ###  http://iso14224.org/ontology/i14224/ont/appendixB/vibration
+i14224:vibration rdf:type owl:NamedIndividual ,
+                                       i14224:FailureMode .                                       
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
