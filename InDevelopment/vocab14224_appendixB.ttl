@@ -25,13 +25,13 @@ rdfs:rangei14224:TypeFailureMechanism rdf:type owl:AnnotationProperty .
 
 ###  https://iso14224.org/ontology/i14224/rdl/hasFailureCause
 i14224:hasFailureCause rdf:type owl:ObjectProperty ;
-                       rdfs:domain <https://iso14224.org/vocab/basic/FailureCause> ;
+                       rdfs:domain <https://iso14224.org/ontology/i14224/rdl/FailureCause> ;
                        rdfs:range i14224:TypeFailureCause .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/hasFailureCauseType
 i14224:hasFailureCauseType rdf:type owl:ObjectProperty ;
-                           rdfs:domain <https://iso14224.org/vocab/basic/FailureCause> ;
+                           rdfs:domain <https://iso14224.org/ontology/i14224/rdl/FailureCause> ;
                            rdfs:range i14224:TypeFailureCause .
 
 
@@ -47,7 +47,7 @@ i14224:hasFailureMechanism rdf:type owl:ObjectProperty .
 
 ###  https://iso14224.org/ontology/i14224/rdl/hasFailureMechanismType
 i14224:hasFailureMechanismType rdf:type owl:ObjectProperty ;
-                               rdfs:domain <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                               rdfs:domain <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                rdfs:rangei14224:TypeFailureMechanism  .
 
 
@@ -81,25 +81,25 @@ i14224:Adjust rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/BlockageOrPluggedFailureMechanism
 i14224:BlockageOrPluggedFailureMechanism rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                         rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                          rdfs:label "Blockage or plugged failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/BreakageFailureMechanism
 i14224:BreakageFailureMechanism rdf:type owl:Class ;
-                                rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                 rdfs:label "Breakage failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/BurstFailureMechanism
 i14224:BurstFailureMechanism rdf:type owl:Class ;
-                             rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                             rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                              rdfs:label "Burst failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/CavitationFailureMechanism
 i14224:CavitationFailureMechanism rdf:type owl:Class ;
-                                  rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                  rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                   rdfs:label "Cavitation failure mechanism" .
 
 
@@ -121,7 +121,7 @@ i14224:Check rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/ClearanceOrAlignmentFailureMechanism
 i14224:ClearanceOrAlignmentFailureMechanism rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                            rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                             rdfs:label "Clearance or alignment failure mechanism" .
 
 
@@ -143,103 +143,103 @@ i14224:CombinationMaintenanceActivity rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/CombinedCausesFailureMechanism
 i14224:CombinedCausesFailureMechanism rdf:type owl:Class ;
-                                      rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                      rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                       rdfs:label "Combined causes failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/CommonCauseOrCommonModeFailureMechanism
 i14224:CommonCauseOrCommonModeFailureMechanism rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                               rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                                rdfs:label "Common cause or common mode failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/ContaminationFailureMechanism
 i14224:ContaminationFailureMechanism rdf:type owl:Class ;
-                                     rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                     rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                      rdfs:label "Contamination failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/ControlFailureMechanism
 i14224:ControlFailureMechanism rdf:type owl:Class ;
-                               rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                               rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                rdfs:label "Control failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/CorrosionFailureMechanism
 i14224:CorrosionFailureMechanism rdf:type owl:Class ;
-                                 rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                 rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                  rdfs:label "Corrosion failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/DeformationFailureMechanism
 i14224:DeformationFailureMechanism rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                   rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                    rdfs:label "Deformation failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/EarthOrIsolationFaultFailureMechanism
 i14224:EarthOrIsolationFaultFailureMechanism rdf:type owl:Class ;
-                                             rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                             rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                              rdfs:label "Earth or isolation fault failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/ErosionFailureMechanism
 i14224:ErosionFailureMechanism rdf:type owl:Class ;
-                               rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                               rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                rdfs:label "Erosion failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/FatigueFailureMechanism
 i14224:FatigueFailureMechanism rdf:type owl:Class ;
-                               rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                               rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                rdfs:label "Fatigue failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/FaultyPowerOrVoltageFailureMechanism
 i14224:FaultyPowerOrVoltageFailureMechanism rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                            rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                             rdfs:label "Faulty power or voltage failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/FaultySignalOrIndicationOrAlarmFailureMechanism
 i14224:FaultySignalOrIndicationOrAlarmFailureMechanism rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                                       rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                                        rdfs:label "Faulty signal or indication or alarm failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/GeneralElectricalFailureMechanism
 i14224:GeneralElectricalFailureMechanism rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                         rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                          rdfs:label "General electrical failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/GeneralExternalInfluenceFailureMechanism
 i14224:GeneralExternalInfluenceFailureMechanism rdf:type owl:Class ;
-                                                rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                                rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                                 rdfs:label "General external influence failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/GeneralInstrumentFailureMechanism
 i14224:GeneralInstrumentFailureMechanism rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                         rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                          rdfs:label "General instrument failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/GeneralMaterialFailureMechanism
 i14224:GeneralMaterialFailureMechanism rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                       rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                        rdfs:label "General material failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/GeneralMechanicalFailureMechanism
 i14224:GeneralMechanicalFailureMechanism rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                         rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                          rdfs:label "General mechanical failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/GeneralMiscellaneousFailureMechanism
 i14224:GeneralMiscellaneousFailureMechanism rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                            rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                             rdfs:label "General miscellaneous failure mechanism" .
 
 
@@ -261,13 +261,13 @@ i14224:Inspection rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/LeakageFailureMechanism
 i14224:LeakageFailureMechanism rdf:type owl:Class ;
-                               rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                               rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                rdfs:label "Leakage failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/LoosenessFailureMechanism
 i14224:LoosenessFailureMechanism rdf:type owl:Class ;
-                                 rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                 rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                  rdfs:label "Looseness failure mechanism" .
 
 
@@ -278,7 +278,7 @@ i14224:MaintenanceActivity rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/MiscellaneousExternalnfluencesFailureMechanism
 i14224:MiscellaneousExternalnfluencesFailureMechanism rdf:type owl:Class ;
-                                                      rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                                      rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                                       rdfs:label "Miscellaneous external influences failure mechanism" .
 
 
@@ -300,31 +300,31 @@ i14224:Modify rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/NoCauseFoundFailureMechanism
 i14224:NoCauseFoundFailureMechanism rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                    rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                     rdfs:label "No cause found failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/NoPowerOrVoltageFailureMechanism
 i14224:NoPowerOrVoltageFailureMechanism rdf:type owl:Class ;
-                                        rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                        rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                         rdfs:label "No power or voltage failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/NoSignalOrIndicationOrAlarmFailureMechanism
 i14224:NoSignalOrIndicationOrAlarmFailureMechanism rdf:type owl:Class ;
-                                                   rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                                   rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                                    rdfs:label "No signal or indication or alarm failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/OpenCircuitFailureMechanism
 i14224:OpenCircuitFailureMechanism rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                   rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                    rdfs:label "Open circuit failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/OtherFailureMechanism
 i14224:OtherFailureMechanism rdf:type owl:Class ;
-                             rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                             rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                              rdfs:label "Other failure mechanism" .
 
 
@@ -336,7 +336,7 @@ i14224:OtherMaintenanceActivity rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/OutOfAdjustmentFailureMechanism
 i14224:OutOfAdjustmentFailureMechanism rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                       rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                        rdfs:label "Out of adjustment failure mechanism" .
 
 
@@ -358,7 +358,7 @@ i14224:Overhaul rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/OverheatingFailureMechanism
 i14224:OverheatingFailureMechanism rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                   rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                    rdfs:label "Overheating failure mechanism" .
 
 
@@ -428,19 +428,19 @@ i14224:Service rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/ShortCircuitingFailureMechanism
 i14224:ShortCircuitingFailureMechanism rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                       rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                        rdfs:label "Short circuiting failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/SoftwareErrorFailureMechanism
 i14224:SoftwareErrorFailureMechanism rdf:type owl:Class ;
-                                     rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                     rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                      rdfs:label "Software error failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/StickingFailureMechanism
 i14224:StickingFailureMechanism rdf:type owl:Class ;
-                                rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                 rdfs:label "Sticking failure mechanism" .
 
 
@@ -477,32 +477,21 @@ i14224:TypeFailureMechanism rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/UnknownFailureMechanism
 i14224:UnknownFailureMechanism rdf:type owl:Class ;
-                               rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                               rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                rdfs:label "UnknownFailureMechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/VibrationFailureMechanism
 i14224:VibrationFailureMechanism rdf:type owl:Class ;
-                                 rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                                 rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                                  rdfs:label "Vibration failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/WearFailureMechanism
 i14224:WearFailureMechanism rdf:type owl:Class ;
-                            rdfs:subClassOf <https://iso14224.org/vocab/basic/FailureMechanism> ;
+                            rdfs:subClassOf <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
                             rdfs:label "Wear failure mechanism" .
 
-
-###  https://iso14224.org/vocab/basic/FailureCause
-<https://iso14224.org/vocab/basic/FailureCause> rdf:type owl:Class .
-
-
-###  https://iso14224.org/vocab/basic/FailureMechanism
-<https://iso14224.org/vocab/basic/FailureMechanism> rdf:type owl:Class .
-
-
-###  https://iso14224.org/vocab/vocab/DetectionMethod
-<https://iso14224.org/vocab/vocab/DetectionMethod> rdf:type owl:Class .
 
 
 #################################################################
