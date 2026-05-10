@@ -1,5 +1,5 @@
 ﻿MaintenanceWorkOrderActivity,Date,WODescription,AssetDescription,ControlLoopID,FunctionalLocation,ISO14224FailureModeCode,WOOrderType,ActualCost,WorkHours
-WO_20170522_SCE 02140_1,2017-05-22,A Clave HPN2 valve actuator loose,SCE 02140H HP N2 Feed to ACX1 Vlv,CL02140,SCE 02140,ERO,PM03,129,2
+WO_20170522_SCE 02140_1,2017-05-22,A Clave HPN2 valve actuator loose,SCE 02140H HP N2 Feed to ACX1 Vlv,CL02140,SCE 02140,ERB,PM03,129,2
 WO_20180719_SCE 02764_2,2018-07-19,H11 DNE Install j/bury valves w/ trial p,SCE 02764 ACX1 Bottom Disch Jbury Vlv,CL02764,SCE 02764,UNK,PM01,7901,0
 WO_20181107_SCE 02764_3,2018-11-07,H14 JDI Flocontrol Jamesbury valves,SCE 02764 ACX1 Bottom Disch Jbury Vlv,CL02764,SCE 02764,UNK,PM01,1457,6
 WO_20170410_SCE 02765_4,2017-04-10,remove / replace faulty sensor,SCE 02765 ACX1 Top Disch Jbury Vlv,CL02765,SCE 02765,UNK,PM03,577,1

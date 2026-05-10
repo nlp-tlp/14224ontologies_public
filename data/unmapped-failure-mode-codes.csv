@@ -1,1 +1,2 @@
 row_number,work_order,failure_mode_code,issue,details
+2,WO_20170522_SCE 02140_1,ERB,UNMAPPED_FAILURE_MODE_CODE,No i14224:FailureMode individual with this rdfs:label was found in the vocabulary file.

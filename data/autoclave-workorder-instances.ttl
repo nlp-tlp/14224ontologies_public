@@ -125,7 +125,7 @@ inst:WO_20170522_SCE_02140_1 a mwo:MWOActivity ;
     lis:hasTemporalRegion inst:Instant_WO_20170522_SCE_02140_1 ;
     lis:representedIn inst:DateDatum_WO_20170522_SCE_02140_1 ;
     mwo:hasActualCost inst:ActualCostDatum_WO_20170522_SCE_02140_1 ;
-    mwo:hasFailureModeCode i14224:erratic_output ;
+    mwo:hasFailureModeCode inst:UnmappedFailureModeCode_ERB ;
     mwo:hasWorkHours inst:WorkHoursDatum_WO_20170522_SCE_02140_1 ;
     mwo:hasWorkOrderType inst:WOOrderType_PM03 .
 
@@ -909,6 +909,9 @@ inst:DateDatum_WO_20181220_SCE_02777_25 a lis:TemporalDatum ;
     rdfs:label "date datum for WO_20181220_SCE 02777_25" ;
     lis:quantifiesTemporalRegion inst:Instant_WO_20181220_SCE_02777_25 ;
     lis:temporalValue "2018-12-20"^^xsd:date .
+
+inst:UnmappedFailureModeCode_ERB a mwo:MWOFailureModeCode ;
+    rdfs:label "ERB" .
 
 inst:WorkHoursDatum_WO_20170111_SCE_02848H_35 a mwo:WorkHoursDatum ;
     rdfs:label "work hours for WO_20170111_SCE 02848H_35" ;
