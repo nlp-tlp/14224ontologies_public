@@ -48,7 +48,7 @@ i14224:hasFailureMechanism rdf:type owl:ObjectProperty .
 ###  https://iso14224.org/ontology/i14224/rdl/hasFailureMechanismType
 i14224:hasFailureMechanismType rdf:type owl:ObjectProperty ;
                                rdfs:domain <https://iso14224.org/ontology/i14224/rdl/FailureMechanism> ;
-                               rdfs:rangei14224:TypeFailureMechanism  .
+                               rdfs:range i14224:TypeFailureMechanism  .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/hasFailureMode
