@@ -26,6 +26,10 @@ python csv_to_lis14_instances_with_failure_mode_validation.py `
     --failure-mode-vocab "C:\\Users\\00040628\\LocalData\\GitHub\\14224ontologies_public\\inDevelopment\\vocab14224_appendixB.ttl" `
     --out "C:\\Users\\00040628\\LocalData\\GitHub\\14224ontologies_public\\data\\autoclave-workorder-instances.ttl" `
     --warnings "C:\\Users\\00040628\\LocalData\\GitHub\\14224ontologies_public\\data\\unmapped-failure-mode-codes.csv"
+    
+When you run the script, it will print a summary of how many failure mode codes were loaded from the vocabulary, how many RDF triples were generated, and how many warnings were recorded in the CSV report.
+
+Be careful with file paths. May need to check if files are moved to different locations as the paths have been hardcoded for testing purposes. Adjust the paths in the command above as needed to point to the correct locations of your input CSV, vocabulary TTL, output TTL, and warning CSV files.    
 """
 
 from __future__ import annotations
@@ -51,15 +55,44 @@ I14224 = Namespace("https://iso14224.org/ontology/i14224/rdl/")
 # Instance namespace for this generated dataset. Change to your own persistent base IRI.
 INST = Namespace("https://example.org/autoclave/work-order/instance/")
 
+#Functions for processing and normalising CSV values, building the failure mode lookup, writing warnings, and converting CSV rows to RDF.
 
 def local_id(value: object, fallback: str = "unnamed") -> str:
-    """Create a safe readable local IRI fragment from a CSV value."""
+    """Create a safe readable local IRI fragment from a CSV value.
+        Example:
+        "02777 Leach Air Vent" becomes something like:
+        "02777_Leach_Air_Vent"
+
+    Why this is needed:
+        CSV values often contain spaces, punctuation, or missing values.
+        IRIs need safe, predictable text.
+
+    Parameters:
+        value:
+            The original value from the CSV cell.
+        fallback:
+            Text to use if the CSV cell is empty or missing.
+
+    Returns:
+        A cleaned string that can be used at the end of an IRI.
+    
+    """
+    # If the value is missing, start with an empty string.
+    # Otherwise convert the value to text and remove leading/trailing spaces.   
     text = "" if pd.isna(value) else str(value).strip()
+    # If the result is empty, use the fallback value instead.
     if not text:
         text = fallback
+    # Replace one or more whitespace characters with a single underscore.    
     text = re.sub(r"\s+", "_", text)
+    # Replace characters that are not letters, numbers, underscores, or hyphens
+    # with underscores. This removes punctuation that could cause IRI problems.
     text = re.sub(r"[^A-Za-z0-9_\-]", "_", text)
+    # Replace repeated underscores with one underscore, then remove underscores
+    # from the start and end.
     text = re.sub(r"_+", "_", text).strip("_")
+    # URL-encode anything that still needs escaping.
+    # The 'safe' characters are allowed to remain unchanged.
     return quote(text or fallback, safe="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-.")
 
 
@@ -76,8 +109,23 @@ def normalise_code(value: object) -> str:
 
 
 def add_if_text(g: Graph, s: URIRef, p: URIRef, value: object) -> None:
-    """Add a literal triple only when the CSV value is non-empty."""
+    """Add a literal triple only when the CSV value is non-empty e.g. when the supplied CSV value contains text.
+
+    This prevents empty CSV cells from becoming empty RDF literals.
+
+    Parameters:
+        g:
+            The RDF graph to add the triple to.
+        s:
+            The subject IRI of the triple.
+        p:
+            The predicate/property IRI of the triple.
+        value:
+            The CSV value to turn into a literal object."""
+    # Only add the triple if the value is not missing and is not blank text.
     if not pd.isna(value) and str(value).strip():
+        # Add the RDF triple: subject, predicate, object.
+        # The object is a Literal because it is text data, not another IRI.
         g.add((s, p, Literal(str(value).strip())))
 
 
@@ -111,7 +159,7 @@ def build_failure_mode_lookup(vocab_path: Path) -> Tuple[Dict[str, URIRef], Dict
     vocab_graph.parse(vocab_path, format="turtle")
     """
     vocab_graph = Graph()
-    
+    # this code checks to see that the RDF file can be parsed to turtle format, and if not, it prints detailed error information to help diagnose the problem. This is useful because RDF parsing errors can sometimes be cryptic, and this way we can see exactly what went wrong.
     try:
         vocab_graph.parse(vocab_path, format="turtle")
     except Exception as e:
@@ -126,13 +174,14 @@ def build_failure_mode_lookup(vocab_path: Path) -> Tuple[Dict[str, URIRef], Dict
         raise
 
     label_to_entities: Dict[str, List[URIRef]] = defaultdict(list)
-
+    # this code iterates through all subjects in the RDF graph that are of type i14224:FailureMode, and for each of those subjects, it looks for their rdfs:label values. It normalises those labels using the normalise_code function, and if the normalised code is not empty, it adds the failure mode individual to a list in the label_to_entities dictionary under that code. This way, we can see which failure mode individuals correspond to each code label.
+    # normalise code means to trim whitespace and uppercase the value so that ' brd ' and 'BRD' match the same controlled vocabulary entry. This is important for robust matching of codes from the CSV to the vocabulary, even if there are minor formatting differences.
     for failure_mode in vocab_graph.subjects(RDF.type, I14224.FailureMode):
         for label in vocab_graph.objects(failure_mode, RDFS.label):
             code = normalise_code(label)
             if code:
                 label_to_entities[code].append(failure_mode)
-
+    # this code then processes the label_to_entities dictionary to create a lookup dictionary that maps each code to a single FailureMode individual, but only if there is exactly one unique individual for that code. If there are multiple individuals with the same code label, it adds that code and the list of individuals to the duplicates dictionary instead, because it would be ambiguous to match to any one of them.
     lookup: Dict[str, URIRef] = {}
     duplicates: Dict[str, List[URIRef]] = {}
 
@@ -148,6 +197,8 @@ def build_failure_mode_lookup(vocab_path: Path) -> Tuple[Dict[str, URIRef], Dict
 
 def write_warnings(path: Path, warnings: Iterable[dict]) -> None:
     """Write validation warnings to CSV."""
+    # this code writes the warnings to a CSV file with the specified fieldnames. Each warning is a dictionary that should contain the keys 'row_number', 'work_order', 'failure_mode_code', 'issue', and 'details'. The CSV will have a header row with these field names, followed by one row for each warning in the warnings iterable.
+    # A warning might indicate that a failure mode code from the CSV was not found in the vocabulary, or that it matched multiple entries in the vocabulary, making it ambiguous. This allows users to review and address any issues with the failure mode codes in their source data or vocabulary.
     fieldnames = [
         "row_number",
         "work_order",
@@ -163,6 +214,7 @@ def write_warnings(path: Path, warnings: Iterable[dict]) -> None:
 
 def add_ontology_header(g: Graph) -> None:
     """Add ontology metadata and imports to the generated graph."""
+    # this code adds metadata about the ontology to the RDF graph, including its type and the ontologies it imports. This is important for making the generated RDF self-describing and for ensuring that it correctly references the relevant vocabularies for LIS14, assetCore, mwoCore, and ISO 14224. The imports statements indicate that this dataset relies on those ontologies for its classes and properties, and tools that process the RDF can automatically retrieve those ontologies if needed.
     ontology_iri = URIRef("https://example.org/autoclave/work-order/instances")
     g.add((ontology_iri, RDF.type, OWL.Ontology))
     g.add((ontology_iri, OWL.imports, URIRef("http://rds.posccaesar.org/ontology/lis14/ont/core")))
@@ -173,6 +225,7 @@ def add_ontology_header(g: Graph) -> None:
 
 def convert(csv_path: Path, vocab_path: Path, out_path: Path, warning_path: Path) -> None:
     """Convert CSV rows to RDF and validate failure mode codes."""
+    # this code is the main function that orchestrates the conversion of the CSV data to RDF, while also validating the failure mode codes against the provided vocabulary. It first builds the failure mode lookup and identifies any duplicate codes in the vocabulary. Then it reads the CSV file into a pandas DataFrame and iterates through each row, creating RDF triples for the work order activity, asset, and other properties. When it encounters a failure mode code in the CSV, it uses the lookup to determine if it can link directly to a controlled vocabulary individual, or if it needs to create a local placeholder and record a warning. Finally, it serializes the RDF graph to a TTL file and writes any warnings to a CSV report.
     failure_mode_lookup, duplicate_failure_mode_codes = build_failure_mode_lookup(vocab_path)
 
     df = pd.read_csv(csv_path)
@@ -308,7 +361,7 @@ def convert(csv_path: Path, vocab_path: Path, out_path: Path, warning_path: Path
     print(f"Wrote RDF: {out_path} with {len(g)} triples")
     print(f"Wrote warning report: {warning_path} with {len(warnings)} warning rows")
 
-
+# This code defines the command-line interface for the script, allowing users to specify the input CSV file, the vocabulary TTL file, the output TTL file, and the warning CSV file via command-line arguments. It uses argparse to parse these arguments and provides default paths for testing purposes. The main function then calls the convert function with the provided arguments to perform the conversion and validation.
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Convert work order CSV data to LIS14/assetCore/mwoCore-aligned RDF and validate ISO 14224 failure mode codes."
@@ -329,11 +382,11 @@ def parse_args() -> argparse.Namespace:
     )
     return parser.parse_args()
 
-
+# This code defines the main entry point of the script. It parses the command-line arguments and then calls the convert function with the specified paths for the CSV input, vocabulary TTL, output TTL, and warning CSV. This allows the script to be run from the command line with different input and output files as needed.
 def main() -> None:
     args = parse_args()
     convert(args.csv, args.failure_mode_vocab, args.out, args.warnings)
 
-
+# This ensures that the main function is called when the script is executed directly. If this script is imported as a module in another script, the main function will not be executed automatically, which is a common Python convention for scripts that can be both run directly and imported.
 if __name__ == "__main__":
     main()
