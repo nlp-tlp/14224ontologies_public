@@ -128,7 +128,7 @@ def add_if_text(g: Graph, s: URIRef, p: URIRef, value: object) -> None:
         # The object is a Literal because it is text data, not another IRI.
         g.add((s, p, Literal(str(value).strip())))
 
-
+# This function binds the common prefixes to the RDF graph, which allows the serialized TTL output to use these prefixes instead of full IRIs. This makes the output more readable and compact. The prefixes include 'lis' for the LIS ontology, 'asset' for the assetCore ontology, 'mwo' for the mwoCore ontology, 'i14224' for the ISO 14224 ontology, 'inst' for the instance namespace, and standard RDF, RDFS, OWL, XSD, and DCTERMS prefixes.
 def bind_prefixes(g: Graph) -> None:
     """Bind common prefixes used in the generated TTL output."""
     g.bind("lis", LIS)
@@ -142,7 +142,7 @@ def bind_prefixes(g: Graph) -> None:
     g.bind("xsd", XSD)
     g.bind("dcterms", DCTERMS)
 
-
+# This function reads the vocabulary TTL file and builds a lookup dictionary that maps normalised ISO 14224 code labels to their corresponding FailureMode individuals in the RDF graph. It also identifies any duplicate labels that correspond to more than one individual, which would make matching ambiguous. The function returns both the lookup dictionary and the duplicates dictionary for use in the conversion process.
 def build_failure_mode_lookup(vocab_path: Path) -> Tuple[Dict[str, URIRef], Dict[str, List[URIRef]]]:
     """Build a lookup from ISO 14224 code label to FailureMode individual.
 
@@ -257,6 +257,7 @@ def convert(csv_path: Path, vocab_path: Path, out_path: Path, warning_path: Path
         wo = INST[wo_id]
 
         # Main row anchor: one work order activity per CSV row.
+        # This code is creating a new RDF individual for each work order activity, using the local_id function to generate a unique and safe IRI fragment based on the "MaintenanceWorkOrderActivity" column from the CSV. It then adds triples to the graph to indicate that this individual is of type MWO.MWOActivity, and it assigns an rdfs:label to it based on the same CSV value. It also adds a description if there is a "WODescription" value in the CSV. This sets up the main entity that represents the work order activity in the RDF graph, which will then be linked to other entities such as assets and failure mode codes.
         g.add((wo, RDF.type, MWO.MWOActivity))
         g.add((wo, RDFS.label, Literal(wo_label)))
         add_if_text(g, wo, DCTERMS.description, row.get("WODescription"))
@@ -276,6 +277,7 @@ def convert(csv_path: Path, vocab_path: Path, out_path: Path, warning_path: Path
             g.add((wo, LIS.representedIn, date_datum))
 
         # Asset from FunctionalLocation; reuse same asset node across rows.
+        # This code is extracting the functional location from the CSV row, normalising it, and using it to create or reuse an asset individual in the RDF graph. It uses the local_id function to generate a unique IRI fragment for the asset based on the functional location. It then adds triples to indicate that this asset is of type ASSET.MaintainableAsset, and it assigns an rdfs:label based on the "AssetDescription" column if available, or the functional location if not. It also adds properties for functionalLocation, controlLoopID, and description based on the corresponding CSV columns. Finally, it links the work order activity to this asset using the LIS.hasParticipant property. This way, if multiple work orders reference the same functional location, they will be linked to the same asset individual in the RDF graph.
         floc_raw = row.get("FunctionalLocation")
         floc = "" if pd.isna(floc_raw) else str(floc_raw).strip()
         asset_id = local_id(floc, f"Asset_{i + 1}")
