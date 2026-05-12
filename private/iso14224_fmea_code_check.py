@@ -74,25 +74,27 @@ EQUIPMENT_CLASS_CODE_MAP = {
 # -----------------------------------------------------------------------------
 # Utility functions
 # -----------------------------------------------------------------------------
+# this function is used to normalize both header names and code values for tolerant lookup and comparison.
 def norm_header(value: Any) -> str:
     """Normalize a spreadsheet header for tolerant lookup."""
     if value is None:
         return ""
     return re.sub(r"[^a-z0-9]+", "", str(value).lower())
 
-
+# This function is used to normalize FM code values for comparison against the ISO code list and allowed codes by class.
 def norm_code(value: Any) -> str:
     """Normalize an ISO code value."""
     if value is None:
         return ""
     return str(value).strip().upper()
 
-
+# this function is used to build a mapping of normalized header names to their column indices for flexible column lookup.
+# A column indices is returned as 1-based to match openpyxl's cell access patterns. What is a cell access pattern? For example, ws.cell(row=1, column=3) to access the header of the 3rd column.
 def build_header_index(ws) -> Dict[str, int]:
     """Return normalized header -> 1-based column index."""
     return {norm_header(ws.cell(1, col).value): col for col in range(1, ws.max_column + 1)}
 
-
+#  this function is used to find the column index for a given header name by trying multiple candidate header strings, which allows for minor variations in the header names. For example, the script can find the column for "Component information" even if the header is slightly different like "Component information_added".
 def find_col(headers: Dict[str, int], *candidate_headers: str) -> Optional[int]:
     """Find a column by trying several possible header strings."""
     for candidate in candidate_headers:
@@ -101,13 +103,14 @@ def find_col(headers: Dict[str, int], *candidate_headers: str) -> Optional[int]:
             return headers[key]
     return None
 
-
+# this function is used to safely retrieve the value of a cell given its row and column indices, returning None if the column index is not found. This helps to avoid errors when trying to access a cell in a column that may not exist in the input spreadsheet.
 def cell_value(ws, row: int, col: Optional[int]) -> Any:
     if not col:
         return None
     return ws.cell(row, col).value
 
-
+# this function is used to infer the equipment class for a given FMEA row based on the component ID and component information. It applies a set of rules based on common keywords in the component information and common tag prefixes in the component ID to determine the most likely equipment class when it is not explicitly provided in the FMEA row. This inference is important for validating whether the assigned FM code is appropriate for the equipment class according to ISO 14224 Table B.9.
+# an example of a rule set is that if the component information contains keywords like "valve" and the component ID does not start with typical input device prefixes, then the equipment class is inferred as "Valves". If the component information contains keywords like "sensor", "transmitter", "switch", "indicator", or "input", then the equipment class is inferred as "Input devices". If the component information contains keywords like "logic", "controller", "plc", or "control", then the equipment class is inferred as "Control logic units". Additionally, if the component ID starts with common instrument tag prefixes used in process control loops (e.g., "LS", "TE", "TI" for input devices, or "XV", "LV" for valves), then the equipment class is inferred accordingly. If none of these rules apply, the function returns None, indicating that the equipment class could not be inferred.
 def infer_equipment_class(component_id: Any, component_info: Any) -> Tuple[Optional[str], Optional[str]]:
     """
     Infer ISO 14224 Table B.9 equipment class where the FMEA row does not explicitly
@@ -137,7 +140,7 @@ def infer_equipment_class(component_id: Any, component_info: Any) -> Tuple[Optio
 
     return None, None
 
-
+# this function is used to generate a practical remediation suggestion for each flagged row based on the specific compliance issue identified. The suggestions are tailored to guide the user on how to correct the issue, such as selecting a valid ISO 14224 FM code, replacing an invalid code with a valid one, or reviewing the equipment class and choosing an appropriate failure-mode code allowed for that class. The function takes into account the nature of the issue, the equipment class (if determined), and the FM code in question to provide actionable advice for resolving the compliance issues in the FMEA worksheet.
 def suggest_action(issue: str, equipment_class: Optional[str], fm_code: str) -> str:
     """Create a practical remediation suggestion for each flagged row."""
     if "Missing" in issue:
@@ -160,6 +163,8 @@ def suggest_action(issue: str, equipment_class: Optional[str], fm_code: str) -> 
 # -----------------------------------------------------------------------------
 # Main checking logic
 # -----------------------------------------------------------------------------
+# this function is the main entry point for the script, which takes an input Excel file path and an output Excel file path. It loads the input workbook, identifies the relevant columns based on the headers, and iterates through each row of the FMEA worksheet to check the ISO 14224 failure mode code compliance according to the defined rules. For each row, it normalizes the FM code and equipment class information, determines if there are any compliance issues, and collects flagged rows with details about the issues and suggested actions. Finally, it generates new sheets in the workbook for the compliance check results, a summary of issues, and a reference of allowed FM codes by equipment class before saving the output workbook.
+
 def check_fmea(input_xlsx: Path, output_xlsx: Path) -> None:
     wb = load_workbook(input_xlsx)
     ws = wb.active
@@ -248,7 +253,7 @@ def check_fmea(input_xlsx: Path, output_xlsx: Path) -> None:
 
     wb.save(output_xlsx)
 
-
+# this function is used to create a new sheet in the workbook that lists all the rows from the FMEA worksheet that were flagged for ISO 14224 FM code compliance issues. The sheet includes detailed information about each flagged row, such as the asset ID, functional location, component ID and information, equipment class code and description, the checked or inferred equipment class, the FM code and description, company failure mode and mechanism, the specific compliance issue identified, and a suggested action for remediation. The function also applies styling to the header row and highlights the compliance issue column for better visibility.
 def write_check_sheet(wb, flagged_rows: List[List[Any]]) -> None:
     ws = wb.create_sheet("ISO14224_Check")
     headers = [
@@ -271,7 +276,7 @@ def write_check_sheet(wb, flagged_rows: List[List[Any]]) -> None:
     for row in range(2, ws.max_row + 1):
         ws.cell(row, issue_col).fill = PatternFill("solid", fgColor="FCE4D6")
 
-
+# this function is used to create a summary sheet in the workbook that provides an overview of the ISO 14224 FM code compliance issues identified in the FMEA worksheet. The summary includes the total number of flagged rows, a breakdown of compliance issues by type with counts for each issue, and a basis of check section that explains the criteria used for the compliance checks. The function also applies styling to the headers and formats the columns for better readability.
 def write_summary_sheet(wb, flagged_rows: List[List[Any]]) -> None:
     ws = wb.create_sheet("ISO14224_Summary")
     ws["A1"] = "ISO 14224 FMEA code compliance summary"
@@ -296,7 +301,7 @@ def write_summary_sheet(wb, flagged_rows: List[List[Any]]) -> None:
     ws["A14"] = "2. For the valve/control-loop FMEA, the code is allowed for the relevant Table B.9 equipment class."
     autosize(ws, max_width=85)
 
-
+# this function is used to create a reference sheet in the workbook that lists the allowed ISO 14224 FM codes for each equipment class according to Table B.9 of the standard. The sheet includes columns for the equipment class, the allowed FM codes, the source table (Table B.9), and notes about the types of equipment covered. This reference sheet serves as a quick guide for users to understand which FM codes are valid for each equipment class when reviewing and correcting compliance issues in the FMEA worksheet.
 def write_reference_sheet(wb) -> None:
     ws = wb.create_sheet("ISO14224_Ref_B9")
     ws.append(["Equipment class", "Allowed FM codes from ISO 14224 Table B.9", "Source table", "Notes"])
@@ -305,7 +310,7 @@ def write_reference_sheet(wb) -> None:
     style_header(ws, 4)
     autosize(ws, max_width=80)
 
-
+# this function is used to apply consistent styling to the header row of the generated sheets, including a solid fill color, white bold font, and wrapped text alignment. The function takes the worksheet, the maximum number of columns to style, and an optional row number for the header (defaulting to 1) as parameters. This styling helps to visually distinguish the header row from the data rows and improves readability of the generated sheets.
 def style_header(ws, max_col: int, row: int = 1) -> None:
     fill = PatternFill("solid", fgColor="1F4E78")
     font = Font(color="FFFFFF", bold=True)
@@ -315,7 +320,7 @@ def style_header(ws, max_col: int, row: int = 1) -> None:
         cell.font = font
         cell.alignment = Alignment(wrap_text=True, vertical="top")
 
-
+# this function is used to automatically adjust the width of columns in the generated sheets based on the maximum length of the content in each column, up to a specified maximum width. The function iterates through each column and row to determine the appropriate width for each column, ensuring that the content is displayed clearly without excessive whitespace. Additionally, it applies wrapped text alignment to all cells in the column to improve readability when content exceeds the column width.
 def autosize(ws, max_width: int = 60) -> None:
     for col in range(1, ws.max_column + 1):
         letter = get_column_letter(col)
@@ -327,7 +332,7 @@ def autosize(ws, max_width: int = 60) -> None:
             ws.cell(row, col).alignment = Alignment(wrap_text=True, vertical="top")
         ws.column_dimensions[letter].width = width
 
-
+# this block is the entry point of the script when run from the command line. It checks that exactly two command-line arguments are provided (the input and output Excel file paths), and if not, it prints usage instructions and exits. If the correct arguments are provided, it calls the check_fmea function with the input and output file paths to perform the compliance check and generate the output workbook.
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Usage: python iso14224_fmea_code_check.py INPUT.xlsx OUTPUT.xlsx")
