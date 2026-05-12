@@ -281,7 +281,7 @@ def write_summary_sheet(wb, flagged_rows: List[List[Any]]) -> None:
     ws = wb.create_sheet("ISO14224_Summary")
     ws["A1"] = "ISO 14224 FMEA code compliance summary"
     ws["A1"].font = Font(bold=True, size=14)
-    ws["A3"] = "Total flagged rows"
+    ws["A3"] = "Total flagged rows - rows with missing/invalid FM codes or class-code issues"
     ws["B3"] = len(flagged_rows)
 
     counts: Dict[str, int] = {}
@@ -333,6 +333,8 @@ def autosize(ws, max_width: int = 60) -> None:
         ws.column_dimensions[letter].width = width
 
 # this block is the entry point of the script when run from the command line. It checks that exactly two command-line arguments are provided (the input and output Excel file paths), and if not, it prints usage instructions and exits. If the correct arguments are provided, it calls the check_fmea function with the input and output file paths to perform the compliance check and generate the output workbook.
+# To run the script, use the command line with the following syntax:
+# python iso14224_fmea_code_check.py INPUT.xlsx OUTPUT.xlsx
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Usage: python iso14224_fmea_code_check.py INPUT.xlsx OUTPUT.xlsx")
