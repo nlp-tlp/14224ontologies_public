@@ -31,15 +31,16 @@ This has a new col A with a row ID, changed names of several columns to more sen
 The answers are as follows and correct
 
 Total FMEA rows checked 66
+
 Rows with missing/non-compliant/unsupported code 33
 
 | Issue type | Count | Basis |
 |------------|-------|-------|
-| FM code is not in ISO 14224 Annex B failure mode code list | 2|ISO 14224 Annex B Table B.9 and Tables B.6-B.12 code list |
-| FM code is valid in ISO 14224 but not shown for equipment class 'Control logic units' in Table B.9|2|ISO 14224 Annex B Table B.9 and Tables B.6-B.12 code list |
-| FM code is valid in ISO 14224 but not shown for equipment class 'Input devices' in Table B.9 |14 |ISO 14224 Annex B Table B.9 and Tables B.6-B.12 code list |
-| FM code is valid in ISO 14224 but not shown for equipment class 'Valves' in Table B.9 |3 | ISO 14224 Annex B Table B.9 and Tables B.6-B.12 code list |
-| Missing ISO 14224 failure mode code |12 | ISO 14224 Annex B Table B.9 and Tables B.6-B.12 code list |
+| FM code is not in ISO 14224 Annex B failure mode code list | 2 |ISO 14224 Annex B Table B.9 and Tables B.6-B.12 code list |
+| FM code is valid in ISO 14224 but not shown for equipment class 'Control logic units' in Table B.9| 2 |ISO 14224 Annex B Table B.9 and Tables B.6-B.12 code list |
+| FM code is valid in ISO 14224 but not shown for equipment class 'Input devices' in Table B.9 | 14 |ISO 14224 Annex B Table B.9 and Tables B.6-B.12 code list |
+| FM code is valid in ISO 14224 but not shown for equipment class 'Valves' in Table B.9 | 3 | ISO 14224 Annex B Table B.9 and Tables B.6-B.12 code list |
+| Missing ISO 14224 failure mode code | 12 | ISO 14224 Annex B Table B.9 and Tables B.6-B.12 code list |
             
 
 Important interpretation
