@@ -12,7 +12,7 @@ ISO 14224 provides definitions that constitute a "reliability language" that can
 
 Standardization of data collection practices facilitates the exchange of information between parties, e.g. plants, owners, manufacturers and contractors. Controlled vocabularies and consistent interpretation of codes is increasingly recognized as a necessary foundation for enterprise generative AU models.
 
-ISO 14224 provides categories for the following data:
+ISO 14224 provides tables for the following data:
 
 a) equipment data, e.g. equipment taxonomy, equipment attributes;
 
@@ -42,12 +42,9 @@ The namespace iso14224.org has been purchased by the GitHub repo owner for this 
 The current files are available in ttl format in the \inDevelopment subdirectory. When they are final they will be moved to the \ontology subdirectory.
 
 **Files**
+*i14224_clause3.ttl* Terms and definitions  - modelled as OWL classes, object properties and annotation properties. Contains the `https://iso14224.org/ontology/i14224/ont/clause3` ontology.
 
-
-
-*vocab14224_basic.ttl* Terms and definitions  - modelled as OWL classes
-
-*vocab14224_extended.ttl* - data from Annex B such as Failure modes and Mechanisms - modelled as OWL classes and instances - this file is temporary and likely to be superceded.
+*vocab14224_appendixB.ttl* - data from tables in ISO 14224 Annex B for example on Failure modes and Mechanisms - modelled as OWL classes and named individuals. Contains the `https://iso14224.org/ontology/i14224/ont/appendixB` ontology
 
 
 
