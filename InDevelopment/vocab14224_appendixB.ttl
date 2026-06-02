@@ -508,7 +508,7 @@ i14224:WearFailureMechanism rdf:type owl:Class ;
 
 
 #################################################################
-#    Individuals
+#    Named Individuals
 #################################################################
 
 ###  https://iso14224.org/ontology/i14224/rdl/abnormal_instrument_reading

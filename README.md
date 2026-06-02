@@ -24,6 +24,36 @@ c) maintenance data, e.g. maintenance action, resources used, maintenance conseq
 
 There data are used for tracking and investigating reliability issues, calculating equipment and system availability, maintenance management metrics, and events with safety and environmental impacts.
 
+## Motivations
+
+*What is the problem*
+
+Tables capturing failure-related data are often created and maintained ad hoc across teams, departments and organisations. Manual handling of large, unstandardised spreadsheets is time-consuming and error-prone, prompting interest from organisations in using automated and AI-based systems for querying this data.
+
+*What is the opportunity*
+
+There are several opportunities for a shared industry project to improve machine readability of FMEA and maintenance work order data that reference the ISO 14224 standard. In order of technical complexity from technically simple to complex these are
+
+*Why a Controlled vocabulary?* 
+While some terms are provided in the terms and definitions section of the ISO 14224:2016: https://www.iso.org/obp/ui/en/#iso:std:iso:14224:ed-3:v2:en the standard lacks robust definitions for terms inside the document e.g. in the tables in Appendix B that describe failure modes and mechanisms. A mapping also needs to be done between terms that are common to ISO 14224:2016 and IEC 60812 IEC 60812:2018 Failure modes and effects analysis (FMEA and FMECA) and to document the differences.
+
+*Example*
+
+```
+label:failure effect
+natural language definition: process that is the consequence of failure, within or beyond the boundary of the failed item
+example: leaking pipe, erratic operation, equipment does not run
+```
+
+*What's the Value*
+The business value of this step is that every organisation (and even engineers within an organisation) keep their own versions of ISO 14424 in database tables and Excel spreadsheets with their own entity type labels and column headings, as well as codes resulting in challenges for humans, let alone AI to determine if the terms are semantically the same.
+
+*Why Linked data?*: this would be a major step forward in providing a shared, open, stable and managed resource, such as a GitHub page that engineers could reference to ensure a shared interpretation of a term. Challenges include where to host it (neither ISO or IEC provide suitable namespaces and IRI hosting capabilities at present) and how to provide trust for enterprises on how it will be maintained, and how updates will be managed.
+
+*Why RDF triple stores?*
+
+The ability to have data in the form of RDF triple stores allows for SHACL to be used for data quality checks. SPARQL can also be used to find and retrieve data with greater precision.
+
 ## Purpose of this repo
 
 The purposes of this repo are:
@@ -39,139 +69,105 @@ The namespace iso14224.org has been purchased by the GitHub repo owner for this 
 
 3.  Develop models based on 1. and 2. aligned to different top level ontologies - IDO, IOF and DOLCE. Use the examples in 2. to understand the impact of modelling decisions.
 
+4. Present the outcomes of experiments using ChatGPT (LLMs) to see how the LLMs perform with and without the i14224.ttl files.
+
 
 ## Outputs
-The current files are available in ttl format in the \inDevelopment subdirectory. When they are final they will be moved to the \ontology subdirectory.
+The current RDL files are available in ttl format in the \inDevelopment subdirectory. When they are final they will be moved to the \ontology subdirectory.
 
-**Files**
-*i14224_clause3.ttl* Terms and definitions  - modelled as OWL classes, object properties and annotation properties. Contains the `https://iso14224.org/ontology/i14224/ont/clause3` ontology.
-
-*vocab14224_appendixB.ttl* - data from tables in ISO 14224 Annex B for example on Failure modes and Mechanisms - modelled as OWL classes and named individuals. Contains the `https://iso14224.org/ontology/i14224/ont/appendixB` ontology
-
-
+The experiment files are in the \experiment subdirectory. Please read the readme for a summary of the results
 
 
 ## Namespace and file names
 
+*i14224_clause3.ttl* Terms and definitions  - modelled as OWL classes, object properties and annotation properties. Contains the `https://iso14224.org/ontology/i14224/ont/clause3` ontology.
+
+*vocab14224_appendixB.ttl* - data from tables in ISO 14224 Annex B for example on Failure modes and Mechanisms - modelled as OWL classes and named individuals. Contains the `https://iso14224.org/ontology/i14224/ont/appendixB` ontology
+
 The iso14224.org namespace was purchased to enable future resolvable IRIs.
 
-**Prefix and namespaces for IRIs**
+All terms in the .ttl files have the same root namespace
+`<https://iso14224.org/ontology/i14224/rdl/>` and use the prefix *i14224:* 
 
-@prefix iso14224 https://iso14224.org/skos/ - for terms represented as SKOS concepts
+## Modelling approach
 
-@prefix voc https://iso14224.org/vocab - for terms represented as OWL classes
+The *i14224_clause3.ttl* file is used to capture information about the  terms from the `Terms and Definitions' clause of ISO 14224:2016 modelled as either OWL classes or as named individuals. 
 
-## Approach
+In the `Terms and Definitions' clause there are many terms that can be grouped. For example: Maintenance Data, Failure Data, Equipment Data are all types of data. Rather than make each of these terms an OWL class, a new OWL class 'TypeData' was created and these terms were created as instances of OWL class 'TypeData'. Similar decisions were made for TypeFailureEvent, TypeMaintenanceStrategy, TypeMaterialState, TypeReliabilityMeasure and TypeTest.
 
-The first step was to make the *vocab14224_basic.ttl* file with terms from the Terms and Definitions clause of ISO 14224:2016 modelled as either OWL classes or as named individuals. In the Terms and Definitions clause there are many terms that can be grouped. For example: Maintenance Data, Failure Data, Equipment Data are all types of data. Rather than make each of these terms an OWL class, a new OWL class 'TypeData' was created and these terms were created as instances of OWL class 'TypeData'. Similar decisions were made for TypeFailureEvent, TypeMaintenanceStrategy, TypeMaterialState, TypeReliabilityMeasure and TypeTest.
+Examples:
 
-Python code (*owl_to_skos.py*) was created to convert the *vocab14224_basic.ttl* file to *vocab14224_skos_basic.ttl* file. Concepts in the *vocab14224_skos_basic.ttl* file have a separate namespace @prefix iso14224 https://iso14224.org/skos/. 
+- TypeData: EquipmentData, FailureData, GenericReliabilityData, MaintenanceData, ReliabilityData
+- TypeFailureEvent: CommonCauseFailure, CommonModeFailure, CriticalFailure, DegradedFailure, FailureDueToDemand, FailureOnDemand, HiddenFailure, IncipientFailure, NonCriticalFailure, RandomFailure, SafetyCriticalFailure, SystematicFailure, Trip
+- TypeMaintenanceStrategy: ConditionBasedMaintenance, CorrectiveMaintenance, OpportunityMaintenance
+- TypeMaterialState (DownState, IdleState, OperatingState, UpState
+- TypeReliabilityMeasure: 21 examples, see the file
+- TypeTest: PeriodicTest, Demand
 
-### What does the *owl_to_skos.py* file do?
+The *vocab14224_appendixB.ttl* file is used to capture information in the tables in Appendix B relating to maintenance activity and failure mechanism as OWL classes or failure modes as named individuals. 
 
-1. Each owl:Class becomes a skos:Concept
-2. New SKOS concept namespace/prefix: https://iso14224.org/skos/ with prefix iso14224:
-3. rdfs:subClassOf → skos:broader
-4. rdfs:label (and any existing skos:prefLabel) → skos:prefLabel
-5. Created a concept scheme: <https://iso14224.org/skos/scheme/vocab14224_basic> and linked concepts via skos:inScheme, plus skos:hasTopConcept / skos:topConceptOf
-6. Format and annotation to ensure all SKOS concepts have common notation (UpperCamelCase)
-7. each concept has dcterms:source pointing to the original class IRI (e.g., <https://iso14224.org/vocab/Boundary>)
-8. All terms that are instances of an OWL class 'TypeX' (see above) in the OWL file are converted to SKOS concepts with a skos:broader relationship to the 'TypeX' concept.
-
-## SKOS concept model
-
-See *\InDevelopment\vocab14224_skos_basic.ttl*
-
-TypeX concepts 
-
-- TypeData (EquipmentData, FailureData, GenericReliabilityData, MaintenanceData, ReliabilityData)
-- TypeFailureEvent (CommonCauseFailure, CommonModeFailure, CriticalFailure, DegradedFailure, FailureDueToDemand, FailureOnDemand, HiddenFailure, IncipientFailure, NonCriticalFailure, RandomFailure, SafetyCriticalFailure, SystematicFailure, Trip)
-
-- TypeMaintenanceStrategy (ConditionBasedMaintenance, CorrectiveMaintenance, OpportunityMaintenance
-- TypeMaterialState (DownState, IdleState, OperatingState, UpState)
-- TypeReliabilityMeasure(21 examples, see the file) 
-- TypeTest (PeriodicTest, Demand)
-
-### Example of a SKOS concept
-
-**https://iso14224.org/skos/EquipmentType**
+### Example of class and its annotations
 
 ```
-iso14224:EquipmentType a skos:Concept ;
-    dcterms:source <https://iso14224.org/vocab/EquipmentType> ;
-    skos:altLabel ""@en ;
-    skos:definition "particular feature of the design which is significantly different from the other design(s) within the same equipment class"@en ;
-    skos:example ""@en ;
-    skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:prefLabel "equipment type"@en ;
-    skos:scopeNote ""@en ;
-    skos:topConceptOf <https://iso14224.org/skos/scheme/vocab14224_basic> .
-```    
-
-### Example of a SKOS:broader concept
-
-**https://iso14224.org/skos/PredictiveMaintenance**
-
-```
-iso14224:PredictiveMaintenance a skos:Concept ;
-    dcterms:source <https://iso14224.org/vocab/PredictiveMaintenance> ;
-    skos:altLabel "pDM"@en,
-        "pdM"@en ;
-    skos:broader iso14224:TypeMaintenanceStrategy ;
-    skos:definition "maintenance based on the prediction of the future condition of an item estimated or calculated from a defined set of historic data and known future operational parameters"@en ;
-    skos:example ""@en ;
-    skos:inScheme <https://iso14224.org/skos/scheme/vocab14224_basic> ;
-    skos:prefLabel "predictive maintenance"@en ;
-    skos:scopeNote ""@en .
+https://iso14224.org/ontology/i14224/rdl/DetectionMethod
+i14224:DetectionMethod rdf:type owl:Class ;
+rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
+rdfs:label "Detection method"@en ;
+rdfs:seeAlso ""@en ;
+skos:altLabel ""@en ;
+skos:definition "method or activity by which a failure is discovered"@en ;
+skos:example ""@en ;
+skos:scopeNote ""@en ;
+i14224:en13306:definition "n/a"@en ;
+i14224:iec60812:definition "n/a"@en ;
+cmnsav:adaptedFrom ""@en ;
+cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
+cmnsav:explanatoryNote ""@en ;
+cmnsav:usageNote "ISO 14224-2023 Table B4 provides a categorization of detection methods (e.g. periodic testing or continuous condition monitoring)"@en .
 ```
 
+### Example of a named individual and its annotations
 
-## OWL class model
-
-### Example of an OWL class
-
-**https://iso14224.org/vocab/EquipmentType**
 ```
-voc:EquipmentType rdf:type owl:Class ;
-                  rdfs:label "Equipment type"@en ;
-                  rdfs:seeAlso ""@en ;
-                  skos:altLabel ""@en ;
-                  skos:definition "particular feature of the design which is significantly different from the other design(s) within the same equipment class"@en ;
-                  skos:example ""@en ;
-                  skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
-                  voc:en13306:definition "n/a"@en ;
-                  voc:iec60812:definition "n/a"@en ;
-                  ;
-                  cmns-av:adaptedFrom ""@en ;
-                  cmns-av:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-                  cmns-av:explanatoryNote ""@en ;
-                  cmns-av:usageNote ""@en .
+https://iso14224.org/ontology/i14224/rdl/up_time
+i14224:up_time rdf:type owl:NamedIndividual ,
+                        i14224:TypeReliabilityMeasure ;
+rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
+rdfs:label "up time"@en ;
+rdfs:seeAlso ""@en ;
+skos:altLabel ""@en ;
+skos:definition "time interval during which an item is in an upstate"@en ;
+skos:example ""@en ;
+skos:scopeNote ""@en ;
+i14224:en13306:definition "n/a"@en ;
+i14224:iec60812:definition "n/a"@en ;
+cmnsav:adaptedFrom ""@en ;
+cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
+cmnsav:explanatoryNote ""@en ;
+cmnsav:usageNote ""@en .
 ```
 
-### Example if an OWL named individual
-```
-###  https://iso14224.org/vocab/predictive_maintenance
-voc:predictive_maintenance rdf:type owl:NamedIndividual ,
-                                    voc:TypeMaintenanceStrategy ;
-                           rdfs:label "predictive maintenance"@en ;
-                           rdfs:seeAlso ""@en ;
-                           skos:altLabel "PDM"@en ,
-                                         "PdM"@en ;
-                           skos:definition "maintenance based on the prediction of the future condition of an item estimated or calculated from a defined set of historic data and known future operational parameters"@en ;
-                           skos:example ""@en ;
-                           skos:scopeNote ""@en ;
-                 rdfs:isDefinedBy <https://iso14224.org/vocab/basic> ;
-                           voc:en13306:definition "condition-based maintenance carried out following a forecast derived from repeated analysis or known characteristics and evaluation of the significant parameters of the degradation of the item"@en ;
-                           voc:iec60812:definition "n/a"@en ;
-                           ;
-                           cmns-av:adaptedFrom ""@en ;
-                           cmns-av:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-                           cmns-av:explanatoryNote ""@en ;
-                           cmns-av:usageNote ""@en .
-```
+## Examples of competency questions based on this data
 
-We are working on alternate representations and alignment with different top level ontologies (IDO, IOF_core and IOF_maintenance, DOLCE) and will publish these here as they become available. The IRIs will be stable.
+*FMEA table management*
+
+Organisations have hundreds (if not thousands) of FMEA tables, if these are created and stored in Excel they can have wildly different column labels. Different software packages each have their own labels for terms in FMEA spreadsheets. There is a significant use case in being able to use modern AI tools to map these tables to a common semantic layer so that some of the following tasks can be done.
+
+- Identify and fix inconsistencies - are the same FM codes/ effects/ mechanism descriptors being used for identical equipment?
+
+- Are FM codes/ effects/ mechanism descriptors being used at appropriate levels in equipment class (functional location) hierarchies?
+
+- Map synonyms to agreed controlled vocabulary
+
+- Use Linked Data to reduce ambiguity for AI tools and humans
+
+*Quality control of failure mode assignment in MWOs*
+
+It is common practice to assign a FM code based on ISO 14224 (or a derivative) to each maintenance notification associated with a failure event or observation of failure process. The consistency of application of these FM codes is very difficult in large organisations but it is possible with modern AI tools to post process MWO data and improve the quality of FM code assignment. The effectiveness of these AI tools would be improved, initially through a move to Linked Data, then quality control though SHACL, and in the long term using the reasoning ability of ontologies. 
+
+*Reconciliation of failure mode assignment in MWOs with what is in FMEAs to improve equipment maintenance strategy*
+
+One of the holy grails for Maintenance Managers is to be able to confirm equipment maintenance strategies are correct. Vast sums of money are spent on the execution of maintenance strategies whether they are working or not. Lagging indicators of maintenance strategy effectiveness include equipment availability, unplanned outages, maintenance costs and safety incidents. After unplanned outages it is common for reliability engineers to examine the maintenance strategy to see if the failure event that occurred was a) identified in the FMEA, 2) had a suitable control activity, and 3) if the control activity was actioned. Other actions include trawling through old MWOs to see if similar events had happened in the past. All of these activities could be assisted by AI tools but only if these tools can be certain what data are looking at. Again this will be assisted by a move to Linked Data, then quality control though SHACL, and in the long term using the reasoning ability of ontologies.
 
 ## Disclaimer
 
@@ -181,9 +177,9 @@ This taxonomy is an original academic artifact developed as part of scholarly re
 
 This work:
 
-Is based on AS ISO 14224:2023 but is not a substitute for those standards
-Does not reproduce the ISO standards verbatim; all definitions are paraphrased interpretations
-Should be viewed as a scholarly analysis and the author's interpretation of information security concepts
-Was created in an academic context and does not offer guarantees as a reference document
-Is not affiliated with, endorsed by, or officially connected to ISO or IEC
-For authoritative definitions and requirements, please consult the official ISO/IEC standards available at iso.org.
+- Is based on AS ISO 14224:2023 but is not a substitute for those standards
+- Does not reproduce the ISO standards verbatim; all definitions are paraphrased interpretations
+- Should be viewed as a scholarly analysis and the author's interpretation of information security concepts
+- Was created in an academic context and does not offer guarantees as a reference document
+- Is not affiliated with, endorsed by, or officially connected to ISO or IEC
+- For authoritative definitions and requirements, please consult the official ISO/IEC standards available at iso.org.
