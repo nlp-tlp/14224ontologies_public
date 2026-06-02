@@ -82,7 +82,7 @@ The experiment files are in the \experiment subdirectory. Please read the readme
 
 *i14224_clause3.ttl* Terms and definitions  - modelled as OWL classes, object properties and annotation properties. Contains the `https://iso14224.org/ontology/i14224/ont/clause3` ontology.
 
-*vocab14224_appendixB.ttl* - data from tables in ISO 14224 Annex B for example on Failure modes and Mechanisms - modelled as OWL classes and named individuals. Contains the `https://iso14224.org/ontology/i14224/ont/appendixB` ontology
+*i14224_appendixB.ttl* - data from tables in ISO 14224 Annex B for example on Failure modes and Mechanisms - modelled as OWL classes and named individuals. Contains the `https://iso14224.org/ontology/i14224/ont/appendixB` ontology
 
 The iso14224.org namespace was purchased to enable future resolvable IRIs.
 
@@ -104,7 +104,7 @@ Examples:
 - TypeReliabilityMeasure: 21 examples, see the file
 - TypeTest: PeriodicTest, Demand
 
-The *vocab14224_appendixB.ttl* file is used to capture information in the tables in Appendix B relating to maintenance activity and failure mechanism as OWL classes or failure modes as named individuals. 
+The *i14224_appendixB.ttl* file is used to capture information in the tables in Appendix B relating to maintenance activity and failure mechanism as OWL classes or failure modes as named individuals. 
 
 ### Example of class and its annotations
 

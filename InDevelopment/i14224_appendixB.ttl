@@ -13,7 +13,7 @@
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 
 <https://iso14224.org/ontology/i14224/ont/appendixB> rdf:type owl:Ontology ;
-owl:versionIRI <https://iso14224.org/ontology/i14224/ont/appendixB/1/0> ;                                                   owl:imports <https://iso14224.org/ontology/i14224/ont/clause3> ;
+owl:versionIRI <https://iso14224.org/ontology/i14224/ont/appendixB/1.0> ;                                                   owl:imports <https://iso14224.org/ontology/i14224/ont/clause3> ;
 dcterms:creator <https://orcid.org/0000-0002-7336-3932> ;
 dcterms:license <https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE> ;
 dcterms:rights "See github"@en .
