@@ -1,8 +1,10 @@
 # GitHub repo for collaboration on developing a semantic version for ISO 14224 
 
-## Goal
+## Goals
 
-Building a machine-readable version of ISO 14224 :2016 (version reconfirmed in 2022)
+1. Build and publish a machine-readable version of definitions and concepts in ISO 14224 :2016 (version reconfirmed in 2022). This will encourage shared use of the IRIs provided for the terms. This version will NOT be aligned to any top level ontology. This work is well underway and the results contained in this repo.
+
+2. Publish machine-interpretable versions of the .ttl files in 1. aligned to each of the top level ontologies: IDO, BFO/IDO and DOLCE. This is future work.
 
 ## What is ISO 14224?
 
