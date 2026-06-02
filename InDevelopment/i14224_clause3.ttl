@@ -1,30 +1,31 @@
-@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix i14224: <https://iso14224.org/ontology/i14224/rdl/> .
+@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
 @prefix cmnsav: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .
-@prefix i14224: <https://iso14224.org/ontology/i14224/rdl/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://iso14224.org/ontology/i14224/ont/clause3> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 
 <https://iso14224.org/ontology/i14224/ont/clause3> rdf:type owl:Ontology ;
-                                                owl:versionIRI <https://iso14224.org/ontology/i14224/ont/clause3/1.1> ;
-                                                dcterms:creator <https://orcid.org/0000-0002-7336-3932> ;
-                                                dcterms:license <https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE> ;
-                                                dcterms:rights "See github"@en ;
-                                                rdfs:comment """The ISO 14224 standard is for the collection of reliability and maintenance (RM) data in a standard format for equipment in all facilities and operations.
+owl:versionIRI <https://iso14224.org/ontology/i14224/ont/clause3/1.0> ;
+dcterms:creator <https://orcid.org/0000-0002-7336-3932> ;
+dcterms:license <https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE> ;
+dcterms:rights "See github"@en ;
+rdfs:comment """The ISO 14224 standard is for the collection of reliability and maintenance (RM) data in a standard format for equipment in all facilities and operations.
                                      
-                                     This Ontology models terms from the Terms and Definitions section of the ISO 14224:2016 standard. The core objective is to provide IRIs for each term using the iso14224.org domain. 
+This Ontology models terms from the Terms and Definitions section of the ISO 14224:2016 standard. The core objective is to provide IRIs for each term using the iso14224.org domain. 
                                      
-                                     Some concepts have been modelled as classes and others as named individuals. The modelling has considered what data is actually available and what is usually the aim of knowledge representation models in this domain. Grouping of concepts into classes is based on the intended use of the ontology for data collection and analysis. For example, failure modes are modelled as classes to allow for classification of failure events by failure mode. Whereas terms such a 'breakdown' are usually used a string in the cell of a data collection table, and are modelled as individuals. The modelling of concepts as classes or individuals is not intended to be a philosophical statement on the nature of the concept but rather a pragmatic decision based on the intended use of the ontology. 
+Some concepts have been modelled as classes and others as named individuals. The modelling has considered what data is actually available and what is usually the aim of knowledge representation models in this domain. Grouping of concepts into classes is based on the intended use of the ontology for data collection and analysis. For example, failure modes are modelled as classes to allow for classification of failure events by failure mode. Whereas terms such a 'breakdown' are usually used a string in the cell of a data collection table, and are modelled as individuals. The modelling of concepts as classes or individuals is not intended to be a philosophical statement on the nature of the concept but rather a pragmatic decision based on the intended use of the ontology. 
                                      
-                                     This version is NOT aligned to any upper ontology, future work will consider alignment to IDO, BFO_IOF and DOLCE.  """@en ;
-                                                rdfs:label "ontology for Terms and Definitions section of ISO 14224"@en ;
-                                                owl:versionInfo "Version 1.0"@en .
+This version is NOT aligned to any upper ontology, future work will consider alignment to IDO, BFO_IOF and DOLCE.  """@en ;
+rdfs:label "ontology for Terms and Definitions section of ISO 14224"@en .
+                                            
 
 #################################################################
 #    Annotation properties
