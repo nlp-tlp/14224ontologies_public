@@ -32,7 +32,7 @@ ISO14224_ALL_FM_CODES = {
 
 The spreadsheet contains FMEA data from an actual plant. The table has inconsistent use of colour and formats. An extract is shown below.
 
-![Diagram](fmeaTableImage.JPG)
+![Diagram](../fmeaTableImage.JPG)
 
 ## Summary of results
 
