@@ -80,881 +80,6 @@ i14224:equipment_class_level rdf:type owl:AnnotationProperty ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
 
-#################################################################
-#    Equipment code individuals
-#################################################################
-
-
-
-i14224:AB
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "AB"@en ;
-    skos:definition "equipment code AB"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:AC
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "AC"@en ;
-    skos:definition "equipment code AC"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:AD
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "AD"@en ;
-    skos:definition "equipment code AD"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:AF
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "AF"@en ;
-    skos:definition "equipment code AF"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:AN
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "AN"@en ;
-    skos:definition "equipment code AN"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:AO
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "AO"@en ;
-    skos:definition "equipment code AO"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:AS
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "AS"@en ;
-    skos:definition "equipment code AS"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:AX
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "AX"@en ;
-    skos:definition "equipment code AX"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:BA
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "BA"@en ;
-    skos:definition "equipment code BA"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:BF
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "BF"@en ;
-    skos:definition "equipment code BF"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:BH
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "BH"@en ;
-    skos:definition "equipment code BH"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:BL
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "BL"@en ;
-    skos:definition "equipment code BL"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:BM
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "BM"@en ;
-    skos:definition "equipment code BM"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:BP
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "BP"@en ;
-    skos:definition "equipment code BP"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:BS
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "BS"@en ;
-    skos:definition "equipment code BS"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:BT
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "BT"@en ;
-    skos:definition "equipment code BT"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:BY
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "BY"@en ;
-    skos:definition "equipment code BY"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:CA
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "CA"@en ;
-    skos:definition "equipment code CA"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:CE
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "CE"@en ;
-    skos:definition "equipment code CE"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:CH
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "CH"@en ;
-    skos:definition "equipment code CH"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:CL
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "CL"@en ;
-    skos:definition "equipment code CL"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:CO
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "CO"@en ;
-    skos:definition "equipment code CO"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:CR
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "CR"@en ;
-    skos:definition "equipment code CR"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:CS
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "CS"@en ;
-    skos:definition "equipment code CS"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:DA
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "DA"@en ;
-    skos:definition "equipment code DA"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:DC
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "DC"@en ;
-    skos:definition "equipment code DC"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:DE
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "DE"@en ;
-    skos:definition "equipment code DE"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:DF
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "DF"@en ;
-    skos:definition "equipment code DF"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:DH
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "DH"@en ;
-    skos:definition "equipment code DH"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:DI
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "DI"@en ;
-    skos:definition "equipment code DI"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:DN
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "DN"@en ;
-    skos:definition "equipment code DN"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:DO
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "DO"@en ;
-    skos:definition "equipment code DO"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:DP
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "DP"@en ;
-    skos:definition "equipment code DP"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:DR
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "DR"@en ;
-    skos:definition "equipment code DR"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:DT
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "DT"@en ;
-    skos:definition "equipment code DT"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:EB
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "EB"@en ;
-    skos:definition "equipment code EB"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:ED
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "ED"@en ;
-    skos:definition "equipment code ED"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:EG
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "EG"@en ;
-    skos:definition "equipment code EG"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:EH
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "EH"@en ;
-    skos:definition "equipment code EH"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:EM
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "EM"@en ;
-    skos:definition "equipment code EM"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:ES
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "ES"@en ;
-    skos:definition "equipment code ES"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:EW
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "EW"@en ;
-    skos:definition "equipment code EW"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:FB
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "FB"@en ;
-    skos:definition "equipment code FB"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:FD
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "FD"@en ;
-    skos:definition "equipment code FD"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:FG
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "FG"@en ;
-    skos:definition "equipment code FG"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:FL
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "FL"@en ;
-    skos:definition "equipment code FL"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:FS
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "FS"@en ;
-    skos:definition "equipment code FS"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:GA
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "GA"@en ;
-    skos:definition "equipment code GA"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:GE
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "GE"@en ;
-    skos:definition "equipment code GE"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:GL
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "GL"@en ;
-    skos:definition "equipment code GL"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:GT
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "GT"@en ;
-    skos:definition "equipment code GT"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:HB
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "HB"@en ;
-    skos:definition "equipment code HB"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:HD
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "HD"@en ;
-    skos:definition "equipment code HD"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:HE
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "HE"@en ;
-    skos:definition "equipment code HE"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:HO
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "HO"@en ;
-    skos:definition "equipment code HO"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:HT
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "HT"@en ;
-    skos:definition "equipment code HT"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:HW
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "HW"@en ;
-    skos:definition "equipment code HW"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:HY
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "HY"@en ;
-    skos:definition "equipment code HY"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:IF
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "IF"@en ;
-    skos:definition "equipment code IF"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:IN
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "IN"@en ;
-    skos:definition "equipment code IN"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:IP
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "IP"@en ;
-    skos:definition "equipment code IP"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:LC
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "LC"@en ;
-    skos:definition "equipment code LC"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:LO
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "LO"@en ;
-    skos:definition "equipment code LO"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:LP
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "LP"@en ;
-    skos:definition "equipment code LP"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:LS
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "LS"@en ;
-    skos:definition "equipment code LS"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:MD
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "MD"@en ;
-    skos:definition "equipment code MD"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:MO
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "MO"@en ;
-    skos:definition "equipment code MO"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:MS
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "MS"@en ;
-    skos:definition "equipment code MS"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:MX
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "MX"@en ;
-    skos:definition "equipment code MX"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:NE
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "NE"@en ;
-    skos:definition "equipment code NE"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:NF
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "NF"@en ;
-    skos:definition "equipment code NF"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:NO
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "NO"@en ;
-    skos:definition "equipment code NO"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:OH
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "OH"@en ;
-    skos:definition "equipment code OH"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:OT
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "OT"@en ;
-    skos:definition "equipment code OT"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:PA
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "PA"@en ;
-    skos:definition "equipment code PA"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:PB
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "PB"@en ;
-    skos:definition "equipment code PB"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:PC
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "PC"@en ;
-    skos:definition "equipment code PC"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:PF
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "PF"@en ;
-    skos:definition "equipment code PF"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:PG
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "PG"@en ;
-    skos:definition "equipment code PG"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:PH
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "PH"@en ;
-    skos:definition "equipment code PH"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:PI
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "PI"@en ;
-    skos:definition "equipment code PI"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:PO
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "PO"@en ;
-    skos:definition "equipment code PO"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:PR
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "PR"@en ;
-    skos:definition "equipment code PR"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:PS
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "PS"@en ;
-    skos:definition "equipment code PS"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:PT
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "PT"@en ;
-    skos:definition "equipment code PT"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:PU
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "PU"@en ;
-    skos:definition "equipment code PU"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:RE
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "RE"@en ;
-    skos:definition "equipment code RE"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:RI
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "RI"@en ;
-    skos:definition "equipment code RI"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:RL
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "RL"@en ;
-    skos:definition "equipment code RL"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:RO
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "RO"@en ;
-    skos:definition "equipment code RO"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:SA
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "SA"@en ;
-    skos:definition "equipment code SA"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:SB
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "SB"@en ;
-    skos:definition "equipment code SB"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:SC
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "SC"@en ;
-    skos:definition "equipment code SC"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:SD
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "SD"@en ;
-    skos:definition "equipment code SD"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:SE
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "SE"@en ;
-    skos:definition "equipment code SE"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:SH
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "SH"@en ;
-    skos:definition "equipment code SH"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:SL
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "SL"@en ;
-    skos:definition "equipment code SL"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:SP
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "SP"@en ;
-    skos:definition "equipment code SP"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:SR
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "SR"@en ;
-    skos:definition "equipment code SR"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:SS
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "SS"@en ;
-    skos:definition "equipment code SS"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:ST
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "ST"@en ;
-    skos:definition "equipment code ST"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:SV
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "SV"@en ;
-    skos:definition "equipment code SV"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:SW
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "SW"@en ;
-    skos:definition "equipment code SW"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:TD
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "TD"@en ;
-    skos:definition "equipment code TD"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:TE
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "TE"@en ;
-    skos:definition "equipment code TE"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:TH
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "TH"@en ;
-    skos:definition "equipment code TH"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:TI
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "TI"@en ;
-    skos:definition "equipment code TI"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:TO
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "TO"@en ;
-    skos:definition "equipment code TO"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:TS
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "TS"@en ;
-    skos:definition "equipment code TS"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:TU
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "TU"@en ;
-    skos:definition "equipment code TU"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:UB
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "UB"@en ;
-    skos:definition "equipment code UB"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:UD
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "UD"@en ;
-    skos:definition "equipment code UD"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:UP
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "UP"@en ;
-    skos:definition "equipment code UP"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:US
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "US"@en ;
-    skos:definition "equipment code US"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:UT
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "UT"@en ;
-    skos:definition "equipment code UT"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:VA
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "VA"@en ;
-    skos:definition "equipment code VA"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:VE
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "VE"@en ;
-    skos:definition "equipment code VE"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:VI
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "VI"@en ;
-    skos:definition "equipment code VI"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:WA
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "WA"@en ;
-    skos:definition "equipment code WA"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:WC
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "WC"@en ;
-    skos:definition "equipment code WC"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:WE
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "WE"@en ;
-    skos:definition "equipment code WE"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:WI
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "WI"@en ;
-    skos:definition "equipment code WI"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:WM
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "WM"@en ;
-    skos:definition "equipment code WM"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-i14224:NoEquipmentCodeSpecified
-    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    rdfs:label "no equipment code specified"@en ;
-    skos:definition "no equipment code is specified for this equipment class in ISO 14224 Appendix A"@en ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
-
-  
 
 #################################################################
 #    Equipment classes - Level 6
@@ -4593,3 +3718,879 @@ i14224:SubseaBlowoutPreventer
     skos:example ""@en ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+#################################################################
+#    Equipment code individuals
+#################################################################
+
+
+
+i14224:AB
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AB"@en ;
+    skos:definition "equipment code AB"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:AC
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AC"@en ;
+    skos:definition "equipment code AC"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:AD
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AD"@en ;
+    skos:definition "equipment code AD"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:AF
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AF"@en ;
+    skos:definition "equipment code AF"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:AN
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AN"@en ;
+    skos:definition "equipment code AN"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:AO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AO"@en ;
+    skos:definition "equipment code AO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:AS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AS"@en ;
+    skos:definition "equipment code AS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:AX
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AX"@en ;
+    skos:definition "equipment code AX"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BA"@en ;
+    skos:definition "equipment code BA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BF
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BF"@en ;
+    skos:definition "equipment code BF"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BH"@en ;
+    skos:definition "equipment code BH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BL
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BL"@en ;
+    skos:definition "equipment code BL"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BM
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BM"@en ;
+    skos:definition "equipment code BM"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BP
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BP"@en ;
+    skos:definition "equipment code BP"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BS"@en ;
+    skos:definition "equipment code BS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BT
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BT"@en ;
+    skos:definition "equipment code BT"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BY
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BY"@en ;
+    skos:definition "equipment code BY"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:CA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "CA"@en ;
+    skos:definition "equipment code CA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:CE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "CE"@en ;
+    skos:definition "equipment code CE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:CH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "CH"@en ;
+    skos:definition "equipment code CH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:CL
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "CL"@en ;
+    skos:definition "equipment code CL"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:CO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "CO"@en ;
+    skos:definition "equipment code CO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:CR
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "CR"@en ;
+    skos:definition "equipment code CR"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:CS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "CS"@en ;
+    skos:definition "equipment code CS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DA"@en ;
+    skos:definition "equipment code DA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DC
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DC"@en ;
+    skos:definition "equipment code DC"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DE"@en ;
+    skos:definition "equipment code DE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DF
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DF"@en ;
+    skos:definition "equipment code DF"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DH"@en ;
+    skos:definition "equipment code DH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DI
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DI"@en ;
+    skos:definition "equipment code DI"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DN
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DN"@en ;
+    skos:definition "equipment code DN"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DO"@en ;
+    skos:definition "equipment code DO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DP
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DP"@en ;
+    skos:definition "equipment code DP"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DR
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DR"@en ;
+    skos:definition "equipment code DR"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DT
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DT"@en ;
+    skos:definition "equipment code DT"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:EB
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "EB"@en ;
+    skos:definition "equipment code EB"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:ED
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "ED"@en ;
+    skos:definition "equipment code ED"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:EG
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "EG"@en ;
+    skos:definition "equipment code EG"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:EH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "EH"@en ;
+    skos:definition "equipment code EH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:EM
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "EM"@en ;
+    skos:definition "equipment code EM"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:ES
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "ES"@en ;
+    skos:definition "equipment code ES"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:EW
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "EW"@en ;
+    skos:definition "equipment code EW"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:FB
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "FB"@en ;
+    skos:definition "equipment code FB"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:FD
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "FD"@en ;
+    skos:definition "equipment code FD"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:FG
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "FG"@en ;
+    skos:definition "equipment code FG"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:FL
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "FL"@en ;
+    skos:definition "equipment code FL"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:FS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "FS"@en ;
+    skos:definition "equipment code FS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:GA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "GA"@en ;
+    skos:definition "equipment code GA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:GE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "GE"@en ;
+    skos:definition "equipment code GE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:GL
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "GL"@en ;
+    skos:definition "equipment code GL"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:GT
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "GT"@en ;
+    skos:definition "equipment code GT"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:HB
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "HB"@en ;
+    skos:definition "equipment code HB"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:HD
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "HD"@en ;
+    skos:definition "equipment code HD"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:HE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "HE"@en ;
+    skos:definition "equipment code HE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:HO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "HO"@en ;
+    skos:definition "equipment code HO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:HT
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "HT"@en ;
+    skos:definition "equipment code HT"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:HW
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "HW"@en ;
+    skos:definition "equipment code HW"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:HY
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "HY"@en ;
+    skos:definition "equipment code HY"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:IF
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "IF"@en ;
+    skos:definition "equipment code IF"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:IN
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "IN"@en ;
+    skos:definition "equipment code IN"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:IP
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "IP"@en ;
+    skos:definition "equipment code IP"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:LC
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "LC"@en ;
+    skos:definition "equipment code LC"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:LO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "LO"@en ;
+    skos:definition "equipment code LO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:LP
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "LP"@en ;
+    skos:definition "equipment code LP"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:LS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "LS"@en ;
+    skos:definition "equipment code LS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:MD
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "MD"@en ;
+    skos:definition "equipment code MD"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:MO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "MO"@en ;
+    skos:definition "equipment code MO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:MS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "MS"@en ;
+    skos:definition "equipment code MS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:MX
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "MX"@en ;
+    skos:definition "equipment code MX"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:NE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "NE"@en ;
+    skos:definition "equipment code NE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:NF
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "NF"@en ;
+    skos:definition "equipment code NF"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:NO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "NO"@en ;
+    skos:definition "equipment code NO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:OH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "OH"@en ;
+    skos:definition "equipment code OH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:OT
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "OT"@en ;
+    skos:definition "equipment code OT"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PA"@en ;
+    skos:definition "equipment code PA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PB
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PB"@en ;
+    skos:definition "equipment code PB"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PC
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PC"@en ;
+    skos:definition "equipment code PC"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PF
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PF"@en ;
+    skos:definition "equipment code PF"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PG
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PG"@en ;
+    skos:definition "equipment code PG"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PH"@en ;
+    skos:definition "equipment code PH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PI
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PI"@en ;
+    skos:definition "equipment code PI"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PO"@en ;
+    skos:definition "equipment code PO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PR
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PR"@en ;
+    skos:definition "equipment code PR"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PS"@en ;
+    skos:definition "equipment code PS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PT
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PT"@en ;
+    skos:definition "equipment code PT"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PU
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PU"@en ;
+    skos:definition "equipment code PU"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:RE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "RE"@en ;
+    skos:definition "equipment code RE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:RI
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "RI"@en ;
+    skos:definition "equipment code RI"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:RL
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "RL"@en ;
+    skos:definition "equipment code RL"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:RO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "RO"@en ;
+    skos:definition "equipment code RO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SA"@en ;
+    skos:definition "equipment code SA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SB
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SB"@en ;
+    skos:definition "equipment code SB"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SC
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SC"@en ;
+    skos:definition "equipment code SC"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SD
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SD"@en ;
+    skos:definition "equipment code SD"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SE"@en ;
+    skos:definition "equipment code SE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SH"@en ;
+    skos:definition "equipment code SH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SL
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SL"@en ;
+    skos:definition "equipment code SL"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SP
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SP"@en ;
+    skos:definition "equipment code SP"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SR
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SR"@en ;
+    skos:definition "equipment code SR"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SS"@en ;
+    skos:definition "equipment code SS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:ST
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "ST"@en ;
+    skos:definition "equipment code ST"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SV
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SV"@en ;
+    skos:definition "equipment code SV"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SW
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SW"@en ;
+    skos:definition "equipment code SW"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:TD
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "TD"@en ;
+    skos:definition "equipment code TD"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:TE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "TE"@en ;
+    skos:definition "equipment code TE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:TH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "TH"@en ;
+    skos:definition "equipment code TH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:TI
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "TI"@en ;
+    skos:definition "equipment code TI"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:TO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "TO"@en ;
+    skos:definition "equipment code TO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:TS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "TS"@en ;
+    skos:definition "equipment code TS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:TU
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "TU"@en ;
+    skos:definition "equipment code TU"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:UB
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "UB"@en ;
+    skos:definition "equipment code UB"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:UD
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "UD"@en ;
+    skos:definition "equipment code UD"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:UP
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "UP"@en ;
+    skos:definition "equipment code UP"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:US
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "US"@en ;
+    skos:definition "equipment code US"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:UT
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "UT"@en ;
+    skos:definition "equipment code UT"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:VA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "VA"@en ;
+    skos:definition "equipment code VA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:VE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "VE"@en ;
+    skos:definition "equipment code VE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:VI
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "VI"@en ;
+    skos:definition "equipment code VI"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:WA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "WA"@en ;
+    skos:definition "equipment code WA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:WC
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "WC"@en ;
+    skos:definition "equipment code WC"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:WE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "WE"@en ;
+    skos:definition "equipment code WE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:WI
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "WI"@en ;
+    skos:definition "equipment code WI"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:WM
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "WM"@en ;
+    skos:definition "equipment code WM"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:NoEquipmentCodeSpecified
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "no equipment code specified"@en ;
+    skos:definition "no equipment code is specified for this equipment class in ISO 14224 Appendix A"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+  
