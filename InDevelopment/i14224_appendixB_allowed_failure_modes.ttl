@@ -38,51 +38,6 @@ i14224:hasFailedEquipment rdf:type owl:ObjectProperty ;
     skos:definition "relates a failure event or maintenance record to the equipment item that failed"@en ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> .
 
-#################################################################
-#    Additional failure-mode individuals used by Tables B.6-B.10
-#################################################################
-
-i14224:very_low_output rdf:type owl:NamedIndividual , i14224:FailureMode ;
-    rdfs:label "VLO" ;
-    skos:definition "very low output"@en ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
-    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
-
-i14224:failure_to_lock_unlock rdf:type owl:NamedIndividual , i14224:FailureMode ;
-    rdfs:label "FTL" ;
-    skos:definition "failure to lock/unlock"@en ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
-    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
-
-i14224:failure_to_set_retrieve rdf:type owl:NamedIndividual , i14224:FailureMode ;
-    rdfs:label "SET" ;
-    skos:definition "failure to set/retrieve"@en ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
-    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
-
-i14224:insufficient_power rdf:type owl:NamedIndividual , i14224:FailureMode ;
-    rdfs:label "POW" ;
-    skos:definition "insufficient power"@en ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
-    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
-
-i14224:no_immediate_effect rdf:type owl:NamedIndividual , i14224:FailureMode ;
-    rdfs:label "NON" ;
-    skos:definition "no immediate effect"@en ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
-    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
-
-i14224:mooring_failure rdf:type owl:NamedIndividual , i14224:FailureMode ;
-    rdfs:label "MOF" ;
-    skos:definition "mooring failure"@en ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
-    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
-
-i14224:spurious_stop rdf:type owl:NamedIndividual , i14224:FailureMode ;
-    rdfs:label "UST" ;
-    skos:definition "spurious stop"@en ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
-    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
 
 #################################################################
 #    Helper classes for Table B.9 detector columns

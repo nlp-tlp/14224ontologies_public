@@ -514,6 +514,7 @@ i14224:WearFailureMechanism rdf:type owl:Class ;
 ###  https://iso14224.org/ontology/i14224/rdl/abnormal_instrument_reading
 i14224:abnormal_instrument_reading rdf:type owl:NamedIndividual ,
                                             i14224:FailureMode ;
+                                   skos:definition "abnormal instrument reading"@en ;
                                    rdfs:label "AIR" ;
                                    <http://www.w3.org/2004/02/skos/core#altLabel> "abnormal_instrument_reading" .
 
@@ -521,6 +522,7 @@ i14224:abnormal_instrument_reading rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/breakdown
 i14224:breakdown rdf:type owl:NamedIndividual ,
                           i14224:FailureMode ;
+                 skos:definition "breakdown"@en ;
                  rdfs:label "BRD" ;
                  <http://www.w3.org/2004/02/skos/core#altLabel> "breakdown" .
 
@@ -528,6 +530,7 @@ i14224:breakdown rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/delayed_operation
 i14224:delayed_operation rdf:type owl:NamedIndividual ,
                                   i14224:FailureMode ;
+                         skos:definition "delayed operation"@en ;
                          rdfs:label "DOP" ;
                          <http://www.w3.org/2004/02/skos/core#altLabel> "delayed operation" .
 
@@ -540,6 +543,7 @@ i14224:electrical_failure_mechanism rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/erratic_output
 i14224:erratic_output rdf:type owl:NamedIndividual ,
                                i14224:FailureMode ;
+                      skos:definition "erratic output"@en ;
                       rdfs:label "ERO" ;
                       <http://www.w3.org/2004/02/skos/core#altLabel> "erratic output" .
 
@@ -552,6 +556,7 @@ i14224:external_influence_failure_mechanism rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/external_leakage_fuel
 i14224:external_leakage_fuel rdf:type owl:NamedIndividual ,
                                       i14224:FailureMode ;
+                             skos:definition "external leakage - fuel"@en ;
                              rdfs:label "ELF" ;
                              <http://www.w3.org/2004/02/skos/core#altLabel> "external leakage - fuel" .
 
@@ -559,6 +564,7 @@ i14224:external_leakage_fuel rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/external_leakage_process_medium
 i14224:external_leakage_process_medium rdf:type owl:NamedIndividual ,
                                                 i14224:FailureMode ;
+                                       skos:definition "external leakage - process medium"@en ;
                                        rdfs:label "ELP" ;
                                        <http://www.w3.org/2004/02/skos/core#altLabel> "external leakage - process medium" .
 
@@ -566,6 +572,7 @@ i14224:external_leakage_process_medium rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/external_leakage_utility_medium
 i14224:external_leakage_utility_medium rdf:type owl:NamedIndividual ,
                                                 i14224:FailureMode ;
+                                       skos:definition "external leakage - utility medium"@en ;
                                        rdfs:label "ELU" ;
                                        <http://www.w3.org/2004/02/skos/core#altLabel> "external leakage - utility medium" .
 
@@ -628,6 +635,7 @@ i14224:failure_detected_by_production_interference rdf:type owl:NamedIndividual 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_to_close_on_demand
 i14224:failure_to_close_on_demand rdf:type owl:NamedIndividual ,
                                            i14224:FailureMode ;
+                                  skos:definition "failure to close on demand"@en ;
                                   rdfs:label "FTC" ;
                                   <http://www.w3.org/2004/02/skos/core#definition> "failure to close on demand" .
 
@@ -635,6 +643,7 @@ i14224:failure_to_close_on_demand rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/failure_to_connect
 i14224:failure_to_connect rdf:type owl:NamedIndividual ,
                                    i14224:FailureMode ;
+                          skos:definition "failure to connect"@en ;
                           rdfs:label "FCO" ;
                           <http://www.w3.org/2004/02/skos/core#definition> "failure to connect" .
 
@@ -642,6 +651,7 @@ i14224:failure_to_connect rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/failure_to_disconnect
 i14224:failure_to_disconnect rdf:type owl:NamedIndividual ,
                                       i14224:FailureMode ;
+                             skos:definition "failure to disconnect"@en ;
                              rdfs:label "FDC" ;
                              <http://www.w3.org/2004/02/skos/core#definition> "failure to disconnect" .
 
@@ -649,6 +659,7 @@ i14224:failure_to_disconnect rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/failure_to_function_as_intended
 i14224:failure_to_function_as_intended rdf:type owl:NamedIndividual ,
                                                 i14224:FailureMode ;
+                                       skos:definition "failure to function as intended"@en ;
                                        rdfs:label "FTI" ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "failure to function as intended" .
 
@@ -656,18 +667,21 @@ i14224:failure_to_function_as_intended rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/failure_to_function_on_demand
 i14224:failure_to_function_on_demand rdf:type owl:NamedIndividual ,
                                               i14224:FailureMode ;
+                                     skos:definition "failure to function on demand"@en ;
                                      rdfs:label "FTF" ;
                                      <http://www.w3.org/2004/02/skos/core#definition> "failure to function on demand" .
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_to_lock_unlock
-i14224:failure_to_lock_unlock rdf:type owl:NamedIndividual ,
-                                      i14224:FailureMode ;
-                             rdfs:label "FTL" ;
-                             <http://www.w3.org/2004/02/skos/core#definition> "failure to lock/unlock" .
+i14224:failure_to_lock_unlock rdf:type owl:NamedIndividual , i14224:FailureMode ;
+    rdfs:label "FTL" ;
+    skos:definition "failure to lock/unlock"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_to_open_on_demand
 i14224:failure_to_open_on_demand rdf:type owl:NamedIndividual ,
                                           i14224:FailureMode ;
+                                 skos:definition "failure to open on demand"@en ;
                                  rdfs:label "FTO" ;
                                  <http://www.w3.org/2004/02/skos/core#definition> "failure to open on demand" .
 
@@ -675,18 +689,21 @@ i14224:failure_to_open_on_demand rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/failure_to_rotate
 i14224:failure_to_rotate rdf:type owl:NamedIndividual ,
                                   i14224:FailureMode ;
+                         skos:definition "failure to rotate"@en ;
                          rdfs:label "FRO" ;
                          <http://www.w3.org/2004/02/skos/core#definition> "failure to rotate" .
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_to_set_retrieve
-i14224:failure_to_set_retrieve rdf:type owl:NamedIndividual ,
-                                        i14224:FailureMode ;
-                               rdfs:label "SET" ;
-                               <http://www.w3.org/2004/02/skos/core#definition> "failure to set/retrieve" .
+i14224:failure_to_set_retrieve rdf:type owl:NamedIndividual , i14224:FailureMode ;
+    rdfs:label "SET" ;
+    skos:definition "failure to set/retrieve"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_to_start_on_demand
 i14224:failure_to_start_on_demand rdf:type owl:NamedIndividual ,
                                            i14224:FailureMode ;
+                                  skos:definition "failure to start on demand"@en ;
                                   rdfs:label "FTS" ;
                                   <http://www.w3.org/2004/02/skos/core#definition> "failure to start on demand" .
 
@@ -694,6 +711,7 @@ i14224:failure_to_start_on_demand rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/failure_to_stop_on_demand
 i14224:failure_to_stop_on_demand rdf:type owl:NamedIndividual ,
                                           i14224:FailureMode ;
+                                 skos:definition "failure to stop on demand"@en ;
                                  rdfs:label "STP" ;
                                  <http://www.w3.org/2004/02/skos/core#definition> "failure to stop on demand" .
 
@@ -701,6 +719,7 @@ i14224:failure_to_stop_on_demand rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/faulty_output_frequency
 i14224:faulty_output_frequency rdf:type owl:NamedIndividual ,
                                         i14224:FailureMode ;
+                               skos:definition "faulty output frequency"@en ;
                                rdfs:label "FOF" ;
                                <http://www.w3.org/2004/02/skos/core#definition> "faulty output frequency" .
 
@@ -708,6 +727,7 @@ i14224:faulty_output_frequency rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/faulty_output_voltage
 i14224:faulty_output_voltage rdf:type owl:NamedIndividual ,
                                       i14224:FailureMode ;
+                             skos:definition "faulty output voltage"@en ;
                              rdfs:label "FOV" ;
                              <http://www.w3.org/2004/02/skos/core#definition> "faulty output voltage" .
 
@@ -715,6 +735,7 @@ i14224:faulty_output_voltage rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/high_output
 i14224:high_output rdf:type owl:NamedIndividual ,
                             i14224:FailureMode ;
+                   skos:definition "high output"@en ;
                    rdfs:label "HIO" ;
                    <http://www.w3.org/2004/02/skos/core#definition> "high output" .
 
@@ -728,18 +749,20 @@ i14224:instrument_failure_mechanism rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/insufficient_heat_transfer
 i14224:insufficient_heat_transfer rdf:type owl:NamedIndividual ,
                                            i14224:FailureMode ;
+                                  skos:definition "insufficient heat transfer"@en ;
                                   rdfs:label "IHT" ;
                                   <http://www.w3.org/2004/02/skos/core#definition> "insufficient heat transfer" .
 
-###  https://iso14224.org/ontology/i14224/rdl/insufficient_power
-i14224:insufficient_power rdf:type owl:NamedIndividual ,
-                                   i14224:FailureMode ;
-                          rdfs:label "POW" ;
-                          <http://www.w3.org/2004/02/skos/core#definition> "insufficient power" .
+i14224:insufficient_power rdf:type owl:NamedIndividual , i14224:FailureMode ;
+    rdfs:label "POW" ;
+    skos:definition "insufficient power"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
 
 ###  https://iso14224.org/ontology/i14224/rdl/internal_leakage
 i14224:internal_leakage rdf:type owl:NamedIndividual ,
                                  i14224:FailureMode ;
+                        skos:definition "internal leakage"@en ;
                         rdfs:label "INL" ;
                         <http://www.w3.org/2004/02/skos/core#definition> "internal leakage" .
 
@@ -747,6 +770,7 @@ i14224:internal_leakage rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/leakage_in_closed_position
 i14224:leakage_in_closed_position rdf:type owl:NamedIndividual ,
                                            i14224:FailureMode ;
+                                  skos:definition "leakage in closed position"@en ;
                                   rdfs:label "LCP" ;
                                   <http://www.w3.org/2004/02/skos/core#definition> "leakage in closed position" .
 
@@ -754,6 +778,7 @@ i14224:leakage_in_closed_position rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/load_drop
 i14224:load_drop rdf:type owl:NamedIndividual ,
                           i14224:FailureMode ;
+                 skos:definition "load drop"@en ;
                  rdfs:label "LOA" ;
                  <http://www.w3.org/2004/02/skos/core#definition> "load drop" .
 
@@ -761,6 +786,7 @@ i14224:load_drop rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/loss_of_buoyancy
 i14224:loss_of_buoyancy rdf:type owl:NamedIndividual ,
                                  i14224:FailureMode ;
+                        skos:definition "loss of buoyancy"@en ;
                         rdfs:label "LOB" ;
                         <http://www.w3.org/2004/02/skos/core#definition> "loss of buoyancy" .
 
@@ -768,6 +794,7 @@ i14224:loss_of_buoyancy rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/loss_of_redundancy
 i14224:loss_of_redundancy rdf:type owl:NamedIndividual ,
                                    i14224:FailureMode ;
+                          skos:definition "loss of redundancy"@en ;
                           rdfs:label "LOR" ;
                           <http://www.w3.org/2004/02/skos/core#definition> "loss of redundancy" .
 
@@ -775,6 +802,7 @@ i14224:loss_of_redundancy rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/low_oil_supply_pressure
 i14224:low_oil_supply_pressure rdf:type owl:NamedIndividual ,
                                         i14224:FailureMode ;
+                               skos:definition "low oil supply pressure"@en ;
                                rdfs:label "LBP" ;
                                <http://www.w3.org/2004/02/skos/core#definition> "low oil supply pressure" .
 
@@ -782,6 +810,7 @@ i14224:low_oil_supply_pressure rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/low_output
 i14224:low_output rdf:type owl:NamedIndividual ,
                            i14224:FailureMode ;
+                  skos:definition "low output"@en ;
                   rdfs:label "LOO" ;
                   <http://www.w3.org/2004/02/skos/core#definition> "low output" .
 
@@ -799,6 +828,7 @@ i14224:mechanical_failure_mechanism rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/minor_inservice_problems
 i14224:minor_inservice_problems rdf:type owl:NamedIndividual ,
                                          i14224:FailureMode ;
+                                skos:definition "minor in-service problems"@en ;
                                 rdfs:label "SER" ;
                                 <http://www.w3.org/2004/02/skos/core#definition> "minor in-service problems" .
 
@@ -807,21 +837,22 @@ i14224:minor_inservice_problems rdf:type owl:NamedIndividual ,
 i14224:miscellaneous_failure_mechanism rdf:type owl:NamedIndividual ,
                                                 i14224:TypeFailureMechanism .
 
-###  https://iso14224.org/ontology/i14224/rdl/mooring_failure
-i14224:mooring_failure rdf:type owl:NamedIndividual ,
-                               i14224:FailureMode ;
-                      rdfs:label "MOF" ;
-                      <http://www.w3.org/2004/02/skos/core#definition> "mooring failure" .
+i14224:mooring_failure rdf:type owl:NamedIndividual , i14224:FailureMode ;
+    rdfs:label "MOF" ;
+    skos:definition "mooring failure"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/no_immediate_effect
-i14224:no_immediate_effect rdf:type owl:NamedIndividual ,
-                                    i14224:FailureMode ;
-                           rdfs:label "NON" ;
-                           <http://www.w3.org/2004/02/skos/core#definition> "no immediate effect" .
+i14224:no_immediate_effect rdf:type owl:NamedIndividual , i14224:FailureMode ;
+    rdfs:label "NON" ;
+    skos:definition "no immediate effect"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
 
 ###  https://iso14224.org/ontology/i14224/rdl/no_output
 i14224:no_output rdf:type owl:NamedIndividual ,
                           i14224:FailureMode ;
+                          skos:definition "no output"@en ;
                  rdfs:label "NOO" ;
                  <http://www.w3.org/2004/02/skos/core#definition> "no output" .
 
@@ -829,6 +860,7 @@ i14224:no_output rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/noise
 i14224:noise rdf:type owl:NamedIndividual ,
                       i14224:FailureMode ;
+                      skos:definition "noise"@en ;
              rdfs:label "NOI" ;
              <http://www.w3.org/2004/02/skos/core#definition> "noise" .
 
@@ -836,6 +868,7 @@ i14224:noise rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/other_failure_mode
 i14224:other_failure_mode rdf:type owl:NamedIndividual ,
                                    i14224:FailureMode ;
+                          skos:definition "other failure mode"@en ;         
                           rdfs:label "OTH" ;
                           <http://www.w3.org/2004/02/skos/core#definition> "other" .
 
@@ -843,6 +876,7 @@ i14224:other_failure_mode rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/overheating
 i14224:overheating rdf:type owl:NamedIndividual ,
                             i14224:FailureMode ;
+                   skos:definition "overheating"@en ;         
                    rdfs:label "OHE" ;
                    <http://www.w3.org/2004/02/skos/core#definition> "overheating" .
 
@@ -850,6 +884,7 @@ i14224:overheating rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/parameter_deviation
 i14224:parameter_deviation rdf:type owl:NamedIndividual ,
                                     i14224:FailureMode ;
+                           skos:definition "parameter deviation"@en ;         
                            rdfs:label "PDE" ;
                            <http://www.w3.org/2004/02/skos/core#definition> "parameter deviation" .
 
@@ -857,6 +892,7 @@ i14224:parameter_deviation rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/plugged_or_choked
 i14224:plugged_or_choked rdf:type owl:NamedIndividual ,
                                   i14224:FailureMode ;
+                         skos:definition "plugged or choked"@en ;         
                          rdfs:label "PLU" ;
                          <http://www.w3.org/2004/02/skos/core#definition> "plugged/choked" .
 
@@ -864,6 +900,7 @@ i14224:plugged_or_choked rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/power_or_signal_transmission_failure
 i14224:power_or_signal_transmission_failure rdf:type owl:NamedIndividual ,
                                                      i14224:FailureMode ;
+                                            skos:definition "power or signal transmission failure"@en ;
                                             rdfs:label "PTF" ;
                                             <http://www.w3.org/2004/02/skos/core#definition> "power / signal transmission failure" .
 
@@ -871,6 +908,7 @@ i14224:power_or_signal_transmission_failure rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/slippage
 i14224:slippage rdf:type owl:NamedIndividual ,
                          i14224:FailureMode ;
+                skos:definition "slippage"@en ;
                 rdfs:label "SLP" ;
                 <http://www.w3.org/2004/02/skos/core#definition> "slippage" .
 
@@ -878,6 +916,7 @@ i14224:slippage rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/sludge_build_up
 i14224:sludge_build_up rdf:type owl:NamedIndividual ,
                                 i14224:FailureMode ;
+                       skos:definition "sludge build up"@en ;
                        rdfs:label "SBU" ;
                        <http://www.w3.org/2004/02/skos/core#definition> "sludge build up" .
 
@@ -885,6 +924,7 @@ i14224:sludge_build_up rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/spurious_high_level_alarm
 i14224:spurious_high_level_alarm rdf:type owl:NamedIndividual ,
                                           i14224:FailureMode ;
+                                 skos:definition "spurious high level alarm"@en ;
                                  rdfs:label "SHH" ;
                                  <http://www.w3.org/2004/02/skos/core#definition> "spurious high level alarm" .
 
@@ -892,6 +932,7 @@ i14224:spurious_high_level_alarm rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/spurious_low_level_alarm
 i14224:spurious_low_level_alarm rdf:type owl:NamedIndividual ,
                                          i14224:FailureMode ;
+                                skos:definition "spurious low level alarm"@en ;
                                 rdfs:label "SLL" ;
                                 <http://www.w3.org/2004/02/skos/core#definition> "spurious low level alarm" .
 
@@ -899,19 +940,21 @@ i14224:spurious_low_level_alarm rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/spurious_operation
 i14224:spurious_operation rdf:type owl:NamedIndividual ,
                                    i14224:FailureMode ;
+                          skos:definition "spurious operation"@en ;
                           rdfs:label "SPO" ;
                           <http://www.w3.org/2004/02/skos/core#definition> "spurious operation" .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/spurious_stop
-i14224:spurious_stop rdf:type owl:NamedIndividual ,
-                              i14224:FailureMode ;
-                     rdfs:label "UST" ;
-                     <http://www.w3.org/2004/02/skos/core#definition> "spurious stop" .
+i14224:spurious_stop rdf:type owl:NamedIndividual , i14224:FailureMode ;
+    rdfs:label "UST" ;
+    skos:definition "spurious stop"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
 
 ###  https://iso14224.org/ontology/i14224/rdl/structural_deficiency
 i14224:structural_deficiency rdf:type owl:NamedIndividual ,
                                       i14224:FailureMode ;
+                             skos:definition "structural deficiency"@en ;
                              rdfs:label "STD" ;
                              <http://www.w3.org/2004/02/skos/core#definition> "structural deficiency" .
 
@@ -919,24 +962,23 @@ i14224:structural_deficiency rdf:type owl:NamedIndividual ,
 ###  https://iso14224.org/ontology/i14224/rdl/unknown_failure_mode
 i14224:unknown_failure_mode rdf:type owl:NamedIndividual ,
                                      i14224:FailureMode ;
+                            skos:definition "unknown failure mode"@en ;
                             rdfs:label "UNK" ;
                             <http://www.w3.org/2004/02/skos/core#definition> "unknown" .
-
-
-
 
 ###  https://iso14224.org/ontology/i14224/rdl/vibration
 i14224:vibration rdf:type owl:NamedIndividual ,
                           i14224:FailureMode ;
+                 skos:definition "vibration"@en ;
                  rdfs:label "VIB" ;
                  <http://www.w3.org/2004/02/skos/core#definition> "vibration" .
 
-###  https://iso14224.org/ontology/i14224/rdl/very_low_output
-i14224:very_low_output rdf:type owl:NamedIndividual ,
-                                i14224:FailureMode ;
-                       rdfs:label "VLO" ;
-                       <http://www.w3.org/2004/02/skos/core#definition> "very low output" .
-                
+i14224:very_low_output rdf:type owl:NamedIndividual , i14224:FailureMode ;
+    rdfs:label "VLO" ;
+    skos:definition "very low output"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+              
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
