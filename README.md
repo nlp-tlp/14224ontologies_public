@@ -34,17 +34,6 @@ Tables capturing failure-related data are often created and maintained ad hoc ac
 
 There are several opportunities for a shared industry project to improve machine readability of FMEA and maintenance work order data that reference the ISO 14224 standard. In order of technical complexity from technically simple to complex these are
 
-*Why a Controlled vocabulary?* 
-While some terms are provided in the terms and definitions section of the ISO 14224:2016: https://www.iso.org/obp/ui/en/#iso:std:iso:14224:ed-3:v2:en the standard lacks robust definitions for terms inside the document e.g. in the tables in Appendix B that describe failure modes and mechanisms. A mapping also needs to be done between terms that are common to ISO 14224:2016 and IEC 60812 IEC 60812:2018 Failure modes and effects analysis (FMEA and FMECA) and to document the differences.
-
-*Example*
-
-```
-label:failure effect
-natural language definition: process that is the consequence of failure, within or beyond the boundary of the failed item
-example: leaking pipe, erratic operation, equipment does not run
-```
-
 *What's the Value*
 The business value of this step is that every organisation (and even engineers within an organisation) keep their own versions of ISO 14424 in database tables and Excel spreadsheets with their own entity type labels and column headings, as well as codes resulting in challenges for humans, let alone AI to determine if the terms are semantically the same.
 
@@ -62,6 +51,8 @@ The purposes of this repo are:
 
 - 53 terms used in the Terms and Definitions (Clause 3) section of ISO 14224, and 
 - Text in tables relating to the classification of failure modes, failure mechanisms and failure causes contained in Appendix B, of the ISO 14224:2016 standard. 
+- All the Level 6 and 7 Equipment Classes in Appendix A.
+- Cross references for the information in Appendix B Tables B6-B10 on which Failure Mode Codes can be used for which Equipment Classes.
 
 The namespace iso14224.org has been purchased by the GitHub repo owner for this purpose.
 
@@ -69,7 +60,7 @@ The namespace iso14224.org has been purchased by the GitHub repo owner for this 
 
 3.  Develop models based on 1. and 2. aligned to different top level ontologies - IDO, IOF and DOLCE. Use the examples in 2. to understand the impact of modelling decisions.
 
-4. Present the outcomes of experiments using ChatGPT (LLMs) to see how the LLMs perform with and without the i14224.ttl files.
+4. Present the outcomes of experiments using ChatGPT (LLMs) to see how the LLMs perform with and without the i14224.ttl files. 
 
 
 ## Outputs
@@ -82,7 +73,13 @@ The experiment files are in the \experiment subdirectory. Please read the readme
 
 *i14224_clause3.ttl* Terms and definitions  - modelled as OWL classes, object properties and annotation properties. Contains the `https://iso14224.org/ontology/i14224/ont/clause3` ontology.
 
+*i14224_appendixA.ttl* - data from Appendix A on all the Level 6 and 7 Equipment Class and categories
+
 *i14224_appendixB.ttl* - data from tables in ISO 14224 Annex B for example on Failure modes and Mechanisms - modelled as OWL classes and named individuals. Contains the `https://iso14224.org/ontology/i14224/ont/appendixB` ontology
+
+*i14224_appendixB_allowed_failure_modes.ttl* - as the name suggests these are lists of the allowable failure modes for each Equipment Class.
+
+*i14224_failure_mode_validation_shape.ttl* - SHACL shape code to constraint check if valid equipment class and failure mode codes have been used.
 
 The iso14224.org namespace was purchased to enable future resolvable IRIs.
 
@@ -100,11 +97,13 @@ Examples:
 - TypeData: EquipmentData, FailureData, GenericReliabilityData, MaintenanceData, ReliabilityData
 - TypeFailureEvent: CommonCauseFailure, CommonModeFailure, CriticalFailure, DegradedFailure, FailureDueToDemand, FailureOnDemand, HiddenFailure, IncipientFailure, NonCriticalFailure, RandomFailure, SafetyCriticalFailure, SystematicFailure, Trip
 - TypeMaintenanceStrategy: ConditionBasedMaintenance, CorrectiveMaintenance, OpportunityMaintenance
-- TypeMaterialState (DownState, IdleState, OperatingState, UpState
+- TypeMaterialState: DownState, IdleState, OperatingState, UpState
 - TypeReliabilityMeasure: 21 examples, see the file
 - TypeTest: PeriodicTest, Demand
 
 The *i14224_appendixB.ttl* file is used to capture information in the tables in Appendix B relating to maintenance activity and failure mechanism as OWL classes or failure modes as named individuals. 
+
+Appendix B was largely built manually but Appendix A was built with assistance from Chat GPT.
 
 ### Example of class and its annotations
 
@@ -147,7 +146,7 @@ cmnsav:explanatoryNote ""@en ;
 cmnsav:usageNote ""@en .
 ```
 
-## Examples of competency questions based on this data
+## Examples of competency questions on which to test these ttl models
 
 *FMEA table management*
 
