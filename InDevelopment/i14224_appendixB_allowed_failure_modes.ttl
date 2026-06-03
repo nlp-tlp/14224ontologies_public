@@ -1,0 +1,573 @@
+@prefix i14224: <https://iso14224.org/ontology/i14224/rdl/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix cmnsav: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .
+
+<https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> rdf:type owl:Ontology ;
+    owl:versionIRI <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes/1.0> ;
+    owl:imports <https://iso14224.org/ontology/i14224/ont/appendixA> ,
+                <https://iso14224.org/ontology/i14224/ont/appendixB> ;
+    dcterms:creator <https://orcid.org/0000-0002-7336-3932> ;
+    dcterms:license <https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE> ;
+    rdfs:comment "Allowed ISO 14224 Appendix B failure-mode codes by equipment class for Tables B.6 to B.10."@en .
+
+#################################################################
+#    Object properties
+#################################################################
+
+i14224:hasAllowedFailureMode rdf:type owl:ObjectProperty ;
+    rdfs:label "has allowed failure mode"@en ;
+    rdfs:domain i14224:EquipmentClass ;
+    rdfs:range i14224:FailureMode ;
+    skos:definition "relates an ISO 14224 equipment class or equipment type to a failure mode code permitted for that equipment class in ISO 14224 Appendix B"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:hasEquipmentClass rdf:type owl:ObjectProperty ;
+    rdfs:label "has equipment class"@en ;
+    rdfs:range i14224:EquipmentClass ;
+    skos:definition "relates a failure event, maintenance record, or asset record to the ISO 14224 equipment class used for failure-mode-code validation"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> .
+
+i14224:hasFailedEquipment rdf:type owl:ObjectProperty ;
+    rdfs:label "has failed equipment"@en ;
+    skos:definition "relates a failure event or maintenance record to the equipment item that failed"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> .
+
+#################################################################
+#    Additional failure-mode individuals used by Tables B.6-B.10
+#################################################################
+
+i14224:very_low_output rdf:type owl:NamedIndividual , i14224:FailureMode ;
+    rdfs:label "VLO" ;
+    skos:definition "very low output"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:failure_to_lock_unlock rdf:type owl:NamedIndividual , i14224:FailureMode ;
+    rdfs:label "FTL" ;
+    skos:definition "failure to lock/unlock"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:failure_to_set_retrieve rdf:type owl:NamedIndividual , i14224:FailureMode ;
+    rdfs:label "SET" ;
+    skos:definition "failure to set/retrieve"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:insufficient_power rdf:type owl:NamedIndividual , i14224:FailureMode ;
+    rdfs:label "POW" ;
+    skos:definition "insufficient power"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:no_immediate_effect rdf:type owl:NamedIndividual , i14224:FailureMode ;
+    rdfs:label "NON" ;
+    skos:definition "no immediate effect"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:mooring_failure rdf:type owl:NamedIndividual , i14224:FailureMode ;
+    rdfs:label "MOF" ;
+    skos:definition "mooring failure"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:spurious_stop rdf:type owl:NamedIndividual , i14224:FailureMode ;
+    rdfs:label "UST" ;
+    skos:definition "spurious stop"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+#################################################################
+#    Helper classes for Table B.9 detector columns
+#################################################################
+
+i14224:FireDetector rdf:type owl:Class ;
+    rdfs:subClassOf i14224:FireAndGasDetector ;
+    rdfs:label "Fire detector"@en ;
+    skos:definition "fire-detector equipment class grouping used for ISO 14224 Table B.9 failure-mode-code validation"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Table B.9"@en .
+
+i14224:GasDetector rdf:type owl:Class ;
+    rdfs:subClassOf i14224:FireAndGasDetector ;
+    rdfs:label "Gas detector"@en ;
+    skos:definition "gas-detector equipment class grouping used for ISO 14224 Table B.9 failure-mode-code validation"@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Table B.9"@en .
+
+i14224:SmokeCombustionFireDetector rdfs:subClassOf i14224:FireDetector .
+i14224:HeatFireDetector rdfs:subClassOf i14224:FireDetector .
+i14224:FlameFireDetector rdfs:subClassOf i14224:FireDetector .
+i14224:ManualPushbuttonFireDetector rdfs:subClassOf i14224:FireDetector .
+i14224:OtherFireDetector rdfs:subClassOf i14224:FireDetector .
+i14224:HydrocarbonGasDetector rdfs:subClassOf i14224:GasDetector .
+i14224:ToxicGasDetector rdfs:subClassOf i14224:GasDetector .
+i14224:OtherGasDetector rdfs:subClassOf i14224:GasDetector .
+
+#################################################################
+#    Allowed failure modes by equipment class - Tables B.6-B.10
+#################################################################
+
+i14224:CombustionEngine i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:breakdown ,
+        i14224:erratic_output ,
+        i14224:external_leakage_fuel ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_start_on_demand ,
+        i14224:failure_to_stop_on_demand ,
+        i14224:high_output ,
+        i14224:internal_leakage ,
+        i14224:low_output ,
+        i14224:minor_inservice_problems ,
+        i14224:noise ,
+        i14224:other_failure_mode ,
+        i14224:overheating ,
+        i14224:parameter_deviation ,
+        i14224:plugged_or_choked ,
+        i14224:spurious_stop ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ,
+        i14224:vibration ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:Compressor i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:breakdown ,
+        i14224:erratic_output ,
+        i14224:external_leakage_process_medium ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_start_on_demand ,
+        i14224:failure_to_stop_on_demand ,
+        i14224:high_output ,
+        i14224:internal_leakage ,
+        i14224:low_output ,
+        i14224:minor_inservice_problems ,
+        i14224:noise ,
+        i14224:other_failure_mode ,
+        i14224:overheating ,
+        i14224:parameter_deviation ,
+        i14224:plugged_or_choked ,
+        i14224:spurious_stop ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ,
+        i14224:vibration ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:ElectricGenerator i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:breakdown ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_start_on_demand ,
+        i14224:failure_to_stop_on_demand ,
+        i14224:low_output ,
+        i14224:minor_inservice_problems ,
+        i14224:noise ,
+        i14224:other_failure_mode ,
+        i14224:overheating ,
+        i14224:parameter_deviation ,
+        i14224:spurious_stop ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ,
+        i14224:vibration ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:ElectricMotor i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:breakdown ,
+        i14224:erratic_output ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_start_on_demand ,
+        i14224:failure_to_stop_on_demand ,
+        i14224:high_output ,
+        i14224:low_output ,
+        i14224:minor_inservice_problems ,
+        i14224:noise ,
+        i14224:other_failure_mode ,
+        i14224:overheating ,
+        i14224:parameter_deviation ,
+        i14224:spurious_stop ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ,
+        i14224:vibration ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:GasTurbine i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:breakdown ,
+        i14224:erratic_output ,
+        i14224:external_leakage_fuel ,
+        i14224:external_leakage_process_medium ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_start_on_demand ,
+        i14224:high_output ,
+        i14224:internal_leakage ,
+        i14224:low_output ,
+        i14224:minor_inservice_problems ,
+        i14224:noise ,
+        i14224:other_failure_mode ,
+        i14224:overheating ,
+        i14224:parameter_deviation ,
+        i14224:plugged_or_choked ,
+        i14224:spurious_stop ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ,
+        i14224:vibration ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:Pump i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:breakdown ,
+        i14224:erratic_output ,
+        i14224:external_leakage_process_medium ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_start_on_demand ,
+        i14224:high_output ,
+        i14224:internal_leakage ,
+        i14224:low_output ,
+        i14224:minor_inservice_problems ,
+        i14224:noise ,
+        i14224:other_failure_mode ,
+        i14224:overheating ,
+        i14224:parameter_deviation ,
+        i14224:plugged_or_choked ,
+        i14224:spurious_stop ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ,
+        i14224:vibration ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:SteamTurbine i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:breakdown ,
+        i14224:erratic_output ,
+        i14224:external_leakage_fuel ,
+        i14224:external_leakage_process_medium ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_start_on_demand ,
+        i14224:high_output ,
+        i14224:internal_leakage ,
+        i14224:low_output ,
+        i14224:minor_inservice_problems ,
+        i14224:noise ,
+        i14224:other_failure_mode ,
+        i14224:overheating ,
+        i14224:parameter_deviation ,
+        i14224:plugged_or_choked ,
+        i14224:spurious_stop ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ,
+        i14224:vibration ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:Turboexpander i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:breakdown ,
+        i14224:erratic_output ,
+        i14224:external_leakage_process_medium ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_start_on_demand ,
+        i14224:high_output ,
+        i14224:internal_leakage ,
+        i14224:low_output ,
+        i14224:minor_inservice_problems ,
+        i14224:noise ,
+        i14224:other_failure_mode ,
+        i14224:overheating ,
+        i14224:parameter_deviation ,
+        i14224:plugged_or_choked ,
+        i14224:spurious_stop ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ,
+        i14224:vibration ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:Crane i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:breakdown ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_rotate ,
+        i14224:failure_to_start_on_demand ,
+        i14224:internal_leakage ,
+        i14224:load_drop ,
+        i14224:minor_inservice_problems ,
+        i14224:noise ,
+        i14224:other_failure_mode ,
+        i14224:overheating ,
+        i14224:parameter_deviation ,
+        i14224:slippage ,
+        i14224:spurious_operation ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ,
+        i14224:vibration ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:HeatExchanger i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:external_leakage_process_medium ,
+        i14224:external_leakage_utility_medium ,
+        i14224:insufficient_heat_transfer ,
+        i14224:internal_leakage ,
+        i14224:minor_inservice_problems ,
+        i14224:other_failure_mode ,
+        i14224:parameter_deviation ,
+        i14224:plugged_or_choked ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:HeaterAndBoiler i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:external_leakage_process_medium ,
+        i14224:external_leakage_utility_medium ,
+        i14224:insufficient_heat_transfer ,
+        i14224:internal_leakage ,
+        i14224:minor_inservice_problems ,
+        i14224:other_failure_mode ,
+        i14224:overheating ,
+        i14224:parameter_deviation ,
+        i14224:plugged_or_choked ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:Piping i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:breakdown ,
+        i14224:external_leakage_process_medium ,
+        i14224:internal_leakage ,
+        i14224:minor_inservice_problems ,
+        i14224:noise ,
+        i14224:other_failure_mode ,
+        i14224:overheating ,
+        i14224:parameter_deviation ,
+        i14224:plugged_or_choked ,
+        i14224:power_or_signal_transmission_failure ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ,
+        i14224:vibration ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:Vessel i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:external_leakage_process_medium ,
+        i14224:external_leakage_utility_medium ,
+        i14224:insufficient_heat_transfer ,
+        i14224:minor_inservice_problems ,
+        i14224:other_failure_mode ,
+        i14224:parameter_deviation ,
+        i14224:plugged_or_choked ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:Winch i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:breakdown ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_rotate ,
+        i14224:failure_to_start_on_demand ,
+        i14224:failure_to_stop_on_demand ,
+        i14224:load_drop ,
+        i14224:low_output ,
+        i14224:minor_inservice_problems ,
+        i14224:noise ,
+        i14224:other_failure_mode ,
+        i14224:overheating ,
+        i14224:parameter_deviation ,
+        i14224:slippage ,
+        i14224:spurious_operation ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ,
+        i14224:vibration ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:Turret i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:failure_to_connect ,
+        i14224:failure_to_disconnect ,
+        i14224:failure_to_function_as_intended ,
+        i14224:failure_to_rotate ,
+        i14224:loss_of_buoyancy ,
+        i14224:minor_inservice_problems ,
+        i14224:mooring_failure ,
+        i14224:noise ,
+        i14224:other_failure_mode ,
+        i14224:parameter_deviation ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:Swivel i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:external_leakage_process_medium ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_connect ,
+        i14224:failure_to_function_as_intended ,
+        i14224:failure_to_rotate ,
+        i14224:internal_leakage ,
+        i14224:low_oil_supply_pressure ,
+        i14224:minor_inservice_problems ,
+        i14224:other_failure_mode ,
+        i14224:parameter_deviation ,
+        i14224:plugged_or_choked ,
+        i14224:power_or_signal_transmission_failure ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:UninterruptiblePowerSupply i14224:hasAllowedFailureMode
+        i14224:erratic_output ,
+        i14224:failure_to_function_on_demand ,
+        i14224:faulty_output_frequency ,
+        i14224:faulty_output_voltage ,
+        i14224:loss_of_redundancy ,
+        i14224:minor_inservice_problems ,
+        i14224:other_failure_mode ,
+        i14224:overheating ,
+        i14224:parameter_deviation ,
+        i14224:spurious_operation ,
+        i14224:unknown_failure_mode ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:PowerTransformer i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_function_on_demand ,
+        i14224:faulty_output_voltage ,
+        i14224:internal_leakage ,
+        i14224:minor_inservice_problems ,
+        i14224:other_failure_mode ,
+        i14224:overheating ,
+        i14224:parameter_deviation ,
+        i14224:plugged_or_choked ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:FireDetector i14224:hasAllowedFailureMode
+        i14224:erratic_output ,
+        i14224:failure_to_function_on_demand ,
+        i14224:high_output ,
+        i14224:low_output ,
+        i14224:minor_inservice_problems ,
+        i14224:no_output ,
+        i14224:other_failure_mode ,
+        i14224:spurious_high_level_alarm ,
+        i14224:spurious_low_level_alarm ,
+        i14224:spurious_operation ,
+        i14224:unknown_failure_mode ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:GasDetector i14224:hasAllowedFailureMode
+        i14224:high_output ,
+        i14224:low_output ,
+        i14224:no_output ,
+        i14224:other_failure_mode ,
+        i14224:spurious_high_level_alarm ,
+        i14224:spurious_low_level_alarm ,
+        i14224:spurious_operation ,
+        i14224:unknown_failure_mode ,
+        i14224:very_low_output ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:InputDevice i14224:hasAllowedFailureMode
+        i14224:erratic_output ,
+        i14224:external_leakage_process_medium ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_function_on_demand ,
+        i14224:high_output ,
+        i14224:low_output ,
+        i14224:minor_inservice_problems ,
+        i14224:no_output ,
+        i14224:other_failure_mode ,
+        i14224:spurious_operation ,
+        i14224:unknown_failure_mode ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:ControlUnit i14224:hasAllowedFailureMode
+        i14224:erratic_output ,
+        i14224:failure_to_function_on_demand ,
+        i14224:high_output ,
+        i14224:low_output ,
+        i14224:minor_inservice_problems ,
+        i14224:spurious_operation ,
+        i14224:unknown_failure_mode ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:Valve i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:delayed_operation ,
+        i14224:external_leakage_process_medium ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_close_on_demand ,
+        i14224:failure_to_open_on_demand ,
+        i14224:high_output ,
+        i14224:internal_leakage ,
+        i14224:leakage_in_closed_position ,
+        i14224:low_output ,
+        i14224:minor_inservice_problems ,
+        i14224:other_failure_mode ,
+        i14224:plugged_or_choked ,
+        i14224:spurious_operation ,
+        i14224:structural_deficiency ,
+        i14224:unknown_failure_mode ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:SubseaProductionControl i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:external_leakage_process_medium ,
+        i14224:failure_to_function_on_demand ,
+        i14224:insufficient_power ,
+        i14224:internal_leakage ,
+        i14224:loss_of_redundancy ,
+        i14224:low_output ,
+        i14224:no_immediate_effect ,
+        i14224:other_failure_mode ,
+        i14224:spurious_operation ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:XmasTree i14224:hasAllowedFailureMode
+        i14224:external_leakage_process_medium ,
+        i14224:external_leakage_utility_medium ,
+        i14224:failure_to_close_on_demand ,
+        i14224:failure_to_lock_unlock ,
+        i14224:failure_to_open_on_demand ,
+        i14224:failure_to_set_retrieve ,
+        i14224:insufficient_power ,
+        i14224:internal_leakage ,
+        i14224:loss_of_buoyancy ,
+        i14224:other_failure_mode ,
+        i14224:plugged_or_choked ,
+        i14224:spurious_operation ,
+        i14224:structural_deficiency ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:SubseaPump i14224:hasAllowedFailureMode
+        i14224:abnormal_instrument_reading ,
+        i14224:external_leakage_process_medium ,
+        i14224:failure_to_function_on_demand ,
+        i14224:high_output ,
+        i14224:internal_leakage ,
+        i14224:low_output ,
+        i14224:other_failure_mode ,
+        i14224:spurious_operation ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
+i14224:Riser i14224:hasAllowedFailureMode
+        i14224:external_leakage_process_medium ,
+        i14224:external_leakage_utility_medium ,
+        i14224:internal_leakage ,
+        i14224:no_immediate_effect ,
+        i14224:other_failure_mode ,
+        i14224:plugged_or_choked ,
+        i14224:structural_deficiency ;
+    cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
+
