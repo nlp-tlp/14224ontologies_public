@@ -1,0 +1,7 @@
+﻿Category,Total Rows,Worksheet Row Numbers
+1. FM code blank,15,"2, 3, 6, 10, 20, 21, 26, 27, 30, 31, 32, 61, 68, 69, 70"
+2. FM code not in ISO 14224 Annex B,2,"14, 15"
+3. FM valid but not allowed for equipment class,5,"7, 38, 39, 45, 63"
+4. FM valid but class-specific check could not run (equipment class blank/unresolved),18,"4, 5, 11, 12, 13, 33, 40, 41, 44, 46, 47, 50, 52, 55, 56, 59, 60, 62"
+5. Compliant (FM defined and allowed for equipment class),29,"8, 9, 16, 17, 18, 19, 22, 23, 24, 25, 28, 29, 34, 35, 36, 37, 42, 43, 48, 49, 51, 53, 54, 57, 58, 64, 65, 66, 67"
+6. Total worksheet rows checked,69,"2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70"

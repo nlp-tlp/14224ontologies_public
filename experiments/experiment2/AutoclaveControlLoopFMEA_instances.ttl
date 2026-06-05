@@ -1,0 +1,1922 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fmea: <https://example.org/ontology/fmea/ont/> .
+@prefix i14224: <https://iso14224.org/ontology/i14224/rdl/> .
+@prefix inst: <https://example.org/data/autoclave-fmea/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+inst:FMEAEntry_row_0002 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 2"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_LSH02767 ;
+    fmea:hasConsequenceNote "PSV02014 lifts, release of powder / liquor and vapour to atmosphere at elevated location. Ignition not considered credible (classified hazardous area), vapour will contain steam. Potenital for serious harm for personnel in immediate vicinity of PSV. LOPA 25.18" ;
+    fmea:hasControlFrequency "52W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Shutter_Test ;
+    fmea:hasFailureEffectText "Overfilling during charge step (insufficient vapour space in clave) results in the H2 pressure control being unable to respond correctly" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Out_of_adjustment ;
+    fmea:hasFailureMechanismCategoryText "Instrument failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Out of adjustment" ;
+    fmea:hasFailureModeOriginalText "Not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02767 ;
+    fmea:hasFunctionalPurpose "Detect clave high level" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Misalignment" ;
+    fmea:hasSourceRowNumber 2 .
+
+inst:FMEAEntry_row_0003 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 3"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_LSH02767 ;
+    fmea:hasConsequenceNote "PSV02014 lifts, release of powder / liquor and vapour to atmosphere at elevated location. Ignition not considered credible (classified hazardous area), vapour will contain steam. Potenital for serious harm for personnel in immediate vicinity of PSV. LOPA 25.18" ;
+    fmea:hasControlFrequency "52W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Wipe_Test ;
+    fmea:hasFailureEffectText "Overfilling during charge step (insufficient vapour space in clave) results in the H2 pressure control being unable to respond correctly" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Out_of_adjustment ;
+    fmea:hasFailureMechanismCategoryText "Instrument failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Out of adjustment" ;
+    fmea:hasFailureModeOriginalText "Not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02767 ;
+    fmea:hasFunctionalPurpose "Detect clave high level" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Misalignment" ;
+    fmea:hasSourceRowNumber 3 .
+
+inst:FMEAEntry_row_0004 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 4"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_LSH02767 ;
+    fmea:hasConsequenceNote "PSV02014 lifts, release of powder / liquor and vapour to atmosphere at elevated location. Ignition not considered credible (classified hazardous area), vapour will contain steam. Potenital for serious harm for personnel in immediate vicinity of PSV. LOPA 25.18" ;
+    fmea:hasControlFrequency "52W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Shutter_Test ;
+    fmea:hasFailureEffectText "Overfilling during charge step (insufficient vapour space in clave) results in the H2 pressure control being unable to respond correctly" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_General_related_to_supply_and_transmission_of_electrical_power_no_further_details ;
+    fmea:hasFailureMechanismCategoryText "Electrical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "General - related to supply and transmission of electrical power - no further details" ;
+    fmea:hasFailureModeCodeLiteral "FTF" ;
+    fmea:hasFailureModeOriginalText "Not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02767 ;
+    fmea:hasFunctionalPurpose "Detect clave high level" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Hardware failure" ;
+    fmea:hasSourceRowNumber 4 ;
+    i14224:hasFailureMode i14224:failure_to_function_on_demand .
+
+inst:FMEAEntry_row_0005 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 5"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_LSH02767 ;
+    fmea:hasConsequenceNote "PSV02014 lifts, release of powder / liquor and vapour to atmosphere at elevated location. Ignition not considered credible (classified hazardous area), vapour will contain steam. Potenital for serious harm for personnel in immediate vicinity of PSV. LOPA 25.18" ;
+    fmea:hasControlFrequency "52W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Wipe_Test ;
+    fmea:hasFailureEffectText "Overfilling during charge step (insufficient vapour space in clave) results in the H2 pressure control being unable to respond correctly" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_General_related_to_supply_and_transmission_of_electrical_power_no_further_details ;
+    fmea:hasFailureMechanismCategoryText "Electrical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "General - related to supply and transmission of electrical power - no further details" ;
+    fmea:hasFailureModeCodeLiteral "FTF" ;
+    fmea:hasFailureModeOriginalText "Not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02767 ;
+    fmea:hasFunctionalPurpose "Detect clave high level" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Hardware failure" ;
+    fmea:hasSourceRowNumber 5 ;
+    i14224:hasFailureMode i14224:failure_to_function_on_demand .
+
+inst:FMEAEntry_row_0006 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 6"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_TE02766 ;
+    fmea:hasConsequenceNote "Prolonged overheating can cause damage to clave" ;
+    fmea:hasControlFrequency "104W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Calibration ;
+    fmea:hasFailureEffectText "Potentially overheat the clave" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Faulty_signal ;
+    fmea:hasFailureMechanismCategoryText "Instrument failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Faulty signal" ;
+    fmea:hasFailureModeOriginalText "Inaccurate reading" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02766 ;
+    fmea:hasFunctionalPurpose "Add steam to control clave temperature" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Inherent" ;
+    fmea:hasSourceRowNumber 6 .
+
+inst:FMEAEntry_row_0007 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 7"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_TIT02766 ;
+    fmea:hasControlFrequency "104W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Calibration ;
+    fmea:hasFailureEffectText "Potentially overheat the vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Control_failure ;
+    fmea:hasFailureMechanismCategoryText "Instrument failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Control failure" ;
+    fmea:hasFailureModeCodeLiteral "AIR" ;
+    fmea:hasFailureModeDescriptionText "Abnormal Instrument Air" ;
+    fmea:hasFailureModeOriginalText "Inaccurate reading" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02766 ;
+    fmea:hasFunctionalPurpose "Add steam to control vessel temperature" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Inherent" ;
+    fmea:hasSourceRowNumber 7 ;
+    i14224:hasEquipmentClass i14224:ControlUnit ;
+    i14224:hasEquipmentCode i14224:CL ;
+    i14224:hasFailureMode i14224:abnormal_instrument_reading .
+
+inst:FMEAEntry_row_0008 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 8"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_TV02766 ;
+    fmea:hasControlFrequency "104W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Stroke_check ;
+    fmea:hasFailureEffectText "Potentially overheat the vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Wear ;
+    fmea:hasFailureMechanismCategoryText "Material failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Wear" ;
+    fmea:hasFailureModeCodeLiteral "SPO" ;
+    fmea:hasFailureModeDescriptionText "Spurious operation" ;
+    fmea:hasFailureModeOriginalText "Erratic/Sticking" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02766 ;
+    fmea:hasFunctionalPurpose "Add steam to control vessel temperature" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 8 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:spurious_operation .
+
+inst:FMEAEntry_row_0009 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 9"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_TV02766 ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Potentially overheat the vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Clearance_alignment_failure ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Clearance/ alignment failure" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02766 ;
+    fmea:hasFunctionalPurpose "Add steam to control vessel temperature" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 9 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0010 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 10"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_PIT02773 ;
+    fmea:hasConsequenceNote "Clave unsafe to run without pressure measurement" ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Prod ;
+    fmea:hasControlMeasure inst:ControlMeasure_Calibration ;
+    fmea:hasFailureEffectText "Potential to over pressure the clave" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Faulty_signal ;
+    fmea:hasFailureMechanismCategoryText "Instrument failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Faulty signal" ;
+    fmea:hasFailureModeOriginalText "Inaccurate reading" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02773 ;
+    fmea:hasFunctionalPurpose "Control clave pressure by controlling air vent and H2 inlet control" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Inherent" ;
+    fmea:hasSourceRowNumber 10 .
+
+inst:FMEAEntry_row_0011 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 11"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_PIT02773 ;
+    fmea:hasConsequenceNote "Error in reading causing erratic pressure control" ;
+    fmea:hasControlFrequency "52W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Inspect_tappings ;
+    fmea:hasFailureEffectText "Potential to over pressure the clave" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLU" ;
+    fmea:hasFailureModeOriginalText "Tapping blocked" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02773 ;
+    fmea:hasFunctionalPurpose "Control clave pressure by controlling air vent and H2 inlet control" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Process conditions" ;
+    fmea:hasSourceRowNumber 11 ;
+    i14224:hasFailureMode i14224:plugged_or_choked .
+
+inst:FMEAEntry_row_0012 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 12"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_PIT02773 ;
+    fmea:hasControlFrequency "As needed" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Crit_spare ;
+    fmea:hasFailureEffectText "Potential to over pressure the clave" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLU" ;
+    fmea:hasFailureModeOriginalText "Tapping blocked" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02773 ;
+    fmea:hasFunctionalPurpose "Control clave pressure by controlling air vent and H2 inlet control" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_Spare ;
+    fmea:hasOriginalFailureMechanismText "Process conditions" ;
+    fmea:hasSourceRowNumber 12 ;
+    i14224:hasFailureMode i14224:plugged_or_choked .
+
+inst:FMEAEntry_row_0013 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 13"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_PIT02774 ;
+    fmea:hasConsequenceNote "Clave unsafe to run without pressure measurement" ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Prod ;
+    fmea:hasControlMeasure inst:ControlMeasure_Calibration ;
+    fmea:hasFailureEffectText "Potential to over pressure the clave" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "AIR" ;
+    fmea:hasFailureModeOriginalText "Inaccurate reading" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02774 ;
+    fmea:hasFunctionalPurpose "Control clave pressure by controlling air vent and H2 inlet control" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Inherent" ;
+    fmea:hasSourceRowNumber 13 ;
+    i14224:hasFailureMode i14224:abnormal_instrument_reading .
+
+inst:FMEAEntry_row_0014 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 14"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_PIT02774 ;
+    fmea:hasConsequenceNote "Error in reading causing erratic pressure control" ;
+    fmea:hasControlFrequency "52W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Inspect_tappings ;
+    fmea:hasFailureEffectText "Potential to over pressure the clave" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLO" ;
+    fmea:hasFailureModeOriginalText "Tapping blocked" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02774 ;
+    fmea:hasFunctionalPurpose "Control clave pressure by controlling air vent and H2 inlet control" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Process conditions" ;
+    fmea:hasSourceRowNumber 14 .
+
+inst:FMEAEntry_row_0015 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 15"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_PIT02774 ;
+    fmea:hasControlFrequency "As needed" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Crit_spare ;
+    fmea:hasFailureEffectText "Potential to over pressure the clave" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLO" ;
+    fmea:hasFailureModeOriginalText "Tapping blocked" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02774 ;
+    fmea:hasFunctionalPurpose "Control clave pressure by controlling air vent and H2 inlet control" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_Spare ;
+    fmea:hasOriginalFailureMechanismText "Process conditions" ;
+    fmea:hasSourceRowNumber 15 .
+
+inst:FMEAEntry_row_0016 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 16"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_PV02774_1 ;
+    fmea:hasControlFrequency "26W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Cannot control pressure in vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Sticking ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Sticking" ;
+    fmea:hasFailureModeCodeLiteral "FTO" ;
+    fmea:hasFailureModeDescriptionText "Failure to open on demand" ;
+    fmea:hasFailureModeOriginalText "Stuck closed" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02774 ;
+    fmea:hasFunctionalPurpose "vessel H2 vent control" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Foreign object" ;
+    fmea:hasSourceRowNumber 16 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:failure_to_open_on_demand .
+
+inst:FMEAEntry_row_0017 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 17"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_PV02774_1 ;
+    fmea:hasControlFrequency "As needed" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Rotable_spare ;
+    fmea:hasFailureEffectText "Cannot control pressure in vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Clearance_alignment_failure ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Clearance/ alignment failure" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02774 ;
+    fmea:hasFunctionalPurpose "vessel H2 vent control" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_Spare ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 17 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0018 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 18"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_PV02774_3 ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Cannot control pressure in vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Clearance_alignment_failure ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Clearance/ alignment failure" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02774 ;
+    fmea:hasFunctionalPurpose "vessel H2 inlet control" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 18 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0019 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 19"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_PV02774_3 ;
+    fmea:hasControlFrequency "As needed" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Rotable_spare ;
+    fmea:hasFailureEffectText "Cannot control pressure in vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Clearance_alignment_failure ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Clearance/ alignment failure" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02774 ;
+    fmea:hasFunctionalPurpose "vessel H2 inlet control" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_Spare ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 19 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0020 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 20"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZI02774_3 ;
+    fmea:hasConsequenceNote "Pressure control becomes unstable. Potential release of process through PSV. Typically throttling. Clean H2. Rare to be stuck closed or open. Will stop at end of cycle." ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Cannot control pressure in Clave" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Faulty_signal ;
+    fmea:hasFailureMechanismCategoryText "Instrument failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Faulty signal" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02774 ;
+    fmea:hasFunctionalPurpose "Clave H2 inlet control" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 20 .
+
+inst:FMEAEntry_row_0021 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 21"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZSC02774_3 ;
+    fmea:hasConsequenceNote "Pressure control becomes unstable. Potential release of process through PSV. Typically throttling. Clean H2. Rare to be stuck closed or open. Will stop at end of cycle." ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Cannot control pressure in Clave" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Faulty_signal ;
+    fmea:hasFailureMechanismCategoryText "Instrument failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Faulty signal" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02774 ;
+    fmea:hasFunctionalPurpose "Clave H2 inlet control" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 21 .
+
+inst:FMEAEntry_row_0022 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 22"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_PV02774_2 ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Cannot control pressure in vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Clearance_alignment_failure ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Clearance/ alignment failure" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02774 ;
+    fmea:hasFunctionalPurpose "vessel air vent control" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 22 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0023 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 23"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_PV02774_2 ;
+    fmea:hasControlFrequency "As needed" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Rotable_spare ;
+    fmea:hasFailureEffectText "Cannot control pressure in vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Clearance_alignment_failure ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Clearance/ alignment failure" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02774 ;
+    fmea:hasFunctionalPurpose "vessel air vent control" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_Spare ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 23 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0024 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 24"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02778 ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Safety" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Wear ;
+    fmea:hasFailureMechanismCategoryText "Material failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Wear" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02778 ;
+    fmea:hasFunctionalPurpose "vessel H2 vent block" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 24 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0025 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 25"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02778 ;
+    fmea:hasControlFrequency "As needed" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Rotable_spare ;
+    fmea:hasFailureEffectText "Safety" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Wear ;
+    fmea:hasFailureMechanismCategoryText "Material failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Wear" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02778 ;
+    fmea:hasFunctionalPurpose "vessel H2 vent block" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_Spare ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 25 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0026 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 26"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZSO02778 ;
+    fmea:hasConsequenceNote "Typically open when in use. Closes when complete. Can have air suction if passing. Safety. Stroked as part of densification" ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Safety" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Faulty_signal ;
+    fmea:hasFailureMechanismCategoryText "Instrument failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Faulty signal" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02778 ;
+    fmea:hasFunctionalPurpose "Clave H2 vent block" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 26 .
+
+inst:FMEAEntry_row_0027 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 27"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZSC02778 ;
+    fmea:hasConsequenceNote "Typically open when in use. Closes when complete. Can have air suction if passing. Safety. Stroked as part of densification" ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Safety" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Faulty_signal ;
+    fmea:hasFailureMechanismCategoryText "Instrument failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Faulty signal" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02778 ;
+    fmea:hasFunctionalPurpose "Clave H2 vent block" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 27 .
+
+inst:FMEAEntry_row_0028 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 28"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02777 ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Safety" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Wear ;
+    fmea:hasFailureMechanismCategoryText "Material failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Wear" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02777 ;
+    fmea:hasFunctionalPurpose "vessel air vent block" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 28 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0029 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 29"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02777 ;
+    fmea:hasControlFrequency "As needed" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Rotable_spare ;
+    fmea:hasFailureEffectText "Safety" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Wear ;
+    fmea:hasFailureMechanismCategoryText "Material failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Wear" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02777 ;
+    fmea:hasFunctionalPurpose "vessel air vent block" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_Spare ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 29 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0030 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 30"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZSO02777 ;
+    fmea:hasConsequenceNote "Typically open when in use. Closes when complete. Can have air suction if passing. Safety." ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Safety" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Faulty_signal ;
+    fmea:hasFailureMechanismCategoryText "Instrument failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Faulty signal" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02777 ;
+    fmea:hasFunctionalPurpose "Clave air vent block" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 30 .
+
+inst:FMEAEntry_row_0031 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 31"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZSC02777 ;
+    fmea:hasConsequenceNote "Typically open when in use. Closes when complete. Can have air suction if passing. Safety." ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Safety" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Faulty_signal ;
+    fmea:hasFailureMechanismCategoryText "Instrument failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Faulty signal" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02777 ;
+    fmea:hasFunctionalPurpose "Clave air vent block" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 31 .
+
+inst:FMEAEntry_row_0032 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 32"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_FIT02776 ;
+    fmea:hasConsequenceNote "High pressure in clave. LOPA 25.09, 25.10" ;
+    fmea:hasControlFrequency "104W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Calibration ;
+    fmea:hasFailureEffectText "Malfunction of air control loop" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Faulty_signal ;
+    fmea:hasFailureMechanismCategoryText "Instrument failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Faulty signal" ;
+    fmea:hasFailureModeOriginalText "Inaccurate reading" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02776 ;
+    fmea:hasFunctionalPurpose "Control clave feed air" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Inherent" ;
+    fmea:hasSourceRowNumber 32 .
+
+inst:FMEAEntry_row_0033 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 33"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_FIT02776 ;
+    fmea:hasConsequenceNote "High pressure in clave. LOPA 25.09, 25.10" ;
+    fmea:hasControlFrequency "104W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Insp_tapping ;
+    fmea:hasFailureEffectText "Malfunction of air control loop" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLU" ;
+    fmea:hasFailureModeOriginalText "Inaccurate reading" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02776 ;
+    fmea:hasFunctionalPurpose "Control clave feed air" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Tapping blocked" ;
+    fmea:hasSourceRowNumber 33 ;
+    i14224:hasFailureMode i14224:plugged_or_choked .
+
+inst:FMEAEntry_row_0034 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 34"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_FV02776 ;
+    fmea:hasControlFrequency "104W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Stroke_check ;
+    fmea:hasFailureEffectText "Malfunction of air control loop" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Sticking ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Sticking" ;
+    fmea:hasFailureModeCodeLiteral "SPO" ;
+    fmea:hasFailureModeDescriptionText "Spurious operation" ;
+    fmea:hasFailureModeOriginalText "Erratic control" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02776 ;
+    fmea:hasFunctionalPurpose "Control vessel feed air" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Sticky movement" ;
+    fmea:hasSourceRowNumber 34 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:spurious_operation .
+
+inst:FMEAEntry_row_0035 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 35"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_FV02776 ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Potential over pressure of vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Clearance_alignment_failure ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Clearance/ alignment failure" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02776 ;
+    fmea:hasFunctionalPurpose "Control vessel feed air" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 35 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0036 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 36"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02764 ;
+    fmea:hasControlFrequency "4 days" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Replace ;
+    fmea:hasFailureEffectText "Unable to control vessel pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Wear ;
+    fmea:hasFailureMechanismCategoryText "Material failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Wear" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02764 ;
+    fmea:hasFunctionalPurpose "vessel discharge block 1 bottom Jamesbury" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 36 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0037 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 37"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02764 ;
+    fmea:hasControlFrequency "As needed" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Rotable_spare ;
+    fmea:hasFailureEffectText "Potential over pressure of vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Wear ;
+    fmea:hasFailureMechanismCategoryText "Material failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Wear" ;
+    fmea:hasFailureModeCodeLiteral "FTO" ;
+    fmea:hasFailureModeDescriptionText "Failure to open on demand" ;
+    fmea:hasFailureModeOriginalText "Stuck closed" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02764 ;
+    fmea:hasFunctionalPurpose "vessel discharge block 1 bottom Jamesbury" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_Spare ;
+    fmea:hasOriginalFailureMechanismText "Nickel plating within ball and seat." ;
+    fmea:hasSourceRowNumber 37 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:failure_to_open_on_demand .
+
+inst:FMEAEntry_row_0038 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 38"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02764 ;
+    fmea:hasControlFrequency "TAR" ;
+    fmea:hasControlGroup inst:ControlGroup_Operations ;
+    fmea:hasControlMeasure inst:ControlMeasure_Align_and_Stroke ;
+    fmea:hasFailureEffectText "Unable to control vessel pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Sticking ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Sticking" ;
+    fmea:hasFailureModeCodeLiteral "FTF" ;
+    fmea:hasFailureModeDescriptionText "failure to function on demand" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02764 ;
+    fmea:hasFunctionalPurpose "vessel discharge block 1 bottom Jamesbury" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Knocked/ ingress" ;
+    fmea:hasSourceRowNumber 38 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:failure_to_function_on_demand .
+
+inst:FMEAEntry_row_0039 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 39"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02764 ;
+    fmea:hasFailureEffectText "Unable to control vessel pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Clearance_alignment_failure ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Clearance/ alignment failure" ;
+    fmea:hasFailureModeCodeLiteral "FTF" ;
+    fmea:hasFailureModeDescriptionText "failure to function on demand" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02764 ;
+    fmea:hasFunctionalPurpose "vessel discharge block 1 bottom Jamesbury" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasOriginalFailureMechanismText "Misalignment" ;
+    fmea:hasSourceRowNumber 39 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:failure_to_function_on_demand .
+
+inst:FMEAEntry_row_0040 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 40"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZSO02764 ;
+    fmea:hasConsequenceNote "Stops sequence if in the middle of cycle. High count of failures." ;
+    fmea:hasControlFrequency "TAR" ;
+    fmea:hasControlGroup inst:ControlGroup_Operations ;
+    fmea:hasControlMeasure inst:ControlMeasure_Align_and_Stroke ;
+    fmea:hasFailureEffectText "Unable to control clave pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLU" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02764 ;
+    fmea:hasFunctionalPurpose "Clave discharge block 1 bottom Jamesbury" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Knocked/ ingress" ;
+    fmea:hasSourceRowNumber 40 ;
+    i14224:hasFailureMode i14224:plugged_or_choked .
+
+inst:FMEAEntry_row_0041 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 41"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZSC02764 ;
+    fmea:hasConsequenceNote "Stops sequence if in the middle of cycle. High count of failures." ;
+    fmea:hasControlFrequency "TAR" ;
+    fmea:hasControlGroup inst:ControlGroup_Operations ;
+    fmea:hasControlMeasure inst:ControlMeasure_Align_and_Stroke ;
+    fmea:hasFailureEffectText "Unable to control clave pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLU" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02764 ;
+    fmea:hasFunctionalPurpose "Clave discharge block 1 bottom Jamesbury" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Knocked/ ingress" ;
+    fmea:hasSourceRowNumber 41 ;
+    i14224:hasFailureMode i14224:plugged_or_choked .
+
+inst:FMEAEntry_row_0042 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 42"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02765 ;
+    fmea:hasControlFrequency "4 days" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Replace ;
+    fmea:hasFailureEffectText "Unable to control vessel pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Wear ;
+    fmea:hasFailureMechanismCategoryText "Material failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Wear" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02765 ;
+    fmea:hasFunctionalPurpose "vessel discharge block 2 top Jamesbury" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 42 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0043 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 43"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02765 ;
+    fmea:hasControlFrequency "As needed" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Rotable_spare ;
+    fmea:hasFailureEffectText "Potential over pressure of vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Sticking ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Sticking" ;
+    fmea:hasFailureModeCodeLiteral "FTO" ;
+    fmea:hasFailureModeDescriptionText "Failure to open on demand" ;
+    fmea:hasFailureModeOriginalText "Stuck closed" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02765 ;
+    fmea:hasFunctionalPurpose "vessel discharge block 2 top Jamesbury" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_Spare ;
+    fmea:hasOriginalFailureMechanismText "Nickel plating within ball and seat." ;
+    fmea:hasSourceRowNumber 43 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:failure_to_open_on_demand .
+
+inst:FMEAEntry_row_0044 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 44"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_XV02765 ;
+    fmea:hasConsequenceNote "Stops sequence if in the middle of cycle. High count of failures." ;
+    fmea:hasControlFrequency "TAR" ;
+    fmea:hasControlGroup inst:ControlGroup_Operations ;
+    fmea:hasControlMeasure inst:ControlMeasure_Align_and_Stroke ;
+    fmea:hasFailureEffectText "Unable to control clave pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLU" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02765 ;
+    fmea:hasFunctionalPurpose "Clave discharge block 2 top Jamesbury" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Knocked/ ingress" ;
+    fmea:hasSourceRowNumber 44 ;
+    i14224:hasFailureMode i14224:plugged_or_choked .
+
+inst:FMEAEntry_row_0045 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 45"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02765 ;
+    fmea:hasFailureEffectText "Unable to control vessel pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Clearance_alignment_failure ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Clearance/ alignment failure" ;
+    fmea:hasFailureModeCodeLiteral "FTF" ;
+    fmea:hasFailureModeDescriptionText "failure to function on demand" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02765 ;
+    fmea:hasFunctionalPurpose "vessel discharge block 2 top Jamesbury" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasOriginalFailureMechanismText "Misalignment" ;
+    fmea:hasSourceRowNumber 45 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:failure_to_function_on_demand .
+
+inst:FMEAEntry_row_0046 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 46"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZSO02765 ;
+    fmea:hasConsequenceNote "Stops sequence if in the middle of cycle. High count of failures." ;
+    fmea:hasControlFrequency "TAR" ;
+    fmea:hasControlGroup inst:ControlGroup_Operations ;
+    fmea:hasControlMeasure inst:ControlMeasure_Align_and_Stroke ;
+    fmea:hasFailureEffectText "Unable to control clave pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLU" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02765 ;
+    fmea:hasFunctionalPurpose "Clave discharge block 2 top Jamesbury" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Knocked/ ingress" ;
+    fmea:hasSourceRowNumber 46 ;
+    i14224:hasFailureMode i14224:plugged_or_choked .
+
+inst:FMEAEntry_row_0047 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 47"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZSC02765 ;
+    fmea:hasConsequenceNote "Stops sequence if in the middle of cycle. High count of failures." ;
+    fmea:hasControlFrequency "TAR" ;
+    fmea:hasControlGroup inst:ControlGroup_Operations ;
+    fmea:hasControlMeasure inst:ControlMeasure_Align_and_Stroke ;
+    fmea:hasFailureEffectText "Unable to control clave pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLU" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02765 ;
+    fmea:hasFunctionalPurpose "Clave discharge block 2 top Jamesbury" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Knocked/ ingress" ;
+    fmea:hasSourceRowNumber 47 ;
+    i14224:hasFailureMode i14224:plugged_or_choked .
+
+inst:FMEAEntry_row_0048 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 48"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02848H ;
+    fmea:hasControlFrequency "4 days" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Replace ;
+    fmea:hasFailureEffectText "Unable to control vessel pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Wear ;
+    fmea:hasFailureMechanismCategoryText "Material failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Wear" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02848H ;
+    fmea:hasFunctionalPurpose "vessel discharge telltale to check if 2 blocks are blocking" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 48 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0049 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 49"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02848H ;
+    fmea:hasControlFrequency "As needed" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Rotable_spare ;
+    fmea:hasFailureEffectText "Potential over pressure of vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Sticking ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Sticking" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Stuck closed" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02848H ;
+    fmea:hasFunctionalPurpose "vessel discharge telltale to check if 2 blocks are blocking" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_Spare ;
+    fmea:hasOriginalFailureMechanismText "Nickel plating within ball and seat." ;
+    fmea:hasSourceRowNumber 49 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0050 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 50"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_XV02848H ;
+    fmea:hasConsequenceNote "Stops sequence if in the middle of cycle. High count of failures." ;
+    fmea:hasControlFrequency "TAR" ;
+    fmea:hasControlGroup inst:ControlGroup_Operations ;
+    fmea:hasControlMeasure inst:ControlMeasure_Align_and_Stroke ;
+    fmea:hasFailureEffectText "Unable to control clave pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLU" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02848H ;
+    fmea:hasFunctionalPurpose "Clave discharge telltale to check if 2 blocks are blocking" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Knocked/ ingress" ;
+    fmea:hasSourceRowNumber 50 ;
+    i14224:hasFailureMode i14224:plugged_or_choked .
+
+inst:FMEAEntry_row_0051 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 51"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02848H ;
+    fmea:hasFailureEffectText "Unable to control vessel pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Clearance_alignment_failure ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Clearance/ alignment failure" ;
+    fmea:hasFailureModeCodeLiteral "FTO" ;
+    fmea:hasFailureModeDescriptionText "Failure to open on demand" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02848H ;
+    fmea:hasFunctionalPurpose "vessel discharge telltale to check if 2 blocks are blocking" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasOriginalFailureMechanismText "Misalignment" ;
+    fmea:hasSourceRowNumber 51 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:failure_to_open_on_demand .
+
+inst:FMEAEntry_row_0052 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 52"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZSC02848H ;
+    fmea:hasConsequenceNote "Stops sequence if in the middle of cycle. High count of failures." ;
+    fmea:hasControlFrequency "TAR" ;
+    fmea:hasControlGroup inst:ControlGroup_Operations ;
+    fmea:hasControlMeasure inst:ControlMeasure_Align_and_Stroke ;
+    fmea:hasFailureEffectText "Unable to control clave pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLU" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02848H ;
+    fmea:hasFunctionalPurpose "Clave discharge telltale to check if 2 blocks are blocking" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Knocked/ ingress" ;
+    fmea:hasSourceRowNumber 52 ;
+    i14224:hasFailureMode i14224:plugged_or_choked .
+
+inst:FMEAEntry_row_0053 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 53"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02826H ;
+    fmea:hasControlFrequency "52W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Feed leaking" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Wear ;
+    fmea:hasFailureMechanismCategoryText "Material failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Wear" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02826 ;
+    fmea:hasFunctionalPurpose "vessel feed block" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 53 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0054 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 54"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02826H ;
+    fmea:hasControlFrequency "As needed" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Rotable_spare ;
+    fmea:hasFailureEffectText "Feed leaking" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Wear ;
+    fmea:hasFailureMechanismCategoryText "Material failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Wear" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02826 ;
+    fmea:hasFunctionalPurpose "vessel feed block" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_Spare ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 54 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0055 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 55"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZSO02826 ;
+    fmea:hasConsequenceNote "Stops sequence if in the middle of cycle. High count of failures." ;
+    fmea:hasControlFrequency "TAR" ;
+    fmea:hasControlGroup inst:ControlGroup_Operations ;
+    fmea:hasControlMeasure inst:ControlMeasure_Align_and_Stroke ;
+    fmea:hasFailureEffectText "Unable to control clave pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLU" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02826 ;
+    fmea:hasFunctionalPurpose "Clave feed block" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Knocked/ ingress" ;
+    fmea:hasSourceRowNumber 55 ;
+    i14224:hasFailureMode i14224:plugged_or_choked .
+
+inst:FMEAEntry_row_0056 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 56"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZSC02826 ;
+    fmea:hasConsequenceNote "Stops sequence if in the middle of cycle. High count of failures." ;
+    fmea:hasControlFrequency "TAR" ;
+    fmea:hasControlGroup inst:ControlGroup_Operations ;
+    fmea:hasControlMeasure inst:ControlMeasure_Align_and_Stroke ;
+    fmea:hasFailureEffectText "Unable to control clave pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLU" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02826 ;
+    fmea:hasFunctionalPurpose "Clave feed block" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Knocked/ ingress" ;
+    fmea:hasSourceRowNumber 56 ;
+    i14224:hasFailureMode i14224:plugged_or_choked .
+
+inst:FMEAEntry_row_0057 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 57"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02140H ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "N2 leaking into vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Clearance_alignment_failure ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Clearance/ alignment failure" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_CL_02140H ;
+    fmea:hasFunctionalPurpose "HP Nitrogen to A Redn vessel block valve" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 57 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0058 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 58"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_XV02140H ;
+    fmea:hasControlMeasure inst:ControlMeasure_Rotable_spare ;
+    fmea:hasFailureEffectText "N2 leaking into vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Clearance_alignment_failure ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Clearance/ alignment failure" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_CL_02140H ;
+    fmea:hasFunctionalPurpose "HP Nitrogen to A Redn vessel block valve" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_Spare ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 58 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0059 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 59"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZSO02140H ;
+    fmea:hasConsequenceNote "Stops sequence if in the middle of cycle. High count of failures." ;
+    fmea:hasControlFrequency "TAR" ;
+    fmea:hasControlGroup inst:ControlGroup_Operations ;
+    fmea:hasControlMeasure inst:ControlMeasure_Align_and_Stroke ;
+    fmea:hasFailureEffectText "Unable to control clave pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLU" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02140H ;
+    fmea:hasFunctionalPurpose "HP Nitrogen to A Redn clave block valve" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Knocked/ ingress" ;
+    fmea:hasSourceRowNumber 59 ;
+    i14224:hasFailureMode i14224:plugged_or_choked .
+
+inst:FMEAEntry_row_0060 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 60"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_ZSC02140H ;
+    fmea:hasConsequenceNote "Stops sequence if in the middle of cycle. High count of failures." ;
+    fmea:hasControlFrequency "TAR" ;
+    fmea:hasControlGroup inst:ControlGroup_Operations ;
+    fmea:hasControlMeasure inst:ControlMeasure_Align_and_Stroke ;
+    fmea:hasFailureEffectText "Unable to control clave pressure" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "PLU" ;
+    fmea:hasFailureModeOriginalText "Proxy not switching" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02140H ;
+    fmea:hasFunctionalPurpose "HP Nitrogen to A Redn clave block valve" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Knocked/ ingress" ;
+    fmea:hasSourceRowNumber 60 ;
+    i14224:hasFailureMode i14224:plugged_or_choked .
+
+inst:FMEAEntry_row_0061 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 61"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_FIT02800H ;
+    fmea:hasConsequenceNote "Rely on high level switch. Over filling of the clave. LOPA 25.18" ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Internal_inspection_of_the_flow_meter ;
+    fmea:hasFailureEffectText "Erratic control of clave feed" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Faulty_signal ;
+    fmea:hasFailureMechanismCategoryText "Instrument failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Faulty signal" ;
+    fmea:hasFailureModeOriginalText "Inaccurate reading" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02800H ;
+    fmea:hasFunctionalPurpose "Control clave feed" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Inherent" ;
+    fmea:hasSourceRowNumber 61 .
+
+inst:FMEAEntry_row_0062 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 62"@en ;
+    fmea:hasAsset inst:Asset_ACX1 ;
+    fmea:hasComponent inst:Component_FIT02800H ;
+    fmea:hasConsequenceNote "Rely on high level switch. Over filling of the clave. LOPA 25.19" ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Internal_inspection_of_the_flow_meter ;
+    fmea:hasFailureEffectText "Inaccurate flow reading" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Blockage_plugged ;
+    fmea:hasFailureMechanismCategoryText "External influence" ;
+    fmea:hasFailureMechanismSubdivisionText "Blockage/ plugged" ;
+    fmea:hasFailureModeCodeLiteral "AIR" ;
+    fmea:hasFailureModeOriginalText "Inaccurate reading" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02800H ;
+    fmea:hasFunctionalPurpose "Control clave feed" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Buildup/ sheddar damage" ;
+    fmea:hasSourceRowNumber 62 ;
+    i14224:hasFailureMode i14224:abnormal_instrument_reading .
+
+inst:FMEAEntry_row_0063 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 63"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_FIT02800H ;
+    fmea:hasControlFrequency "208W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Inspection_of_the_flow_meter_and_seals ;
+    fmea:hasFailureEffectText "Feed leaking into vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Control_failure ;
+    fmea:hasFailureMechanismCategoryText "Instrument failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Control failure" ;
+    fmea:hasFailureModeCodeLiteral "AIR" ;
+    fmea:hasFailureModeDescriptionText "Abnormal Instrument Air" ;
+    fmea:hasFailureModeOriginalText "Leak to external" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02800H ;
+    fmea:hasFunctionalPurpose "Control vessel feed" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Sheddar seal deterioration" ;
+    fmea:hasSourceRowNumber 63 ;
+    i14224:hasEquipmentClass i14224:ControlUnit ;
+    i14224:hasEquipmentCode i14224:CL ;
+    i14224:hasFailureMode i14224:abnormal_instrument_reading .
+
+inst:FMEAEntry_row_0064 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 64"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_FV02800H ;
+    fmea:hasControlFrequency "As needed" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Rotable_spare ;
+    fmea:hasFailureEffectText "Feed leaking into vessel" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Leakage ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Leakage" ;
+    fmea:hasFailureModeCodeLiteral "ELP" ;
+    fmea:hasFailureModeDescriptionText "External leakage process medium" ;
+    fmea:hasFailureModeOriginalText "Leak to external" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02800H ;
+    fmea:hasFunctionalPurpose "Control vessel feed" ;
+    fmea:hasHiddenFailure false ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_Spare ;
+    fmea:hasOriginalFailureMechanismText "Sheddar seal deterioration" ;
+    fmea:hasSourceRowNumber 64 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:external_leakage_process_medium .
+
+inst:FMEAEntry_row_0065 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 65"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_FV02800H ;
+    fmea:hasControlFrequency "104W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Stroke_check ;
+    fmea:hasFailureEffectText "Erratic control of vessel feed" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Sticking ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Sticking" ;
+    fmea:hasFailureModeCodeLiteral "SPO" ;
+    fmea:hasFailureModeDescriptionText "Spurious operation" ;
+    fmea:hasFailureModeOriginalText "Erratic control" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02800H ;
+    fmea:hasFunctionalPurpose "Control vessel feed" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Sticky movement" ;
+    fmea:hasSourceRowNumber 65 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:spurious_operation .
+
+inst:FMEAEntry_row_0066 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 66"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_FV02800H ;
+    fmea:hasControlFrequency "52W" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_OSR ;
+    fmea:hasFailureEffectText "Feed leaking when valve is closed" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Clearance_alignment_failure ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Clearance/ alignment failure" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02800H ;
+    fmea:hasFunctionalPurpose "Control vessel feed" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_PM ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 66 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0067 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 67"@en ;
+    fmea:hasAsset inst:Asset_RV01 ;
+    fmea:hasComponent inst:Component_FV02800H ;
+    fmea:hasControlFrequency "As needed" ;
+    fmea:hasControlGroup inst:ControlGroup_Maint ;
+    fmea:hasControlMeasure inst:ControlMeasure_Rotable_spare ;
+    fmea:hasFailureEffectText "Feed leaking when valve is closed" ;
+    fmea:hasFailureMechanism inst:FailureMechanism_Clearance_alignment_failure ;
+    fmea:hasFailureMechanismCategoryText "Mechanical failure" ;
+    fmea:hasFailureMechanismSubdivisionText "Clearance/ alignment failure" ;
+    fmea:hasFailureModeCodeLiteral "INL" ;
+    fmea:hasFailureModeDescriptionText "Internal leakage" ;
+    fmea:hasFailureModeOriginalText "Passing" ;
+    fmea:hasFunctionalLocation inst:FunctionalLocation_Loop_02800H ;
+    fmea:hasFunctionalPurpose "Control vessel feed" ;
+    fmea:hasHiddenFailure true ;
+    fmea:hasMaintenanceStrategy inst:MaintenanceStrategy_Spare ;
+    fmea:hasOriginalFailureMechanismText "Wear" ;
+    fmea:hasSourceRowNumber 67 ;
+    i14224:hasEquipmentClass i14224:Valve ;
+    i14224:hasEquipmentCode i14224:VA ;
+    i14224:hasFailureMode i14224:internal_leakage .
+
+inst:FMEAEntry_row_0068 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 68"@en ;
+    fmea:hasSourceRowNumber 68 .
+
+inst:FMEAEntry_row_0069 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 69"@en ;
+    fmea:hasSourceRowNumber 69 .
+
+inst:FMEAEntry_row_0070 a fmea:FMEAEntry ;
+    rdfs:label "FMEA row 70"@en ;
+    fmea:hasSourceRowNumber 70 .
+
+inst:ontology a owl:Ontology ;
+    dcterms:source "AutoclaveControlLoopFMEA.csv" ;
+    owl:imports <https://iso14224.org/ontology/i14224/ont/appendixA>,
+        <https://iso14224.org/ontology/i14224/ont/appendixB>,
+        <https://iso14224.org/ontology/i14224/ont/clause3> .
+
+fmea:hasAsset a owl:ObjectProperty ;
+    rdfs:label "has asset"@en .
+
+fmea:hasComponent a owl:ObjectProperty ;
+    rdfs:label "has component"@en .
+
+fmea:hasConsequenceNote a owl:DatatypeProperty ;
+    rdfs:label "has consequence note"@en .
+
+fmea:hasControlFrequency a owl:DatatypeProperty ;
+    rdfs:label "has control frequency"@en .
+
+fmea:hasControlGroup a owl:ObjectProperty ;
+    rdfs:label "has control group"@en .
+
+fmea:hasControlMeasure a owl:ObjectProperty ;
+    rdfs:label "has control measure"@en .
+
+fmea:hasFailureEffectText a owl:DatatypeProperty ;
+    rdfs:label "has failure effect text"@en .
+
+fmea:hasFailureMechanism a owl:ObjectProperty ;
+    rdfs:label "has failure mechanism"@en .
+
+fmea:hasFailureMechanismCategoryText a owl:DatatypeProperty ;
+    rdfs:label "has failure mechanism category text"@en .
+
+fmea:hasFailureMechanismSubdivisionText a owl:DatatypeProperty ;
+    rdfs:label "has failure mechanism subdivision text"@en .
+
+fmea:hasFailureModeCodeLiteral a owl:DatatypeProperty ;
+    rdfs:label "has failure mode code literal"@en .
+
+fmea:hasFailureModeDescriptionText a owl:DatatypeProperty ;
+    rdfs:label "has failure mode description text"@en .
+
+fmea:hasFailureModeOriginalText a owl:DatatypeProperty ;
+    rdfs:label "has failure mode original text"@en .
+
+fmea:hasFunctionalLocation a owl:ObjectProperty ;
+    rdfs:label "has functional location"@en .
+
+fmea:hasFunctionalPurpose a owl:DatatypeProperty ;
+    rdfs:label "has functional purpose"@en .
+
+fmea:hasHiddenFailure a owl:DatatypeProperty ;
+    rdfs:label "has hidden failure"@en .
+
+fmea:hasMaintenanceStrategy a owl:ObjectProperty ;
+    rdfs:label "has maintenance strategy"@en .
+
+fmea:hasOriginalFailureMechanismText a owl:DatatypeProperty ;
+    rdfs:label "has original failure mechanism text"@en .
+
+fmea:hasSourceColumnValue a owl:DatatypeProperty ;
+    rdfs:label "has source column value"@en .
+
+fmea:hasSourceRowNumber a owl:DatatypeProperty ;
+    rdfs:label "has source row number"@en .
+
+fmea:isComponentOf a owl:ObjectProperty ;
+    rdfs:label "is component of"@en .
+
+i14224:hasEquipmentClass a owl:ObjectProperty ;
+    rdfs:label "has equipment class"@en .
+
+inst:Component_TE02766 a i14224:MaintainableItem ;
+    rdfs:label "TE02766" ;
+    rdfs:comment "Temperature sensor" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_TIT02766 a i14224:ControlUnit,
+        i14224:MaintainableItem ;
+    rdfs:label "TIT02766" ;
+    rdfs:comment "Temperature indicating transmitter" ;
+    fmea:isComponentOf inst:Asset_RV01 .
+
+inst:Component_ZI02774_3 a i14224:MaintainableItem ;
+    rdfs:label "ZI02774-3" ;
+    rdfs:comment "Position indicator" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_ZSC02140H a i14224:MaintainableItem ;
+    rdfs:label "ZSC02140H" ;
+    rdfs:comment "Position switch closed" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_ZSC02764 a i14224:MaintainableItem ;
+    rdfs:label "ZSC02764" ;
+    rdfs:comment "Position switch closed" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_ZSC02765 a i14224:MaintainableItem ;
+    rdfs:label "ZSC02765" ;
+    rdfs:comment "Position switch closed" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_ZSC02774_3 a i14224:MaintainableItem ;
+    rdfs:label "ZSC02774-3" ;
+    rdfs:comment "Position switch closed" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_ZSC02777 a i14224:MaintainableItem ;
+    rdfs:label "ZSC02777" ;
+    rdfs:comment "Actuated on/off valve" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_ZSC02778 a i14224:MaintainableItem ;
+    rdfs:label "ZSC02778" ;
+    rdfs:comment "Position switch closed" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_ZSC02826 a i14224:MaintainableItem ;
+    rdfs:label "ZSC02826" ;
+    rdfs:comment "Position switch closed" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_ZSC02848H a i14224:MaintainableItem ;
+    rdfs:label "ZSC02848H" ;
+    rdfs:comment "Position switch closed" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_ZSO02140H a i14224:MaintainableItem ;
+    rdfs:label "ZSO02140H" ;
+    rdfs:comment "Position switch open" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_ZSO02764 a i14224:MaintainableItem ;
+    rdfs:label "ZSO02764" ;
+    rdfs:comment "Position switch open" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_ZSO02765 a i14224:MaintainableItem ;
+    rdfs:label "ZSO02765" ;
+    rdfs:comment "Position switch open" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_ZSO02777 a i14224:MaintainableItem ;
+    rdfs:label "ZSO02777" ;
+    rdfs:comment "Actuated on/off valve" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_ZSO02778 a i14224:MaintainableItem ;
+    rdfs:label "ZSO02778" ;
+    rdfs:comment "Position switch open" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_ZSO02826 a i14224:MaintainableItem ;
+    rdfs:label "ZSO02826" ;
+    rdfs:comment "Position switch open" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:ControlMeasure_Insp_tapping a fmea:ControlMeasure ;
+    rdfs:label "Insp tapping" .
+
+inst:ControlMeasure_Inspection_of_the_flow_meter_and_seals a fmea:ControlMeasure ;
+    rdfs:label "Inspection of the flow meter and seals" .
+
+inst:FailureMechanism_Leakage a i14224:LeakageFailureMechanism ;
+    rdfs:label "Leakage" .
+
+inst:Component_FIT02776 a i14224:MaintainableItem ;
+    rdfs:label "FIT02776" ;
+    rdfs:comment "Flow indicating transmitter" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_FV02776 a i14224:MaintainableItem,
+        i14224:Valve ;
+    rdfs:label "FV02776" ;
+    rdfs:comment "Flow valve" ;
+    fmea:isComponentOf inst:Asset_RV01 .
+
+inst:Component_PV02774_1 a i14224:MaintainableItem,
+        i14224:Valve ;
+    rdfs:label "PV02774-1" ;
+    rdfs:comment "Pressure valve" ;
+    fmea:isComponentOf inst:Asset_RV01 .
+
+inst:Component_PV02774_2 a i14224:MaintainableItem,
+        i14224:Valve ;
+    rdfs:label "PV02774-2" ;
+    rdfs:comment "Pressure valve" ;
+    fmea:isComponentOf inst:Asset_RV01 .
+
+inst:Component_PV02774_3 a i14224:MaintainableItem,
+        i14224:Valve ;
+    rdfs:label "PV02774-3" ;
+    rdfs:comment "Pressure valve" ;
+    fmea:isComponentOf inst:Asset_RV01 .
+
+inst:Component_TV02766 a i14224:MaintainableItem,
+        i14224:Valve ;
+    rdfs:label "TV02766" ;
+    rdfs:comment "Temperature control valve" ;
+    fmea:isComponentOf inst:Asset_RV01 .
+
+inst:Component_XV02140H a i14224:MaintainableItem,
+        i14224:Valve ;
+    rdfs:label "XV02140H" ;
+    rdfs:comment "Actuated on/off valve" ;
+    fmea:isComponentOf inst:Asset_RV01 .
+
+inst:Component_XV02777 a i14224:MaintainableItem,
+        i14224:Valve ;
+    rdfs:label "XV02777" ;
+    rdfs:comment "Actuated on/off valve" ;
+    fmea:isComponentOf inst:Asset_RV01 .
+
+inst:Component_XV02778 a i14224:MaintainableItem,
+        i14224:Valve ;
+    rdfs:label "XV02778" ;
+    rdfs:comment "Actuated on/off valve" ;
+    fmea:isComponentOf inst:Asset_RV01 .
+
+inst:Component_XV02826H a i14224:MaintainableItem,
+        i14224:Valve ;
+    rdfs:label "XV02826H" ;
+    rdfs:comment "Actuated on/off valve" ;
+    fmea:isComponentOf inst:Asset_RV01 .
+
+inst:ControlGroup_Prod a fmea:ControlGroup ;
+    rdfs:label "Prod" .
+
+inst:ControlMeasure_Crit_spare a fmea:ControlMeasure ;
+    rdfs:label "Crit spare" .
+
+inst:ControlMeasure_Inspect_tappings a fmea:ControlMeasure ;
+    rdfs:label "Inspect tappings" .
+
+inst:ControlMeasure_Internal_inspection_of_the_flow_meter a fmea:ControlMeasure ;
+    rdfs:label "Internal inspection of the flow meter" .
+
+inst:ControlMeasure_Shutter_Test a fmea:ControlMeasure ;
+    rdfs:label "Shutter Test" .
+
+inst:ControlMeasure_Wipe_Test a fmea:ControlMeasure ;
+    rdfs:label "Wipe Test" .
+
+inst:FailureMechanism_Control_failure a i14224:FailureMechanism ;
+    rdfs:label "Control failure" .
+
+inst:FailureMechanism_General_related_to_supply_and_transmission_of_electrical_power_no_further_details a i14224:FailureMechanism ;
+    rdfs:label "General - related to supply and transmission of electrical power - no further details" .
+
+inst:FailureMechanism_Out_of_adjustment a i14224:OutOfAdjustmentFailureMechanism ;
+    rdfs:label "Out of adjustment" .
+
+inst:FunctionalLocation_CL_02140H a fmea:FunctionalLocation,
+        i14224:TagNumber ;
+    rdfs:label "CL 02140H" .
+
+inst:FunctionalLocation_Loop_02140H a fmea:FunctionalLocation,
+        i14224:TagNumber ;
+    rdfs:label "Loop 02140H" .
+
+fmea:MaintenanceStrategy a owl:Class ;
+    rdfs:label "maintenance strategy"@en .
+
+inst:Component_FIT02800H a i14224:ControlUnit,
+        i14224:MaintainableItem ;
+    rdfs:label "FIT02800H" ;
+    rdfs:comment "Flow indicating transmitter" ;
+    fmea:isComponentOf inst:Asset_ACX1,
+        inst:Asset_RV01 .
+
+inst:Component_PIT02773 a i14224:MaintainableItem ;
+    rdfs:label "PIT02773" ;
+    rdfs:comment "Pressure indicating transmitter" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_PIT02774 a i14224:MaintainableItem ;
+    rdfs:label "PIT02774" ;
+    rdfs:comment "Pressure indicating transmitter" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:ControlMeasure_Replace a fmea:ControlMeasure ;
+    rdfs:label "Replace" .
+
+inst:ControlMeasure_Stroke_check a fmea:ControlMeasure ;
+    rdfs:label "Stroke check" .
+
+inst:FunctionalLocation_Loop_02773 a fmea:FunctionalLocation,
+        i14224:TagNumber ;
+    rdfs:label "Loop 02773" .
+
+fmea:ControlGroup a owl:Class ;
+    rdfs:label "control group"@en .
+
+inst:Component_FV02800H a i14224:MaintainableItem,
+        i14224:Valve ;
+    rdfs:label "FV02800H" ;
+    rdfs:comment "Flow valve" ;
+    fmea:isComponentOf inst:Asset_RV01 .
+
+inst:Component_LSH02767 a i14224:MaintainableItem ;
+    rdfs:label "LSH02767" ;
+    rdfs:comment "Radiation level sensor" ;
+    fmea:isComponentOf inst:Asset_ACX1 .
+
+inst:Component_XV02764 a i14224:MaintainableItem,
+        i14224:Valve ;
+    rdfs:label "XV02764" ;
+    rdfs:comment "Actuated on/off valve" ;
+    fmea:isComponentOf inst:Asset_RV01 .
+
+inst:Component_XV02765 a i14224:MaintainableItem,
+        i14224:Valve ;
+    rdfs:label "XV02765" ;
+    rdfs:comment "Actuated on/off valve" ;
+    fmea:isComponentOf inst:Asset_ACX1,
+        inst:Asset_RV01 .
+
+inst:Component_XV02848H a i14224:MaintainableItem,
+        i14224:Valve ;
+    rdfs:label "XV02848H" ;
+    rdfs:comment "Actuated on/off valve" ;
+    fmea:isComponentOf inst:Asset_ACX1,
+        inst:Asset_RV01 .
+
+inst:FunctionalLocation_Loop_02766 a fmea:FunctionalLocation,
+        i14224:TagNumber ;
+    rdfs:label "Loop 02766" .
+
+inst:FunctionalLocation_Loop_02767 a fmea:FunctionalLocation,
+        i14224:TagNumber ;
+    rdfs:label "Loop 02767" .
+
+inst:FunctionalLocation_Loop_02776 a fmea:FunctionalLocation,
+        i14224:TagNumber ;
+    rdfs:label "Loop 02776" .
+
+inst:FunctionalLocation_Loop_02777 a fmea:FunctionalLocation,
+        i14224:TagNumber ;
+    rdfs:label "Loop 02777" .
+
+inst:FunctionalLocation_Loop_02778 a fmea:FunctionalLocation,
+        i14224:TagNumber ;
+    rdfs:label "Loop 02778" .
+
+inst:FunctionalLocation_Loop_02826 a fmea:FunctionalLocation,
+        i14224:TagNumber ;
+    rdfs:label "Loop 02826" .
+
+inst:ControlMeasure_Calibration a fmea:ControlMeasure ;
+    rdfs:label "Calibration" .
+
+inst:FunctionalLocation_Loop_02848H a fmea:FunctionalLocation,
+        i14224:TagNumber ;
+    rdfs:label "Loop 02848H" .
+
+inst:FailureMechanism_Sticking a i14224:StickingFailureMechanism ;
+    rdfs:label "Sticking" .
+
+inst:FunctionalLocation_Loop_02764 a fmea:FunctionalLocation,
+        i14224:TagNumber ;
+    rdfs:label "Loop 02764" .
+
+inst:FunctionalLocation_Loop_02765 a fmea:FunctionalLocation,
+        i14224:TagNumber ;
+    rdfs:label "Loop 02765" .
+
+inst:FunctionalLocation_Loop_02800H a fmea:FunctionalLocation,
+        i14224:TagNumber ;
+    rdfs:label "Loop 02800H" .
+
+inst:FailureMechanism_Faulty_signal a i14224:FailureMechanism ;
+    rdfs:label "Faulty signal" .
+
+inst:FailureMechanism_Wear a i14224:WearFailureMechanism ;
+    rdfs:label "Wear" .
+
+inst:FunctionalLocation_Loop_02774 a fmea:FunctionalLocation,
+        i14224:TagNumber ;
+    rdfs:label "Loop 02774" .
+
+inst:ControlGroup_Operations a fmea:ControlGroup ;
+    rdfs:label "Operations" .
+
+inst:ControlMeasure_Align_and_Stroke a fmea:ControlMeasure ;
+    rdfs:label "Align & Stroke" .
+
+inst:ControlMeasure_Rotable_spare a fmea:ControlMeasure ;
+    rdfs:label "Rotable spare" .
+
+fmea:ControlMeasure a owl:Class ;
+    rdfs:label "control measure"@en .
+
+inst:FailureMechanism_Clearance_alignment_failure a i14224:FailureMechanism ;
+    rdfs:label "Clearance/ alignment failure" .
+
+inst:MaintenanceStrategy_Spare a fmea:MaintenanceStrategy ;
+    rdfs:label "Spare" .
+
+fmea:FunctionalLocation a owl:Class ;
+    rdfs:label "functional location"@en .
+
+inst:ControlMeasure_OSR a fmea:ControlMeasure ;
+    rdfs:label "OSR" .
+
+inst:FailureMechanism_Blockage_plugged a i14224:FailureMechanism ;
+    rdfs:label "Blockage/ plugged" .
+
+inst:ControlGroup_Maint a fmea:ControlGroup ;
+    rdfs:label "Maint" .
+
+inst:Asset_RV01 a i14224:EquipmentUnit ;
+    rdfs:label "RV01" ;
+    fmea:hasSourceColumnValue "Control loop" .
+
+inst:MaintenanceStrategy_PM a fmea:MaintenanceStrategy ;
+    rdfs:label "PM" .
+
+inst:Asset_ACX1 a i14224:EquipmentUnit ;
+    rdfs:label "ACX1" .
+
+fmea:FMEAEntry a owl:Class ;
+    rdfs:label "FMEA entry"@en .
+

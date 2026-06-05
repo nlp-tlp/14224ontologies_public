@@ -1,0 +1,50 @@
+source_row,column,value,warning
+2,ISO14224 Equipment Class,,Blank equipment class code
+2,ISO14224 Failure Mode Code,,Blank failure mode code
+3,ISO14224 Equipment Class,,Blank equipment class code
+3,ISO14224 Failure Mode Code,,Blank failure mode code
+4,ISO14224 Equipment Class,,Blank equipment class code
+5,ISO14224 Equipment Class,,Blank equipment class code
+6,ISO14224 Equipment Class,,Blank equipment class code
+6,ISO14224 Failure Mode Code,,Blank failure mode code
+10,ISO14224 Equipment Class,,Blank equipment class code
+10,ISO14224 Failure Mode Code,,Blank failure mode code
+11,ISO14224 Equipment Class,,Blank equipment class code
+12,ISO14224 Equipment Class,,Blank equipment class code
+13,ISO14224 Equipment Class,,Blank equipment class code
+14,ISO14224 Equipment Class,,Blank equipment class code
+14,ISO14224 Failure Mode Code,PLO,No matching ISO 14224 failure mode code found in Appendix B
+15,ISO14224 Equipment Class,,Blank equipment class code
+15,ISO14224 Failure Mode Code,PLO,No matching ISO 14224 failure mode code found in Appendix B
+20,ISO14224 Equipment Class,,Blank equipment class code
+20,ISO14224 Failure Mode Code,,Blank failure mode code
+21,ISO14224 Equipment Class,,Blank equipment class code
+21,ISO14224 Failure Mode Code,,Blank failure mode code
+26,ISO14224 Equipment Class,,Blank equipment class code
+26,ISO14224 Failure Mode Code,,Blank failure mode code
+27,ISO14224 Equipment Class,,Blank equipment class code
+27,ISO14224 Failure Mode Code,,Blank failure mode code
+30,ISO14224 Equipment Class,,Blank equipment class code
+30,ISO14224 Failure Mode Code,,Blank failure mode code
+31,ISO14224 Equipment Class,,Blank equipment class code
+31,ISO14224 Failure Mode Code,,Blank failure mode code
+32,ISO14224 Equipment Class,,Blank equipment class code
+32,ISO14224 Failure Mode Code,,Blank failure mode code
+33,ISO14224 Equipment Class,,Blank equipment class code
+40,ISO14224 Equipment Class,,Blank equipment class code
+41,ISO14224 Equipment Class,,Blank equipment class code
+44,ISO14224 Equipment Class,,Blank equipment class code
+46,ISO14224 Equipment Class,,Blank equipment class code
+47,ISO14224 Equipment Class,,Blank equipment class code
+50,ISO14224 Equipment Class,,Blank equipment class code
+52,ISO14224 Equipment Class,,Blank equipment class code
+55,ISO14224 Equipment Class,,Blank equipment class code
+56,ISO14224 Equipment Class,,Blank equipment class code
+59,ISO14224 Equipment Class,,Blank equipment class code
+60,ISO14224 Equipment Class,,Blank equipment class code
+61,ISO14224 Equipment Class,,Blank equipment class code
+61,ISO14224 Failure Mode Code,,Blank failure mode code
+62,ISO14224 Equipment Class,,Blank equipment class code
+68,ISO14224 Failure Mode Code,,Blank failure mode code
+69,ISO14224 Failure Mode Code,,Blank failure mode code
+70,ISO14224 Failure Mode Code,,Blank failure mode code
