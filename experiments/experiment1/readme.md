@@ -15,11 +15,11 @@ The spreadsheet contains FMEA data from an actual plant. The table has inconsist
 ![Diagram](../fmeaTableImage.JPG)
 
 ## Summary of results in all 5 experiments
-Experiment 1 - Computer 1 + PDF + ChatGPT
-Experiment 2 - Computer 1 + TTL files + ChatGPT
-Experiment 3 - Computer 2 + PDF + ChatGPT
-Experiment 4 - Computer 2 + TTL + ChatGPT
-Experiment 5 - Computer 2 + PDF + Claude
+- Experiment 1 - Computer 1 + PDF + ChatGPT
+- Experiment 2 - Computer 1 + TTL files + ChatGPT
+- Experiment 3 - Computer 2 + PDF + ChatGPT
+- Experiment 4 - Computer 2 + TTL + ChatGPT
+ -Experiment 5 - Computer 2 + PDF + Claude
 
 All experiments gave the same results
 
