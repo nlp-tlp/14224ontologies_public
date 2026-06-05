@@ -1,0 +1,70 @@
+﻿Worksheet Row Number,Category,FM Code Literal,Mapped Failure Mode,Equipment Class Used,FMEA Entry URI
+2,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0002
+3,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0003
+4,4. FM valid but class-specific check could not run (equipment class blank/unresolved),FTF,failure_to_function_on_demand,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0004
+5,4. FM valid but class-specific check could not run (equipment class blank/unresolved),FTF,failure_to_function_on_demand,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0005
+6,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0006
+7,3. FM valid but not allowed for equipment class,AIR,abnormal_instrument_reading,ControlUnit,https://example.org/data/autoclave-fmea/FMEAEntry_row_0007
+8,5. Compliant (FM defined and allowed for equipment class),SPO,spurious_operation,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0008
+9,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0009
+10,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0010
+11,4. FM valid but class-specific check could not run (equipment class blank/unresolved),PLU,plugged_or_choked,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0011
+12,4. FM valid but class-specific check could not run (equipment class blank/unresolved),PLU,plugged_or_choked,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0012
+13,4. FM valid but class-specific check could not run (equipment class blank/unresolved),AIR,abnormal_instrument_reading,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0013
+14,2. FM code not in ISO 14224 Annex B,PLO,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0014
+15,2. FM code not in ISO 14224 Annex B,PLO,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0015
+16,5. Compliant (FM defined and allowed for equipment class),FTO,failure_to_open_on_demand,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0016
+17,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0017
+18,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0018
+19,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0019
+20,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0020
+21,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0021
+22,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0022
+23,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0023
+24,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0024
+25,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0025
+26,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0026
+27,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0027
+28,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0028
+29,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0029
+30,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0030
+31,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0031
+32,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0032
+33,4. FM valid but class-specific check could not run (equipment class blank/unresolved),PLU,plugged_or_choked,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0033
+34,5. Compliant (FM defined and allowed for equipment class),SPO,spurious_operation,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0034
+35,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0035
+36,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0036
+37,5. Compliant (FM defined and allowed for equipment class),FTO,failure_to_open_on_demand,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0037
+38,3. FM valid but not allowed for equipment class,FTF,failure_to_function_on_demand,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0038
+39,3. FM valid but not allowed for equipment class,FTF,failure_to_function_on_demand,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0039
+40,4. FM valid but class-specific check could not run (equipment class blank/unresolved),PLU,plugged_or_choked,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0040
+41,4. FM valid but class-specific check could not run (equipment class blank/unresolved),PLU,plugged_or_choked,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0041
+42,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0042
+43,5. Compliant (FM defined and allowed for equipment class),FTO,failure_to_open_on_demand,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0043
+44,4. FM valid but class-specific check could not run (equipment class blank/unresolved),PLU,plugged_or_choked,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0044
+45,3. FM valid but not allowed for equipment class,FTF,failure_to_function_on_demand,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0045
+46,4. FM valid but class-specific check could not run (equipment class blank/unresolved),PLU,plugged_or_choked,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0046
+47,4. FM valid but class-specific check could not run (equipment class blank/unresolved),PLU,plugged_or_choked,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0047
+48,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0048
+49,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0049
+50,4. FM valid but class-specific check could not run (equipment class blank/unresolved),PLU,plugged_or_choked,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0050
+51,5. Compliant (FM defined and allowed for equipment class),FTO,failure_to_open_on_demand,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0051
+52,4. FM valid but class-specific check could not run (equipment class blank/unresolved),PLU,plugged_or_choked,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0052
+53,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0053
+54,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0054
+55,4. FM valid but class-specific check could not run (equipment class blank/unresolved),PLU,plugged_or_choked,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0055
+56,4. FM valid but class-specific check could not run (equipment class blank/unresolved),PLU,plugged_or_choked,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0056
+57,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0057
+58,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0058
+59,4. FM valid but class-specific check could not run (equipment class blank/unresolved),PLU,plugged_or_choked,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0059
+60,4. FM valid but class-specific check could not run (equipment class blank/unresolved),PLU,plugged_or_choked,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0060
+61,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0061
+62,4. FM valid but class-specific check could not run (equipment class blank/unresolved),AIR,abnormal_instrument_reading,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0062
+63,3. FM valid but not allowed for equipment class,AIR,abnormal_instrument_reading,ControlUnit,https://example.org/data/autoclave-fmea/FMEAEntry_row_0063
+64,5. Compliant (FM defined and allowed for equipment class),ELP,external_leakage_process_medium,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0064
+65,5. Compliant (FM defined and allowed for equipment class),SPO,spurious_operation,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0065
+66,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0066
+67,5. Compliant (FM defined and allowed for equipment class),INL,internal_leakage,Valve,https://example.org/data/autoclave-fmea/FMEAEntry_row_0067
+68,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0068
+69,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0069
+70,1. FM code blank,,,,https://example.org/data/autoclave-fmea/FMEAEntry_row_0070
