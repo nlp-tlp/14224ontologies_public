@@ -1,184 +1,138 @@
-# GitHub repo for collaboration on developing a semantic version for ISO 14224 
+# ISO 14224 Semantic Collaboration Repository
+
+This repository develops a machine-readable semantic version of ISO 14224, with example data, validation workflows, and experiments using LLMs and RDF.
 
 ## Goals
 
-1. Build and publish a machine-readable version of definitions and concepts in ISO 14224 :2016 (version reconfirmed in 2022). This will encourage shared use of the IRIs provided for the terms. This version will NOT be aligned to any top level ontology. This work is well underway and the results contained in this repo.
-
-2. Publish machine-interpretable versions of the .ttl files in 1. aligned to each of the top level ontologies: IDO, BFO/IDO and DOLCE. This is future work.
+1. Build and publish a stable, machine-readable RDF/Turtle representation of key ISO 14224 concepts, including:
+   - terms and definitions from Clause 3,
+   - failure mode data from Appendix B,
+   - equipment classes from Appendix A,
+   - allowed failure-mode mappings by equipment class.
+2. Provide example data, validation workflows, and experiments that show how FMEA and maintenance data can be linked to ISO 14224.
+3. Explore ontology modelling choices aligned to top-level ontologies such as IDO, IOF, and DOLCE.
+4. Demonstrate the value of explicit ontology/TTL reference data for LLM-assisted validation and automated checks.
 
 ## What is ISO 14224?
 
-ISO 14224:2016 is a standard for the collection of reliability and maintenance (RM) data in a standard format for equipment in all facilities and operations. ISO 14224:2016 is widely used within the petroleum, natural gas and petrochemical industries during the operational life cycle of equipment and has also seen adoption in the mining industry.
+ISO 14224 is the international standard for reliability and maintenance data collection. It is widely used in industries such as petroleum, natural gas, petrochemical, and mining.
 
-ISO 14224 provides definitions that constitute a "reliability language" that can be useful for communicating operational experience. The failure modes defined in the normative part of this International Standard can be used as a "reliability thesaurus" for various quantitative as well as qualitative applications.
+The standard defines:
 
-Standardization of data collection practices facilitates the exchange of information between parties, e.g. plants, owners, manufacturers and contractors. Controlled vocabularies and consistent interpretation of codes is increasingly recognized as a necessary foundation for enterprise generative AU models.
+- equipment data (taxonomy, attributes);
+- failure data (failure causes, consequences);
+- maintenance data (actions, resources, downtime).
 
-ISO 14224 provides tables for the following data:
+A machine-readable ISO 14224 vocabulary can help organisations share, validate, and analyse FMEA and work order data more consistently.
 
-a) equipment data, e.g. equipment taxonomy, equipment attributes;
+## Why this repository exists
 
-b) failure data, e.g. failure cause, failure consequence;
+Manual FMEA and maintenance tables are often inconsistent and hard to automate. This repository is intended to:
 
-c) maintenance data, e.g. maintenance action, resources used, maintenance consequence, down time.
+- reduce ambiguity in failure mode and equipment class usage,
+- make ISO 14224 concepts available as Linked Data,
+- support data quality checks with SHACL-style validation,
+- demonstrate how LLMs perform with and without explicit ontology data,
+- provide reproducible examples and scripts for engineers and researchers.
 
-There data are used for tracking and investigating reliability issues, calculating equipment and system availability, maintenance management metrics, and events with safety and environmental impacts.
+## Repository structure
 
-## Motivations
+- `catalog-v001.xml`, `LICENSE`, `README.md` — root metadata and documentation
+- `imports/` — source RDF/TTL imports and external ontology material
+- `inDevelopment/` — working TTL files for ISO 14224 concepts and allowed failure mode mappings
+- `experiments/experiment1/` — LLM experiment documentation, prompts, and generated reports
+- `experiments/experiment2/` — FMEA-to-RDF conversion and validation scripts, data, and outputs
 
-*What is the problem*
+## Core ontology files in `inDevelopment/`
 
-Tables capturing failure-related data are often created and maintained ad hoc across teams, departments and organisations. Manual handling of large, unstandardised spreadsheets is time-consuming and error-prone, prompting interest from organisations in using automated and AI-based systems for querying this data.
+The most important part of this repository is the set of ISO 14224 TTL files in the `inDevelopment/` folder.
+They capture the semantic definitions, equipment class taxonomy, failure mode vocabulary, and rule-based mappings that the experiments and scripts rely on.
 
-*What is the opportunity*
+These files are the primary reference data for the repository:
 
-There are several opportunities for a shared industry project to improve machine readability of FMEA and maintenance work order data that reference the ISO 14224 standard. In order of technical complexity from technically simple to complex these are
+- `i14224_clause3.ttl` — Clause 3 terms and definitions, modelled as OWL classes, properties, and annotation statements.
+- `i14224_appendixA.ttl` — equipment classes and categories from Appendix A.
+- `i14224_appendixB.ttl` — failure modes, failure mechanisms, and related Annex B terms.
+- `i14224_appendixB_allowed_failure_modes.ttl` — allowed failure mode mappings by equipment class.
+- `i14224_failure_mode_validation_shape.ttl` — validation rules for equipment-class/failure-mode checks.
 
-*What's the Value*
-The business value of this step is that every organisation (and even engineers within an organisation) keep their own versions of ISO 14424 in database tables and Excel spreadsheets with their own entity type labels and column headings, as well as codes resulting in challenges for humans, let alone AI to determine if the terms are semantically the same.
+These TTL files are the key reusable assets in the repo and are the foundation for the experiments described below.
 
-*Why Linked data?*: this would be a major step forward in providing a shared, open, stable and managed resource, such as a GitHub page that engineers could reference to ensure a shared interpretation of a term. Challenges include where to host it (neither ISO or IEC provide suitable namespaces and IRI hosting capabilities at present) and how to provide trust for enterprises on how it will be maintained, and how updates will be managed.
+## Experiments
 
-*Why RDF triple stores?*
+This repo contains two linked experiments:
 
-The ability to have data in the form of RDF triple stores allows for SHACL to be used for data quality checks. SPARQL can also be used to find and retrieve data with greater precision.
+### Experiment 1: LLM-assisted failure mode validation
 
-## Purpose of this repo
+See `experiments/experiment1/README_experiment1.md`.
 
-The purposes of this repo are:
+This experiment compares two approaches for validating an FMEA spreadsheet against ISO 14224:
 
-1. to provide **stable** Linked Data and IRIs for:
+- a **PDF-based prompt** that gives the model the FMEA workbook plus ISO 14224 Annex B PDF tables,
+- a **TTL-based prompt** that gives the model the FMEA workbook plus RDF/Turtle files for equipment classes and allowed failure modes.
 
-- 53 terms used in the Terms and Definitions (Clause 3) section of ISO 14224, and 
-- Text in tables relating to the classification of failure modes, failure mechanisms and failure causes contained in Appendix B, of the ISO 14224:2016 standard. 
-- All the Level 6 and 7 Equipment Classes in Appendix A.
-- Cross references for the information in Appendix B Tables B6-B10 on which Failure Mode Codes can be used for which Equipment Classes.
+The key insight is that TTL-based reference data can reduce ambiguity and improve model reliability compared to raw PDF reference material.
 
-The namespace iso14224.org has been purchased by the GitHub repo owner for this purpose.
+### Experiment 2: FMEA conversion and failure mode compliance
 
-2. to provide example data and competency questions from FMEA and Maintenance work order tables from industry that include concepts represented in ISO 14224.
+See `experiments/experiment2/README_experiment2.md`.
 
-3.  Develop models based on 1. and 2. aligned to different top level ontologies - IDO, IOF and DOLCE. Use the examples in 2. to understand the impact of modelling decisions.
+This experiment converts an FMEA spreadsheet into RDF/Turtle and then checks failure mode codes against ISO 14224 equipment-class-specific allowed failure modes.
 
-4. Present the outcomes of experiments using ChatGPT (LLMs) to see how the LLMs perform with and without the i14224.ttl files. 
+The workflow includes:
 
+- `fmea_csv_to_ttl.py` — converts FMEA rows into RDF individuals,
+- `summarise_fmea_shacl_results.py` — summarises validation results in CSV reports,
+- generated outputs such as `AutoclaveControlLoopFMEA_instances.ttl`, warning files, and validation reports.
 
-## Outputs
-The current RDL files are available in ttl format in the \inDevelopment subdirectory. When they are final they will be moved to the \ontology subdirectory.
+## Key files and outputs
 
-The experiment files are in the \experiment subdirectory. Please read the readme for a summary of the results
+### ISO 14224 ontology files in `inDevelopment/`
 
+- `i14224_clause3.ttl` — Clause 3 terms and definitions
+- `i14224_appendixA.ttl` — equipment classes from Appendix A
+- `i14224_appendixB.ttl` — failure modes and mechanisms from Appendix B
+- `i14224_appendixB_allowed_failure_modes.ttl` — allowed failure modes by equipment class
+- `i14224_failure_mode_validation_shape.ttl` — validation shape for equipment-class/failure-mode checks
 
-## Namespace and file names
+### Experiment files
 
-*i14224_clause3.ttl* Terms and definitions  - modelled as OWL classes, object properties and annotation properties. Contains the `https://iso14224.org/ontology/i14224/ont/clause3` ontology.
+- `experiments/experiment1/README_experiment1.md` — details of the LLM validation experiment
+- `experiments/experiment2/README_experiment2.md` — details of the FMEA conversion and validation workflow
+- `experiments/experiment2/fmea_csv_to_ttl.py` — converter script
+- `experiments/experiment2/summarise_fmea_shacl_results.py` — validation summary script
+- `experiments/experiment2/AutoclaveControlLoopFMEA.csv` — input FMEA data
+- generated reports and result workbooks in experiment directories
 
-*i14224_appendixA.ttl* - data from Appendix A on all the Level 6 and 7 Equipment Class and categories
+## How to run the main workflow
 
-*i14224_appendixB.ttl* - data from tables in ISO 14224 Annex B for example on Failure modes and Mechanisms - modelled as OWL classes and named individuals. Contains the `https://iso14224.org/ontology/i14224/ont/appendixB` ontology
+From `experiments/experiment2`:
 
-*i14224_appendixB_allowed_failure_modes.ttl* - as the name suggests these are lists of the allowable failure modes for each Equipment Class.
+```powershell
+python .\fmea_csv_to_ttl.py `
+  --csv .\AutoclaveControlLoopFMEA.csv `
+  --iso-a ..\..\inDevelopment\i14224_appendixA.ttl `
+  --iso-b ..\..\inDevelopment\i14224_appendixB.ttl `
+  --iso-c ..\..\inDevelopment\i14224_clause3.ttl `
+  --out .\AutoclaveControlLoopFMEA_instances.ttl `
+  --warnings .\AutoclaveControlLoopFMEA_warnings.csv
 
-*i14224_failure_mode_validation_shape.ttl* - SHACL shape code to constraint check if valid equipment class and failure mode codes have been used.
-
-The iso14224.org namespace was purchased to enable future resolvable IRIs.
-
-All terms in the .ttl files have the same root namespace
-`<https://iso14224.org/ontology/i14224/rdl/>` and use the prefix *i14224:* 
-
-## Modelling approach
-
-The *i14224_clause3.ttl* file is used to capture information about the  terms from the `Terms and Definitions' clause of ISO 14224:2016 modelled as either OWL classes or as named individuals. 
-
-In the `Terms and Definitions' clause there are many terms that can be grouped. For example: Maintenance Data, Failure Data, Equipment Data are all types of data. Rather than make each of these terms an OWL class, a new OWL class 'TypeData' was created and these terms were created as instances of OWL class 'TypeData'. Similar decisions were made for TypeFailureEvent, TypeMaintenanceStrategy, TypeMaterialState, TypeReliabilityMeasure and TypeTest.
-
-Examples:
-
-- TypeData: EquipmentData, FailureData, GenericReliabilityData, MaintenanceData, ReliabilityData
-- TypeFailureEvent: CommonCauseFailure, CommonModeFailure, CriticalFailure, DegradedFailure, FailureDueToDemand, FailureOnDemand, HiddenFailure, IncipientFailure, NonCriticalFailure, RandomFailure, SafetyCriticalFailure, SystematicFailure, Trip
-- TypeMaintenanceStrategy: ConditionBasedMaintenance, CorrectiveMaintenance, OpportunityMaintenance
-- TypeMaterialState: DownState, IdleState, OperatingState, UpState
-- TypeReliabilityMeasure: 21 examples, see the file
-- TypeTest: PeriodicTest, Demand
-
-The *i14224_appendixB.ttl* file is used to capture information in the tables in Appendix B relating to maintenance activity and failure mechanism as OWL classes or failure modes as named individuals. 
-
-Appendix B was largely built manually but Appendix A was built with assistance from Chat GPT.
-
-### Example of class and its annotations
-
-```
-https://iso14224.org/ontology/i14224/rdl/DetectionMethod
-i14224:DetectionMethod rdf:type owl:Class ;
-rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
-rdfs:label "Detection method"@en ;
-rdfs:seeAlso ""@en ;
-skos:altLabel ""@en ;
-skos:definition "method or activity by which a failure is discovered"@en ;
-skos:example ""@en ;
-skos:scopeNote ""@en ;
-i14224:en13306:definition "n/a"@en ;
-i14224:iec60812:definition "n/a"@en ;
-cmnsav:adaptedFrom ""@en ;
-cmnsav:directSource "ISO 14224:2023 Terms and Definitions"@en ;
-cmnsav:explanatoryNote ""@en ;
-cmnsav:usageNote "ISO 14224-2023 Table B4 provides a categorization of detection methods (e.g. periodic testing or continuous condition monitoring)"@en .
+python .\summarise_fmea_shacl_results.py `
+  --data .\AutoclaveControlLoopFMEA_instances.ttl `
+  --allowed ..\..\inDevelopment\i14224_appendixB_allowed_failure_modes.ttl `
+  --out .\ISO14224_FM_Code_Check_report_completed.csv
 ```
 
-### Example of a named individual and its annotations
+## Notes on modelling
 
-```
-https://iso14224.org/ontology/i14224/rdl/up_time
-i14224:up_time rdf:type owl:NamedIndividual ,
-                        i14224:TypeReliabilityMeasure ;
-rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
-rdfs:label "up time"@en ;
-rdfs:seeAlso ""@en ;
-skos:altLabel ""@en ;
-skos:definition "time interval during which an item is in an upstate"@en ;
-skos:example ""@en ;
-skos:scopeNote ""@en ;
-i14224:en13306:definition "n/a"@en ;
-i14224:iec60812:definition "n/a"@en ;
-cmnsav:adaptedFrom ""@en ;
-cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
-cmnsav:explanatoryNote ""@en ;
-cmnsav:usageNote ""@en .
-```
-
-## Examples of competency questions on which to test these ttl models
-
-*FMEA table management*
-
-Organisations have hundreds (if not thousands) of FMEA tables, if these are created and stored in Excel they can have wildly different column labels. Different software packages each have their own labels for terms in FMEA spreadsheets. There is a significant use case in being able to use modern AI tools to map these tables to a common semantic layer so that some of the following tasks can be done.
-
-- Identify and fix inconsistencies - are the same FM codes/ effects/ mechanism descriptors being used for identical equipment?
-
-- Are FM codes/ effects/ mechanism descriptors being used at appropriate levels in equipment class (functional location) hierarchies?
-
-- Map synonyms to agreed controlled vocabulary
-
-- Use Linked Data to reduce ambiguity for AI tools and humans
-
-*Quality control of failure mode assignment in MWOs*
-
-It is common practice to assign a FM code based on ISO 14224 (or a derivative) to each maintenance notification associated with a failure event or observation of failure process. The consistency of application of these FM codes is very difficult in large organisations but it is possible with modern AI tools to post process MWO data and improve the quality of FM code assignment. The effectiveness of these AI tools would be improved, initially through a move to Linked Data, then quality control though SHACL, and in the long term using the reasoning ability of ontologies. 
-
-*Reconciliation of failure mode assignment in MWOs with what is in FMEAs to improve equipment maintenance strategy*
-
-One of the holy grails for Maintenance Managers is to be able to confirm equipment maintenance strategies are correct. Vast sums of money are spent on the execution of maintenance strategies whether they are working or not. Lagging indicators of maintenance strategy effectiveness include equipment availability, unplanned outages, maintenance costs and safety incidents. After unplanned outages it is common for reliability engineers to examine the maintenance strategy to see if the failure event that occurred was a) identified in the FMEA, 2) had a suitable control activity, and 3) if the control activity was actioned. Other actions include trawling through old MWOs to see if similar events had happened in the past. All of these activities could be assisted by AI tools but only if these tools can be certain what data are looking at. Again this will be assisted by a move to Linked Data, then quality control though SHACL, and in the long term using the reasoning ability of ontologies.
+- The current TTL files capture ISO 14224 concepts as OWL classes and named individuals.
+- The repository is intentionally not yet aligned to a single top-level ontology; future work can add explicit alignments to IDO, IOF, or DOLCE.
+- The namespace `https://iso14224.org/ontology/i14224/rdl/` is used consistently for current terms.
 
 ## Disclaimer
 
-Important Notice
+This repository contains an original academic interpretation of ISO 14224 concepts.
 
-This taxonomy is an original academic artifact developed as part of scholarly research at the University of Western Australia. It represents the author's interpretation and analysis of concepts from the ISO 14224.
-
-This work:
-
-- Is based on AS ISO 14224:2023 but is not a substitute for those standards
-- Does not reproduce the ISO standards verbatim; all definitions are paraphrased interpretations
-- Should be viewed as a scholarly analysis and the author's interpretation of information security concepts
-- Was created in an academic context and does not offer guarantees as a reference document
-- Is not affiliated with, endorsed by, or officially connected to ISO or IEC
-- For authoritative definitions and requirements, please consult the official ISO/IEC standards available at iso.org.
+- It is not a substitute for the official ISO standard.
+- It is not endorsed by ISO or IEC.
+- Consult the official ISO/IEC publications for authoritative definitions and requirements.
