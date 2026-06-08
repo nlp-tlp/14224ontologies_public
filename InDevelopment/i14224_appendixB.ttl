@@ -40,7 +40,7 @@ rdfs:range i14224:FailureCauseByType .
 
 ###  https://iso14224.org/ontology/i14224/rdl/hasFailureCauseByType
 i14224:hasFailureCauseByType rdf:type owl:ObjectProperty ;
-rdfs:label "has failure cause type"@en ;
+rdfs:label "has failure cause by type"@en ;
 rdfs:domain i14224:FailureCause ;
 rdfs:range i14224:FailureCauseByType .
 
@@ -475,17 +475,17 @@ i14224:Test rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/FailureCauseByType
 i14224:FailureCauseByType rdf:type owl:Class ;
-                          rdfs:label "Type of failure cause" .
+                          rdfs:label "Failure cause by type" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/FailureDetectionMethodByType
 i14224:FailureDetectionMethodByType rdf:type owl:Class ;
-                                    rdfs:label "Type of failure detection method" .
+                                    rdfs:label "Failure detection method by type" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/FailureMechanismByType
 i14224:FailureMechanismByType rdf:type owl:Class ;
-                              rdfs:label "Type of failure mechanism" .
+                              rdfs:label "Failure mechanism by type" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/UnknownFailureMechanism
