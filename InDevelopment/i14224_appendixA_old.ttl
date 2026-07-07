@@ -18,6 +18,8 @@
     dcterms:creator <https://orcid.org/0000-0002-7336-3932> ;
     dcterms:license <https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE> ;
     dcterms:rights "See github"@en ;
+    owl:deprecated "true"^^xsd:boolean ;
+    owl:versionInfo "DEPRECATED snapshot kept for reference; do not import alongside InDevelopment/i14224_appendixA.ttl."@en ;
     rdfs:comment "Equipment classes and equipment types extracted from ISO 14224 Appendix A type-classification and equipment-class tables."@en .
 
 
@@ -53,7 +55,15 @@ i14224:EquipmentCode rdf:type owl:Class ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-i14224:hasEquipmentCode rdf:type owl:AnnotationProperty ;
+i14224:hasEquipmentCode rdf:type owl:ObjectProperty ;
+    rdfs:domain [
+        rdf:type owl:Class ;
+        owl:unionOf (
+            i14224:EquipmentClass
+            i14224:EquipmentByType
+        )
+    ] ;
+    rdfs:range i14224:EquipmentCode ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     rdfs:label "has equipment code"@en ;
     skos:definition "identifies the equipment code used for an equipment class or equipment type"@en ;
