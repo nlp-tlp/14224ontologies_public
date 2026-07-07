@@ -18,6 +18,8 @@
     dcterms:creator <https://orcid.org/0000-0002-7336-3932> ;
     dcterms:license <https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE> ;
     dcterms:rights "See github"@en ;
+    owl:deprecated "true"^^xsd:boolean ;
+    owl:versionInfo "DEPRECATED snapshot kept for reference; do not import alongside InDevelopment/i14224_appendixA.ttl."@en ;
     rdfs:comment "Equipment classes and equipment types extracted from ISO 14224 Appendix A type-classification and equipment-class tables."@en .
 
 
