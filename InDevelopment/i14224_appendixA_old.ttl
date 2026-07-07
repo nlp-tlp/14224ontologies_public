@@ -53,7 +53,15 @@ i14224:EquipmentCode rdf:type owl:Class ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-i14224:hasEquipmentCode rdf:type owl:AnnotationProperty ;
+i14224:hasEquipmentCode rdf:type owl:ObjectProperty ;
+    rdfs:domain [
+        rdf:type owl:Class ;
+        owl:unionOf (
+            i14224:EquipmentClass
+            i14224:EquipmentByType
+        )
+    ] ;
+    rdfs:range i14224:EquipmentCode ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     rdfs:label "has equipment code"@en ;
     skos:definition "identifies the equipment code used for an equipment class or equipment type"@en ;
