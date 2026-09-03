@@ -34,7 +34,7 @@ i14224:EquipmentClass rdf:type owl:Class ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-i14224:EquipmentType rdf:type owl:Class ;
+i14224:EquipmentByType rdf:type owl:Class ;
     rdfs:subClassOf i14224:EquipmentClass ;
     rdfs:label "Equipment type"@en ;
     rdfs:seeAlso ""@en ;
@@ -53,15 +53,7 @@ i14224:EquipmentCode rdf:type owl:Class ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-i14224:hasEquipmentCode rdf:type owl:ObjectProperty ;
-    rdfs:domain [
-        rdf:type owl:Class ;
-        owl:unionOf (
-            i14224:EquipmentClass
-            i14224:EquipmentType
-        )
-    ] ;
-    rdfs:range i14224:EquipmentCode ;
+i14224:hasEquipmentCode rdf:type owl:AnnotationProperty ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     rdfs:label "has equipment code"@en ;
     skos:definition "identifies the equipment code used for an equipment class or equipment type"@en ;
@@ -1562,7 +1554,7 @@ i14224:HVAC
 ###  https://iso14224.org/ontology/i14224/rdl/DieselEngine
 i14224:DieselEngine
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:CombustionEngine , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:CombustionEngine , i14224:EquipmentByType ;
     rdfs:label "Diesel engine"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1577,7 +1569,7 @@ i14224:DieselEngine
 ###  https://iso14224.org/ontology/i14224/rdl/OttoGasEngine
 i14224:OttoGasEngine
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:CombustionEngine , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:CombustionEngine , i14224:EquipmentByType ;
     rdfs:label "Otto (gas) engine"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1592,7 +1584,7 @@ i14224:OttoGasEngine
 ###  https://iso14224.org/ontology/i14224/rdl/CentrifugalCompressor
 i14224:CentrifugalCompressor
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Compressor , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Compressor , i14224:EquipmentByType ;
     rdfs:label "Centrifugal compressor"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1607,7 +1599,7 @@ i14224:CentrifugalCompressor
 ###  https://iso14224.org/ontology/i14224/rdl/ReciprocatingCompressor
 i14224:ReciprocatingCompressor
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Compressor , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Compressor , i14224:EquipmentByType ;
     rdfs:label "Reciprocating compressor"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1622,7 +1614,7 @@ i14224:ReciprocatingCompressor
 ###  https://iso14224.org/ontology/i14224/rdl/ScrewCompressor
 i14224:ScrewCompressor
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Compressor , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Compressor , i14224:EquipmentByType ;
     rdfs:label "Screw compressor"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1637,7 +1629,7 @@ i14224:ScrewCompressor
 ###  https://iso14224.org/ontology/i14224/rdl/BlowerFanCompressor
 i14224:BlowerFanCompressor
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Compressor , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Compressor , i14224:EquipmentByType ;
     rdfs:label "Blower/fan compressor"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1652,7 +1644,7 @@ i14224:BlowerFanCompressor
 ###  https://iso14224.org/ontology/i14224/rdl/AxialCompressor
 i14224:AxialCompressor
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Compressor , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Compressor , i14224:EquipmentByType ;
     rdfs:label "Axial compressor"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1667,7 +1659,7 @@ i14224:AxialCompressor
 ###  https://iso14224.org/ontology/i14224/rdl/GasTurbineDrivenElectricGenerator
 i14224:GasTurbineDrivenElectricGenerator
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ElectricGenerator , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:ElectricGenerator , i14224:EquipmentByType ;
     rdfs:label "Gas-turbine driven electric generator"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1682,7 +1674,7 @@ i14224:GasTurbineDrivenElectricGenerator
 ###  https://iso14224.org/ontology/i14224/rdl/SteamTurbineDrivenElectricGenerator
 i14224:SteamTurbineDrivenElectricGenerator
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ElectricGenerator , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:ElectricGenerator , i14224:EquipmentByType ;
     rdfs:label "Steam-turbine driven electric generator"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1697,7 +1689,7 @@ i14224:SteamTurbineDrivenElectricGenerator
 ###  https://iso14224.org/ontology/i14224/rdl/TurboexpanderDrivenElectricGenerator
 i14224:TurboexpanderDrivenElectricGenerator
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ElectricGenerator , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:ElectricGenerator , i14224:EquipmentByType ;
     rdfs:label "Turboexpander driven electric generator"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1712,7 +1704,7 @@ i14224:TurboexpanderDrivenElectricGenerator
 ###  https://iso14224.org/ontology/i14224/rdl/EngineDrivenElectricGenerator
 i14224:EngineDrivenElectricGenerator
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ElectricGenerator , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:ElectricGenerator , i14224:EquipmentByType ;
     rdfs:label "Engine driven electric generator"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1727,7 +1719,7 @@ i14224:EngineDrivenElectricGenerator
 ###  https://iso14224.org/ontology/i14224/rdl/AlternatingCurrentElectricMotor
 i14224:AlternatingCurrentElectricMotor
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ElectricMotor , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:ElectricMotor , i14224:EquipmentByType ;
     rdfs:label "Alternating current electric motor"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1742,7 +1734,7 @@ i14224:AlternatingCurrentElectricMotor
 ###  https://iso14224.org/ontology/i14224/rdl/DirectCurrentElectricMotor
 i14224:DirectCurrentElectricMotor
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ElectricMotor , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:ElectricMotor , i14224:EquipmentByType ;
     rdfs:label "Direct current electric motor"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1757,7 +1749,7 @@ i14224:DirectCurrentElectricMotor
 ###  https://iso14224.org/ontology/i14224/rdl/IndustrialGasTurbine
 i14224:IndustrialGasTurbine
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:GasTurbine , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:GasTurbine , i14224:EquipmentByType ;
     rdfs:label "Industrial gas turbine"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1772,7 +1764,7 @@ i14224:IndustrialGasTurbine
 ###  https://iso14224.org/ontology/i14224/rdl/AeroDerivativeGasTurbine
 i14224:AeroDerivativeGasTurbine
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:GasTurbine , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:GasTurbine , i14224:EquipmentByType ;
     rdfs:label "Aero-derivative gas turbine"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1787,7 +1779,7 @@ i14224:AeroDerivativeGasTurbine
 ###  https://iso14224.org/ontology/i14224/rdl/CentrifugalPump
 i14224:CentrifugalPump
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Pump , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Pump , i14224:EquipmentByType ;
     rdfs:label "Centrifugal pump"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1802,7 +1794,7 @@ i14224:CentrifugalPump
 ###  https://iso14224.org/ontology/i14224/rdl/ReciprocatingPump
 i14224:ReciprocatingPump
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Pump , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Pump , i14224:EquipmentByType ;
     rdfs:label "Reciprocating pump"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1817,7 +1809,7 @@ i14224:ReciprocatingPump
 ###  https://iso14224.org/ontology/i14224/rdl/RotaryPump
 i14224:RotaryPump
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Pump , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Pump , i14224:EquipmentByType ;
     rdfs:label "Rotary pump"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1832,7 +1824,7 @@ i14224:RotaryPump
 ###  https://iso14224.org/ontology/i14224/rdl/MultiStageSteamTurbine
 i14224:MultiStageSteamTurbine
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:SteamTurbine , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:SteamTurbine , i14224:EquipmentByType ;
     rdfs:label "Multi-stage steam turbine"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1847,7 +1839,7 @@ i14224:MultiStageSteamTurbine
 ###  https://iso14224.org/ontology/i14224/rdl/SingleStageSteamTurbine
 i14224:SingleStageSteamTurbine
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:SteamTurbine , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:SteamTurbine , i14224:EquipmentByType ;
     rdfs:label "Single-stage steam turbine"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1862,7 +1854,7 @@ i14224:SingleStageSteamTurbine
 ###  https://iso14224.org/ontology/i14224/rdl/CentrifugalTurboexpander
 i14224:CentrifugalTurboexpander
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Turboexpander , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Turboexpander , i14224:EquipmentByType ;
     rdfs:label "Centrifugal turboexpander"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1877,7 +1869,7 @@ i14224:CentrifugalTurboexpander
 ###  https://iso14224.org/ontology/i14224/rdl/AxialTurboexpander
 i14224:AxialTurboexpander
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Turboexpander , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Turboexpander , i14224:EquipmentByType ;
     rdfs:label "Axial turboexpander"@en ;
     i14224:equipment_category "rotating equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1892,7 +1884,7 @@ i14224:AxialTurboexpander
 ###  https://iso14224.org/ontology/i14224/rdl/ElectroHydraulicOperatedCrane
 i14224:ElectroHydraulicOperatedCrane
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Crane , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Crane , i14224:EquipmentByType ;
     rdfs:label "Electro-hydraulic operated crane"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1907,7 +1899,7 @@ i14224:ElectroHydraulicOperatedCrane
 ###  https://iso14224.org/ontology/i14224/rdl/DieselHydraulicOperatedCrane
 i14224:DieselHydraulicOperatedCrane
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Crane , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Crane , i14224:EquipmentByType ;
     rdfs:label "Diesel hydraulic operated crane"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1922,7 +1914,7 @@ i14224:DieselHydraulicOperatedCrane
 ###  https://iso14224.org/ontology/i14224/rdl/ShellAndTubeHeatExchanger
 i14224:ShellAndTubeHeatExchanger
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
     rdfs:label "Shell and tube heat exchanger"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1937,7 +1929,7 @@ i14224:ShellAndTubeHeatExchanger
 ###  https://iso14224.org/ontology/i14224/rdl/PlateHeatExchanger
 i14224:PlateHeatExchanger
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
     rdfs:label "Plate heat exchanger"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1952,7 +1944,7 @@ i14224:PlateHeatExchanger
 ###  https://iso14224.org/ontology/i14224/rdl/PlateFinHeatExchanger
 i14224:PlateFinHeatExchanger
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
     rdfs:label "Plate fin heat exchanger"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1967,7 +1959,7 @@ i14224:PlateFinHeatExchanger
 ###  https://iso14224.org/ontology/i14224/rdl/DoublePipeHeatExchanger
 i14224:DoublePipeHeatExchanger
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
     rdfs:label "Double pipe heat exchanger"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1982,7 +1974,7 @@ i14224:DoublePipeHeatExchanger
 ###  https://iso14224.org/ontology/i14224/rdl/BayonetHeatExchanger
 i14224:BayonetHeatExchanger
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
     rdfs:label "Bayonet heat exchanger"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -1997,7 +1989,7 @@ i14224:BayonetHeatExchanger
 ###  https://iso14224.org/ontology/i14224/rdl/PrintedCircuitHeatExchanger
 i14224:PrintedCircuitHeatExchanger
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
     rdfs:label "Printed circuit heat exchanger"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2012,7 +2004,7 @@ i14224:PrintedCircuitHeatExchanger
 ###  https://iso14224.org/ontology/i14224/rdl/AirCooledHeatExchanger
 i14224:AirCooledHeatExchanger
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
     rdfs:label "Air-cooled heat exchanger"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2027,7 +2019,7 @@ i14224:AirCooledHeatExchanger
 ###  https://iso14224.org/ontology/i14224/rdl/SpiralHeatExchanger
 i14224:SpiralHeatExchanger
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
     rdfs:label "Spiral heat exchanger"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2042,7 +2034,7 @@ i14224:SpiralHeatExchanger
 ###  https://iso14224.org/ontology/i14224/rdl/SpiralWoundHeatExchanger
 i14224:SpiralWoundHeatExchanger
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
     rdfs:label "Spiral-wound heat exchanger"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2057,7 +2049,7 @@ i14224:SpiralWoundHeatExchanger
 ###  https://iso14224.org/ontology/i14224/rdl/DirectFiredHeater
 i14224:DirectFiredHeater
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentByType ;
     rdfs:label "Direct-fired heater"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2072,7 +2064,7 @@ i14224:DirectFiredHeater
 ###  https://iso14224.org/ontology/i14224/rdl/ElectricHeater
 i14224:ElectricHeater
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentByType ;
     rdfs:label "Electric heater"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2087,7 +2079,7 @@ i14224:ElectricHeater
 ###  https://iso14224.org/ontology/i14224/rdl/IndirectHGFiredHeater
 i14224:IndirectHGFiredHeater
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentByType ;
     rdfs:label "Indirect HG-fired heater"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2102,7 +2094,7 @@ i14224:IndirectHGFiredHeater
 ###  https://iso14224.org/ontology/i14224/rdl/HeaterTreater
 i14224:HeaterTreater
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentByType ;
     rdfs:label "Heater treater"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2117,7 +2109,7 @@ i14224:HeaterTreater
 ###  https://iso14224.org/ontology/i14224/rdl/NonHGFiredBoiler
 i14224:NonHGFiredBoiler
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentByType ;
     rdfs:label "Non-HG-fired boiler"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2132,7 +2124,7 @@ i14224:NonHGFiredBoiler
 ###  https://iso14224.org/ontology/i14224/rdl/ElectricBoiler
 i14224:ElectricBoiler
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentByType ;
     rdfs:label "Electric boiler"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2147,7 +2139,7 @@ i14224:ElectricBoiler
 ###  https://iso14224.org/ontology/i14224/rdl/HGFiredBoiler
 i14224:HGFiredBoiler
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentByType ;
     rdfs:label "HG-fired boiler"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2162,7 +2154,7 @@ i14224:HGFiredBoiler
 ###  https://iso14224.org/ontology/i14224/rdl/StripperVessel
 i14224:StripperVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Stripper vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2177,7 +2169,7 @@ i14224:StripperVessel
 ###  https://iso14224.org/ontology/i14224/rdl/SeparatorVessel
 i14224:SeparatorVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Separator vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2192,7 +2184,7 @@ i14224:SeparatorVessel
 ###  https://iso14224.org/ontology/i14224/rdl/CoalescerVessel
 i14224:CoalescerVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Coalescer vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2207,7 +2199,7 @@ i14224:CoalescerVessel
 ###  https://iso14224.org/ontology/i14224/rdl/FlashDrumVessel
 i14224:FlashDrumVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Flash drum vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2222,7 +2214,7 @@ i14224:FlashDrumVessel
 ###  https://iso14224.org/ontology/i14224/rdl/ScrubberVessel
 i14224:ScrubberVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Scrubber vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2237,7 +2229,7 @@ i14224:ScrubberVessel
 ###  https://iso14224.org/ontology/i14224/rdl/ContactorVessel
 i14224:ContactorVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Contactor vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2252,7 +2244,7 @@ i14224:ContactorVessel
 ###  https://iso14224.org/ontology/i14224/rdl/SurgeDrumVessel
 i14224:SurgeDrumVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Surge drum vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2267,7 +2259,7 @@ i14224:SurgeDrumVessel
 ###  https://iso14224.org/ontology/i14224/rdl/HydrocycloneVessel
 i14224:HydrocycloneVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Hydrocyclone vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2282,7 +2274,7 @@ i14224:HydrocycloneVessel
 ###  https://iso14224.org/ontology/i14224/rdl/SlugCatcherVessel
 i14224:SlugCatcherVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Slug catcher vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2297,7 +2289,7 @@ i14224:SlugCatcherVessel
 ###  https://iso14224.org/ontology/i14224/rdl/AdsorberVessel
 i14224:AdsorberVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Adsorber vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2312,7 +2304,7 @@ i14224:AdsorberVessel
 ###  https://iso14224.org/ontology/i14224/rdl/DryerVessel
 i14224:DryerVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Dryer vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2327,7 +2319,7 @@ i14224:DryerVessel
 ###  https://iso14224.org/ontology/i14224/rdl/PigTrapVessel
 i14224:PigTrapVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Pig trap vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2342,7 +2334,7 @@ i14224:PigTrapVessel
 ###  https://iso14224.org/ontology/i14224/rdl/DistillationColumnVessel
 i14224:DistillationColumnVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Distillation column vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2357,7 +2349,7 @@ i14224:DistillationColumnVessel
 ###  https://iso14224.org/ontology/i14224/rdl/SaturaterVessel
 i14224:SaturaterVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Saturater vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2372,7 +2364,7 @@ i14224:SaturaterVessel
 ###  https://iso14224.org/ontology/i14224/rdl/ReactorVessel
 i14224:ReactorVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "Reactor vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2387,7 +2379,7 @@ i14224:ReactorVessel
 ###  https://iso14224.org/ontology/i14224/rdl/DeAeratorVessel
 i14224:DeAeratorVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
     rdfs:label "De-aerator vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2402,7 +2394,7 @@ i14224:DeAeratorVessel
 ###  https://iso14224.org/ontology/i14224/rdl/CarbonSteelPiping
 i14224:CarbonSteelPiping
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Piping , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Piping , i14224:EquipmentByType ;
     rdfs:label "Carbon steel piping"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2417,7 +2409,7 @@ i14224:CarbonSteelPiping
 ###  https://iso14224.org/ontology/i14224/rdl/StainlessSteelPiping
 i14224:StainlessSteelPiping
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Piping , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Piping , i14224:EquipmentByType ;
     rdfs:label "Stainless steel piping"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2432,7 +2424,7 @@ i14224:StainlessSteelPiping
 ###  https://iso14224.org/ontology/i14224/rdl/HighStrengthLowAlloySteelPiping
 i14224:HighStrengthLowAlloySteelPiping
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Piping , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Piping , i14224:EquipmentByType ;
     rdfs:label "High-strength low-alloy steel piping"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2447,7 +2439,7 @@ i14224:HighStrengthLowAlloySteelPiping
 ###  https://iso14224.org/ontology/i14224/rdl/TitaniumPiping
 i14224:TitaniumPiping
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Piping , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Piping , i14224:EquipmentByType ;
     rdfs:label "Titanium piping"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2462,7 +2454,7 @@ i14224:TitaniumPiping
 ###  https://iso14224.org/ontology/i14224/rdl/PolymerIncludingFibreReinforcedPiping
 i14224:PolymerIncludingFibreReinforcedPiping
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Piping , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Piping , i14224:EquipmentByType ;
     rdfs:label "Polymer including fibre-reinforced piping"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2477,7 +2469,7 @@ i14224:PolymerIncludingFibreReinforcedPiping
 ###  https://iso14224.org/ontology/i14224/rdl/ElectricWinch
 i14224:ElectricWinch
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Winch , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Winch , i14224:EquipmentByType ;
     rdfs:label "Electric winch"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2492,7 +2484,7 @@ i14224:ElectricWinch
 ###  https://iso14224.org/ontology/i14224/rdl/HydraulicWinch
 i14224:HydraulicWinch
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Winch , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Winch , i14224:EquipmentByType ;
     rdfs:label "Hydraulic winch"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2507,7 +2499,7 @@ i14224:HydraulicWinch
 ###  https://iso14224.org/ontology/i14224/rdl/DisconnectableTurret
 i14224:DisconnectableTurret
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Turret , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Turret , i14224:EquipmentByType ;
     rdfs:label "Disconnectable turret"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2522,7 +2514,7 @@ i14224:DisconnectableTurret
 ###  https://iso14224.org/ontology/i14224/rdl/PermanentTurret
 i14224:PermanentTurret
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Turret , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Turret , i14224:EquipmentByType ;
     rdfs:label "Permanent turret"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2537,7 +2529,7 @@ i14224:PermanentTurret
 ###  https://iso14224.org/ontology/i14224/rdl/AxialSwivel
 i14224:AxialSwivel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Swivel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Swivel , i14224:EquipmentByType ;
     rdfs:label "Axial swivel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2552,7 +2544,7 @@ i14224:AxialSwivel
 ###  https://iso14224.org/ontology/i14224/rdl/ToroidalSwivel
 i14224:ToroidalSwivel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Swivel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Swivel , i14224:EquipmentByType ;
     rdfs:label "Toroidal swivel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2567,7 +2559,7 @@ i14224:ToroidalSwivel
 ###  https://iso14224.org/ontology/i14224/rdl/ElectricSignalSwivel
 i14224:ElectricSignalSwivel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Swivel , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Swivel , i14224:EquipmentByType ;
     rdfs:label "Electric/signal swivel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2582,7 +2574,7 @@ i14224:ElectricSignalSwivel
 ###  https://iso14224.org/ontology/i14224/rdl/DualUPSWithStandbyBypass
 i14224:DualUPSWithStandbyBypass
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:UninterruptiblePowerSupply , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:UninterruptiblePowerSupply , i14224:EquipmentByType ;
     rdfs:label "Dual UPS with standby bypass; rectifier supplied from emergency power; bypass from main power system"@en ;
     i14224:equipment_category "electrical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2597,7 +2589,7 @@ i14224:DualUPSWithStandbyBypass
 ###  https://iso14224.org/ontology/i14224/rdl/DualUPSWithoutBypass
 i14224:DualUPSWithoutBypass
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:UninterruptiblePowerSupply , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:UninterruptiblePowerSupply , i14224:EquipmentByType ;
     rdfs:label "Dual UPS without bypass; rectifier supplied from emergency power"@en ;
     i14224:equipment_category "electrical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2612,7 +2604,7 @@ i14224:DualUPSWithoutBypass
 ###  https://iso14224.org/ontology/i14224/rdl/SingleUPSWithBypass
 i14224:SingleUPSWithBypass
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:UninterruptiblePowerSupply , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:UninterruptiblePowerSupply , i14224:EquipmentByType ;
     rdfs:label "Single UPS with bypass; rectifier supplied from emergency power; bypass from main power system"@en ;
     i14224:equipment_category "electrical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2627,7 +2619,7 @@ i14224:SingleUPSWithBypass
 ###  https://iso14224.org/ontology/i14224/rdl/SingleUPSWithoutBypass
 i14224:SingleUPSWithoutBypass
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:UninterruptiblePowerSupply , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:UninterruptiblePowerSupply , i14224:EquipmentByType ;
     rdfs:label "Single UPS without bypass; rectifier supplied from emergency power"@en ;
     i14224:equipment_category "electrical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2642,7 +2634,7 @@ i14224:SingleUPSWithoutBypass
 ###  https://iso14224.org/ontology/i14224/rdl/OilImmersedPowerTransformer
 i14224:OilImmersedPowerTransformer
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:PowerTransformer , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:PowerTransformer , i14224:EquipmentByType ;
     rdfs:label "Oil immersed power transformer"@en ;
     i14224:equipment_category "electrical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2657,7 +2649,7 @@ i14224:OilImmersedPowerTransformer
 ###  https://iso14224.org/ontology/i14224/rdl/DryPowerTransformer
 i14224:DryPowerTransformer
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:PowerTransformer , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:PowerTransformer , i14224:EquipmentByType ;
     rdfs:label "Dry power transformer"@en ;
     i14224:equipment_category "electrical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2672,7 +2664,7 @@ i14224:DryPowerTransformer
 ###  https://iso14224.org/ontology/i14224/rdl/SmokeCombustionFireDetector
 i14224:SmokeCombustionFireDetector
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
     rdfs:label "Smoke/combustion fire detector"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2687,7 +2679,7 @@ i14224:SmokeCombustionFireDetector
 ###  https://iso14224.org/ontology/i14224/rdl/HeatFireDetector
 i14224:HeatFireDetector
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
     rdfs:label "Heat fire detector"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2702,7 +2694,7 @@ i14224:HeatFireDetector
 ###  https://iso14224.org/ontology/i14224/rdl/FlameFireDetector
 i14224:FlameFireDetector
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
     rdfs:label "Flame fire detector"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2717,7 +2709,7 @@ i14224:FlameFireDetector
 ###  https://iso14224.org/ontology/i14224/rdl/ManualPushbuttonFireDetector
 i14224:ManualPushbuttonFireDetector
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
     rdfs:label "Manual pushbutton fire detector"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2732,7 +2724,7 @@ i14224:ManualPushbuttonFireDetector
 ###  https://iso14224.org/ontology/i14224/rdl/OtherFireDetector
 i14224:OtherFireDetector
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
     rdfs:label "Other fire detector"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2747,7 +2739,7 @@ i14224:OtherFireDetector
 ###  https://iso14224.org/ontology/i14224/rdl/HydrocarbonGasDetector
 i14224:HydrocarbonGasDetector
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
     rdfs:label "Hydrocarbon gas detector"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2762,7 +2754,7 @@ i14224:HydrocarbonGasDetector
 ###  https://iso14224.org/ontology/i14224/rdl/ToxicGasDetector
 i14224:ToxicGasDetector
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
     rdfs:label "Toxic gas detector"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2777,7 +2769,7 @@ i14224:ToxicGasDetector
 ###  https://iso14224.org/ontology/i14224/rdl/OtherGasDetector
 i14224:OtherGasDetector
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
     rdfs:label "Other gas detector"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2792,7 +2784,7 @@ i14224:OtherGasDetector
 ###  https://iso14224.org/ontology/i14224/rdl/PressureInputDevice
 i14224:PressureInputDevice
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
     rdfs:label "Pressure input device"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2807,7 +2799,7 @@ i14224:PressureInputDevice
 ###  https://iso14224.org/ontology/i14224/rdl/LevelInputDevice
 i14224:LevelInputDevice
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
     rdfs:label "Level input device"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2822,7 +2814,7 @@ i14224:LevelInputDevice
 ###  https://iso14224.org/ontology/i14224/rdl/TemperatureInputDevice
 i14224:TemperatureInputDevice
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
     rdfs:label "Temperature input device"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2837,7 +2829,7 @@ i14224:TemperatureInputDevice
 ###  https://iso14224.org/ontology/i14224/rdl/FlowInputDevice
 i14224:FlowInputDevice
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
     rdfs:label "Flow input device"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2852,7 +2844,7 @@ i14224:FlowInputDevice
 ###  https://iso14224.org/ontology/i14224/rdl/SpeedInputDevice
 i14224:SpeedInputDevice
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
     rdfs:label "Speed input device"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2867,7 +2859,7 @@ i14224:SpeedInputDevice
 ###  https://iso14224.org/ontology/i14224/rdl/VibrationInputDevice
 i14224:VibrationInputDevice
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
     rdfs:label "Vibration input device"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2882,7 +2874,7 @@ i14224:VibrationInputDevice
 ###  https://iso14224.org/ontology/i14224/rdl/DisplacementInputDevice
 i14224:DisplacementInputDevice
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
     rdfs:label "Displacement input device"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2897,7 +2889,7 @@ i14224:DisplacementInputDevice
 ###  https://iso14224.org/ontology/i14224/rdl/AnalyserInputDevice
 i14224:AnalyserInputDevice
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
     rdfs:label "Analyser input device"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2912,7 +2904,7 @@ i14224:AnalyserInputDevice
 ###  https://iso14224.org/ontology/i14224/rdl/WeightInputDevice
 i14224:WeightInputDevice
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
     rdfs:label "Weight input device"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2927,7 +2919,7 @@ i14224:WeightInputDevice
 ###  https://iso14224.org/ontology/i14224/rdl/CorrosionInputDevice
 i14224:CorrosionInputDevice
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
     rdfs:label "Corrosion input device"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2942,7 +2934,7 @@ i14224:CorrosionInputDevice
 ###  https://iso14224.org/ontology/i14224/rdl/LimitSwitchInputDevice
 i14224:LimitSwitchInputDevice
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
     rdfs:label "Limit switch input device"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2957,7 +2949,7 @@ i14224:LimitSwitchInputDevice
 ###  https://iso14224.org/ontology/i14224/rdl/OnOffPushbuttonInputDevice
 i14224:OnOffPushbuttonInputDevice
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
     rdfs:label "On/off pushbutton input device"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2972,7 +2964,7 @@ i14224:OnOffPushbuttonInputDevice
 ###  https://iso14224.org/ontology/i14224/rdl/OtherInputDevice
 i14224:OtherInputDevice
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
     rdfs:label "Other input device"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2987,7 +2979,7 @@ i14224:OtherInputDevice
 ###  https://iso14224.org/ontology/i14224/rdl/ProgrammableLogicController
 i14224:ProgrammableLogicController
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentByType ;
     rdfs:label "Programmable logic controller"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3002,7 +2994,7 @@ i14224:ProgrammableLogicController
 ###  https://iso14224.org/ontology/i14224/rdl/ComputerControlUnit
 i14224:ComputerControlUnit
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentByType ;
     rdfs:label "Computer control unit"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3017,7 +3009,7 @@ i14224:ComputerControlUnit
 ###  https://iso14224.org/ontology/i14224/rdl/DistributedControlUnit
 i14224:DistributedControlUnit
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentByType ;
     rdfs:label "Distributed control unit"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3032,7 +3024,7 @@ i14224:DistributedControlUnit
 ###  https://iso14224.org/ontology/i14224/rdl/RelayControlUnit
 i14224:RelayControlUnit
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentByType ;
     rdfs:label "Relay control unit"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3047,7 +3039,7 @@ i14224:RelayControlUnit
 ###  https://iso14224.org/ontology/i14224/rdl/SolidStateControlUnit
 i14224:SolidStateControlUnit
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentByType ;
     rdfs:label "Solid state control unit"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3062,7 +3054,7 @@ i14224:SolidStateControlUnit
 ###  https://iso14224.org/ontology/i14224/rdl/SingleLoopController
 i14224:SingleLoopController
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentByType ;
     rdfs:label "Single-loop controller"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3077,7 +3069,7 @@ i14224:SingleLoopController
 ###  https://iso14224.org/ontology/i14224/rdl/ProgrammableAutomationController
 i14224:ProgrammableAutomationController
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentByType ;
     rdfs:label "Programmable automation controller"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3092,7 +3084,7 @@ i14224:ProgrammableAutomationController
 ###  https://iso14224.org/ontology/i14224/rdl/BallValve
 i14224:BallValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Ball valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3107,7 +3099,7 @@ i14224:BallValve
 ###  https://iso14224.org/ontology/i14224/rdl/GateValve
 i14224:GateValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Gate valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3122,7 +3114,7 @@ i14224:GateValve
 ###  https://iso14224.org/ontology/i14224/rdl/GlobeValve
 i14224:GlobeValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Globe valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3137,7 +3129,7 @@ i14224:GlobeValve
 ###  https://iso14224.org/ontology/i14224/rdl/ButterflyValve
 i14224:ButterflyValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Butterfly valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3152,7 +3144,7 @@ i14224:ButterflyValve
 ###  https://iso14224.org/ontology/i14224/rdl/PlugValve
 i14224:PlugValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Plug valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3167,7 +3159,7 @@ i14224:PlugValve
 ###  https://iso14224.org/ontology/i14224/rdl/NeedleValve
 i14224:NeedleValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Needle valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3182,7 +3174,7 @@ i14224:NeedleValve
 ###  https://iso14224.org/ontology/i14224/rdl/CheckValve
 i14224:CheckValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Check valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3197,7 +3189,7 @@ i14224:CheckValve
 ###  https://iso14224.org/ontology/i14224/rdl/DiaphragmValve
 i14224:DiaphragmValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Diaphragm valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3212,7 +3204,7 @@ i14224:DiaphragmValve
 ###  https://iso14224.org/ontology/i14224/rdl/FlapperValve
 i14224:FlapperValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Flapper valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3227,7 +3219,7 @@ i14224:FlapperValve
 ###  https://iso14224.org/ontology/i14224/rdl/MultipleOrificeValve
 i14224:MultipleOrificeValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Multiple orifice valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3242,7 +3234,7 @@ i14224:MultipleOrificeValve
 ###  https://iso14224.org/ontology/i14224/rdl/ThreeWayValve
 i14224:ThreeWayValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Three-way valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3257,7 +3249,7 @@ i14224:ThreeWayValve
 ###  https://iso14224.org/ontology/i14224/rdl/PSVConventionalValve
 i14224:PSVConventionalValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "PSV-conventional valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3272,7 +3264,7 @@ i14224:PSVConventionalValve
 ###  https://iso14224.org/ontology/i14224/rdl/PSVConventionalWithBellowValve
 i14224:PSVConventionalWithBellowValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "PSV-conventional with bellow valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3287,7 +3279,7 @@ i14224:PSVConventionalWithBellowValve
 ###  https://iso14224.org/ontology/i14224/rdl/PSVPilotOperatedValve
 i14224:PSVPilotOperatedValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "PSV-pilot operated valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3302,7 +3294,7 @@ i14224:PSVPilotOperatedValve
 ###  https://iso14224.org/ontology/i14224/rdl/PSVVacuumReliefValve
 i14224:PSVVacuumReliefValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "PSV-vacuum relief valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3317,7 +3309,7 @@ i14224:PSVVacuumReliefValve
 ###  https://iso14224.org/ontology/i14224/rdl/PlugAndCageValve
 i14224:PlugAndCageValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Plug and cage valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3332,7 +3324,7 @@ i14224:PlugAndCageValve
 ###  https://iso14224.org/ontology/i14224/rdl/ExternalSleeveValve
 i14224:ExternalSleeveValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "External sleeve valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3347,7 +3339,7 @@ i14224:ExternalSleeveValve
 ###  https://iso14224.org/ontology/i14224/rdl/DiscValve
 i14224:DiscValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Disc valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3362,7 +3354,7 @@ i14224:DiscValve
 ###  https://iso14224.org/ontology/i14224/rdl/AxialFlowValve
 i14224:AxialFlowValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Axial flow valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3377,7 +3369,7 @@ i14224:AxialFlowValve
 ###  https://iso14224.org/ontology/i14224/rdl/PinchValve
 i14224:PinchValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Pinch valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3392,7 +3384,7 @@ i14224:PinchValve
 ###  https://iso14224.org/ontology/i14224/rdl/OtherValve
 i14224:OtherValve
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Valve , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
     rdfs:label "Other valve"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3407,7 +3399,7 @@ i14224:OtherValve
 ###  https://iso14224.org/ontology/i14224/rdl/DelugeNozzle
 i14224:DelugeNozzle
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Nozzle , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Nozzle , i14224:EquipmentByType ;
     rdfs:label "Deluge nozzle"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3422,7 +3414,7 @@ i14224:DelugeNozzle
 ###  https://iso14224.org/ontology/i14224/rdl/SprinklerNozzle
 i14224:SprinklerNozzle
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Nozzle , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Nozzle , i14224:EquipmentByType ;
     rdfs:label "Sprinkler nozzle"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3437,7 +3429,7 @@ i14224:SprinklerNozzle
 ###  https://iso14224.org/ontology/i14224/rdl/WaterMistNozzle
 i14224:WaterMistNozzle
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Nozzle , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Nozzle , i14224:EquipmentByType ;
     rdfs:label "Water mist nozzle"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3452,7 +3444,7 @@ i14224:WaterMistNozzle
 ###  https://iso14224.org/ontology/i14224/rdl/GaseousNozzle
 i14224:GaseousNozzle
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Nozzle , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Nozzle , i14224:EquipmentByType ;
     rdfs:label "Gaseous nozzle"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3467,7 +3459,7 @@ i14224:GaseousNozzle
 ###  https://iso14224.org/ontology/i14224/rdl/DirectHydraulicSubseaProductionControl
 i14224:DirectHydraulicSubseaProductionControl
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:SubseaProductionControl , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:SubseaProductionControl , i14224:EquipmentByType ;
     rdfs:label "Direct hydraulic subsea production control"@en ;
     i14224:equipment_category "subsea production equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3482,7 +3474,7 @@ i14224:DirectHydraulicSubseaProductionControl
 ###  https://iso14224.org/ontology/i14224/rdl/DirectElectroHydraulicSubseaProductionControl
 i14224:DirectElectroHydraulicSubseaProductionControl
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:SubseaProductionControl , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:SubseaProductionControl , i14224:EquipmentByType ;
     rdfs:label "Direct electro-hydraulic subsea production control"@en ;
     i14224:equipment_category "subsea production equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3497,7 +3489,7 @@ i14224:DirectElectroHydraulicSubseaProductionControl
 ###  https://iso14224.org/ontology/i14224/rdl/MultiplexedElectroHydraulicSubseaProductionControl
 i14224:MultiplexedElectroHydraulicSubseaProductionControl
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:SubseaProductionControl , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:SubseaProductionControl , i14224:EquipmentByType ;
     rdfs:label "Multiplexed electro-hydraulic subsea production control"@en ;
     i14224:equipment_category "subsea production equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3512,7 +3504,7 @@ i14224:MultiplexedElectroHydraulicSubseaProductionControl
 ###  https://iso14224.org/ontology/i14224/rdl/DiscretePilotHydraulicSubseaProductionControl
 i14224:DiscretePilotHydraulicSubseaProductionControl
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:SubseaProductionControl , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:SubseaProductionControl , i14224:EquipmentByType ;
     rdfs:label "Discrete pilot hydraulic subsea production control"@en ;
     i14224:equipment_category "subsea production equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3527,7 +3519,7 @@ i14224:DiscretePilotHydraulicSubseaProductionControl
 ###  https://iso14224.org/ontology/i14224/rdl/SequentialPilotedHydraulicSubseaProductionControl
 i14224:SequentialPilotedHydraulicSubseaProductionControl
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:SubseaProductionControl , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:SubseaProductionControl , i14224:EquipmentByType ;
     rdfs:label "Sequential piloted hydraulic subsea production control"@en ;
     i14224:equipment_category "subsea production equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3542,7 +3534,7 @@ i14224:SequentialPilotedHydraulicSubseaProductionControl
 ###  https://iso14224.org/ontology/i14224/rdl/TelemetricHydraulicSubseaProductionControl
 i14224:TelemetricHydraulicSubseaProductionControl
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:SubseaProductionControl , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:SubseaProductionControl , i14224:EquipmentByType ;
     rdfs:label "Telemetric hydraulic subsea production control"@en ;
     i14224:equipment_category "subsea production equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3557,7 +3549,7 @@ i14224:TelemetricHydraulicSubseaProductionControl
 ###  https://iso14224.org/ontology/i14224/rdl/VerticalXmasTree
 i14224:VerticalXmasTree
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:XmasTree , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:XmasTree , i14224:EquipmentByType ;
     rdfs:label "Vertical Xmas tree"@en ;
     i14224:equipment_category "subsea production equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3572,7 +3564,7 @@ i14224:VerticalXmasTree
 ###  https://iso14224.org/ontology/i14224/rdl/HorizontalXmasTree
 i14224:HorizontalXmasTree
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:XmasTree , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:XmasTree , i14224:EquipmentByType ;
     rdfs:label "Horizontal Xmas tree"@en ;
     i14224:equipment_category "subsea production equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3587,7 +3579,7 @@ i14224:HorizontalXmasTree
 ###  https://iso14224.org/ontology/i14224/rdl/RigidRiser
 i14224:RigidRiser
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Riser , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Riser , i14224:EquipmentByType ;
     rdfs:label "Rigid riser"@en ;
     i14224:equipment_category "subsea production equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3602,7 +3594,7 @@ i14224:RigidRiser
 ###  https://iso14224.org/ontology/i14224/rdl/FlexibleRiser
 i14224:FlexibleRiser
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Riser , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:Riser , i14224:EquipmentByType ;
     rdfs:label "Flexible riser"@en ;
     i14224:equipment_category "subsea production equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3617,7 +3609,7 @@ i14224:FlexibleRiser
 ###  https://iso14224.org/ontology/i14224/rdl/CentrifugalSubseaPump
 i14224:CentrifugalSubseaPump
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:SubseaPump , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:SubseaPump , i14224:EquipmentByType ;
     rdfs:label "Centrifugal subsea pump"@en ;
     i14224:equipment_category "subsea production equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3632,7 +3624,7 @@ i14224:CentrifugalSubseaPump
 ###  https://iso14224.org/ontology/i14224/rdl/ReciprocatingSubseaPump
 i14224:ReciprocatingSubseaPump
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:SubseaPump , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:SubseaPump , i14224:EquipmentByType ;
     rdfs:label "Reciprocating subsea pump"@en ;
     i14224:equipment_category "subsea production equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3647,7 +3639,7 @@ i14224:ReciprocatingSubseaPump
 ###  https://iso14224.org/ontology/i14224/rdl/RotarySubseaPump
 i14224:RotarySubseaPump
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:SubseaPump , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:SubseaPump , i14224:EquipmentByType ;
     rdfs:label "Rotary subsea pump"@en ;
     i14224:equipment_category "subsea production equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3662,7 +3654,7 @@ i14224:RotarySubseaPump
 ###  https://iso14224.org/ontology/i14224/rdl/HydraulicallyDrivenTopDrive
 i14224:HydraulicallyDrivenTopDrive
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:TopDrive , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:TopDrive , i14224:EquipmentByType ;
     rdfs:label "Hydraulically driven top drive"@en ;
     i14224:equipment_category "drilling equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3677,7 +3669,7 @@ i14224:HydraulicallyDrivenTopDrive
 ###  https://iso14224.org/ontology/i14224/rdl/ElectricallyDrivenTopDrive
 i14224:ElectricallyDrivenTopDrive
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:TopDrive , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:TopDrive , i14224:EquipmentByType ;
     rdfs:label "Electrically driven top drive"@en ;
     i14224:equipment_category "drilling equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3692,7 +3684,7 @@ i14224:ElectricallyDrivenTopDrive
 ###  https://iso14224.org/ontology/i14224/rdl/SurfaceBlowoutPreventer
 i14224:SurfaceBlowoutPreventer
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:BlowoutPreventer , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:BlowoutPreventer , i14224:EquipmentByType ;
     rdfs:label "Surface blowout preventer"@en ;
     i14224:equipment_category "drilling equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -3707,7 +3699,7 @@ i14224:SurfaceBlowoutPreventer
 ###  https://iso14224.org/ontology/i14224/rdl/SubseaBlowoutPreventer
 i14224:SubseaBlowoutPreventer
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:BlowoutPreventer , i14224:EquipmentType ;
+    rdfs:subClassOf i14224:BlowoutPreventer , i14224:EquipmentByType ;
     rdfs:label "Subsea blowout preventer"@en ;
     i14224:equipment_category "drilling equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;

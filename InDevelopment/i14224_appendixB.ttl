@@ -23,8 +23,8 @@ dcterms:rights "See github"@en .
 #    Annotation properties
 #################################################################
 
-###  http://www.w3.org/2000/01/rdf-schema#rangei14224:TypeFailureMechanism
-i14224:TypeFailureMechanism rdf:type owl:AnnotationProperty .
+###  http://www.w3.org/2000/01/rdf-schema#rangei14224:FailureMechanismByType
+i14224:FailureMechanismByType rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -35,32 +35,32 @@ i14224:TypeFailureMechanism rdf:type owl:AnnotationProperty .
 i14224:hasFailureCause rdf:type owl:ObjectProperty ;
 rdfs:label "has failure cause"@en ;    
 rdfs:domain i14224:FailureCause ;
-rdfs:range i14224:TypeFailureCause .
+rdfs:range i14224:FailureCauseByType .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/hasFailureCauseType
-i14224:hasFailureCauseType rdf:type owl:ObjectProperty ;
-rdfs:label "has failure cause type"@en ;
+###  https://iso14224.org/ontology/i14224/rdl/hasFailureCauseByType
+i14224:hasFailureCauseByType rdf:type owl:ObjectProperty ;
+rdfs:label "has failure cause by type"@en ;
 rdfs:domain i14224:FailureCause ;
-rdfs:range i14224:TypeFailureCause .
+rdfs:range i14224:FailureCauseByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/hasFailureDetectionMethod
 i14224:hasFailureDetectionMethod rdf:type owl:ObjectProperty ;
 rdfs:label "has failure detection method"@en ;
 rdfs:domain i14224:DetectionMethod ;
-rdfs:range i14224:TypeFailureDetectionMethod .
+rdfs:range i14224:FailureDetectionMethodByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/hasFailureMechanism
 i14224:hasFailureMechanism rdf:type owl:ObjectProperty ;
 rdfs:label "has failure mechanism"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/hasFailureMechanismType
-i14224:hasFailureMechanismType rdf:type owl:ObjectProperty ;
+###  https://iso14224.org/ontology/i14224/rdl/hasFailureMechanismByType
+i14224:hasFailureMechanismByType rdf:type owl:ObjectProperty ;
 rdfs:label "has failure mechanism type"@en ;
 rdfs:domain i14224:FailureMechanism ;
-rdfs:range i14224:TypeFailureMechanism .
+rdfs:range i14224:FailureMechanismByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/hasFailureMode
@@ -473,19 +473,19 @@ i14224:Test rdf:type owl:Class ;
             cmnsav:usageNote "Typically used in preventative maintenance. e.g. function test of gas detector, accuracy test of flow meter"@en .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/TypeFailureCause
-i14224:TypeFailureCause rdf:type owl:Class ;
-                        rdfs:label "Type of failure cause" .
+###  https://iso14224.org/ontology/i14224/rdl/FailureCauseByType
+i14224:FailureCauseByType rdf:type owl:Class ;
+                          rdfs:label "Failure cause by type" .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/TypeFailureDetectionMethod
-i14224:TypeFailureDetectionMethod rdf:type owl:Class ;
-                                  rdfs:label "Type of failure detection method" .
+###  https://iso14224.org/ontology/i14224/rdl/FailureDetectionMethodByType
+i14224:FailureDetectionMethodByType rdf:type owl:Class ;
+                                    rdfs:label "Failure detection method by type" .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/TypeFailureMechanism
-i14224:TypeFailureMechanism rdf:type owl:Class ;
-                            rdfs:label "Type of failure mechanism" .
+###  https://iso14224.org/ontology/i14224/rdl/FailureMechanismByType
+i14224:FailureMechanismByType rdf:type owl:Class ;
+                              rdfs:label "Failure mechanism by type" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/UnknownFailureMechanism
@@ -537,7 +537,7 @@ i14224:delayed_operation rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/electrical_failure_mechanism
 i14224:electrical_failure_mechanism rdf:type owl:NamedIndividual ,
-                                             i14224:TypeFailureMechanism .
+                                             i14224:FailureMechanismByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/erratic_output
@@ -550,7 +550,7 @@ i14224:erratic_output rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/external_influence_failure_mechanism
 i14224:external_influence_failure_mechanism rdf:type owl:NamedIndividual ,
-                                                     i14224:TypeFailureMechanism .
+                                                     i14224:FailureMechanismByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/external_leakage_fuel
@@ -579,57 +579,57 @@ i14224:external_leakage_utility_medium rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_detected_by_casual_observation
 i14224:failure_detected_by_casual_observation rdf:type owl:NamedIndividual ,
-                                                       i14224:TypeFailureDetectionMethod .
+                                                       i14224:FailureDetectionMethodByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_detected_by_continuous_condition_monitoring
 i14224:failure_detected_by_continuous_condition_monitoring rdf:type owl:NamedIndividual ,
-                                                                    i14224:TypeFailureDetectionMethod .
+                                                                    i14224:FailureDetectionMethodByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_detected_by_corrective_maintenance
 i14224:failure_detected_by_corrective_maintenance rdf:type owl:NamedIndividual ,
-                                                           i14224:TypeFailureDetectionMethod .
+                                                           i14224:FailureDetectionMethodByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_detected_by_functional_testing
 i14224:failure_detected_by_functional_testing rdf:type owl:NamedIndividual ,
-                                                       i14224:TypeFailureDetectionMethod .
+                                                       i14224:FailureDetectionMethodByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_detected_by_inspection
 i14224:failure_detected_by_inspection rdf:type owl:NamedIndividual ,
-                                               i14224:TypeFailureDetectionMethod .
+                                               i14224:FailureDetectionMethodByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_detected_by_on_demand_activity
 i14224:failure_detected_by_on_demand_activity rdf:type owl:NamedIndividual ,
-                                                       i14224:TypeFailureDetectionMethod .
+                                                       i14224:FailureDetectionMethodByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_detected_by_other_method
 i14224:failure_detected_by_other_method rdf:type owl:NamedIndividual ,
-                                                 i14224:TypeFailureDetectionMethod .
+                                                 i14224:FailureDetectionMethodByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_detected_by_periodic_condition_monitoring
 i14224:failure_detected_by_periodic_condition_monitoring rdf:type owl:NamedIndividual ,
-                                                                  i14224:TypeFailureDetectionMethod .
+                                                                  i14224:FailureDetectionMethodByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_detected_by_periodic_maintenance
 i14224:failure_detected_by_periodic_maintenance rdf:type owl:NamedIndividual ,
-                                                         i14224:TypeFailureDetectionMethod .
+                                                         i14224:FailureDetectionMethodByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_detected_by_pressure_testing
 i14224:failure_detected_by_pressure_testing rdf:type owl:NamedIndividual ,
-                                                     i14224:TypeFailureDetectionMethod .
+                                                     i14224:FailureDetectionMethodByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_detected_by_production_interference
 i14224:failure_detected_by_production_interference rdf:type owl:NamedIndividual ,
-                                                            i14224:TypeFailureDetectionMethod .
+                                                            i14224:FailureDetectionMethodByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_to_close_on_demand
@@ -742,7 +742,7 @@ i14224:high_output rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/instrument_failure_mechanism
 i14224:instrument_failure_mechanism rdf:type owl:NamedIndividual ,
-                                             i14224:TypeFailureMechanism ;
+                                             i14224:FailureMechanismByType ;
                                     rdfs:label "instrument_failure_mechanism" .
 
 
@@ -817,12 +817,12 @@ i14224:low_output rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/material_failure_mechanism
 i14224:material_failure_mechanism rdf:type owl:NamedIndividual ,
-                                           i14224:TypeFailureMechanism .
+                                           i14224:FailureMechanismByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/mechanical_failure_mechanism
 i14224:mechanical_failure_mechanism rdf:type owl:NamedIndividual ,
-                                             i14224:TypeFailureMechanism .
+                                             i14224:FailureMechanismByType .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/minor_inservice_problems
@@ -835,7 +835,7 @@ i14224:minor_inservice_problems rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/miscellaneous_failure_mechanism
 i14224:miscellaneous_failure_mechanism rdf:type owl:NamedIndividual ,
-                                                i14224:TypeFailureMechanism .
+                                                i14224:FailureMechanismByType .
 
 i14224:mooring_failure rdf:type owl:NamedIndividual , i14224:FailureMode ;
     rdfs:label "MOF" ;

@@ -111,26 +111,26 @@ cmnsav:usageNote rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://iso14224.org/ontology/i14224/rdl/hasDataType
-i14224:hasDataType rdf:type owl:ObjectProperty ;
-                   rdfs:range i14224:TypeData ;
-                   rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
-                   rdfs:label "hasDataType" ;
-                   skos:definition "identifies the type of data of interest" .
+###  https://iso14224.org/ontology/i14224/rdl/hasDataByType
+i14224:hasDataByType rdf:type owl:ObjectProperty ;
+                     rdfs:range i14224:DataByType ;
+                     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
+                     rdfs:label "hasDataByType" ;
+                     skos:definition "identifies the type of data of interest" .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/hasFailureEventType
-i14224:hasFailureEventType rdf:type owl:ObjectProperty ;
-                           rdfs:domain i14224:Failure ;
-                           rdfs:range i14224:TypeFailureEvent ;
-                           rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
-                           rdfs:label "hasFailureEventType" ;
+###  https://iso14224.org/ontology/i14224/rdl/hasFailureEventByType
+i14224:hasFailureEventByType rdf:type owl:ObjectProperty ;
+                             rdfs:domain i14224:Failure ;
+                             rdfs:range i14224:FailureEventByType ;
+                             rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
+                             rdfs:label "hasFailureEventByType" ;
                            skos:definition "identifies the type of failure event" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/hasMaintenanceStrategy
 i14224:hasMaintenanceStrategy rdf:type owl:ObjectProperty ;
-                              rdfs:range i14224:TypeMaintenanceStrategy ;
+                              rdfs:range i14224:MaintenanceStrategyByType ;
                               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                               rdfs:label "hasMaintenanceStrategy" ;
                               skos:definition "identifies the maintenance strategy type" .
@@ -138,7 +138,7 @@ i14224:hasMaintenanceStrategy rdf:type owl:ObjectProperty ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/hasReliabilityMeasure
 i14224:hasReliabilityMeasure rdf:type owl:ObjectProperty ;
-                             rdfs:range i14224:TypeReliabilityMeasure ;
+                             rdfs:range i14224:ReliabilityMeasureByType ;
                              rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                              rdfs:label "hasReliabilityMeasure" ;
                              skos:definition "identifies the reliability measure of interest" .
@@ -147,7 +147,7 @@ i14224:hasReliabilityMeasure rdf:type owl:ObjectProperty ;
 ###  https://iso14224.org/ontology/i14224/rdl/hasState
 i14224:hasState rdf:type owl:ObjectProperty ;
                 rdfs:domain i14224:Item ;
-                rdfs:range i14224:TypeMaterialState ;
+                rdfs:range i14224:MaterialStateByType ;
                 rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                 rdfs:label "hasState" ;
                 skos:definition "identifies the state of the item" ;
@@ -155,12 +155,12 @@ i14224:hasState rdf:type owl:ObjectProperty ;
                               "https://spec.industrialontologies.org/ontology/construct/hasMaintenanceState" .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/hasTestType
-i14224:hasTestType rdf:type owl:ObjectProperty ;
-                   rdfs:domain i14224:DetectionMethod ;
-                   rdfs:range i14224:TypeTest ;
-                   rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
-                   rdfs:label "hasTestType" ;
+###  https://iso14224.org/ontology/i14224/rdl/hasTestByType
+i14224:hasTestByType rdf:type owl:ObjectProperty ;
+                     rdfs:domain i14224:DetectionMethod ;
+                     rdfs:range i14224:TestByType ;
+                     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
+                     rdfs:label "hasTestByType" ;
                    skos:definition "identifies the reliability measure of interest" .
 
 
@@ -288,12 +288,12 @@ i14224:EquipmentClass rdf:type owl:Class ;
                       cmnsav:usageNote ""@en .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/EquipmentType
-i14224:EquipmentType rdf:type owl:Class ;
-                     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
-                     rdfs:label "Equipment type"@en ;
-                     rdfs:seeAlso ""@en ;
-                     skos:altLabel ""@en ;
+###  https://iso14224.org/ontology/i14224/rdl/EquipmentByType
+i14224:EquipmentByType rdf:type owl:Class ;
+                       rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
+                       rdfs:label "Equipment type"@en ;
+                       rdfs:seeAlso ""@en ;
+                       skos:altLabel ""@en ;
                      skos:definition "particular feature of the design which is significantly different from the other design(s) within the same equipment class"@en ;
                      skos:example ""@en ;
                      skos:scopeNote ""@en ;
@@ -933,12 +933,12 @@ i14224:Turnaround rdf:type owl:Class ;
                   cmnsav:usageNote ""@en .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/TypeData
-i14224:TypeData rdf:type owl:Class ;
-                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
-                rdfs:label "Type of data"@en ;
-                rdfs:seeAlso ""@en ;
-                skos:altLabel ""@en ;
+###  https://iso14224.org/ontology/i14224/rdl/DataByType
+i14224:DataByType rdf:type owl:Class ;
+                  rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
+                  rdfs:label "Type of data"@en ;
+                  rdfs:seeAlso ""@en ;
+                  skos:altLabel ""@en ;
                 skos:definition "label why the data is collected"@en ;
                 skos:example "reliability data, maintenance data"@en ;
                 skos:scopeNote ""@en ;
@@ -952,12 +952,12 @@ i14224:TypeData rdf:type owl:Class ;
                 cmnsav:usageNote ""@en .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/TypeFailureEvent
-i14224:TypeFailureEvent rdf:type owl:Class ;
-                        rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
-                        rdfs:label "Type of failure event"@en ;
-                        rdfs:seeAlso ""@en ;
-                        skos:altLabel ""@en ;
+###  https://iso14224.org/ontology/i14224/rdl/FailureEventByType
+i14224:FailureEventByType rdf:type owl:Class ;
+                          rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
+                          rdfs:label "Type of failure event"@en ;
+                          rdfs:seeAlso ""@en ;
+                          skos:altLabel ""@en ;
                         skos:definition "label describing the way engineers commonly describe failure events"@en ;
                         skos:example "critical, hidden, common cause"@en ;
                         skos:scopeNote ""@en ;
@@ -971,17 +971,17 @@ i14224:TypeFailureEvent rdf:type owl:Class ;
                         cmnsav:usageNote ""@en .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/TypeMaintenanceStrategy
-i14224:TypeMaintenanceStrategy rdf:type owl:Class ;
-                               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
-                               rdfs:label "Type of maintenance strategy"@en ;
-                               rdfs:seeAlso ""@en ;
-                               skos:altLabel ""@en ;
-                               skos:definition "strategy for maintenance of a specific item"@en ;
-                               skos:example "corrective maintenance, condition-based maintenance, opportunistic maintenance, planned maintenance, predictive maintenance, reactive maintenance"@en ;
-                               skos:scopeNote ""@en ;
-                               i14224:iofIRI "https://spec.industrialontologies.org/ontology/construct/MaintenanceStrategy/"^^xsd:anyURI ;
-                               i14224:en13306:definition "n/a"@en ;
+###  https://iso14224.org/ontology/i14224/rdl/MaintenanceStrategyByType
+i14224:MaintenanceStrategyByType rdf:type owl:Class ;
+                                 rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
+                                 rdfs:label "Type of maintenance strategy"@en ;
+                                 rdfs:seeAlso ""@en ;
+                                 skos:altLabel ""@en ;
+                                 skos:definition "strategy for maintenance of a specific item"@en ;
+                                 skos:example "corrective maintenance, condition-based maintenance, opportunistic maintenance, planned maintenance, predictive maintenance, reactive maintenance"@en ;
+                                 skos:scopeNote ""@en ;
+                                 i14224:iofIRI "https://spec.industrialontologies.org/ontology/construct/MaintenanceStrategy/"^^xsd:anyURI ;
+                                 i14224:en13306:definition "n/a"@en ;
                                i14224:iec60812:definition "n/a"@en ;
                                i14224:iso14224:section ""^^xsd:anyURI ;
                                cmnsav:adaptedFrom ""@en ;
@@ -990,12 +990,12 @@ i14224:TypeMaintenanceStrategy rdf:type owl:Class ;
                                cmnsav:usageNote ""@en .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/TypeMaterialState
-i14224:TypeMaterialState rdf:type owl:Class ;
-                         rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
-                         rdfs:label "Type of material state"@en ;
-                         rdfs:seeAlso ""@en ;
-                         skos:altLabel ""@en ;
+###  https://iso14224.org/ontology/i14224/rdl/MaterialStateByType
+i14224:MaterialStateByType rdf:type owl:Class ;
+                           rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
+                           rdfs:label "Type of material state"@en ;
+                           rdfs:seeAlso ""@en ;
+                           skos:altLabel ""@en ;
                          skos:definition "process in which a material entity (item) that participates in the process has a condition that remains unchanged"@en ;
                          skos:example ""@en ;
                          skos:scopeNote ""@en ;
@@ -1009,17 +1009,17 @@ i14224:TypeMaterialState rdf:type owl:Class ;
                          cmnsav:usageNote ""@en .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/TypeReliabilityMeasure
-i14224:TypeReliabilityMeasure rdf:type owl:Class ;
-                              rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
-                              rdfs:label "Type of reliability measure"@en ;
-                              rdfs:seeAlso ""@en ;
-                              skos:altLabel ""@en ;
-                              skos:definition "measure of a reliability-related performance of an item "@en ;
-                              skos:example "reliability, maintainability, availability"@en ;
-                              skos:scopeNote ""@en ;
-                              i14224:iofIRI ""^^xsd:anyURI ;
-                              i14224:en13306:definition "n/a"@en ;
+###  https://iso14224.org/ontology/i14224/rdl/ReliabilityMeasureByType
+i14224:ReliabilityMeasureByType rdf:type owl:Class ;
+                                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
+                                rdfs:label "Type of reliability measure"@en ;
+                                rdfs:seeAlso ""@en ;
+                                skos:altLabel ""@en ;
+                                skos:definition "measure of a reliability-related performance of an item "@en ;
+                                skos:example "reliability, maintainability, availability"@en ;
+                                skos:scopeNote ""@en ;
+                                i14224:iofIRI ""^^xsd:anyURI ;
+                                i14224:en13306:definition "n/a"@en ;
                               i14224:iec60812:definition "n/a"@en ;
                               i14224:iso14224:section ""^^xsd:anyURI ;
                               cmnsav:adaptedFrom ""@en ;
@@ -1028,12 +1028,12 @@ i14224:TypeReliabilityMeasure rdf:type owl:Class ;
                               cmnsav:usageNote ""@en .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/TypeTest
-i14224:TypeTest rdf:type owl:Class ;
-                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
-                rdfs:label "Type of test"@en ;
-                rdfs:seeAlso ""@en ;
-                skos:altLabel ""@en ;
+###  https://iso14224.org/ontology/i14224/rdl/TestByType
+i14224:TestByType rdf:type owl:Class ;
+                  rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
+                  rdfs:label "Type of test"@en ;
+                  rdfs:seeAlso ""@en ;
+                  skos:altLabel ""@en ;
                 skos:definition "label describing the nature of a test"@en ;
                 skos:example "on demand test, periodic test"@en ;
                 skos:scopeNote ""@en ;
@@ -1093,7 +1093,7 @@ i14224:zz_OutOfScope rdf:type owl:Class ;
 
 ###  https://iso14224.org/ontology/i14224/rdl/active_maintenance_time
 i14224:active_maintenance_time rdf:type owl:NamedIndividual ,
-                                        i14224:TypeReliabilityMeasure ;
+                                        i14224:ReliabilityMeasureByType ;
                                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                rdfs:label "active maintenance time"@en ;
                                rdfs:seeAlso ""@en ;
@@ -1111,7 +1111,7 @@ i14224:active_maintenance_time rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/active_repair_time
 i14224:active_repair_time rdf:type owl:NamedIndividual ,
-                                   i14224:TypeReliabilityMeasure ;
+                                   i14224:ReliabilityMeasureByType ;
                           rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                           rdfs:label "active repair time"@en ;
                           rdfs:seeAlso ""@en ;
@@ -1129,7 +1129,7 @@ i14224:active_repair_time rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/availability
 i14224:availability rdf:type owl:NamedIndividual ,
-                             i14224:TypeReliabilityMeasure ;
+                             i14224:ReliabilityMeasureByType ;
                     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                     rdfs:label "availability"@en ;
                     rdfs:seeAlso ""@en ;
@@ -1147,7 +1147,7 @@ i14224:availability rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/common_cause_failure
 i14224:common_cause_failure rdf:type owl:NamedIndividual ,
-                                     i14224:TypeFailureEvent ;
+                                     i14224:FailureEventByType ;
                             rdfs:label "common cause failure"@en ;
                             rdfs:seeAlso ""@en ;
                             skos:altLabel ""@en ;
@@ -1164,7 +1164,7 @@ i14224:common_cause_failure rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/common_mode_failure
 i14224:common_mode_failure rdf:type owl:NamedIndividual ,
-                                    i14224:TypeFailureEvent ;
+                                    i14224:FailureEventByType ;
                            rdfs:label "common mode failure"@en ;
                            rdfs:seeAlso ""@en ;
                            skos:altLabel ""@en ;
@@ -1181,7 +1181,7 @@ i14224:common_mode_failure rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/condition_based_maintenance
 i14224:condition_based_maintenance rdf:type owl:NamedIndividual ,
-                                            i14224:TypeMaintenanceStrategy ;
+                                            i14224:MaintenanceStrategyByType ;
                                    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                    rdfs:label "condition based maintenance" ;
                                    rdfs:seeAlso ""@en ;
@@ -1199,7 +1199,7 @@ i14224:condition_based_maintenance rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/corrective_maintenance
 i14224:corrective_maintenance rdf:type owl:NamedIndividual ,
-                                       i14224:TypeMaintenanceStrategy ;
+                                       i14224:MaintenanceStrategyByType ;
                               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                               rdfs:label "corrective maintenance"@en ;
                               rdfs:seeAlso ""@en ;
@@ -1217,7 +1217,7 @@ i14224:corrective_maintenance rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/critical_failure
 i14224:critical_failure rdf:type owl:NamedIndividual ,
-                                 i14224:TypeFailureEvent ;
+                                 i14224:FailureEventByType ;
                         rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                         rdfs:label "critical failure"@en ;
                         rdfs:seeAlso ""@en ;
@@ -1236,7 +1236,7 @@ i14224:critical_failure rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/degraded_failure
 i14224:degraded_failure rdf:type owl:NamedIndividual ,
-                                 i14224:TypeFailureEvent ;
+                                 i14224:FailureEventByType ;
                         rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                         rdfs:label "degraded failure"@en ;
                         rdfs:seeAlso ""@en ;
@@ -1256,7 +1256,7 @@ i14224:degraded_failure rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/demand
 i14224:demand rdf:type owl:NamedIndividual ,
-                       i14224:TypeTest ;
+                       i14224:TestByType ;
               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
               rdfs:label "demand"@en ;
               rdfs:seeAlso ""@en ;
@@ -1274,7 +1274,7 @@ i14224:demand rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/down_state
 i14224:down_state rdf:type owl:NamedIndividual ,
-                           i14224:TypeMaterialState ;
+                           i14224:MaterialStateByType ;
                   rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                   rdfs:label "down state"@en ;
                   rdfs:seeAlso ""@en ;
@@ -1295,7 +1295,7 @@ i14224:down_state rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/equipment_data
 i14224:equipment_data rdf:type owl:NamedIndividual ,
-                               i14224:TypeData ;
+                               i14224:DataByType ;
                       rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                       rdfs:label "equipment data"@en ;
                       rdfs:seeAlso ""@en ;
@@ -1313,7 +1313,7 @@ i14224:equipment_data rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_data
 i14224:failure_data rdf:type owl:NamedIndividual ,
-                             i14224:TypeData ;
+                             i14224:DataByType ;
                     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                     rdfs:label "failure data"@en ;
                     rdfs:seeAlso ""@en ;
@@ -1331,7 +1331,7 @@ i14224:failure_data rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_due_to_demand
 i14224:failure_due_to_demand rdf:type owl:NamedIndividual ,
-                                      i14224:TypeFailureEvent ;
+                                      i14224:FailureEventByType ;
                              rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                              rdfs:label "failure due to demand"@en ;
                              rdfs:seeAlso ""@en ;
@@ -1349,7 +1349,7 @@ i14224:failure_due_to_demand rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_frequency
 i14224:failure_frequency rdf:type owl:NamedIndividual ,
-                                  i14224:TypeReliabilityMeasure ;
+                                  i14224:ReliabilityMeasureByType ;
                          rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                          rdfs:label "failure frequency"@en ;
                          rdfs:seeAlso ""@en ;
@@ -1367,7 +1367,7 @@ i14224:failure_frequency rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_on_demand
 i14224:failure_on_demand rdf:type owl:NamedIndividual ,
-                                  i14224:TypeFailureEvent ;
+                                  i14224:FailureEventByType ;
                          rdfs:label "failure on demand"@en ;
                          rdfs:seeAlso ""@en ;
                          skos:altLabel ""@en ;
@@ -1385,7 +1385,7 @@ i14224:failure_on_demand rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/failure_rate
 i14224:failure_rate rdf:type owl:NamedIndividual ,
-                             i14224:TypeReliabilityMeasure ;
+                             i14224:ReliabilityMeasureByType ;
                     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                     rdfs:label "failure rate"@en ;
                     rdfs:seeAlso ""@en ;
@@ -1403,7 +1403,7 @@ i14224:failure_rate rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/generic_reliability_data
 i14224:generic_reliability_data rdf:type owl:NamedIndividual ,
-                                         i14224:TypeData ;
+                                         i14224:DataByType ;
                                 rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                 rdfs:label "failure frequency"@en ;
                                 rdfs:seeAlso ""@en ;
@@ -1421,7 +1421,7 @@ i14224:generic_reliability_data rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/hidden_failure
 i14224:hidden_failure rdf:type owl:NamedIndividual ,
-                               i14224:TypeFailureEvent ;
+                               i14224:FailureEventByType ;
                       rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                       rdfs:label "hidden failure"@en ;
                       rdfs:seeAlso ""@en ;
@@ -1439,7 +1439,7 @@ i14224:hidden_failure rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/idle_state
 i14224:idle_state rdf:type owl:NamedIndividual ,
-                           i14224:TypeMaterialState ;
+                           i14224:MaterialStateByType ;
                   rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                   rdfs:label "idle state"@en ;
                   rdfs:seeAlso ""@en ;
@@ -1458,7 +1458,7 @@ i14224:idle_state rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/incipient_failure
 i14224:incipient_failure rdf:type owl:NamedIndividual ,
-                                  i14224:TypeFailureEvent ;
+                                  i14224:FailureEventByType ;
                          rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                          rdfs:label "incipient failure"@en ;
                          rdfs:seeAlso ""@en ;
@@ -1476,7 +1476,7 @@ i14224:incipient_failure rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/integrity
 i14224:integrity rdf:type owl:NamedIndividual ,
-                          i14224:TypeReliabilityMeasure ;
+                          i14224:ReliabilityMeasureByType ;
                  rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                  rdfs:label "integrity"@en ;
                  rdfs:seeAlso ""@en ;
@@ -1494,7 +1494,7 @@ i14224:integrity rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/logistic_delay
 i14224:logistic_delay rdf:type owl:NamedIndividual ,
-                               i14224:TypeReliabilityMeasure ;
+                               i14224:ReliabilityMeasureByType ;
                       rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                       rdfs:label "Logistic delay"@en ;
                       rdfs:seeAlso ""@en ;
@@ -1512,7 +1512,7 @@ i14224:logistic_delay rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/maintenance_data
 i14224:maintenance_data rdf:type owl:NamedIndividual ,
-                                 i14224:TypeData ;
+                                 i14224:DataByType ;
                         rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                         rdfs:label "maintenance data"@en ;
                         rdfs:seeAlso ""@en ;
@@ -1530,7 +1530,7 @@ i14224:maintenance_data rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/maintenance_supportability
 i14224:maintenance_supportability rdf:type owl:NamedIndividual ,
-                                           i14224:TypeReliabilityMeasure ;
+                                           i14224:ReliabilityMeasureByType ;
                                   rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                   rdfs:label "maintenance supportability"@en ;
                                   rdfs:seeAlso ""@en ;
@@ -1548,7 +1548,7 @@ i14224:maintenance_supportability rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/mean_active_repair_time
 i14224:mean_active_repair_time rdf:type owl:NamedIndividual ,
-                                        i14224:TypeReliabilityMeasure ;
+                                        i14224:ReliabilityMeasureByType ;
                                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                rdfs:label "mean cycles to failure"@en ;
                                rdfs:seeAlso ""@en ;
@@ -1566,7 +1566,7 @@ i14224:mean_active_repair_time rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/mean_cycles_to_failure
 i14224:mean_cycles_to_failure rdf:type owl:NamedIndividual ,
-                                       i14224:TypeReliabilityMeasure ;
+                                       i14224:ReliabilityMeasureByType ;
                               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                               rdfs:label "mean cycles to failure"@en ;
                               rdfs:seeAlso ""@en ;
@@ -1584,7 +1584,7 @@ i14224:mean_cycles_to_failure rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/mean_elapsed_time_between_failures
 i14224:mean_elapsed_time_between_failures rdf:type owl:NamedIndividual ,
-                                                   i14224:TypeReliabilityMeasure ;
+                                                   i14224:ReliabilityMeasureByType ;
                                           rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                           rdfs:label "mean elapsed time between failures"@en ;
                                           rdfs:seeAlso ""@en ;
@@ -1602,7 +1602,7 @@ i14224:mean_elapsed_time_between_failures rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/mean_number_of_cycles
 i14224:mean_number_of_cycles rdf:type owl:NamedIndividual ,
-                                      i14224:TypeReliabilityMeasure ;
+                                      i14224:ReliabilityMeasureByType ;
                              rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                              rdfs:label "mean number of cycles"@en ;
                              rdfs:seeAlso ""@en ;
@@ -1620,7 +1620,7 @@ i14224:mean_number_of_cycles rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/mean_overall_repairing_time
 i14224:mean_overall_repairing_time rdf:type owl:NamedIndividual ,
-                                            i14224:TypeReliabilityMeasure ;
+                                            i14224:ReliabilityMeasureByType ;
                                    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                    rdfs:label "mean overall repairing time"@en ;
                                    rdfs:seeAlso ""@en ;
@@ -1638,7 +1638,7 @@ i14224:mean_overall_repairing_time rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/mean_time_to_failure
 i14224:mean_time_to_failure rdf:type owl:NamedIndividual ,
-                                     i14224:TypeReliabilityMeasure ;
+                                     i14224:ReliabilityMeasureByType ;
                             rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                             rdfs:label "mean time to failure"@en ;
                             rdfs:seeAlso ""@en ;
@@ -1656,7 +1656,7 @@ i14224:mean_time_to_failure rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/mean_time_to_repair
 i14224:mean_time_to_repair rdf:type owl:NamedIndividual ,
-                                    i14224:TypeReliabilityMeasure ;
+                                    i14224:ReliabilityMeasureByType ;
                            rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                            rdfs:label "mean time to repair"@en ;
                            rdfs:seeAlso ""@en ;
@@ -1674,7 +1674,7 @@ i14224:mean_time_to_repair rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/mean_time_to_restoration
 i14224:mean_time_to_restoration rdf:type owl:NamedIndividual ,
-                                         i14224:TypeReliabilityMeasure ;
+                                         i14224:ReliabilityMeasureByType ;
                                 rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                 rdfs:label "mean time to restoration"@en ;
                                 rdfs:seeAlso ""@en ;
@@ -1692,7 +1692,7 @@ i14224:mean_time_to_restoration rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/mobilization_time
 i14224:mobilization_time rdf:type owl:NamedIndividual ,
-                                  i14224:TypeReliabilityMeasure ;
+                                  i14224:ReliabilityMeasureByType ;
                          rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                          rdfs:label "mobilization time"@en ;
                          rdfs:seeAlso ""@en ;
@@ -1710,7 +1710,7 @@ i14224:mobilization_time rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/non_critical_failure
 i14224:non_critical_failure rdf:type owl:NamedIndividual ,
-                                     i14224:TypeFailureEvent ;
+                                     i14224:FailureEventByType ;
                             rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                             rdfs:label "non-critical failure"@en ;
                             rdfs:seeAlso ""@en ;
@@ -1728,7 +1728,7 @@ i14224:non_critical_failure rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/operating_state
 i14224:operating_state rdf:type owl:NamedIndividual ,
-                                i14224:TypeMaterialState ;
+                                i14224:MaterialStateByType ;
                        rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                        rdfs:label "operating state"@en ;
                        rdfs:seeAlso ""@en ;
@@ -1747,7 +1747,7 @@ i14224:operating_state rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/operating_time_time
 i14224:operating_time_time rdf:type owl:NamedIndividual ,
-                                    i14224:TypeReliabilityMeasure ;
+                                    i14224:ReliabilityMeasureByType ;
                            rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                            rdfs:label "operating time"@en ;
                            rdfs:seeAlso ""@en ;
@@ -1765,7 +1765,7 @@ i14224:operating_time_time rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/opportunity_maintenance
 i14224:opportunity_maintenance rdf:type owl:NamedIndividual ,
-                                        i14224:TypeMaintenanceStrategy ;
+                                        i14224:MaintenanceStrategyByType ;
                                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                rdfs:label "opportunity maintenance" ;
                                rdfs:seeAlso ""@en ;
@@ -1783,7 +1783,7 @@ i14224:opportunity_maintenance rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/periodic_test
 i14224:periodic_test rdf:type owl:NamedIndividual ,
-                              i14224:TypeTest ;
+                              i14224:TestByType ;
                      rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                      rdfs:label "periodic test"@en ;
                      rdfs:seeAlso ""@en ;
@@ -1801,7 +1801,7 @@ i14224:periodic_test rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/planned_maintenance
 i14224:planned_maintenance rdf:type owl:NamedIndividual ,
-                                    i14224:TypeMaintenanceStrategy ;
+                                    i14224:MaintenanceStrategyByType ;
                            rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                            rdfs:label "planned maintenance"@en ;
                            rdfs:seeAlso ""@en ;
@@ -1820,7 +1820,7 @@ i14224:planned_maintenance rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/predictive_maintenance
 i14224:predictive_maintenance rdf:type owl:NamedIndividual ,
-                                       i14224:TypeMaintenanceStrategy ;
+                                       i14224:MaintenanceStrategyByType ;
                               rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                               rdfs:label "predictive maintenance"@en ;
                               rdfs:seeAlso ""@en ;
@@ -1839,7 +1839,7 @@ i14224:predictive_maintenance rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/preventative_maintenance
 i14224:preventative_maintenance rdf:type owl:NamedIndividual ,
-                                         i14224:TypeMaintenanceStrategy ;
+                                         i14224:MaintenanceStrategyByType ;
                                 rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                 rdfs:label "preventative maintenance"@en ;
                                 rdfs:seeAlso ""@en ;
@@ -1857,7 +1857,7 @@ i14224:preventative_maintenance rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/random_failure
 i14224:random_failure rdf:type owl:NamedIndividual ,
-                               i14224:TypeFailureEvent ;
+                               i14224:FailureEventByType ;
                       rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                       rdfs:label "random failure"@en ;
                       rdfs:seeAlso ""@en ;
@@ -1875,7 +1875,7 @@ i14224:random_failure rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/reliability
 i14224:reliability rdf:type owl:NamedIndividual ,
-                            i14224:TypeReliabilityMeasure ;
+                            i14224:ReliabilityMeasureByType ;
                    rdfs:label "reliability"@en ;
                    rdfs:seeAlso ""@en ;
                    skos:altLabel "PDM"@en ;
@@ -1892,7 +1892,7 @@ i14224:reliability rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/reliability_data
 i14224:reliability_data rdf:type owl:NamedIndividual ,
-                                 i14224:TypeData ;
+                                 i14224:DataByType ;
                         rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                         rdfs:label "reliability data"@en ;
                         rdfs:seeAlso ""@en ;
@@ -1910,7 +1910,7 @@ i14224:reliability_data rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/safety_critical_failure
 i14224:safety_critical_failure rdf:type owl:NamedIndividual ,
-                                        i14224:TypeFailureEvent ;
+                                        i14224:FailureEventByType ;
                                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                                rdfs:label "safety critical failure"@en ;
                                rdfs:seeAlso ""@en ;
@@ -1928,7 +1928,7 @@ i14224:safety_critical_failure rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/surveillance_period
 i14224:surveillance_period rdf:type owl:NamedIndividual ,
-                                    i14224:TypeReliabilityMeasure ;
+                                    i14224:ReliabilityMeasureByType ;
                            rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                            rdfs:label "surveillance period"@en ;
                            rdfs:seeAlso ""@en ;
@@ -1946,7 +1946,7 @@ i14224:surveillance_period rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/systematic_failure
 i14224:systematic_failure rdf:type owl:NamedIndividual ,
-                                   i14224:TypeFailureEvent ;
+                                   i14224:FailureEventByType ;
                           rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                           rdfs:label "systematic failure"@en ;
                           rdfs:seeAlso ""@en ;
@@ -1964,7 +1964,7 @@ i14224:systematic_failure rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/trip
 i14224:trip rdf:type owl:NamedIndividual ,
-                     i14224:TypeFailureEvent ;
+                     i14224:FailureEventByType ;
             rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
             rdfs:label "trip"@en ;
             rdfs:seeAlso ""@en ;
@@ -1982,7 +1982,7 @@ i14224:trip rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/up_state
 i14224:up_state rdf:type owl:NamedIndividual ,
-                         i14224:TypeMaterialState ;
+                         i14224:MaterialStateByType ;
                 rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                 rdfs:label "up state"@en ;
                 rdfs:seeAlso ""@en ;
@@ -2000,7 +2000,7 @@ i14224:up_state rdf:type owl:NamedIndividual ,
 
 ###  https://iso14224.org/ontology/i14224/rdl/up_time
 i14224:up_time rdf:type owl:NamedIndividual ,
-                        i14224:TypeReliabilityMeasure ;
+                        i14224:ReliabilityMeasureByType ;
                rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/clause3> ;
                rdfs:label "up time"@en ;
                rdfs:seeAlso ""@en ;
