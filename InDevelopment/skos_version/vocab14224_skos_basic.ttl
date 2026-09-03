@@ -12,48 +12,58 @@ i14224skos:StandardISO14224 a skos:ConceptScheme;
 
 # New terms added to create SKOS Collections
 
-i14224skos:TypeTest a skos:Collection ;
+i14224skos:TestType a skos:Collection ;
     skos:altLabel ""@en ;
     skos:definition "label describing the nature of a test"@en ;
     skos:example "on demand test, periodic test"@en ;
     skos:inScheme i14224skos:StandardISO14224;
     skos:prefLabel "type of test"@en ;
-    skos:scopeNote ""@en .
+    skos:member
+        i14224skos:Demand,
+        i14224skos:Periodic .
 
 
-i14224skos:TypeMaterialState a skos:Collection ;
+i14224skos:EquipmentStateTerms a skos:Collection ;
     skos:altLabel ""@en ;
     skos:definition "process in which a material entity (item) that participates in the process has a condition that remains unchanged"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
-    skos:prefLabel "type of material state"@en ;
-    skos:scopeNote ""@en .
+    skos:prefLabel "equipment state terms"@en ;
+    skos:member
+        i14224skos:DownState,
+        i14224skos:IdleState,
+        i14224skos:OperatingState,
+        i14224skos:UpState .
 
-
-i14224skos:TypeData a skos:Collection ;
+i14224skos:EquipmentReliabilityDataType a skos:Collection ;
     skos:altLabel ""@en ;
     skos:definition "label why the data is collected"@en ;
     skos:example "reliability data, maintenance data"@en ;
     skos:inScheme i14224skos:StandardISO14224;
-    skos:prefLabel "type of data"@en ;
-    skos:scopeNote ""@en .
+    skos:prefLabel "equipment reliability data terms"@en ;
+    skos:member
+      i14224skos:EquipmentData,
+      i14224skos:FailureData,
+      i14224skos:GenericReliabilityData,
+      i14224skos:MaintenanceData,
+      i14224skos:ReliabilityData .
 
 
-i14224skos:TypeMaintenanceStrategy a skos:Collection ;
+i14224skos:MaintenanceStrategyTerms a skos:Collection ;
     skos:altLabel ""@en ;
     skos:definition "strategy for maintenance of a specific item"@en ;
     skos:example "corrective maintenance, condition-based maintenance, opportunistic maintenance, planned maintenance, predictive maintenance, reactive maintenance"@en ;
     skos:inScheme i14224skos:StandardISO14224;
-    skos:prefLabel "type of maintenance strategy"@en ;
+    skos:prefLabel "maintenance strategy terms"@en ;
     skos:scopeNote ""@en .
 
 
-i14224skos:TypeFailureEvent a skos:Collection ;
+i14224skos:FailureEventTypeTerms a skos:Collection ;
     skos:altLabel ""@en ;
     skos:definition "label describing the way engineers commonly describe failure events"@en ;
     skos:example "critical, hidden, common cause"@en ;
     skos:inScheme i14224skos:StandardISO14224;
-    skos:prefLabel "type of failure event"@en ;
+    skos:prefLabel "failure event type terms"@en ;
     skos:scopeNote ""@en .
 
 
@@ -185,7 +195,6 @@ i14224skos:DegradedFailure a skos:Concept ;
 
 i14224skos:Demand a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeTest ;
     skos:definition "activation of the function (includes functional, operational and test activations)"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -246,7 +255,6 @@ i14224skos:EquipmentClass a skos:Concept ;
 
 i14224skos:EquipmentData a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeData ;
     skos:definition "technical, operational and environmental parameters characterizing the design and use of an equipment unit"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -296,7 +304,6 @@ i14224skos:FailureCause a skos:Concept ;
 
 i14224skos:FailureData a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeData ;
     skos:definition "data characterizing the occurrence of a failure event"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -373,11 +380,10 @@ i14224skos:Fault a skos:Concept ;
 
 i14224skos:GenericReliabilityData a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeData ;
     skos:definition "reliability data covering families of similar equipment"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
-    skos:prefLabel "failure frequency"@en ;
+    skos:prefLabel "generic reliability data"@en ;
     skos:scopeNote ""@en .
 
 i14224skos:HiddenFailure a skos:Concept ;
@@ -517,7 +523,6 @@ i14224skos:MaintenanceConcept a skos:Concept ;
 
 i14224skos:MaintenanceData a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeData ;
     skos:definition "data characterizing the maintenance action planned or done"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -709,7 +714,6 @@ i14224skos:PerformanceRequirement a skos:Concept ;
 
 i14224skos:PeriodicTest a skos:Concept ;
     skos:altLabel "proof test"@en ;
-    skos:broader i14224skos:TypeTest ;
     skos:definition "planned operation performed at constant intervals in order to detect the potential hidden failures which can have occurred in the meantime "@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -780,7 +784,6 @@ i14224skos:Reliability a skos:Concept ;
 
 i14224skos:ReliabilityData a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeData ;
     skos:definition "data for reliability, maintainability and maintenance support performance"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -926,55 +929,100 @@ i14224skos:Uncertainty a skos:Concept ;
 # Collections
 
 i14224skos:Clause3TermsAndDefinition a skos:Collection ;
-    skos:member i14224skos:Boundary,
+    skos:member 
+        i14224skos:ActiveMaintenanceTime,
+        i14224skos:ActiveRepairTime,
+        i14224skos:Availability,
+        i14224skos:Boundary,
+        i14224skos:CommonCauseFailures,
+        i14224skos:CommonModeFailures,
+        i14224skos:ConditionBasedMaintenance,
+        i14224skos:CorrectiveMaintenance, 
+        i14224skos:CriticalFailure,
         i14224skos:Cycle,
+        i14224skos:DegradedFailure,
+        i14224skos:Demand,
         i14224skos:DesignLife,
         i14224skos:DetectionMethod,
+        i14224skos:DownState,
+        i14224skos:DownTime,
         i14224skos:Downstream,
-        i14224skos:Downtime,
         i14224skos:EquipmentClass,
         i14224skos:EquipmentType,
         i14224skos:EquipmentUnit,
         i14224skos:Error,
         i14224skos:Failure,
         i14224skos:FailureCause,
+        i14224skos:FailureData,
+        i14224skos:FailureDueToDemand,
+        i14224skos:FailureFrequency,
         i14224skos:FailureImpact,
         i14224skos:FailureMechanism,
         i14224skos:FailureMode,
+        i14224skos:FailureOnDemand,
+        i14224skos:FailureRate,
         i14224skos:Fault,
+        i14224skos:GenericReliabilityData,
+        i14224skos:HiddenFailure,
+        i14224skos:HumanError,
         i14224skos:HumanFatigue,
+        i14224skos:IdleState,
         i14224skos:IdleTime,
+        i14224skos:IncipientFailure,
         i14224skos:IndentureLevel,
         i14224skos:Item,
+        i14224skos:LatentFault,
         i14224skos:LifeCycle,
+        i14224skos:LogisticDelay,
+        i14224skos:Maintainability,
         i14224skos:MaintainableItem,
         i14224skos:Maintenance,
         i14224skos:MaintenanceConcept,
+        i14224skos:MaintenanceData,
         i14224skos:MaintenanceImpact,
         i14224skos:MaintenanceManHours,
         i14224skos:MaintenancePlan,
         i14224skos:MaintenanceRecord,
+        i14224skos:MaintenanceSupportability,
+        i14224skos:MeanCyclesToFailure,
+        i14224skos:MeanNumberOfCycles,
+        i14224skos:MeanActiveRepairTime, 
+        i14224skos:MeanElapsedTimeBetweenFailures,
+        i14224skos:MeanOverallRepairingTime,
+        i14224skos:MeanTimeToFailure,
+        i14224skos:MeanTimeToRepair,
+        i14224skos:MeanTimeToRestoration,
         i14224skos:Midstream,
+        i14224skos:MobilizationTime,
         i14224skos:Modification,
+        i14224skos:NonCriticalFailure,
+        i14224skos:OperatingState,
+        i14224skos:OperatingTime,
+        i14224skos:OpportunityMaintenance,
         i14224skos:PerformanceObjective,
         i14224skos:PerformanceRequirement,
+        i14224skos:PeriodicTest,
         i14224skos:Petrochemical,
+        i14224skos:PlannedMaintenance,
+        i14224skos:PredictiveMaintenance,
+        i14224skos:RandomFailure,
         i14224skos:Redundancy,
+        i14224skos:Reliability,
+        i14224skos:ReliabilityData,
         i14224skos:RequiredFunction,
         i14224skos:SafetyCriticalEquipment,
+        i14224skos:SafetyCriticalFailure,
         i14224skos:SafetySystem,
+        i14224skos:SoftwareError,
         i14224skos:SubUnit,
+        i14224skos:SurveillancePeriod,
+        i14224skos:SystematicFailure,
         i14224skos:TagNumber,
         i14224skos:Taxonomy,
         i14224skos:Turnaround,
-        i14224skos:TypeData,
-        i14224skos:TypeFailureEvent,
-        i14224skos:TypeMaintenanceStrategy,
-        i14224skos:TypeMaterialState,
-        i14224skos:TypeReliabilityMeasure,
-        i14224skos:TypeTest,
         i14224skos:Uncertainty,
-        i14224skos:Upstream,
-        i14224skos:ZzOutOfScope ;
+        i14224skos:UpState,
+        i14224skos:UpTime,
+        i14224skos:Upstream;
     skos:prefLabel "iso 14224 clause 3 terms and definition collection"@en .
 
