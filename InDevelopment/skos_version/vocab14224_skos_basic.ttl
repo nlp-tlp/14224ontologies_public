@@ -20,7 +20,7 @@ i14224skos:TestType a skos:Collection ;
     skos:prefLabel "type of test"@en ;
     skos:member
         i14224skos:Demand,
-        i14224skos:Periodic .
+        i14224skos:PeriodicTest .
 
 
 i14224skos:EquipmentStateTerms a skos:Collection ;
@@ -68,10 +68,10 @@ i14224skos:MaintenanceStrategyTerms a skos:Collection ;
         skos:member
         i14224skos:ConditionBasedMaintenance,
         i14224skos:CorrectiveMaintenance,
-        i14224skos:OpportunisticMaintenance,
+        i14224skos:OpportunityMaintenance,
         i14224skos:PlannedMaintenance,
-        i14224skos:PredictiveMaintenance,
-        i14224skos:ReactiveMaintenance .
+        i14224skos:PredictiveMaintenance.
+
       
 
 
@@ -116,7 +116,7 @@ i14224skos:ReliabilityMeasureTerms a skos:Collection ;
         i14224skos:MeanCyclesToFailure ,
         i14224skos:MeanNumberOfCycles ,
         i14224skos:MeanActiveRepairTime ,
-        i14224skos:MeanElapsedTime ,
+        i14224skos:MeanElapsedTimeBetweenFailures ,
         i14224skos:MeanOverallRepairingTime ,
         i14224skos:MeanTimeToFailure ,
         i14224skos:MeanTimeToRepair ,
@@ -124,8 +124,8 @@ i14224skos:ReliabilityMeasureTerms a skos:Collection ;
         i14224skos:MobilizationTime ,
         i14224skos:OperatingTime ,
         i14224skos:Reliability ,
-        i14224skos:SurveillanceTime ,
-        i14224skos:Uptime .
+        i14224skos:SurveillancePeriod ,
+        i14224skos:UpTime .
 
 
 # Terms defined in Clause 3 of ISO 14224 (scope notes not yet added)
@@ -933,7 +933,7 @@ i14224skos:Uncertainty a skos:Concept ;
 
 # Collections
 
-i14224skos:Clause3TermsAndDefinition a skos:Collection ;
+i14224skos:Clause3TermsAndDefinitions a skos:Collection ;
     skos:member 
         i14224skos:ActiveMaintenanceTime,
         i14224skos:ActiveRepairTime,
