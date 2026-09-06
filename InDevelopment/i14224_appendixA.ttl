@@ -3510,6 +3510,7 @@ i14224:DiscretePilotHydraulicSubseaProductionControl
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:PH ;
     rdfs:seeAlso ""@en ;
+
     skos:altLabel ""@en ;
     skos:definition "class of discrete pilot hydraulic subsea production controls"@en ;
     skos:example ""@en ;

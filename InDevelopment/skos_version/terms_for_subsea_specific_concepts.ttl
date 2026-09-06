@@ -1,0 +1,874 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix i14224skos: <https://iso14224.org/skos/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+i14224skos:SubseaEquipment
+    a skos:Concept ;
+    skos:prefLabel "Subsea equipment"@en ;
+    skos:definition "Category of subsea equipment."@en .
+
+i14224skos:WellCompletionEquipment
+    a skos:Concept ;
+    skos:prefLabel "Well completion equipment"@en ;
+    skos:definition "Category of well completion equipment."@en .
+
+i14224skos:DrillingEquipment
+    a skos:Concept ;
+    skos:prefLabel "Drilling equipment"@en ;
+    skos:definition "Category of drilling equipment."@en .
+
+i14224skos:WellInterventionEquipment
+    a skos:Concept ;
+    skos:prefLabel "Well intervention equipment"@en ;
+    skos:definition "Category of well intervention equipment."@en .
+
+i14224skos:MarineEquipment
+    a skos:Concept ;
+    skos:prefLabel "Marine equipment"@en ;
+    skos:definition "Category of marine equipment."@en .
+
+i14224skos:UtilitiesEquipment
+    a skos:Concept ;
+    skos:prefLabel "Utilities equipment"@en ;
+    skos:definition "Category of utilities equipment."@en .
+
+i14224skos:AuxiliariesEquipment
+    a skos:Concept ;
+    skos:prefLabel "Auxiliaries equipment"@en ;
+    skos:definition "Category of auxiliaries equipment."@en .### https://iso14224.org/skos/DryTreeRiser
+i14224skos:DryTreeRiser
+    a skos:Concept ;
+    skos:prefLabel "Dry tree risers"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:DT ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/Riser
+i14224skos:Riser
+    a skos:Concept ;
+    skos:prefLabel "Riser"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:PR ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/SubseaCompressor
+i14224skos:SubseaCompressor
+    a skos:Concept ;
+    skos:prefLabel "Subsea compressor"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:SC ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/SubseaDivingEquipment
+i14224skos:SubseaDivingEquipment
+    a skos:Concept ;
+    skos:prefLabel "Subsea diving equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:SD ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/SubseaElectricPowerDistribution
+i14224skos:SubseaElectricPowerDistribution
+    a skos:Concept ;
+    skos:prefLabel "Subsea electric power distribution"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:ED ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/SubseaFlowline
+i14224skos:SubseaFlowline
+    a skos:Concept ;
+    skos:prefLabel "Subsea flowline"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:FL ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/SubseaHeatExchanger
+i14224skos:SubseaHeatExchanger
+    a skos:Concept ;
+    skos:prefLabel "Subsea heat exchanger"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:SH ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/Intervention
+i14224skos:Intervention
+    a skos:Concept ;
+    skos:prefLabel "Intervention"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:CI ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/SubseaManifold
+i14224skos:SubseaManifold
+    a skos:Concept ;
+    skos:prefLabel "Subsea manifold"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:MA ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/SubseaPipeline
+i14224skos:SubseaPipeline
+    a skos:Concept ;
+    skos:prefLabel "Subsea pipeline"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:SL ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/SubseaPowerCable
+i14224skos:SubseaPowerCable
+    a skos:Concept ;
+    skos:prefLabel "Subsea power cable"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:CA ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/SubseaPressureVessel
+i14224skos:SubseaPressureVessel
+    a skos:Concept ;
+    skos:prefLabel "Subsea pressure vessel"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:SV ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/SubseaProductionControl
+i14224skos:SubseaProductionControl
+    a skos:Concept ;
+    skos:prefLabel "Subsea production control"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:CS ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/SubseaPump
+i14224skos:SubseaPump
+    a skos:Concept ;
+    skos:prefLabel "Subsea pump"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:SP ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/SubseaTemplate
+i14224skos:SubseaTemplate
+    a skos:Concept ;
+    skos:prefLabel "Template"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:TM ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/SubseaIsolationEquipment
+i14224skos:SubseaIsolationEquipment
+    a skos:Concept ;
+    skos:prefLabel "Subsea isolation equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/SubseaProcessingEquipment
+i14224skos:SubseaProcessingEquipment
+    a skos:Concept ;
+    skos:prefLabel "Subsea processing equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/WellheadAndXmasTree
+i14224skos:WellheadAndXmasTree
+    a skos:Concept ;
+    skos:prefLabel "Xmas tree"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:XT ;
+    i14224skos:hasEquipmentCategory i14224skos:SubseaEquipment .
+
+### https://iso14224.org/skos/Casing
+i14224skos:Casing
+    a skos:Concept ;
+    skos:prefLabel "Casing"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellCompletionEquipment .
+
+### https://iso14224.org/skos/DownholeSafetyValve
+i14224skos:DownholeSafetyValve
+    a skos:Concept ;
+    skos:prefLabel "Downhole safety valve"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:SS ;
+    i14224skos:hasEquipmentCategory i14224skos:WellCompletionEquipment .
+
+### https://iso14224.org/skos/DownholeWellCompletion
+i14224skos:DownholeWellCompletion
+    a skos:Concept ;
+    skos:prefLabel "Downhole well completion"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:WE ;
+    i14224skos:hasEquipmentCategory i14224skos:WellCompletionEquipment .
+
+### https://iso14224.org/skos/ElectricalSubmersiblePump
+i14224skos:ElectricalSubmersiblePump
+    a skos:Concept ;
+    skos:prefLabel "Electrical submersible pump"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:ESP ;
+    i14224skos:hasEquipmentCategory i14224skos:WellCompletionEquipment .
+
+### https://iso14224.org/skos/SurfaceWellheadAndXmasTree
+i14224skos:SurfaceWellheadAndXmasTree
+    a skos:Concept ;
+    skos:prefLabel "Surface wellhead and Xmas tree"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:XD ;
+    i14224skos:hasEquipmentCategory i14224skos:WellCompletionEquipment .
+
+### https://iso14224.org/skos/DownholeSensor
+i14224skos:DownholeSensor
+    a skos:Concept ;
+    skos:prefLabel "Downhole sensor"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellCompletionEquipment .
+
+### https://iso14224.org/skos/Hanger
+i14224skos:Hanger
+    a skos:Concept ;
+    skos:prefLabel "Hanger"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellCompletionEquipment .
+
+### https://iso14224.org/skos/Packer
+i14224skos:Packer
+    a skos:Concept ;
+    skos:prefLabel "Packer"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellCompletionEquipment .
+
+### https://iso14224.org/skos/Tubing
+i14224skos:Tubing
+    a skos:Concept ;
+    skos:prefLabel "Tubing"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellCompletionEquipment .
+
+### https://iso14224.org/skos/CementingEquipment
+i14224skos:CementingEquipment
+    a skos:Concept ;
+    skos:prefLabel "Cementing equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:CG ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/ChokeAndManifold
+i14224skos:ChokeAndManifold
+    a skos:Concept ;
+    skos:prefLabel "Choke and manifold"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:DC ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/CrownAndTravellingBlock
+i14224skos:CrownAndTravellingBlock
+    a skos:Concept ;
+    skos:prefLabel "Crown and travelling block"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:TB ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/Derrick
+i14224skos:Derrick
+    a skos:Concept ;
+    skos:prefLabel "Derrick"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:DE ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/Diverter
+i14224skos:Diverter
+    a skos:Concept ;
+    skos:prefLabel "Diverter"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:DI ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/Drawworks
+i14224skos:Drawworks
+    a skos:Concept ;
+    skos:prefLabel "Drawworks"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:DW ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/DrillingAndCompletionRiser
+i14224skos:DrillingAndCompletionRiser
+    a skos:Concept ;
+    skos:prefLabel "Drilling and completion riser"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:DD ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/DrillString
+i14224skos:DrillString
+    a skos:Concept ;
+    skos:prefLabel "Drill string"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:DS ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/MudTreatmentEquipment
+i14224skos:MudTreatmentEquipment
+    a skos:Concept ;
+    skos:prefLabel "Mud treatment equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:DM ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/PipeHandlingEquipment
+i14224skos:PipeHandlingEquipment
+    a skos:Concept ;
+    skos:prefLabel "Pipe handling equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:DH ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/RiserCompensator
+i14224skos:RiserCompensator
+    a skos:Concept ;
+    skos:prefLabel "Riser compensator"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/StringMotionCompensator
+i14224skos:StringMotionCompensator
+    a skos:Concept ;
+    skos:prefLabel "String motion compensator"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:MC ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/SubseaBlowoutPreventer
+i14224skos:SubseaBlowoutPreventer
+    a skos:Concept ;
+    skos:prefLabel "Subsea blowout preventer"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:BO ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/SurfaceBlowoutPreventer
+i14224skos:SurfaceBlowoutPreventer
+    a skos:Concept ;
+    skos:prefLabel "Surface blowout preventer"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:BT ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/TopDrive
+i14224skos:TopDrive
+    a skos:Concept ;
+    skos:prefLabel "Top drive"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:TD ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/MudPump
+i14224skos:MudPump
+    a skos:Concept ;
+    skos:prefLabel "Mud pump"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:DrillingEquipment .
+
+### https://iso14224.org/skos/CoiledTubingSurfaceEquipment
+i14224skos:CoiledTubingSurfaceEquipment
+    a skos:Concept ;
+    skos:prefLabel "Coiled tubing surface equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:W1 ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/CoiledTubingSurfaceWellControlEquipment
+i14224skos:CoiledTubingSurfaceWellControlEquipment
+    a skos:Concept ;
+    skos:prefLabel "Coiled tubing surface well control equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:WC ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/CoiledTubingWorkStrings
+i14224skos:CoiledTubingWorkStrings
+    a skos:Concept ;
+    skos:prefLabel "Coiled tubing work strings"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:W2 ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/CoiledTubingStringBottomHoleAssembly
+i14224skos:CoiledTubingStringBottomHoleAssembly
+    a skos:Concept ;
+    skos:prefLabel "Coiled tubing string bottom hole assembly"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:W3 ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/CoiledTubingBOPAndControlSystem
+i14224skos:CoiledTubingBOPAndControlSystem
+    a skos:Concept ;
+    skos:prefLabel "Coiled tubing BOP and control system"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/CoiledTubingOtherPressureControlEquipmentAndSystems
+i14224skos:CoiledTubingOtherPressureControlEquipmentAndSystems
+    a skos:Concept ;
+    skos:prefLabel "Coiled tubing other pressure control equipment and systems"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/CoiledTubingStringAndElectricalBottomHoleAssembly
+i14224skos:CoiledTubingStringAndElectricalBottomHoleAssembly
+    a skos:Concept ;
+    skos:prefLabel "Coiled tubing string and electrical bottom hole assembly"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/CoiledTubingStringAndMechanicalBottomHoleAssembly
+i14224skos:CoiledTubingStringAndMechanicalBottomHoleAssembly
+    a skos:Concept ;
+    skos:prefLabel "Coiled tubing string and mechanical bottom hole assembly"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/SnubbingSurfaceEquipment
+i14224skos:SnubbingSurfaceEquipment
+    a skos:Concept ;
+    skos:prefLabel "Snubbing surface equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:W1 ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/SnubbingWorkStrings
+i14224skos:SnubbingWorkStrings
+    a skos:Concept ;
+    skos:prefLabel "Snubbing work strings"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:W2 ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/SnubbingSurfaceWellControlEquipment
+i14224skos:SnubbingSurfaceWellControlEquipment
+    a skos:Concept ;
+    skos:prefLabel "Snubbing surface well control equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:WC ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/SnubbingPipeAndBottomHoleAssembly
+i14224skos:SnubbingPipeAndBottomHoleAssembly
+    a skos:Concept ;
+    skos:prefLabel "Snubbing pipe and bottom hole assembly"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:W3 ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/SubseaWellIntervention
+i14224skos:SubseaWellIntervention
+    a skos:Concept ;
+    skos:prefLabel "Subsea well intervention"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:O1 ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/WirelineSurfaceEquipment
+i14224skos:WirelineSurfaceEquipment
+    a skos:Concept ;
+    skos:prefLabel "Wireline surface equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:W1 ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/WirelineSurfaceWellControlEquipment
+i14224skos:WirelineSurfaceWellControlEquipment
+    a skos:Concept ;
+    skos:prefLabel "Wireline surface well control equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:WC ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/WirelineSlicklineBraidedCableElectricCable
+i14224skos:WirelineSlicklineBraidedCableElectricCable
+    a skos:Concept ;
+    skos:prefLabel "Wireline slickline braided cable electric cable"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:WC ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/WirelineBottomHoleAssembly
+i14224skos:WirelineBottomHoleAssembly
+    a skos:Concept ;
+    skos:prefLabel "Wireline bottom hole assembly"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:W3 ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/RigAssistedSnubbingBOPAndControlSystem
+i14224skos:RigAssistedSnubbingBOPAndControlSystem
+    a skos:Concept ;
+    skos:prefLabel "Rig assisted snubbing b o p and control system"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/RigAssistedSnubbingRASOtherPressureControlEquipmentAndSystems
+i14224skos:RigAssistedSnubbingRASOtherPressureControlEquipmentAndSystems
+    a skos:Concept ;
+    skos:prefLabel "Rig assisted snubbing r a s other pressure control equipment and systems"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/RigAssistedSnubbingRASSurfaceEquipment
+i14224skos:RigAssistedSnubbingRASSurfaceEquipment
+    a skos:Concept ;
+    skos:prefLabel "Rig assisted snubbing r a s surface equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/RigAssistedSnubbingRASTubingAndBottomHoleAssemblies
+i14224skos:RigAssistedSnubbingRASTubingAndBottomHoleAssemblies
+    a skos:Concept ;
+    skos:prefLabel "Rig assisted snubbing r a s tubing and bottom hole assemblies"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/WirelineBOPAndControlSystem
+i14224skos:WirelineBOPAndControlSystem
+    a skos:Concept ;
+    skos:prefLabel "Wireline b o p and control system"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/WirelineElectricCableAndBottomHoleAssembly
+i14224skos:WirelineElectricCableAndBottomHoleAssembly
+    a skos:Concept ;
+    skos:prefLabel "Wireline electric cable and bottom hole assembly"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/WirelineOtherPressureControlEquipmentAndSystems
+i14224skos:WirelineOtherPressureControlEquipmentAndSystems
+    a skos:Concept ;
+    skos:prefLabel "Wireline other pressure control equipment and systems"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
+    i14224skos:hasEquipmentCategory i14224skos:WellInterventionEquipment .
+
+### https://iso14224.org/skos/AnchorWindlassAndMooringEquipment
+i14224skos:AnchorWindlassAndMooringEquipment
+    a skos:Concept ;
+    skos:prefLabel "Anchor windlass and mooring equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:AM ;
+    i14224skos:hasEquipmentCategory i14224skos:MarineEquipment .
+
+### https://iso14224.org/skos/DeIcingEquipment
+i14224skos:DeIcingEquipment
+    a skos:Concept ;
+    skos:prefLabel "De icing equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:IC ;
+    i14224skos:hasEquipmentCategory i14224skos:MarineEquipment .
+
+### https://iso14224.org/skos/DynamicPositioningEquipment
+i14224skos:DynamicPositioningEquipment
+    a skos:Concept ;
+    skos:prefLabel "Dynamic positioning equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:DP ;
+    i14224skos:hasEquipmentCategory i14224skos:MarineEquipment .
+
+### https://iso14224.org/skos/HelicopterDeckWithEquipment
+i14224skos:HelicopterDeckWithEquipment
+    a skos:Concept ;
+    skos:prefLabel "Helicopter deck with equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:HT ;
+    i14224skos:hasEquipmentCategory i14224skos:MarineEquipment .
+
+### https://iso14224.org/skos/JackingAndFixation
+i14224skos:JackingAndFixation
+    a skos:Concept ;
+    skos:prefLabel "Jacking and fixation"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:JF ;
+    i14224skos:hasEquipmentCategory i14224skos:MarineEquipment .
+
+### https://iso14224.org/skos/MarineDisconnectionEquipment
+i14224skos:MarineDisconnectionEquipment
+    a skos:Concept ;
+    skos:prefLabel "Marine disconnection equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:MD ;
+    i14224skos:hasEquipmentCategory i14224skos:MarineEquipment .
+
+### https://iso14224.org/skos/Thruster
+i14224skos:Thruster
+    a skos:Concept ;
+    skos:prefLabel "Thruster"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:TH ;
+    i14224skos:hasEquipmentCategory i14224skos:MarineEquipment .
+
+### https://iso14224.org/skos/TowingEquipment
+i14224skos:TowingEquipment
+    a skos:Concept ;
+    skos:prefLabel "Towing equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:TO ;
+    i14224skos:hasEquipmentCategory i14224skos:MarineEquipment .
+
+### https://iso14224.org/skos/AirSupplyEquipment
+i14224skos:AirSupplyEquipment
+    a skos:Concept ;
+    skos:prefLabel "Air supply equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:AI ;
+    i14224skos:hasEquipmentCategory i14224skos:UtilitiesEquipment .
+
+### https://iso14224.org/skos/DeSuperheater
+i14224skos:DeSuperheater
+    a skos:Concept ;
+    skos:prefLabel "De-superheater"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:SU ;
+    i14224skos:hasEquipmentCategory i14224skos:UtilitiesEquipment .
+
+### https://iso14224.org/skos/FlareIgnitionEquipment
+i14224skos:FlareIgnitionEquipment
+    a skos:Concept ;
+    skos:prefLabel "Flare ignition equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:FE ;
+    i14224skos:hasEquipmentCategory i14224skos:UtilitiesEquipment .
+
+### https://iso14224.org/skos/HeatingCoolingMedia
+i14224skos:HeatingCoolingMedia
+    a skos:Concept ;
+    skos:prefLabel "Heating cooling media"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:HC ;
+    i14224skos:hasEquipmentCategory i14224skos:UtilitiesEquipment .
+
+### https://iso14224.org/skos/HydraulicPowerUnit
+i14224skos:HydraulicPowerUnit
+    a skos:Concept ;
+    skos:prefLabel "Hydraulic power unit"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:HP ;
+    i14224skos:hasEquipmentCategory i14224skos:UtilitiesEquipment .
+
+### https://iso14224.org/skos/NitrogenSupplyEquipment
+i14224skos:NitrogenSupplyEquipment
+    a skos:Concept ;
+    skos:prefLabel "Nitrogen supply equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:NNI ;
+    i14224skos:hasEquipmentCategory i14224skos:UtilitiesEquipment .
+
+### https://iso14224.org/skos/OpenCloseDrainEquipment
+i14224skos:OpenCloseDrainEquipment
+    a skos:Concept ;
+    skos:prefLabel "Open close drain equipment"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:OC ;
+    i14224skos:hasEquipmentCategory i14224skos:UtilitiesEquipment .
+
+### https://iso14224.org/skos/HVAC
+i14224skos:HVAC
+    a skos:Concept ;
+    skos:prefLabel "H v a c"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:HV ;
+    i14224skos:hasEquipmentCategory i14224skos:AuxiliariesEquipment .
