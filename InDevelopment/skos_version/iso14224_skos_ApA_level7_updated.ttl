@@ -138,6 +138,7 @@ i14224skos:EquipmentCategory
     i14224skos:Electrical,
     i14224skos:SafetyAndControl.
 
+### note subsea specific terms not included here.
 
 i14224skos:RotatingEquipment
     a skos:Concept ;
@@ -178,6 +179,17 @@ i14224skos:BlowerAndFan
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
     i14224skos:hasEquipmentCode i14224skos:BL ;
     i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
+
+### https://iso14224.org/skos/Centrifuge
+i14224skos:Centrifuge
+    a skos:Concept ;
+    skos:prefLabel "Centrifuge"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:CF ;
+    i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
+
 
 ### https://iso14224.org/skos/CombustionEngine
 i14224skos:CombustionEngine
@@ -281,6 +293,16 @@ i14224skos:Turboexpander
 
 ### Mechanical equipment category    
 
+### https://iso14224.org/skos/ConveyorAndElevator
+i14224skos:ConveyorAndElevator
+    a skos:Concept ;
+    skos:prefLabel "Conveyor and elevator"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:CV ;
+    i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
+
 ### https://iso14224.org/skos/Crane
 i14224skos:Crane
     a skos:Concept ;
@@ -351,6 +373,26 @@ i14224skos:Piping
     i14224skos:hasEquipmentCode i14224skos:PI ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
+### https://iso14224.org/skos/PressureVessel
+i14224skos:PressureVessel
+    a skos:Concept ;
+    skos:prefLabel "Pressure vessel"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:VE ;
+    i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
+
+### https://iso14224.org/skos/Silo
+i14224skos:Silo
+    a skos:Concept ;
+    skos:prefLabel "Silo"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
+    i14224skos:taxonomicLevelNumber "Level 6" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    i14224skos:hasEquipmentCode i14224skos:SI ;
+    i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
+
 ### https://iso14224.org/skos/SteamEjector
 i14224skos:SteamEjector
     a skos:Concept ;
@@ -391,16 +433,6 @@ i14224skos:Turret
     i14224skos:hasEquipmentCode i14224skos:TU ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
-### https://iso14224.org/skos/Vessel
-i14224skos:Vessel
-    a skos:Concept ;
-    skos:prefLabel "Vessel"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
-    i14224skos:taxonomicLevelNumber "Level 6" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    i14224skos:hasEquipmentCode i14224skos:VE ;
-    i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
-
 ### https://iso14224.org/skos/Winch
 i14224skos:Winch
     a skos:Concept ;
@@ -409,16 +441,6 @@ i14224skos:Winch
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
     i14224skos:hasEquipmentCode i14224skos:WI ;
-    i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
-
-### https://iso14224.org/skos/XmasTreeTopsideOnshore
-i14224skos:XmasTreeTopsideOnshore
-    a skos:Concept ;
-    skos:prefLabel "Xmas tree topside onshore"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentClass ;
-    i14224skos:taxonomicLevelNumber "Level 6" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    i14224skos:hasEquipmentCode i14224skos:NoEquipmentCodeSpecified ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### Electrical equipment category    
@@ -525,10 +547,10 @@ i14224skos:FireFightingEquipment
     i14224skos:hasEquipmentCode i14224skos:FF ;
     i14224skos:hasEquipmentCategory i14224skos:SafetyAndControlEquipment .
 
-### https://iso14224.org/skos/FireIgnition
-i14224skos:FireIgnition
+### https://iso14224.org/skos/FlareIgnition
+i14224skos:FlareIgnition
     a skos:Concept ;
-    skos:prefLabel "Fire ignition"@en ;
+    skos:prefLabel "Flare ignition"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
@@ -596,6 +618,12 @@ i14224skos:Valve
     i14224skos:hasEquipmentCategory i14224skos:SafetyAndControlEquipment .
 
 
+
+#################################################################
+#    Equipment types - Level 7
+#################################################################
+
+
 ### https://iso14224.org/skos/DieselEngine
 i14224skos:DieselEngine
     a skos:Concept ;
@@ -645,16 +673,6 @@ i14224skos:ScrewCompressor
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
     skos:broader i14224skos:Compressor ;
     i14224skos:hasEquipmentCode i14224skos:SC .
-
-### https://iso14224.org/skos/BlowerFanCompressor
-i14224skos:BlowerFanCompressor
-    a skos:Concept ;
-    skos:prefLabel "Blower fan compressor"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Compressor ;
-    i14224skos:hasEquipmentCode i14224skos:BL .
 
 ### https://iso14224.org/skos/AxialCompressor
 i14224skos:AxialCompressor
@@ -745,6 +763,16 @@ i14224skos:AeroDerivativeGasTurbine
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
     skos:broader i14224skos:GasTurbine ;
     i14224skos:hasEquipmentCode i14224skos:AD .
+
+### https://iso14224.org/skos/HeavyDutyGasTurbine
+i14224skos:HeavyDutyGasTurbine
+    a skos:Concept ;
+    skos:prefLabel "Heavy duty gas turbine"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentType ;
+    i14224skos:taxonomicLevelNumber "Level 7" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    skos:broader i14224skos:GasTurbine ;
+    i14224skos:hasEquipmentCode i14224skos:HD .
 
 ### https://iso14224.org/skos/CentrifugalPump
 i14224skos:CentrifugalPump
@@ -986,10 +1014,10 @@ i14224skos:ElectricBoiler
     skos:broader i14224skos:HeaterAndBoiler ;
     i14224skos:hasEquipmentCode i14224skos:EB .
 
-### https://iso14224.org/skos/HGFiredBoiler
-i14224skos:HGFiredBoiler
+### https://iso14224.org/skos/HCFiredBoiler
+i14224skos:HCFiredBoiler
     a skos:Concept ;
-    skos:prefLabel "H g fired boiler"@en ;
+    skos:prefLabel "HC fired boiler"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
@@ -1065,6 +1093,17 @@ i14224skos:SurgeDrumVessel
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
     skos:broader i14224skos:Vessel ;
     i14224skos:hasEquipmentCode i14224skos:SD .
+
+### https://iso14224.org/skos/CycloneVessel
+i14224skos:CycloneVessel
+    a skos:Concept ;
+    skos:prefLabel "Cyclone vessel"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentType ;
+    i14224skos:taxonomicLevelNumber "Level 7" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    skos:broader i14224skos:Vessel ;
+    i14224skos:hasEquipmentCode i14224skos:CY .
+
 
 ### https://iso14224.org/skos/HydrocycloneVessel
 i14224skos:HydrocycloneVessel
@@ -1276,10 +1315,72 @@ i14224skos:ElectricSignalSwivel
     skos:broader i14224skos:Swivel ;
     i14224skos:hasEquipmentCode i14224skos:ES .
 
+### https://iso14224.org/skos/FixedRoofStorageTank
+i14224skos:FixedRoofStorageTank
+    a skos:Concept ;
+    skos:prefLabel "Fixed roof storage tank"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentType ;
+    i14224skos:taxonomicLevelNumber "Level 7" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    skos:broader i14224skos:StorageTank ;
+    i14224skos:hasEquipmentCode i14224skos:FR .
+
+### https://iso14224.org/skos/LiftingRoofStorageTank
+i14224skos:LiftingRoofStorageTank
+    a skos:Concept ;
+    skos:prefLabel "Lifting roof storage tank"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentType ;
+    i14224skos:taxonomicLevelNumber "Level 7" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    skos:broader i14224skos:StorageTank ;
+    i14224skos:hasEquipmentCode i14224skos:LR .
+
+### https://iso14224.org/skos/DiaphragmStorageTank
+i14224skos:DiaphragmStorageTank
+    a skos:Concept ;
+    skos:prefLabel "Diaphragm storage tank"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentType ;
+    i14224skos:taxonomicLevelNumber "Level 7" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    skos:broader i14224skos:StorageTank ;
+    i14224skos:hasEquipmentCode i14224skos:DP .
+
+### https://iso14224.org/skos/ExternalFloatingRoofStorageTank
+i14224skos:ExternalFloatingRoofStorageTank
+    a skos:Concept ;
+    skos:prefLabel "External floating roof storage tank"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentType ;
+    i14224skos:taxonomicLevelNumber "Level 7" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    skos:broader i14224skos:StorageTank ;
+    i14224skos:hasEquipmentCode i14224skos:EF .
+
+### https://iso14224.org/skos/RooflessStorageTank
+i14224skos:RooflessStorageTank
+    a skos:Concept ;
+    skos:prefLabel "Roofless storage tank"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentType ;
+    i14224skos:taxonomicLevelNumber "Level 7" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    skos:broader i14224skos:StorageTank ;
+    i14224skos:hasEquipmentCode i14224skos:RL .
+
+### https://iso14224.org/skos/FixedRoofWithInternalFloatingRoofStorageTank
+i14224skos:FixedRoofWithInternalFloatingRoofStorageTank
+    a skos:Concept ;
+    skos:prefLabel "Fixed roof with internal floating roof storage tank"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentType ;
+    i14224skos:taxonomicLevelNumber "Level 7" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    skos:broader i14224skos:StorageTank ;
+    i14224skos:hasEquipmentCode i14224skos:IF .
+
+### Level 7 electrical equipment
+
 ### https://iso14224.org/skos/DualUPSWithStandbyBypass
 i14224skos:DualUPSWithStandbyBypass
     a skos:Concept ;
-    skos:prefLabel "Dual u p s with standby bypass"@en ;
+    skos:prefLabel "Dual UPS with standby bypass"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
@@ -1289,7 +1390,7 @@ i14224skos:DualUPSWithStandbyBypass
 ### https://iso14224.org/skos/DualUPSWithoutBypass
 i14224skos:DualUPSWithoutBypass
     a skos:Concept ;
-    skos:prefLabel "Dual u p s without bypass"@en ;
+    skos:prefLabel "Dual UPS without bypass"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
@@ -1299,7 +1400,7 @@ i14224skos:DualUPSWithoutBypass
 ### https://iso14224.org/skos/SingleUPSWithBypass
 i14224skos:SingleUPSWithBypass
     a skos:Concept ;
-    skos:prefLabel "Single u p s with bypass"@en ;
+    skos:prefLabel "Single UPS with bypass"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
@@ -1309,7 +1410,7 @@ i14224skos:SingleUPSWithBypass
 ### https://iso14224.org/skos/SingleUPSWithoutBypass
 i14224skos:SingleUPSWithoutBypass
     a skos:Concept ;
-    skos:prefLabel "Single u p s without bypass"@en ;
+    skos:prefLabel "Single UPS without bypass"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
@@ -1335,6 +1436,69 @@ i14224skos:DryPowerTransformer
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
     skos:broader i14224skos:PowerTransformer ;
     i14224skos:hasEquipmentCode i14224skos:DT .
+
+### https://iso14224.org/skos/LowVoltageSwitchgear
+i14224skos:LowVoltageSwitchgear
+    a skos:Concept ;
+    skos:prefLabel "Low voltage switchgear"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentType ;
+    i14224skos:taxonomicLevelNumber "Level 7" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    skos:broader i14224skos:Switchgear ;
+    i14224skos:hasEquipmentCode i14224skos:LV .
+
+### https://iso14224.org/skos/OilAndVacuumInsulatedSwitchgear
+i14224skos:OilAndVacuumInsulatedSwitchgear
+    a skos:Concept ;
+    skos:prefLabel "Oil and vacuum insulated switchgear"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentType ;
+    i14224skos:taxonomicLevelNumber "Level 7" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    skos:broader i14224skos:Switchgear ;
+    i14224skos:hasEquipmentCode i14224skos:OV .
+
+### https://iso14224.org/skos/HighVoltageAirInsulatedSwitchgear
+i14224skos:HighVoltageAirInsulatedSwitchgear
+    a skos:Concept ;
+    skos:prefLabel "High voltage air insulated switchgear"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentType ;
+    i14224skos:taxonomicLevelNumber "Level 7" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    skos:broader i14224skos:Switchgear ;
+    i14224skos:hasEquipmentCode i14224skos:HA .
+
+### https://iso14224.org/skos/HighVoltageGasInsulatedSwitchgear
+i14224skos:HighVoltageGasInsulatedSwitchgear
+    a skos:Concept ;
+    skos:prefLabel "High voltage gas insulated switchgear"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentType ;
+    i14224skos:taxonomicLevelNumber "Level 7" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    skos:broader i14224skos:Switchgear ;
+    i14224skos:hasEquipmentCode i14224skos:HG .
+
+### https://iso14224.org/skos/LowVoltageFrequencyConverter
+i14224skos:LowVoltageFrequencyConverter
+    a skos:Concept ;
+    skos:prefLabel "Low voltage frequency converter"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentType ;
+    i14224skos:taxonomicLevelNumber "Level 7" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    skos:broader i14224skos:FrequencyConverter ;
+    i14224skos:hasEquipmentCode i14224skos:LV .
+
+### https://iso14224.org/skos/HighVoltageFrequencyConverter
+i14224skos:HighVoltageFrequencyConverter
+    a skos:Concept ;
+    skos:prefLabel "High voltage frequency converter"@en ;
+    i14224skos:mapsToTerm i14224skos:EquipmentType ;
+    i14224skos:taxonomicLevelNumber "Level 7" ;
+    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
+    skos:broader i14224skos:FrequencyConverter ;
+    i14224skos:hasEquipmentCode i14224skos:HV .
+
+
+### Level 7 - Safety and fire protection equipment    
 
 ### https://iso14224.org/skos/SmokeCombustionFireDetector
 i14224skos:SmokeCombustionFireDetector
@@ -1866,175 +2030,6 @@ i14224skos:GaseousNozzle
     skos:broader i14224skos:Nozzle ;
     i14224skos:hasEquipmentCode i14224skos:GA .
 
-### https://iso14224.org/skos/DirectHydraulicSubseaProductionControl
-i14224skos:DirectHydraulicSubseaProductionControl
-    a skos:Concept ;
-    skos:prefLabel "Direct hydraulic subsea production control"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:SubseaProductionControl ;
-    i14224skos:hasEquipmentCode i14224skos:DH .
-
-### https://iso14224.org/skos/DirectElectroHydraulicSubseaProductionControl
-i14224skos:DirectElectroHydraulicSubseaProductionControl
-    a skos:Concept ;
-    skos:prefLabel "Direct electro hydraulic subsea production control"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:SubseaProductionControl ;
-    i14224skos:hasEquipmentCode i14224skos:EH .
-
-### https://iso14224.org/skos/MultiplexedElectroHydraulicSubseaProductionControl
-i14224skos:MultiplexedElectroHydraulicSubseaProductionControl
-    a skos:Concept ;
-    skos:prefLabel "Multiplexed electro hydraulic subsea production control"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:SubseaProductionControl ;
-    i14224skos:hasEquipmentCode i14224skos:MX .
-
-### https://iso14224.org/skos/DiscretePilotHydraulicSubseaProductionControl
-i14224skos:DiscretePilotHydraulicSubseaProductionControl
-    a skos:Concept ;
-    skos:prefLabel "Discrete pilot hydraulic subsea production control"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:SubseaProductionControl ;
-    i14224skos:hasEquipmentCode i14224skos:PH .
-
-### https://iso14224.org/skos/SequentialPilotedHydraulicSubseaProductionControl
-i14224skos:SequentialPilotedHydraulicSubseaProductionControl
-    a skos:Concept ;
-    skos:prefLabel "Sequential piloted hydraulic subsea production control"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:SubseaProductionControl ;
-    i14224skos:hasEquipmentCode i14224skos:SH .
-
-### https://iso14224.org/skos/TelemetricHydraulicSubseaProductionControl
-i14224skos:TelemetricHydraulicSubseaProductionControl
-    a skos:Concept ;
-    skos:prefLabel "Telemetric hydraulic subsea production control"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:SubseaProductionControl ;
-    i14224skos:hasEquipmentCode i14224skos:TH .
-
-### https://iso14224.org/skos/VerticalXmasTree
-i14224skos:VerticalXmasTree
-    a skos:Concept ;
-    skos:prefLabel "Vertical xmas tree"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:XmasTree ;
-    i14224skos:hasEquipmentCode i14224skos:VE .
-
-### https://iso14224.org/skos/HorizontalXmasTree
-i14224skos:HorizontalXmasTree
-    a skos:Concept ;
-    skos:prefLabel "Horizontal xmas tree"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:XmasTree ;
-    i14224skos:hasEquipmentCode i14224skos:HO .
-
-### https://iso14224.org/skos/RigidRiser
-i14224skos:RigidRiser
-    a skos:Concept ;
-    skos:prefLabel "Rigid riser"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Riser ;
-    i14224skos:hasEquipmentCode i14224skos:RI .
-
-### https://iso14224.org/skos/FlexibleRiser
-i14224skos:FlexibleRiser
-    a skos:Concept ;
-    skos:prefLabel "Flexible riser"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Riser ;
-    i14224skos:hasEquipmentCode i14224skos:FL .
-
-### https://iso14224.org/skos/CentrifugalSubseaPump
-i14224skos:CentrifugalSubseaPump
-    a skos:Concept ;
-    skos:prefLabel "Centrifugal subsea pump"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:SubseaPump ;
-    i14224skos:hasEquipmentCode i14224skos:CE .
-
-### https://iso14224.org/skos/ReciprocatingSubseaPump
-i14224skos:ReciprocatingSubseaPump
-    a skos:Concept ;
-    skos:prefLabel "Reciprocating subsea pump"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:SubseaPump ;
-    i14224skos:hasEquipmentCode i14224skos:RE .
-
-### https://iso14224.org/skos/RotarySubseaPump
-i14224skos:RotarySubseaPump
-    a skos:Concept ;
-    skos:prefLabel "Rotary subsea pump"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:SubseaPump ;
-    i14224skos:hasEquipmentCode i14224skos:RO .
-
-### https://iso14224.org/skos/HydraulicallyDrivenTopDrive
-i14224skos:HydraulicallyDrivenTopDrive
-    a skos:Concept ;
-    skos:prefLabel "Hydraulically driven top drive"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:TopDrive ;
-    i14224skos:hasEquipmentCode i14224skos:HD .
-
-### https://iso14224.org/skos/ElectricallyDrivenTopDrive
-i14224skos:ElectricallyDrivenTopDrive
-    a skos:Concept ;
-    skos:prefLabel "Electrically driven top drive"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:TopDrive ;
-    i14224skos:hasEquipmentCode i14224skos:ED .
-
-### https://iso14224.org/skos/SurfaceBlowoutPreventer
-i14224skos:SurfaceBlowoutPreventer
-    a skos:Concept ;
-    skos:prefLabel "Surface blowout preventer"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:BlowoutPreventer ;
-    i14224skos:hasEquipmentCode i14224skos:BT .
-
-### https://iso14224.org/skos/SubseaBlowoutPreventer
-i14224skos:SubseaBlowoutPreventer
-    a skos:Concept ;
-    skos:prefLabel "Subsea blowout preventer"@en ;
-    i14224skos:mapsToTerm i14224skos:EquipmentType ;
-    i14224skos:taxonomicLevelNumber "Level 7" ;
-    i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:BlowoutPreventer ;
-    i14224skos:hasEquipmentCode i14224skos:BS .
 
 #################
 #    Equipment codes
