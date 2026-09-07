@@ -1,5 +1,4 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix i14224skos: <https://iso14224.org/skos/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -13,7 +12,7 @@
     owl:versionIRI <https://iso14224.org/skos/terms/1.0> ;
     dcterms:creator <https://orcid.org/0000-0002-7336-3932> ;
     dcterms:license <https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE> ;
-    dcterms:rights "See github"@en ;
+    dcterms:rights "See GitHub"@en ;
     rdfs:comment "Terms and definitions for Clause 3 of ISO 14224:2023 represented as SKOS concepts and collections."@en .
 
 

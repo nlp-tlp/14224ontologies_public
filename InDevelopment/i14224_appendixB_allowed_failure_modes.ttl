@@ -447,7 +447,7 @@ i14224:InputDevice i14224:hasAllowedFailureMode
         i14224:unknown_failure_mode ;
     cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
 
-i14224:ControlUnit i14224:hasAllowedFailureMode
+i14224:ControlLogicUnit i14224:hasAllowedFailureMode
         i14224:erratic_output ,
         i14224:failure_to_function_on_demand ,
         i14224:high_output ,

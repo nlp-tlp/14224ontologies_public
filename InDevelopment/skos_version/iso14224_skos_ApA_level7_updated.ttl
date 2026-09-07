@@ -1024,175 +1024,175 @@ i14224skos:HCFiredBoiler
     skos:broader i14224skos:HeaterAndBoiler ;
     i14224skos:hasEquipmentCode i14224skos:FB .
 
-### https://iso14224.org/skos/StripperVessel
-i14224skos:StripperVessel
+### https://iso14224.org/skos/StripperPressureVessel
+i14224skos:StripperPressureVessel
     a skos:Concept ;
     skos:prefLabel "Stripper vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:SP .
 
-### https://iso14224.org/skos/SeparatorVessel
-i14224skos:SeparatorVessel
+### https://iso14224.org/skos/SeparatorPressureVessel
+i14224skos:SeparatorPressureVessel
     a skos:Concept ;
-    skos:prefLabel "Separator vessel"@en ;
+    skos:prefLabel "Separator pressure vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:SE .
 
-### https://iso14224.org/skos/CoalescerVessel
-i14224skos:CoalescerVessel
+### https://iso14224.org/skos/CoalescerPressureVessel
+i14224skos:CoalescerPressureVessel
     a skos:Concept ;
-    skos:prefLabel "Coalescer vessel"@en ;
+    skos:prefLabel "Coalescer pressure vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:CA .
 
-### https://iso14224.org/skos/FlashDrumVessel
-i14224skos:FlashDrumVessel
+### https://iso14224.org/skos/FlashDrumPressureVessel
+i14224skos:FlashDrumPressureVessel
     a skos:Concept ;
-    skos:prefLabel "Flash drum vessel"@en ;
+    skos:prefLabel "Flash drum pressure vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
     skos:broader i14224skos:Vessel ;
     i14224skos:hasEquipmentCode i14224skos:FD .
 
-### https://iso14224.org/skos/ScrubberVessel
-i14224skos:ScrubberVessel
+### https://iso14224.org/skos/ScrubberPressureVessel
+i14224skos:ScrubberPressureVessel
     a skos:Concept ;
     skos:prefLabel "Scrubber vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:SB .
 
-### https://iso14224.org/skos/ContactorVessel
-i14224skos:ContactorVessel
+### https://iso14224.org/skos/ContactorPressureVessel
+i14224skos:ContactorPressureVessel
     a skos:Concept ;
     skos:prefLabel "Contactor vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:CO .
 
-### https://iso14224.org/skos/SurgeDrumVessel
-i14224skos:SurgeDrumVessel
+### https://iso14224.org/skos/SurgeDrumPressureVessel
+i14224skos:SurgeDrumPressureVessel
     a skos:Concept ;
-    skos:prefLabel "Surge drum vessel"@en ;
+    skos:prefLabel "Surge drum pressure vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:SD .
 
-### https://iso14224.org/skos/CycloneVessel
-i14224skos:CycloneVessel
+### https://iso14224.org/skos/CyclonePressureVessel
+i14224skos:CyclonePressureVessel
     a skos:Concept ;
-    skos:prefLabel "Cyclone vessel"@en ;
+    skos:prefLabel "Cyclone pressure vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:CY .
 
 
-### https://iso14224.org/skos/HydrocycloneVessel
-i14224skos:HydrocycloneVessel
+### https://iso14224.org/skos/HydrocyclonePressureVessel
+i14224skos:HydrocyclonePressureVessel
     a skos:Concept ;
-    skos:prefLabel "Hydrocyclone vessel"@en ;
+    skos:prefLabel "Hydrocyclone pressure vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:HY .
 
-### https://iso14224.org/skos/SlugCatcherVessel
-i14224skos:SlugCatcherVessel
+### https://iso14224.org/skos/SlugCatcherPressureVessel
+i14224skos:SlugCatcherPressureVessel
     a skos:Concept ;
-    skos:prefLabel "Slug catcher vessel"@en ;
+    skos:prefLabel "Slug catcher pressure vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:SC .
 
-### https://iso14224.org/skos/AdsorberVessel
-i14224skos:AdsorberVessel
+### https://iso14224.org/skos/AdsorberVPressureVessel
+i14224skos:AdsorberPressureVessel
     a skos:Concept ;
-    skos:prefLabel "Adsorber vessel"@en ;
+    skos:prefLabel "Adsorber pressure vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:AD .
 
-### https://iso14224.org/skos/DryerVessel
-i14224skos:DryerVessel
+### https://iso14224.org/skos/DryerPressureVessel
+i14224skos:DryerPressureVessel
     a skos:Concept ;
-    skos:prefLabel "Dryer vessel"@en ;
+    skos:prefLabel "Dryer pressure vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:DR .
 
-### https://iso14224.org/skos/PigTrapVessel
-i14224skos:PigTrapVessel
+### https://iso14224.org/skos/PigTrapPressureVessel
+i14224skos:PigTrapPressureVessel
     a skos:Concept ;
-    skos:prefLabel "Pig trap vessel"@en ;
+    skos:prefLabel "Pig trap pressure vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
     skos:broader i14224skos:Vessel ;
     i14224skos:hasEquipmentCode i14224skos:PT .
 
-### https://iso14224.org/skos/DistillationColumnVessel
-i14224skos:DistillationColumnVessel
+### https://iso14224.org/skos/DistillationColumnPressureVessel
+i14224skos:DistillationColumnPressureVessel
     a skos:Concept ;
     skos:prefLabel "Distillation column vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:DC .
 
-### https://iso14224.org/skos/SaturaterVessel
-i14224skos:SaturaterVessel
+### https://iso14224.org/skos/SaturatorPressureVessel
+i14224skos:SaturatorPressureVessel
     a skos:Concept ;
-    skos:prefLabel "Saturater vessel"@en ;
+    skos:prefLabel "Saturator pressure vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:SA .
 
-### https://iso14224.org/skos/ReactorVessel
-i14224skos:ReactorVessel
+### https://iso14224.org/skos/ReactorPressureVessel
+i14224skos:ReactorPressureVessel
     a skos:Concept ;
-    skos:prefLabel "Reactor vessel"@en ;
+    skos:prefLabel "Reactor pressure vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:RE .
 
-### https://iso14224.org/skos/DeAeratorVessel
-i14224skos:DeAeratorVessel
+### https://iso14224.org/skos/DeAeratorPressureVessel
+i14224skos:DeAeratorPressureVessel
     a skos:Concept ;
-    skos:prefLabel "De aerator vessel"@en ;
+    skos:prefLabel "De-aerator pressure vessel"@en ;
     i14224skos:mapsToTerm i14224skos:EquipmentType ;
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:broader i14224skos:Vessel ;
+    skos:broader i14224skos:PressureVessel ;
     i14224skos:hasEquipmentCode i14224skos:DA .
 
 ### https://iso14224.org/skos/CarbonSteelPiping

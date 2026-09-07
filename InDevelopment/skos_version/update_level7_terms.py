@@ -9,9 +9,22 @@ print(f"Working directory: {os.getcwd()}")
 print("=" * 60)
 sys.stdout.flush()
 
-APPENDIX_A_FILE = "../i14224_appendixA.ttl"
-SKOS_FILE = "iso14224_skos_ApA_rebuilt.ttl"
-OUTPUT_FILE = "iso14224_skos_ApA_level7_updated.ttl"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+APPENDIX_A_FILE = os.path.abspath(
+    os.path.join(SCRIPT_DIR, "..", "i14224_appendixA.ttl")
+)
+SKOS_FILE = os.path.join(
+    SCRIPT_DIR, "iso14224_skos_ApA_rebuilt.ttl"
+)
+OUTPUT_FILE = os.path.join(
+    SCRIPT_DIR, "iso14224_skos_ApA_updated.ttl"
+)
+
+
+# APPENDIX_A_FILE = "../i14224_appendixA.ttl"
+# SKOS_FILE = "iso14224_skos_ApA_rebuilt.ttl"
+# OUTPUT_FILE = "iso14224_skos_ApA_level7_updated.ttl"
 
 APPENDIX_BLOCK_RE = re.compile(
     r"###\s+https://iso14224\.org/ontology/i14224/rdl/(\w+)\s*\n"

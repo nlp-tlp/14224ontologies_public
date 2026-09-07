@@ -1351,71 +1351,71 @@ i14224:HGFiredBoiler
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/StripperVessel
-i14224:StripperVessel
+###  https://iso14224.org/ontology/i14224/rdl/StripperPressureVessel
+i14224:StripperPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Stripper vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Stripper pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:SP ;
     rdfs:seeAlso ""@en ;
     skos:altLabel ""@en ;
-    skos:definition "class of stripper vessels"@en ;
+    skos:definition "class of stripper pressure vessels"@en ;
     skos:example ""@en ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/SeparatorVessel
-i14224:SeparatorVessel
+###  https://iso14224.org/ontology/i14224/rdl/SeparatorPressureVessel
+i14224:SeparatorPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Separator vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Separator pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:SE ;
     rdfs:seeAlso ""@en ;
     skos:altLabel ""@en ;
-    skos:definition "class of separator vessels"@en ;
+    skos:definition "class of separator pressure vessels"@en ;
     skos:example ""@en ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/CoalescerVessel
-i14224:CoalescerVessel
+###  https://iso14224.org/ontology/i14224/rdl/CoalescerPressureVessel
+i14224:CoalescerPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Coalescer vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Coalescer pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:CA ;
     rdfs:seeAlso ""@en ;
     skos:altLabel ""@en ;
-    skos:definition "class of coalescer vessels"@en ;
+    skos:definition "class of coalescer pressure vessels"@en ;
     skos:example ""@en ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/FlashDrumVessel
-i14224:FlashDrumVessel
+###  https://iso14224.org/ontology/i14224/rdl/FlashDrumPressureVessel
+i14224:FlashDrumPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Flash drum vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Flash drum pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:FD ;
     rdfs:seeAlso ""@en ;
     skos:altLabel ""@en ;
-    skos:definition "class of flash drum vessels"@en ;
+    skos:definition "class of flash drum pressure vessels"@en ;
     skos:example ""@en ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/ScrubberVessel
-i14224:ScrubberVessel
+###  https://iso14224.org/ontology/i14224/rdl/ScrubberPressureVessel
+i14224:ScrubberPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Scrubber vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Scrubber pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:SB ;
@@ -1426,26 +1426,26 @@ i14224:ScrubberVessel
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/ContactorVessel
-i14224:ContactorVessel
+###  https://iso14224.org/ontology/i14224/rdl/ContactorPressureVessel
+i14224:ContactorPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Contactor vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Contactor pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:CO ;
     rdfs:seeAlso ""@en ;
     skos:altLabel ""@en ;
-    skos:definition "class of contactor vessels"@en ;
+    skos:definition "class of contactor pressure vessels"@en ;
     skos:example ""@en ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/SurgeDrumVessel
-i14224:SurgeDrumVessel
+###  https://iso14224.org/ontology/i14224/rdl/SurgeDrumPressureVessel
+i14224:SurgeDrumPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Surge drum vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Surge drum pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:SD ;
@@ -1456,72 +1456,72 @@ i14224:SurgeDrumVessel
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/CycloneVessel
-i14224:CycloneVessel
+###  https://iso14224.org/ontology/i14224/rdl/CyclonePressureVessel
+i14224:CyclonePressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Cyclone vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Cyclone pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:CY ;
     rdfs:seeAlso ""@en ;
     skos:altLabel ""@en ;
-    skos:definition "class of cyclone vessels"@en ;
+    skos:definition "class of cyclone pressure vessels"@en ;
     skos:example ""@en ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
 
-###  https://iso14224.org/ontology/i14224/rdl/HydrocycloneVessel
-i14224:HydrocycloneVessel
+###  https://iso14224.org/ontology/i14224/rdl/HydrocyclonePressureVessel
+i14224:HydrocyclonePressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Hydrocyclone vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Hydrocyclone pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:HY ;
     rdfs:seeAlso ""@en ;
     skos:altLabel ""@en ;
-    skos:definition "class of hydrocyclone vessels"@en ;
+    skos:definition "class of hydrocyclone pressure vessels"@en ;
     skos:example ""@en ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/SlugCatcherVessel
-i14224:SlugCatcherVessel
+###  https://iso14224.org/ontology/i14224/rdl/SlugCatcherPressureVessel
+i14224:SlugCatcherPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Slug catcher vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Slug catcher pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:SC ;
     rdfs:seeAlso ""@en ;
     skos:altLabel ""@en ;
-    skos:definition "class of slug catcher vessels"@en ;
+    skos:definition "class of slug catcher pressure vessels"@en ;
     skos:example ""@en ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/AdsorberVessel
-i14224:AdsorberVessel
+###  https://iso14224.org/ontology/i14224/rdl/AdsorberPressureVessel
+i14224:AdsorberPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Adsorber vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Adsorber pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:AD ;
     rdfs:seeAlso ""@en ;
     skos:altLabel ""@en ;
-    skos:definition "class of adsorber vessels"@en ;
+    skos:definition "class of adsorber pressure vessels"@en ;
     skos:example ""@en ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/DryerVessel
-i14224:DryerVessel
+###  https://iso14224.org/ontology/i14224/rdl/DryerPressureVessel
+i14224:DryerPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Dryer vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Dryer pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:DR ;
@@ -1532,11 +1532,11 @@ i14224:DryerVessel
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/PigTrapVessel
-i14224:PigTrapVessel
+###  https://iso14224.org/ontology/i14224/rdl/PigTrapPressureVessel
+i14224:PigTrapPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Pig trap vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Pig trap pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:PT ;
@@ -1547,11 +1547,11 @@ i14224:PigTrapVessel
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/DistillationColumnVessel
-i14224:DistillationColumnVessel
+###  https://iso14224.org/ontology/i14224/rdl/DistillationColumnPressureVessel
+i14224:DistillationColumnPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Distillation column vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Distillation column pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:DC ;
@@ -1562,26 +1562,26 @@ i14224:DistillationColumnVessel
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/SaturaterVessel
-i14224:SaturaterVessel
+###  https://iso14224.org/ontology/i14224/rdl/SaturatorPressureVessel
+i14224:SaturatorPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Saturater vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Saturator pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:SA ;
     rdfs:seeAlso ""@en ;
     skos:altLabel ""@en ;
-    skos:definition "class of saturater vessels"@en ;
+    skos:definition "class of saturator vessels"@en ;
     skos:example ""@en ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/ReactorVessel
-i14224:ReactorVessel
+###  https://iso14224.org/ontology/i14224/rdl/ReactorPressureVessel
+i14224:ReactorPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "Reactor vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Reactor pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:RE ;
@@ -1592,17 +1592,17 @@ i14224:ReactorVessel
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/DeAeratorVessel
-i14224:DeAeratorVessel
+###  https://iso14224.org/ontology/i14224/rdl/DeAeratorPressureVessel
+i14224:DeAeratorPressureVessel
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:Vessel , i14224:EquipmentByType ;
-    rdfs:label "De-aerator vessel"@en ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "De-aerator pressure vessel"@en ;
     i14224:equipment_category "mechanical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
     i14224:hasEquipmentCode i14224:DA ;
     rdfs:seeAlso ""@en ;
     skos:altLabel ""@en ;
-    skos:definition "class of de-aerator vessels"@en ;
+    skos:definition "class of de-aerator pressure vessels"@en ;
     skos:example ""@en ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
@@ -2409,7 +2409,7 @@ i14224:ComputerControlUnit
 ###  https://iso14224.org/ontology/i14224/rdl/DistributedControlUnit
 i14224:DistributedControlUnit
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentByType ;
+    rdfs:subClassOf i14224:ControlLogicUnit , i14224:EquipmentByType ;
     rdfs:label "Distributed control unit"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
