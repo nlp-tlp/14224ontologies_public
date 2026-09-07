@@ -12,7 +12,7 @@ This repository develops examples of sections of ISO 14224 that have been made m
 2. Provide example data, workflows, and experiments that show how FMEA and maintenance data can be linked to ISO 14224.
 3. Explore ontology modelling choices aligned to top-level ontologies such as IDO, IOF, and DOLCE.
 4. Demonstrate the value of explicit ontology/TTL reference data for LLM-assisted validation and automated checks.
-5. Develop SKOS versions of the same files and explore the impact of using RDF v SKOS versions. 
+5. Develop SKOS versions of the same files and explore the impact of using RDF vs SKOS versions.
 
 ## What is ISO 14224?
 
