@@ -8,3 +8,4 @@ The challenge is having two taxonomy systems.
 
 ![Managing two representations](images/skos_rdf1.JPG)
 
+

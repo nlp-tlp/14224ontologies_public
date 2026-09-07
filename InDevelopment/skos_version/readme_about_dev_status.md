@@ -15,16 +15,16 @@ Some things to note.
 
 The original i14224_appendixA.ttl file was made with an LLM. Manual checking revealed several errors as follows
 
-The LLM failed to identify the following Level 6 classes: Centrifuge, ConveyorAndElevator, FilterAndStrainer, PressureVessel and Silo.
+- The LLM failed to identify the following Level 6 classes: Centrifuge, ConveyorAndElevator, FilterAndStrainer, PressureVessel and Silo.
 
-It added a class and plausible predicates for XmasTreeTopsideOffshore in the MechanicalEngineering section (also Vessel)
+- It added a class and plausible predicates for XmasTreeTopsideOffshore in the MechanicalEngineering section (also Vessel)
 
-In Electrical Equipment the entry for Switchgear was written as "SwitchgearSwitchboardAnd DistributionBoard"
+- In Electrical Equipment the entry for Switchgear was written as "SwitchgearSwitchboardAnd DistributionBoard"
 
-In the Level 7 entries. 
+- In the Level 7 entries. 
 1. It added Blower Fan under Compressor (there is no Blower Fan)
 2. It completely missed all the Switchgear and Frequency Converter Equipment Types and Storage Tanks.
 
-Many codes were wrong.
+- Many equipment codes were wrong.
 
 

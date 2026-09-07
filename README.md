@@ -1,17 +1,18 @@
 # ISO 14224 Semantic Collaboration Repository
 
-This repository develops a machine-readable semantic version of ISO 14224, with example data, validation workflows, and experiments using LLMs and RDF.
+This repository develops examples of sections of ISO 14224 that have been made machine-readable in SKOS and RDF. It also includes sample FMEA and maintenance data, workflows processing the data with the RDF machine readable standard files, and experiments using LLMs and RDF. 
 
 ## Goals
 
-1. Build and publish a stable, machine-readable RDF/Turtle representation of key ISO 14224 concepts, including:
+1. Build and publish extracts of machine-readable RDF/Turtle representation of key ISO 14224 concepts, including:
    - terms and definitions from Clause 3,
    - failure mode data from Appendix B,
-   - equipment classes from Appendix A,
+   - some equipment classes from Appendix A,
    - allowed failure-mode mappings by equipment class.
-2. Provide example data, validation workflows, and experiments that show how FMEA and maintenance data can be linked to ISO 14224.
+2. Provide example data, workflows, and experiments that show how FMEA and maintenance data can be linked to ISO 14224.
 3. Explore ontology modelling choices aligned to top-level ontologies such as IDO, IOF, and DOLCE.
 4. Demonstrate the value of explicit ontology/TTL reference data for LLM-assisted validation and automated checks.
+5. Develop SKOS versions of the same files and explore the impact of using RDF v SKOS versions. 
 
 ## What is ISO 14224?
 
@@ -136,3 +137,4 @@ This repository contains an original academic interpretation of ISO 14224 concep
 - It is not a substitute for the official ISO standard.
 - It is not endorsed by ISO or IEC.
 - Consult the official ISO/IEC publications for authoritative definitions and requirements.
+- While the Clause 3 ttl and skos files are faithful representations of the vocabulary in Clause 3, the other files e.g. Appendix A and B are not. There are missing terms and some errors in the equipment codes in Appendix A for instance.
