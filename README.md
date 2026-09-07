@@ -137,4 +137,4 @@ This repository contains an original academic interpretation of ISO 14224 concep
 - It is not a substitute for the official ISO standard.
 - It is not endorsed by ISO or IEC.
 - Consult the official ISO/IEC publications for authoritative definitions and requirements.
-- While the Clause 3 ttl and skos files are faithful representations of the vocabulary in Clause 3, the other files e.g. Appendix A and B are not. There are missing terms and some errors in the equipment codes in Appendix A for instance.
+- While the Clause 3 .ttl and SKOS files aim to faithfully represent the vocabulary in Clause 3, the other files (e.g., Appendices A and B) are incomplete and may contain errors (e.g., missing terms and incorrect equipment codes in Appendix A).
