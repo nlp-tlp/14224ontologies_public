@@ -1,8 +1,22 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix i14224skos: <https://iso14224.org/skos/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-# Global concepts
+<https://iso14224.org/skos/terms> rdf:type owl:Ontology ;
+    owl:versionIRI <https://iso14224.org/skos/terms/1.0> ;
+    dcterms:creator <https://orcid.org/0000-0002-7336-3932> ;
+    dcterms:license <https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE> ;
+    dcterms:rights "See GitHub"@en ;
+    rdfs:comment "Terms and definitions for Clause 3 of ISO 14224:2023 represented as SKOS concepts and collections."@en .
+
+
+# Global concept scheme
 
 i14224skos:StandardISO14224 a skos:ConceptScheme;
     skos:altLabel ""@en ;
@@ -20,7 +34,7 @@ i14224skos:TestType a skos:Collection ;
     skos:prefLabel "type of test"@en ;
     skos:member
         i14224skos:Demand,
-        i14224skos:Periodic .
+        i14224skos:PeriodicTest .
 
 
 i14224skos:EquipmentStateTerms a skos:Collection ;
@@ -48,6 +62,15 @@ i14224skos:EquipmentReliabilityDataType a skos:Collection ;
       i14224skos:MaintenanceData,
       i14224skos:ReliabilityData .
 
+i14224skos:ErrorType a skos:Collection ;
+    skos:altLabel ""@en ;
+    skos:definition "label describing the different types of errors"@en ;
+    skos:example "human error, software error"@en ;
+    skos:inScheme i14224skos:StandardISO14224;
+    skos:prefLabel "type of error"@en ;
+    skos:member
+        i14224skos:HumanError,
+        i14224skos:SoftwareError .
 
 i14224skos:MaintenanceStrategyTerms a skos:Collection ;
     skos:altLabel ""@en ;
@@ -55,7 +78,15 @@ i14224skos:MaintenanceStrategyTerms a skos:Collection ;
     skos:example "corrective maintenance, condition-based maintenance, opportunistic maintenance, planned maintenance, predictive maintenance, reactive maintenance"@en ;
     skos:inScheme i14224skos:StandardISO14224;
     skos:prefLabel "maintenance strategy terms"@en ;
-    skos:scopeNote ""@en .
+    skos:scopeNote ""@en ;
+        skos:member
+        i14224skos:ConditionBasedMaintenance,
+        i14224skos:CorrectiveMaintenance,
+        i14224skos:OpportunityMaintenance,
+        i14224skos:PlannedMaintenance,
+        i14224skos:PredictiveMaintenance .
+
+      
 
 
 i14224skos:FailureEventTypeTerms a skos:Collection ;
@@ -64,7 +95,21 @@ i14224skos:FailureEventTypeTerms a skos:Collection ;
     skos:example "critical, hidden, common cause"@en ;
     skos:inScheme i14224skos:StandardISO14224;
     skos:prefLabel "failure event type terms"@en ;
-    skos:scopeNote ""@en .
+    skos:scopeNote ""@en ;
+    skos:member
+        i14224skos:CommonCauseFailures,
+        i14224skos:CommonModeFailures,
+        i14224skos:CriticalFailure,
+        i14224skos:DegradedFailure,
+        i14224skos:FailureDueToDemand,
+        i14224skos:FailureOnDemand,
+        i14224skos:HiddenFailure,
+        i14224skos:IncipientFailure,
+        i14224skos:NonCriticalFailure,
+        i14224skos:RandomFailure,
+        i14224skos:SafetyCriticalFailure,
+        i14224skos:SystematicFailure ,
+        i14224skos:Trip .
 
 
 i14224skos:ReliabilityMeasureTerms a skos:Collection ;
@@ -85,7 +130,7 @@ i14224skos:ReliabilityMeasureTerms a skos:Collection ;
         i14224skos:MeanCyclesToFailure ,
         i14224skos:MeanNumberOfCycles ,
         i14224skos:MeanActiveRepairTime ,
-        i14224skos:MeanElapsedTime ,
+        i14224skos:MeanElapsedTimeBetweenFailures ,
         i14224skos:MeanOverallRepairingTime ,
         i14224skos:MeanTimeToFailure ,
         i14224skos:MeanTimeToRepair ,
@@ -93,8 +138,8 @@ i14224skos:ReliabilityMeasureTerms a skos:Collection ;
         i14224skos:MobilizationTime ,
         i14224skos:OperatingTime ,
         i14224skos:Reliability ,
-        i14224skos:SurveillanceTime ,
-        i14224skos:Uptime .
+        i14224skos:SurveillancePeriod ,
+        i14224skos:UpTime .
 
 
 # Terms defined in Clause 3 of ISO 14224 (scope notes not yet added)
@@ -133,7 +178,6 @@ i14224skos:Boundary a skos:Concept ;
 
 i14224skos:CommonCauseFailures a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeFailureEvent ;
     skos:definition "failures of multiple items, which would otherwise be considered independent of one another, resulting from a single cause"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -142,7 +186,6 @@ i14224skos:CommonCauseFailures a skos:Concept ;
 
 i14224skos:CommonModeFailures a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeFailureEvent ;
     skos:definition "failures of different items characterized by the same failure mode"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -151,7 +194,6 @@ i14224skos:CommonModeFailures a skos:Concept ;
 
 i14224skos:ConditionBasedMaintenance a skos:Concept ;
     skos:altLabel "cbm"@en ;
-    skos:broader i14224skos:TypeMaintenanceStrategy ;
     skos:definition "preventative maintenance based on assessment of physical condition"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -160,7 +202,6 @@ i14224skos:ConditionBasedMaintenance a skos:Concept ;
 
 i14224skos:CorrectiveMaintenance a skos:Concept ;
     skos:altLabel "reactive Maintenance"@en ;
-    skos:broader i14224skos:TypeMaintenanceStrategy ;
     skos:definition "maintenance carried out after fault detection to effect restoration"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -169,7 +210,6 @@ i14224skos:CorrectiveMaintenance a skos:Concept ;
 
 i14224skos:CriticalFailure a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeFailureEvent ;
     skos:definition "failure of an equipment unit that causes an immediate cessation of the ability to perform a required function"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -186,7 +226,6 @@ i14224skos:Cycle a skos:Concept ;
 
 i14224skos:DegradedFailure a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeFailureEvent ;
     skos:definition "failure that does not cease the fundamental function(s), but compromises one or several functions"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -221,7 +260,6 @@ i14224skos:DownState a skos:Concept ;
     skos:altLabel "internal disabled state"@en,
         "internally disabled state"@en,
         "unavailable state"@en ;
-    skos:broader i14224skos:TypeMaterialState ;
     skos:definition "state of being unable to perform as required, due to internal fault, or preventative maintenance"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -312,7 +350,6 @@ i14224skos:FailureData a skos:Concept ;
 
 i14224skos:FailureDueToDemand a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeFailureEvent ;
     skos:definition "failure occurring on demand"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -355,7 +392,6 @@ i14224skos:FailureMode a skos:Concept ;
 
 i14224skos:FailureOnDemand a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeFailureEvent ;
     skos:definition "failure likely to be observed when a demand occurs"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -388,7 +424,6 @@ i14224skos:GenericReliabilityData a skos:Concept ;
 
 i14224skos:HiddenFailure a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeFailureEvent ;
     skos:definition "failure that is not immediately evident to operations and maintenance personnel"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -397,7 +432,6 @@ i14224skos:HiddenFailure a skos:Concept ;
 
 i14224skos:HumanError a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:Error ;
     skos:definition "discrepancy between the human action taken or omitted and that intended "@en ;
     skos:example "performing an incorrect action; omitting a required action "@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -414,7 +448,6 @@ i14224skos:HumanFatigue a skos:Concept ;
 
 i14224skos:IdleState a skos:Concept ;
     skos:altLabel "standby state"@en ;
-    skos:broader i14224skos:TypeMaterialState ;
     skos:definition "non-operating up state during non-required time"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -431,7 +464,6 @@ i14224skos:IdleTime a skos:Concept ;
 
 i14224skos:IncipientFailure a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeFailureEvent ;
     skos:definition "imperfection in the state or condition of an item so that a degraded or critical failure might (or might not) eventually be the expected result if corrective action is taken "@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -464,7 +496,6 @@ i14224skos:Item a skos:Concept ;
 
 i14224skos:LatentFault a skos:Concept ;
     skos:altLabel "undetected fault"@en ;
-    skos:broader i14224skos:Fault ;
     skos:definition "<of an item>fault that has not become apparent"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -663,7 +694,6 @@ i14224skos:Modification a skos:Concept ;
 
 i14224skos:NonCriticalFailure a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeFailureEvent ;
     skos:definition "failure of an equipment unit that does not cause an immediate cessation of an ability to perform its required function"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -672,7 +702,6 @@ i14224skos:NonCriticalFailure a skos:Concept ;
 
 i14224skos:OperatingState a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeMaterialState ;
     skos:definition "state of performing as required"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -689,7 +718,6 @@ i14224skos:OperatingTime a skos:Concept ;
 
 i14224skos:OpportunityMaintenance a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeMaintenanceStrategy ;
     skos:definition "maintenance of an item that is deferred or advanced in time and is performed when an unplanned opportunity becomes available"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -731,7 +759,6 @@ i14224skos:Petrochemical a skos:Concept ;
 i14224skos:PlannedMaintenance a skos:Concept ;
     skos:altLabel "planned preventative maintenance"@en,
         "scheduled maintenance"@en ;
-    skos:broader i14224skos:TypeMaintenanceStrategy ;
     skos:definition "maintenance carried out in accordance with a specified time schedule"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -741,7 +768,6 @@ i14224skos:PlannedMaintenance a skos:Concept ;
 i14224skos:PredictiveMaintenance a skos:Concept ;
     skos:altLabel "pDM"@en,
         "pdM"@en ;
-    skos:broader i14224skos:TypeMaintenanceStrategy ;
     skos:definition "maintenance based on the prediction of the future condition of an item estimated or calculated from a defined set of historic data and known future operational parameters"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -750,7 +776,6 @@ i14224skos:PredictiveMaintenance a skos:Concept ;
 
 i14224skos:PreventativeMaintenance a skos:Concept ;
     skos:altLabel "pM"@en ;
-    skos:broader i14224skos:TypeMaintenanceStrategy ;
     skos:definition "maintenance carried out to mitigate degradation and reduce the probability of failure"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -759,7 +784,6 @@ i14224skos:PreventativeMaintenance a skos:Concept ;
 
 i14224skos:RandomFailure a skos:Concept ;
     skos:altLabel "pDM"@en ;
-    skos:broader i14224skos:TypeFailureEvent ;
     skos:definition "failure occurring in a random way"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -808,7 +832,6 @@ i14224skos:SafetyCriticalEquipment a skos:Concept ;
 
 i14224skos:SafetyCriticalFailure a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeFailureEvent ;
     skos:definition "critical dangerous failures that are undetected"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -825,7 +848,6 @@ i14224skos:SafetySystem a skos:Concept ;
 
 i14224skos:SoftwareError a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:Error ;
     skos:definition "erroneous result produced by the use of software product"@en ;
     skos:example "Bad code in a computer program resulting in an error"@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -850,7 +872,6 @@ i14224skos:SurveillancePeriod a skos:Concept ;
 
 i14224skos:SystematicFailure a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeFailureEvent ;
     skos:definition "failure that consistently occurs under particular conditions of handling, storage or use"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -875,7 +896,6 @@ i14224skos:Taxonomy a skos:Concept ;
 
 i14224skos:Trip a skos:Concept ;
     skos:altLabel ""@en ;
-    skos:broader i14224skos:TypeFailureEvent ;
     skos:definition "shutdown of machinery from normal operating condition to full stop"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -893,7 +913,6 @@ i14224skos:Turnaround a skos:Concept ;
 
 i14224skos:UpState a skos:Concept ;
     skos:altLabel "available state"@en ;
-    skos:broader i14224skos:TypeMaterialState ;
     skos:definition "state of being able to perform as required"@en ;
     skos:example ""@en ;
     skos:inScheme i14224skos:StandardISO14224;
@@ -928,7 +947,7 @@ i14224skos:Uncertainty a skos:Concept ;
 
 # Collections
 
-i14224skos:Clause3TermsAndDefinition a skos:Collection ;
+i14224skos:Clause3TermsAndDefinitions a skos:Collection ;
     skos:member 
         i14224skos:ActiveMaintenanceTime,
         i14224skos:ActiveRepairTime,
