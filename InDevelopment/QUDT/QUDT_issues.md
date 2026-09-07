@@ -262,9 +262,10 @@ qudt:quantity  rdf:type      owl:FunctionalProperty , owl:ObjectProperty;
 ```
 
 The root of the concepts for qudt:QuantityKind and qudt:Quantity is the owl:Class qudt:Concept.
-In summary: a QUDT concept may have a single string abbreviation, identifier, deprecation status and deprecation version; may be associated with QUDT rules; may identify exact matches to other QUDT concepts; and may provide guidance expressed as HTML.
+The restrictions say that a QUDT concept may have a single string abbreviation, identifier, deprecation status and deprecation version; may be associated with QUDT rules; may identify exact matches to other QUDT concepts; and may provide guidance expressed as HTML.
 
 
+Some more notes at: https://chatgpt.com/share/6a9e0a0d-c8bc-83ec-bd01-44ce4b009106
 
 ```
 qudt:Concept  rdf:type       owl:Class;
