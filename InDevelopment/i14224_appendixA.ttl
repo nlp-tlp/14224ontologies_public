@@ -716,16 +716,16 @@ i14224:Nozzle
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
 ###  https://iso14224.org/ontology/i14224/rdl/Telecommunication
-i14224:Telecommunications
+i14224:Telecommunication
     rdf:type owl:Class ;
     rdfs:subClassOf i14224:EquipmentClass ;
-    rdfs:label "Telecommunications"@en ;
+    rdfs:label "Telecommunication"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 6"@en ;
     i14224:hasEquipmentCode i14224:TC ;
     rdfs:seeAlso ""@en ;
     skos:altLabel ""@en ;
-    skos:definition "class of telecommunications equipment"@en ;
+    skos:definition "class of telecommunication equipment"@en ;
     skos:example ""@en ;
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
@@ -1976,7 +1976,7 @@ i14224:LowVoltageSwitchgear
     rdfs:label "Low voltage switchgear"@en ;
     i14224:equipment_category "electrical equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
-    i14224:hasEquipmentCode i14224:LV;
+    i14224:hasEquipmentCode i14224:LV ;
     rdfs:seeAlso ""@en ;
     skos:altLabel ""@en ;
     skos:definition "class of low voltage switchgears"@en ;
@@ -2379,7 +2379,7 @@ i14224:OtherInputDevice
 ###  https://iso14224.org/ontology/i14224/rdl/ProgrammableLogicController
 i14224:ProgrammableLogicController
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentByType ;
+    rdfs:subClassOf i14224:ControlLogicUnit , i14224:EquipmentByType ;
     rdfs:label "Programmable logic controller"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2394,7 +2394,7 @@ i14224:ProgrammableLogicController
 ###  https://iso14224.org/ontology/i14224/rdl/ComputerControlUnit
 i14224:ComputerControlUnit
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentByType ;
+    rdfs:subClassOf i14224:ControlLogicUnit , i14224:EquipmentByType ;
     rdfs:label "Computer control unit"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2424,7 +2424,7 @@ i14224:DistributedControlUnit
 ###  https://iso14224.org/ontology/i14224/rdl/RelayControlUnit
 i14224:RelayControlUnit
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentByType ;
+    rdfs:subClassOf i14224:ControlLogicUnit , i14224:EquipmentByType ;
     rdfs:label "Relay control unit"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2454,7 +2454,7 @@ i14224:SolidStateControlUnit
 ###  https://iso14224.org/ontology/i14224/rdl/SingleLoopController
 i14224:SingleLoopController
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentByType ;
+    rdfs:subClassOf i14224:ControlLogicUnit , i14224:EquipmentByType ;
     rdfs:label "Single-loop controller"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;
@@ -2469,7 +2469,7 @@ i14224:SingleLoopController
 ###  https://iso14224.org/ontology/i14224/rdl/ProgrammableAutomationController
 i14224:ProgrammableAutomationController
     rdf:type owl:Class ;
-    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentByType ;
+    rdfs:subClassOf i14224:ControlLogicUnit , i14224:EquipmentByType ;
     rdfs:label "Programmable automation controller"@en ;
     i14224:equipment_category "safety and control equipment"@en ;
     i14224:equipment_class_level "Level 7"@en ;

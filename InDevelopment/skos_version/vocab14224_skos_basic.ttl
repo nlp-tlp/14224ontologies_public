@@ -85,7 +85,7 @@ i14224skos:MaintenanceStrategyTerms a skos:Collection ;
         i14224skos:CorrectiveMaintenance,
         i14224skos:OpportunityMaintenance,
         i14224skos:PlannedMaintenance,
-        i14224skos:PredictiveMaintenance.
+        i14224skos:PredictiveMaintenance .
 
       
 
@@ -110,7 +110,7 @@ i14224skos:FailureEventTypeTerms a skos:Collection ;
         i14224skos:RandomFailure,
         i14224skos:SafetyCriticalFailure,
         i14224skos:SystematicFailure ,
-        i14224skos:Trip.
+        i14224skos:Trip .
 
 
 i14224skos:ReliabilityMeasureTerms a skos:Collection ;
