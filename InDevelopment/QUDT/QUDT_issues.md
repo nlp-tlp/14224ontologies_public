@@ -2,7 +2,7 @@
 
 Another issue is the widely used Quantities and units of measure (qudt) ontology https://github.com/qudt/qudt-public-repo
 
-*The problem is that units of measure such as quantitykind:Pressure are modelled as an individual of qudt:QuantityKind and not as an owl Class*
+*The problem is that quantity kinds such as quantitykind:Pressure are modelled as named individuals of qudt:QuantityKind rather than as OWL classes.*
 
 Having a concept as a named individual (in rdf) rather than a class can cause issues if you want to make subclasses. In QUDT quantitykind:AmbientPressure is a peer to pressure and also quantitykind:AmbientPressure a qudt:QuantityKind ; rather than a subclass (as we might model it in IDO).
 
