@@ -39,7 +39,7 @@ Manual FMEA and maintenance tables are often inconsistent and hard to automate. 
 
 - `catalog-v001.xml`, `LICENSE`, `README.md` — root metadata and documentation
 - `imports/` — source RDF/TTL imports and external ontology material
-- `inDevelopment/` — working TTL files for ISO 14224 concepts and allowed failure mode mappings
+- `inDevelopment/` — working TTL files using SKOS and RDF for ISO 14224 concepts and allowed failure mode mappings
 - `experiments/experiment1/` — LLM experiment documentation, prompts, and generated reports
 - `experiments/experiment2/` — FMEA-to-RDF conversion and validation scripts, data, and outputs
 
@@ -50,9 +50,11 @@ They capture the semantic definitions, equipment class taxonomy, failure mode vo
 
 These files are the primary reference data for the repository:
 
+- `vocab14224_skos_basic.ttl` - Clause 3 terms and definitions, modelled as SKOS concepts and collections.
+= `iso14224_skos_AppendixA` - — equipment classes and categories from Appendix A modelled in RDF including specific classes for Level 6 and 7 terms.
 - `i14224_clause3.ttl` — Clause 3 terms and definitions, modelled as OWL classes, properties, and annotation statements.
-- `i14224_appendixA.ttl` — equipment classes and categories from Appendix A.
-- `i14224_appendixB.ttl` — failure modes, failure mechanisms, and related Annex B terms.
+- `i14224_appendixA.ttl` — equipment classes and categories from Appendix A modelled in RDF.
+- `i14224_appendixB.ttl` — failure modes, failure mechanisms, and related Annex B terms modelled in RDF.
 - `i14224_appendixB_allowed_failure_modes.ttl` — allowed failure mode mappings by equipment class.
 - `i14224_failure_mode_validation_shape.ttl` — validation rules for equipment-class/failure-mode checks.
 
