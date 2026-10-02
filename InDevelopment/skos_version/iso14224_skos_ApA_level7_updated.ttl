@@ -48,9 +48,13 @@ i14224skos:hasEquipmentCategory
 
 # Datatypes required
 
-i14224skos:AllowedISO14224EquipmentCode
+i14224skos:AllowedISO14224EquipmentCodeLevel6
     a rdfs:Datatype ;
-    rdfs:label "ISO 14224 equipment code"@en .
+    rdfs:label "ISO 14224 equipment code at Level 6"@en .
+
+i14224skos:AllowedISO14224EquipmentCodeLevel7
+    a rdfs:Datatype ;
+    rdfs:label "ISO 14224 equipment code at Level 6"@en .    
 
 
 #################################################################
@@ -181,7 +185,7 @@ i14224skos:BlowerAndFan
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "BL"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "BL"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
 
 ### https://iso14224.org/skos/Centrifuge
@@ -192,7 +196,7 @@ i14224skos:Centrifuge
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "CF"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "CF"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
 
 
@@ -204,7 +208,7 @@ i14224skos:CombustionEngine
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "CE"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "CE"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
 
 ### https://iso14224.org/skos/Compressor
@@ -215,7 +219,7 @@ i14224skos:Compressor
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "CO"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "CO"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
 
 ### https://iso14224.org/skos/ElectricGenerator
@@ -226,7 +230,7 @@ i14224skos:ElectricGenerator
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "EG"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "EG"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
 
 ### https://iso14224.org/skos/ElectricMotor
@@ -237,7 +241,7 @@ i14224skos:ElectricMotor
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "EM"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "EM"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
 
 ### https://iso14224.org/skos/GasTurbine
@@ -248,7 +252,7 @@ i14224skos:GasTurbine
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "GT"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "GT"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
 
 ### https://iso14224.org/skos/LiquidExpander
@@ -259,7 +263,7 @@ i14224skos:LiquidExpander
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "LE"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "LE"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
 
 ### https://iso14224.org/skos/Mixer
@@ -270,7 +274,7 @@ i14224skos:Mixer
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "MI"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "MI"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
 
 ### https://iso14224.org/skos/Pump
@@ -281,7 +285,7 @@ i14224skos:Pump
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "PU"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "PU"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
 
 ### https://iso14224.org/skos/SteamTurbine
@@ -292,7 +296,7 @@ i14224skos:SteamTurbine
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "ST"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "ST"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
 
 ### https://iso14224.org/skos/Turboexpander
@@ -303,7 +307,7 @@ i14224skos:Turboexpander
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "TE"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "TE"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
 
 ### Mechanical equipment category    
@@ -316,7 +320,7 @@ i14224skos:ConveyorAndElevator
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "CV"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "CV"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### https://iso14224.org/skos/Crane
@@ -327,7 +331,7 @@ i14224skos:Crane
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "CR"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "CR"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### https://iso14224.org/skos/FilterAndStrainer
@@ -338,7 +342,7 @@ i14224skos:FilterAndStrainer
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "FS"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "FS"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### https://iso14224.org/skos/HeaterAndBoiler
@@ -349,7 +353,7 @@ i14224skos:HeaterAndBoiler
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "HB"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "HB"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### https://iso14224.org/skos/HeatExchanger
@@ -360,7 +364,7 @@ i14224skos:HeatExchanger
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "HE"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "HE"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### https://iso14224.org/skos/LoadingArm
@@ -371,7 +375,7 @@ i14224skos:LoadingArm
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "LA"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "LA"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### https://iso14224.org/skos/OffshorePipeline
@@ -382,7 +386,7 @@ i14224skos:OffshorePipeline
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "PL"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "PL"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### https://iso14224.org/skos/Piping
@@ -393,7 +397,7 @@ i14224skos:Piping
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "PI"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "PI"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### https://iso14224.org/skos/PressureVessel
@@ -404,7 +408,7 @@ i14224skos:PressureVessel
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "VE"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "VE"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### https://iso14224.org/skos/Silo
@@ -415,7 +419,7 @@ i14224skos:Silo
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "SI"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "SI"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### https://iso14224.org/skos/SteamEjector
@@ -426,7 +430,7 @@ i14224skos:SteamEjector
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "SE"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "SE"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### https://iso14224.org/skos/StorageTank
@@ -437,7 +441,7 @@ i14224skos:StorageTank
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "TA"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "TA"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### https://iso14224.org/skos/Swivel
@@ -448,7 +452,7 @@ i14224skos:Swivel
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "SW"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "SW"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### https://iso14224.org/skos/Turret
@@ -459,7 +463,7 @@ i14224skos:Turret
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "TU"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "TU"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### https://iso14224.org/skos/Winch
@@ -470,7 +474,7 @@ i14224skos:Winch
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "WI"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "WI"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:MechanicalEquipment .
 
 ### Electrical equipment category    
@@ -483,7 +487,7 @@ i14224skos:FrequencyConverter
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "FC"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "FC"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:ElectricalEquipment .
 
 ### https://iso14224.org/skos/PowerCableAndTermination
@@ -494,7 +498,7 @@ i14224skos:PowerCableAndTermination
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "PC"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "PC"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:ElectricalEquipment .
 
 ### https://iso14224.org/skos/PowerTransformer
@@ -505,7 +509,7 @@ i14224skos:PowerTransformer
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "PT"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "PT"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:ElectricalEquipment .
 
 ### https://iso14224.org/skos/Switchgear
@@ -516,7 +520,7 @@ i14224skos:Switchgear
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "SG"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "SG"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:ElectricalEquipment .
 
 ### https://iso14224.org/skos/UninterruptiblePowerSupply
@@ -527,7 +531,7 @@ i14224skos:UninterruptiblePowerSupply
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "UP"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "UP"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:ElectricalEquipment .
 
 ### Safety and control equipment category    
@@ -540,7 +544,7 @@ i14224skos:ControlLogicUnit
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "CL"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "CL"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:SafetyAndControlEquipment .
 
 ### https://iso14224.org/skos/EmergencyCommunicationEquipment
@@ -551,7 +555,7 @@ i14224skos:EmergencyCommunicationEquipment
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "EC"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "EC"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:SafetyAndControlEquipment .
 
 ### https://iso14224.org/skos/EscapeAndEvacuationEquipment
@@ -562,7 +566,7 @@ i14224skos:EscapeAndEvacuationEquipment
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "ER"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "ER"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:SafetyAndControlEquipment .
 
 ### https://iso14224.org/skos/FireAndGasDetector
@@ -573,7 +577,7 @@ i14224skos:FireAndGasDetector
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "FG"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "FG"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:SafetyAndControlEquipment .
 
 ### https://iso14224.org/skos/FireFightingEquipment
@@ -584,7 +588,7 @@ i14224skos:FireFightingEquipment
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "FF"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "FF"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:SafetyAndControlEquipment .
 
 ### https://iso14224.org/skos/FlareIgnition
@@ -595,7 +599,7 @@ i14224skos:FlareIgnition
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "FI"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "FI"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:SafetyAndControlEquipment .
 
 ### https://iso14224.org/skos/InertGasEquipment
@@ -606,7 +610,7 @@ i14224skos:InertGasEquipment
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "IG"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "IG"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:SafetyAndControlEquipment .
 
 ### https://iso14224.org/skos/InputDevice
@@ -617,7 +621,7 @@ i14224skos:InputDevice
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "IP"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "IP"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:SafetyAndControlEquipment .
 
 ### https://iso14224.org/skos/Lifeboat
@@ -628,7 +632,7 @@ i14224skos:Lifeboat
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "LB"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "LB"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:SafetyAndControlEquipment .
 
 ### https://iso14224.org/skos/Nozzle
@@ -639,7 +643,7 @@ i14224skos:Nozzle
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "NO"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "NO"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:SafetyAndControlEquipment .
 
 ### https://iso14224.org/skos/Telecommunications
@@ -650,7 +654,7 @@ i14224skos:Telecommunications
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "TC"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "TC"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:SafetyAndControlEquipment .
 
 ### https://iso14224.org/skos/Valve
@@ -661,7 +665,7 @@ i14224skos:Valve
     i14224skos:mapsToTerm i14224skos:EquipmentClass ;
     i14224skos:taxonomicLevelNumber "Level 6" ;
     i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ;
-    skos:notation "VA"^^i14224skos:ISO14224EquipmentCode ;
+    skos:notation "VA"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 ;
     i14224skos:hasEquipmentCategory i14224skos:SafetyAndControlEquipment .
 
 
@@ -679,7 +683,7 @@ i14224skos:DieselEngine
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:CombustionEngine ;
-    skos:notation "DE"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/OttoGasEngine
 i14224skos:OttoGasEngine
@@ -689,7 +693,7 @@ i14224skos:OttoGasEngine
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:CombustionEngine ;
-    skos:notation "GE"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "GE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/CentrifugalCompressor
 i14224skos:CentrifugalCompressor
@@ -699,7 +703,7 @@ i14224skos:CentrifugalCompressor
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Compressor ;
-    skos:notation "CE"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "CE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ReciprocatingCompressor
 i14224skos:ReciprocatingCompressor
@@ -709,7 +713,7 @@ i14224skos:ReciprocatingCompressor
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Compressor ;
-    skos:notation "RE"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "RE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ScrewCompressor
 i14224skos:ScrewCompressor
@@ -719,7 +723,7 @@ i14224skos:ScrewCompressor
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Compressor ;
-    skos:notation "SC"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/AxialCompressor
 i14224skos:AxialCompressor
@@ -729,7 +733,7 @@ i14224skos:AxialCompressor
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Compressor ;
-    skos:notation "AX"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "AX"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/GasTurbineDrivenElectricGenerator
 i14224skos:GasTurbineDrivenElectricGenerator
@@ -739,7 +743,7 @@ i14224skos:GasTurbineDrivenElectricGenerator
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:ElectricGenerator ;
-    skos:notation "TD"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "TD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/SteamTurbineDrivenElectricGenerator
 i14224skos:SteamTurbineDrivenElectricGenerator
@@ -749,7 +753,7 @@ i14224skos:SteamTurbineDrivenElectricGenerator
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:ElectricGenerator ;
-    skos:notation "SD"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/TurboexpanderDrivenElectricGenerator
 i14224skos:TurboexpanderDrivenElectricGenerator
@@ -759,7 +763,7 @@ i14224skos:TurboexpanderDrivenElectricGenerator
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:ElectricGenerator ;
-    skos:notation "TE"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "TE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/EngineDrivenElectricGenerator
 i14224skos:EngineDrivenElectricGenerator
@@ -769,7 +773,7 @@ i14224skos:EngineDrivenElectricGenerator
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:ElectricGenerator ;
-    skos:notation "MD"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "MD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/AlternatingCurrentElectricMotor
 i14224skos:AlternatingCurrentElectricMotor
@@ -779,7 +783,7 @@ i14224skos:AlternatingCurrentElectricMotor
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:ElectricMotor ;
-    skos:notation "AC"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "AC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DirectCurrentElectricMotor
 i14224skos:DirectCurrentElectricMotor
@@ -789,7 +793,7 @@ i14224skos:DirectCurrentElectricMotor
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:ElectricMotor ;
-    skos:notation "DC"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/IndustrialGasTurbine
 i14224skos:IndustrialGasTurbine
@@ -799,7 +803,7 @@ i14224skos:IndustrialGasTurbine
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:GasTurbine ;
-    skos:notation "IN"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "IN"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/AeroDerivativeGasTurbine
 i14224skos:AeroDerivativeGasTurbine
@@ -809,7 +813,7 @@ i14224skos:AeroDerivativeGasTurbine
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:GasTurbine ;
-    skos:notation "AD"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "AD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/HeavyDutyGasTurbine
 i14224skos:HeavyDutyGasTurbine
@@ -819,7 +823,7 @@ i14224skos:HeavyDutyGasTurbine
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:GasTurbine ;
-    skos:notation "HD"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "HD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/CentrifugalPump
 i14224skos:CentrifugalPump
@@ -829,7 +833,7 @@ i14224skos:CentrifugalPump
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Pump ;
-    skos:notation "CE"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "CE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ReciprocatingPump
 i14224skos:ReciprocatingPump
@@ -839,7 +843,7 @@ i14224skos:ReciprocatingPump
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Pump ;
-    skos:notation "RE"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "RE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/RotaryPump
 i14224skos:RotaryPump
@@ -849,7 +853,7 @@ i14224skos:RotaryPump
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Pump ;
-    skos:notation "RO"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "RO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/MultiStageSteamTurbine
 i14224skos:MultiStageSteamTurbine
@@ -859,7 +863,7 @@ i14224skos:MultiStageSteamTurbine
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:SteamTurbine ;
-    skos:notation "MS"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "MS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/SingleStageSteamTurbine
 i14224skos:SingleStageSteamTurbine
@@ -869,7 +873,7 @@ i14224skos:SingleStageSteamTurbine
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:SteamTurbine ;
-    skos:notation "SS"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7    .
 
 ### https://iso14224.org/skos/CentrifugalTurboexpander
 i14224skos:CentrifugalTurboexpander
@@ -879,7 +883,7 @@ i14224skos:CentrifugalTurboexpander
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Turboexpander ;
-    skos:notation "CE"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "CE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/AxialTurboexpander
 i14224skos:AxialTurboexpander
@@ -889,7 +893,7 @@ i14224skos:AxialTurboexpander
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Turboexpander ;
-    skos:notation "AX"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "AX"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ElectroHydraulicOperatedCrane
 i14224skos:ElectroHydraulicOperatedCrane
@@ -899,7 +903,7 @@ i14224skos:ElectroHydraulicOperatedCrane
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Crane ;
-    skos:notation "HO"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "HO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DieselHydraulicOperatedCrane
 i14224skos:DieselHydraulicOperatedCrane
@@ -909,7 +913,7 @@ i14224skos:DieselHydraulicOperatedCrane
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Crane ;
-    skos:notation "DO"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ShellAndTubeHeatExchanger
 i14224skos:ShellAndTubeHeatExchanger
@@ -919,7 +923,7 @@ i14224skos:ShellAndTubeHeatExchanger
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeatExchanger ;
-    skos:notation "ST"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "ST"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/PlateHeatExchanger
 i14224skos:PlateHeatExchanger
@@ -929,7 +933,7 @@ i14224skos:PlateHeatExchanger
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeatExchanger ;
-    skos:notation "P"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "P"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/PlateFinHeatExchanger
 i14224skos:PlateFinHeatExchanger
@@ -939,7 +943,7 @@ i14224skos:PlateFinHeatExchanger
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeatExchanger ;
-    skos:notation "PF"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "PF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DoublePipeHeatExchanger
 i14224skos:DoublePipeHeatExchanger
@@ -949,7 +953,7 @@ i14224skos:DoublePipeHeatExchanger
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeatExchanger ;
-    skos:notation "DP"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DP"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/BayonetHeatExchanger
 i14224skos:BayonetHeatExchanger
@@ -959,7 +963,7 @@ i14224skos:BayonetHeatExchanger
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeatExchanger ;
-    skos:notation "BY"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "BY"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/PrintedCircuitHeatExchanger
 i14224skos:PrintedCircuitHeatExchanger
@@ -969,7 +973,7 @@ i14224skos:PrintedCircuitHeatExchanger
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeatExchanger ;
-    skos:notation "PC"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "PC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/AirCooledHeatExchanger
 i14224skos:AirCooledHeatExchanger
@@ -979,7 +983,7 @@ i14224skos:AirCooledHeatExchanger
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeatExchanger ;
-    skos:notation "AC"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "AC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/SpiralHeatExchanger
 i14224skos:SpiralHeatExchanger
@@ -989,7 +993,7 @@ i14224skos:SpiralHeatExchanger
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeatExchanger ;
-    skos:notation "S"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "S"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/SpiralWoundHeatExchanger
 i14224skos:SpiralWoundHeatExchanger
@@ -999,7 +1003,7 @@ i14224skos:SpiralWoundHeatExchanger
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeatExchanger ;
-    skos:notation "SW"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SW"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DirectFiredHeater
 i14224skos:DirectFiredHeater
@@ -1009,7 +1013,7 @@ i14224skos:DirectFiredHeater
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeaterAndBoiler ;
-    skos:notation "DF"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ElectricHeater
 i14224skos:ElectricHeater
@@ -1019,7 +1023,7 @@ i14224skos:ElectricHeater
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeaterAndBoiler ;
-    skos:notation "EH"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "EH"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/IndirectHGFiredHeater
 i14224skos:IndirectHGFiredHeater
@@ -1029,7 +1033,7 @@ i14224skos:IndirectHGFiredHeater
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeaterAndBoiler ;
-    skos:notation "IF"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "IF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/HeaterTreater
 i14224skos:HeaterTreater
@@ -1039,7 +1043,7 @@ i14224skos:HeaterTreater
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeaterAndBoiler ;
-    skos:notation "HT"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "HT"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/NonHGFiredBoiler
 i14224skos:NonHGFiredBoiler
@@ -1049,7 +1053,7 @@ i14224skos:NonHGFiredBoiler
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeaterAndBoiler ;
-    skos:notation "NF"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "NF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ElectricBoiler
 i14224skos:ElectricBoiler
@@ -1059,7 +1063,7 @@ i14224skos:ElectricBoiler
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeaterAndBoiler ;
-    skos:notation "EB"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "EB"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/HCFiredBoiler
 i14224skos:HCFiredBoiler
@@ -1069,7 +1073,7 @@ i14224skos:HCFiredBoiler
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:HeaterAndBoiler ;
-    skos:notation "FB"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "FB"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/StripperPressureVessel
 i14224skos:StripperPressureVessel
@@ -1079,7 +1083,7 @@ i14224skos:StripperPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "SP"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SP"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/SeparatorPressureVessel
 i14224skos:SeparatorPressureVessel
@@ -1089,7 +1093,7 @@ i14224skos:SeparatorPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "SE"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/CoalescerPressureVessel
 i14224skos:CoalescerPressureVessel
@@ -1099,7 +1103,7 @@ i14224skos:CoalescerPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "CA"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "CA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/FlashDrumPressureVessel
 i14224skos:FlashDrumPressureVessel
@@ -1109,7 +1113,7 @@ i14224skos:FlashDrumPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "FD"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "FD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ScrubberPressureVessel
 i14224skos:ScrubberPressureVessel
@@ -1119,7 +1123,7 @@ i14224skos:ScrubberPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "SB"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SB"^^i14224skos:AllowedISO14224EquipmentCodeLevel7  .
 
 ### https://iso14224.org/skos/ContactorPressureVessel
 i14224skos:ContactorPressureVessel
@@ -1129,7 +1133,7 @@ i14224skos:ContactorPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "CO"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "CO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/SurgeDrumPressureVessel
 i14224skos:SurgeDrumPressureVessel
@@ -1139,7 +1143,7 @@ i14224skos:SurgeDrumPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "SD"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/CyclonePressureVessel
 i14224skos:CyclonePressureVessel
@@ -1149,7 +1153,7 @@ i14224skos:CyclonePressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "CY"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "CY"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 
 ### https://iso14224.org/skos/HydrocyclonePressureVessel
@@ -1160,7 +1164,7 @@ i14224skos:HydrocyclonePressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "HY"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "HY"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/SlugCatcherPressureVessel
 i14224skos:SlugCatcherPressureVessel
@@ -1170,7 +1174,7 @@ i14224skos:SlugCatcherPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "SC"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/AdsorberVPressureVessel
 i14224skos:AdsorberPressureVessel
@@ -1180,7 +1184,7 @@ i14224skos:AdsorberPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "AD"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "AD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DryerPressureVessel
 i14224skos:DryerPressureVessel
@@ -1190,7 +1194,7 @@ i14224skos:DryerPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "DR"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DR"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/PigTrapPressureVessel
 i14224skos:PigTrapPressureVessel
@@ -1200,7 +1204,7 @@ i14224skos:PigTrapPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "PT"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "PT"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DistillationColumnPressureVessel
 i14224skos:DistillationColumnPressureVessel
@@ -1210,7 +1214,7 @@ i14224skos:DistillationColumnPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "DC"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/SaturatorPressureVessel
 i14224skos:SaturatorPressureVessel
@@ -1220,7 +1224,7 @@ i14224skos:SaturatorPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "SA"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ReactorPressureVessel
 i14224skos:ReactorPressureVessel
@@ -1230,7 +1234,7 @@ i14224skos:ReactorPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "RE"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "RE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DeAeratorPressureVessel
 i14224skos:DeAeratorPressureVessel
@@ -1240,7 +1244,7 @@ i14224skos:DeAeratorPressureVessel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PressureVessel ;
-    skos:notation "DA"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/CarbonSteelPiping
 i14224skos:CarbonSteelPiping
@@ -1250,7 +1254,7 @@ i14224skos:CarbonSteelPiping
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Piping ;
-    skos:notation "CA"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "CA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/StainlessSteelPiping
 i14224skos:StainlessSteelPiping
@@ -1260,7 +1264,7 @@ i14224skos:StainlessSteelPiping
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Piping ;
-    skos:notation "ST"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "ST"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/HighStrengthLowAlloySteelPiping
 i14224skos:HighStrengthLowAlloySteelPiping
@@ -1270,7 +1274,7 @@ i14224skos:HighStrengthLowAlloySteelPiping
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Piping ;
-    skos:notation "LO"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "LO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/TitaniumPiping
 i14224skos:TitaniumPiping
@@ -1280,7 +1284,7 @@ i14224skos:TitaniumPiping
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Piping ;
-    skos:notation "TI"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "TI"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/PolymerIncludingFibreReinforcedPiping
 i14224skos:PolymerIncludingFibreReinforcedPiping
@@ -1290,7 +1294,7 @@ i14224skos:PolymerIncludingFibreReinforcedPiping
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Piping ;
-    skos:notation "PO"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "PO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ElectricWinch
 i14224skos:ElectricWinch
@@ -1300,7 +1304,7 @@ i14224skos:ElectricWinch
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Winch ;
-    skos:notation "EW"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "EW"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/HydraulicWinch
 i14224skos:HydraulicWinch
@@ -1310,7 +1314,7 @@ i14224skos:HydraulicWinch
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Winch ;
-    skos:notation "HW"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "HW"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DisconnectableTurret
 i14224skos:DisconnectableTurret
@@ -1320,7 +1324,7 @@ i14224skos:DisconnectableTurret
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Turret ;
-    skos:notation "DT"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DT"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/PermanentTurret
 i14224skos:PermanentTurret
@@ -1330,7 +1334,7 @@ i14224skos:PermanentTurret
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Turret ;
-    skos:notation "PT"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "PT"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/AxialSwivel
 i14224skos:AxialSwivel
@@ -1340,7 +1344,7 @@ i14224skos:AxialSwivel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Swivel ;
-    skos:notation "AX"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "AX"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ToroidalSwivel
 i14224skos:ToroidalSwivel
@@ -1350,7 +1354,7 @@ i14224skos:ToroidalSwivel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Swivel ;
-    skos:notation "TO"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "TO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ElectricSignalSwivel
 i14224skos:ElectricSignalSwivel
@@ -1360,7 +1364,7 @@ i14224skos:ElectricSignalSwivel
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Swivel ;
-    skos:notation "ES"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "ES"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/FixedRoofStorageTank
 i14224skos:FixedRoofStorageTank
@@ -1370,7 +1374,7 @@ i14224skos:FixedRoofStorageTank
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:StorageTank ;
-    skos:notation "FR"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "FR"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/LiftingRoofStorageTank
 i14224skos:LiftingRoofStorageTank
@@ -1380,7 +1384,7 @@ i14224skos:LiftingRoofStorageTank
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:StorageTank ;
-    skos:notation "LR"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "LR"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DiaphragmStorageTank
 i14224skos:DiaphragmStorageTank
@@ -1390,7 +1394,7 @@ i14224skos:DiaphragmStorageTank
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:StorageTank ;
-    skos:notation "DP"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DP"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ExternalFloatingRoofStorageTank
 i14224skos:ExternalFloatingRoofStorageTank
@@ -1400,7 +1404,7 @@ i14224skos:ExternalFloatingRoofStorageTank
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:StorageTank ;
-    skos:notation "EF"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "EF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/RooflessStorageTank
 i14224skos:RooflessStorageTank
@@ -1410,7 +1414,7 @@ i14224skos:RooflessStorageTank
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:StorageTank ;
-    skos:notation "RL"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "RL"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/FixedRoofWithInternalFloatingRoofStorageTank
 i14224skos:FixedRoofWithInternalFloatingRoofStorageTank
@@ -1420,7 +1424,7 @@ i14224skos:FixedRoofWithInternalFloatingRoofStorageTank
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:StorageTank ;
-    skos:notation "IF"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "IF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### Level 7 electrical equipment
 
@@ -1432,7 +1436,7 @@ i14224skos:DualUPSWithStandbyBypass
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:UninterruptiblePowerSupply ;
-    skos:notation "UB"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "UB"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DualUPSWithoutBypass
 i14224skos:DualUPSWithoutBypass
@@ -1442,7 +1446,7 @@ i14224skos:DualUPSWithoutBypass
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:UninterruptiblePowerSupply ;
-    skos:notation "UD"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "UD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/SingleUPSWithBypass
 i14224skos:SingleUPSWithBypass
@@ -1452,7 +1456,7 @@ i14224skos:SingleUPSWithBypass
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:UninterruptiblePowerSupply ;
-    skos:notation "US"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "US"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/SingleUPSWithoutBypass
 i14224skos:SingleUPSWithoutBypass
@@ -1462,7 +1466,7 @@ i14224skos:SingleUPSWithoutBypass
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:UninterruptiblePowerSupply ;
-    skos:notation "UT"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "UT"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/OilImmersedPowerTransformer
 i14224skos:OilImmersedPowerTransformer
@@ -1472,7 +1476,7 @@ i14224skos:OilImmersedPowerTransformer
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PowerTransformer ;
-    skos:notation "OT"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "OT"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DryPowerTransformer
 i14224skos:DryPowerTransformer
@@ -1482,7 +1486,7 @@ i14224skos:DryPowerTransformer
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:PowerTransformer ;
-    skos:notation "DT"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DT"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/LowVoltageSwitchgear
 i14224skos:LowVoltageSwitchgear
@@ -1492,7 +1496,7 @@ i14224skos:LowVoltageSwitchgear
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Switchgear ;
-    skos:notation "LV"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "LV"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/OilAndVacuumInsulatedSwitchgear
 i14224skos:OilAndVacuumInsulatedSwitchgear
@@ -1502,7 +1506,7 @@ i14224skos:OilAndVacuumInsulatedSwitchgear
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Switchgear ;
-    skos:notation "OV"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "OV"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/HighVoltageAirInsulatedSwitchgear
 i14224skos:HighVoltageAirInsulatedSwitchgear
@@ -1512,7 +1516,7 @@ i14224skos:HighVoltageAirInsulatedSwitchgear
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Switchgear ;
-    skos:notation "HA"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "HA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/HighVoltageGasInsulatedSwitchgear
 i14224skos:HighVoltageGasInsulatedSwitchgear
@@ -1522,7 +1526,7 @@ i14224skos:HighVoltageGasInsulatedSwitchgear
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Switchgear ;
-    skos:notation "HG"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "HG"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/LowVoltageFrequencyConverter
 i14224skos:LowVoltageFrequencyConverter
@@ -1532,7 +1536,7 @@ i14224skos:LowVoltageFrequencyConverter
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:FrequencyConverter ;
-    skos:notation "LV"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "LV"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/HighVoltageFrequencyConverter
 i14224skos:HighVoltageFrequencyConverter
@@ -1542,7 +1546,7 @@ i14224skos:HighVoltageFrequencyConverter
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:FrequencyConverter ;
-    skos:notation "HV"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "HV"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 
 ### Level 7 - Safety and fire protection equipment    
@@ -1555,7 +1559,7 @@ i14224skos:SmokeCombustionFireDetector
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:FireAndGasDetector ;
-    skos:notation "BS"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "BS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/HeatFireDetector
 i14224skos:HeatFireDetector
@@ -1565,7 +1569,7 @@ i14224skos:HeatFireDetector
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:FireAndGasDetector ;
-    skos:notation "BH"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "BH"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/FlameFireDetector
 i14224skos:FlameFireDetector
@@ -1575,7 +1579,7 @@ i14224skos:FlameFireDetector
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:FireAndGasDetector ;
-    skos:notation "BF"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "BF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ManualPushbuttonFireDetector
 i14224skos:ManualPushbuttonFireDetector
@@ -1585,7 +1589,7 @@ i14224skos:ManualPushbuttonFireDetector
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:FireAndGasDetector ;
-    skos:notation "BM"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "BM"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/OtherFireDetector
 i14224skos:OtherFireDetector
@@ -1595,7 +1599,7 @@ i14224skos:OtherFireDetector
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:FireAndGasDetector ;
-    skos:notation "BA"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "BA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/HydrocarbonGasDetector
 i14224skos:HydrocarbonGasDetector
@@ -1605,7 +1609,7 @@ i14224skos:HydrocarbonGasDetector
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:FireAndGasDetector ;
-    skos:notation "AB"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "AB"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ToxicGasDetector
 i14224skos:ToxicGasDetector
@@ -1615,7 +1619,7 @@ i14224skos:ToxicGasDetector
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:FireAndGasDetector ;
-    skos:notation "AS"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "AS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/OtherGasDetector
 i14224skos:OtherGasDetector
@@ -1625,7 +1629,7 @@ i14224skos:OtherGasDetector
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:FireAndGasDetector ;
-    skos:notation "AO"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "AO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/PressureInputDevice
 i14224skos:PressureInputDevice
@@ -1635,7 +1639,7 @@ i14224skos:PressureInputDevice
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:InputDevice ;
-    skos:notation "PS"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "PS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/LevelInputDevice
 i14224skos:LevelInputDevice
@@ -1645,7 +1649,7 @@ i14224skos:LevelInputDevice
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:InputDevice ;
-    skos:notation "LS"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "LS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/TemperatureInputDevice
 i14224skos:TemperatureInputDevice
@@ -1655,7 +1659,7 @@ i14224skos:TemperatureInputDevice
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:InputDevice ;
-    skos:notation "TS"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "TS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/FlowInputDevice
 i14224skos:FlowInputDevice
@@ -1665,7 +1669,7 @@ i14224skos:FlowInputDevice
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:InputDevice ;
-    skos:notation "FS"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "FS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/SpeedInputDevice
 i14224skos:SpeedInputDevice
@@ -1675,7 +1679,7 @@ i14224skos:SpeedInputDevice
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:InputDevice ;
-    skos:notation "SP"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SP"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/VibrationInputDevice
 i14224skos:VibrationInputDevice
@@ -1685,7 +1689,7 @@ i14224skos:VibrationInputDevice
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:InputDevice ;
-    skos:notation "VI"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "VI"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DisplacementInputDevice
 i14224skos:DisplacementInputDevice
@@ -1695,7 +1699,7 @@ i14224skos:DisplacementInputDevice
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:InputDevice ;
-    skos:notation "DI"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DI"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/AnalyserInputDevice
 i14224skos:AnalyserInputDevice
@@ -1705,7 +1709,7 @@ i14224skos:AnalyserInputDevice
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:InputDevice ;
-    skos:notation "AN"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "AN"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/WeightInputDevice
 i14224skos:WeightInputDevice
@@ -1715,7 +1719,7 @@ i14224skos:WeightInputDevice
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:InputDevice ;
-    skos:notation "WE"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "WE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/CorrosionInputDevice
 i14224skos:CorrosionInputDevice
@@ -1725,7 +1729,7 @@ i14224skos:CorrosionInputDevice
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:InputDevice ;
-    skos:notation "CO"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "CO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/LimitSwitchInputDevice
 i14224skos:LimitSwitchInputDevice
@@ -1735,7 +1739,7 @@ i14224skos:LimitSwitchInputDevice
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:InputDevice ;
-    skos:notation "LP"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "LP"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/OnOffPushbuttonInputDevice
 i14224skos:OnOffPushbuttonInputDevice
@@ -1745,7 +1749,7 @@ i14224skos:OnOffPushbuttonInputDevice
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:InputDevice ;
-    skos:notation "PB"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "PB"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/OtherInputDevice
 i14224skos:OtherInputDevice
@@ -1755,7 +1759,7 @@ i14224skos:OtherInputDevice
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:InputDevice ;
-    skos:notation "OT"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "OT"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ProgrammableLogicController
 i14224skos:ProgrammableLogicController
@@ -1765,7 +1769,7 @@ i14224skos:ProgrammableLogicController
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:ControlLogicUnit ;
-    skos:notation "LC"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "LC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ComputerControlUnit
 i14224skos:ComputerControlUnit
@@ -1775,7 +1779,7 @@ i14224skos:ComputerControlUnit
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:ControlLogicUnit ;
-    skos:notation "PC"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "PC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DistributedControlUnit
 i14224skos:DistributedControlUnit
@@ -1785,7 +1789,7 @@ i14224skos:DistributedControlUnit
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:ControlLogicUnit ;
-    skos:notation "DC"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/RelayControlUnit
 i14224skos:RelayControlUnit
@@ -1795,7 +1799,7 @@ i14224skos:RelayControlUnit
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:ControlLogicUnit ;
-    skos:notation "RL"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "RL"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/SolidStateControlUnit
 i14224skos:SolidStateControlUnit
@@ -1805,7 +1809,7 @@ i14224skos:SolidStateControlUnit
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:ControlLogicUnit ;
-    skos:notation "SS"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/SingleLoopController
 i14224skos:SingleLoopController
@@ -1815,7 +1819,7 @@ i14224skos:SingleLoopController
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:ControlLogicUnit ;
-    skos:notation "SL"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SL"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ProgrammableAutomationController
 i14224skos:ProgrammableAutomationController
@@ -1825,7 +1829,7 @@ i14224skos:ProgrammableAutomationController
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:ControlLogicUnit ;
-    skos:notation "PA"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "PA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/BallValve
 i14224skos:BallValve
@@ -1835,7 +1839,7 @@ i14224skos:BallValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "BA"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "BA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/GateValve
 i14224skos:GateValve
@@ -1845,7 +1849,7 @@ i14224skos:GateValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "GA"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "GA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/GlobeValve
 i14224skos:GlobeValve
@@ -1855,7 +1859,7 @@ i14224skos:GlobeValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "GL"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "GL"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ButterflyValve
 i14224skos:ButterflyValve
@@ -1865,7 +1869,7 @@ i14224skos:ButterflyValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "BP"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "BP"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/PlugValve
 i14224skos:PlugValve
@@ -1875,7 +1879,7 @@ i14224skos:PlugValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "PG"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "PG"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/NeedleValve
 i14224skos:NeedleValve
@@ -1885,7 +1889,7 @@ i14224skos:NeedleValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "NE"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "NE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/CheckValve
 i14224skos:CheckValve
@@ -1895,7 +1899,7 @@ i14224skos:CheckValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "CH"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "CH"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DiaphragmValve
 i14224skos:DiaphragmValve
@@ -1905,7 +1909,7 @@ i14224skos:DiaphragmValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "DI"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DI"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/FlapperValve
 i14224skos:FlapperValve
@@ -1915,7 +1919,7 @@ i14224skos:FlapperValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "FL"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "FL"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/MultipleOrificeValve
 i14224skos:MultipleOrificeValve
@@ -1925,7 +1929,7 @@ i14224skos:MultipleOrificeValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "MO"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "MO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ThreeWayValve
 i14224skos:ThreeWayValve
@@ -1935,7 +1939,7 @@ i14224skos:ThreeWayValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "WA"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "WA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/PSVConventionalValve
 i14224skos:PSVConventionalValve
@@ -1945,7 +1949,7 @@ i14224skos:PSVConventionalValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "SC"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/PSVConventionalWithBellowValve
 i14224skos:PSVConventionalWithBellowValve
@@ -1955,7 +1959,7 @@ i14224skos:PSVConventionalWithBellowValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "SB"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SB"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/PSVPilotOperatedValve
 i14224skos:PSVPilotOperatedValve
@@ -1965,7 +1969,7 @@ i14224skos:PSVPilotOperatedValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "SP"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SP"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/PSVVacuumReliefValve
 i14224skos:PSVVacuumReliefValve
@@ -1975,7 +1979,7 @@ i14224skos:PSVVacuumReliefValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "SV"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SV"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/PlugAndCageValve
 i14224skos:PlugAndCageValve
@@ -1985,7 +1989,7 @@ i14224skos:PlugAndCageValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "PC"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "PC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/ExternalSleeveValve
 i14224skos:ExternalSleeveValve
@@ -1995,7 +1999,7 @@ i14224skos:ExternalSleeveValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "ES"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "ES"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DiscValve
 i14224skos:DiscValve
@@ -2005,7 +2009,7 @@ i14224skos:DiscValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "DI"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DI"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/AxialFlowValve
 i14224skos:AxialFlowValve
@@ -2015,7 +2019,7 @@ i14224skos:AxialFlowValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "AF"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "AF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/PinchValve
 i14224skos:PinchValve
@@ -2025,7 +2029,7 @@ i14224skos:PinchValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "PI"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "PI"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/OtherValve
 i14224skos:OtherValve
@@ -2035,7 +2039,7 @@ i14224skos:OtherValve
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Valve ;
-    skos:notation "OH"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "OH"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/DelugeNozzle
 i14224skos:DelugeNozzle
@@ -2045,7 +2049,7 @@ i14224skos:DelugeNozzle
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Nozzle ;
-    skos:notation "DN"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "DN"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/SprinklerNozzle
 i14224skos:SprinklerNozzle
@@ -2055,7 +2059,7 @@ i14224skos:SprinklerNozzle
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Nozzle ;
-    skos:notation "SR"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "SR"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/WaterMistNozzle
 i14224skos:WaterMistNozzle
@@ -2065,7 +2069,7 @@ i14224skos:WaterMistNozzle
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Nozzle ;
-    skos:notation "WM"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "WM"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 ### https://iso14224.org/skos/GaseousNozzle
 i14224skos:GaseousNozzle
@@ -2075,137 +2079,56 @@ i14224skos:GaseousNozzle
     i14224skos:taxonomicLevelNumber "Level 7" ;
     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ;
     skos:broader i14224skos:Nozzle ;
-    skos:notation "GA"^^i14224skos:ISO14224EquipmentCode .
+    skos:notation "GA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 .
 
 
-
-
-i14224skos:AllowedISO14224EquipmentCode 
+i14224skos:AllowedISO14224EquipmentCodeLevel6
     rdf:value (
-        "AB"^^i14224skos:ISO14224EquipmentCode
-        "AC"^^i14224skos:ISO14224EquipmentCode
-        "AD"^^i14224skos:ISO14224EquipmentCode  
-        "AF"^^i14224skos:ISO14224EquipmentCode
-        "AN"^^i14224skos:ISO14224EquipmentCode
-        "AO"^^i14224skos:ISO14224EquipmentCode
-        "AS"^^i14224skos:ISO14224EquipmentCode
-        "AX"^^i14224skos:ISO14224EquipmentCode
-        "BA"^^i14224skos:ISO14224EquipmentCode
-        "BF"^^i14224skos:ISO14224EquipmentCode
-        "BH"^^i14224skos:ISO14224EquipmentCode
-        "BL"^^i14224skos:ISO14224EquipmentCode
-        "BM"^^i14224skos:ISO14224EquipmentCode
-        "BP"^^i14224skos:ISO14224EquipmentCode
-        "BS"^^i14224skos:ISO14224EquipmentCode
-        "BT"^^i14224skos:ISO14224EquipmentCode
-        "BY"^^i14224skos:ISO14224EquipmentCode
-        "CA"^^i14224skos:ISO14224EquipmentCode
-        "CE"^^i14224skos:ISO14224EquipmentCode
-        "CH"^^i14224skos:ISO14224EquipmentCode
-        "CL"^^i14224skos:ISO14224EquipmentCode
-        "CO"^^i14224skos:ISO14224EquipmentCode
-        "CR"^^i14224skos:ISO14224EquipmentCode
-        "CS"^^i14224skos:ISO14224EquipmentCode
-        "DA"^^i14224skos:ISO14224EquipmentCode
-        "DC"^^i14224skos:ISO14224EquipmentCode
-        "DE"^^i14224skos:ISO14224EquipmentCode
-        "DF"^^i14224skos:ISO14224EquipmentCode
-        "DH"^^i14224skos:ISO14224EquipmentCode
-        "DI"^^i14224skos:ISO14224EquipmentCode
-        "DN"^^i14224skos:ISO14224EquipmentCode
-        "DO"^^i14224skos:ISO14224EquipmentCode
-        "DP"^^i14224skos:ISO14224EquipmentCode
-        "DR"^^i14224skos:ISO14224EquipmentCode
-        "DT"^^i14224skos:ISO14224EquipmentCode
-        "EB"^^i14224skos:ISO14224EquipmentCode
-        "ED"^^i14224skos:ISO14224EquipmentCode
-        "EG"^^i14224skos:ISO14224EquipmentCode
-        "EH"^^i14224skos:ISO14224EquipmentCode
-        "EM"^^i14224skos:ISO14224EquipmentCode
-        "ES"^^i14224skos:ISO14224EquipmentCode
-        "EW"^^i14224skos:ISO14224EquipmentCode
-        "FB"^^i14224skos:ISO14224EquipmentCode
-        "FD"^^i14224skos:ISO14224EquipmentCode
-        "FG"^^i14224skos:ISO14224EquipmentCode
-        "FL"^^i14224skos:ISO14224EquipmentCode
-        "FS"^^i14224skos:ISO14224EquipmentCode
-        "GA"^^i14224skos:ISO14224EquipmentCode
-        "GE"^^i14224skos:ISO14224EquipmentCode
-        "GL"^^i14224skos:ISO14224EquipmentCode
-        "GT"^^i14224skos:ISO14224EquipmentCode
-        "HB"^^i14224skos:ISO14224EquipmentCode
-        "HD"^^i14224skos:ISO14224EquipmentCode
-        "HE"^^i14224skos:ISO14224EquipmentCode
-        "HO"^^i14224skos:ISO14224EquipmentCode
-        "HT"^^i14224skos:ISO14224EquipmentCode
-        "HW"^^i14224skos:ISO14224EquipmentCode
-        "HY"^^i14224skos:ISO14224EquipmentCode
-        "IF"^^i14224skos:ISO14224EquipmentCode
-        "IN"^^i14224skos:ISO14224EquipmentCode
-        "IP"^^i14224skos:ISO14224EquipmentCode
-        "LC"^^i14224skos:ISO14224EquipmentCode
-        "LO"^^i14224skos:ISO14224EquipmentCode
-        "LP"^^i14224skos:ISO14224EquipmentCode
-        "LS"^^i14224skos:ISO14224EquipmentCode
-        "MD"^^i14224skos:ISO14224EquipmentCode
-        "MO"^^i14224skos:ISO14224EquipmentCode
-        "MS"^^i14224skos:ISO14224EquipmentCode
-        "MX"^^i14224skos:ISO14224EquipmentCode
-        "NE"^^i14224skos:ISO14224EquipmentCode
-        "NF"^^i14224skos:ISO14224EquipmentCode
-        "NO"^^i14224skos:ISO14224EquipmentCode
-        "NoEquipmentCodeSpecified"^^i14224skos:ISO14224EquipmentCode
-        "OH"^^i14224skos:ISO14224EquipmentCode
-        "OT"^^i14224skos:ISO14224EquipmentCode
-        "P"^^i14224skos:ISO14224EquipmentCode
-        "PA"^^i14224skos:ISO14224EquipmentCode
-        "PB"^^i14224skos:ISO14224EquipmentCode
-        "PC"^^i14224skos:ISO14224EquipmentCode
-        "PF"^^i14224skos:ISO14224EquipmentCode
-        "PG"^^i14224skos:ISO14224EquipmentCode
-        "PH"^^i14224skos:ISO14224EquipmentCode
-        "PI"^^i14224skos:ISO14224EquipmentCode
-        "PO"^^i14224skos:ISO14224EquipmentCode
-        "PR"^^i14224skos:ISO14224EquipmentCode
-        "PS"^^i14224skos:ISO14224EquipmentCode
-        "PT"^^i14224skos:ISO14224EquipmentCode
-        "PU"^^i14224skos:ISO14224EquipmentCode
-        "RE"^^i14224skos:ISO14224EquipmentCode
-        "RI"^^i14224skos:ISO14224EquipmentCode
-        "RL"^^i14224skos:ISO14224EquipmentCode
-        "RO"^^i14224skos:ISO14224EquipmentCode
-        "S"^^i14224skos:ISO14224EquipmentCode
-        "SA"^^i14224skos:ISO14224EquipmentCode
-        "SB"^^i14224skos:ISO14224EquipmentCode
-        "SC"^^i14224skos:ISO14224EquipmentCode
-        "SD"^^i14224skos:ISO14224EquipmentCode
-        "SE"^^i14224skos:ISO14224EquipmentCode
-        "SH"^^i14224skos:ISO14224EquipmentCode
-        "SL"^^i14224skos:ISO14224EquipmentCode
-        "SP"^^i14224skos:ISO14224EquipmentCode
-        "SR"^^i14224skos:ISO14224EquipmentCode
-        "SS"^^i14224skos:ISO14224EquipmentCode
-        "ST"^^i14224skos:ISO14224EquipmentCode
-        "SV"^^i14224skos:ISO14224EquipmentCode
-        "SW"^^i14224skos:ISO14224EquipmentCode
-        "TD"^^i14224skos:ISO14224EquipmentCode
-        "TE"^^i14224skos:ISO14224EquipmentCode
-        "TH"^^i14224skos:ISO14224EquipmentCode
-        "TI"^^i14224skos:ISO14224EquipmentCode
-        "TO"^^i14224skos:ISO14224EquipmentCode
-        "TS"^^i14224skos:ISO14224EquipmentCode
-        "TU"^^i14224skos:ISO14224EquipmentCode
-        "UB"^^i14224skos:ISO14224EquipmentCode
-        "UD"^^i14224skos:ISO14224EquipmentCode
-        "UP"^^i14224skos:ISO14224EquipmentCode
-        "US"^^i14224skos:ISO14224EquipmentCode
-        "UT"^^i14224skos:ISO14224EquipmentCode
-        "VA"^^i14224skos:ISO14224EquipmentCode
-        "VE"^^i14224skos:ISO14224EquipmentCode
-        "VI"^^i14224skos:ISO14224EquipmentCode
-        "WA"^^i14224skos:ISO14224EquipmentCode
-        "WC"^^i14224skos:ISO14224EquipmentCode
-        "WE"^^i14224skos:ISO14224EquipmentCode
-        "WI"^^i14224skos:ISO14224EquipmentCode
-        "WM"^^i14224skos:ISO14224EquipmentCode 
-    ).
+        "BL"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "CE"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "CF"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "CL"^^i14224skos:AllowedISO14224EquipmentCodeLevel6
+        "CO"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "CR"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "CV"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "EC"^^i14224skos:AllowedISO14224EquipmentCodeLevel6
+        "EG"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "EM"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "ER"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "FC"^^i14224skos:AllowedISO14224EquipmentCodeLevel6
+        "FF"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "FG"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "FI"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "FS"^^i14224skos:AllowedISO14224EquipmentCodeLevel6
+        "GT"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "HB"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "HE"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "IG"^^i14224skos:AllowedISO14224EquipmentCodeLevel6
+        "IP"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "LA"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "LB"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "LE"^^i14224skos:AllowedISO14224EquipmentCodeLevel6
+        "MI"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "NO"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "PC"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "PI"^^i14224skos:AllowedISO14224EquipmentCodeLevel6
+        "PL"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "PT"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "PU"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "SE"^^i14224skos:AllowedISO14224EquipmentCodeLevel6
+        "SG"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "SI"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "ST"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "SW"^^i14224skos:AllowedISO14224EquipmentCodeLevel6
+        "TA"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "TC"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "TE"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "TU"^^i14224skos:AllowedISO14224EquipmentCodeLevel6
+        "UP"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "VA"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "VE"^^i14224skos:AllowedISO14224EquipmentCodeLevel6 "WI"^^i14224skos:AllowedISO14224EquipmentCodeLevel6
+    ) .
+
+
+i14224skos:AllowedISO14224EquipmentCodeLevel7 
+    rdf:value (
+        "AB"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "AC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "AD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "AF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "AN"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "AO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "AS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "AX"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "BA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "BF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "BH"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "BM"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "BP"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "BS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "BY"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "CA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "CE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "CH"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "CO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "CY"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "DA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "DC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "DE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "DF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "DI"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "DN"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "DO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "DP"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "DR"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "DT"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "EB"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "EF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "EH"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "ES"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "EW"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "FB"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "FD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "FL"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "FR"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "FS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "GA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "GE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "GL"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "HA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "HD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "HG"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "HO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "HT"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "HV"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "HW"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "HY"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "IF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "IN"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "LC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "LO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "LP"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "LR"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "LS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "LV"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "MD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "MO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "MS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "NE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "NF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "OH"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "OT"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "OV"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "P"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "PA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "PB"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "PC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "PF"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "PG"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "PI"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "PO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "PS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "PT"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "RE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "RL"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "RO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "S"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "SA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "SB"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "SC"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "SD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "SE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "SL"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "SP"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "SR"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "SS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "ST"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "SV"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "SW"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "TD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "TE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "TI"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "TO"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "TS"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "UB"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "UD"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "US"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "UT"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "VI"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "WA"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+        "WE"^^i14224skos:AllowedISO14224EquipmentCodeLevel7 "WM"^^i14224skos:AllowedISO14224EquipmentCodeLevel7
+    ) .
+
+
+
+       
