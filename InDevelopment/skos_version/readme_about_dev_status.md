@@ -27,4 +27,10 @@ The original i14224_appendixA.ttl file was made with an LLM. Manual checking rev
 
 - Many equipment codes were wrong.
 
+2/10/25  - ran the SKOS https://skos-play.sparna.fr/ tool. Identified a duplicate class (2nd EquipmentUnit should have been SubUnit). Also some opportunities to the improve the graph captured here https://chatgpt.com/share/6abf4eb9-cce0-83ec-a804-9f6bfb4f1a0d . Actioned these changes manually.
+
+Also all the Level 7 concepts were incorrectly given  i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ; instead of     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ; - this has been corrected. 
+
+
+
 
