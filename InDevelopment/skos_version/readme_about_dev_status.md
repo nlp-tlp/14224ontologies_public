@@ -31,6 +31,20 @@ The original i14224_appendixA.ttl file was made with an LLM. Manual checking rev
 
 Also all the Level 7 concepts were incorrectly given  i14224skos:taxonomicClassificationLevel i14224skos:EquipmentUnit ; instead of     i14224skos:taxonomicClassificationLevel i14224skos:SubUnit ; - this has been corrected. 
 
+Changed all the equipment class codes from skos:Concept to skos:notation and defined a i14224skos:Allowed
+
+i14224skos:TitaniumPiping
+    skos:notation "TI"^^i14224skos:ISO14224EquipmentCode .
+
+i14224skos:AllowedISO14224EquipmentCode
+    a rdfs:Datatype ;
+    rdfs:label "ISO 14224 equipment code"@en .
+
+and created an         
 
 
+i14224skos:AllowedISO14224EquipmentCode 
+    rdf:value (
+        "AB"^^i14224skos:ISO14224EquipmentCode
+        "AC"^^i14224skos:ISO14224EquipmentCode
 
