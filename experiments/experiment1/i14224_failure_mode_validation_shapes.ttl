@@ -1,0 +1,85 @@
+@prefix i14224: <https://iso14224.org/ontology/i14224/rdl/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix cmnsav: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .
+
+<https://iso14224.org/ontology/i14224/ont/appendixB/failure-mode-validation-shapes>
+    rdf:type owl:Ontology ;
+    owl:versionIRI <https://iso14224.org/ontology/i14224/ont/appendixB/failure-mode-validation-shapes/1.0> ;
+    owl:imports <https://iso14224.org/ontology/i14224/ont/appendixB/allowed-failure-modes> ;
+    dcterms:creator <https://orcid.org/0000-0002-7336-3932> ;
+    dcterms:license <https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE> ;
+    rdfs:comment "SHACL shapes for checking that a recorded ISO 14224 failure-mode code is allowed for the recorded equipment class."@en .
+
+#################################################################
+#    SHACL validation shapes
+#################################################################
+
+i14224:FailureModeAllowedForEquipmentClassShape
+    rdf:type sh:NodeShape ;
+    rdfs:label "Failure mode allowed for equipment class shape"@en ;
+    sh:targetSubjectsOf i14224:hasFailureMode ;
+    sh:sparql [
+        rdf:type sh:SPARQLConstraint ;
+        sh:message "The ISO 14224 failure mode code is not allowed for the ISO 14224 equipment class recorded for this event or record."@en ;
+        sh:select """
+            PREFIX i14224: <https://iso14224.org/ontology/i14224/rdl/>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+            SELECT $this ?failureMode ?equipment ?equipmentClass
+            WHERE {
+                $this i14224:hasFailureMode ?failureMode .
+
+                {
+                    $this i14224:hasEquipmentClass ?equipmentClass .
+                }
+                UNION
+                {
+                    $this i14224:hasFailedEquipment ?equipment .
+                    ?equipment rdf:type ?equipmentClass .
+                }
+
+                FILTER EXISTS {
+                    ?equipmentClass rdfs:subClassOf* i14224:EquipmentClass .
+                }
+
+                FILTER NOT EXISTS {
+                    ?equipmentClass rdfs:subClassOf* ?allowedClass .
+                    ?allowedClass i14224:hasAllowedFailureMode ?failureMode .
+                }
+            }
+        """ ;
+    ] .
+
+i14224:FailureModeRecordHasEquipmentClassShape
+    rdf:type sh:NodeShape ;
+    rdfs:label "Failure mode record has equipment class shape"@en ;
+    sh:targetSubjectsOf i14224:hasFailureMode ;
+    sh:sparql [
+        rdf:type sh:SPARQLConstraint ;
+        sh:message "A record with i14224:hasFailureMode should also identify an ISO 14224 equipment class, either directly with i14224:hasEquipmentClass or through i14224:hasFailedEquipment and rdf:type."@en ;
+        sh:select """
+            PREFIX i14224: <https://iso14224.org/ontology/i14224/rdl/>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+            SELECT $this
+            WHERE {
+                $this i14224:hasFailureMode ?failureMode .
+                FILTER NOT EXISTS {
+                    $this i14224:hasEquipmentClass ?equipmentClass .
+                    ?equipmentClass rdfs:subClassOf* i14224:EquipmentClass .
+                }
+                FILTER NOT EXISTS {
+                    $this i14224:hasFailedEquipment ?equipment .
+                    ?equipment rdf:type ?equipmentClass .
+                    ?equipmentClass rdfs:subClassOf* i14224:EquipmentClass .
+                }
+            }
+        """ ;
+    ] .

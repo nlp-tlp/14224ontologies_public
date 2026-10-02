@@ -4,15 +4,14 @@ This repository develops examples of sections of ISO 14224 that have been made m
 
 ## Goals
 
-1. Build and publish extracts of machine-readable RDF/Turtle representation of key ISO 14224 concepts, including:
+1. Build and publish extracts of machine-readable SKOS and RDF/Turtle representations of key ISO 14224 concepts, including:
    - terms and definitions from Clause 3,
    - failure mode data from Appendix B,
    - some equipment classes from Appendix A,
    - allowed failure-mode mappings by equipment class.
-2. Provide example data, workflows, and experiments that show how FMEA and maintenance data can be linked to ISO 14224.
+2. Provide example data, workflows, and experiments exploring how FMEA and maintenance data can be linked to ISO 14224 using different representations (skos, RDF) and schema designs.
 3. Explore ontology modelling choices aligned to top-level ontologies such as IDO, IOF, and DOLCE.
 4. Demonstrate the value of explicit ontology/TTL reference data for LLM-assisted validation and automated checks.
-5. Develop SKOS versions of the same files and explore the impact of using RDF vs SKOS versions.
 
 ## What is ISO 14224?
 
@@ -61,7 +60,11 @@ These TTL files are the key reusable assets in the repo and are the foundation f
 
 ## Experiments
 
-This repo contains two linked experiments:
+This repo contains a series experiments:
+
+Each experiment folder contains the `i14224_clause3.ttl`, `i14224_appendixA.ttl` etc. files used in that experiment. The files in the main directory have continued to evolve.
+
+Each folder also contains a readme discussing the results of the experiment.
 
 ### Experiment 1: LLM-assisted failure mode validation
 
@@ -72,7 +75,7 @@ This experiment compares two approaches for validating an FMEA spreadsheet again
 - a **PDF-based prompt** that gives the model the FMEA workbook plus ISO 14224 Annex B PDF tables,
 - a **TTL-based prompt** that gives the model the FMEA workbook plus RDF/Turtle files for equipment classes and allowed failure modes.
 
-The key insight is that TTL-based reference data can reduce ambiguity and improve model reliability compared to raw PDF reference material.
+The key insight is that TTL-based reference data can reduce ambiguity and improve model reliability compared to raw PDF reference material. 
 
 ### Experiment 2: FMEA conversion and failure mode compliance
 
@@ -137,4 +140,4 @@ This repository contains an original academic interpretation of ISO 14224 concep
 - It is not a substitute for the official ISO standard.
 - It is not endorsed by ISO or IEC.
 - Consult the official ISO/IEC publications for authoritative definitions and requirements.
-- While the Clause 3 .ttl and SKOS files aim to faithfully represent the vocabulary in Clause 3, the other files (e.g., Appendices A and B) are incomplete and may contain errors (e.g., missing terms and incorrect equipment codes in Appendix A).
+- While the Clause 3 .ttl and SKOS files aim to faithfully represent the vocabulary in Clause 3, the other files (e.g., Appendices A and B) are incomplete (for example skos Appendix A only contains Mechanical, Electrical, Rotating and Safety classes) and may contain errors (e.g., missing terms and incorrect equipment codes in Appendix A).
