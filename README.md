@@ -60,6 +60,11 @@ These files are the primary reference data for the repository:
 
 These TTL files are the key reusable assets in the repo and are the foundation for the experiments described below.
 
+## Notes on modelling
+
+- The repository is intentionally not yet aligned to a single top-level ontology; future work can add explicit alignments to IDO, IOF, or DOLCE.
+- The namespace `https://iso14224.org/ontology/i14224/rdl/` is used for current terms in RDF and `https://iso14224.org/skos/` for terms modelled in skos.
+
 ## Experiments
 
 This repo contains a series experiments:
@@ -90,50 +95,6 @@ The workflow includes:
 - `fmea_csv_to_ttl.py` — converts FMEA rows into RDF individuals,
 - `summarise_fmea_shacl_results.py` — summarises validation results in CSV reports,
 - generated outputs such as `AutoclaveControlLoopFMEA_instances.ttl`, warning files, and validation reports.
-
-## Key files and outputs
-
-### ISO 14224 ontology files in `inDevelopment/`
-
-- `i14224_clause3.ttl` — Clause 3 terms and definitions
-- `i14224_appendixA.ttl` — equipment classes from Appendix A
-- `i14224_appendixB.ttl` — failure modes and mechanisms from Appendix B
-- `i14224_appendixB_allowed_failure_modes.ttl` — allowed failure modes by equipment class
-- `i14224_failure_mode_validation_shape.ttl` — validation shape for equipment-class/failure-mode checks
-
-### Experiment files
-
-- `experiments/experiment1/README_experiment1.md` — details of the LLM validation experiment
-- `experiments/experiment2/README_experiment2.md` — details of the FMEA conversion and validation workflow
-- `experiments/experiment2/fmea_csv_to_ttl.py` — converter script
-- `experiments/experiment2/summarise_fmea_shacl_results.py` — validation summary script
-- `experiments/experiment2/AutoclaveControlLoopFMEA.csv` — input FMEA data
-- generated reports and result workbooks in experiment directories
-
-## How to run the main workflow
-
-From `experiments/experiment2`:
-
-```powershell
-python .\fmea_csv_to_ttl.py `
-  --csv .\AutoclaveControlLoopFMEA.csv `
-  --iso-a ..\..\inDevelopment\i14224_appendixA.ttl `
-  --iso-b ..\..\inDevelopment\i14224_appendixB.ttl `
-  --iso-c ..\..\inDevelopment\i14224_clause3.ttl `
-  --out .\AutoclaveControlLoopFMEA_instances.ttl `
-  --warnings .\AutoclaveControlLoopFMEA_warnings.csv
-
-python .\summarise_fmea_shacl_results.py `
-  --data .\AutoclaveControlLoopFMEA_instances.ttl `
-  --allowed ..\..\inDevelopment\i14224_appendixB_allowed_failure_modes.ttl `
-  --out .\ISO14224_FM_Code_Check_report_completed.csv
-```
-
-## Notes on modelling
-
-- The current TTL files capture ISO 14224 concepts as OWL classes and named individuals.
-- The repository is intentionally not yet aligned to a single top-level ontology; future work can add explicit alignments to IDO, IOF, or DOLCE.
-- The namespace `https://iso14224.org/ontology/i14224/rdl/` is used consistently for current terms.
 
 ## Disclaimer
 
