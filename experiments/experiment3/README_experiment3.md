@@ -47,7 +47,7 @@ i14224skos:CombustionEngine
     i14224skos:hasEquipmentCategory i14224skos:RotatingEquipment .
 ```
 
-Each entry (at L6 and L7) has been given a skos:notation, in the above example this is `skos:notation "CE"^^i14224skos:AllowedISO14224EquipmentCodeLevel6'
+Each entry (at L6 and L7) has been given a `skos:notation`; in the above example this is `skos:notation "CE"^^i14224skos:AllowedISO14224EquipmentCodeLevel6`.
 
 In addition a list of rdf:value for i14224skos:AllowedISO14224EquipmentCodeLevel6 and i14224skos:AllowedISO14224EquipmentCodeLevel7 is created. 
 
