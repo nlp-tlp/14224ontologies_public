@@ -10,7 +10,7 @@ Appendix A.2 contains sections for each Equipment Class organised by the followi
 
 Examples of Equipment Classes include A.2.2.1 Combustion Engines, A.2.2.2 Compressors and so on. 
 
-The term Equipment Class is defined in Clause 3 of the Standard and for this experiment is defined in a [TTL file](vocab14224_skos_basic.ttl) file as follows.
+The term Equipment Class is defined in Clause 3 of the Standard and for this experiment is defined in a [TTL file](vocab14224_skos_basic.ttl) as follows.
 
 ```
 i14224skos:EquipmentClass a skos:Concept ;
