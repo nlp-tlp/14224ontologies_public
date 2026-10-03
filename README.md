@@ -4,15 +4,14 @@ This repository develops examples of sections of ISO 14224 that have been made m
 
 ## Goals
 
-1. Build and publish extracts of machine-readable RDF/Turtle representation of key ISO 14224 concepts, including:
+1. Build and publish extracts of machine-readable SKOS and RDF/Turtle representations of key ISO 14224 concepts, including:
    - terms and definitions from Clause 3,
    - failure mode data from Appendix B,
    - some equipment classes from Appendix A,
    - allowed failure-mode mappings by equipment class.
-2. Provide example data, workflows, and experiments that show how FMEA and maintenance data can be linked to ISO 14224.
+2. Provide example data, workflows, and experiments exploring how FMEA and maintenance data can be linked to ISO 14224 using different representations (skos, RDF) and schema designs.
 3. Explore ontology modelling choices aligned to top-level ontologies such as IDO, IOF, and DOLCE.
 4. Demonstrate the value of explicit ontology/TTL reference data for LLM-assisted validation and automated checks.
-5. Develop SKOS versions of the same files and explore the impact of using RDF vs SKOS versions.
 
 ## What is ISO 14224?
 
@@ -40,7 +39,7 @@ Manual FMEA and maintenance tables are often inconsistent and hard to automate. 
 
 - `catalog-v001.xml`, `LICENSE`, `README.md` — root metadata and documentation
 - `imports/` — source RDF/TTL imports and external ontology material
-- `inDevelopment/` — working TTL files for ISO 14224 concepts and allowed failure mode mappings
+- `inDevelopment/` — working TTL files using SKOS and RDF for ISO 14224 concepts and allowed failure mode mappings
 - `experiments/experiment1/` — LLM experiment documentation, prompts, and generated reports
 - `experiments/experiment2/` — FMEA-to-RDF conversion and validation scripts, data, and outputs
 
@@ -51,17 +50,28 @@ They capture the semantic definitions, equipment class taxonomy, failure mode vo
 
 These files are the primary reference data for the repository:
 
+- `vocab14224_skos_basic.ttl` - Clause 3 terms and definitions, modelled as SKOS concepts and collections.
+= `iso14224_skos_AppendixA` - — equipment classes and categories from Appendix A modelled in RDF including specific classes for Level 6 and 7 terms.
 - `i14224_clause3.ttl` — Clause 3 terms and definitions, modelled as OWL classes, properties, and annotation statements.
-- `i14224_appendixA.ttl` — equipment classes and categories from Appendix A.
-- `i14224_appendixB.ttl` — failure modes, failure mechanisms, and related Annex B terms.
+- `i14224_appendixA.ttl` — equipment classes and categories from Appendix A modelled in RDF.
+- `i14224_appendixB.ttl` — failure modes, failure mechanisms, and related Annex B terms modelled in RDF.
 - `i14224_appendixB_allowed_failure_modes.ttl` — allowed failure mode mappings by equipment class.
 - `i14224_failure_mode_validation_shape.ttl` — validation rules for equipment-class/failure-mode checks.
 
 These TTL files are the key reusable assets in the repo and are the foundation for the experiments described below.
 
+## Notes on modelling
+
+- The repository is intentionally not yet aligned to a single top-level ontology; future work can add explicit alignments to IDO, IOF, or DOLCE.
+- The namespace `https://iso14224.org/ontology/i14224/rdl/` is used for current terms in RDF and `https://iso14224.org/skos/` for terms modelled in skos.
+
 ## Experiments
 
-This repo contains two linked experiments:
+This repo contains a series experiments:
+
+Each experiment folder contains the `i14224_clause3.ttl`, `i14224_appendixA.ttl` etc. files used in that experiment. The files in the main directory have continued to evolve.
+
+Each folder also contains a readme discussing the results of the experiment.
 
 ### Experiment 1: LLM-assisted failure mode validation
 
@@ -72,7 +82,7 @@ This experiment compares two approaches for validating an FMEA spreadsheet again
 - a **PDF-based prompt** that gives the model the FMEA workbook plus ISO 14224 Annex B PDF tables,
 - a **TTL-based prompt** that gives the model the FMEA workbook plus RDF/Turtle files for equipment classes and allowed failure modes.
 
-The key insight is that TTL-based reference data can reduce ambiguity and improve model reliability compared to raw PDF reference material.
+The key insight is that TTL-based reference data can reduce ambiguity and improve model reliability compared to raw PDF reference material. 
 
 ### Experiment 2: FMEA conversion and failure mode compliance
 
@@ -86,50 +96,6 @@ The workflow includes:
 - `summarise_fmea_shacl_results.py` — summarises validation results in CSV reports,
 - generated outputs such as `AutoclaveControlLoopFMEA_instances.ttl`, warning files, and validation reports.
 
-## Key files and outputs
-
-### ISO 14224 ontology files in `inDevelopment/`
-
-- `i14224_clause3.ttl` — Clause 3 terms and definitions
-- `i14224_appendixA.ttl` — equipment classes from Appendix A
-- `i14224_appendixB.ttl` — failure modes and mechanisms from Appendix B
-- `i14224_appendixB_allowed_failure_modes.ttl` — allowed failure modes by equipment class
-- `i14224_failure_mode_validation_shape.ttl` — validation shape for equipment-class/failure-mode checks
-
-### Experiment files
-
-- `experiments/experiment1/README_experiment1.md` — details of the LLM validation experiment
-- `experiments/experiment2/README_experiment2.md` — details of the FMEA conversion and validation workflow
-- `experiments/experiment2/fmea_csv_to_ttl.py` — converter script
-- `experiments/experiment2/summarise_fmea_shacl_results.py` — validation summary script
-- `experiments/experiment2/AutoclaveControlLoopFMEA.csv` — input FMEA data
-- generated reports and result workbooks in experiment directories
-
-## How to run the main workflow
-
-From `experiments/experiment2`:
-
-```powershell
-python .\fmea_csv_to_ttl.py `
-  --csv .\AutoclaveControlLoopFMEA.csv `
-  --iso-a ..\..\inDevelopment\i14224_appendixA.ttl `
-  --iso-b ..\..\inDevelopment\i14224_appendixB.ttl `
-  --iso-c ..\..\inDevelopment\i14224_clause3.ttl `
-  --out .\AutoclaveControlLoopFMEA_instances.ttl `
-  --warnings .\AutoclaveControlLoopFMEA_warnings.csv
-
-python .\summarise_fmea_shacl_results.py `
-  --data .\AutoclaveControlLoopFMEA_instances.ttl `
-  --allowed ..\..\inDevelopment\i14224_appendixB_allowed_failure_modes.ttl `
-  --out .\ISO14224_FM_Code_Check_report_completed.csv
-```
-
-## Notes on modelling
-
-- The current TTL files capture ISO 14224 concepts as OWL classes and named individuals.
-- The repository is intentionally not yet aligned to a single top-level ontology; future work can add explicit alignments to IDO, IOF, or DOLCE.
-- The namespace `https://iso14224.org/ontology/i14224/rdl/` is used consistently for current terms.
-
 ## Disclaimer
 
 This repository contains an original academic interpretation of ISO 14224 concepts.
@@ -137,4 +103,4 @@ This repository contains an original academic interpretation of ISO 14224 concep
 - It is not a substitute for the official ISO standard.
 - It is not endorsed by ISO or IEC.
 - Consult the official ISO/IEC publications for authoritative definitions and requirements.
-- While the Clause 3 .ttl and SKOS files aim to faithfully represent the vocabulary in Clause 3, the other files (e.g., Appendices A and B) are incomplete and may contain errors (e.g., missing terms and incorrect equipment codes in Appendix A).
+- While the Clause 3 .ttl and SKOS files aim to faithfully represent the vocabulary in Clause 3, the other files (e.g., Appendices A and B) are incomplete (for example skos Appendix A only contains Mechanical, Electrical, Rotating and Safety classes) and may contain errors (e.g., missing terms and incorrect equipment codes in Appendix A).

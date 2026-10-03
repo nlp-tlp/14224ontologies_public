@@ -1,0 +1,3735 @@
+@prefix i14224: <https://iso14224.org/ontology/i14224/rdl/> .
+@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix cmnsav: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+
+<https://iso14224.org/ontology/i14224/ont/appendixA> rdf:type owl:Ontology ;
+    owl:versionIRI <https://iso14224.org/ontology/i14224/ont/appendixA/1.0> ;
+    owl:imports <https://iso14224.org/ontology/i14224/ont/clause3> ;
+    dcterms:creator <https://orcid.org/0000-0002-7336-3932> ;
+    dcterms:license <https://github.com/nlp-tlp/14224ontologies_public/blob/main/LICENSE> ;
+    dcterms:rights "See github"@en ;
+    rdfs:comment "Equipment classes and equipment types extracted from ISO 14224 Appendix A type-classification and equipment-class tables."@en .
+
+
+#################################################################
+#    Core classes and properties
+#################################################################
+
+i14224:EquipmentClass rdf:type owl:Class ;
+    rdfs:label "Equipment class"@en ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "classification of equipment used for ISO 14224 equipment taxonomy and failure and maintenance data collection"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:EquipmentByType rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Equipment type"@en ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "classification of an ISO 14224 equipment type within an equipment class"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:EquipmentCode rdf:type owl:Class ;
+    rdfs:label "Equipment code"@en ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of codes used to identify ISO 14224 equipment classes and equipment types"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:hasEquipmentCode rdf:type owl:AnnotationProperty ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "has equipment code"@en ;
+    skos:definition "identifies the equipment code used for an equipment class or equipment type"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:equipment_category rdf:type owl:AnnotationProperty ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "equipment category"@en ;
+    skos:definition "annotation property identifying the ISO 14224 Appendix A equipment category"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:equipment_class_level rdf:type owl:AnnotationProperty ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "equipment class level"@en ;
+    skos:definition "annotation property identifying the ISO 14224 taxonomy level for an equipment class or equipment type entry"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+
+
+#################################################################
+#    Equipment classes - Level 6
+#################################################################
+### Rotating equipment category
+
+
+###  https://iso14224.org/ontology/i14224/rdl/BlowerAndFan
+i14224:BlowerAndFan
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Blower and fan"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:BL ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of blower and fans"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/CombustionEngine
+i14224:CombustionEngine
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Combustion engine"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:CE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of combustion engines"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/Centrifuge
+i14224:Centrifuge
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Centrifuge"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:CF ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of centrifuges"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/Compressor
+i14224:Compressor
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Compressor"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:CO ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of compressors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ElectricGenerator
+i14224:ElectricGenerator
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Electric generator"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:EG ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of electric generators"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ElectricMotor
+i14224:ElectricMotor
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Electric motor"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:EM ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of electric motors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/GasTurbine
+i14224:GasTurbine
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Gas turbine"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:GT ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of gas turbines"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/LiquidExpander
+i14224:LiquidExpander
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Liquid expander"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:LE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of liquid expanders"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .   
+
+###  https://iso14224.org/ontology/i14224/rdl/Mixer
+i14224:Mixer
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Mixer"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:MI ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of mixers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .     
+
+###  https://iso14224.org/ontology/i14224/rdl/Pump
+i14224:Pump
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Pump"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:PU ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of pumps"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SteamTurbine
+i14224:SteamTurbine
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Steam turbine"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:ST ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of steam turbines"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/Turboexpander
+i14224:Turboexpander
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Turboexpander"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:TE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of turboexpanders"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+### Mechanical equipment category  
+
+###  https://iso14224.org/ontology/i14224/rdl/ConveyorAndElevator
+i14224:ConveyorAndElevator
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Conveyor and elevator"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:CV ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of conveyors and elevators"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/Crane
+i14224:Crane
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Crane"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:CR ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of cranes"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/FilterAndStrainer
+i14224:FilterAndStrainer
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Filter and strainer"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:NoEquipmentCodeSpecified ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of filter and strainers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/HeaterAndBoiler
+i14224:HeaterAndBoiler
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Heater and boiler"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:HB ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of heater and boilers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/HeatExchanger
+i14224:HeatExchanger
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Heat exchanger"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:HE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of heat exchangers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/LoadingArm
+i14224:LoadingArm
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Loading arm"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:NoEquipmentCodeSpecified ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of loading arms"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/OnshorePipeline
+i14224:OnshorePipeline
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Onshore pipeline"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:NoEquipmentCodeSpecified ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of pipelines"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/Piping
+i14224:Piping
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Piping"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:PI ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of pipings"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PressureVessel
+i14224:PressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:VE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of pressure vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/Silo
+i14224:Silo
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Silo"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:SI ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of silos"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SteamEjector
+i14224:SteamEjector
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Steam ejector"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:SE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of steam ejectors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/StorageTank
+i14224:StorageTank
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Storage tank"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:NoEquipmentCodeSpecified ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of storage tanks"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/Swivel
+i14224:Swivel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Swivel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:SW ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of swivels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/Turret
+i14224:Turret
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Turret"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:TU ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of turrets"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/Winch
+i14224:Winch
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Winch"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:WI ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of winchs"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+### Electrical equipment category    
+
+###  https://iso14224.org/ontology/i14224/rdl/FrequencyConverter
+i14224:FrequencyConverter
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Frequency converter"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:FC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of frequency converters"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PowerCableAndTermination
+i14224:PowerCableAndTermination
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Power cable and termination"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:PC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of power cable and terminations"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PowerTransformer
+i14224:PowerTransformer
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Power transformer"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:PT ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of power transformers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/Switchgear
+i14224:Switchgear
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Switchgear"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:SG ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of switchgear"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/UninterruptiblePowerSupply
+i14224:UninterruptiblePowerSupply
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Uninterruptible power supply"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:UP ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of uninterruptible power supplys"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+### Safety and control equipment category   
+
+###  https://iso14224.org/ontology/i14224/rdl/ControlLogicUnit
+i14224:ControlLogicUnit
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Control unit"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:CL ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of control units"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/EmergencyCommunicationEquipment
+i14224:EmergencyCommunicationEquipment
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Emergency communication equipment"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:EC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of emergency communication equipment"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/EscapeEvacuationRescue
+i14224:EscapeEvacuationRescue
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Escape, evacuation and rescue equipment"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:ER ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of escape, evacuation and rescue equipment"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/FireAndGasDetector
+i14224:FireAndGasDetector
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Fire and gas detector"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:FG ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of fire and gas detectors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/FireFightingEquipment
+i14224:FireFightingEquipment
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Fire-fighting equipment"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:FF ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of fire-fighting equipment"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/FlareIgnition
+i14224:FlareIgnition
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Flare ignition"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:FI ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of flare ignition equipment"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/InertGasEquipment
+i14224:InertGasEquipment
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Inert-gas equipment"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:IG ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of inert-gas equipment"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/InputDevice
+i14224:InputDevice
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Input device"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:IP ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of input devices"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/Lifeboat
+i14224:Lifeboat
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Lifeboat"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:LB ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of lifeboats"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/Nozzle
+i14224:Nozzle
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Nozzle"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:NO ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of nozzles"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/Telecommunication
+i14224:Telecommunication
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Telecommunication"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:TC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of telecommunication equipment"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/Valve
+i14224:Valve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:EquipmentClass ;
+    rdfs:label "Valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 6"@en ;
+    i14224:hasEquipmentCode i14224:VA ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+
+
+#################################################################
+#    Equipment types - Level 7
+#################################################################
+
+###  https://iso14224.org/ontology/i14224/rdl/DieselEngine
+i14224:DieselEngine
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:CombustionEngine , i14224:EquipmentByType ;
+    rdfs:label "Diesel engine"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of diesel engines"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/OttoGasEngine
+i14224:OttoGasEngine
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:CombustionEngine , i14224:EquipmentByType ;
+    rdfs:label "Otto (gas) engine"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:GE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of otto (gas) engines"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/CentrifugalCompressor
+i14224:CentrifugalCompressor
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Compressor , i14224:EquipmentByType ;
+    rdfs:label "Centrifugal compressor"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:CE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of centrifugal compressors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ReciprocatingCompressor
+i14224:ReciprocatingCompressor
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Compressor , i14224:EquipmentByType ;
+    rdfs:label "Reciprocating compressor"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:RE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of reciprocating compressors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ScrewCompressor
+i14224:ScrewCompressor
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Compressor , i14224:EquipmentByType ;
+    rdfs:label "Screw compressor"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of screw compressors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/AxialCompressor
+i14224:AxialCompressor
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Compressor , i14224:EquipmentByType ;
+    rdfs:label "Axial compressor"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:AX ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of axial compressors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/GasTurbineDrivenElectricGenerator
+i14224:GasTurbineDrivenElectricGenerator
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:ElectricGenerator , i14224:EquipmentByType ;
+    rdfs:label "Gas-turbine driven electric generator"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:TD ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of gas-turbine driven electric generators"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SteamTurbineDrivenElectricGenerator
+i14224:SteamTurbineDrivenElectricGenerator
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:ElectricGenerator , i14224:EquipmentByType ;
+    rdfs:label "Steam-turbine driven electric generator"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SD ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of steam-turbine driven electric generators"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/TurboexpanderDrivenElectricGenerator
+i14224:TurboexpanderDrivenElectricGenerator
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:ElectricGenerator , i14224:EquipmentByType ;
+    rdfs:label "Turboexpander driven electric generator"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:TE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of turboexpander driven electric generators"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/EngineDrivenElectricGenerator
+i14224:EngineDrivenElectricGenerator
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:ElectricGenerator , i14224:EquipmentByType ;
+    rdfs:label "Engine driven electric generator"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:MD ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of engine driven electric generators"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/AlternatingCurrentElectricMotor
+i14224:AlternatingCurrentElectricMotor
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:ElectricMotor , i14224:EquipmentByType ;
+    rdfs:label "Alternating current electric motor"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:AC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of alternating current electric motors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DirectCurrentElectricMotor
+i14224:DirectCurrentElectricMotor
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:ElectricMotor , i14224:EquipmentByType ;
+    rdfs:label "Direct current electric motor"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of direct current electric motors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/IndustrialGasTurbine
+i14224:IndustrialGasTurbine
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:GasTurbine , i14224:EquipmentByType ;
+    rdfs:label "Industrial gas turbine"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:IN ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of industrial gas turbines"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/AeroDerivativeGasTurbine
+i14224:AeroDerivativeGasTurbine
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:GasTurbine , i14224:EquipmentByType ;
+    rdfs:label "Aero-derivative gas turbine"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:AD ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of aero-derivative gas turbines"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/HeavyDutyGasTurbine
+i14224:HeavyDutyGasTurbine
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:GasTurbine , i14224:EquipmentByType ;
+    rdfs:label "Heavy-duty gas turbine"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:HD ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of heavy-duty gas turbines"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/CentrifugalPump
+i14224:CentrifugalPump
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Pump , i14224:EquipmentByType ;
+    rdfs:label "Centrifugal pump"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:CE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of centrifugal pumps"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ReciprocatingPump
+i14224:ReciprocatingPump
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Pump , i14224:EquipmentByType ;
+    rdfs:label "Reciprocating pump"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:RE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of reciprocating pumps"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/RotaryPump
+i14224:RotaryPump
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Pump , i14224:EquipmentByType ;
+    rdfs:label "Rotary pump"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:RO ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of rotary pumps"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/MultiStageSteamTurbine
+i14224:MultiStageSteamTurbine
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:SteamTurbine , i14224:EquipmentByType ;
+    rdfs:label "Multi-stage steam turbine"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:MS ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of multi-stage steam turbines"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SingleStageSteamTurbine
+i14224:SingleStageSteamTurbine
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:SteamTurbine , i14224:EquipmentByType ;
+    rdfs:label "Single-stage steam turbine"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SS ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of single-stage steam turbines"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/CentrifugalTurboexpander
+i14224:CentrifugalTurboexpander
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Turboexpander , i14224:EquipmentByType ;
+    rdfs:label "Centrifugal turboexpander"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:CE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of centrifugal turboexpanders"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/AxialTurboexpander
+i14224:AxialTurboexpander
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Turboexpander , i14224:EquipmentByType ;
+    rdfs:label "Axial turboexpander"@en ;
+    i14224:equipment_category "rotating equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:AX ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of axial turboexpanders"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ElectroHydraulicOperatedCrane
+i14224:ElectroHydraulicOperatedCrane
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Crane , i14224:EquipmentByType ;
+    rdfs:label "Electro-hydraulic operated crane"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:HO ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of electro-hydraulic operated cranes"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DieselHydraulicOperatedCrane
+i14224:DieselHydraulicOperatedCrane
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Crane , i14224:EquipmentByType ;
+    rdfs:label "Diesel hydraulic operated crane"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DO ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of diesel hydraulic operated cranes"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ShellAndTubeHeatExchanger
+i14224:ShellAndTubeHeatExchanger
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
+    rdfs:label "Shell and tube heat exchanger"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:ST ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of shell and tube heat exchangers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PlateHeatExchanger
+i14224:PlateHeatExchanger
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
+    rdfs:label "Plate heat exchanger"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:P ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of plate heat exchangers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PlateFinHeatExchanger
+i14224:PlateFinHeatExchanger
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
+    rdfs:label "Plate fin heat exchanger"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:PF ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of plate fin heat exchangers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DoublePipeHeatExchanger
+i14224:DoublePipeHeatExchanger
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
+    rdfs:label "Double pipe heat exchanger"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DP ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of double pipe heat exchangers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/BayonetHeatExchanger
+i14224:BayonetHeatExchanger
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
+    rdfs:label "Bayonet heat exchanger"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:BY ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of bayonet heat exchangers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PrintedCircuitHeatExchanger
+i14224:PrintedCircuitHeatExchanger
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
+    rdfs:label "Printed circuit heat exchanger"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:PC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of printed circuit heat exchangers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/AirCooledHeatExchanger
+i14224:AirCooledHeatExchanger
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
+    rdfs:label "Air-cooled heat exchanger"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:AC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of air-cooled heat exchangers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SpiralHeatExchanger
+i14224:SpiralHeatExchanger
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
+    rdfs:label "Spiral heat exchanger"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:S ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of spiral heat exchangers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SpiralWoundHeatExchanger
+i14224:SpiralWoundHeatExchanger
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeatExchanger , i14224:EquipmentByType ;
+    rdfs:label "Spiral-wound heat exchanger"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SW ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of spiral-wound heat exchangers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DirectFiredHeater
+i14224:DirectFiredHeater
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentByType ;
+    rdfs:label "Direct-fired heater"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DF ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of direct-fired heaters"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ElectricHeater
+i14224:ElectricHeater
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentByType ;
+    rdfs:label "Electric heater"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:EH ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of electric heaters"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/IndirectHCFiredHeater
+i14224:IndirectHCFiredHeater
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentByType ;
+    rdfs:label "Indirect HC-fired heater"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:IF ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of indirect hc-fired heaters"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/HeaterTreater
+i14224:HeaterTreater
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentByType ;
+    rdfs:label "Heater treater"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:HT ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of heater treaters"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/NonHGFiredBoiler
+i14224:NonHGFiredBoiler
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentByType ;
+    rdfs:label "Non-HG-fired boiler"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:NF ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of non-hg-fired boilers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ElectricBoiler
+i14224:ElectricBoiler
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentByType ;
+    rdfs:label "Electric boiler"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:EB ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of electric boilers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/HGFiredBoiler
+i14224:HGFiredBoiler
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:HeaterAndBoiler , i14224:EquipmentByType ;
+    rdfs:label "HG-fired boiler"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:FB ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of hg-fired boilers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/StripperPressureVessel
+i14224:StripperPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Stripper pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SP ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of stripper pressure vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SeparatorPressureVessel
+i14224:SeparatorPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Separator pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of separator pressure vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/CoalescerPressureVessel
+i14224:CoalescerPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Coalescer pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:CA ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of coalescer pressure vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/FlashDrumPressureVessel
+i14224:FlashDrumPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Flash drum pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:FD ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of flash drum pressure vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ScrubberPressureVessel
+i14224:ScrubberPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Scrubber pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SB ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of scrubber vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ContactorPressureVessel
+i14224:ContactorPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Contactor pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:CO ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of contactor pressure vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SurgeDrumPressureVessel
+i14224:SurgeDrumPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Surge drum pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SD ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of surge drum vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/CyclonePressureVessel
+i14224:CyclonePressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Cyclone pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:CY ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of cyclone pressure vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+
+###  https://iso14224.org/ontology/i14224/rdl/HydrocyclonePressureVessel
+i14224:HydrocyclonePressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Hydrocyclone pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:HY ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of hydrocyclone pressure vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SlugCatcherPressureVessel
+i14224:SlugCatcherPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Slug catcher pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of slug catcher pressure vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/AdsorberPressureVessel
+i14224:AdsorberPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Adsorber pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:AD ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of adsorber pressure vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DryerPressureVessel
+i14224:DryerPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Dryer pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DR ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of dryer vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PigTrapPressureVessel
+i14224:PigTrapPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Pig trap pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:PT ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of pig trap vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DistillationColumnPressureVessel
+i14224:DistillationColumnPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Distillation column pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of distillation column vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SaturatorPressureVessel
+i14224:SaturatorPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Saturator pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SA ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of saturator vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ReactorPressureVessel
+i14224:ReactorPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "Reactor pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:RE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of reactor vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DeAeratorPressureVessel
+i14224:DeAeratorPressureVessel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PressureVessel , i14224:EquipmentByType ;
+    rdfs:label "De-aerator pressure vessel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DA ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of de-aerator pressure vessels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/CarbonSteelPiping
+i14224:CarbonSteelPiping
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Piping , i14224:EquipmentByType ;
+    rdfs:label "Carbon steel piping"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:CA ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of carbon steel pipings"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/StainlessSteelPiping
+i14224:StainlessSteelPiping
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Piping , i14224:EquipmentByType ;
+    rdfs:label "Stainless steel piping"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:ST ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of stainless steel pipings"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/HighStrengthLowAlloySteelPiping
+i14224:HighStrengthLowAlloySteelPiping
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Piping , i14224:EquipmentByType ;
+    rdfs:label "High-strength low-alloy steel piping"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:LO ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of high-strength low-alloy steel pipings"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/TitaniumPiping
+i14224:TitaniumPiping
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Piping , i14224:EquipmentByType ;
+    rdfs:label "Titanium piping"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:TI ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of titanium pipings"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PolymerIncludingFibreReinforcedPiping
+i14224:PolymerIncludingFibreReinforcedPiping
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Piping , i14224:EquipmentByType ;
+    rdfs:label "Polymer including fibre-reinforced piping"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:PO ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of polymer including fibre-reinforced pipings"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ElectricWinch
+i14224:ElectricWinch
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Winch , i14224:EquipmentByType ;
+    rdfs:label "Electric winch"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:EW ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of electric winchs"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/HydraulicWinch
+i14224:HydraulicWinch
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Winch , i14224:EquipmentByType ;
+    rdfs:label "Hydraulic winch"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:HW ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of hydraulic winchs"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DisconnectableTurret
+i14224:DisconnectableTurret
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Turret , i14224:EquipmentByType ;
+    rdfs:label "Disconnectable turret"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DT ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of disconnectable turrets"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PermanentTurret
+i14224:PermanentTurret
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Turret , i14224:EquipmentByType ;
+    rdfs:label "Permanent turret"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:PT ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of permanent turrets"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/AxialSwivel
+i14224:AxialSwivel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Swivel , i14224:EquipmentByType ;
+    rdfs:label "Axial swivel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:AX ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of axial swivels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ToroidalSwivel
+i14224:ToroidalSwivel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Swivel , i14224:EquipmentByType ;
+    rdfs:label "Toroidal swivel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:TO ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of toroidal swivels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ElectricSignalSwivel
+i14224:ElectricSignalSwivel
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Swivel , i14224:EquipmentByType ;
+    rdfs:label "Electric/signal swivel"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:ES ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of electric/signal swivels"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/FixedRoofStorageTank
+i14224:FixedRoofStorageTank
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:StorageTank , i14224:EquipmentByType ;
+    rdfs:label "Fixed roof storage tank"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:FR ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of fixed roof storage tanks"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .   
+
+###  https://iso14224.org/ontology/i14224/rdl/LiftingRoofStorageTank
+i14224:LiftingRoofStorageTank
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:StorageTank , i14224:EquipmentByType ;
+    rdfs:label "Lifting roof storage tank"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:LR ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of lifting roof storage tanks"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DiaphragmStorageTank
+i14224:DiaphragmStorageTank
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:StorageTank , i14224:EquipmentByType ;
+    rdfs:label "Diaphragm storage tank"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DP ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of diaphragm storage tanks"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en . 
+
+###  https://iso14224.org/ontology/i14224/rdl/ExternalFloatingRoofStorageTank
+i14224:ExternalFloatingRoofStorageTank
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:StorageTank , i14224:EquipmentByType ;
+    rdfs:label "External floating roof storage tank"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:EF ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of external floating roof storage tanks"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/RooflessStorageTank
+i14224:RooflessStorageTank
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:StorageTank , i14224:EquipmentByType ;
+    rdfs:label "Roofless storage tank"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:RL ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of roofless storage tanks"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en . 
+
+###  https://iso14224.org/ontology/i14224/rdl/FixedRoofWithInternalFloatingRoofStorageTank
+i14224:FixedRoofWithInternalFloatingRoofStorageTank
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:StorageTank , i14224:EquipmentByType ;
+    rdfs:label "Fixed roof with internal floating roof storage tank"@en ;
+    i14224:equipment_category "mechanical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:IF ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of fixed roof with internal floating roof storage tanks"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en . 
+
+### Level 7 electrical equipment
+
+###  https://iso14224.org/ontology/i14224/rdl/DualUPSWithStandbyBypass
+i14224:DualUPSWithStandbyBypass
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:UninterruptiblePowerSupply , i14224:EquipmentByType ;
+    rdfs:label "Dual UPS with standby bypass; rectifier supplied from emergency power; bypass from main power system"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:UB ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of dual ups with standby bypass; rectifier supplied from emergency power; bypass from main power systems"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DualUPSWithoutBypass
+i14224:DualUPSWithoutBypass
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:UninterruptiblePowerSupply , i14224:EquipmentByType ;
+    rdfs:label "Dual UPS without bypass; rectifier supplied from emergency power"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:UD ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of dual ups without bypass; rectifier supplied from emergency powers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SingleUPSWithBypass
+i14224:SingleUPSWithBypass
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:UninterruptiblePowerSupply , i14224:EquipmentByType ;
+    rdfs:label "Single UPS with bypass; rectifier supplied from emergency power; bypass from main power system"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:US ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of single ups with bypass; rectifier supplied from emergency power; bypass from main power systems"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SingleUPSWithoutBypass
+i14224:SingleUPSWithoutBypass
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:UninterruptiblePowerSupply , i14224:EquipmentByType ;
+    rdfs:label "Single UPS without bypass; rectifier supplied from emergency power"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:UT ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of single ups without bypass; rectifier supplied from emergency powers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/OilImmersedPowerTransformer
+i14224:OilImmersedPowerTransformer
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PowerTransformer , i14224:EquipmentByType ;
+    rdfs:label "Oil immersed power transformer"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:OT ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of oil immersed power transformers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DryPowerTransformer
+i14224:DryPowerTransformer
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:PowerTransformer , i14224:EquipmentByType ;
+    rdfs:label "Dry power transformer"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DT ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of dry power transformers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/LowVoltageSwitchgear
+i14224:LowVoltageSwitchgear
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Switchgear , i14224:EquipmentByType ;
+    rdfs:label "Low voltage switchgear"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:LV ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of low voltage switchgears"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/OilAndVacuumInsulatedSwitchgear
+i14224:OilAndVacuumInsulatedSwitchgear
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Switchgear , i14224:EquipmentByType ;
+    rdfs:label "Oil and vacuum insulated switchgear"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:OV ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of oil and vacuum insulated switchgears"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/HighVoltageAirInsulatedSwitchgear
+i14224:HighVoltageAirInsulatedSwitchgear
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Switchgear , i14224:EquipmentByType ;
+    rdfs:label "High voltage air insulated switchgear"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:HA ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of high voltage air insulated switchgears"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/HighVoltageGasInsulatedSwitchgear
+i14224:HighVoltageGasInsulatedSwitchgear
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Switchgear , i14224:EquipmentByType ;
+    rdfs:label "High voltage gas insulated switchgear"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:HG ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of high voltage gas insulated switchgears"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/LowVoltageFrequencyConverter
+i14224:LowVoltageFrequencyConverter
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:FrequencyConverter , i14224:EquipmentByType ;
+    rdfs:label "Low voltage frequency converter"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:LV ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of low voltage frequency converters"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/HighVoltageFrequencyConverter
+i14224:HighVoltageFrequencyConverter
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:FrequencyConverter , i14224:EquipmentByType ;
+    rdfs:label "High voltage frequency converter"@en ;
+    i14224:equipment_category "electrical equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:HV ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of high voltage frequency converters"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+### Level 7 - Safety and fire protection equipment   
+
+###  https://iso14224.org/ontology/i14224/rdl/SmokeCombustionFireDetector
+i14224:SmokeCombustionFireDetector
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
+    rdfs:label "Smoke/combustion fire detector"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:BS ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of smoke/combustion fire detectors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/HeatFireDetector
+i14224:HeatFireDetector
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
+    rdfs:label "Heat fire detector"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:BH ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of heat fire detectors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/FlameFireDetector
+i14224:FlameFireDetector
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
+    rdfs:label "Flame fire detector"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:BF ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of flame fire detectors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ManualPushbuttonFireDetector
+i14224:ManualPushbuttonFireDetector
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
+    rdfs:label "Manual pushbutton fire detector"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:BM ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of manual pushbutton fire detectors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/OtherFireDetector
+i14224:OtherFireDetector
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
+    rdfs:label "Other fire detector"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:BA ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of other fire detectors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/HydrocarbonGasDetector
+i14224:HydrocarbonGasDetector
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
+    rdfs:label "Hydrocarbon gas detector"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:AB ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of hydrocarbon gas detectors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ToxicGasDetector
+i14224:ToxicGasDetector
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
+    rdfs:label "Toxic gas detector"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:AS ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of toxic gas detectors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/OtherGasDetector
+i14224:OtherGasDetector
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:FireAndGasDetector , i14224:EquipmentByType ;
+    rdfs:label "Other gas detector"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:AO ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of other gas detectors"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PressureInputDevice
+i14224:PressureInputDevice
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
+    rdfs:label "Pressure input device"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:PS ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of pressure input devices"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/LevelInputDevice
+i14224:LevelInputDevice
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
+    rdfs:label "Level input device"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:LS ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of level input devices"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/TemperatureInputDevice
+i14224:TemperatureInputDevice
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
+    rdfs:label "Temperature input device"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:TS ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of temperature input devices"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/FlowInputDevice
+i14224:FlowInputDevice
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
+    rdfs:label "Flow input device"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:FS ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of flow input devices"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SpeedInputDevice
+i14224:SpeedInputDevice
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
+    rdfs:label "Speed input device"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SP ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of speed input devices"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/VibrationInputDevice
+i14224:VibrationInputDevice
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
+    rdfs:label "Vibration input device"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:VI ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of vibration input devices"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DisplacementInputDevice
+i14224:DisplacementInputDevice
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
+    rdfs:label "Displacement input device"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DI ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of displacement input devices"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/AnalyserInputDevice
+i14224:AnalyserInputDevice
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
+    rdfs:label "Analyser input device"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:AN ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of analyser input devices"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/WeightInputDevice
+i14224:WeightInputDevice
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
+    rdfs:label "Weight input device"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:WE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of weight input devices"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/CorrosionInputDevice
+i14224:CorrosionInputDevice
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
+    rdfs:label "Corrosion input device"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:CO ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of corrosion input devices"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/LimitSwitchInputDevice
+i14224:LimitSwitchInputDevice
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
+    rdfs:label "Limit switch input device"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:LP ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of limit switch input devices"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/OnOffPushbuttonInputDevice
+i14224:OnOffPushbuttonInputDevice
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
+    rdfs:label "On/off pushbutton input device"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:PB ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of on/off pushbutton input devices"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/OtherInputDevice
+i14224:OtherInputDevice
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:InputDevice , i14224:EquipmentByType ;
+    rdfs:label "Other input device"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:OT ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of other input devices"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ProgrammableLogicController
+i14224:ProgrammableLogicController
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:ControlLogicUnit , i14224:EquipmentByType ;
+    rdfs:label "Programmable logic controller"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:LC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of programmable logic controllers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ComputerControlUnit
+i14224:ComputerControlUnit
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:ControlLogicUnit , i14224:EquipmentByType ;
+    rdfs:label "Computer control unit"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:PC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of computer control units"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DistributedControlUnit
+i14224:DistributedControlUnit
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:ControlLogicUnit , i14224:EquipmentByType ;
+    rdfs:label "Distributed control unit"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of distributed control units"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/RelayControlUnit
+i14224:RelayControlUnit
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:ControlLogicUnit , i14224:EquipmentByType ;
+    rdfs:label "Relay control unit"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:RL ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of relay control units"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SolidStateControlUnit
+i14224:SolidStateControlUnit
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:ControlUnit , i14224:EquipmentByType ;
+    rdfs:label "Solid state control unit"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SS ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of solid state control units"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SingleLoopController
+i14224:SingleLoopController
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:ControlLogicUnit , i14224:EquipmentByType ;
+    rdfs:label "Single-loop controller"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SL ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of single-loop controllers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ProgrammableAutomationController
+i14224:ProgrammableAutomationController
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:ControlLogicUnit , i14224:EquipmentByType ;
+    rdfs:label "Programmable automation controller"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:PA ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of programmable automation controllers"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/BallValve
+i14224:BallValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Ball valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:BA ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of ball valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/GateValve
+i14224:GateValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Gate valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:GA ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of gate valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/GlobeValve
+i14224:GlobeValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Globe valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:GL ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of globe valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ButterflyValve
+i14224:ButterflyValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Butterfly valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:BP ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of butterfly valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PlugValve
+i14224:PlugValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Plug valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:PG ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of plug valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/NeedleValve
+i14224:NeedleValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Needle valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:NE ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of needle valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/CheckValve
+i14224:CheckValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Check valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:CH ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of check valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DiaphragmValve
+i14224:DiaphragmValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Diaphragm valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DI ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of diaphragm valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/FlapperValve
+i14224:FlapperValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Flapper valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:FL ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of flapper valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/MultipleOrificeValve
+i14224:MultipleOrificeValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Multiple orifice valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:MO ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of multiple orifice valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ThreeWayValve
+i14224:ThreeWayValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Three-way valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:WA ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of three-way valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PSVConventionalValve
+i14224:PSVConventionalValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "PSV-conventional valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of psv-conventional valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PSVConventionalWithBellowValve
+i14224:PSVConventionalWithBellowValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "PSV-conventional with bellow valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SB ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of psv-conventional with bellow valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PSVPilotOperatedValve
+i14224:PSVPilotOperatedValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "PSV-pilot operated valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SP ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of psv-pilot operated valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PSVVacuumReliefValve
+i14224:PSVVacuumReliefValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "PSV-vacuum relief valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SV ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of psv-vacuum relief valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PlugAndCageValve
+i14224:PlugAndCageValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Plug and cage valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:PC ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of plug and cage valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/ExternalSleeveValve
+i14224:ExternalSleeveValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "External sleeve valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:ES ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of external sleeve valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DiscValve
+i14224:DiscValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Disc valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DI ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of disc valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/AxialFlowValve
+i14224:AxialFlowValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Axial flow valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:AF ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of axial flow valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/PinchValve
+i14224:PinchValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Pinch valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:PI ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of pinch valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/OtherValve
+i14224:OtherValve
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Valve , i14224:EquipmentByType ;
+    rdfs:label "Other valve"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:OH ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of other valves"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/DelugeNozzle
+i14224:DelugeNozzle
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Nozzle , i14224:EquipmentByType ;
+    rdfs:label "Deluge nozzle"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:DN ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of deluge nozzles"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/SprinklerNozzle
+i14224:SprinklerNozzle
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Nozzle , i14224:EquipmentByType ;
+    rdfs:label "Sprinkler nozzle"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:SR ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of sprinkler nozzles"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/WaterMistNozzle
+i14224:WaterMistNozzle
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Nozzle , i14224:EquipmentByType ;
+    rdfs:label "Water mist nozzle"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:WM ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of water mist nozzles"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+###  https://iso14224.org/ontology/i14224/rdl/GaseousNozzle
+i14224:GaseousNozzle
+    rdf:type owl:Class ;
+    rdfs:subClassOf i14224:Nozzle , i14224:EquipmentByType ;
+    rdfs:label "Gaseous nozzle"@en ;
+    i14224:equipment_category "safety and control equipment"@en ;
+    i14224:equipment_class_level "Level 7"@en ;
+    i14224:hasEquipmentCode i14224:GA ;
+    rdfs:seeAlso ""@en ;
+    skos:altLabel ""@en ;
+    skos:definition "class of gaseous nozzles"@en ;
+    skos:example ""@en ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+
+
+#################################################################
+#    Equipment code individuals
+#################################################################
+
+
+
+i14224:AB
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AB"@en ;
+    skos:definition "equipment code AB"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:AC
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AC"@en ;
+    skos:definition "equipment code AC"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:AD
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AD"@en ;
+    skos:definition "equipment code AD"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:AF
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AF"@en ;
+    skos:definition "equipment code AF"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:AN
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AN"@en ;
+    skos:definition "equipment code AN"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:AO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AO"@en ;
+    skos:definition "equipment code AO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:AS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AS"@en ;
+    skos:definition "equipment code AS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:AX
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "AX"@en ;
+    skos:definition "equipment code AX"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BA"@en ;
+    skos:definition "equipment code BA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BF
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BF"@en ;
+    skos:definition "equipment code BF"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BH"@en ;
+    skos:definition "equipment code BH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BL
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BL"@en ;
+    skos:definition "equipment code BL"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BM
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BM"@en ;
+    skos:definition "equipment code BM"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BP
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BP"@en ;
+    skos:definition "equipment code BP"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BS"@en ;
+    skos:definition "equipment code BS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BT
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BT"@en ;
+    skos:definition "equipment code BT"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:BY
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "BY"@en ;
+    skos:definition "equipment code BY"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:CA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "CA"@en ;
+    skos:definition "equipment code CA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:CE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "CE"@en ;
+    skos:definition "equipment code CE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:CH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "CH"@en ;
+    skos:definition "equipment code CH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:CL
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "CL"@en ;
+    skos:definition "equipment code CL"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:CO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "CO"@en ;
+    skos:definition "equipment code CO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:CR
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "CR"@en ;
+    skos:definition "equipment code CR"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:CS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "CS"@en ;
+    skos:definition "equipment code CS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DA"@en ;
+    skos:definition "equipment code DA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DC
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DC"@en ;
+    skos:definition "equipment code DC"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DE"@en ;
+    skos:definition "equipment code DE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DF
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DF"@en ;
+    skos:definition "equipment code DF"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DH"@en ;
+    skos:definition "equipment code DH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DI
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DI"@en ;
+    skos:definition "equipment code DI"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DN
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DN"@en ;
+    skos:definition "equipment code DN"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DO"@en ;
+    skos:definition "equipment code DO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DP
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DP"@en ;
+    skos:definition "equipment code DP"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DR
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DR"@en ;
+    skos:definition "equipment code DR"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:DT
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "DT"@en ;
+    skos:definition "equipment code DT"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:EB
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "EB"@en ;
+    skos:definition "equipment code EB"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:ED
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "ED"@en ;
+    skos:definition "equipment code ED"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:EG
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "EG"@en ;
+    skos:definition "equipment code EG"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:EH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "EH"@en ;
+    skos:definition "equipment code EH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:EM
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "EM"@en ;
+    skos:definition "equipment code EM"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:ES
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "ES"@en ;
+    skos:definition "equipment code ES"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:EW
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "EW"@en ;
+    skos:definition "equipment code EW"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:FB
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "FB"@en ;
+    skos:definition "equipment code FB"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:FD
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "FD"@en ;
+    skos:definition "equipment code FD"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:FG
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "FG"@en ;
+    skos:definition "equipment code FG"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:FL
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "FL"@en ;
+    skos:definition "equipment code FL"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:FS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "FS"@en ;
+    skos:definition "equipment code FS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:GA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "GA"@en ;
+    skos:definition "equipment code GA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:GE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "GE"@en ;
+    skos:definition "equipment code GE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:GL
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "GL"@en ;
+    skos:definition "equipment code GL"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:GT
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "GT"@en ;
+    skos:definition "equipment code GT"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:HB
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "HB"@en ;
+    skos:definition "equipment code HB"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:HD
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "HD"@en ;
+    skos:definition "equipment code HD"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:HE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "HE"@en ;
+    skos:definition "equipment code HE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:HO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "HO"@en ;
+    skos:definition "equipment code HO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:HT
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "HT"@en ;
+    skos:definition "equipment code HT"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:HW
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "HW"@en ;
+    skos:definition "equipment code HW"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:HY
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "HY"@en ;
+    skos:definition "equipment code HY"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:IF
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "IF"@en ;
+    skos:definition "equipment code IF"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:IN
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "IN"@en ;
+    skos:definition "equipment code IN"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:IP
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "IP"@en ;
+    skos:definition "equipment code IP"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:LC
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "LC"@en ;
+    skos:definition "equipment code LC"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:LO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "LO"@en ;
+    skos:definition "equipment code LO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:LP
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "LP"@en ;
+    skos:definition "equipment code LP"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:LS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "LS"@en ;
+    skos:definition "equipment code LS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:MD
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "MD"@en ;
+    skos:definition "equipment code MD"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:MO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "MO"@en ;
+    skos:definition "equipment code MO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:MS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "MS"@en ;
+    skos:definition "equipment code MS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:MX
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "MX"@en ;
+    skos:definition "equipment code MX"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:NE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "NE"@en ;
+    skos:definition "equipment code NE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:NF
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "NF"@en ;
+    skos:definition "equipment code NF"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:NO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "NO"@en ;
+    skos:definition "equipment code NO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:OH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "OH"@en ;
+    skos:definition "equipment code OH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:OT
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "OT"@en ;
+    skos:definition "equipment code OT"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PA"@en ;
+    skos:definition "equipment code PA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PB
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PB"@en ;
+    skos:definition "equipment code PB"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PC
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PC"@en ;
+    skos:definition "equipment code PC"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PF
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PF"@en ;
+    skos:definition "equipment code PF"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PG
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PG"@en ;
+    skos:definition "equipment code PG"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PH"@en ;
+    skos:definition "equipment code PH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PI
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PI"@en ;
+    skos:definition "equipment code PI"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PO"@en ;
+    skos:definition "equipment code PO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PR
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PR"@en ;
+    skos:definition "equipment code PR"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PS"@en ;
+    skos:definition "equipment code PS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PT
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PT"@en ;
+    skos:definition "equipment code PT"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:PU
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "PU"@en ;
+    skos:definition "equipment code PU"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:RE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "RE"@en ;
+    skos:definition "equipment code RE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:RI
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "RI"@en ;
+    skos:definition "equipment code RI"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:RL
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "RL"@en ;
+    skos:definition "equipment code RL"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:RO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "RO"@en ;
+    skos:definition "equipment code RO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SA"@en ;
+    skos:definition "equipment code SA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SB
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SB"@en ;
+    skos:definition "equipment code SB"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SC
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SC"@en ;
+    skos:definition "equipment code SC"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SD
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SD"@en ;
+    skos:definition "equipment code SD"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SE"@en ;
+    skos:definition "equipment code SE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SH"@en ;
+    skos:definition "equipment code SH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SL
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SL"@en ;
+    skos:definition "equipment code SL"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SP
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SP"@en ;
+    skos:definition "equipment code SP"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SR
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SR"@en ;
+    skos:definition "equipment code SR"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SS"@en ;
+    skos:definition "equipment code SS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:ST
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "ST"@en ;
+    skos:definition "equipment code ST"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SV
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SV"@en ;
+    skos:definition "equipment code SV"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:SW
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "SW"@en ;
+    skos:definition "equipment code SW"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:TD
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "TD"@en ;
+    skos:definition "equipment code TD"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:TE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "TE"@en ;
+    skos:definition "equipment code TE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:TH
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "TH"@en ;
+    skos:definition "equipment code TH"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:TI
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "TI"@en ;
+    skos:definition "equipment code TI"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:TO
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "TO"@en ;
+    skos:definition "equipment code TO"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:TS
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "TS"@en ;
+    skos:definition "equipment code TS"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:TU
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "TU"@en ;
+    skos:definition "equipment code TU"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:UB
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "UB"@en ;
+    skos:definition "equipment code UB"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:UD
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "UD"@en ;
+    skos:definition "equipment code UD"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:UP
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "UP"@en ;
+    skos:definition "equipment code UP"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:US
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "US"@en ;
+    skos:definition "equipment code US"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:UT
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "UT"@en ;
+    skos:definition "equipment code UT"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:VA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "VA"@en ;
+    skos:definition "equipment code VA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:VE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "VE"@en ;
+    skos:definition "equipment code VE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:VI
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "VI"@en ;
+    skos:definition "equipment code VI"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:WA
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "WA"@en ;
+    skos:definition "equipment code WA"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:WC
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "WC"@en ;
+    skos:definition "equipment code WC"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:WE
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "WE"@en ;
+    skos:definition "equipment code WE"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:WI
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "WI"@en ;
+    skos:definition "equipment code WI"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:WM
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "WM"@en ;
+    skos:definition "equipment code WM"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+i14224:NoEquipmentCodeSpecified
+    rdf:type owl:NamedIndividual , i14224:EquipmentCode ;
+    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
+    rdfs:label "no equipment code specified"@en ;
+    skos:definition "no equipment code is specified for this equipment class in ISO 14224 Appendix A"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
+  
