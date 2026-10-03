@@ -69,7 +69,7 @@ We can see from the pdf of the Standard (see screenshots below) that there is in
 
 ![Table A.77](TableA.77_valve.JPG)
 
-There are 25 other duplicate entries as well. 
+There are 25 other duplicated codes as well.
 
 ## Comment
 
