@@ -1,6 +1,6 @@
 # Experiment 3 - check for duplicate equipment codes in ISO 14224 Appendix A
 
-Appendix A 2 contains sections for each Equipment Class organised by the following section headings:
+Appendix A.2 contains sections for each Equipment Class organised by the following section headings:
 
 - A.2.2 Rotating equipment data
 - A.2.3 Mechanical equipment
