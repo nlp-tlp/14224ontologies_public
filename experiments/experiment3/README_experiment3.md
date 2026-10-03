@@ -75,4 +75,4 @@ There are 25 other duplicate entries as well.
 
 We do not know if these duplicate entries are considered allowed for these codes, but the presence of these duplicate entries at Level 7 will cause issues when moving to machine-readable formats.
 
-The ability of off-the-shelf SKOS format checkers to easily identify these issues is an advantage available to use when information in tables is represented as SKOS (and RDF) formats.
+The ability of off-the-shelf SKOS format checkers to easily identify these issues is an advantage available to us when information in tables is represented in SKOS (and RDF) formats.
