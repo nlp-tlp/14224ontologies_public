@@ -310,7 +310,7 @@ i14224:Piping i14224:hasAllowedFailureMode
         i14224:vibration ;
     cmnsav:directSource "ISO 14224:2006 Appendix B Tables B.6-B.10"@en .
 
-i14224:Vessel i14224:hasAllowedFailureMode
+i14224:PressureVessel i14224:hasAllowedFailureMode
         i14224:abnormal_instrument_reading ,
         i14224:external_leakage_process_medium ,
         i14224:external_leakage_utility_medium ,

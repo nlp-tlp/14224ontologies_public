@@ -49,8 +49,9 @@ i14224:FailureModeAllowedForEquipmentClassShape
                 }
 
                 FILTER NOT EXISTS {
-                    ?equipmentClass rdfs:subClassOf* ?allowedClass .
-                    ?allowedClass i14224:hasAllowedFailureMode ?failureMode .
+                        ?equipment rdf:type ?moreSpecificClass .
+                        ?moreSpecificClass rdfs:subClassOf+ ?equipmentClass .
+                        ?moreSpecificClass rdfs:subClassOf* i14224:EquipmentClass .
                 }
             }
         """ ;
