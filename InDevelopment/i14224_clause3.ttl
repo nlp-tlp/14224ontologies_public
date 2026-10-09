@@ -448,7 +448,7 @@ i14224:Fault rdf:type owl:Class ;
              cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
              cmnsav:explanatoryNote "a fault is often a result of a failure of the item itself but the state can exist without a failure"@en ,
                                     "a fault of an item results from a failure, either of the item itself, or from a deficiency in an earlier stage of the life cycle, such as specification, design, manufacture or maintenance"@en ;
-             cmnsav:usageNote "see latent fault"@en .
+             cmnsav:usageNote "An fault is not equivalent to an error in ISO 14224:2016" @en .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/HumanError
@@ -861,7 +861,7 @@ i14224:SoftwareError rdf:type owl:Class ;
                      cmnsav:adaptedFrom ""@en ;
                      cmnsav:directSource "ISO 14224:2016 Terms and Definitions"@en ;
                      cmnsav:explanatoryNote ""@en ;
-                     cmnsav:usageNote ""@en .
+                     cmnsav:usageNote "An error is not equivalent to a fault in ISO 14224:2016"@en .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/SubUnit
