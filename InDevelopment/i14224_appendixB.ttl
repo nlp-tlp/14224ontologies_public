@@ -80,13 +80,7 @@ i14224:MaintenanceActivity rdf:type owl:Class .
 i14224:Adjust rdf:type owl:Class ;
               rdfs:subClassOf i14224:MaintenanceActivity ;
               rdfs:label "Adjust"@en ;
-              rdfs:seeAlso ""@en ;
-              <http://www.w3.org/2004/02/skos/core#altLabel> ""@en ;
-              <http://www.w3.org/2004/02/skos/core#definition> ""@en ;
-              <http://www.w3.org/2004/02/skos/core#example> "align, set and reset, calibrate, balance"@en ;
-              <http://www.w3.org/2004/02/skos/core#scopeNote> ""@en ;
-              i14224:iso14224:section ""^^xsd:anyURI ;
-              cmnsav:adaptedFrom ""@en ;
+              skos:altLabel "align", "set and reset", "calibrate", "balance"@en ;
               cmnsav:directSource "ISO 14224:2023 Appendix B"@en ;
               cmnsav:explanatoryNote "bringing any out-of-tolerance condition into tolerance"@en ;
               cmnsav:usageNote "typically used in corrective and preventative maintenance"@en .
@@ -120,15 +114,9 @@ i14224:CavitationFailureMechanism rdf:type owl:Class ;
 i14224:Check rdf:type owl:Class ;
              rdfs:subClassOf i14224:MaintenanceActivity ;
              rdfs:label "Check" ;
-             rdfs:seeAlso ""@en ;
-             <http://www.w3.org/2004/02/skos/core#altLabel> ""@en ;
-             <http://www.w3.org/2004/02/skos/core#definition> ""@en ;
-             <http://www.w3.org/2004/02/skos/core#example> "restart, resetting, no maintenance action, etc. Particularly relevant for functional failures, e.g. fire and gas detectors, subsea equipment. check includes both when a failure cause was revealed but maintenance action was considered either not necessary or not possible to carry out and where no failure cause circumstances could be found"@en ;
-             <http://www.w3.org/2004/02/skos/core#scopeNote> ""@en ;
-             i14224:iso14224:section ""^^xsd:anyURI ;
-             cmnsav:adaptedFrom ""@en ;
+             skos:altLabel "restart","reset"@en ;
              cmnsav:directSource "ISO 14224:2023 Appendix B"@en ;
-             cmnsav:explanatoryNote "The cause of failure investigated, but no maintenance action is performed, or action is deferred. Able to regain function by simple actions, e.g. restart or resetting"@en ;
+             cmnsav:explanatoryNote "The cause of failure investigated, but no maintenance action is performed, or action is deferred. Able to regain function by simple actions, e.g. restart or resetting etc. Particularly relevant for functional failures, e.g. fire and gas detectors, subsea equipment. check includes both when a failure cause was revealed but maintenance action was considered either not necessary or not possible to carry out and where no failure cause circumstances could be found"@en ;
              cmnsav:usageNote "typically used in corrective maintenance"@en .
 
 
@@ -142,13 +130,6 @@ i14224:ClearanceOrAlignmentFailureMechanism rdf:type owl:Class ;
 i14224:CombinationMaintenanceActivity rdf:type owl:Class ;
                                       rdfs:subClassOf i14224:MaintenanceActivity ;
                                       rdfs:label "Combination maintenance activity"@en ;
-                                      rdfs:seeAlso ""@en ;
-                                      <http://www.w3.org/2004/02/skos/core#altLabel> ""@en ;
-                                      <http://www.w3.org/2004/02/skos/core#definition> ""@en ;
-                                      <http://www.w3.org/2004/02/skos/core#example> ""@en ;
-                                      <http://www.w3.org/2004/02/skos/core#scopeNote> ""@en ;
-                                      i14224:iso14224:section ""^^xsd:anyURI ;
-                                      cmnsav:adaptedFrom ""@en ;
                                       cmnsav:directSource "ISO 14224:2023 Appendix B"@en ;
                                       cmnsav:explanatoryNote "Several maintenance activities are included"@en ;
                                       cmnsav:usageNote "Typically used in corrective and preventative maintenance. If one activity dominates, this may alternatively be recorded"@en .
@@ -261,12 +242,7 @@ i14224:Inspection rdf:type owl:Class ;
                   rdfs:subClassOf i14224:MaintenanceActivity ;
                   rdfs:label "Inspection"@en ;
                   rdfs:seeAlso ""@en ;
-                  <http://www.w3.org/2004/02/skos/core#altLabel> ""@en ;
-                  <http://www.w3.org/2004/02/skos/core#definition> ""@en ;
-                  <http://www.w3.org/2004/02/skos/core#example> ""@en ;
-                  <http://www.w3.org/2004/02/skos/core#scopeNote> ""@en ;
-                  i14224:iso14224:section ""^^xsd:anyURI ;
-                  cmnsav:adaptedFrom ""@en ;
+                  skos:altLabel "Inspect"@en ;
                   cmnsav:directSource "ISO 14224:2023 Appendix B"@en ;
                   cmnsav:explanatoryNote "periodic inspection/check: a careful scrutiny of an item carried out with or without dismantling, normally by use of senses"@en ;
                   cmnsav:usageNote "Typically used in preventative maintenance. All types of general check. Includes minor servicing as part of the inspection task"@en .
@@ -299,13 +275,6 @@ i14224:MiscellaneousExternalnfluencesFailureMechanism rdf:type owl:Class ;
 i14224:Modify rdf:type owl:Class ;
               rdfs:subClassOf i14224:MaintenanceActivity ;
               rdfs:label "Modify"@en ;
-              rdfs:seeAlso ""@en ;
-              <http://www.w3.org/2004/02/skos/core#altLabel> ""@en ;
-              <http://www.w3.org/2004/02/skos/core#definition> ""@en ;
-              <http://www.w3.org/2004/02/skos/core#example> ""@en ;
-              <http://www.w3.org/2004/02/skos/core#scopeNote> ""@en ;
-              i14224:iso14224:section ""^^xsd:anyURI ;
-              cmnsav:adaptedFrom ""@en ;
               cmnsav:directSource "ISO 14224:2023 Appendix B"@en ;
               cmnsav:explanatoryNote "Replace, renew or change the item, or a part of it, with an item/part of a different type, make, material or design"@en ;
               cmnsav:usageNote "Typically used in preventative maintenance. Such as install a filter with a smaller mesh diameter, replace a lubrication oil pump with another type, reconfiguration etc."@en .
@@ -357,13 +326,7 @@ i14224:OutOfAdjustmentFailureMechanism rdf:type owl:Class ;
 i14224:Overhaul rdf:type owl:Class ;
                 rdfs:subClassOf i14224:MaintenanceActivity ;
                 rdfs:label "Overhaul"@en ;
-                rdfs:seeAlso ""@en ;
-                <http://www.w3.org/2004/02/skos/core#altLabel> ""@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> ""@en ;
-                <http://www.w3.org/2004/02/skos/core#example> ""@en ;
-                <http://www.w3.org/2004/02/skos/core#scopeNote> ""@en ;
-                i14224:iso14224:section ""^^xsd:anyURI ;
-                cmnsav:adaptedFrom ""@en ;
+                skos:altLabel "Major repair"@en ;
                 cmnsav:directSource "ISO 14224:2023 Appendix B"@en ;
                 cmnsav:explanatoryNote "Major overhaul"@en ;
                 cmnsav:usageNote "Typically used in preventative and corrective maintenance. Comprehensive inspection/ overhaul with extensive disassembly and replacement of items as specified or required"@en .
@@ -380,12 +343,7 @@ i14224:Refit rdf:type owl:Class ;
              rdfs:subClassOf i14224:MaintenanceActivity ;
              rdfs:label "Refit"@en ;
              rdfs:seeAlso ""@en ;
-             <http://www.w3.org/2004/02/skos/core#altLabel> ""@en ;
-             <http://www.w3.org/2004/02/skos/core#definition> ""@en ;
-             <http://www.w3.org/2004/02/skos/core#example> "polish, clean, grind, paint, coat, lube, oil change"@en ;
-             <http://www.w3.org/2004/02/skos/core#scopeNote> ""@en ;
-             i14224:iso14224:section ""^^xsd:anyURI ;
-             cmnsav:adaptedFrom ""@en ;
+             skos:altLabel "polish", "clean", "grind", "paint", "coat", "lube", "oil change"@en ;
              cmnsav:directSource "ISO 14224:2023 Appendix B"@en ;
              cmnsav:explanatoryNote "minor repair/ servicing activity to bring back an item to an acceptable appearance, internal and external"@en ;
              cmnsav:usageNote "Typically used in corrective and preventative maintenance. "@en .
@@ -395,13 +353,7 @@ i14224:Refit rdf:type owl:Class ;
 i14224:Repair rdf:type owl:Class ;
               rdfs:subClassOf i14224:MaintenanceActivity ;
               rdfs:label "Repair"@en ;
-              rdfs:seeAlso ""@en ;
-              <http://www.w3.org/2004/02/skos/core#altLabel> ""@en ;
-              <http://www.w3.org/2004/02/skos/core#definition> ""@en ;
-              <http://www.w3.org/2004/02/skos/core#example> "repack, weld, plus, reconnect, remake"@en ;
-              <http://www.w3.org/2004/02/skos/core#scopeNote> ""@en ;
-              i14224:iso14224:section ""^^xsd:anyURI ;
-              cmnsav:adaptedFrom ""@en ;
+              skos:altLabel "repack", "weld", "plus", "reconnect", "remake"@en ;
               cmnsav:directSource "ISO 14224:2023 Appendix B"@en ;
               cmnsav:explanatoryNote "Manual maintenance action performed to restore an item to its original appearance or state"@en ;
               cmnsav:usageNote "Typically used in corrective maintenance."@en .
@@ -411,13 +363,6 @@ i14224:Repair rdf:type owl:Class ;
 i14224:Replace rdf:type owl:Class ;
                rdfs:subClassOf i14224:MaintenanceActivity ;
                rdfs:label "Replace"@en ;
-               rdfs:seeAlso ""@en ;
-               <http://www.w3.org/2004/02/skos/core#altLabel> ""@en ;
-               <http://www.w3.org/2004/02/skos/core#definition> ""@en ;
-               <http://www.w3.org/2004/02/skos/core#example> ""@en ;
-               <http://www.w3.org/2004/02/skos/core#scopeNote> ""@en ;
-               i14224:iso14224:section ""^^xsd:anyURI ;
-               cmnsav:adaptedFrom ""@en ;
                cmnsav:directSource "ISO 14224:2023 Appendix B"@en ;
                cmnsav:explanatoryNote "Replacement of the item by a new or refurbished item of the same type and make"@en ;
                cmnsav:usageNote "Typically used in preventative and corrective maintenance. E.g. replacement of a worn-out bearing"@en .
@@ -427,13 +372,7 @@ i14224:Replace rdf:type owl:Class ;
 i14224:Service rdf:type owl:Class ;
                rdfs:subClassOf i14224:MaintenanceActivity ;
                rdfs:label "Service"@en ;
-               rdfs:seeAlso ""@en ;
-               <http://www.w3.org/2004/02/skos/core#altLabel> ""@en ;
-               <http://www.w3.org/2004/02/skos/core#definition> ""@en ;
-               <http://www.w3.org/2004/02/skos/core#example> "cleaning, replenishment of consumables, adjustments, calibration"@en ;
-               <http://www.w3.org/2004/02/skos/core#scopeNote> ""@en ;
-               i14224:iso14224:section ""^^xsd:anyURI ;
-               cmnsav:adaptedFrom ""@en ;
+               skos:altLabel "clean", "replenishment","adjust", "adjustment", "calibration"@en ;
                cmnsav:directSource "ISO 14224:2023 Appendix B"@en ;
                cmnsav:explanatoryNote "Periodic service tasks. Normally no dismantling of the item"@en ;
                cmnsav:usageNote "Typically used in preventative maintenance. "@en .
@@ -461,13 +400,6 @@ i14224:StickingFailureMechanism rdf:type owl:Class ;
 i14224:Test rdf:type owl:Class ;
             rdfs:subClassOf i14224:MaintenanceActivity ;
             rdfs:label "Test"@en ;
-            rdfs:seeAlso ""@en ;
-            <http://www.w3.org/2004/02/skos/core#altLabel> ""@en ;
-            <http://www.w3.org/2004/02/skos/core#definition> ""@en ;
-            <http://www.w3.org/2004/02/skos/core#example> ""@en ;
-            <http://www.w3.org/2004/02/skos/core#scopeNote> ""@en ;
-            i14224:iso14224:section ""^^xsd:anyURI ;
-            cmnsav:adaptedFrom ""@en ;
             cmnsav:directSource "ISO 14224:2023 Appendix B"@en ;
             cmnsav:explanatoryNote "Periodic test of function or performance"@en ;
             cmnsav:usageNote "Typically used in preventative maintenance. e.g. function test of gas detector, accuracy test of flow meter"@en .
@@ -491,7 +423,7 @@ i14224:FailureMechanismByType rdf:type owl:Class ;
 ###  https://iso14224.org/ontology/i14224/rdl/UnknownFailureMechanism
 i14224:UnknownFailureMechanism rdf:type owl:Class ;
                                rdfs:subClassOf i14224:FailureMechanism ;
-                               rdfs:label "UnknownFailureMechanism" .
+                               rdfs:label "Unknown failure mechanism" .
 
 
 ###  https://iso14224.org/ontology/i14224/rdl/VibrationFailureMechanism
