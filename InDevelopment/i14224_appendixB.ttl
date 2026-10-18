@@ -494,12 +494,12 @@ i14224:instrument_failure_mechanism a owl:NamedIndividual ,
                                      skos:definition "Instrument failure mechanism"@en .
 
 ###  https://iso14224.org/ontology/i14224/rdl/electrical_failure_mechanism
-i14224:electrical_failure_mechanism a owl:NamedIndividual ;
-                                  i14224:FailureMechanismByType ;
+i14224:electrical_failure_mechanism a owl:NamedIndividual ,
+                                     i14224:FailureMechanismByType ;
                                   skos:definition "Electrical failure mechanism"@en .
 
 ###  https://iso14224.org/ontology/i14224/rdl/external_influence_failure_mechanism
-i14224:external_influence_failure_mechanism a owl:NamedIndividual ;
+i14224:external_influence_failure_mechanism a owl:NamedIndividual ,
                                         i14224:FailureMechanismByType ;
                                         skos:definition "External influence failure mechanism"@en .
 
