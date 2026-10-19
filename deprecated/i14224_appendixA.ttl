@@ -94,20 +94,7 @@ i14224:BlowerAndFan
     rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
     cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
 
-###  https://iso14224.org/ontology/i14224/rdl/CombustionEngine
-i14224:CombustionEngine
-    rdf:type owl:Class ;
-    rdfs:subClassOf i14224:EquipmentClass ;
-    rdfs:label "Combustion engine"@en ;
-    i14224:equipment_category "rotating equipment"@en ;
-    i14224:equipment_class_level "Level 6"@en ;
-    i14224:hasEquipmentCode i14224:CE ;
-    rdfs:seeAlso ""@en ;
-    skos:altLabel ""@en ;
-    skos:definition "class of combustion engines"@en ;
-    skos:example ""@en ;
-    rdfs:isDefinedBy <https://iso14224.org/ontology/i14224/ont/appendixA> ;
-    cmnsav:directSource "ISO 14224:2023 Appendix A"@en .
+
 
 ###  https://iso14224.org/ontology/i14224/rdl/Centrifuge
 i14224:Centrifuge

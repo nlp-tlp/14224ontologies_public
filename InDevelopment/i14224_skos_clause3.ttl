@@ -80,6 +80,7 @@ i14224skos:MaintenanceStrategyTerms a skos:Collection ;
         i14224skos:CorrectiveMaintenance,
         i14224skos:OpportunityMaintenance,
         i14224skos:PlannedMaintenance,
+        i14224skos:PreventativeMaintenance,
         i14224skos:PredictiveMaintenance .
 
       

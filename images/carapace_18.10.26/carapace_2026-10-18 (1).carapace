@@ -1,0 +1,142 @@
+{
+  "tabs": [
+    {
+      "id": "499bb6d4-1251-4a7b-ad7a-086ddcc6c41d",
+      "name": "MaintenanceActivity",
+      "ttlContent": "@prefix i14224: <https://iso14224.org/ontology/i14224/rdl/> .\n@prefix i14224skos: <https://iso14224.org/skos/> .\n@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix schema: <http://schema.org/> .\n@prefix cmnsav: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .\n@prefix obo: <http://purl.obolibrary.org/obo/> .\n@prefix ex: <http://spec.example.org/> .\n\ni14224:MaintenanceActivity\n    a skos:Concept, owl:Class .\n\ni14224:CorrectiveMaintenance\n    a skos:Concept, owl:Class ;\n    rdfs:subClassOf i14224:MaintenanceActivity ;\n    skos:broader i14224:MaintenanceActivity ;\n    skos:altLabel \"reactive maintenance\"@en ;\n    skos:definition \"maintenance carried out after fault detection to effect restoration\"@en ;\n    skos:inScheme i14224:StandardISO14224 ;\n    skos:prefLabel \"corrective maintenance\"@en .\n\ni14224:PreventativeMaintenance a skos:Concept, owl:Class ;\n    rdfs:subClassOf i14224:MaintenanceActivity ;\n    skos:broader i14224:MaintenanceActivity ;\n    skos:altLabel \"PM\"@en ;\n    skos:definition \"maintenance carried out to mitigate degradation and reduce the probability of failure\"@en ;\n    skos:example \"\"@en ;\n    skos:inScheme i14224:StandardISO14224;\n    skos:prefLabel \"preventative maintenance\"@en ;\n    skos:scopeNote \"\"@en .\n\ni14224:Check rdf:type owl:Class ;\n    rdfs:subClassOf i14224:MaintenanceActivity ;\n    rdfs:label \"Check\" ;\n    skos:altLabel \"restart\",\"reset\"@en ;\n    cmnsav:directSource \"ISO 14224:2023 Appendix B\"@en ;\n    cmnsav:explanatoryNote \"The cause of failure investigated, but no maintenance action is performed, or action is deferred. Able to regain function by simple actions, e.g. restart or resetting etc. Particularly relevant for functional failures, e.g. fire and gas detectors, subsea equipment. check includes both when a failure cause was revealed but maintenance action was considered either not necessary or not possible to carry out and where no failure cause circumstances could be found\"@en ;\n    cmnsav:usageNote \"typically used in corrective maintenance\"@en ;\n    i14224:hasMaintenanceActivityType i14224:CorrectiveMaintenance .\n\ni14224:Replace rdf:type owl:Class ;\n    rdfs:subClassOf i14224:MaintenanceActivity ;\n    rdfs:label \"Replace\"@en ;\n    cmnsav:directSource \"ISO 14224:2023 Appendix B\"@en ;\n    cmnsav:explanatoryNote \"Replacement of the item by a new or refurbished item of the same type and make\"@en ;\n    cmnsav:usageNote \"Typically used in preventative and corrective maintenance. E.g. replacement of a worn-out bearing\"@en .\n\ni14224:MaintenanceStrategyTerms a skos:Collection ;\n    skos:definition \"strategy for maintenance of a specific item\"@en ;\n    skos:example \"corrective maintenance, condition-based maintenance, opportunistic maintenance, planned maintenance, predictive maintenance, reactive maintenance\"@en ;\n    skos:inScheme i14224:StandardISO14224;\n    skos:prefLabel \"maintenance strategy terms\"@en ;\n    skos:scopeNote \"\"@en ;\n        skos:member\n        i14224:ConditionBasedMaintenance,\n        i14224:CorrectiveMaintenance,\n        i14224:OpportunityMaintenance,\n        i14224:PlannedMaintenance,\n        i14224:PreventativeMaintenance,\n        i14224:PredictiveMaintenance .\n\n# Instance data\nex:ma101 rdf:type owl:NamedIndividual, i14224:Replace;\n    i14224:hasMaintenanceActivityType i14224:PreventativeMaintenance .\n\nex:ma102 rdf:type owl:NamedIndividual, i14224:Check;\n    i14224:hasMaintenanceActivityType i14224:CorrectiveMaintenance .",
+      "parsedPrefixMap": {
+        "https://iso14224.org/ontology/i14224/rdl/": "i14224",
+        "https://iso14224.org/skos/": "i14224skos",
+        "http://rds.posccaesar.org/ontology/lis14/rdl/": "lis",
+        "http://purl.org/dc/elements/1.1/": "dc",
+        "http://purl.org/dc/terms/": "dcterms",
+        "http://www.w3.org/2002/07/owl#": "owl",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#": "rdf",
+        "http://www.w3.org/2000/01/rdf-schema#": "rdfs",
+        "http://www.w3.org/XML/1998/namespace": "xml",
+        "http://www.w3.org/2001/XMLSchema#": "xsd",
+        "http://www.w3.org/2004/02/skos/core#": "skos",
+        "http://schema.org/": "schema",
+        "https://www.omg.org/spec/Commons/AnnotationVocabulary#": "cmnsav",
+        "http://purl.obolibrary.org/obo/": "obo",
+        "http://spec.example.org/": "ex"
+      },
+      "settings": {
+        "duplicateExternalNodes": false,
+        "hiddenNamespaces": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+          "http://www.w3.org/2000/01/rdf-schema#",
+          "http://www.w3.org/2002/07/owl#"
+        ],
+        "hiddenEntityTypes": [
+          "blank",
+          "literal"
+        ],
+        "hiddenPredicateUris": [],
+        "hiddenInstanceOfUris": [
+          "http://www.w3.org/2002/07/owl#Ontology"
+        ],
+        "nodeNamePredicate": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "locked": true,
+      "camera": {
+        "x": 214.75342382417986,
+        "y": 15.235758821165973,
+        "k": 0.6472380080771988
+      },
+      "editorCursorLine": 31,
+      "nodePositions": [
+        {
+          "id": "https://iso14224.org/ontology/i14224/rdl/MaintenanceActivity",
+          "x": 655.5441408878493,
+          "y": 77.89737571563779,
+          "nodeType": "class"
+        },
+        {
+          "id": "http://www.w3.org/2004/02/skos/core#Concept",
+          "x": 444.49981642247025,
+          "y": 3.7360943925625243,
+          "nodeType": "class"
+        },
+        {
+          "id": "https://iso14224.org/ontology/i14224/rdl/CorrectiveMaintenance",
+          "x": 247.382227082089,
+          "y": 250.94036546948007,
+          "nodeType": "class"
+        },
+        {
+          "id": "https://iso14224.org/ontology/i14224/rdl/StandardISO14224",
+          "x": -77.97861895444186,
+          "y": -7.0790924670526465,
+          "nodeType": "class"
+        },
+        {
+          "id": "https://iso14224.org/ontology/i14224/rdl/PreventativeMaintenance",
+          "x": 749.8559560955392,
+          "y": 286.7011129079406,
+          "nodeType": "class"
+        },
+        {
+          "id": "https://iso14224.org/ontology/i14224/rdl/Check",
+          "x": 438.31970964554733,
+          "y": 406.9880615867843,
+          "nodeType": "class"
+        },
+        {
+          "id": "https://iso14224.org/ontology/i14224/rdl/Replace",
+          "x": 625.1079930359276,
+          "y": 379.17758109063107,
+          "nodeType": "class"
+        },
+        {
+          "id": "https://iso14224.org/ontology/i14224/rdl/MaintenanceStrategyTerms",
+          "x": -116.90401936790289,
+          "y": 133.74347017909793,
+          "nodeType": "instance"
+        },
+        {
+          "id": "http://www.w3.org/2004/02/skos/core#Collection",
+          "x": -224.61166209674565,
+          "y": 0.6460410041010505,
+          "nodeType": "class"
+        },
+        {
+          "id": "https://iso14224.org/ontology/i14224/rdl/ConditionBasedMaintenance",
+          "x": -240.50615490636167,
+          "y": 493.73468993485915,
+          "nodeType": "class"
+        },
+        {
+          "id": "https://iso14224.org/ontology/i14224/rdl/OpportunityMaintenance",
+          "x": -342.47791672559015,
+          "y": 606.5216386137027,
+          "nodeType": "class"
+        },
+        {
+          "id": "https://iso14224.org/ontology/i14224/rdl/PlannedMaintenance",
+          "x": -393.9839578005889,
+          "y": 427.07340861178386,
+          "nodeType": "class"
+        },
+        {
+          "id": "https://iso14224.org/ontology/i14224/rdl/PredictiveMaintenance",
+          "x": -171.86503374867084,
+          "y": 417.80324844639944,
+          "nodeType": "class"
+        },
+        {
+          "id": "http://spec.example.org/ma101",
+          "x": 702.5192743590029,
+          "y": 601.6614250598568,
+          "nodeType": "instance"
+        },
+        {
+          "id": "http://spec.example.org/ma102",
+          "x": 297.72228047055046,
+          "y": 595.4813182829339,
+          "nodeType": "instance"
+        }
+      ]
+    }
+  ]
+}

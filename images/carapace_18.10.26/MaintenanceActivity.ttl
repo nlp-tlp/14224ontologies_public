@@ -1,0 +1,74 @@
+@prefix i14224: <https://iso14224.org/ontology/i14224/rdl/> .
+@prefix i14224skos: <https://iso14224.org/skos/> .
+@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix cmnsav: <https://www.omg.org/spec/Commons/AnnotationVocabulary#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix ex: <http://spec.example.org/> .
+
+i14224:MaintenanceActivity
+    a skos:Concept, owl:Class .
+
+i14224:CorrectiveMaintenance
+    a skos:Concept, owl:Class ;
+    rdfs:subClassOf i14224:MaintenanceActivity ;
+    skos:broader i14224:MaintenanceActivity ;
+    skos:altLabel "reactive maintenance"@en ;
+    skos:definition "maintenance carried out after fault detection to effect restoration"@en ;
+    skos:inScheme i14224:StandardISO14224 ;
+    skos:prefLabel "corrective maintenance"@en .
+
+i14224:PreventativeMaintenance a skos:Concept, owl:Class ;
+    rdfs:subClassOf i14224:MaintenanceActivity ;
+    skos:broader i14224:MaintenanceActivity ;
+    skos:altLabel "PM"@en ;
+    skos:definition "maintenance carried out to mitigate degradation and reduce the probability of failure"@en ;
+    skos:example ""@en ;
+    skos:inScheme i14224:StandardISO14224;
+    skos:prefLabel "preventative maintenance"@en ;
+    skos:scopeNote ""@en .
+
+i14224:Check rdf:type owl:Class ;
+    rdfs:subClassOf i14224:MaintenanceActivity ;
+    rdfs:label "Check" ;
+    skos:altLabel "restart","reset"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix B"@en ;
+    cmnsav:explanatoryNote "The cause of failure investigated, but no maintenance action is performed, or action is deferred. Able to regain function by simple actions, e.g. restart or resetting etc. Particularly relevant for functional failures, e.g. fire and gas detectors, subsea equipment. check includes both when a failure cause was revealed but maintenance action was considered either not necessary or not possible to carry out and where no failure cause circumstances could be found"@en ;
+    cmnsav:usageNote "typically used in corrective maintenance"@en ;
+    i14224:hasMaintenanceActivityType i14224:CorrectiveMaintenance .
+
+i14224:Replace rdf:type owl:Class ;
+    rdfs:subClassOf i14224:MaintenanceActivity ;
+    rdfs:label "Replace"@en ;
+    cmnsav:directSource "ISO 14224:2023 Appendix B"@en ;
+    cmnsav:explanatoryNote "Replacement of the item by a new or refurbished item of the same type and make"@en ;
+    cmnsav:usageNote "Typically used in preventative and corrective maintenance. E.g. replacement of a worn-out bearing"@en .
+
+i14224:MaintenanceStrategyTerms a skos:Collection ;
+    skos:definition "strategy for maintenance of a specific item"@en ;
+    skos:example "corrective maintenance, condition-based maintenance, opportunistic maintenance, planned maintenance, predictive maintenance, reactive maintenance"@en ;
+    skos:inScheme i14224:StandardISO14224;
+    skos:prefLabel "maintenance strategy terms"@en ;
+    skos:scopeNote ""@en ;
+        skos:member
+        i14224:ConditionBasedMaintenance,
+        i14224:CorrectiveMaintenance,
+        i14224:OpportunityMaintenance,
+        i14224:PlannedMaintenance,
+        i14224:PreventativeMaintenance,
+        i14224:PredictiveMaintenance .
+
+# Instance data
+ex:ma101 rdf:type owl:NamedIndividual, i14224:Replace;
+    i14224:hasMaintenanceActivityType i14224:PreventativeMaintenance .
+
+ex:ma102 rdf:type owl:NamedIndividual, i14224:Check;
+    i14224:hasMaintenanceActivityType i14224:CorrectiveMaintenance .
